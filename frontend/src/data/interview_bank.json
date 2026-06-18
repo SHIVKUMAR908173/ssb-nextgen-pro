@@ -1,0 +1,57 @@
+[
+  {
+    "category": "Academic",
+    "question_text": "I see a slight dip in your marks between 10th and 12th grade. What were the reasons for this?",
+    "ideal_points": [
+      "Honesty about distractions/health",
+      "Responsibility taken",
+      "Lessons learned",
+      "Subsequent improvement"
+    ]
+  },
+  {
+    "category": "Academic",
+    "question_text": "Why did you choose your specific stream of study in college?",
+    "ideal_points": [
+      "Interest in subject",
+      "Career goals",
+      "Informed decision making"
+    ]
+  },
+  {
+    "category": "Family",
+    "question_text": "Describe your relationship with your father. How has he influenced your personality?",
+    "ideal_points": [
+      "Emotional bond",
+      "Values learned",
+      "Examples of guidance"
+    ]
+  },
+  {
+    "category": "Social Life",
+    "question_text": "What do your friends usually like about you, and what is one thing they would want you to change?",
+    "ideal_points": [
+      "Strengths (reliability, humor)",
+      "Constructive self-awareness (impatience, etc.)"
+    ]
+  },
+  {
+    "category": "Service Motivation",
+    "question_text": "Why do you want to join the Armed Forces? Why not a high-paying corporate job?",
+    "ideal_points": [
+      "Sense of purpose",
+      "Challenge & Adventure",
+      "Service to nation",
+      "Family tradition (if any)"
+    ]
+  },
+  {
+    "category": "Situational",
+    "question_text": "If you are not selected this time, what is your immediate backup plan?",
+    "ideal_points": [
+      "Resilience",
+      "Clear secondary goal",
+      "Determination to try again"
+    ]
+  }
+]

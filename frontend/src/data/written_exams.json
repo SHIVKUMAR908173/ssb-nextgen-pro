@@ -1,0 +1,172 @@
+[
+  {
+    "exam": "NDA & NA",
+    "fullName": "National Defence Academy & Naval Academy",
+    "description": "For candidates completing 10+2. Focuses heavily on Mathematics and General Ability Test (GAT). A gateway to train at the prestigious academy in Khadakwasla.",
+    "color": "blue",
+    "subjects": [
+      {
+        "name": "Mathematics",
+        "weightage": "300 Marks (120 Qs)",
+        "topics": "Algebra, Matrices & Determinants, Trigonometry, Analytical Geometry (2D & 3D), Differential Calculus, Integral Calculus, Vector Algebra, Statistics & Probability."
+      },
+      {
+        "name": "GAT - English",
+        "weightage": "200 Marks (50 Qs)",
+        "topics": "Grammar & Usage, Vocabulary, Comprehension, Spotting Errors, Para Jumbles, Synonyms & Antonyms."
+      },
+      {
+        "name": "GAT - Gen Knowledge",
+        "weightage": "400 Marks (100 Qs)",
+        "topics": "Physics (100 Marks), Chemistry (60 Marks), General Science (40 Marks), History/Freedom Movement (80 Marks), Geography (80 Marks), Current Affairs (40 Marks)."
+      }
+    ],
+    "resources": [
+      {
+        "type": "Official Document",
+        "title": "UPSC NDA Syllabus & Notification 2024",
+        "link": "#"
+      },
+      {
+        "type": "Previous Paper",
+        "title": "NDA 2 2023 - Complete Maths & GAT PDF",
+        "link": "#"
+      },
+      {
+        "type": "Previous Paper",
+        "title": "NDA 1 2023 - Complete Maths & GAT PDF",
+        "link": "#"
+      },
+      {
+        "type": "Study Guide",
+        "title": "100 Most Repeated Math Formulas",
+        "link": "#"
+      },
+      {
+        "type": "Study Guide",
+        "title": "Physics & Chemistry Quick Revision Notes",
+        "link": "#"
+      },
+      {
+        "type": "Mock Test",
+        "title": "GAT English - 50 Question Mock Set",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "exam": "CDS",
+    "fullName": "Combined Defence Services Examination",
+    "description": "For graduates seeking entry into the Indian Military Academy (IMA), Indian Naval Academy (INA), Air Force Academy (AFA), and Officers Training Academy (OTA).",
+    "color": "emerald",
+    "subjects": [
+      {
+        "name": "English",
+        "weightage": "100 Marks (120 Qs)",
+        "topics": "Reading Comprehension, Synonyms/Antonyms, Ordering of Words/Sentences, Spotting Errors, Fill in the Blanks, Idioms & Phrases."
+      },
+      {
+        "name": "General Knowledge",
+        "weightage": "100 Marks (120 Qs)",
+        "topics": "Current Affairs, Indian Economy, History of India, Geography, Indian Polity, Everyday Science, Defence Updates."
+      },
+      {
+        "name": "Elementary Math",
+        "weightage": "100 Marks (100 Qs)",
+        "topics": "Arithmetic, Algebra, Trigonometry, Geometry, Mensuration, Statistics. (Note: Math is not required for OTA entry)."
+      }
+    ],
+    "resources": [
+      {
+        "type": "Official Document",
+        "title": "UPSC CDS Syllabus & Exam Pattern 2024",
+        "link": "#"
+      },
+      {
+        "type": "Previous Paper",
+        "title": "CDS 1 2024 - English, GK & Maths",
+        "link": "#"
+      },
+      {
+        "type": "Previous Paper",
+        "title": "CDS 2 2023 - English, GK & Maths",
+        "link": "#"
+      },
+      {
+        "type": "Study Guide",
+        "title": "Indian Polity - Key Articles & Amendments",
+        "link": "#"
+      },
+      {
+        "type": "Study Guide",
+        "title": "Modern Indian History Timeline",
+        "link": "#"
+      },
+      {
+        "type": "Mock Test",
+        "title": "Elementary Maths - Arithmetic & Geometry",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "exam": "AFCAT",
+    "fullName": "Air Force Common Admission Test",
+    "description": "For male and female graduates seeking entry into the Flying and Ground Duty (Technical & Non-Technical) branches of the Indian Air Force.",
+    "color": "sky",
+    "subjects": [
+      {
+        "name": "General Awareness",
+        "weightage": "25 Questions",
+        "topics": "History, Sports, Geography, Environment, Civics, Basic Science, Defence, Art, Culture, Current Affairs, Politics."
+      },
+      {
+        "name": "Verbal Ability in English",
+        "weightage": "30 Questions",
+        "topics": "Comprehension, Error Detection, Sentence Completion, Synonyms, Antonyms, Testing of Vocabulary, Idioms."
+      },
+      {
+        "name": "Numerical Ability",
+        "weightage": "15 Questions",
+        "topics": "Decimal Fraction, Time & Work, Average, Percentage, Profit & Loss, Ratio & Proportion, Simple Interest."
+      },
+      {
+        "name": "Reasoning & Military Aptitude",
+        "weightage": "30 Questions",
+        "topics": "Verbal Skills, Spatial Ability, Odd One Out, Analogy, Venn Diagram, Pattern Completion, Dot Situation."
+      }
+    ],
+    "resources": [
+      {
+        "type": "Official Document",
+        "title": "IAF AFCAT Official Syllabus 2024",
+        "link": "#"
+      },
+      {
+        "type": "Previous Paper",
+        "title": "AFCAT 1 2024 - Memory Based Questions",
+        "link": "#"
+      },
+      {
+        "type": "Previous Paper",
+        "title": "AFCAT 2 2023 - Memory Based Questions",
+        "link": "#"
+      },
+      {
+        "type": "Study Guide",
+        "title": "Dot Situation & Spatial Ability Tricks",
+        "link": "#"
+      },
+      {
+        "type": "Study Guide",
+        "title": "Static GK - Military Exercises & Operations",
+        "link": "#"
+      },
+      {
+        "type": "Mock Test",
+        "title": "Numerical Ability Speed Test",
+        "link": "#"
+      }
+    ]
+  }
+]

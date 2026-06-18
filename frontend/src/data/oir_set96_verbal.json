@@ -1,0 +1,900 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nStandard batteries (like AA or AAA) generate electricity through a chemical reaction between the internal materials.",
+    "options": [
+      {
+        "label": "1",
+        "text": "True"
+      },
+      {
+        "label": "2",
+        "text": "Probable"
+      },
+      {
+        "label": "3",
+        "text": "False"
+      },
+      {
+        "label": "4",
+        "text": "Absurd"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Batteries use electrochemical cells to convert chemical energy into electrical energy."
+  },
+  {
+    "id": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nPainting a bicycle bright neon green will make it travel at the speed of light.",
+    "options": [
+      {
+        "label": "1",
+        "text": "True"
+      },
+      {
+        "label": "2",
+        "text": "Probable"
+      },
+      {
+        "label": "3",
+        "text": "False"
+      },
+      {
+        "label": "4",
+        "text": "Absurd"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Color has no effect on the physical velocity limits of a mechanical vehicle."
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nWe use specialized winter tires in snowy regions because:-",
+    "options": [
+      {
+        "label": "1",
+        "text": "They are designed to make the car look more aggressive in the snow."
+      },
+      {
+        "label": "2",
+        "text": "The rubber compound stays soft in cold temperatures and the tread pattern provides better grip on ice."
+      },
+      {
+        "label": "3",
+        "text": "They are filled with hot air to melt the snow as the car drives over it."
+      },
+      {
+        "label": "4",
+        "text": "They are made of recycled plastic to help the environment."
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Winter tires are engineered for low-temperature flexibility and traction on slippery surfaces."
+  },
+  {
+    "id": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nIron objects are often coated with zinc (galvanized) because:-",
+    "options": [
+      {
+        "label": "1",
+        "text": "Zinc makes the iron much heavier so it won't blow away in the wind."
+      },
+      {
+        "label": "2",
+        "text": "Zinc provides a protective layer that prevents the iron from rusting (oxidizing)."
+      },
+      {
+        "label": "3",
+        "text": "Zinc makes the iron naturally magnetic."
+      },
+      {
+        "label": "4",
+        "text": "Galvanizing makes the metal taste better to animals so they won't chew it."
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Galvanization uses zinc as a sacrificial anode to prevent the underlying iron/steel from corroding."
+  },
+  {
+    "id": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nis might right",
+    "correct_option": "t",
+    "explanation": "The rearranged sentence is 'Might is right'. The last letter is 't'."
+  },
+  {
+    "id": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nsilver cloud every lining a has",
+    "correct_option": "g",
+    "explanation": "The rearranged sentence is 'Every cloud has a silver lining'. The last letter is 'g'."
+  },
+  {
+    "id": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe scorching freezing ice chilled the water instantly.",
+    "correct_option": "s",
+    "explanation": "The word to be omitted is 'scorching' (contradicts 'ice' and 'freezing'). The first letter is 's'."
+  },
+  {
+    "id": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe ancient modern computer was built in the year 2024.",
+    "correct_option": "t",
+    "explanation": "The word to be omitted is 'ancient' (built in 2024 makes it modern). The last letter is 't'."
+  },
+  {
+    "id": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nG L E N A is a geometric figure formed by two rays meeting at a common vertex.",
+    "correct_option": "N",
+    "explanation": "The rearranged word is 'ANGLE'. The second letter is 'N'."
+  },
+  {
+    "id": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nN O P E S S is a tool with a handle and a small bowl used for eating or stirring.",
+    "correct_option": "P",
+    "explanation": "The rearranged word is 'SPOON'. The second letter is 'P'."
+  },
+  {
+    "id": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Engine is to Car as Heart is to __________.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Blood"
+      },
+      {
+        "label": "2",
+        "text": "Body"
+      },
+      {
+        "label": "3",
+        "text": "Beat"
+      },
+      {
+        "label": "4",
+        "text": "Chest"
+      },
+      {
+        "label": "5",
+        "text": "Life"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "The engine is the power unit of a car; the heart is the power/pumping unit of a body."
+  },
+  {
+    "id": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Moon is to Night as Sun is to __________.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Hot"
+      },
+      {
+        "label": "2",
+        "text": "Day"
+      },
+      {
+        "label": "3",
+        "text": "Light"
+      },
+      {
+        "label": "4",
+        "text": "Sky"
+      },
+      {
+        "label": "5",
+        "text": "Star"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "The moon is the primary celestial features of the night; the sun is the central feature of the day."
+  },
+  {
+    "id": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Scale is to Weight as Ruler is to __________.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Measure"
+      },
+      {
+        "label": "2",
+        "text": "Inch"
+      },
+      {
+        "label": "3",
+        "text": "Length"
+      },
+      {
+        "label": "4",
+        "text": "Straight"
+      },
+      {
+        "label": "5",
+        "text": "Tool"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "A scale measures weight; a ruler measures length."
+  },
+  {
+    "id": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Spider is to Web as Bee is to __________.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Honey"
+      },
+      {
+        "label": "2",
+        "text": "Sting"
+      },
+      {
+        "label": "3",
+        "text": "Hive"
+      },
+      {
+        "label": "4",
+        "text": "Insect"
+      },
+      {
+        "label": "5",
+        "text": "Flower"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "A spider lives in/constructs a web; a bee lives in/constructs a hive."
+  },
+  {
+    "id": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Solid is to Ice as Gas is to __________.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Water"
+      },
+      {
+        "label": "2",
+        "text": "Steam"
+      },
+      {
+        "label": "3",
+        "text": "Cold"
+      },
+      {
+        "label": "4",
+        "text": "Liquid"
+      },
+      {
+        "label": "5",
+        "text": "Air"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Ice is the solid state of water; steam is the gaseous state."
+  },
+  {
+    "id": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Wheat is to Grain as Apple is to __________.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Tree"
+      },
+      {
+        "label": "2",
+        "text": "Fruit"
+      },
+      {
+        "label": "3",
+        "text": "Red"
+      },
+      {
+        "label": "4",
+        "text": "Food"
+      },
+      {
+        "label": "5",
+        "text": "Sweet"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Wheat is a type of grain; an apple is a type of fruit."
+  },
+  {
+    "id": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical sequence of time?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Decade"
+      },
+      {
+        "label": "2",
+        "text": "Century"
+      },
+      {
+        "label": "3",
+        "text": "Year"
+      },
+      {
+        "label": "4",
+        "text": "Millennium"
+      },
+      {
+        "label": "5",
+        "text": "Month"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Sequence: Month, Year, Decade, Century, Millennium. The middle item is Year."
+  },
+  {
+    "id": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of biological complexity (simplest to most complex)?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Organ"
+      },
+      {
+        "label": "2",
+        "text": "Tissue"
+      },
+      {
+        "label": "3",
+        "text": "Cell"
+      },
+      {
+        "label": "4",
+        "text": "Organism"
+      },
+      {
+        "label": "5",
+        "text": "System"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Sequence: Cell, Tissue, Organ, System, Organism. The middle item is Organ."
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Physics"
+      },
+      {
+        "label": "2",
+        "text": "Chemistry"
+      },
+      {
+        "label": "3",
+        "text": "Biology"
+      },
+      {
+        "label": "4",
+        "text": "History"
+      },
+      {
+        "label": "5",
+        "text": "Geology"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "History is a humanity/social science, whereas the others are natural sciences."
+  },
+  {
+    "id": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Mars"
+      },
+      {
+        "label": "2",
+        "text": "Venus"
+      },
+      {
+        "label": "3",
+        "text": "Saturn"
+      },
+      {
+        "label": "4",
+        "text": "Jupiter"
+      },
+      {
+        "label": "5",
+        "text": "Sun"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "The Sun is a star, while the others are planets."
+  },
+  {
+    "id": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Table"
+      },
+      {
+        "label": "2",
+        "text": "Chair"
+      },
+      {
+        "label": "3",
+        "text": "Desk"
+      },
+      {
+        "label": "4",
+        "text": "Stool"
+      },
+      {
+        "label": "5",
+        "text": "Bed"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "A bed is primarily for sleeping; the others are primarily for sitting or working."
+  },
+  {
+    "id": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Copper"
+      },
+      {
+        "label": "2",
+        "text": "Silver"
+      },
+      {
+        "label": "3",
+        "text": "Gold"
+      },
+      {
+        "label": "4",
+        "text": "Aluminum"
+      },
+      {
+        "label": "5",
+        "text": "Carbon"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "Carbon is a non-metal, while the others are metals."
+  },
+  {
+    "id": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Ear"
+      },
+      {
+        "label": "2",
+        "text": "Eye"
+      },
+      {
+        "label": "3",
+        "text": "Nose"
+      },
+      {
+        "label": "4",
+        "text": "Heart"
+      },
+      {
+        "label": "5",
+        "text": "Skin"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "The heart is an internal organ; the others are external sensory organs."
+  },
+  {
+    "id": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Paper"
+      },
+      {
+        "label": "2",
+        "text": "Panic"
+      },
+      {
+        "label": "3",
+        "text": "Panel"
+      },
+      {
+        "label": "4",
+        "text": "Panda"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical: Panda, Panel, Panic, Paper. 'Paper' comes last."
+  },
+  {
+    "id": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Quiet"
+      },
+      {
+        "label": "2",
+        "text": "Quick"
+      },
+      {
+        "label": "3",
+        "text": "Query"
+      },
+      {
+        "label": "4",
+        "text": "Quest"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical: Query, Quest, Quick, Quiet. 'Quiet' comes last."
+  },
+  {
+    "id": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Raise"
+      },
+      {
+        "label": "2",
+        "text": "Radio"
+      },
+      {
+        "label": "3",
+        "text": "Radar"
+      },
+      {
+        "label": "4",
+        "text": "Rain"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical: Radar, Radio, Rain, Raise. 'Raise' comes last."
+  },
+  {
+    "id": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Table"
+      },
+      {
+        "label": "2",
+        "text": "Tact"
+      },
+      {
+        "label": "3",
+        "text": "Tail"
+      },
+      {
+        "label": "4",
+        "text": "Take"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical: Table, Tact, Tail, Take. 'Take' comes last."
+  },
+  {
+    "id": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Under"
+      },
+      {
+        "label": "2",
+        "text": "Uncle"
+      },
+      {
+        "label": "3",
+        "text": "Unit"
+      },
+      {
+        "label": "4",
+        "text": "Until"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical: Uncle, Under, Unit, Until. 'Until' comes last."
+  },
+  {
+    "id": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nB, D, F, H, J, _______, _______.",
+    "correct_option": "L, N",
+    "explanation": "The series skips letters by adding 2 (+2): B(2), D(4), F(6), H(8), J(10) -> L(12), N(14)."
+  },
+  {
+    "id": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n1, 4, 9, 16, 25, _______, _______.",
+    "correct_option": "36, 49",
+    "explanation": "Consecutive perfect squares: 1^2, 2^2, 3^2, 4^2, 5^2 -> 6^2 (36), 7^2 (49)."
+  },
+  {
+    "id": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n5, 10, 20, 40, 80, _______, _______.",
+    "correct_option": "160, 320",
+    "explanation": "Each term is doubled (x2) to get the next term."
+  },
+  {
+    "id": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "AEI"
+      },
+      {
+        "label": "2",
+        "text": "OUA"
+      },
+      {
+        "label": "3",
+        "text": "EIO"
+      },
+      {
+        "label": "4",
+        "text": "XYZ"
+      },
+      {
+        "label": "5",
+        "text": "UEO"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "XYZ is a sequence of consonants; the other groups are composed of vowels."
+  },
+  {
+    "id": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "3"
+      },
+      {
+        "label": "2",
+        "text": "5"
+      },
+      {
+        "label": "3",
+        "text": "7"
+      },
+      {
+        "label": "4",
+        "text": "9"
+      },
+      {
+        "label": "5",
+        "text": "11"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "9 is a composite number (3x3); the others are prime numbers."
+  },
+  {
+    "id": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 4’s are immediately preceded by a 7 AND immediately followed by a 1 in the following sequence?\n7 4 1 3 7 4 1 4 1 7 4 1 9",
+    "options": [
+      {
+        "label": "1",
+        "text": "1"
+      },
+      {
+        "label": "2",
+        "text": "2"
+      },
+      {
+        "label": "3",
+        "text": "3"
+      },
+      {
+        "label": "4",
+        "text": "4"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "The specific sequence '7 4 1' appears at index [1,2,3], [5,6,7], and [10,11,12]."
+  },
+  {
+    "id": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 8 notebooks cost 120 rupees, what is the cost of 5 notebooks?",
+    "options": [
+      {
+        "label": "1",
+        "text": "65"
+      },
+      {
+        "label": "2",
+        "text": "70"
+      },
+      {
+        "label": "3",
+        "text": "75"
+      },
+      {
+        "label": "4",
+        "text": "80"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "120 / 8 = 15 rupees per notebook. 5 x 15 = 75 rupees."
+  },
+  {
+    "id": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A man walks 10 meters East, turns right and walks 5 meters, then turns right again and walks 10 meters. In which direction is he now from his starting point?",
+    "options": [
+      {
+        "label": "1",
+        "text": "North"
+      },
+      {
+        "label": "2",
+        "text": "South"
+      },
+      {
+        "label": "3",
+        "text": "East"
+      },
+      {
+        "label": "4",
+        "text": "West"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "10m East + 5m South + 10m West = 5m South of start."
+  },
+  {
+    "id": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a woman, a man says, \"She is the daughter of my only brother's wife.\" How is the man related to the woman?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Father"
+      },
+      {
+        "label": "2",
+        "text": "Brother"
+      },
+      {
+        "label": "3",
+        "text": "Uncle"
+      },
+      {
+        "label": "4",
+        "text": "Cousin"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Only brother's daughter is the man's niece, making him her uncle."
+  },
+  {
+    "id": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"BAT\" is coded as 23, and \"CAT\" is coded as 24, how is the word \"RAT\" coded? (Hint: A=1, B=2...)",
+    "options": [
+      {
+        "label": "1",
+        "text": "37"
+      },
+      {
+        "label": "2",
+        "text": "38"
+      },
+      {
+        "label": "3",
+        "text": "39"
+      },
+      {
+        "label": "4",
+        "text": "40"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "R=18, A=1, T=20. Sum: 18+1+20 = 39."
+  },
+  {
+    "id": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 4th of a month falls on a Monday, what day of the week will the 25th of the same month be?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Sunday"
+      },
+      {
+        "label": "2",
+        "text": "Monday"
+      },
+      {
+        "label": "3",
+        "text": "Tuesday"
+      },
+      {
+        "label": "4",
+        "text": "Wednesday"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "25 - 4 = 21 days. 21 is exactly 3 weeks, so it remains a Monday."
+  },
+  {
+    "id": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      {
+        "label": "1",
+        "text": "1/2"
+      },
+      {
+        "label": "2",
+        "text": "3/4"
+      },
+      {
+        "label": "3",
+        "text": "2/3"
+      },
+      {
+        "label": "4",
+        "text": "5/8"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "1/2=0.5, 3/4=0.75, 2/3≈0.66, 5/8=0.625. 3/4 is the largest."
+  }
+]

@@ -1,0 +1,925 @@
+{
+  "nda": {
+    "title": "NDA Exam Study Portal",
+    "category": "NDA (National Defence Academy)",
+    "description": "Premium preparation archives for the National Defence Academy entry. Mapped strictly to the official UPSC NDA syllabus parameters.",
+    "color": "emerald",
+    "subjects": [
+      {
+        "id": "nda-paper1",
+        "name": "Paper I: Mathematics (300 Marks)",
+        "icon": "calculator",
+        "chapters": [
+          {
+            "id": "nda-calc",
+            "name": "Calculus & Limits",
+            "estimatedTime": "35 mins",
+            "topics": [
+              {
+                "id": "nda-calc-limits",
+                "title": "Limits & L'Hopital's Rule",
+                "type": "Theory",
+                "readTime": "12 mins",
+                "content": "Calculus accounts for 15-20% of Paper I. Prioritize: Limits of standard functions, continuity tests using L'Hopital's Rule, derivative properties, and integration by parts.\n\nKey Formula: lim_{x → 0} (sin x)/x = 1\n\nL'Hopital's Rule states that for indeterminate forms 0/0 or ∞/∞:\nlim f(x)/g(x) = lim f'(x)/g'(x)\n\nExample: lim_{x→0} (1 - cos x)/x² = lim_{x→0} sin x/(2x) = lim_{x→0} cos x/2 = 1/2\n\nMemorize the integral: ∫ eˣ(f(x) + f'(x))dx = eˣ·f(x) + C\n\nUse graph sketch methods for solving area-under-curve problems swiftly.",
+                "keyTakeaways": [
+                  "L'Hopital's Rule applies to 0/0 and ∞/∞ indeterminate forms",
+                  "Standard limit: lim (sin x)/x = 1 as x → 0",
+                  "Integration shortcut: ∫ eˣ(f + f') = eˣ·f + C",
+                  "Calculus contributes 15-20% of Paper I marks"
+                ],
+                "quickQuiz": {
+                  "question": "What is the value of lim_{x → 0} (1 - cos(x)) / x²?",
+                  "options": [
+                    "0",
+                    "1/2",
+                    "1",
+                    "Limit does not exist"
+                  ],
+                  "answer": "1/2",
+                  "explanation": "Applying L'Hopital's rule twice: First derivative gives sin(x)/2x. Second gives cos(x)/2. As x → 0, cos(0)/2 = 1/2."
+                }
+              },
+              {
+                "id": "nda-calc-derivatives",
+                "title": "Derivatives & Applications",
+                "type": "Theory",
+                "readTime": "14 mins",
+                "content": "Derivatives measure the rate of change of a function. Focus on:\n\n1. PRODUCT RULE: d/dx[f·g] = f'g + fg'\n2. QUOTIENT RULE: d/dx[f/g] = (f'g - fg')/g²\n3. CHAIN RULE: d/dx[f(g(x))] = f'(g(x))·g'(x)\n\nAPPLICATIONS:\n- Maxima/Minima: Set f'(x) = 0, check f''(x)\n- Rate of change problems\n- Tangent and normal equations\n\nSHORTCUT: For f(x) = a sin x + b cos x:\n- Maximum value = √(a² + b²)\n- Minimum value = -√(a² + b²)\n\nIMPORTANT DERIVATIVES:\n- d/dx(sin x) = cos x\n- d/dx(cos x) = -sin x\n- d/dx(tan x) = sec²x\n- d/dx(eˣ) = eˣ\n- d/dx(ln x) = 1/x",
+                "keyTakeaways": [
+                  "Three core rules: Product, Quotient, and Chain rule",
+                  "Maxima/Minima: f'(x) = 0 then check sign of f''(x)",
+                  "For a·sin x + b·cos x: max = √(a²+b²)",
+                  "Know all standard derivatives by heart"
+                ],
+                "quickQuiz": {
+                  "question": "What is the maximum value of 3 sin x + 4 cos x?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "7"
+                  ],
+                  "answer": "5",
+                  "explanation": "Maximum of a sin x + b cos x = √(a² + b²) = √(9 + 16) = √25 = 5"
+                }
+              },
+              {
+                "id": "nda-calc-integration",
+                "title": "Integration Shortcuts",
+                "type": "Shortcuts",
+                "readTime": "10 mins",
+                "content": "KEY INTEGRATION FORMULAS:\n\n∫ dx / (x² - a²) = (1/2a) · log |(x-a)/(x+a)| + C\n∫ dx / (a² - x²) = (1/2a) · log |(a+x)/(a-x)| + C\n∫ dx / (x² + a²) = (1/a) · tan⁻¹(x/a) + C\n∫ eᵃˣ · sin(bx) dx = [eᵃˣ / (a²+b²)] · (a sin bx - b cos bx)\n\nINTEGRATION BY PARTS: ∫ u·dv = u·v - ∫ v·du\nUse ILATE rule for choosing u: Inverse → Log → Algebraic → Trig → Exponential\n\nDEFINITE INTEGRALS:\n- ∫₀ᵃ f(x)dx = ∫₀ᵃ f(a-x)dx (King's Property)\n- For even functions: ∫₋ₐᵃ f(x)dx = 2∫₀ᵃ f(x)dx\n- For odd functions: ∫₋ₐᵃ f(x)dx = 0",
+                "keyTakeaways": [
+                  "ILATE rule for integration by parts: Inverse → Log → Algebraic → Trig → Exponential",
+                  "King's Property: ∫₀ᵃ f(x) = ∫₀ᵃ f(a-x)",
+                  "Even function integrals double, odd function integrals vanish",
+                  "Know standard forms: 1/(x²±a²) and eᵃˣ·trig"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nda-vectors",
+            "name": "Vector Algebra & 3D Geometry",
+            "estimatedTime": "25 mins",
+            "topics": [
+              {
+                "id": "nda-vec-basics",
+                "title": "Dot & Cross Products",
+                "type": "Theory",
+                "readTime": "10 mins",
+                "content": "VECTOR FUNDAMENTALS:\n\nDOT PRODUCT (Scalar): A·B = |A||B|cos θ = a₁b₁ + a₂b₂ + a₃b₃\n- Result is a scalar\n- If A·B = 0, vectors are perpendicular\n- Used for: projections, angles between vectors\n\nCROSS PRODUCT (Vector): A×B = |A||B|sin θ · n̂\n- Result is a vector perpendicular to both\n- |A×B| = area of parallelogram formed by A and B\n- If A×B = 0, vectors are parallel\n\nSCALAR TRIPLE PRODUCT: [A B C] = A · (B×C)\n- Represents the volume of parallelepiped\n- If [A B C] = 0, vectors are coplanar\n\nSHORTCUT: Area of parallelogram with diagonals d₁ and d₂ = ½|d₁ × d₂|",
+                "keyTakeaways": [
+                  "Dot product = scalar, Cross product = vector",
+                  "A·B = 0 ⟹ perpendicular; A×B = 0 ⟹ parallel",
+                  "|A×B| gives parallelogram area",
+                  "Scalar triple product = volume of parallelepiped"
+                ],
+                "quickQuiz": {
+                  "question": "If A = i + j + k and B = 2i - j - k, what is the projection of A on B?",
+                  "options": [
+                    "0",
+                    "1",
+                    "√6",
+                    "2"
+                  ],
+                  "answer": "0",
+                  "explanation": "Projection = (A·B)/|B| = ((1)(2)+(1)(-1)+(1)(-1))/√6 = 0/√6 = 0"
+                }
+              },
+              {
+                "id": "nda-vec-3d",
+                "title": "3D Geometry: Lines & Planes",
+                "type": "Theory",
+                "readTime": "15 mins",
+                "content": "3D GEOMETRY ESSENTIALS:\n\nEQUATION OF A LINE:\n- Vector form: r = a + λb\n- Cartesian: (x-x₁)/a = (y-y₁)/b = (z-z₁)/c\n\nEQUATION OF A PLANE:\n- Vector form: r·n = d\n- Cartesian: ax + by + cz = d\n\nDISTANCE FORMULAS:\n- Point to plane: |ax₁ + by₁ + cz₁ - d| / √(a² + b² + c²)\n- Between parallel planes: |d₁ - d₂| / √(a² + b² + c²)\n\nANGLE BETWEEN TWO PLANES:\ncos θ = |n₁·n₂| / (|n₁||n₂|)\n\nSHORTEST DISTANCE BETWEEN SKEW LINES:\nd = |(a₂-a₁)·(b₁×b₂)| / |b₁×b₂|",
+                "keyTakeaways": [
+                  "Know both vector and Cartesian forms of line/plane equations",
+                  "Distance from point to plane uses the perpendicular distance formula",
+                  "Angle between planes = angle between their normals",
+                  "Skew lines distance uses scalar triple product"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nda-algebra",
+            "name": "Algebra & Progressions",
+            "estimatedTime": "30 mins",
+            "topics": [
+              {
+                "id": "nda-alg-complex",
+                "title": "Complex Numbers & Cube Roots of Unity",
+                "type": "Theory",
+                "readTime": "12 mins",
+                "content": "COMPLEX NUMBERS: z = a + bi where i = √(-1)\n\nMODULUS: |z| = √(a² + b²)\nARGUMENT: arg(z) = tan⁻¹(b/a)\nCONJUGATE: z̄ = a - bi\n\nEULER'S FORM: z = r·e^(iθ) = r(cos θ + i sin θ)\n\nCUBE ROOTS OF UNITY: ω = (-1 + i√3)/2\n- 1 + ω + ω² = 0\n- ω³ = 1\n- ω² = ω̄\n\nDE MOIVRE'S THEOREM:\n(cos θ + i sin θ)ⁿ = cos(nθ) + i sin(nθ)\n\nNDA HIGH-YIELD: Problems on modulus, argument, and cube roots appear almost every year.",
+                "keyTakeaways": [
+                  "i = √(-1), i² = -1, i³ = -i, i⁴ = 1",
+                  "Cube roots of unity: 1 + ω + ω² = 0",
+                  "De Moivre's theorem for powers of complex numbers",
+                  "Modulus and argument are tested every NDA exam"
+                ],
+                "quickQuiz": {
+                  "question": "What is the value of 1 + ω + ω², where ω is a cube root of unity?",
+                  "options": [
+                    "0",
+                    "1",
+                    "3",
+                    "-1"
+                  ],
+                  "answer": "0",
+                  "explanation": "The sum of all cube roots of unity (1, ω, ω²) equals zero. This is a fundamental property."
+                }
+              },
+              {
+                "id": "nda-alg-progressions",
+                "title": "AP, GP, HP & Series Shortcuts",
+                "type": "Shortcuts",
+                "readTime": "8 mins",
+                "content": "ARITHMETIC PROGRESSION (AP):\n- nth term: a + (n-1)d\n- Sum: n/2 × (2a + (n-1)d) or n/2 × (first + last)\n\nGEOMETRIC PROGRESSION (GP):\n- nth term: ar^(n-1)\n- Sum (finite): a(rⁿ - 1)/(r - 1)\n- Sum (infinite, |r| < 1): a/(1-r)\n\nHARMONIC PROGRESSION (HP):\n- Reciprocals form an AP\n- nth term of HP: 1/(a + (n-1)d)\n\nRELATION: AM × HM = GM²\nwhere AM = (a+b)/2, GM = √(ab), HM = 2ab/(a+b)\n\nAM ≥ GM ≥ HM (for positive numbers)",
+                "keyTakeaways": [
+                  "AP sum = n/2 × (first + last) — fastest formula",
+                  "Infinite GP sum = a/(1-r) only when |r| < 1",
+                  "AM × HM = GM² — links all three means",
+                  "AM ≥ GM ≥ HM always holds for positive numbers"
+                ]
+              },
+              {
+                "id": "nda-alg-binomial",
+                "title": "Binomial Theorem & PnC",
+                "type": "Theory",
+                "readTime": "10 mins",
+                "content": "BINOMIAL THEOREM:\n(x + y)ⁿ = Σ ⁿCᵣ · x^(n-r) · yʳ for r = 0 to n\n\nGeneral term: T(r+1) = ⁿCᵣ · x^(n-r) · yʳ\nMiddle term: If n is even → (n/2 + 1)th term\n\nPERMUTATIONS & COMBINATIONS:\n- nPr = n!/(n-r)! — order matters\n- nCr = n!/[r!(n-r)!] — order doesn't matter\n- nCr = nC(n-r)\n- nC0 + nC1 + ... + nCn = 2ⁿ\n\nSHORTCUTS:\n- nCr + nC(r-1) = (n+1)Cr (Pascal's Rule)\n- Coefficient of x^r in (1+x)ⁿ = nCr\n- Total subsets of a set with n elements = 2ⁿ",
+                "keyTakeaways": [
+                  "General term T(r+1) = ⁿCᵣ · x^(n-r) · yʳ",
+                  "nPr for arrangements, nCr for selections",
+                  "Sum of all nCr = 2ⁿ",
+                  "Pascal's Rule connects consecutive rows"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "nda-paper2",
+        "name": "Paper II: GAT (600 Marks)",
+        "icon": "book",
+        "chapters": [
+          {
+            "id": "nda-gat-physics",
+            "name": "Physics: Mechanics & Waves",
+            "estimatedTime": "30 mins",
+            "topics": [
+              {
+                "id": "nda-phys-mechanics",
+                "title": "Newton's Laws & Work-Energy",
+                "type": "Theory",
+                "readTime": "15 mins",
+                "content": "NEWTON'S LAWS OF MOTION:\n\n1st Law (Inertia): A body remains at rest or in uniform motion unless acted upon by external force.\n2nd Law: F = ma (Force equals mass times acceleration)\n3rd Law: Every action has an equal and opposite reaction.\n\nWORK-ENERGY THEOREM:\nNet work done = Change in kinetic energy\nW = ΔKE = ½mv² - ½mu²\n\nCONSERVATION OF ENERGY:\nTotal energy (KE + PE) remains constant in isolated systems.\nPE = mgh (gravitational)\nKE = ½mv²\n\nARCHIMEDES' PRINCIPLE:\nBuoyant force = Weight of fluid displaced\nFb = ρ·V·g\n\nObject floats when density < fluid density.",
+                "keyTakeaways": [
+                  "F = ma is the foundation of mechanics",
+                  "Work-Energy theorem: W = ΔKE",
+                  "Conservation of energy: KE + PE = constant",
+                  "Archimedes: Buoyant force = weight of displaced fluid"
+                ],
+                "quickQuiz": {
+                  "question": "A 2 kg object moving at 3 m/s is brought to rest. What is the work done?",
+                  "options": [
+                    "-9 J",
+                    "-6 J",
+                    "6 J",
+                    "9 J"
+                  ],
+                  "answer": "-9 J",
+                  "explanation": "W = ΔKE = ½m(v²-u²) = ½×2×(0-9) = -9 J. Negative because the object decelerates."
+                }
+              },
+              {
+                "id": "nda-phys-optics",
+                "title": "Light: Reflection & Refraction",
+                "type": "Theory",
+                "readTime": "12 mins",
+                "content": "REFLECTION:\n- Angle of incidence = Angle of reflection\n- Mirror formula: 1/v + 1/u = 1/f\n- Magnification: m = -v/u\n\nREFRACTION:\n- Snell's Law: n₁ sin θ₁ = n₂ sin θ₂\n- Lens formula: 1/v - 1/u = 1/f\n- Power of lens: P = 1/f (in diopters when f is in meters)\n\nTOTAL INTERNAL REFLECTION:\n- Occurs when light passes from denser to rarer medium\n- Critical angle: sin θc = n₂/n₁\n- Applications: Optical fibers, mirage, diamonds\n\nCONCEPT: Real images are inverted, virtual images are erect.\nConvex mirror always forms virtual, diminished images.\nConcave mirror can form both real and virtual images.",
+                "keyTakeaways": [
+                  "Mirror: 1/v + 1/u = 1/f; Lens: 1/v - 1/u = 1/f",
+                  "Power of lens P = 1/f (diopters)",
+                  "Total internal reflection needs denser → rarer medium",
+                  "Convex mirror always gives virtual, diminished image"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nda-gat-polity",
+            "name": "Indian Polity & Constitution",
+            "estimatedTime": "35 mins",
+            "topics": [
+              {
+                "id": "nda-polity-fr",
+                "title": "Fundamental Rights (Articles 12-35)",
+                "type": "Concept Note",
+                "readTime": "18 mins",
+                "content": "FUNDAMENTAL RIGHTS (Part III):\n\n1. RIGHT TO EQUALITY (Art. 14-18):\n- Art 14: Equality before law\n- Art 15: No discrimination on religion, race, caste, sex, place of birth\n- Art 16: Equal opportunity in public employment\n- Art 17: Abolition of untouchability\n- Art 18: Abolition of titles\n\n2. RIGHT TO FREEDOM (Art. 19-22):\n- Art 19: Six freedoms (speech, assembly, association, movement, residence, profession)\n- Art 20: Protection against conviction\n- Art 21: Right to life & personal liberty (includes right to privacy)\n- Art 21A: Right to free elementary education (86th Amendment)\n- Art 22: Protection against arrest & detention\n\n3. RIGHT AGAINST EXPLOITATION (Art. 23-24):\n- Art 23: Prohibition of traffic in human beings\n- Art 24: Prohibition of child labor in factories\n\n4. RIGHT TO FREEDOM OF RELIGION (Art. 25-28)\n5. CULTURAL & EDUCATIONAL RIGHTS (Art. 29-30)\n6. RIGHT TO CONSTITUTIONAL REMEDIES (Art. 32):\n- Art 32: 'Heart and Soul' of the Constitution (Dr. B.R. Ambedkar)\n- Writs: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto",
+                "keyTakeaways": [
+                  "6 Fundamental Rights categories in Part III (Art. 12-35)",
+                  "Art 32 is the 'Heart and Soul' of the Constitution",
+                  "Art 21 includes right to privacy (Supreme Court ruling)",
+                  "Art 21A: Free elementary education (6-14 years) via 86th Amendment"
+                ],
+                "quickQuiz": {
+                  "question": "Which article guarantees the Right to Constitutional Remedies?",
+                  "options": [
+                    "Article 19",
+                    "Article 21",
+                    "Article 32",
+                    "Article 44"
+                  ],
+                  "answer": "Article 32",
+                  "explanation": "Article 32 allows citizens to approach the Supreme Court for enforcement of Fundamental Rights. Dr. B.R. Ambedkar called it the 'Heart and Soul' of the Constitution."
+                }
+              },
+              {
+                "id": "nda-polity-freedom",
+                "title": "Indian Freedom Movement (1857-1947)",
+                "type": "Historical Note",
+                "readTime": "16 mins",
+                "content": "KEY PHASES:\n\n1. EARLY PHASE (1857-1905):\n- 1857 Revolt: First War of Independence\n- 1885: Indian National Congress founded (A.O. Hume)\n- Moderate leaders: Dadabhai Naoroji, Gokhale\n- Methods: Petitions, prayers, constitutional means\n\n2. EXTREMIST PHASE (1905-1920):\n- 1905: Partition of Bengal (Lord Curzon)\n- Swadeshi Movement, Boycott of British goods\n- Extremists: Tilak, Bipin Chandra Pal, Lala Lajpat Rai\n- 'Swaraj is my birthright' — Bal Gangadhar Tilak\n\n3. GANDHIAN ERA (1920-1947):\n- 1920: Non-Cooperation Movement\n- 1930: Civil Disobedience / Salt March (Dandi)\n- 1942: Quit India Movement ('Do or Die')\n- 1947: Independence & Partition\n\nIMPORTANT ACTS:\n- Regulating Act 1773\n- Charter Acts: 1813, 1833, 1853\n- Government of India Acts: 1858, 1919, 1935",
+                "keyTakeaways": [
+                  "Three phases: Moderate → Extremist → Gandhian",
+                  "1885: INC founded; 1905: Bengal Partition; 1930: Salt March",
+                  "Quit India 1942: 'Do or Die' slogan by Gandhi",
+                  "Key Acts: GoI Act 1935 (basis for Constitution)"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nda-gat-english",
+            "name": "English: Grammar & Comprehension",
+            "estimatedTime": "20 mins",
+            "topics": [
+              {
+                "id": "nda-eng-errors",
+                "title": "Spotting Errors & Subject-Verb Agreement",
+                "type": "Practice Guide",
+                "readTime": "8 mins",
+                "content": "SUBJECT-VERB AGREEMENT RULES:\n\nRULE 1: Collectives ('family', 'crew', 'committee') take singular verb when acting as a single unit.\n✓ The committee has submitted its report.\n✓ The committee are divided on this issue. (members acting individually)\n\nRULE 2: 'As well as', 'along with', 'together with' don't change the subject.\n✓ The Captain, along with his crew members, was saved.\n\nRULE 3: 'Neither...nor' and 'Either...or' — verb agrees with the nearest subject.\n✓ Neither of the boys has done his homework.\n\nRULE 4: Uncountable nouns take singular verbs.\n✓ The news is shocking. (NOT 'are')\n✓ Mathematics is interesting.\n\nHIGH-FREQUENCY PREPOSITIONS:\n- Abstain FROM\n- Comply WITH\n- Congenial TO\n- Look forward TO + gerund (-ing)\n- Accuse OF\n- Preside OVER",
+                "keyTakeaways": [
+                  "Collective nouns: singular when unit, plural when members",
+                  "'Along with', 'as well as' don't affect the subject",
+                  "Neither...nor → verb agrees with nearest subject",
+                  "Learn fixed prepositions: abstain FROM, comply WITH"
+                ],
+                "quickQuiz": {
+                  "question": "Choose the correct sentence:",
+                  "options": [
+                    "The news are shocking",
+                    "The Captain along with crew were saved",
+                    "Neither of the boys has done his homework",
+                    "The committee are submitted its report"
+                  ],
+                  "answer": "Neither of the boys has done his homework",
+                  "explanation": "'Neither of' takes a singular verb. The news IS (uncountable). The Captain...WAS saved ('along with' doesn't change subject)."
+                }
+              },
+              {
+                "id": "nda-eng-vocab",
+                "title": "Vocabulary: Synonyms & Antonyms",
+                "type": "Vocabulary",
+                "readTime": "10 mins",
+                "content": "HIGH-FREQUENCY VOCABULARY:\n\nSYNONYMS:\n- Aberrant → Deviant, Anomalous\n- Benevolent → Kind, Generous\n- Candid → Frank, Honest\n- Diligent → Hardworking, Assiduous\n- Ephemeral → Short-lived, Transient\n\nANTONYMS:\n- Transient ↔ Permanent\n- Spurious ↔ Genuine\n- Ephemeral ↔ Eternal\n- Pragmatic ↔ Idealistic\n- Verbose ↔ Concise\n\nIDIOMS:\n- 'To burn the candle at both ends' → Work excessively\n- 'A wolf in sheep's clothing' → Hypocrite\n- 'To take the bull by the horns' → Face difficulty directly\n- 'A bird in hand is worth two in the bush' → Certainty > uncertainty",
+                "keyTakeaways": [
+                  "Learn antonym pairs: Transient-Permanent, Spurious-Genuine",
+                  "Ephemeral = short-lived (NOT eternal)",
+                  "Idioms are tested 5-10 questions per NDA exam",
+                  "Focus on words starting with A-E for highest frequency"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pdf_vault": [
+      {
+        "id": "nda-syllabus",
+        "filename": "nda_official_syllabus_2026.pdf",
+        "title": "UPSC NDA Official Syllabus Blueprint",
+        "description": "The authoritative syllabus guidelines for Mathematics and GAT papers directly from UPSC notifications.",
+        "pages": [
+          {
+            "page_number": 1,
+            "section": "EXAMINATION SCHEME & WEIGHTAGE",
+            "content": "UNION PUBLIC SERVICE COMMISSION\nNATIONAL DEFENCE ACADEMY & NAVAL ACADEMY EXAMINATION\n\nI. WRITTEN EXAMINATION SCHEME:\n1. Mathematics (Paper-I) - 2.5 Hours - 120 Questions - 300 Marks. Negative Marking: -0.83 marks per incorrect response.\n2. General Ability Test (Paper-II) - 2.5 Hours - 150 Questions - 600 Marks. Negative Marking: -1.33 marks per incorrect response.\nTotal Written Marks: 900 Marks.\n\nII. SSB STAGE-I & II SELECTION:\nServices Selection Board evaluations consist of Intelligence and Personality tests contributing an additional 900 Marks."
+          }
+        ]
+      },
+      {
+        "id": "nda-maths-pyq",
+        "title": "NDA Mathematics 2025 Solved PYQ",
+        "filename": "nda_maths_pyq_2025.pdf",
+        "description": "Selected high-difficulty PYQ problems from the Mathematics paper with detailed solutions.",
+        "pages": [
+          {
+            "page_number": 1,
+            "section": "PROBABILITY & VECTOR PYQS",
+            "content": "UPSC NDA 2025 MATHEMATICS SOLVED PREVIOUS YEAR QUESTIONS\n\nQ1. If vector A = i + j + k and vector B = 2i - j - k, what is the projection of A on B?\nSolution: Projection = (A·B)/|B| = 0/√6 = 0.\n\nQ2. Three coins are tossed. Probability of at least two heads?\nSolution: Total outcomes = 8. Favorable = {HHH, HHT, HTH, THH} = 4.\nProbability = 4/8 = 1/2."
+          }
+        ]
+      }
+    ],
+    "video_vault": [
+      {
+        "id": "nda-vid-calculus",
+        "title": "UPSC NDA Maths Calculus & Limits Strategy",
+        "description": "Learn rapid-fire calculus tricks, continuity shortcut secrets, and L'Hopital shortcuts.",
+        "videoId": "K6mG_v-72tE",
+        "duration": "14:20 Mins",
+        "instructor": "Defense Math Academy"
+      },
+      {
+        "id": "nda-vid-english",
+        "title": "NDA English Grammar: Spotting Errors Masterclass",
+        "description": "50 most repeated grammar errors, subject-verb rules, and prepositions for NDA GAT.",
+        "videoId": "e09z9J07m4I",
+        "duration": "22:45 Mins",
+        "instructor": "Kalam English Wing"
+      }
+    ]
+  },
+  "cds": {
+    "title": "CDS Exam Study Portal",
+    "category": "CDS (Combined Defence Services)",
+    "description": "Advanced training resources for the Combined Defence Services entry. Curated for IMA, OTA, INA, and AFA aspirants.",
+    "color": "amber",
+    "subjects": [
+      {
+        "id": "cds-paper1",
+        "name": "Paper I: English (100 Marks)",
+        "icon": "book",
+        "chapters": [
+          {
+            "id": "cds-eng-grammar",
+            "name": "Grammar & Error Detection",
+            "estimatedTime": "25 mins",
+            "topics": [
+              {
+                "id": "cds-eng-cloze",
+                "title": "Cloze Test & Sentence Jumbles",
+                "type": "Tactic Guide",
+                "readTime": "10 mins",
+                "content": "CLOZE TEST STRATEGY:\n1. Read the ENTIRE passage first to gauge tone (positive, negative, scientific, historical)\n2. Match tense continuity throughout\n3. Look for structural transition words: 'however', 'moreover', 'nonetheless'\n4. Select correct logical linkers based on context\n\nSENTENCE JUMBLES (PARAJUMBLES):\n1. Locate the Introductory Sentence — usually independent, introduces a noun\n2. Look for Pronouns — 'He', 'They', 'These' must follow the defining sentence\n3. Transition Words — 'However', 'Therefore' indicate consequence/contradiction\n4. Identify pairs that must be adjacent\n\nTIP: Eliminate options systematically rather than trying to arrange all sentences.",
+                "keyTakeaways": [
+                  "Read full passage first for cloze tests",
+                  "Introductory sentence is usually independent",
+                  "Pronouns must follow their antecedent sentence",
+                  "Eliminate options rather than building from scratch"
+                ]
+              },
+              {
+                "id": "cds-eng-reading",
+                "title": "Reading Comprehension Tactics",
+                "type": "Strategy",
+                "readTime": "8 mins",
+                "content": "READING COMPREHENSION APPROACH:\n\n1. SKIM the passage first (30 seconds)\n2. Read questions before detailed reading\n3. Mark key sentences that answer questions\n4. For inference questions, look for implied meaning\n5. For vocabulary in context, replace the word and check if meaning holds\n\nQUESTION TYPES:\n- Factual (directly stated) — easiest, find in text\n- Inferential (implied) — read between lines\n- Vocabulary (word meaning) — context-based\n- Title/Theme (main idea) — usually in first/last paragraphs\n\nCOMMON TRAP: Choosing an option that's true but doesn't answer the specific question asked.",
+                "keyTakeaways": [
+                  "Read questions first, then the passage",
+                  "Factual answers are directly in the text",
+                  "For inference, read between the lines",
+                  "Beware: true statement ≠ correct answer"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cds-paper2",
+        "name": "Paper II: General Knowledge (100 Marks)",
+        "icon": "globe",
+        "chapters": [
+          {
+            "id": "cds-gk-history",
+            "name": "Modern Indian History",
+            "estimatedTime": "30 mins",
+            "topics": [
+              {
+                "id": "cds-hist-viceroys",
+                "title": "Viceroy Reforms & Key Acts",
+                "type": "Concept Note",
+                "readTime": "16 mins",
+                "content": "IMPORTANT VICEROYS & THEIR REFORMS:\n\nLord Mayo (1869-72): Introduced financial decentralization\nLord Ripon (1880-84): Father of Local Self-Government (1882 Resolution)\nLord Curzon (1899-1905): Partition of Bengal (1905)\nLord Minto II (1905-10): Indian Councils Act 1909 (Morley-Minto Reforms)\nLord Hardinge II (1910-16): Shifted capital from Calcutta to Delhi (1911)\nLord Chelmsford (1916-21): GoI Act 1919 (Montagu-Chelmsford Reforms)\nLord Irwin (1926-31): Gandhi-Irwin Pact (1931)\nLord Mountbatten (1947): Last Viceroy, oversaw Indian Independence\n\nKEY ACTS:\n- Charter Acts: 1813, 1833, 1853\n- Government of India Act 1858: Crown took over from East India Company\n- GoI Act 1919: Dyarchy introduced\n- GoI Act 1935: Provincial autonomy, federal structure (basis for Constitution)",
+                "keyTakeaways": [
+                  "Lord Ripon = Father of Local Self-Government (1882)",
+                  "GoI Act 1935 = basis for Indian Constitution",
+                  "Lord Curzon partitioned Bengal in 1905",
+                  "Lord Mountbatten was the last Viceroy"
+                ],
+                "quickQuiz": {
+                  "question": "Which Viceroy is known as the Father of Local Self-Government?",
+                  "options": [
+                    "Lord Mayo",
+                    "Lord Ripon",
+                    "Lord Lytton",
+                    "Lord Curzon"
+                  ],
+                  "answer": "Lord Ripon",
+                  "explanation": "Lord Ripon introduced the Local Self-Government resolution in 1882, establishing municipal boards and district councils."
+                }
+              },
+              {
+                "id": "cds-hist-science",
+                "title": "General Science: Cell Biology & Systems",
+                "type": "Study Sheet",
+                "readTime": "12 mins",
+                "content": "CELL BIOLOGY:\n- Mitochondria: Powerhouse of the cell (ATP production)\n- Lysosomes: Suicidal bags (contain digestive enzymes)\n- Ribosomes: Protein synthesis\n- Golgi apparatus: Packaging and secretion\n\nHUMAN BODY SYSTEMS:\n- Endocrine: Insulin (pancreas), Thyroid hormones, Adrenaline (adrenal)\n- Circulatory: Heart pumps blood, arteries carry oxygenated blood\n- Nervous: Brain, spinal cord, peripheral nerves\n\nPLANT ANATOMY:\n- Xylem: Water transport (root to leaves)\n- Phloem: Food transport (leaves to other parts)\n- Stomata: Gas exchange and transpiration\n\nGENETICS:\n- Mendel's Laws: Dominance, Segregation, Independent Assortment\n- DNA: Double helix, contains genetic information\n- Genes are units of heredity located on chromosomes",
+                "keyTakeaways": [
+                  "Mitochondria = Powerhouse; Lysosomes = Suicidal bags",
+                  "Xylem = water up; Phloem = food down",
+                  "Mendel's 3 laws: Dominance, Segregation, Independent Assortment",
+                  "Insulin from pancreas, adrenaline from adrenal glands"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cds-gk-math",
+            "name": "Elementary Mathematics",
+            "estimatedTime": "30 mins",
+            "topics": [
+              {
+                "id": "cds-math-mensuration",
+                "title": "3D Geometry & Mensuration",
+                "type": "Formula Guide",
+                "readTime": "14 mins",
+                "content": "3D MENSURATION FORMULAS:\n\nSPHERE:\n- Volume: (4/3)πr³\n- Surface area: 4πr²\n- Sphere inscribed in cylinder: Volume(sphere) = (2/3) × Volume(cylinder)\n\nCONE:\n- Volume: (1/3)πr²h\n- Slant height: l = √(r² + h²)\n- Curved surface area: πrl\n\nCYLINDER:\n- Volume: πr²h\n- Curved surface area: 2πrh\n- Total surface area: 2πr(r + h)\n\nFRUSTUM:\n- Volume: (πh/3)(R² + r² + Rr)\n- Slant height: l = √(h² + (R-r)²)\n\nIf radius is doubled:\n- Volume increases 8x (since V ∝ r³)\n- Percentage increase = 700%",
+                "keyTakeaways": [
+                  "Sphere volume = (4/3)πr³, surface = 4πr²",
+                  "Sphere inscribed in cylinder: V_sphere = (2/3)V_cylinder",
+                  "Doubling radius → 8× volume → 700% increase",
+                  "Know frustum formulas — frequently tested"
+                ],
+                "quickQuiz": {
+                  "question": "If the radius of a sphere is doubled, what is the % increase in volume?",
+                  "options": [
+                    "100%",
+                    "300%",
+                    "700%",
+                    "800%"
+                  ],
+                  "answer": "700%",
+                  "explanation": "New volume = (4/3)π(2r)³ = 8 × original. Increase = (8V-V)/V × 100 = 700%."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pdf_vault": [
+      {
+        "id": "cds-syllabus",
+        "title": "UPSC CDS Official Syllabus Blueprint",
+        "filename": "cds_official_syllabus_2026.pdf",
+        "description": "Comprehensive subject breakdown and eligibility profiles for IMA, OTA, INA, and AFA academies.",
+        "pages": [
+          {
+            "page_number": 1,
+            "section": "CDS EXAM SCHEME",
+            "content": "COMBINED DEFENCE SERVICES (CDS) WRITTEN SCHEME\n\nI. FOR IMA, INA, AFA ASPIRANTS:\n1. English (Paper I) - 2 Hours - 120 Questions - 100 Marks.\n2. General Knowledge (Paper II) - 2 Hours - 120 Questions - 100 Marks.\n3. Elementary Mathematics (Paper III) - 2 Hours - 100 Questions - 100 Marks.\nTotal Written Marks: 300 Marks.\n\nII. FOR OTA ASPIRANTS:\n1. English - 100 Marks.\n2. General Knowledge - 100 Marks.\nTotal Written Marks: 200 Marks."
+          }
+        ]
+      }
+    ],
+    "video_vault": [
+      {
+        "id": "cds-vid-polity",
+        "title": "UPSC CDS Polity Masterclass: High Yield Articles",
+        "description": "Breakdown of fundamental rights, judicial writs, and amendment laws for CDS GK.",
+        "videoId": "xG4bQ0zQ3mU",
+        "duration": "28:15 Mins",
+        "instructor": "Kalam Polity Wing"
+      }
+    ]
+  },
+  "afcat": {
+    "title": "AFCAT Exam Study Portal",
+    "category": "AFCAT (Air Force Common Admission Test)",
+    "description": "Specialized Air Force preparation. Focused on military aptitude, spatial reasoning, and aviation terminology.",
+    "color": "blue",
+    "subjects": [
+      {
+        "id": "afcat-numerical",
+        "name": "Numerical Ability (20 Questions)",
+        "icon": "calculator",
+        "chapters": [
+          {
+            "id": "afcat-speed",
+            "name": "Time, Speed & Distance",
+            "estimatedTime": "20 mins",
+            "topics": [
+              {
+                "id": "afcat-speed-trains",
+                "title": "Train & Platform Problems",
+                "type": "Tactic Sheet",
+                "readTime": "10 mins",
+                "content": "RELATIVE SPEED CONCEPT:\n\nWhen two trains move in OPPOSITE directions:\nRelative speed = S₁ + S₂\n\nWhen moving in SAME direction:\nRelative speed = |S₁ - S₂|\n\nTRAIN CROSSING:\n- Train crossing a pole: Distance = Length of train\n- Train crossing platform: Distance = Length of train + Length of platform\n- Two trains crossing each other: Distance = L₁ + L₂\n\nCONVERSION: km/h to m/s → multiply by 5/18\nm/s to km/h → multiply by 18/5\n\nAVERAGE SPEED for equal distances:\nAvg Speed = 2xy/(x+y) where x, y are the two speeds\n\nExample: A train 150m long passes a pole in 15 seconds.\nSpeed = 150/15 = 10 m/s = 10 × 18/5 = 36 km/h",
+                "keyTakeaways": [
+                  "Opposite direction: add speeds; Same direction: subtract",
+                  "Train + platform crossing: distance = L_train + L_platform",
+                  "km/h to m/s: multiply by 5/18",
+                  "Average speed for equal distances: 2xy/(x+y)"
+                ],
+                "quickQuiz": {
+                  "question": "A train 150m long passes a pole in 15 seconds. Speed in km/h?",
+                  "options": [
+                    "36 km/h",
+                    "45 km/h",
+                    "54 km/h",
+                    "60 km/h"
+                  ],
+                  "answer": "36 km/h",
+                  "explanation": "Speed = 150/15 = 10 m/s. Convert: 10 × 18/5 = 36 km/h."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "afcat-reasoning",
+        "name": "Reasoning & Military Aptitude (25 Questions)",
+        "icon": "brain",
+        "chapters": [
+          {
+            "id": "afcat-spatial",
+            "name": "Spatial Ability & Reasoning",
+            "estimatedTime": "25 mins",
+            "topics": [
+              {
+                "id": "afcat-spatial-blocks",
+                "title": "Rotating Blocks & Figure Matrix",
+                "type": "Concept Note",
+                "readTime": "12 mins",
+                "content": "SPATIAL ABILITY:\n\n1. 3D ROTATION:\n- Count vertices and lines of objects\n- Track asymmetric markers (e.g., dot position, arrow direction)\n- If object rotates 90° clockwise each step, check marker orientation\n- Use elimination: if marker moves counterclockwise, eliminate that option\n\n2. FIGURE MATRIX:\n- Examine row-wise AND column-wise progressions\n- Third figure is often the 'sum' (lines added) or 'subtraction' (common lines removed)\n- Check for: rotation, reflection, color inversion, element addition\n\n3. DOT SITUATION:\n- Identify intersecting regions first\n- A dot in Triangle ∩ Circle but NOT in Square\n- Match the geometric overlap pattern in options\n\n4. EMBEDDED FIGURES:\n- Look for the hidden figure in the same orientation\n- Trace the outline systematically from one corner",
+                "keyTakeaways": [
+                  "Count vertices and track asymmetric markers for rotation",
+                  "Figure matrix: check row-wise and column-wise patterns",
+                  "Dot situation: identify intersecting regions first",
+                  "Use elimination strategy for spatial problems"
+                ]
+              },
+              {
+                "id": "afcat-spatial-venn",
+                "title": "Venn Diagrams & Logical Relations",
+                "type": "Practice Guide",
+                "readTime": "8 mins",
+                "content": "VENN DIAGRAM MODELS:\n\n1. SUBSET: A entirely inside B\nExample: Iron inside Metal (Iron is a type of Metal)\n\n2. DISJOINT: A and B completely separate\nExample: Dogs and Cats (mutually exclusive categories)\n\n3. OVERLAP: A and B partially intersect\nExample: Students and Athletes (some students are athletes)\n\nHIGH FREQUENCY:\n- 'Dogs, Pets, Cats': Two disjoint circles inside a larger 'Pets' circle\n- 'Metal, Iron, Chlorine': Iron ⊂ Metal, Chlorine separate\n- 'Judge, Thief, Criminal': Thief ⊂ Criminal, Judge separate\n\nTRICK: Ask yourself 'Is every A a B? Is every B an A? Can something be both?'",
+                "keyTakeaways": [
+                  "Three relationships: Subset, Disjoint, Overlap",
+                  "Ask: 'Is every A a B?' to determine relationship",
+                  "Thief ⊂ Criminal (all thieves are criminals)",
+                  "Dogs and Cats are disjoint within the Pets superset"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "afcat-ga",
+        "name": "General Awareness (25 Questions)",
+        "icon": "flag",
+        "chapters": [
+          {
+            "id": "afcat-iaf",
+            "name": "IAF Knowledge & Aviation",
+            "estimatedTime": "20 mins",
+            "topics": [
+              {
+                "id": "afcat-iaf-aircraft",
+                "title": "IAF Aircraft & Squadrons",
+                "type": "IAF Blueprint",
+                "readTime": "14 mins",
+                "content": "ACTIVE FIGHTER AIRCRAFT:\n\n1. RAFALE (Dassault Aviation - France):\n- Role: Multi-role Omni-role fighter\n- No. 17 Squadron 'Golden Arrows' at Ambala\n- No. 101 Squadron 'Falcons' at Hasimara\n\n2. SU-30 MKI (Sukhoi - Russia/HAL):\n- Twin-engine air superiority fighter\n- Thrust vectoring, AESA radar\n- BrahMos integration\n\n3. TEJAS (HAL - India):\n- Indigenous Light Combat Aircraft (LCA)\n- Single-engine, delta wing\n- No. 45 Squadron 'Flying Daggers'\n\n4. MiG-29 (Russia): Air defense interceptor\n\nTRANSPORT: C-17 Globemaster, C-130J Super Hercules\nHELICOPTERS: Chinook, Apache, ALH Dhruv\n\nCOMMANDS:\n- Western Air Command: New Delhi\n- Eastern Air Command: Shillong\n- Southern Air Command: Thiruvananthapuram\n- Central Air Command: Prayagraj\n- Maintenance Command: Nagpur\n- Training Command: Bangalore",
+                "keyTakeaways": [
+                  "Rafale squadrons: Golden Arrows (Ambala), Falcons (Hasimara)",
+                  "Tejas is India's indigenous LCA (HAL)",
+                  "Maintenance Command HQ: Nagpur",
+                  "Know all 7 commands and their locations"
+                ],
+                "quickQuiz": {
+                  "question": "Where is the HQ of IAF Maintenance Command?",
+                  "options": [
+                    "Nagpur",
+                    "Bangalore",
+                    "Prayagraj",
+                    "Gandhinagar"
+                  ],
+                  "answer": "Nagpur",
+                  "explanation": "Maintenance Command is at Nagpur. Training Command at Bangalore. Central Air Command at Prayagraj."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pdf_vault": [
+      {
+        "id": "afcat-math-tricks",
+        "title": "AFCAT Numerical Ability Shortcuts",
+        "filename": "afcat_numerical_ability_tricks.pdf",
+        "description": "Shortcuts and quick formulas for speed, work, and profit/loss problems.",
+        "pages": [
+          {
+            "page_number": 1,
+            "section": "RAPID WORK & SPEED FORMULAS",
+            "content": "1. RATIO APPROACH FOR WORK:\nIf A takes 10 days and B takes 15 days:\nDays ratio = 2:3, Efficiency ratio = 3:2\nTotal work = 30 units. Together = 6 days.\n\n2. BOATS & STREAMS:\nDownstream = Boat + Stream\nUpstream = Boat - Stream\nBoat speed = (D+U)/2\nStream speed = (D-U)/2"
+          }
+        ]
+      }
+    ],
+    "video_vault": [
+      {
+        "id": "afcat-vid-aptitude",
+        "title": "AFCAT Spatial Ability & Figure Matrix Hacks",
+        "description": "Master visual deduction shortcuts for pattern rotations and figure sequences.",
+        "videoId": "WkI3_F6T_yY",
+        "duration": "16:40 Mins",
+        "instructor": "Aviation Aptitude Wing"
+      }
+    ]
+  },
+  "ssb": {
+    "title": "SSB Interview Master Guide",
+    "category": "SSB (Services Selection Board)",
+    "description": "Comprehensive psychological, GTO, and interview master templates. Standardized against DRDO DIPR guidelines for 15 OLQs.",
+    "color": "red",
+    "subjects": [
+      {
+        "id": "ssb-stage1",
+        "name": "Stage I: Screening Test",
+        "icon": "target",
+        "chapters": [
+          {
+            "id": "ssb-oir",
+            "name": "OIR & PPDT",
+            "estimatedTime": "25 mins",
+            "topics": [
+              {
+                "id": "ssb-oir-strategy",
+                "title": "OIR Strategy & Speed Hacks",
+                "type": "Screening Guide",
+                "readTime": "10 mins",
+                "content": "OIR (Officer Intelligence Rating) TEST:\n\nKey Facts:\n- 50 questions in limited time\n- NO negative marking — attempt ALL questions\n- Verbal + Non-verbal reasoning battery\n\nSTRATEGY:\n1. Speed is everything — don't get stuck on hard questions\n2. For dice problems: opposite faces rule — adjacent faces can never be opposite\n3. For series: check differences, then differences of differences\n4. For analogies: identify the relationship type (synonym, antonym, part-whole, category)\n\nNON-VERBAL TRICKS:\n- Count the number of straight lines and curves\n- Check for rotation pattern (90°, 180°, flip)\n- In odd-one-out: majority rule — 4 similar, 1 different\n\nTIME MANAGEMENT:\n- Don't spend more than 20 seconds on any question\n- Mark doubtful ones and return later\n- Accuracy matters less than coverage (no negative marking)",
+                "keyTakeaways": [
+                  "No negative marking — attempt ALL 50 questions",
+                  "20 seconds max per question",
+                  "Dice: opposite faces can never be adjacent",
+                  "Non-verbal: count lines, check rotation patterns"
+                ]
+              },
+              {
+                "id": "ssb-ppdt-strategy",
+                "title": "PPDT: Story Construction",
+                "type": "Screening Guide",
+                "readTime": "12 mins",
+                "content": "PPDT (Picture Perception & Discussion Test):\n\nSTEP 1: OBSERVATION (30 seconds)\n- Count characters and their genders\n- Identify age groups and moods\n- Note the setting (urban/rural/office/outdoor)\n\nSTEP 2: STORY WRITING (4 minutes)\nStructure:\n- Hero introduction (Name, Age, Mood)\n- What led to the situation\n- The Action taken by hero\n- Positive outcome\n\nRULES:\n- Keep hero's age close to yours\n- Show positive, action-oriented behavior\n- Don't use 'leader' or 'officer' explicitly\n- Let actions demonstrate leadership\n- Even tragedy slides → show recovery\n\nSTEP 3: NARRATION (1 minute)\n- Mild smile, eye contact with group (NOT assessors)\n- Speak for exactly 45-50 seconds\n- Don't stammer — if interrupted, maintain flow politely",
+                "keyTakeaways": [
+                  "30 sec observation → 4 min writing → 1 min narration",
+                  "Hero's age should be close to yours",
+                  "Don't say 'leader' — let actions show leadership",
+                  "Eye contact with group, not assessors"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ssb-stage2-psych",
+        "name": "Stage II: Psychology Tests",
+        "icon": "brain",
+        "chapters": [
+          {
+            "id": "ssb-tat",
+            "name": "TAT & WAT",
+            "estimatedTime": "25 mins",
+            "topics": [
+              {
+                "id": "ssb-tat-heroes",
+                "title": "TAT: Hero Selection & Themes",
+                "type": "Psychology",
+                "readTime": "15 mins",
+                "content": "TAT (Thematic Apperception Test):\n11 slides + 1 blank slide\n\nHERO SELECTION:\n- Protagonist should be realistic (not superhero)\n- Age close to yours (20-25)\n- Positive, solution-oriented actions\n- Show planning, coordination, resource gathering, execution\n\nTHEME CONSTRUCTION:\n1. RURAL EMPOWERMENT: Youth organizing village development\n2. EMERGENCY RESPONSE: Coordinating rescue during natural disaster\n3. SOCIAL SERVICE: Starting education initiative for underprivileged\n4. TEAM LEADERSHIP: Leading a group project to successful completion\n\nAVOID:\n- Tragedy without recovery\n- Passive observation\n- Calling hero 'leader' or 'officer'\n- Fantasy/unrealistic scenarios\n- Negative themes (crime, corruption as central)\n\nBLANK SLIDE: Write about a real-life achievement or meaningful experience",
+                "keyTakeaways": [
+                  "11 picture slides + 1 blank slide",
+                  "Hero: realistic age (20-25), solution-oriented",
+                  "Show leadership through ACTIONS, not titles",
+                  "Blank slide = your real achievement story"
+                ]
+              },
+              {
+                "id": "ssb-wat-craft",
+                "title": "WAT: Sentence Crafting",
+                "type": "Psychology",
+                "readTime": "10 mins",
+                "content": "WAT (Word Association Test):\n60 words, 15 seconds per word\n\nDO:\n- Write observation-based, action-oriented sentences\n- 'Honesty breeds trust and respect'\n- 'Knowledge increases confidence in critical situations'\n- 'Challenges bring out hidden potential'\n- Keep sentences brief and spontaneous\n- Gender neutral responses\n\nDON'T:\n- Advisory sentences: 'We must be honest'\n- Dictionary definitions: 'Honesty is the best policy'\n- Negative associations\n- Complex or lengthy sentences\n- Controversial topics\n\nPRACTICE:\n- Practice 60 words daily\n- Time yourself (15 sec per word)\n- Aim for positive, constructive associations\n- Show social awareness and responsibility",
+                "keyTakeaways": [
+                  "60 words, 15 seconds each — speed is critical",
+                  "Write action-oriented, NOT advisory sentences",
+                  "Avoid: 'We must...' or dictionary definitions",
+                  "Practice daily with timer for speed"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ssb-srt",
+            "name": "SRT & Self Description",
+            "estimatedTime": "22 mins",
+            "topics": [
+              {
+                "id": "ssb-srt-strategy",
+                "title": "SRT: Practical Response Framework",
+                "type": "Psychology",
+                "readTime": "12 mins",
+                "content": "SRT (Situation Reaction Test):\n60 situations, 30 minutes\n\nFRAMEWORK FOR RESPONSES:\n1. ASSESS the situation quickly\n2. PRIORITIZE safety and urgent needs\n3. ACT using available resources\n4. INVOLVE others when appropriate\n5. FOLLOW UP with proper authorities\n\nEXAMPLE:\n'While traveling in a train at night, you notice armed robbers...'\n✓ Alert nearby passengers silently, coordinate defense, ambush when distracted, hand over to RPF\n✗ Attack single-handedly (unrealistic)\n✗ Hide under seat (cowardice)\n✗ Jump out of train (abandoning others)\n\nKEY TRAITS TO SHOW:\n- Practical intelligence (not heroism)\n- Cooperation and teamwork\n- Responsibility towards others\n- Calm decision-making under pressure\n- Use of available resources",
+                "keyTakeaways": [
+                  "60 situations in 30 minutes — be concise",
+                  "Show practical intelligence, not heroism",
+                  "Prioritize safety, involve others, follow up",
+                  "Avoid unrealistic responses (single-handed attack)"
+                ],
+                "quickQuiz": {
+                  "question": "Best SRT response for 'armed robbers on train':",
+                  "options": [
+                    "Hide under seat for safety",
+                    "Attack robbers single-handedly",
+                    "Jump out of train and run to police",
+                    "Alert co-passengers, coordinate defense, hand over to RPF"
+                  ],
+                  "answer": "Alert co-passengers, coordinate defense, hand over to RPF",
+                  "explanation": "Shows tactical awareness, group leadership, cooperation, and realistic execution — key OLQs."
+                }
+              },
+              {
+                "id": "ssb-sd-guide",
+                "title": "Self Description: Perspectives",
+                "type": "Psychology",
+                "readTime": "10 mins",
+                "content": "SELF DESCRIPTION TEST:\nWrite about yourself from 5 perspectives in 15 minutes\n\n1. YOUR PARENTS' VIEW:\n- Focus on values instilled\n- Strengths they appreciate\n- Areas they want you to improve\n\n2. YOUR TEACHERS' VIEW:\n- Academic sincerity\n- Classroom behavior\n- Extra-curricular participation\n\n3. YOUR FRIENDS' VIEW:\n- Reliability and trustworthiness\n- Fun and social skills\n- How you handle conflicts\n\n4. YOUR OWN VIEW:\n- Honest self-assessment\n- Strengths with specific examples\n- Weaknesses with improvement plan\n\n5. WHAT YOU WANT TO BE:\n- Career aspirations (defense service)\n- Personal growth goals\n- Contribution to society\n\nTIP: Keep all five perspectives CONSISTENT. Don't be a 'saint' in one and 'rebel' in another.",
+                "keyTakeaways": [
+                  "5 perspectives: Parents, Teachers, Friends, Self, Aspirations",
+                  "15 minutes total — be concise",
+                  "Consistency across all perspectives is crucial",
+                  "Show self-awareness and growth mindset"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ssb-stage2-gto",
+        "name": "Stage II: GTO Tasks",
+        "icon": "shield",
+        "chapters": [
+          {
+            "id": "ssb-gpe",
+            "name": "GPE & Group Tasks",
+            "estimatedTime": "30 mins",
+            "topics": [
+              {
+                "id": "ssb-gpe-blueprint",
+                "title": "GPE: Group Planning Exercise",
+                "type": "GTO Guide",
+                "readTime": "18 mins",
+                "content": "GPE (Group Planning Exercise):\n\nSTRUCTURE:\n1. Read the model sheet (map + problem statement)\n2. Write individual solution (10 minutes)\n3. Group discussion to reach consensus (20 minutes)\n\nPRIORITY FRAMEWORK:\n1st: Life-threatening (injuries, floods, fires)\n2nd: Property/security (theft, disputes)\n3rd: Minor tasks (reaching destination, routine)\n\nPLANNING APPROACH:\n- Divide group of 8-10 into sub-teams\n- 2 to handle casualty → nearest hospital\n- 3 to notify authorities (police, fire)\n- 3 to guard property and manage crowd\n\nCALCULATIONS:\n- Always calculate time = distance/speed\n- Account for terrain (hills = slower)\n- Deploy LOCAL resources first (village doctor, cart, guards)\n\nDISCUSSION TIPS:\n- Initiate if possible, but don't dominate\n- Build on others' ideas\n- Be the one who summarizes and gets consensus",
+                "keyTakeaways": [
+                  "Priority order: Life → Property → Routine tasks",
+                  "Divide group into sub-teams with clear roles",
+                  "Always calculate time-distance",
+                  "Use local resources first (village doctor, cart)"
+                ]
+              },
+              {
+                "id": "ssb-ct-obstacles",
+                "title": "Command Task & Individual Obstacles",
+                "type": "GTO Guide",
+                "readTime": "12 mins",
+                "content": "COMMAND TASK (CT):\n- You lead 2-3 subordinates\n- DON'T do manual work yourself\n- Give clear commands: 'Chest No. 5, tie the clove hitch here'\n- If GTO increases stress (removes structure), stay calm\n- Look for alternative fulcrums and approaches\n- Show problem-solving, not panic\n\nINDIVIDUAL OBSTACLES:\n- 10 obstacles in 3 minutes\n- Plan a CIRCULAR route (don't run haphazardly)\n- Do heavy-point obstacles FIRST (while stamina is high)\n\nRECOMMENDED SEQUENCE:\n1. Tiger Leap (high points)\n2. Commando Walk\n3. Tarzan Swing\n4. High Screen\n5. Balance beam\n6. Remaining obstacles\n\nSAFETY: Never skip safety protocols. Controlled aggression > reckless speed.\n\nTIP: Even if you can't complete an obstacle, ATTEMPT it. Effort is evaluated.",
+                "keyTakeaways": [
+                  "Command Task: COMMAND others, don't do the work yourself",
+                  "Individual Obstacles: plan circular route, heavy obstacles first",
+                  "Even failed attempts score points — always try",
+                  "Stay calm when GTO adds stress"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ssb-interview",
+        "name": "Personal Interview",
+        "icon": "target",
+        "chapters": [
+          {
+            "id": "ssb-pi",
+            "name": "PIQ & Interview Prep",
+            "estimatedTime": "25 mins",
+            "topics": [
+              {
+                "id": "ssb-pi-piq",
+                "title": "PIQ Alignment Strategy",
+                "type": "Interview Guide",
+                "readTime": "12 mins",
+                "content": "PIQ (Personal Information Questionnaire):\nThis is the interviewer's MAP of your life.\n\nCRITICAL: Any contradiction between PIQ and verbal responses = lack of transparency.\n\nMEMORIZE:\n- Exact dates of education (school, college, competitive exams)\n- Family income source and approximate figures\n- Positions of responsibility held\n- Specific achievements with dates\n- Hobbies with depth of knowledge\n- Sports played (rules, positions, recent events)\n\nFREQUENT QUESTIONS:\n- 'Why did you choose this hobby?'\n- 'How do you spend your monthly money?'\n- 'Describe a disagreement with your father/teacher and resolution'\n- 'Why defense? Why not civil services?'\n- 'Tell me about your hometown'\n\nTIP: Practice mock interviews weekly. Record and review yourself.",
+                "keyTakeaways": [
+                  "PIQ = interviewer's map — know it inside out",
+                  "Never contradict your PIQ in verbal responses",
+                  "Know hobbies in depth (rules, equipment, recent events)",
+                  "Practice mock interviews and record yourself"
+                ]
+              },
+              {
+                "id": "ssb-pi-defense",
+                "title": "Defense Awareness & Current Affairs",
+                "type": "Knowledge Guide",
+                "readTime": "10 mins",
+                "content": "DEFENSE AWARENESS FOR INTERVIEW:\n\nARMED FORCES STRUCTURE:\n- Army: COAS, 7 commands, ranks (Lt to General)\n- Navy: CNS, 3 commands, ranks (Sub Lt to Admiral)\n- Air Force: CAS, 7 commands, ranks (Pilot Officer to Air Chief Marshal)\n\nCURRENT KNOWLEDGE:\n- Recent military exercises (Yudh Abhyas, Malabar, RIMPAC)\n- Recent acquisitions (Rafale, S-400, Tejas Mk2)\n- Border situations (LAC, LOC developments)\n- Gallantry award winners (Param Vir Chakra, Ashoka Chakra)\n\nKEY FACTS:\n- Indian Army Day: 15 January\n- Navy Day: 4 December\n- Air Force Day: 8 October\n- Kargil Vijay Diwas: 26 July\n\nTIP: Follow defense news daily for 30 days before SSB.\nFollow: @indianarmy.adgpi, @indiannavy, @IAF_MCC",
+                "keyTakeaways": [
+                  "Know structure: Army (7 commands), Navy (3), Air Force (7)",
+                  "Follow defense news daily for 30 days pre-SSB",
+                  "Key dates: Army Day 15 Jan, Navy 4 Dec, Air Force 8 Oct",
+                  "Recent exercises and acquisitions are always asked"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pdf_vault": [
+      {
+        "id": "ssb-olq-matrix",
+        "title": "DRDO DIPR Standard 15 OLQ Assessment Grid",
+        "filename": "ssb_dipr_olq_assessment_matrix.pdf",
+        "description": "The exact diagnostic rubric matrix used by psychologists, interviewers, and GTO officers.",
+        "pages": [
+          {
+            "page_number": 1,
+            "section": "FACTOR 1: COGNITIVE ABILITIES",
+            "content": "DEFENCE RESEARCH & DEVELOPMENT ORGANISATION (DRDO)\nDEFENCE INSTITUTE OF PSYCHOLOGICAL RESEARCH (DIPR)\n\nFACTOR I: PLANNING AND ORGANISING\n1. EFFECTIVE INTELLIGENCE (EI): Practical intelligence\n2. REASONING ABILITY (RA): Logical connections\n3. ORGANISING ABILITY (OA): Resource deployment\n4. POWER OF EXPRESSION (POE): Verbal clarity"
+          },
+          {
+            "page_number": 2,
+            "section": "FACTOR 2 & 3: SOCIAL & DYNAMIC TRAITS",
+            "content": "FACTOR II: SOCIAL ADAPTABILITY\n5. SOCIAL ADAPTABILITY (SA)\n6. COOPERATION (CO)\n7. SENSE OF RESPONSIBILITY (SOR)\n\nFACTOR III: SOCIAL EFFECTIVENESS\n8. INITIATIVE\n9. SELF-CONFIDENCE\n10. SPEED OF DECISION"
+          }
+        ]
+      }
+    ],
+    "video_vault": [
+      {
+        "id": "ssb-vid-gpe",
+        "title": "SSB GTO Group Planning Exercise Strategy",
+        "description": "Prioritization, resource division, and spatial calculations for GPE.",
+        "videoId": "v5yP62c-UfE",
+        "duration": "18:25 Mins",
+        "instructor": "GTO Operations Expert"
+      },
+      {
+        "id": "ssb-vid-psych",
+        "title": "SSB Stage-2 Psychology: TAT, WAT, SRT Masterclass",
+        "description": "Active hero roles, observation-based WAT sentences, logical SRT frameworks.",
+        "videoId": "334WwZfXn9U",
+        "duration": "24:10 Mins",
+        "instructor": "DIPR Psychology Panel"
+      }
+    ]
+  }
+}

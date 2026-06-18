@@ -1,0 +1,222 @@
+{
+  "id": "nda-math-01-t10",
+  "title": "Standard Functions — Identity, Modulus, Signum",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Standard functions form the building blocks of calculus and are fundamental for understanding more complex mathematical concepts. For the NDA examination, a solid grasp of their definitions, domains, ranges, graphs, and key properties is essential. This section covers the Identity, Modulus (Absolute Value), and Signum functions, providing detailed explanations and examples to aid your preparation."
+    },
+    {
+      "type": "heading",
+      "data": "1. Identity Function"
+    },
+    {
+      "type": "text",
+      "data": "The Identity function is one of the simplest and most fundamental functions. It maps every real number to itself."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "f(x) = x",
+        "note": "For any real number x, the output of the identity function is x itself."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "Domain: All real numbers (R)",
+        "Range: All real numbers (R)",
+        "Graph: A straight line y=x passing through the origin (0,0) and making an angle of 45° with the positive x-axis.",
+        "It is both one-to-one (injective) and onto (surjective), hence a bijection.",
+        "It is a continuous function."
+      ]
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Graph of Identity Function",
+        "description": "Shows the straight line y=x passing through the origin.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[x-axis] --> B[y-axis]\n    subgraph f(x) = x\n        P1(-2,-2) --> P2(0,0)\n        P2(0,0) --> P3(2,2)\n    end"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "2. Modulus Function (Absolute Value Function)"
+    },
+    {
+      "type": "text",
+      "data": "The Modulus function, denoted by |x|, gives the absolute value of a real number x. It returns the magnitude of the number, irrespective of its sign."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "f(x) = |x| = \\begin{cases} x & \\text{if } x \\ge 0 \\\\ -x & \\text{if } x < 0 \\end{cases}",
+        "note": "The absolute value of x is x if x is non-negative, and -x if x is negative (making it positive)."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "Domain: All real numbers (R)",
+        "Range: All non-negative real numbers ([0, ∞))",
+        "Graph: A 'V' shaped curve, symmetric about the y-axis, with its vertex at the origin (0,0).",
+        "It is a continuous function but not differentiable at x=0 (it has a sharp corner).",
+        "It is an even function, i.e., f(-x) = f(x)."
+      ]
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Property",
+          "Description",
+          "Example"
+        ],
+        "rows": [
+          [
+            "|x| ≥ 0",
+            "Absolute value is always non-negative.",
+            "|-5| = 5 ≥ 0"
+          ],
+          [
+            "|x| = |-x|",
+            "Absolute value of a number and its negative are equal.",
+            "|3| = |-3| = 3"
+          ],
+          [
+            "|xy| = |x||y|",
+            "Absolute value of a product.",
+            "|-2 × 3| = |-6| = 6; |-2||3| = 2 × 3 = 6"
+          ],
+          [
+            "|x/y| = |x|/|y| (y ≠ 0)",
+            "Absolute value of a quotient.",
+            "|6/-2| = |-3| = 3; |6|/|-2| = 6/2 = 3"
+          ],
+          [
+            "|x|² = x²",
+            "Square of absolute value is square of the number.",
+            "|-4|² = 4² = 16; (-4)² = 16"
+          ],
+          [
+            "√(x²) = |x|",
+            "Square root of a square is absolute value.",
+            "√( (-5)² ) = √25 = 5 = |-5|"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Solving inequalities with modulus: \n1.  |x| < a  implies  -a < x < a (where a > 0)\n2.  |x| > a  implies  x > a or x < -a (where a > 0)\n3.  |x| = a  implies  x = a or x = -a"
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Solve for x: |2x - 3| < 5",
+        "solution": "Given the inequality |2x - 3| < 5.\nUsing the property |X| < a implies -a < X < a, we have:\n-5 < 2x - 3 < 5\nAdd 3 to all parts of the inequality:\n-5 + 3 < 2x - 3 + 3 < 5 + 3\n-2 < 2x < 8\nDivide all parts by 2:\n-2/2 < 2x/2 < 8/2\n-1 < x < 4",
+        "answer": "The solution set is (-1, 4)."
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Graph of Modulus Function",
+        "description": "Shows the V-shaped graph of f(x) = |x|.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph LR\n    A[x-axis] --> B[y-axis]\n    subgraph f(x) = |x|\n        P1(-2,2) --> P2(0,0)\n        P2(0,0) --> P3(2,2)\n    end"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "3. Signum Function"
+    },
+    {
+      "type": "text",
+      "data": "The Signum function, often denoted as sgn(x), returns the sign of a real number. It maps positive numbers to 1, negative numbers to -1, and zero to 0."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "f(x) = \\text{sgn}(x) = \\begin{cases} 1 & \\text{if } x > 0 \\\\ 0 & \\text{if } x = 0 \\\\ -1 & \\text{if } x < 0 \\end{cases}",
+        "note": "The signum function outputs 1 for positive inputs, -1 for negative inputs, and 0 for zero."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "Domain: All real numbers (R)",
+        "Range: {-1, 0, 1}",
+        "Graph: Consists of three parts: a horizontal line at y=1 for x>0, a point at (0,0), and a horizontal line at y=-1 for x<0.",
+        "It is a discontinuous function at x=0 (it has a jump discontinuity).",
+        "It is an odd function, i.e., f(-x) = -f(x).",
+        "Can also be expressed as sgn(x) = x/|x| for x ≠ 0, and sgn(0) = 0."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "💡 IMPORTANT: The discontinuity of the Signum function at x=0 is a key feature. This means limits and derivatives at x=0 do not exist, a common area for NDA questions."
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Graph of Signum Function",
+        "description": "Shows the step-like graph of f(x) = sgn(x).",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[x-axis] --> B[y-axis]\n    subgraph f(x) = sgn(x)\n        C[open_circle_at_0_negative_side] -- y=-1 --> D[x < 0]\n        E[point_at_0_0]\n        F[open_circle_at_0_positive_side] -- y=1 --> G[x > 0]\n    end"
+      }
+    }
+  ],
+  "keyPoints": [
+    "Identity function: f(x)=x, Domain=R, Range=R. Graph is y=x line. Continuous.",
+    "Modulus function: f(x)=|x|, Domain=R, Range=[0, ∞). Graph is V-shaped, vertex at (0,0). Continuous but not differentiable at x=0.",
+    "Signum function: f(x)=sgn(x), Domain=R, Range={-1, 0, 1}. Discontinuous at x=0.",
+    "Know the properties of modulus function, especially for solving inequalities: |x|<a, |x|>a, |x|=a.",
+    "Understand the graphical representations as they help visualize domain, range, and continuity/discontinuity."
+  ],
+  "commonMistakes": [
+    "Confusing |x| with √(x²). While they are related, |x| is a function, and √(x²) simplifies to |x|.",
+    "Incorrectly applying modulus inequality rules, especially mixing up 'and' vs 'or' for |x| < a vs |x| > a.",
+    "Assuming sgn(0) is undefined or 1/-1. Remember sgn(0)=0 by definition.",
+    "Forgetting that the modulus function is not differentiable at x=0, which can affect problems involving derivatives."
+  ],
+  "examTips": [
+    "Always visualize the graph of these functions. A quick sketch can help you determine domain, range, continuity, and behavior for a given input range.",
+    "For modulus equations/inequalities, first identify the critical points where the expression inside the modulus changes sign. This helps break down the problem into cases. For NDA, often simple cases are tested.",
+    "Pay close attention to strict vs. non-strict inequalities (<, > vs. ≤, ≥) as they determine whether endpoints are included in the solution interval."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following statements about the function f(x) = |x| is FALSE?",
+      "options": [
+        "Its domain is R.",
+        "Its range is [0, ∞).",
+        "It is differentiable at x=0.",
+        "It is an even function."
+      ],
+      "correct": 2,
+      "explanation": "The modulus function f(x) = |x| is continuous everywhere but is not differentiable at x=0 because its graph has a sharp corner (a cusp) at the origin. The left-hand derivative and right-hand derivative at x=0 are not equal."
+    },
+    {
+      "question": "What is the range of the Signum function, f(x) = sgn(x)?",
+      "options": [
+        "R",
+        "[0, ∞)",
+        "{-1, 0, 1}",
+        "(-1, 1)"
+      ],
+      "correct": 2,
+      "explanation": "The Signum function is defined to output only three distinct values: 1 for positive inputs, -1 for negative inputs, and 0 for input 0. Therefore, its range is the set {-1, 0, 1}."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Standard%20Functions%20%E2%80%94%20Identity%2C%20Modulus%2C%20Signum%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Standard%20Functions%20%E2%80%94%20Identity%2C%20Modulus%2C%20Signum%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Standard%20Functions%20%E2%80%94%20Identity%2C%20Modulus%2C%20Signum%20NCERT%20Class%2011%2012"
+  }
+}

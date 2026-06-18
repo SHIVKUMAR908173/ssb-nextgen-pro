@@ -1,0 +1,52 @@
+[
+  {
+    "id": "W1",
+    "word": "Courage",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "W2",
+    "word": "Defeat",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "W3",
+    "word": "Weapon",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "W4",
+    "word": "Compromise",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "W5",
+    "word": "Mother",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "W6",
+    "word": "Failure",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "W7",
+    "word": "Blood",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "W8",
+    "word": "Command",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "W9",
+    "word": "Impossible",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "W10",
+    "word": "Team",
+    "difficulty": "Easy"
+  }
+]

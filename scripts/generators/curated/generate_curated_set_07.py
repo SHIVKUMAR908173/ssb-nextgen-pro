@@ -1,0 +1,162 @@
+import json
+import os
+
+OUTPUT_DIR = r"c:\Users\Shivkumar\.antigravity\ssb-nextgen-pro\database\datasets\curated_sets"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+set_07_data = {
+  "set_id": "SET_07",
+  "description": "High-Quality Curated SSB Dataset - Set 7 (Without CPSS)",
+  
+  "TAT": [
+    {"pic_no": 1, "description": "A pilot sitting in a cockpit, looking stressed while pointing at a dial.", "image_url": "https://picsum.photos/seed/tat_set7_1/800/600"},
+    {"pic_no": 2, "description": "A person sitting alone in a dark room, staring at a burning candle.", "image_url": "https://picsum.photos/seed/tat_set7_2/800/600"},
+    {"pic_no": 3, "description": "A large, agitated crowd gathered outside the closed gates of a bank.", "image_url": "https://picsum.photos/seed/tat_set7_3/800/600"},
+    {"pic_no": 4, "description": "A young child crying while holding a broken toy.", "image_url": "https://picsum.photos/seed/tat_set7_4/800/600"},
+    {"pic_no": 5, "description": "Two men in business suits arguing aggressively in a hallway.", "image_url": "https://picsum.photos/seed/tat_set7_5/800/600"},
+    {"pic_no": 6, "description": "A woman carrying a heavy pot of water on her head in a desert landscape.", "image_url": "https://picsum.photos/seed/tat_set7_6/800/600"},
+    {"pic_no": 7, "description": "A student falling asleep on a desk piled high with thick books.", "image_url": "https://picsum.photos/seed/tat_set7_7/800/600"},
+    {"pic_no": 8, "description": "A person standing at a podium, speaking to a completely empty hall.", "image_url": "https://picsum.photos/seed/tat_set7_8/800/600"},
+    {"pic_no": 9, "description": "A soldier bandaging the arm of a captured enemy combatant.", "image_url": "https://picsum.photos/seed/tat_set7_9/800/600"},
+    {"pic_no": 10, "description": "A group of teenagers cleaning up a heavily polluted beach.", "image_url": "https://picsum.photos/seed/tat_set7_10/800/600"},
+    {"pic_no": 11, "description": "A man staring at a chessboard with only two pieces left.", "image_url": "https://picsum.photos/seed/tat_set7_11/800/600"},
+    {"pic_no": 12, "description": "BLANK PICTURE", "image_url": None}
+  ],
+  
+  "WAT": [
+    "Knowledge", "Ignorance", "Book", "Library", "School", "College", "Student", "Teacher", "Exam", "Test",
+    "Pass", "Fail", "Try", "Quit", "Begin", "End", "First", "Last", "Middle", "Center",
+    "Edge", "Border", "Boundary", "Limit", "Sky", "Limitless", "Space", "Time", "Clock", "Watch",
+    "See", "Look", "Stare", "Blind", "Eye", "Ear", "Hear", "Listen", "Speak", "Talk",
+    "Whisper", "Shout", "Voice", "Silent", "Quiet", "Noise", "Chaos", "Order", "Rule", "Law",
+    "Police", "Thief", "Judge", "Court", "Justice", "Fair", "Unfair", "Equality", "Discrimination", "Prejudice"
+  ],
+
+  "SRT": [
+    "He discovers that the restaurant he is managing is serving expired meat to customers to cut costs. He...",
+    "While traveling in a bus, he notices a passenger leave behind a bag that starts ticking. He...",
+    "His team captain is highly biased and refuses to give him a chance despite his excellent performance. He...",
+    "He is trapped in an elevator with a woman who suddenly suffers a severe panic attack. He...",
+    "He overhears his flatmate planning to leak the university exam paper. He...",
+    "He is the organizer of a trekking trip, and heavy rains suddenly wash away the only path back. He...",
+    "He is working on a group project, and one member outright refuses to do their share of work. He...",
+    "He sees a senior citizen being physically harassed by a group of youths on the street. He...",
+    "His parents are pressuring him to accept a highly paid job in a foreign country, but he wants to join the defense forces. He...",
+    "He is driving on a deserted highway at night and a tire bursts. He doesn't have a spare. He...",
+    "He discovers that his closest friend has been stealing money from his wallet. He...",
+    "He is at a railway station and sees a blind man walking dangerously close to the edge of the platform. He...",
+    "He is writing a crucial exam and the invigilator falsely accuses him of cheating and takes his paper. He...",
+    "He sees a suspicious person taking detailed photographs of a sensitive military installation. He...",
+    "He is participating in a debate and suddenly goes completely blank on stage. He...",
+    "His younger sister wants to marry someone the family strongly disapproves of. He...",
+    "He is driving and his car brakes fail while going down a steep hill. He...",
+    "He is in a crowded mall when a sudden stampede breaks out. He...",
+    "He finds out his teammate is deliberately underperforming to make the team lose. He...",
+    "He is stranded at an airport because he lost his passport and wallet. He...",
+    "He is asked to present a highly technical report to the board of directors in 10 minutes with no preparation. He...",
+    "He sees a neighbor constantly abusing their domestic helper. He...",
+    "He is leading a group in a dense forest and realizes his compass is giving faulty readings. He...",
+    "He is falsely accused of instigating a fight in college. He...",
+    "His bike breaks down in a notoriously unsafe neighborhood late at night. He...",
+    "He is given a critical task, but his immediate superior refuses to provide the necessary resources. He...",
+    "He sees a venomous snake blocking the only exit from his room. He...",
+    "He is in an elevator with a pregnant woman who suddenly goes into labor. He...",
+    "He finds an unattended briefcase at a busy bus stop. He...",
+    "He is trekking in the snow and begins to feel extreme numbness in his toes. He...",
+    "He is at a restaurant and a customer at the next table starts choking violently on their food. He...",
+    "He sees a person trying to break into his neighbor's house through the window. He...",
+    "He is studying for a crucial exam, but a loud political rally stops right outside his window. He...",
+    "He discovers a major accounting error in his company's records that favors his department. He...",
+    "He is in a foreign country and gets severely sick with no medical insurance. He...",
+    "He is appointed team captain, but the previous captain is actively trying to sabotage him. He...",
+    "He sees a man harassing a female colleague at an office party. He...",
+    "He is driving and a large rock shatters his windshield on a highway. He...",
+    "He is trapped inside a building during a severe earthquake. He...",
+    "He receives a blackmail email threatening to release private photos if he doesn't pay. He...",
+    "He is preparing for the SSB, but his family faces a sudden, massive financial crisis. He...",
+    "He is hiking and his friend falls into a fast-flowing river. He...",
+    "He is cooking and a small grease fire starts on the stove. He...",
+    "He is on a ferry that engines fail and is drifting towards a rocky shore. He...",
+    "He sees a colleague taking credit for his idea in front of the CEO. He...",
+    "He is walking home and a gang of armed youths demands his expensive watch. He...",
+    "He is at a busy intersection and sees an ambulance stuck in heavy traffic. He...",
+    "He is given a task that requires a large budget, but is given zero funds. He...",
+    "He is in a movie theater and someone is constantly talking loudly on their phone. He...",
+    "He finds out his brother is involved in a street gang. He...",
+    "He is leading a patrol and one of his men refuses to obey a direct order out of fear. He...",
+    "He sees a toddler wandering alone near a busy railway track. He...",
+    "He is taking a shower and the geyser bursts, filling the room with scalding steam. He...",
+    "He is unfairly passed over for a promotion and his junior is promoted instead. He...",
+    "He is in a crowded bus and a fellow passenger faints. He...",
+    "He is trekking and a thick fog rolls in, reducing visibility to almost zero. He...",
+    "He is presenting a project and his laptop battery dies with no charger around. He...",
+    "He is walking in the woods and gets hopelessly lost. He...",
+    "He finds a wallet with Rs. 50,000 and an ID card belonging to a poor laborer. He...",
+    "He is on a train and a group of rowdies starts harassing passengers. He..."
+  ],
+
+  "PPDT": {
+    "image_url": "https://picsum.photos/seed/ppdt_set7/800/600?blur=5",
+    "description": "Hazy picture of two people pulling what looks like a heavy net out of a body of water."
+  },
+
+  "PI": [
+    "Tell me about a time you had to make a decision that upset your parents.",
+    "What are the major challenges facing the Indian agricultural sector today?",
+    "Describe a time when you had to manage a project with very limited resources.",
+    "If you could change one major event in Indian history, what would it be and why?",
+    "What is your opinion on the impact of social media on mental health?",
+    "How do you handle situations where you strongly disagree with a superior's decision?",
+    "What is the most difficult physical challenge you've ever faced?",
+    "Tell me about a time you had to learn from a failure.",
+    "How do you maintain a work-life balance?",
+    "What are your views on the modernization of the Indian Armed Forces?",
+    "Have you ever been deeply prejudiced against someone? How did you overcome it?",
+    "What are the three most important lessons you learned in college?",
+    "If you are leading a team and you realize your strategy is completely wrong halfway through, what do you do?",
+    "What is your biggest weakness and how are you actively working on it?",
+    "Tell me about a time you had to mediate a conflict between two family members.",
+    "How do you define courage?",
+    "What role does sports or physical activity play in your life?",
+    "Tell me about a time you had to take responsibility for someone else's mistake.",
+    "If you were not pursuing the Armed Forces, what specific career would you be in right now?",
+    "Why do you think emotional intelligence is important for a military officer?"
+  ],
+
+  "SD": [
+    "What is the opinion of your parents about you?",
+    "What do your teachers or employers think about you?",
+    "What do your friends think about you?",
+    "What is your own opinion about yourself?",
+    "What are the qualities you would like to improve in yourself?"
+  ],
+
+  "Lecturette": [
+    "Impact of Social Media on Mental Health",
+    "Modernization of the Indian Armed Forces",
+    "Agricultural Reforms in India",
+    "The Need for Sex Education in Schools"
+  ],
+
+  "GD": [
+    "Should English be the mandatory medium of instruction in all Indian schools?",
+    "Is India's infrastructure ready for a massive shift to Electric Vehicles?"
+  ],
+
+  "GPE": {
+    "narrative": "You are a group of 8 trekkers in a mountainous region. It is 1500 hours. A local villager runs to you in panic and informs you: 1. A massive landslide has just blocked the only road connecting the village to the town (15 km away). 2. Three miners are trapped in a collapsed coal mine 2 km from your location and oxygen is running out. 3. The main communication tower has been damaged, cutting off all mobile network in the area. 4. An elderly man in the village has suffered a severe head injury and is bleeding profusely. You have a jeep (which can only go as far as the landslide), two mountain bikes, basic first aid, and trekking ropes. The nearest hospital and rescue team are in the town across the landslide. How will you divide your group and prioritize these tasks to save lives before it gets dark at 1800 hours?",
+    "map_url": "https://picsum.photos/seed/gpe_map_set7/800/600"
+  },
+
+  "GTO": {
+    "PGT": "Progressive Group Task: 4 progressive obstacles emphasizing long bridging over wide gaps. Resources: 1 long Plank, 1 short Balli, 2 Ropes, 1 pulley. Time: 45 mins. Strict 'no touching red' rules.",
+    "HGT": "Half Group Task: 1 complex obstacle involving a cantilever setup. Resources: 1 Plank, 1 Balli, 1 Rope. Time: 15 mins.",
+    "IO": "Individual Obstacles: 10 obstacles (High Jump, Double Ditch, Zig-Zag Balance, Tarzan Swing, Commando Walk, Tiger Leap, Rope Climbing, Screen Jump, Burma Bridge, Monkey Crawl). Time: 3 mins.",
+    "FGT": "Final Group Task: 1 long, complex obstacle requiring the entire group to transport a heavy 'casualty' dummy across a wide gap using limited ropes. Resources: Plank, Balli, 3 Ropes. Time: 15 mins."
+  }
+}
+
+with open(os.path.join(OUTPUT_DIR, "set_07.json"), 'w', encoding='utf-8') as f:
+    json.dump(set_07_data, f, indent=2)
+
+print("Set 7 created successfully without CPSS.")

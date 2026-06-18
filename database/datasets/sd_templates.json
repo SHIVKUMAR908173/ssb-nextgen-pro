@@ -1,0 +1,246 @@
+[
+  {
+    "id": "SD1",
+    "template_type": "Student",
+    "sections": {
+      "parents_opinion": {
+        "strengths": [
+          "Honest and responsible",
+          "Independent and self-motivated",
+          "Caring towards family members",
+          "Confident and competent in academics and extracurricular activities"
+        ],
+        "weaknesses": [
+          "Sometimes over-confident",
+          "Needs to stay more grounded"
+        ],
+        "sample_text": "My parents know that I am honest, responsible and independent. They appreciate my concern for them and my younger brother's well-being. They appreciate my being confident and competent in academics as well as extracurricular activities. They are confident that I will have a good future and bring a good name to the family. At times, they feel that I tend to be a little over-confident and advise me to stay grounded."
+      },
+      "teachers_opinion": {
+        "strengths": [
+          "Disciplined and punctual",
+          "Respectful to teachers and peers",
+          "Bright and responsible",
+          "All-rounder in activities"
+        ],
+        "weaknesses": [
+          "Sometimes too talkative",
+          "Needs to focus more on studies"
+        ],
+        "sample_text": "My teachers considered me disciplined, punctual and respectful. They found me bright, responsible and an all-rounder. They believed that I could carry out any responsibility given to me with full enthusiasm. As such, I was appointed the Head Boy/Girl. They sometimes advised me to be less talkative. They feel that I will have a bright career."
+      },
+      "friends_opinion": {
+        "strengths": [
+          "Lively and helpful",
+          "Totally trustworthy",
+          "Good listener and advisor",
+          "Adaptable to any situation"
+        ],
+        "weaknesses": [
+          "Trusts people too easily",
+          "Sometimes too serious about commitments"
+        ],
+        "sample_text": "My friends know that I am lively, helpful and totally trustworthy. They consult me about their various problems. They like my company. They feel I can adapt to any situation. They like me for my commitment. They appreciate my being focused on my career. They advise me not to trust people too easily."
+      },
+      "self_opinion": {
+        "strengths": [
+          "Responsible family member",
+          "Trustworthy friend",
+          "Reliable worker",
+          "Calm in difficult situations"
+        ],
+        "sample_text": "I am a responsible son/daughter, trustworthy friend and reliable worker. For me, my work is worship. I am helpful to my friends as well as colleagues. In difficult times, I prefer to stay calm and resolve the problems."
+      },
+      "improvement_areas": [
+        "Need to improve physical fitness",
+        "Enhance general awareness",
+        "Work on time management",
+        "Develop better study habits"
+      ],
+      "improvement_text": "I think I did not do justice to my academic potential in my school and college. I have resolved to rectify this aspect now. I need to improve my physical fitness as well as general awareness and have been working on the issues with reasonable success."
+    }
+  },
+  {
+    "id": "SD2",
+    "template_type": "Working Professional",
+    "sections": {
+      "parents_opinion": {
+        "strengths": [
+          "Financially responsible",
+          "Supportive of family",
+          "Hardworking and dedicated",
+          "Good decision maker"
+        ],
+        "weaknesses": [
+          "Spends less time with family due to work",
+          "Sometimes brings work stress home"
+        ],
+        "sample_text": "My parents appreciate my dedication towards my work and the way I manage my responsibilities. They are proud of my professional achievements and my ability to balance work and family. They feel I sometimes get too absorbed in work and should spend more time with family."
+      },
+      "employer_opinion": {
+        "strengths": [
+          "Responsible and helpful",
+          "Hardworking and dedicated",
+          "Eager to learn and improve",
+          "Accepts mistakes and works on them"
+        ],
+        "weaknesses": [
+          "Sometimes takes on too much work",
+          "Needs to delegate more effectively"
+        ],
+        "sample_text": "My manager and team take me as responsible, helpful, hardworking and dedicated. They appreciate my zeal to keep learning as also accepting my faults and improving upon them."
+      },
+      "friends_opinion": {
+        "strengths": [
+          "Reliable in times of need",
+          "Good advisor",
+          "Fun to be with",
+          "Loyal friend"
+        ],
+        "weaknesses": [
+          "Sometimes cancels plans due to work",
+          "Can be workaholic"
+        ],
+        "sample_text": "My friends consider me a reliable and loyal friend. They appreciate my ability to keep secrets and provide sound advice. They feel I am fun to be with but sometimes my work commitments affect our plans."
+      },
+      "self_opinion": {
+        "strengths": [
+          "Goal-oriented",
+          "Team player",
+          "Adaptable to change",
+          "Strong work ethic"
+        ],
+        "sample_text": "I consider myself a goal-oriented professional who values teamwork and integrity. I adapt well to changing situations and maintain a strong work ethic. I believe in continuous learning and self-improvement."
+      },
+      "improvement_areas": [
+        "Work-life balance",
+        "Stress management",
+        "Technical skill enhancement",
+        "Leadership development"
+      ],
+      "improvement_text": "I am working on achieving better work-life balance and managing stress more effectively. I am also focusing on enhancing my technical skills and developing leadership qualities for career growth."
+    }
+  },
+  {
+    "id": "SD3",
+    "template_type": "Sports Person",
+    "sections": {
+      "parents_opinion": {
+        "strengths": [
+          "Disciplined and dedicated",
+          "Physically fit and healthy",
+          "Competitive spirit",
+          "Good time management"
+        ],
+        "weaknesses": [
+          "Sometimes prioritizes sports over studies",
+          "Can be overly competitive"
+        ],
+        "sample_text": "My parents are proud of my sporting achievements and the discipline I have developed through sports. They appreciate my dedication and the way I manage my training alongside other responsibilities. They sometimes worry about my focus on studies."
+      },
+      "coaches_opinion": {
+        "strengths": [
+          "Natural talent and skill",
+          "Hardworking and persistent",
+          "Good team player",
+          "Handles pressure well"
+        ],
+        "weaknesses": [
+          "Sometimes too aggressive",
+          "Needs to work on mental toughness"
+        ],
+        "sample_text": "My coaches consider me a talented and hardworking athlete. They appreciate my commitment to training and my ability to perform under pressure. They feel I need to work on controlling my aggression and developing mental resilience."
+      },
+      "friends_opinion": {
+        "strengths": [
+          "Inspiring and motivating",
+          "Supportive teammate",
+          "Humble despite achievements",
+          "Good role model"
+        ],
+        "weaknesses": [
+          "Sometimes tired after training",
+          "Limited availability due to practice"
+        ],
+        "sample_text": "My friends see me as an inspiring and motivating person. They appreciate my humility despite my achievements and my supportive nature as a teammate. They understand my limited availability due to training schedules."
+      },
+      "self_opinion": {
+        "strengths": [
+          "Determined and focused",
+          "Resilient under pressure",
+          "Team-oriented mindset",
+          "Continuous learner"
+        ],
+        "sample_text": "I see myself as a determined athlete who thrives under pressure. I value teamwork and believe in continuous improvement. Sports have taught me discipline, perseverance and the importance of setting goals."
+      },
+      "improvement_areas": [
+        "Academic performance",
+        "Mental conditioning",
+        "Nutrition and diet",
+        "Recovery and rest management"
+      ],
+      "improvement_text": "I am working on balancing my academic and sporting commitments. I am also focusing on mental conditioning, improving my diet and ensuring proper recovery to enhance my performance."
+    }
+  },
+  {
+    "id": "SD4",
+    "template_type": "Repeaters (Multiple Attempts)",
+    "sections": {
+      "parents_opinion": {
+        "strengths": [
+          "Persistent and determined",
+          "Learned from past experiences",
+          "More mature and focused",
+          "Improved confidence"
+        ],
+        "weaknesses": [
+          "Sometimes gets anxious about results",
+          "Needs to stay more positive"
+        ],
+        "sample_text": "My parents have seen my growth over multiple attempts. They appreciate my persistence and the way I have learned from each experience. They feel I have become more mature and focused. They advise me to stay positive and not worry too much about outcomes."
+      },
+      "teachers_opinion": {
+        "strengths": [
+          "Improved knowledge and awareness",
+          "Better communication skills",
+          "More confident in expressions",
+          "Shows leadership potential"
+        ],
+        "weaknesses": [
+          "Sometimes over-prepares",
+          "Needs to be more spontaneous"
+        ],
+        "sample_text": "My teachers have noticed significant improvement in my knowledge, communication skills and confidence over time. They see leadership potential in me. They advise me to be more spontaneous and natural in my responses."
+      },
+      "friends_opinion": {
+        "strengths": [
+          "Never gives up",
+          "Supportive and encouraging",
+          "Good motivator",
+          "Learned from failures"
+        ],
+        "weaknesses": [
+          "Sometimes too focused on SSB",
+          "Needs to relax more"
+        ],
+        "sample_text": "My friends admire my determination and never-give-up attitude. They appreciate how I have learned from failures and continued to improve. They feel I sometimes get too focused on SSB and should relax more."
+      },
+      "self_opinion": {
+        "strengths": [
+          "Resilient and persistent",
+          "Self-aware and reflective",
+          "Continuously improving",
+          "Positive mindset"
+        ],
+        "sample_text": "I consider myself resilient and persistent. Each attempt has taught me valuable lessons and helped me grow. I am more self-aware now and continuously work on my weaknesses. I maintain a positive mindset and believe in giving my best."
+      },
+      "improvement_areas": [
+        "Stress management",
+        "Spontaneity in responses",
+        "General awareness",
+        "Physical fitness"
+      ],
+      "improvement_text": "I have been working on managing stress better and being more spontaneous in my responses. I am also focusing on improving my general awareness and physical fitness. I have learned to enjoy the process rather than just focusing on the result."
+    }
+  }
+]

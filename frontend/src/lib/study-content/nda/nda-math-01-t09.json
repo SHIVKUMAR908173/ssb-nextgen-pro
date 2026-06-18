@@ -1,0 +1,158 @@
+{
+  "id": "nda-math-01-t09",
+  "title": "Composition of Functions and Inverse",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Functions are fundamental building blocks in mathematics. Understanding how to combine them through composition and how to 'undo' them with inverses is crucial for various mathematical concepts and problem-solving. For the NDA examination, these topics often appear in the form of finding composite functions, determining if an inverse exists, and calculating the inverse function itself. Mastering these concepts will provide a solid foundation for higher-level mathematics."
+    },
+    {
+      "type": "heading",
+      "data": "Composition of Functions"
+    },
+    {
+      "type": "text",
+      "data": "The composition of functions is an operation that takes two functions f and g and produces a function h such that h(x) = f(g(x)). In simple terms, it means applying one function to the result of another function. The notation for the composition of f with g is (f ∘ g)(x)."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "(f \\circ g)(x) = f(g(x))",
+        "note": "The function g acts on x first, and then f acts on the result of g(x). The domain of (f ∘ g) consists of all x in the domain of g such that g(x) is in the domain of f."
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Always evaluate the inner function first. (f ∘ g)(x) is *not* generally equal to (g ∘ f)(x). Pay attention to the domain and range of the functions involved; the range of the inner function must be a subset of the domain of the outer function for composition to be defined."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "If f(x) = 2x + 3 and g(x) = x², find (f ∘ g)(x) and (g ∘ f)(x).",
+        "solution": "1. To find (f ∘ g)(x): Substitute g(x) into f(x).\n   (f ∘ g)(x) = f(g(x)) = f(x²) = 2(x²) + 3 = 2x² + 3.\n2. To find (g ∘ f)(x): Substitute f(x) into g(x).\n   (g ∘ f)(x) = g(f(x)) = g(2x + 3) = (2x + 3)² = 4x² + 12x + 9.",
+        "answer": "(f ∘ g)(x) = 2x² + 3; (g ∘ f)(x) = 4x² + 12x + 9."
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Function Composition Flow",
+        "description": "Illustrates the sequential application of two functions, g and f, to compose (f ∘ g)(x).",
+        "diagramType": "mermaid",
+        "diagramCode": "graph LR\n    A[Input x] --> B{Function g}\n    B --> C[g(x)]\n    C --> D{Function f}\n    D --> E[f(g(x))]\n"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Inverse of a Function"
+    },
+    {
+      "type": "text",
+      "data": "An inverse function, denoted as f⁻¹(x), 'undoes' the action of the original function f(x). If f takes x to y, then f⁻¹ takes y back to x. For an inverse function to exist, the original function must be bijective (both one-to-one and onto)."
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: To check if a function has an inverse, use the Horizontal Line Test. If no horizontal line intersects the graph of the function more than once, then the function is one-to-one. Also, ensure the function is onto, meaning its range covers its codomain."
+    },
+    {
+      "type": "list",
+      "data": [
+        "Replace f(x) with y.",
+        "Swap x and y in the equation.",
+        "Solve the new equation for y in terms of x.",
+        "Replace y with f⁻¹(x).",
+        "Verify the domain and range, ensuring the original function is bijective (one-to-one and onto) and the domain of f becomes the range of f⁻¹ and vice-versa."
+      ]
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Property",
+          "Description",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Existence",
+            "A function f has an inverse f⁻¹ if and only if it is one-to-one and onto (bijective).",
+            "f(x) = x² (not bijective over ℝ) does not have an inverse over ℝ."
+          ],
+          [
+            "Symmetry",
+            "The graph of f⁻¹(x) is the reflection of the graph of f(x) across the line y = x.",
+            "Graph of y=x³ and y=³√x."
+          ],
+          [
+            "Composition",
+            "f(f⁻¹(x)) = x for all x in the domain of f⁻¹ and f⁻¹(f(x)) = x for all x in the domain of f.",
+            "If f(x)=2x, f⁻¹(x)=x/2. f(f⁻¹(x))=f(x/2)=2(x/2)=x."
+          ],
+          [
+            "Domain/Range Swap",
+            "Domain of f = Range of f⁻¹; Range of f = Domain of f⁻¹.",
+            "If f:[0,∞)→[0,∞), f(x)=x², then f⁻¹:[0,∞)→[0,∞), f⁻¹(x)=√x."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Find the inverse of the function f(x) = (3x - 2) / (x + 1) for x ≠ -1.",
+        "solution": "1. Replace f(x) with y: y = (3x - 2) / (x + 1).\n2. Swap x and y: x = (3y - 2) / (y + 1).\n3. Solve for y:\n   x(y + 1) = 3y - 2\n   xy + x = 3y - 2\n   x + 2 = 3y - xy\n   x + 2 = y(3 - x)\n   y = (x + 2) / (3 - x)\n4. Replace y with f⁻¹(x): f⁻¹(x) = (x + 2) / (3 - x).",
+        "answer": "f⁻¹(x) = (x + 2) / (3 - x), for x ≠ 3."
+      }
+    }
+  ],
+  "keyPoints": [
+    "A function f has an inverse f⁻¹ if and only if f is bijective (one-to-one and onto).",
+    "The composition (f ∘ g)(x) means applying g first, then f to the result: f(g(x)).",
+    "In general, (f ∘ g)(x) ≠ (g ∘ f)(x).",
+    "The graph of f⁻¹(x) is the reflection of f(x) across the line y = x.",
+    "For an inverse to exist, the function must pass the Horizontal Line Test and be onto its codomain."
+  ],
+  "commonMistakes": [
+    "Assuming (f ∘ g)(x) is always equal to (g ∘ f)(x), leading to incorrect composition.",
+    "Not checking for bijectivity (one-to-one and onto) before finding an inverse, especially when domain/range are restricted, which can result in an invalid inverse.",
+    "Algebraic errors when solving for y after swapping x and y to find the inverse function."
+  ],
+  "examTips": [
+    "For MCQ questions on composition, often testing specific values like (f ∘ g)(2) is faster than finding the general expression for (f ∘ g)(x).",
+    "When dealing with inverse functions, pay close attention to the specified domain and range, as they dictate the existence and form of the inverse. If no domain is given, assume the natural domain.",
+    "Use the property f(f⁻¹(x)) = x to quickly verify if your calculated inverse is correct by composing the function with your proposed inverse."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "If f(x) = x² + 1 and g(x) = x - 2, then (f ∘ g)(x) is:",
+      "options": [
+        "x² - 4x + 5",
+        "x² - 1",
+        "x² + 2x - 1",
+        "(x - 2)² + 1"
+      ],
+      "correct": 0,
+      "explanation": "(f ∘ g)(x) = f(g(x)) = f(x - 2) = (x - 2)² + 1 = x² - 4x + 4 + 1 = x² - 4x + 5."
+    },
+    {
+      "question": "The inverse of the function f(x) = 4x - 7 is:",
+      "options": [
+        "f⁻¹(x) = (x + 7) / 4",
+        "f⁻¹(x) = 7x - 4",
+        "f⁻¹(x) = (x - 7) / 4",
+        "f⁻¹(x) = x / 4 + 7"
+      ],
+      "correct": 0,
+      "explanation": "Let y = 4x - 7. Swap x and y: x = 4y - 7. Solve for y: 4y = x + 7, so y = (x + 7) / 4. Thus, f⁻¹(x) = (x + 7) / 4."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Composition%20of%20Functions%20and%20Inverse%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Composition%20of%20Functions%20and%20Inverse%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Composition%20of%20Functions%20and%20Inverse%20NCERT%20Class%2011%2012"
+  }
+}

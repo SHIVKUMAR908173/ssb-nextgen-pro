@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "category": "Figure Matrix (Class A vs Class B Concentric Geometry)",
+    "question_text": "Class A contains figures where a shape is nested inside an IDENTICAL larger shape. Class B contains figures where a shape is nested inside a DIFFERENT larger shape. Which option belongs to Class A?",
+    "reference_figures": [
+      {
+        "label": "Class A Example",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='15' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "Class B Example",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='15' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,15 85,85 15,85' fill='none' stroke='black' stroke-width='4'/><polygon points='50,45 65,75 35,75' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><rect x='40' y='40' width='20' height='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/><rect x='35' y='35' width='30' height='30' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "A",
+    "explanation": "Class A specifically requires the inner and outer shapes to share the same geometric class (homogenous nesting). Option A displays a small triangle perfectly nested inside a larger triangle."
+  },
+  {
+    "id": 2,
+    "category": "Cube Comparison",
+    "question_text": "Find if the two cubes are alike. Write 'Yes' or 'No'.",
+    "reference_figures": [
+      {
+        "label": "Cube 1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 30 L70 30 L85 15 L45 15 Z M30 30 L30 70 L70 70 L70 30 M70 70 L85 55 L85 15' fill='none' stroke='black' stroke-width='2'/><text x='45' y='55' font-size='20'>X</text><circle cx='52' cy='26' r='5' fill='black'/><rect x='74' y='42' width='8' height='8' fill='none' stroke='black' stroke-width='2'/></svg>"
+      },
+      {
+        "label": "Cube 2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 30 L70 30 L85 15 L45 15 Z M30 30 L30 70 L70 70 L70 30 M70 70 L85 55 L85 15' fill='none' stroke='black' stroke-width='2'/><circle cx='50' cy='50' r='5' fill='black'/><rect x='48' y='22' width='8' height='8' fill='none' stroke='black' stroke-width='2'/><text x='74' y='45' font-size='15'>X</text></svg>"
+      }
+    ],
+    "correct_option": "Yes",
+    "explanation": "In Cube 1, reading the faces clockwise around the front-top-right vertex gives X -> Dot -> Square. If you roll Cube 1 upwards and left so the Dot moves to the front, the Square moves to the top, and X swings around to the right face. This perfectly matches the orientation of Cube 2.",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "Yes"
+      },
+      {
+        "label": "No",
+        "value": "No"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Figure Series Completion (Counter-Clockwise Rotation)",
+    "question_text": "Select the option that logically completes the visual series.",
+    "reference_figures": [
+      {
+        "label": "Step 1",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='50' x2='90' y2='50' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "Step 2",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='50' x2='50' y2='10' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "Step 3",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='50' x2='10' y2='50' stroke='black' stroke-width='6'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='50' x2='90' y2='50' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='50' x2='50' y2='90' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='50' x2='78.3' y2='78.3' stroke='black' stroke-width='6'/></svg>"
+      }
+    ],
+    "correct_option": "B",
+    "explanation": "A line acting like a clock hand rotates exactly 90 degrees counter-clockwise at each step. East (3:00) -> North (12:00) -> West (9:00). The 4th step must point South (6:00), which is Option B."
+  },
+  {
+    "id": 4,
+    "category": "Visual Analogy (Duplication & Diagonal Shift)",
+    "question_text": "Figure 1 is to Figure 2 as Figure 3 is to which Option?",
+    "reference_figures": [
+      {
+        "label": "Figure 1",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='30' y='30' width='40' height='40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "Figure 2",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='40' height='40' fill='none' stroke='black' stroke-width='4'/><rect x='40' y='40' width='40' height='40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "Figure 3",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='35' cy='35' r='20' fill='none' stroke='black' stroke-width='4'/><circle cx='65' cy='65' r='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='30' cy='50' r='20' fill='none' stroke='black' stroke-width='4'/><circle cx='70' cy='50' r='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='30' r='20' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='70' r='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "A",
+    "explanation": "Figure 1 (a square) is duplicated, and the two resulting squares overlap diagonally. Applying this to Figure 3, the circle must be duplicated and the two circles must overlap diagonally (Option A)."
+  },
+  {
+    "id": 5,
+    "category": "Odd One Out (Polygon Regularity)",
+    "question_text": "Which of the following figures does not belong to the same class as the others?",
+    "reference_figures": [],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,15 85,85 15,85' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,10 90,40 75,90 25,90 10,40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "D",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='20,20 90,40 70,90 10,70' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "D",
+    "explanation": "Options A, B, and C represent regular polygons (Square, Equilateral Triangle, Regular Pentagon) where all sides and internal angles are equal. Option D is an irregular quadrilateral with unequal sides and skewed angles."
+  },
+  {
+    "id": 6,
+    "category": "Figure Matrix (Class A vs Class B Side-to-Dot Ratio)",
+    "question_text": "Class A contains figures where the number of internal dots EQUALS the number of sides of the shape. Class B contains figures where the number of internal dots is ONE LESS than the sides. Which option belongs to Class A?",
+    "reference_figures": [
+      {
+        "label": "Class A Example",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/><circle cx='35' cy='35' r='5' fill='black'/><circle cx='65' cy='35' r='5' fill='black'/><circle cx='35' cy='65' r='5' fill='black'/><circle cx='65' cy='65' r='5' fill='black'/></svg>"
+      },
+      {
+        "label": "Class B Example",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,15 85,85 15,85' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='5' fill='black'/><circle cx='50' cy='70' r='5' fill='black'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,10 90,40 75,90 25,90 10,40' fill='none' stroke='black' stroke-width='4'/><circle cx='30' cy='50' r='5' fill='black'/><circle cx='70' cy='50' r='5' fill='black'/><circle cx='50' cy='30' r='5' fill='black'/><circle cx='50' cy='70' r='5' fill='black'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,15 85,85 15,85' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='45' r='5' fill='black'/><circle cx='40' cy='70' r='5' fill='black'/><circle cx='60' cy='70' r='5' fill='black'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='5' fill='black'/><circle cx='35' cy='35' r='5' fill='black'/><circle cx='65' cy='65' r='5' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "B",
+    "explanation": "Class A specifically requires the number of dots to match the number of sides perfectly. Option B shows a triangle (3 sides) containing exactly 3 solid dots."
+  },
+  {
+    "id": 7,
+    "category": "Figure Series Completion (Edge Subtraction)",
+    "question_text": "Select the option that logically completes the visual series.",
+    "reference_figures": [
+      {
+        "label": "Step 1",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "Step 2",
+        "svg": "<svg viewBox='0 0 100 100'><polyline points='20,80 20,20 80,20 80,80' fill='none' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "Step 3",
+        "svg": "<svg viewBox='0 0 100 100'><polyline points='20,80 20,20 80,20' fill='none' stroke='black' stroke-width='6'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><line x1='20' y1='20' x2='80' y2='20' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><polyline points='80,80 20,80 20,20' fill='none' stroke='black' stroke-width='6'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><line x1='20' y1='20' x2='20' y2='80' stroke='black' stroke-width='6'/></svg>"
+      }
+    ],
+    "correct_option": "A",
+    "explanation": "Starting with a complete square, one edge is removed at each step in a counter-clockwise sequence starting from the bottom. Step 2 removes the Bottom edge. Step 3 removes the Right edge. Step 4 must remove the Left edge, leaving only the Top horizontal line (Option A)."
+  },
+  {
+    "id": 8,
+    "category": "Odd One Out (Equal Bisection)",
+    "question_text": "Which of the following figures does not belong to the same class as the others?",
+    "reference_figures": [],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><line x1='10' y1='50' x2='90' y2='50' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='20' x2='50' y2='80' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,15 85,85 15,85' fill='none' stroke='black' stroke-width='4'/><line x1='50' y1='15' x2='50' y2='85' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "D",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/><line x1='20' y1='40' x2='80' y2='40' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "D",
+    "explanation": "Options A, B, and C feature a line of symmetry that bisects the shape into two perfectly equal, mirrored halves. Option D features an off-center horizontal line that divides the square into two unequal rectangles."
+  },
+  {
+    "id": 9,
+    "category": "Cube Classification (Group A vs Group B Thematic Symbols)",
+    "question_text": "Which one of the following cubes can possibly belong to Group A?",
+    "reference_figures": [
+      {
+        "label": "Group A Example",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='45' y='60' font-size='20'>=</text></svg>"
+      },
+      {
+        "label": "Group B Example",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='45' y='60' font-size='20'>?</text></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='45' y='60' font-size='20'>!</text></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='45' y='60' font-size='20'>+</text></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='45' y='60' font-size='20'>&amp;</text></svg>"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Group A represents Mathematical Symbols (=). Group B represents Punctuation Marks (?). Option 2 displays the plus sign (+), making it a mathematical symbol that belongs in Group A."
+  },
+  {
+    "id": 10,
+    "category": "Embedded Figures",
+    "question_text": "In which option is the 'L' shape perfectly hidden?",
+    "reference_figures": [
+      {
+        "label": "Target",
+        "svg": "<svg viewBox='0 0 100 100'><polyline points='30,30 30,70 70,70' fill='none' stroke='black' stroke-width='6'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "A",
+        "svg": "<svg viewBox='0 0 100 100'><rect x='20' y='20' width='60' height='60' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "B",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 100'><polygon points='50,15 85,85 15,85' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "A",
+    "explanation": "The target is a classic 'L' shape consisting of a vertical line meeting a horizontal line at a 90-degree angle. In Option A, the left vertical edge and the bottom horizontal edge of the square perfectly trace this 'L' geometry."
+  }
+]

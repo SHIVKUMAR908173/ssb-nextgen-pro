@@ -1,0 +1,243 @@
+{
+  "id": "nda-math-01-t02",
+  "title": "Set Operations — Union, Intersection, Complement",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 8,
+  "content": [
+    {
+      "type": "text",
+      "data": "Sets are fundamental building blocks in mathematics, and set operations allow us to combine, modify, or compare sets to form new ones. The three primary operations – Union, Intersection, and Complement – are crucial for understanding various mathematical concepts including probability, logic, and relations. A solid grasp of these operations is essential for the NDA exam, as questions often test your ability to apply these concepts and their properties."
+    },
+    {
+      "type": "heading",
+      "data": "1. Union of Sets (∪)"
+    },
+    {
+      "type": "text",
+      "data": "The union of two sets A and B, denoted by A ∪ B, is the set of all elements that are in A, or in B, or in both. It combines all unique elements from both sets. In logical terms, it represents 'OR'."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "A ∪ B = {x | x ∈ A or x ∈ B}",
+        "note": "A ∪ B consists of all elements x such that x belongs to A or x belongs to B (or both)."
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find A ∪ B.",
+        "solution": "To find A ∪ B, we list all unique elements present in either A or B. The elements in A are {1, 2, 3, 4} and in B are {3, 4, 5, 6}. Combining these and removing duplicates, we get {1, 2, 3, 4, 5, 6}.",
+        "answer": "A ∪ B = {1, 2, 3, 4, 5, 6}"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "2. Intersection of Sets (∩)"
+    },
+    {
+      "type": "text",
+      "data": "The intersection of two sets A and B, denoted by A ∩ B, is the set of all elements that are common to both A and B. It represents the overlap between the two sets. In logical terms, it represents 'AND'."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "A ∩ B = {x | x ∈ A and x ∈ B}",
+        "note": "A ∩ B consists of all elements x such that x belongs to A AND x belongs to B."
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find A ∩ B.",
+        "solution": "To find A ∩ B, we look for elements that are present in both set A and set B. The common elements are 3 and 4.",
+        "answer": "A ∩ B = {3, 4}"
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember 'Union is 'OR' (all elements from either set), and Intersection is 'AND' (only common elements). This logical association helps in remembering definitions and solving word problems."
+    },
+    {
+      "type": "heading",
+      "data": "Disjoint Sets"
+    },
+    {
+      "type": "text",
+      "data": "Two sets A and B are called disjoint if their intersection is the empty set (∅), meaning they have no elements in common. A ∩ B = ∅."
+    },
+    {
+      "type": "heading",
+      "data": "3. Complement of a Set (A' or Aᶜ)"
+    },
+    {
+      "type": "text",
+      "data": "The complement of a set A, denoted by A' or Aᶜ, with respect to a universal set U, is the set of all elements in U that are not in A. The universal set U contains all elements under consideration for a particular problem."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "A' = {x | x ∈ U and x ∉ A}",
+        "note": "A' consists of all elements x such that x belongs to the universal set U but does NOT belong to A."
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "If U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and A = {2, 4, 6, 8, 10}, find A'.",
+        "solution": "A' includes all elements in U that are not in A. By removing elements of A from U, we get {1, 3, 5, 7, 9}.",
+        "answer": "A' = {1, 3, 5, 7, 9}"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Properties of Set Operations"
+    },
+    {
+      "type": "text",
+      "data": "Understanding these properties is vital for simplifying expressions and solving problems efficiently."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Property",
+          "Union (A ∪ B)",
+          "Intersection (A ∩ B)",
+          "Complement (A')"
+        ],
+        "rows": [
+          [
+            "Idempotent",
+            "A ∪ A = A",
+            "A ∩ A = A",
+            ""
+          ],
+          [
+            "Commutative",
+            "A ∪ B = B ∪ A",
+            "A ∩ B = B ∩ A",
+            ""
+          ],
+          [
+            "Associative",
+            "(A ∪ B) ∪ C = A ∪ (B ∪ C)",
+            "(A ∩ B) ∩ C = A ∩ (B ∩ C)",
+            ""
+          ],
+          [
+            "Identity (∅, U)",
+            "A ∪ ∅ = A",
+            "A ∩ U = A",
+            ""
+          ],
+          [
+            "Universal/Empty Set",
+            "A ∪ U = U",
+            "A ∩ ∅ = ∅",
+            "∅' = U, U' = ∅"
+          ],
+          [
+            "Complement Laws",
+            "A ∪ A' = U",
+            "A ∩ A' = ∅",
+            "(A')' = A"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "data": "De Morgan's Laws"
+    },
+    {
+      "type": "text",
+      "data": "These laws provide critical relationships between union, intersection, and complement. They are very frequently tested."
+    },
+    {
+      "type": "list",
+      "data": [
+        "1. The complement of the union of two sets is the intersection of their complements.",
+        "2. The complement of the intersection of two sets is the union of their complements."
+      ]
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "1. (A ∪ B)' = A' ∩ B'",
+        "note": "Complement of Union is Intersection of Complements."
+      }
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "2. (A ∩ B)' = A' ∪ B'",
+        "note": "Complement of Intersection is Union of Complements."
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Conceptual Venn Diagram of Set Operations",
+        "description": "This diagram illustrates the conceptual relationships between a universal set (U), two subsets (A, B), and their union, intersection, and complements.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    subgraph Universal Set (U)\n        A[\"Set A\"]\n        B[\"Set B\"]\n    end\n\n    A --|> A_Only[Elements in A only]\n    B --|> B_Only[Elements in B only]\n    A -- Overlaps with --> B\n    B -- Overlaps with --> A\n    A_and_B[Elements common to A and B]\n\n    subgraph A_Union_B\n        A_Only & B_Only & A_and_B --> Result_Union[A ∪ B]\n    end\n\n    subgraph A_Intersection_B\n        A_and_B --> Result_Intersection[A ∩ B]\n    end\n\n    subgraph Complement_of_A\n        U -- Excludes --> A\n        U_minus_A[Elements in U but not in A] --> Result_Complement[A']\n    end"
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 NDA EXAM TIP: For problems involving the number of elements in sets, use the formula: n(A ∪ B) = n(A) + n(B) - n(A ∩ B). For three sets, n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A ∩ B) - n(B ∩ C) - n(C ∩ A) + n(A ∩ B ∩ C)."
+    }
+  ],
+  "keyPoints": [
+    "Union (A ∪ B) combines all elements present in A, B, or both.",
+    "Intersection (A ∩ B) finds only the common elements present in both A and B.",
+    "Complement (A') includes all elements in the universal set (U) that are not in A.",
+    "Disjoint sets have no common elements (A ∩ B = ∅).",
+    "De Morgan's Laws, (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B', are essential for simplifying complex set expressions.",
+    "Venn diagrams are powerful visual tools for understanding and solving problems related to set operations, especially for proving identities."
+  ],
+  "commonMistakes": [
+    "Confusing the meanings of 'union' (OR) and 'intersection' (AND), especially in word problems.",
+    "Forgetting the role of the universal set (U) when calculating complements, leading to incorrect elements in A'.",
+    "Incorrectly applying De Morgan's Laws, such as forgetting to change the operation (∪ to ∩ or vice versa) when distributing the complement.",
+    "In problems involving counting elements, failing to subtract the intersection when calculating the union of non-disjoint sets."
+  ],
+  "examTips": [
+    "Always draw a Venn diagram for problems involving 2 or 3 sets. It simplifies visualization and problem-solving significantly.",
+    "Memorize De Morgan's Laws and other basic set properties; they are fundamental and frequently appear in MCQs.",
+    "When faced with complex set expressions, simplify them step-by-step using the properties and De Morgan's Laws.",
+    "For word problems, clearly define your sets (e.g., set of students who play football) and the universal set before applying formulas like n(A ∪ B)."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "If U = {1, 2, 3, 4, 5, 6, 7, 8, 9}, A = {2, 4, 6, 8}, B = {1, 3, 5, 7, 9}, then (A ∪ B)' is:",
+      "options": [
+        "{ }",
+        "{1, 2, 3, 4, 5, 6, 7, 8, 9}",
+        "{1, 3, 5, 7, 9}",
+        "{2, 4, 6, 8}"
+      ],
+      "correct": 0,
+      "explanation": "First, find A ∪ B. A ∪ B = {1, 2, 3, 4, 5, 6, 7, 8, 9}. This is the entire universal set U. Therefore, the complement of (A ∪ B) with respect to U is ∅ (the empty set)."
+    },
+    {
+      "question": "Which of the following expressions is equivalent to (X' ∪ Y)' using De Morgan's Law?",
+      "options": [
+        "X ∩ Y",
+        "X' ∩ Y'",
+        "X ∩ Y'",
+        "X' ∪ Y"
+      ],
+      "correct": 2,
+      "explanation": "Applying De Morgan's Law (A ∪ B)' = A' ∩ B' to (X' ∪ Y)', we get (X')' ∩ Y'. Since (X')' = X, the expression simplifies to X ∩ Y'."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Set%20Operations%20%E2%80%94%20Union%2C%20Intersection%2C%20Complement%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Set%20Operations%20%E2%80%94%20Union%2C%20Intersection%2C%20Complement%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Set%20Operations%20%E2%80%94%20Union%2C%20Intersection%2C%20Complement%20NCERT%20Class%2011%2012"
+  }
+}

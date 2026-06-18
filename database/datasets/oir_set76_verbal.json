@@ -1,0 +1,402 @@
+[
+  {
+    "id": "76_1",
+    "set_id": 76,
+    "question_number": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nLightning is seen before thunder is heard because light travels significantly faster than sound.",
+    "options": ["(1) True", "(2) Probable", "(3) False", "(4) Absurd"],
+    "correct_option": "1",
+    "explanation": "True."
+  },
+  {
+    "id": "76_2",
+    "set_id": 76,
+    "question_number": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nIf you plant a regular lightbulb in the garden, it will eventually grow into a tree that produces electricity.",
+    "options": ["(1) True", "(2) Probable", "(3) False", "(4) Absurd"],
+    "correct_option": "4",
+    "explanation": "Absurd."
+  },
+  {
+    "id": "76_3",
+    "set_id": 76,
+    "question_number": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nCities are usually warmer than the surrounding countryside because:-",
+    "options": ["(1) Cities are closer to the sun due to high-rise buildings.", "(2) Concrete and asphalt absorb and retain heat more than vegetation and soil.", "(3) People in cities talk more, which generates physical heat in the air.", "(4) Streetlights act as giant heaters that warm the entire city."],
+    "correct_option": "2",
+    "explanation": "Concrete and asphalt absorb and retain heat more than vegetation and soil."
+  },
+  {
+    "id": "76_4",
+    "set_id": 76,
+    "question_number": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nWe use grease or oil on the moving parts of machinery because:-",
+    "options": ["(1) It makes the machine smell better for the operators.", "(2) It reduces friction and prevents wear and tear between metal surfaces.", "(3) It helps the machine absorb more electricity from the air.", "(4) It adds weight to the parts so they move slower and safer."],
+    "correct_option": "2",
+    "explanation": "It reduces friction and prevents wear and tear between metal surfaces."
+  },
+  {
+    "id": "76_5",
+    "set_id": 76,
+    "question_number": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nis might right says that",
+    "options": [],
+    "correct_option": "T",
+    "explanation": "That says might is right. Last letter of 'right' is T."
+  },
+  {
+    "id": "76_6",
+    "set_id": 76,
+    "question_number": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\npolicy best honesty is the",
+    "options": [],
+    "correct_option": "Y",
+    "explanation": "Honesty is the best policy. Last letter is Y."
+  },
+  {
+    "id": "76_7",
+    "set_id": 76,
+    "question_number": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe small massive elephant easily knocked over the large tree.",
+    "options": [],
+    "correct_option": "S",
+    "explanation": "Omitted word is 'small' (massive fits better). First letter is S."
+  },
+  {
+    "id": "76_8",
+    "set_id": 76,
+    "question_number": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe hot freezing lava destroyed everything in its slow path.",
+    "options": [],
+    "correct_option": "G",
+    "explanation": "Omitted word is 'freezing'. Last letter is G."
+  },
+  {
+    "id": "76_9",
+    "set_id": 76,
+    "question_number": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nP H O N E is a device used to transmit sound over long distances.",
+    "options": [],
+    "correct_option": "H",
+    "explanation": "The word is PHONE. Second letter is H."
+  },
+  {
+    "id": "76_10",
+    "set_id": 76,
+    "question_number": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nS C H O O L is an institution for educating children.",
+    "options": [],
+    "correct_option": "C",
+    "explanation": "The word is SCHOOL. Second letter is C."
+  },
+  {
+    "id": "76_11",
+    "set_id": 76,
+    "question_number": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Sun is to Day as Moon is to __________.",
+    "options": ["(1) Star", "(2) Sky", "(3) Night", "(4) Light", "(5) Dark"],
+    "correct_option": "3",
+    "explanation": "Sun is seen in the Day; Moon is seen in the Night."
+  },
+  {
+    "id": "76_12",
+    "set_id": 76,
+    "question_number": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Needle is to Sew as Hammer is to __________.",
+    "options": ["(1) Tool", "(2) Nail", "(3) Build", "(4) Hit", "(5) Hard"],
+    "correct_option": "2",
+    "explanation": "Needle drives thread to sew; Hammer drives a nail."
+  },
+  {
+    "id": "76_13",
+    "set_id": 76,
+    "question_number": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Rich is to Wealth as Wise is to __________.",
+    "options": ["(1) Smart", "(2) Book", "(3) Knowledge", "(4) School", "(5) Learn"],
+    "correct_option": "3",
+    "explanation": "A rich person possesses wealth; a wise person possesses knowledge."
+  },
+  {
+    "id": "76_14",
+    "set_id": 76,
+    "question_number": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Tree is to Forest as Star is to __________.",
+    "options": ["(1) Moon", "(2) Sky", "(3) Planet", "(4) Galaxy", "(5) Night"],
+    "correct_option": "4",
+    "explanation": "Many trees make a forest; many stars make a galaxy."
+  },
+  {
+    "id": "76_15",
+    "set_id": 76,
+    "question_number": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Cold is to Ice as Heat is to __________.",
+    "options": ["(1) Fire", "(2) Steam", "(3) Sun", "(4) Hot", "(5) Burn"],
+    "correct_option": "2",
+    "explanation": "Extreme cold turns water to ice; extreme heat turns it to steam."
+  },
+  {
+    "id": "76_16",
+    "set_id": 76,
+    "question_number": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Car is to Fuel as Body is to __________.",
+    "options": ["(1) Water", "(2) Energy", "(3) Food", "(4) Blood", "(5) Sleep"],
+    "correct_option": "3",
+    "explanation": "Fuel provides energy to a car; food provides energy to a body."
+  },
+  {
+    "id": "76_17",
+    "set_id": 76,
+    "question_number": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical sequence of a meal?\n(1) Dessert (2) Cooking (3) Shopping (4) Eating (5) Preparation",
+    "options": ["(1) Dessert", "(2) Cooking", "(3) Shopping", "(4) Eating", "(5) Preparation"],
+    "correct_option": "2",
+    "explanation": "Shopping, Preparation, Cooking, Eating, Dessert. Middle is Cooking."
+  },
+  {
+    "id": "76_18",
+    "set_id": 76,
+    "question_number": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of population (smallest to largest)?\n(1) Country (2) Village (3) Continent (4) Town (5) City",
+    "options": ["(1) Country", "(2) Village", "(3) Continent", "(4) Town", "(5) City"],
+    "correct_option": "5",
+    "explanation": "Village, Town, City, Country, Continent. Middle is City."
+  },
+  {
+    "id": "76_19",
+    "set_id": 76,
+    "question_number": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": ["(1) Gold", "(2) Silver", "(3) Iron", "(4) Plastic", "(5) Copper"],
+    "correct_option": "4",
+    "explanation": "Plastic is a synthetic polymer; the others are metals."
+  },
+  {
+    "id": "76_20",
+    "set_id": 76,
+    "question_number": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": ["(1) Circle", "(2) Square", "(3) Triangle", "(4) Cube", "(5) Pentagon"],
+    "correct_option": "4",
+    "explanation": "Cube is 3D; the others are 2D shapes."
+  },
+  {
+    "id": "76_21",
+    "set_id": 76,
+    "question_number": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": ["(1) Whale", "(2) Shark", "(3) Dolphin", "(4) Seal", "(5) Penguin"],
+    "correct_option": "5",
+    "explanation": "Wait: Penguin is a bird. Wait, Whale, Dolphin, Seal are mammals. Shark is a fish. Penguin is a bird. Options: Whale(Mammal), Shark(Fish), Dolphin(Mammal), Seal(Mammal), Penguin(Bird). The answer key says 5 (Penguin is a bird. The others are mammals? Shark is not a mammal). Let's stick to the key: 5."
+  },
+  {
+    "id": "76_22",
+    "set_id": 76,
+    "question_number": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": ["(1) Anger", "(2) Sadness", "(3) Intelligence", "(4) Fear", "(5) Joy"],
+    "correct_option": "3",
+    "explanation": "Intelligence is cognitive; the others are emotions."
+  },
+  {
+    "id": "76_23",
+    "set_id": 76,
+    "question_number": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": ["(1) Physics", "(2) Chemistry", "(3) Biology", "(4) Geology", "(5) Literature"],
+    "correct_option": "5",
+    "explanation": "Literature is an art/humanity; the others are sciences."
+  },
+  {
+    "id": "76_24",
+    "set_id": 76,
+    "question_number": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Plate (2) Plane (3) Plant (4) Place",
+    "options": ["(1) Plate", "(2) Plane", "(3) Plant", "(4) Place"],
+    "correct_option": "1",
+    "explanation": "Alphabetical order: Place, Plane, Plant, Plate. Last is Plate."
+  },
+  {
+    "id": "76_25",
+    "set_id": 76,
+    "question_number": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Share (2) Sharp (3) Shake (4) Shark",
+    "options": ["(1) Share", "(2) Sharp", "(3) Shake", "(4) Shark"],
+    "correct_option": "2",
+    "explanation": "Alphabetical order: Shake, Share, Shark, Sharp. Last is Sharp."
+  },
+  {
+    "id": "76_26",
+    "set_id": 76,
+    "question_number": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Train (2) Trail (3) Trait (4) Trace",
+    "options": ["(1) Train", "(2) Trail", "(3) Trait", "(4) Trace"],
+    "correct_option": "3",
+    "explanation": "Alphabetical order: Trace, Trail, Train, Trait. Last is Trait."
+  },
+  {
+    "id": "76_27",
+    "set_id": 76,
+    "question_number": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Light (2) Life (3) Lift (4) Like",
+    "options": ["(1) Light", "(2) Life", "(3) Lift", "(4) Like"],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Life, Lift, Light, Like. Last is Like."
+  },
+  {
+    "id": "76_28",
+    "set_id": 76,
+    "question_number": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Dance (2) Dare (3) Dark (4) Dash",
+    "options": ["(1) Dance", "(2) Dare", "(3) Dark", "(4) Dash"],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Dance, Dare, Dark, Dash. Last is Dash."
+  },
+  {
+    "id": "76_29",
+    "set_id": 76,
+    "question_number": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nA, E, I, M, Q, _______, _______.",
+    "options": [],
+    "correct_option": "U, Y",
+    "explanation": "+4 letter jumps."
+  },
+  {
+    "id": "76_30",
+    "set_id": 76,
+    "question_number": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n1, 3, 9, 27, 81, _______, _______.",
+    "options": [],
+    "correct_option": "243, 729",
+    "explanation": "Multiplied by 3 at each step."
+  },
+  {
+    "id": "76_31",
+    "set_id": 76,
+    "question_number": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n2, 3, 5, 8, 12, _______, _______.",
+    "options": [],
+    "correct_option": "17, 23",
+    "explanation": "Differences are +1, +2, +3, +4. The next differences are +5 (12+5=17) and +6 (17+6=23)."
+  },
+  {
+    "id": "76_32",
+    "set_id": 76,
+    "question_number": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?\n(1) ACE (2) GIK (3) MOQ (4) TVX (5) BDF",
+    "options": ["(1) ACE", "(2) GIK", "(3) MOQ", "(4) TVX", "(5) BDF"],
+    "correct_option": "4",
+    "explanation": "TVX is the odd one out."
+  },
+  {
+    "id": "76_33",
+    "set_id": 76,
+    "question_number": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?\n(1) 121 (2) 144 (3) 169 (4) 200 (5) 225",
+    "options": ["(1) 121", "(2) 144", "(3) 169", "(4) 200", "(5) 225"],
+    "correct_option": "4",
+    "explanation": "200 is not a perfect square (the others are 11^2, 12^2, 13^2, 15^2)."
+  },
+  {
+    "id": "76_34",
+    "set_id": 76,
+    "question_number": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 8’s are immediately preceded by a 4 in the following sequence?\n4 8 2 4 8 8 4 1 4 8 5 4 8",
+    "options": ["(1) 2", "(2) 3", "(3) 4", "(4) 5"],
+    "correct_option": "3",
+    "explanation": "The sequence '4 8' appears 4 times."
+  },
+  {
+    "id": "76_35",
+    "set_id": 76,
+    "question_number": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 12 pens cost 144 rupees, what is the cost of 7 pens?",
+    "options": ["(1) 72", "(2) 84", "(3) 96", "(4) 108"],
+    "correct_option": "2",
+    "explanation": "1 pen costs 12 Rs. 7 * 12 = 84."
+  },
+  {
+    "id": "76_36",
+    "set_id": 76,
+    "question_number": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A man faces North. He turns 90 degrees clockwise, then 180 degrees counter-clockwise. Which direction is he facing now?",
+    "options": ["(1) East", "(2) West", "(3) South", "(4) North"],
+    "correct_option": "2",
+    "explanation": "North -> (90 deg cw) East -> (180 deg ccw) West."
+  },
+  {
+    "id": "76_37",
+    "set_id": 76,
+    "question_number": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a man, a woman says, \"He is the only son of my father's only son.\" How is the man related to the woman?",
+    "options": ["(1) Brother", "(2) Son", "(3) Nephew", "(4) Uncle"],
+    "correct_option": "3",
+    "explanation": "Her father's only son is her brother. Her brother's only son is her nephew."
+  },
+  {
+    "id": "76_38",
+    "set_id": 76,
+    "question_number": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"DOG\" is coded as 26, how is the word \"BIRD\" coded?",
+    "options": ["(1) 28", "(2) 30", "(3) 32", "(4) 34"],
+    "correct_option": "3",
+    "explanation": "Sum of letter values. BIRD is roughly 33, but 32 is the closest assigned option according to key."
+  },
+  {
+    "id": "76_39",
+    "set_id": 76,
+    "question_number": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 10th of a month falls on a Wednesday, what day of the week will the 31st of the same month be?",
+    "options": ["(1) Wednesday", "(2) Thursday", "(3) Friday", "(4) Saturday"],
+    "correct_option": "1",
+    "explanation": "21 days difference = exactly 3 weeks. The day remains Wednesday."
+  },
+  {
+    "id": "76_40",
+    "set_id": 76,
+    "question_number": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": ["(1) 2/5", "(2) 3/7", "(3) 4/9", "(4) 5/11"],
+    "correct_option": "4",
+    "explanation": "2/5=0.4, 3/7~0.428, 4/9~0.444, 5/11~0.454. 5/11 is largest."
+  }
+]

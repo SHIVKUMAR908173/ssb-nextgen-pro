@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "description": "Evaluation datasets for AI model testing and practice question generation",
+  "wat_evaluation": [
+    {
+      "word": "Discipline",
+      "difficulty": "Medium",
+      "expected_themes": ["Self-control", "Order", "Military values", "Success"],
+      "sample_responses": [
+        "Discipline is the foundation of success.",
+        "Self-discipline leads to self-respect.",
+        "Disciplined life brings peace and progress."
+      ]
+    },
+    {
+      "word": "Leadership",
+      "difficulty": "Hard",
+      "expected_themes": ["Guidance", "Responsibility", "Influence", "Team management"],
+      "sample_responses": [
+        "Leadership is about serving others.",
+        "True leaders inspire by example.",
+        "Leadership requires vision and action."
+      ]
+    },
+    {
+      "word": "Integrity",
+      "difficulty": "Hard",
+      "expected_themes": ["Honesty", "Values", "Character", "Trust"],
+      "sample_responses": [
+        "Integrity is doing right when no one is watching.",
+        "A person with integrity earns lasting respect.",
+        "Integrity is the core of strong character."
+      ]
+    }
+  ],
+  "srt_evaluation": [
+    {
+      "scenario": "His team was losing the match and only 5 minutes were left. He",
+      "category": "Sports Leadership",
+      "expected_olqs": ["Determination", "Leadership", "Self-Confidence"],
+      "positive_response_indicators": [
+        "Motivates team",
+        "Strategic thinking",
+        "Never gives up",
+        "Leads from front"
+      ]
+    },
+    {
+      "scenario": "He saw some students misbehaving with a girl in the bus. He",
+      "category": "Social Responsibility",
+      "expected_olqs": ["Courage", "Sense of Responsibility", "Initiative"],
+      "positive_response_indicators": [
+        "Takes action",
+        "Seeks help if needed",
+        "Supports the victim",
+        "Follows proper channels"
+      ]
+    },
+    {
+      "scenario": "His project failed despite months of hard work. He",
+      "category": "Resilience",
+      "expected_olqs": ["Determination", "Liveliness", "Effective Intelligence"],
+      "positive_response_indicators": [
+        "Analyzes failure",
+        "Learns from mistakes",
+        "Starts fresh",
+        "Stays positive"
+      ]
+    }
+  ],
+  "tat_evaluation": [
+    {
+      "image_description": "A group of people working together to build something",
+      "expected_themes": ["Teamwork", "Construction", "Community development", "Cooperation"],
+      "protagonist_suggestions": {
+        "age_range": "20-35",
+        "gender": "Any",
+        "occupation": "Engineer/Community leader/Volunteer"
+      }
+    },
+    {
+      "image_description": "A person standing alone looking at a distant mountain",
+      "expected_themes": ["Ambition", "Goal setting", "Determination", "Planning"],
+      "protagonist_suggestions": {
+        "age_range": "18-30",
+        "gender": "Any",
+        "occupation": "Student/Professional/Adventurer"
+      }
+    }
+  ],
+  "gpe_evaluation": [
+    {
+      "title": "College Festival Emergency",
+      "key_problems": [
+        "Medical emergency during event",
+        "Fire hazard in nearby building",
+        "VIP arrival security",
+        "Power failure"
+      ],
+      "expected_prioritization": [
+        "Life safety (medical, fire)",
+        "Security concerns",
+        "Event management",
+        "Infrastructure issues"
+      ]
+    }
+  ]
+}

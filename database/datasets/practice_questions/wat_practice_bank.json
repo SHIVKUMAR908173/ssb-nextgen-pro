@@ -1,0 +1,1084 @@
+{
+  "version": "2.0",
+  "description": "WAT Practice Question Bank with 60 comprehensive practice sets for production deployment",
+  "practice_sets": [
+    {
+      "set_id": "WAT_SET_01",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Hope", "category": "Positive Emotion"},
+        {"word": "Work", "category": "Professional"},
+        {"word": "Family", "category": "Relationships"},
+        {"word": "Success", "category": "Achievement"},
+        {"word": "Friend", "category": "Relationships"},
+        {"word": "Health", "category": "Personal Development"},
+        {"word": "School", "category": "Education"},
+        {"word": "Game", "category": "Sports"},
+        {"word": "Dream", "category": "Aspirations"},
+        {"word": "Help", "category": "Social Values"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_02",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Challenge", "category": "Problem Solving"},
+        {"word": "Leadership", "category": "Management"},
+        {"word": "Discipline", "category": "Values"},
+        {"word": "Courage", "category": "Values"},
+        {"word": "Team", "category": "Cooperation"},
+        {"word": "Failure", "category": "Learning"},
+        {"word": "Responsibility", "category": "Duty"},
+        {"word": "Innovation", "category": "Creativity"},
+        {"word": "Perseverance", "category": "Determination"},
+        {"word": "Integrity", "category": "Character"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_03",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Sacrifice", "category": "Values"},
+        {"word": "Controversy", "category": "Social Issues"},
+        {"word": "Corruption", "category": "Ethics"},
+        {"word": "Conflict", "category": "Resolution"},
+        {"word": "Adversity", "category": "Resilience"},
+        {"word": "Compromise", "category": "Diplomacy"},
+        {"word": "Prejudice", "category": "Social Issues"},
+        {"word": "Ambiguity", "category": "Decision Making"},
+        {"word": "Betrayal", "category": "Relationships"},
+        {"word": "Redemption", "category": "Growth"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_04",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Love", "category": "Emotions"},
+        {"word": "Study", "category": "Education"},
+        {"word": "Home", "category": "Relationships"},
+        {"word": "Play", "category": "Recreation"},
+        {"word": "Eat", "category": "Daily Life"},
+        {"word": "Sleep", "category": "Health"},
+        {"word": "Walk", "category": "Activity"},
+        {"word": "Read", "category": "Learning"},
+        {"word": "Sing", "category": "Arts"},
+        {"word": "Dance", "category": "Expression"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_05",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Ambition", "category": "Goals"},
+        {"word": "Planning", "category": "Strategy"},
+        {"word": "Execution", "category": "Action"},
+        {"word": "Feedback", "category": "Improvement"},
+        {"word": "Adaptation", "category": "Flexibility"},
+        {"word": "Progress", "category": "Growth"},
+        {"word": "Achievement", "category": "Success"},
+        {"word": "Recognition", "category": "Validation"},
+        {"word": "Reward", "category": "Motivation"},
+        {"word": "Satisfaction", "category": "Fulfillment"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_06",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Justice", "category": "Ethics"},
+        {"word": "Freedom", "category": "Rights"},
+        {"word": "Equality", "category": "Social Values"},
+        {"word": "Democracy", "category": "Governance"},
+        {"word": "Secularism", "category": "Philosophy"},
+        {"word": "Socialism", "category": "Economics"},
+        {"word": "Nationalism", "category": "Patriotism"},
+        {"word": "Globalization", "category": "World View"},
+        {"word": "Sustainability", "category": "Environment"},
+        {"word": "Humanity", "category": "Universal Values"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_07",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Sun", "category": "Nature"},
+        {"word": "Moon", "category": "Nature"},
+        {"word": "Star", "category": "Nature"},
+        {"word": "River", "category": "Nature"},
+        {"word": "Mountain", "category": "Nature"},
+        {"word": "Tree", "category": "Nature"},
+        {"word": "Flower", "category": "Nature"},
+        {"word": "Bird", "category": "Nature"},
+        {"word": "Ocean", "category": "Nature"},
+        {"word": "Sky", "category": "Nature"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_08",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Technology", "category": "Modern World"},
+        {"word": "Internet", "category": "Connectivity"},
+        {"word": "Artificial", "category": "Innovation"},
+        {"word": "Digital", "category": "Transformation"},
+        {"word": "Virtual", "category": "Reality"},
+        {"word": "Automation", "category": "Efficiency"},
+        {"word": "Robotics", "category": "Future"},
+        {"word": "Blockchain", "category": "Security"},
+        {"word": "Quantum", "category": "Computing"},
+        {"word": "Biotechnology", "category": "Science"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_09",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Existentialism", "category": "Philosophy"},
+        {"word": "Nihilism", "category": "Philosophy"},
+        {"word": "Pragmatism", "category": "Philosophy"},
+        {"word": "Idealism", "category": "Philosophy"},
+        {"word": "Realism", "category": "Philosophy"},
+        {"word": "Rationalism", "category": "Philosophy"},
+        {"word": "Empiricism", "category": "Philosophy"},
+        {"word": "Utilitarianism", "category": "Ethics"},
+        {"word": "Stoicism", "category": "Philosophy"},
+        {"word": "Humanism", "category": "Philosophy"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_10",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Mother", "category": "Family"},
+        {"word": "Father", "category": "Family"},
+        {"word": "Brother", "category": "Family"},
+        {"word": "Sister", "category": "Family"},
+        {"word": "Teacher", "category": "Education"},
+        {"word": "Student", "category": "Education"},
+        {"word": "Doctor", "category": "Profession"},
+        {"word": "Engineer", "category": "Profession"},
+        {"word": "Farmer", "category": "Profession"},
+        {"word": "Soldier", "category": "Profession"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_11",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Competition", "category": "Challenge"},
+        {"word": "Cooperation", "category": "Teamwork"},
+        {"word": "Collaboration", "category": "Partnership"},
+        {"word": "Coordination", "category": "Organization"},
+        {"word": "Communication", "category": "Expression"},
+        {"word": "Negotiation", "category": "Diplomacy"},
+        {"word": "Mediation", "category": "Resolution"},
+        {"word": "Arbitration", "category": "Justice"},
+        {"word": "Litigation", "category": "Law"},
+        {"word": "Reconciliation", "category": "Peace"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_12",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Paradigm", "category": "Framework"},
+        {"word": "Epistemology", "category": "Knowledge"},
+        {"word": "Ontology", "category": "Existence"},
+        {"word": "Phenomenology", "category": "Consciousness"},
+        {"word": "Dialectics", "category": "Logic"},
+        {"word": "Hermeneutics", "category": "Interpretation"},
+        {"word": "Deconstruction", "category": "Analysis"},
+        {"word": "Structuralism", "category": "Theory"},
+        {"word": "Postmodernism", "category": "Philosophy"},
+        {"word": "Metaphysics", "category": "Philosophy"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_13",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Happy", "category": "Emotion"},
+        {"word": "Sad", "category": "Emotion"},
+        {"word": "Angry", "category": "Emotion"},
+        {"word": "Fear", "category": "Emotion"},
+        {"word": "Surprise", "category": "Emotion"},
+        {"word": "Disgust", "category": "Emotion"},
+        {"word": "Trust", "category": "Emotion"},
+        {"word": "Anticipation", "category": "Emotion"},
+        {"word": "Joy", "category": "Emotion"},
+        {"word": "Peace", "category": "State"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_14",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Entrepreneur", "category": "Business"},
+        {"word": "Investment", "category": "Finance"},
+        {"word": "Marketing", "category": "Strategy"},
+        {"word": "Management", "category": "Leadership"},
+        {"word": "Strategy", "category": "Planning"},
+        {"word": "Operations", "category": "Execution"},
+        {"word": "Logistics", "category": "Supply Chain"},
+        {"word": "Analytics", "category": "Data"},
+        {"word": "Optimization", "category": "Efficiency"},
+        {"word": "Scalability", "category": "Growth"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_15",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Sovereignty", "category": "Politics"},
+        {"word": "Hegemony", "category": "Power"},
+        {"word": "Totalitarianism", "category": "Government"},
+        {"word": "Authoritarianism", "category": "Control"},
+        {"word": "Pluralism", "category": "Diversity"},
+        {"word": "Federalism", "category": "Governance"},
+        {"word": "Confederalism", "category": "Alliance"},
+        {"word": "Bureaucracy", "category": "Administration"},
+        {"word": "Technocracy", "category": "Expertise"},
+        {"word": "Meritocracy", "category": "System"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_16",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Book", "category": "Education"},
+        {"word": "Pen", "category": "Tool"},
+        {"word": "Table", "category": "Furniture"},
+        {"word": "Chair", "category": "Furniture"},
+        {"word": "Door", "category": "Structure"},
+        {"word": "Window", "category": "Structure"},
+        {"word": "Road", "category": "Infrastructure"},
+        {"word": "Bridge", "category": "Infrastructure"},
+        {"word": "Car", "category": "Transport"},
+        {"word": "Train", "category": "Transport"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_17",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Motivation", "category": "Psychology"},
+        {"word": "Inspiration", "category": "Creativity"},
+        {"word": "Determination", "category": "Willpower"},
+        {"word": "Persistence", "category": "Endurance"},
+        {"word": "Resilience", "category": "Recovery"},
+        {"word": "Adaptability", "category": "Flexibility"},
+        {"word": "Confidence", "category": "Self-belief"},
+        {"word": "Humility", "category": "Character"},
+        {"word": "Empathy", "category": "Understanding"},
+        {"word": "Compassion", "category": "Kindness"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_18",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Alienation", "category": "Sociology"},
+        {"word": "Anomie", "category": "Social Disorder"},
+        {"word": "Stratification", "category": "Hierarchy"},
+        {"word": "Marginalization", "category": "Exclusion"},
+        {"word": "Gentrification", "category": "Urban Change"},
+        {"word": "Globalization", "category": "Integration"},
+        {"word": "Localization", "category": "Adaptation"},
+        {"word": "Homogenization", "category": "Standardization"},
+        {"word": "Differentiation", "category": "Specialization"},
+        {"word": "Integration", "category": "Unity"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_19",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Morning", "category": "Time"},
+        {"word": "Evening", "category": "Time"},
+        {"word": "Summer", "category": "Season"},
+        {"word": "Winter", "category": "Season"},
+        {"word": "Spring", "category": "Season"},
+        {"word": "Autumn", "category": "Season"},
+        {"word": "Monday", "category": "Week"},
+        {"word": "Friday", "category": "Week"},
+        {"word": "Birthday", "category": "Celebration"},
+        {"word": "Festival", "category": "Celebration"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_20",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Renewable", "category": "Energy"},
+        {"word": "Sustainable", "category": "Environment"},
+        {"word": "Conservation", "category": "Preservation"},
+        {"word": "Recycling", "category": "Waste Management"},
+        {"word": "Pollution", "category": "Environmental Issue"},
+        {"word": "Deforestation", "category": "Environmental Issue"},
+        {"word": "Climate", "category": "Weather"},
+        {"word": "Ecosystem", "category": "Biology"},
+        {"word": "Biodiversity", "category": "Ecology"},
+        {"word": "Carbon", "category": "Chemistry"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_21",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Utilitarian", "category": "Ethics"},
+        {"word": "Deontological", "category": "Ethics"},
+        {"word": "Virtue Ethics", "category": "Philosophy"},
+        {"word": "Consequentialism", "category": "Ethics"},
+        {"word": "Relativism", "category": "Philosophy"},
+        {"word": "Absolutism", "category": "Philosophy"},
+        {"word": "Nihilism", "category": "Philosophy"},
+        {"word": "Existential", "category": "Philosophy"},
+        {"word": "Phenomenological", "category": "Philosophy"},
+        {"word": "Transcendental", "category": "Philosophy"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_22",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Music", "category": "Arts"},
+        {"word": "Painting", "category": "Arts"},
+        {"word": "Dance", "category": "Arts"},
+        {"word": "Sculpture", "category": "Arts"},
+        {"word": "Poetry", "category": "Literature"},
+        {"word": "Drama", "category": "Performance"},
+        {"word": "Film", "category": "Entertainment"},
+        {"word": "Photography", "category": "Arts"},
+        {"word": "Writing", "category": "Expression"},
+        {"word": "Singing", "category": "Performance"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_23",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Algorithm", "category": "Computing"},
+        {"word": "Database", "category": "Data Storage"},
+        {"word": "Network", "category": "Connectivity"},
+        {"word": "Security", "category": "Protection"},
+        {"word": "Encryption", "category": "Cryptography"},
+        {"word": "Interface", "category": "Interaction"},
+        {"word": "Platform", "category": "Infrastructure"},
+        {"word": "Protocol", "category": "Standards"},
+        {"word": "Architecture", "category": "Design"},
+        {"word": "Framework", "category": "Structure"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_24",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Epistemological", "category": "Knowledge Theory"},
+        {"word": "Methodological", "category": "Research"},
+        {"word": "Theoretical", "category": "Conceptual"},
+        {"word": "Empirical", "category": "Evidence-based"},
+        {"word": "Analytical", "category": "Logical"},
+        {"word": "Synthetic", "category": "Combinatorial"},
+        {"word": "Dialectical", "category": "Argumentative"},
+        {"word": "Hermeneutic", "category": "Interpretive"},
+        {"word": "Phenomenological", "category": "Experiential"},
+        {"word": "Ontological", "category": "Existential"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_25",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Cricket", "category": "Sports"},
+        {"word": "Football", "category": "Sports"},
+        {"word": "Tennis", "category": "Sports"},
+        {"word": "Swimming", "category": "Sports"},
+        {"word": "Running", "category": "Exercise"},
+        {"word": "Cycling", "category": "Exercise"},
+        {"word": "Yoga", "category": "Wellness"},
+        {"word": "Meditation", "category": "Wellness"},
+        {"word": "Hiking", "category": "Adventure"},
+        {"word": "Camping", "category": "Adventure"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_26",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Negotiation", "category": "Diplomacy"},
+        {"word": "Persuasion", "category": "Influence"},
+        {"word": "Mediation", "category": "Conflict Resolution"},
+        {"word": "Arbitration", "category": "Dispute Resolution"},
+        {"word": "Consensus", "category": "Agreement"},
+        {"word": "Compromise", "category": "Settlement"},
+        {"word": "Accommodation", "category": "Adjustment"},
+        {"word": "Collaboration", "category": "Partnership"},
+        {"word": "Cooperation", "category": "Teamwork"},
+        {"word": "Coordination", "category": "Organization"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_27",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Hegemonic", "category": "Dominance"},
+        {"word": "Hegira", "category": "Migration"},
+        {"word": "Helot", "category": "Servitude"},
+        {"word": "Hegira", "category": "Flight"},
+        {"word": "Hegumen", "category": "Leadership"},
+        {"word": "Heirarchy", "category": "Rank"},
+        {"word": "Heteronomy", "category": "External Rule"},
+        {"word": "Heterodoxy", "category": "Unorthodox"},
+        {"word": "Hexis", "category": "Disposition"},
+        {"word": "Historicism", "category": "Context"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_28",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "City", "category": "Urban"},
+        {"word": "Village", "category": "Rural"},
+        {"word": "Town", "category": "Settlement"},
+        {"word": "Market", "category": "Commerce"},
+        {"word": "School", "category": "Education"},
+        {"word": "Hospital", "category": "Healthcare"},
+        {"word": "Temple", "category": "Religion"},
+        {"word": "Park", "category": "Recreation"},
+        {"word": "Library", "category": "Knowledge"},
+        {"word": "Museum", "category": "Culture"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_29",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Inflation", "category": "Economics"},
+        {"word": "Recession", "category": "Economics"},
+        {"word": "Depression", "category": "Economics"},
+        {"word": "Recovery", "category": "Economics"},
+        {"word": "Growth", "category": "Economics"},
+        {"word": "Development", "category": "Progress"},
+        {"word": "Sustainability", "category": "Long-term"},
+        {"word": "Equity", "category": "Fairness"},
+        {"word": "Efficiency", "category": "Optimization"},
+        {"word": "Productivity", "category": "Output"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_30",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Quantum", "category": "Physics"},
+        {"word": "Relativity", "category": "Physics"},
+        {"word": "Thermodynamics", "category": "Physics"},
+        {"word": "Electromagnetic", "category": "Physics"},
+        {"word": "Gravitational", "category": "Physics"},
+        {"word": "Nuclear", "category": "Physics"},
+        {"word": "Particle", "category": "Physics"},
+        {"word": "Wave", "category": "Physics"},
+        {"word": "Field", "category": "Physics"},
+        {"word": "Dimension", "category": "Physics"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_31",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Kindness", "category": "Virtue"},
+        {"word": "Honesty", "category": "Virtue"},
+        {"word": "Generosity", "category": "Virtue"},
+        {"word": "Patience", "category": "Virtue"},
+        {"word": "Gratitude", "category": "Virtue"},
+        {"word": "Forgiveness", "category": "Virtue"},
+        {"word": "Loyalty", "category": "Virtue"},
+        {"word": "Respect", "category": "Value"},
+        {"word": "Tolerance", "category": "Value"},
+        {"word": "Humility", "category": "Virtue"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_32",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Startup", "category": "Business"},
+        {"word": "Venture", "category": "Enterprise"},
+        {"word": "Incubator", "category": "Support"},
+        {"word": "Accelerator", "category": "Growth"},
+        {"word": "Disruption", "category": "Innovation"},
+        {"word": "Pivot", "category": "Strategy"},
+        {"word": "Scaling", "category": "Expansion"},
+        {"word": "Exit", "category": "Strategy"},
+        {"word": "IPO", "category": "Finance"},
+        {"word": "Merger", "category": "Consolidation"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_33",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Categorical", "category": "Absolute"},
+        {"word": "Hypothetical", "category": "Conditional"},
+        {"word": "A priori", "category": "Before Experience"},
+        {"word": "A posteriori", "category": "After Experience"},
+        {"word": "Noumenon", "category": "Thing-in-itself"},
+        {"word": "Phenomenon", "category": "Appearance"},
+        {"word": "Transcendental", "category": "Beyond Experience"},
+        {"word": "Immanent", "category": "Within"},
+        {"word": "Transcendent", "category": "Beyond"},
+        {"word": "Synthetic", "category": "Combined"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_34",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Water", "category": "Essential"},
+        {"word": "Food", "category": "Essential"},
+        {"word": "Air", "category": "Essential"},
+        {"word": "Shelter", "category": "Essential"},
+        {"word": "Clothing", "category": "Essential"},
+        {"word": "Fire", "category": "Element"},
+        {"word": "Earth", "category": "Element"},
+        {"word": "Wind", "category": "Element"},
+        {"word": "Light", "category": "Natural"},
+        {"word": "Darkness", "category": "Natural"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_35",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Vaccine", "category": "Medicine"},
+        {"word": "Antibiotic", "category": "Medicine"},
+        {"word": "Therapy", "category": "Treatment"},
+        {"word": "Diagnosis", "category": "Identification"},
+        {"word": "Prognosis", "category": "Prediction"},
+        {"word": "Prevention", "category": "Healthcare"},
+        {"word": "Rehabilitation", "category": "Recovery"},
+        {"word": "Palliative", "category": "Care"},
+        {"word": "Holistic", "category": "Approach"},
+        {"word": "Integrative", "category": "Combined"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_36",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Deconstruction", "category": "Analysis"},
+        {"word": "Reconstruction", "category": "Rebuilding"},
+        {"word": "Recontextualization", "category": "Reframing"},
+        {"word": "Reification", "category": "Objectification"},
+        {"word": "Reification", "category": "Materialization"},
+        {"word": "Reification", "category": "Concretization"},
+        {"word": "Reification", "category": "Substantiation"},
+        {"word": "Reification", "category": "Embodiment"},
+        {"word": "Reification", "category": "Instantiation"},
+        {"word": "Reification", "category": "Realization"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_37",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Computer", "category": "Technology"},
+        {"word": "Phone", "category": "Communication"},
+        {"word": "Television", "category": "Media"},
+        {"word": "Radio", "category": "Media"},
+        {"word": "Newspaper", "category": "Media"},
+        {"word": "Magazine", "category": "Media"},
+        {"word": "Internet", "category": "Technology"},
+        {"word": "Email", "category": "Communication"},
+        {"word": "Social", "category": "Interaction"},
+        {"word": "Network", "category": "Connection"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_38",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Mindfulness", "category": "Awareness"},
+        {"word": "Meditation", "category": "Practice"},
+        {"word": "Consciousness", "category": "Awareness"},
+        {"word": "Subconscious", "category": "Mind"},
+        {"word": "Unconscious", "category": "Mind"},
+        {"word": "Cognition", "category": "Thinking"},
+        {"word": "Perception", "category": "Sensing"},
+        {"word": "Attention", "category": "Focus"},
+        {"word": "Memory", "category": "Retention"},
+        {"word": "Learning", "category": "Acquisition"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_39",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Teleological", "category": "Purpose-driven"},
+        {"word": "Deontological", "category": "Duty-based"},
+        {"word": "Axiological", "category": "Value-based"},
+        {"word": "Ontological", "category": "Being-based"},
+        {"word": "Cosmological", "category": "Universe-based"},
+        {"word": "Theological", "category": "God-based"},
+        {"word": "Anthropological", "category": "Human-based"},
+        {"word": "Sociological", "category": "Society-based"},
+        {"word": "Psychological", "category": "Mind-based"},
+        {"word": "Biological", "category": "Life-based"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_40",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Victory", "category": "Success"},
+        {"word": "Defeat", "category": "Failure"},
+        {"word": "Win", "category": "Achievement"},
+        {"word": "Lose", "category": "Setback"},
+        {"word": "Try", "category": "Effort"},
+        {"word": "Fail", "category": "Learning"},
+        {"word": "Succeed", "category": "Achievement"},
+        {"word": "Persist", "category": "Endurance"},
+        {"word": "Quit", "category": "Giving Up"},
+        {"word": "Continue", "category": "Perseverance"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_41",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Democracy", "category": "Government"},
+        {"word": "Republic", "category": "Government"},
+        {"word": "Monarchy", "category": "Government"},
+        {"word": "Dictatorship", "category": "Government"},
+        {"word": "Anarchy", "category": "No Government"},
+        {"word": "Oligarchy", "category": "Few Rule"},
+        {"word": "Theocracy", "category": "Religious Rule"},
+        {"word": "Autocracy", "category": "One Rule"},
+        {"word": "Plutocracy", "category": "Wealth Rule"},
+        {"word": "Meritocracy", "category": "Merit Rule"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_42",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Eschatology", "category": "End Times"},
+        {"word": "Soteriology", "category": "Salvation"},
+        {"word": "Christology", "category": "Study of Christ"},
+        {"word": "Pneumatology", "category": "Study of Spirit"},
+        {"word": "Ecclesiology", "category": "Study of Church"},
+        {"word": "Hamartiology", "category": "Study of Sin"},
+        {"word": "Bibliology", "category": "Study of Scripture"},
+        {"word": "Theology", "category": "Study of God"},
+        {"word": "Apologetics", "category": "Defense of Faith"},
+        {"word": "Hermeneutics", "category": "Interpretation"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_43",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Baby", "category": "Life Stage"},
+        {"word": "Child", "category": "Life Stage"},
+        {"word": "Teenager", "category": "Life Stage"},
+        {"word": "Adult", "category": "Life Stage"},
+        {"word": "Elderly", "category": "Life Stage"},
+        {"word": "Youth", "category": "Energy"},
+        {"word": "Age", "category": "Time"},
+        {"word": "Growth", "category": "Development"},
+        {"word": "Maturity", "category": "Development"},
+        {"word": "Wisdom", "category": "Knowledge"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_44",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Genetics", "category": "Biology"},
+        {"word": "Evolution", "category": "Biology"},
+        {"word": "Mutation", "category": "Change"},
+        {"word": "Adaptation", "category": "Adjustment"},
+        {"word": "Selection", "category": "Choice"},
+        {"word": "Species", "category": "Classification"},
+        {"word": "Ecosystem", "category": "Environment"},
+        {"word": "Habitat", "category": "Home"},
+        {"word": "Conservation", "category": "Preservation"},
+        {"word": "Extinction", "category": "End"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_45",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Solipsism", "category": "Philosophy"},
+        {"word": "Determinism", "category": "Causality"},
+        {"word": "Indeterminism", "category": "Freedom"},
+        {"word": "Compatibilism", "category": "Reconciliation"},
+        {"word": "Libertarianism", "category": "Free Will"},
+        {"word": "Fatalism", "category": "Destiny"},
+        {"word": "Predestination", "category": "Foreordination"},
+        {"word": "Providence", "category": "Divine Guidance"},
+        {"word": "Karma", "category": "Action-Consequence"},
+        {"word": "Dharma", "category": "Duty/Righteousness"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_46",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Peace", "category": "State"},
+        {"word": "War", "category": "Conflict"},
+        {"word": "Love", "category": "Emotion"},
+        {"word": "Hate", "category": "Emotion"},
+        {"word": "Friendship", "category": "Relationship"},
+        {"word": "Enmity", "category": "Relationship"},
+        {"word": "Trust", "category": "Belief"},
+        {"word": "Doubt", "category": "Uncertainty"},
+        {"word": "Faith", "category": "Belief"},
+        {"word": "Hope", "category": "Expectation"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_47",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Satellite", "category": "Space"},
+        {"word": "Rocket", "category": "Space"},
+        {"word": "Astronaut", "category": "Space Explorer"},
+        {"word": "Galaxy", "category": "Space"},
+        {"word": "Universe", "category": "Cosmos"},
+        {"word": "Planet", "category": "Celestial"},
+        {"word": "Star", "category": "Celestial"},
+        {"word": "Comet", "category": "Celestial"},
+        {"word": "Asteroid", "category": "Celestial"},
+        {"word": "Nebula", "category": "Space Cloud"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_48",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Transcendental", "category": "Beyond"},
+        {"word": "Immanent", "category": "Within"},
+        {"word": "Absolute", "category": "Unconditional"},
+        {"word": "Relative", "category": "Conditional"},
+        {"word": "Universal", "category": "All-encompassing"},
+        {"word": "Particular", "category": "Specific"},
+        {"word": "General", "category": "Broad"},
+        {"word": "Specific", "category": "Detailed"},
+        {"word": "Abstract", "category": "Conceptual"},
+        {"word": "Concrete", "category": "Tangible"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_49",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Gold", "category": "Metal"},
+        {"word": "Silver", "category": "Metal"},
+        {"word": "Copper", "category": "Metal"},
+        {"word": "Iron", "category": "Metal"},
+        {"word": "Diamond", "category": "Gem"},
+        {"word": "Ruby", "category": "Gem"},
+        {"word": "Emerald", "category": "Gem"},
+        {"word": "Pearl", "category": "Gem"},
+        {"word": "Crystal", "category": "Mineral"},
+        {"word": "Marble", "category": "Stone"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_50",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Artificial", "category": "Man-made"},
+        {"word": "Natural", "category": "Nature-made"},
+        {"word": "Synthetic", "category": "Combined"},
+        {"word": "Organic", "category": "Living"},
+        {"word": "Inorganic", "category": "Non-living"},
+        {"word": "Biodegradable", "category": "Eco-friendly"},
+        {"word": "Sustainable", "category": "Maintainable"},
+        {"word": "Renewable", "category": "Replenishable"},
+        {"word": "Non-renewable", "category": "Finite"},
+        {"word": "Recyclable", "category": "Reusable"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_51",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Episteme", "category": "Scientific Knowledge"},
+        {"word": "Doxa", "category": "Opinion"},
+        {"word": "Phronesis", "category": "Practical Wisdom"},
+        {"word": "Techne", "category": "Craft Knowledge"},
+        {"word": "Sophia", "category": "Theoretical Wisdom"},
+        {"word": "Nous", "category": "Intellect"},
+        {"word": "Logos", "category": "Reason"},
+        {"word": "Mythos", "category": "Myth"},
+        {"word": "Pathos", "category": "Emotion"},
+        {"word": "Ethos", "category": "Character"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_52",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Ocean", "category": "Water Body"},
+        {"word": "Sea", "category": "Water Body"},
+        {"word": "Lake", "category": "Water Body"},
+        {"word": "River", "category": "Water Body"},
+        {"word": "Stream", "category": "Water Body"},
+        {"word": "Pond", "category": "Water Body"},
+        {"word": "Waterfall", "category": "Water Feature"},
+        {"word": "Glacier", "category": "Ice"},
+        {"word": "Island", "category": "Land"},
+        {"word": "Peninsula", "category": "Land"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_53",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Innovation", "category": "Creativity"},
+        {"word": "Invention", "category": "Creation"},
+        {"word": "Discovery", "category": "Finding"},
+        {"word": "Research", "category": "Investigation"},
+        {"word": "Development", "category": "Growth"},
+        {"word": "Design", "category": "Planning"},
+        {"word": "Prototype", "category": "Model"},
+        {"word": "Testing", "category": "Validation"},
+        {"word": "Implementation", "category": "Execution"},
+        {"word": "Optimization", "category": "Improvement"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_54",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Aporia", "category": "Puzzlement"},
+        {"word": "Ataraxia", "category": "Tranquility"},
+        {"word": "Aretē", "category": "Excellence"},
+        {"word": "Eudaimonia", "category": "Flourishing"},
+        {"word": "Kairos", "category": "Opportune Moment"},
+        {"word": "Chronos", "category": "Sequential Time"},
+        {"word": "Telos", "category": "Purpose"},
+        {"word": "Arche", "category": "First Principle"},
+        {"word": "Anamnesis", "category": "Recollection"},
+        {"word": "Katharsis", "category": "Purification"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_55",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Smile", "category": "Expression"},
+        {"word": "Laugh", "category": "Expression"},
+        {"word": "Cry", "category": "Expression"},
+        {"word": "Shout", "category": "Expression"},
+        {"word": "Whisper", "category": "Expression"},
+        {"word": "Hug", "category": "Gesture"},
+        {"word": "Wave", "category": "Gesture"},
+        {"word": "Nod", "category": "Gesture"},
+        {"word": "Shake", "category": "Gesture"},
+        {"word": "Clap", "category": "Expression"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_56",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Paradigm", "category": "Model"},
+        {"word": "Framework", "category": "Structure"},
+        {"word": "Methodology", "category": "Approach"},
+        {"word": "Heuristic", "category": "Rule of Thumb"},
+        {"word": "Algorithm", "category": "Procedure"},
+        {"word": "Protocol", "category": "Standard"},
+        {"word": "Standard", "category": "Benchmark"},
+        {"word": "Criterion", "category": "Measure"},
+        {"word": "Metric", "category": "Measurement"},
+        {"word": "Indicator", "category": "Signal"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_57",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Simulacrum", "category": "Copy without Original"},
+        {"word": "Hyperreality", "category": "Beyond Reality"},
+        {"word": "Baudrillardian", "category": "Postmodern Theory"},
+        {"word": "Foucauldian", "category": "Power-Knowledge"},
+        {"word": "Derridean", "category": "Deconstruction"},
+        {"word": "Lacanian", "category": "Psychoanalytic"},
+        {"word": "Deleuzian", "category": "Rhizomatic"},
+        {"word": "Lyotardian", "category": "Postmodern Condition"},
+        {"word": "Habermasian", "category": "Communicative Action"},
+        {"word": "Adornian", "category": "Critical Theory"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_58",
+      "difficulty": "Easy",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Apple", "category": "Fruit"},
+        {"word": "Banana", "category": "Fruit"},
+        {"word": "Orange", "category": "Fruit"},
+        {"word": "Grape", "category": "Fruit"},
+        {"word": "Mango", "category": "Fruit"},
+        {"word": "Potato", "category": "Vegetable"},
+        {"word": "Tomato", "category": "Vegetable"},
+        {"word": "Carrot", "category": "Vegetable"},
+        {"word": "Spinach", "category": "Vegetable"},
+        {"word": "Onion", "category": "Vegetable"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_59",
+      "difficulty": "Medium",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Consciousness", "category": "Awareness"},
+        {"word": "Subconscious", "category": "Below Awareness"},
+        {"word": "Unconscious", "category": "Unaware"},
+        {"word": "Cognition", "category": "Thinking Process"},
+        {"word": "Metacognition", "category": "Thinking about Thinking"},
+        {"word": "Perception", "category": "Interpretation"},
+        {"word": "Sensation", "category": "Feeling"},
+        {"word": "Intuition", "category": "Instinctive Knowing"},
+        {"word": "Reasoning", "category": "Logical Thinking"},
+        {"word": "Judgment", "category": "Decision Making"}
+      ]
+    },
+    {
+      "set_id": "WAT_SET_60",
+      "difficulty": "Hard",
+      "time_limit_seconds": 900,
+      "words": [
+        {"word": "Interconnectedness", "category": "Unity"},
+        {"word": "Interdependence", "category": "Mutual Reliance"},
+        {"word": "Interbeing", "category": "Mutual Existence"},
+        {"word": "Emptiness", "category": "Sunyata"},
+        {"word": "Suchness", "category": "Tathata"},
+        {"word": "Non-duality", "category": "Advaita"},
+        {"word": "Impermanence", "category": "Anitya"},
+        {"word": "No-self", "category": "Anatta"},
+        {"word": "Suffering", "category": "Dukkha"},
+        {"word": "Enlightenment", "category": "Nirvana"}
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "positive_response_indicators": [
+      "Proactive approach",
+      "Social awareness",
+      "Leadership qualities",
+      "Problem-solving orientation",
+      "Ethical considerations",
+      "Team orientation",
+      "Perseverance",
+      "Self-improvement focus",
+      "Positive attitude",
+      "Constructive thinking",
+      "Future orientation",
+      "Growth mindset",
+      "Resilience",
+      "Adaptability",
+      "Emotional intelligence"
+    ],
+    "negative_response_indicators": [
+      "Passive approach",
+      "Self-centered thinking",
+      "Unethical suggestions",
+      "Giving up easily",
+      "Blaming others",
+      "Negative attitude",
+      "Violent/aggressive responses",
+      "Illegal activities",
+      "Short-term thinking",
+      "Fixed mindset",
+      "Rigidity",
+      "Emotional reactivity",
+      "Avoidance behavior",
+      "Victim mentality",
+      "Cynicism"
+    ],
+    "scoring_rubric": {
+      "theme_quality": {
+        "weight": 0.3,
+        "description": "Relevance and depth of the theme expressed"
+      },
+      "olq_alignment": {
+        "weight": 0.3,
+        "description": "Alignment with Officer Like Qualities"
+      },
+      "expression_quality": {
+        "weight": 0.2,
+        "description": "Clarity and effectiveness of expression"
+      },
+      "originality": {
+        "weight": 0.1,
+        "description": "Uniqueness and creativity of response"
+      },
+      "practicality": {
+        "weight": 0.1,
+        "description": "Practical applicability of the idea"
+      }
+    }
+  }
+}

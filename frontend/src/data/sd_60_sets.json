@@ -1,0 +1,3072 @@
+{
+  "metadata": {
+    "total_prompts": 300,
+    "total_sets": 60,
+    "time_limit_minutes": 15,
+    "words_per_section": "150-200",
+    "version": "2.0",
+    "description": "60 unique Self Description practice sets for SSB preparation"
+  },
+  "sets": [
+    {
+      "set_id": 1,
+      "name": "Set 01",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your approach to handling responsibilities at home?",
+          "focus_areas": [
+            "responsibility",
+            "discipline",
+            "emotional maturity"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your favorite teacher describe your classroom participation and initiative?",
+          "focus_areas": [
+            "academic rigor",
+            "intellectual curiosity",
+            "classroom participation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your closest friend describe your behavior during a group crisis?",
+          "focus_areas": [
+            "loyalty",
+            "trustworthiness",
+            "dependability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Identify three core strengths that make you a suitable officer candidate and explain each briefly.",
+          "focus_areas": [
+            "self-awareness",
+            "introspection",
+            "personal growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What is one weakness you have actively worked to improve in the last year?",
+          "focus_areas": [
+            "weakness identification",
+            "action plan",
+            "progress tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 2,
+      "name": "Set 02",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What qualities do your parents appreciate most about you, and which ones concern them?",
+          "focus_areas": [
+            "family values",
+            "obedience",
+            "respect for elders"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback has a teacher or employer given you about your leadership style?",
+          "focus_areas": [
+            "leadership",
+            "initiative",
+            "team management"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends say about your loyalty and trustworthiness?",
+          "focus_areas": [
+            "humor",
+            "social skills",
+            "approachability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What is your biggest weakness, and what concrete steps are you taking to overcome it?",
+          "focus_areas": [
+            "leadership potential",
+            "decision-making",
+            "authority"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe a skill you lack but believe is essential for an officer.",
+          "focus_areas": [
+            "skill development",
+            "training",
+            "practice"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 3,
+      "name": "Set 03",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "Describe how your father or mother would introduce you to their close friend.",
+          "focus_areas": [
+            "decision-making",
+            "independence",
+            "self-reliance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "Describe how a professor or boss would rate your ability to work under deadlines.",
+          "focus_areas": [
+            "work ethic",
+            "punctuality",
+            "dedication"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends perceive your ability to manage conflicts within the group?",
+          "focus_areas": [
+            "crisis management",
+            "composure",
+            "quick thinking"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe a situation where you demonstrated leadership without being asked.",
+          "focus_areas": [
+            "emotional regulation",
+            "stress management",
+            "composure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What feedback have you received repeatedly that you still struggle to act on?",
+          "focus_areas": [
+            "habit formation",
+            "consistency",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 4,
+      "name": "Set 04",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "In what ways have your parents shaped your values and discipline?",
+          "focus_areas": [
+            "temperament",
+            "patience",
+            "conflict resolution"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your mentor describe your response to constructive criticism?",
+          "focus_areas": [
+            "problem-solving",
+            "analytical thinking",
+            "logical reasoning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "Describe how your friend would introduce you to a new acquaintance.",
+          "focus_areas": [
+            "generosity",
+            "empathy",
+            "emotional support"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you handle failure, and what was the most significant lesson a failure taught you?",
+          "focus_areas": [
+            "physical fitness",
+            "endurance",
+            "health discipline"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you working to improve your physical endurance and stamina?",
+          "focus_areas": [
+            "emotional control",
+            "patience",
+            "temperament"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 5,
+      "name": "Set 05",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What feedback have your parents given you about your temperament during family disagreements?",
+          "focus_areas": [
+            "academic performance",
+            "career focus",
+            "ambition"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What strengths would a teacher highlight about you in a recommendation letter?",
+          "focus_areas": [
+            "communication skills",
+            "presentation",
+            "articulation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your best friend say is your most annoying habit and your best quality?",
+          "focus_areas": [
+            "adventurous spirit",
+            "risk-taking",
+            "courage"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What motivates you to pursue a career in the armed forces?",
+          "focus_areas": [
+            "values",
+            "integrity",
+            "moral compass"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What communication gap do you need to bridge, and how are you doing it?",
+          "focus_areas": [
+            "communication gap",
+            "expression",
+            "clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 6,
+      "name": "Set 06",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your academic journey and career choices so far?",
+          "focus_areas": [
+            "physical fitness",
+            "health consciousness",
+            "endurance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your employer or teacher view your teamwork and collaboration skills?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "peer support"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your role during group adventures or outings?",
+          "focus_areas": [
+            "conflict resolution",
+            "mediation",
+            "fairness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your approach to making decisions under uncertainty or pressure.",
+          "focus_areas": [
+            "motivation",
+            "drive",
+            "goal orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe an area where your confidence is low and what steps you are taking.",
+          "focus_areas": [
+            "physical fitness improvement",
+            "endurance building",
+            "stamina"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 7,
+      "name": "Set 07",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your decision-making skills in critical situations?",
+          "focus_areas": [
+            "financial responsibility",
+            "planning",
+            "resource management"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "Describe what a coach or instructor would say about your perseverance during challenges.",
+          "focus_areas": [
+            "discipline",
+            "consistency",
+            "follow-through"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your college friends say about your influence on the group's decisions?",
+          "focus_areas": [
+            "influence",
+            "motivation",
+            "inspiration"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What are the values you refuse to compromise on, regardless of the situation?",
+          "focus_areas": [
+            "risk assessment",
+            "courage",
+            "calculated boldness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What habits do you need to break to become a more effective leader?",
+          "focus_areas": [
+            "knowledge expansion",
+            "reading",
+            "awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 8,
+      "name": "Set 08",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How does your family perceive your ability to manage stress and pressure?",
+          "focus_areas": [
+            "social behavior",
+            "peer influence",
+            "character"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would a senior colleague describe your problem-solving approach?",
+          "focus_areas": [
+            "creativity",
+            "innovation",
+            "original thinking"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers perceive your sense of humor and social skills?",
+          "focus_areas": [
+            "honesty",
+            "straightforwardness",
+            "transparency"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you prioritize when you have multiple important tasks at the same time?",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you improving your ability to work with people from diverse backgrounds?",
+          "focus_areas": [
+            "confidence building",
+            "assertiveness",
+            "self-belief"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 9,
+      "name": "Set 09",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "Describe an instance where your parents expressed pride in your actions.",
+          "focus_areas": [
+            "honesty",
+            "integrity",
+            "moral values"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What areas of improvement would a teacher point out in your academic performance?",
+          "focus_areas": [
+            "adaptability",
+            "learning agility",
+            "flexibility"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your roommate or hostel mate say about living with you?",
+          "focus_areas": [
+            "team spirit",
+            "cooperation",
+            "inclusiveness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe a challenging situation where you had to take an unpopular decision.",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "influence"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What emotional reaction do you need to control better, and how?",
+          "focus_areas": [
+            "time management",
+            "prioritization",
+            "efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 10,
+      "name": "Set 10",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What concerns, if any, do your parents have about your readiness for a leadership role?",
+          "focus_areas": [
+            "adaptability",
+            "resilience",
+            "mental strength"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your training instructor rate your discipline and consistency?",
+          "focus_areas": [
+            "technical competence",
+            "practical skills",
+            "application"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends describe your reaction when someone is in trouble?",
+          "focus_areas": [
+            "fun-loving",
+            "energy",
+            "enthusiasm"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you maintain your physical and mental fitness routinely?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "cooperation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan for improving your general knowledge and current affairs awareness.",
+          "focus_areas": [
+            "leadership development",
+            "initiative",
+            "decision-making"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 11,
+      "name": "Set 11",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your mother describe your emotional maturity to a relative?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "listening"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your class teacher say about your influence on your peers?",
+          "focus_areas": [
+            "ethical conduct",
+            "professional integrity",
+            "accountability"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your friends say about your competitive nature in sports?",
+          "focus_areas": [
+            "listening skills",
+            "understanding",
+            "patience"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What role do you naturally take in a team, and why?",
+          "focus_areas": [
+            "discipline",
+            "routine",
+            "structure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of teamwork do you find most challenging?",
+          "focus_areas": [
+            "social skills",
+            "networking",
+            "relationship building"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 12,
+      "name": "Set 12",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your social circle and its influence on you?",
+          "focus_areas": [
+            "patriotism",
+            "national pride",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your employer view your punctuality and work ethic?",
+          "focus_areas": [
+            "time management",
+            "deadline adherence",
+            "prioritization"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers view your honesty and straightforwardness?",
+          "focus_areas": [
+            "competitive nature",
+            "sportsmanship",
+            "fair play"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your strategy for dealing with people who disagree with you.",
+          "focus_areas": [
+            "resilience",
+            "perseverance",
+            "mental toughness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you developing your strategic thinking abilities?",
+          "focus_areas": [
+            "stress management",
+            "coping mechanisms",
+            "mental health"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 13,
+      "name": "Set 13",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How have your parents reacted to your failures, and what did they advise?",
+          "focus_areas": [
+            "time management",
+            "punctuality",
+            "consistency"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback have you received about your presentation or communication skills?",
+          "focus_areas": [
+            "research skills",
+            "independent study",
+            "self-directed learning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your friend say about your behavior at social gatherings?",
+          "focus_areas": [
+            "reliability",
+            "consistency",
+            "commitment"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What is the toughest decision you have made in the last two years?",
+          "focus_areas": [
+            "strategic thinking",
+            "planning",
+            "foresight"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What time management issues are you working to resolve?",
+          "focus_areas": [
+            "academic improvement",
+            "study habits",
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 14,
+      "name": "Set 14",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "Describe how your parents view your physical fitness and health habits.",
+          "focus_areas": [
+            "leadership within family",
+            "initiative",
+            "proactiveness"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would a teacher describe your curiosity and willingness to learn?",
+          "focus_areas": [
+            "mentorship",
+            "peer guidance",
+            "knowledge sharing"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends describe your approach to new challenges?",
+          "focus_areas": [
+            "cultural sensitivity",
+            "respect",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you cope with loneliness or being away from your support system?",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan to improve your physical fitness score.",
+          "focus_areas": [
+            "conflict resolution",
+            "negotiation",
+            "diplomacy"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 15,
+      "name": "Set 15",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What values did your parents instill in you that you still follow today?",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "emotional intelligence"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your sports coach say about your sportsmanship and fair play?",
+          "focus_areas": [
+            "organizational skills",
+            "planning",
+            "execution"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your risk-taking tendencies?",
+          "focus_areas": [
+            "personal growth",
+            "self-improvement",
+            "maturity"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What achievement are you most proud of and why?",
+          "focus_areas": [
+            "continuous learning",
+            "curiosity",
+            "intellectual growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What leadership skill do you need to develop further?",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "change management"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 16,
+      "name": "Set 16",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your contribution to household duties?",
+          "focus_areas": [
+            "responsibility",
+            "discipline",
+            "emotional maturity"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your supervisor view your ability to handle multiple tasks?",
+          "focus_areas": [
+            "academic rigor",
+            "intellectual curiosity",
+            "classroom participation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your emotional support during tough times?",
+          "focus_areas": [
+            "loyalty",
+            "trustworthiness",
+            "dependability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe how you prepare for situations that involve risk or danger.",
+          "focus_areas": [
+            "self-awareness",
+            "introspection",
+            "personal growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you working on your patience and tolerance?",
+          "focus_areas": [
+            "weakness identification",
+            "action plan",
+            "progress tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 17,
+      "name": "Set 17",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What does your family think about your ambition to join the armed forces?",
+          "focus_areas": [
+            "family values",
+            "obedience",
+            "respect for elders"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "Describe how a teacher would rate your analytical thinking abilities.",
+          "focus_areas": [
+            "leadership",
+            "initiative",
+            "team management"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your peers say about your organizational skills for events?",
+          "focus_areas": [
+            "humor",
+            "social skills",
+            "approachability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What would you change about yourself if you could?",
+          "focus_areas": [
+            "leadership potential",
+            "decision-making",
+            "authority"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What academic area requires your immediate attention?",
+          "focus_areas": [
+            "skill development",
+            "training",
+            "practice"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 18,
+      "name": "Set 18",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents describe your behavior with elders and authority figures?",
+          "focus_areas": [
+            "decision-making",
+            "independence",
+            "self-reliance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your employer say about your adaptability to new roles?",
+          "focus_areas": [
+            "work ethic",
+            "punctuality",
+            "dedication"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your assertiveness in group discussions?",
+          "focus_areas": [
+            "crisis management",
+            "composure",
+            "quick thinking"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you stay motivated during long, monotonous tasks?",
+          "focus_areas": [
+            "emotional regulation",
+            "stress management",
+            "composure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your approach to improving your decision-making speed.",
+          "focus_areas": [
+            "habit formation",
+            "consistency",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 19,
+      "name": "Set 19",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "In your parents' eyes, how have you changed over the last three years?",
+          "focus_areas": [
+            "temperament",
+            "patience",
+            "conflict resolution"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would a professor describe your research and independent study habits?",
+          "focus_areas": [
+            "problem-solving",
+            "analytical thinking",
+            "logical reasoning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your close friend say about your handling of peer pressure?",
+          "focus_areas": [
+            "generosity",
+            "empathy",
+            "emotional support"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your philosophy on duty, discipline, and sacrifice.",
+          "focus_areas": [
+            "physical fitness",
+            "endurance",
+            "health discipline"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What social skill are you actively developing?",
+          "focus_areas": [
+            "emotional control",
+            "patience",
+            "temperament"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 20,
+      "name": "Set 20",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What would your parents say is the one thing you need to improve the most?",
+          "focus_areas": [
+            "academic performance",
+            "career focus",
+            "ambition"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback has a teacher given you about your behavior during group projects?",
+          "focus_areas": [
+            "communication skills",
+            "presentation",
+            "articulation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends perceive your balance between fun and responsibility?",
+          "focus_areas": [
+            "adventurous spirit",
+            "risk-taking",
+            "courage"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What do you consider your most important contribution to your community?",
+          "focus_areas": [
+            "values",
+            "integrity",
+            "moral compass"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you improving your ability to accept constructive criticism?",
+          "focus_areas": [
+            "communication gap",
+            "expression",
+            "clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 21,
+      "name": "Set 21",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents view your ability to balance studies, fitness, and social life?",
+          "focus_areas": [
+            "physical fitness",
+            "health consciousness",
+            "endurance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your NCC/NSS coordinator describe your commitment?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "peer support"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your friends say about your ability to keep secrets?",
+          "focus_areas": [
+            "conflict resolution",
+            "mediation",
+            "fairness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you handle ethical dilemmas where no option seems ideal?",
+          "focus_areas": [
+            "motivation",
+            "drive",
+            "goal orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of discipline do you struggle with most?",
+          "focus_areas": [
+            "physical fitness improvement",
+            "endurance building",
+            "stamina"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 22,
+      "name": "Set 22",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "Describe a value clash you had with your parents and how it was resolved.",
+          "focus_areas": [
+            "financial responsibility",
+            "planning",
+            "resource management"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your practical instructor say about your hands-on skills?",
+          "focus_areas": [
+            "discipline",
+            "consistency",
+            "follow-through"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers describe your generosity and sharing?",
+          "focus_areas": [
+            "influence",
+            "motivation",
+            "inspiration"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your approach to continuous self-improvement.",
+          "focus_areas": [
+            "risk assessment",
+            "courage",
+            "calculated boldness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan for becoming more assertive without being aggressive.",
+          "focus_areas": [
+            "knowledge expansion",
+            "reading",
+            "awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 23,
+      "name": "Set 23",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What sacrifices have your parents made for you, and how has it shaped your outlook?",
+          "focus_areas": [
+            "social behavior",
+            "peer influence",
+            "character"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your teacher view your growth over the academic year?",
+          "focus_areas": [
+            "creativity",
+            "innovation",
+            "original thinking"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your reaction to success?",
+          "focus_areas": [
+            "honesty",
+            "straightforwardness",
+            "transparency"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What fears do you need to overcome to become a better leader?",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What technical skill gap are you currently addressing?",
+          "focus_areas": [
+            "confidence building",
+            "assertiveness",
+            "self-belief"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 24,
+      "name": "Set 24",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your father rate your sense of duty towards the family?",
+          "focus_areas": [
+            "honesty",
+            "integrity",
+            "moral values"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback have you received about your time management in assignments?",
+          "focus_areas": [
+            "adaptability",
+            "learning agility",
+            "flexibility"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your patience with others?",
+          "focus_areas": [
+            "team spirit",
+            "cooperation",
+            "inclusiveness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you manage your emotions during high-stress situations?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "influence"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you improving your ability to handle uncertainty?",
+          "focus_areas": [
+            "time management",
+            "prioritization",
+            "efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 25,
+      "name": "Set 25",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What would your parents say about your reaction when things do not go as planned?",
+          "focus_areas": [
+            "adaptability",
+            "resilience",
+            "mental strength"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your mentor describe your career readiness?",
+          "focus_areas": [
+            "technical competence",
+            "practical skills",
+            "application"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your peers say about your adventurous spirit?",
+          "focus_areas": [
+            "fun-loving",
+            "energy",
+            "enthusiasm"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What makes you different from other candidates?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "cooperation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What emotional intelligence area needs your focus?",
+          "focus_areas": [
+            "leadership development",
+            "initiative",
+            "decision-making"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 26,
+      "name": "Set 26",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents describe your relationship with your siblings?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "listening"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would a teacher say about your ability to motivate classmates?",
+          "focus_areas": [
+            "ethical conduct",
+            "professional integrity",
+            "accountability"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your reliability for group tasks?",
+          "focus_areas": [
+            "listening skills",
+            "understanding",
+            "patience"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your ideal self five years from now.",
+          "focus_areas": [
+            "discipline",
+            "routine",
+            "structure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your approach to building better study habits.",
+          "focus_areas": [
+            "social skills",
+            "networking",
+            "relationship building"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 27,
+      "name": "Set 27",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What aspect of your personality surprises your parents the most?",
+          "focus_areas": [
+            "patriotism",
+            "national pride",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your employer describe your initiative-taking behavior?",
+          "focus_areas": [
+            "time management",
+            "deadline adherence",
+            "prioritization"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your roommate say about your daily habits?",
+          "focus_areas": [
+            "competitive nature",
+            "sportsmanship",
+            "fair play"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you balance ambition with humility?",
+          "focus_areas": [
+            "resilience",
+            "perseverance",
+            "mental toughness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What conflict resolution skill are you developing?",
+          "focus_areas": [
+            "stress management",
+            "coping mechanisms",
+            "mental health"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 28,
+      "name": "Set 28",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your punctuality and time management?",
+          "focus_areas": [
+            "time management",
+            "punctuality",
+            "consistency"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What areas would your teacher recommend for personal development?",
+          "focus_areas": [
+            "research skills",
+            "independent study",
+            "self-directed learning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends describe your attitude towards juniors?",
+          "focus_areas": [
+            "reliability",
+            "consistency",
+            "commitment"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What life experience has most prepared you for military service?",
+          "focus_areas": [
+            "strategic thinking",
+            "planning",
+            "foresight"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you working to improve your public speaking?",
+          "focus_areas": [
+            "academic improvement",
+            "study habits",
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 29,
+      "name": "Set 29",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think is your strongest trait for a career in the forces?",
+          "focus_areas": [
+            "leadership within family",
+            "initiative",
+            "proactiveness"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your professor describe your ethical standards?",
+          "focus_areas": [
+            "mentorship",
+            "peer guidance",
+            "knowledge sharing"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your peers think about your ability to apologize?",
+          "focus_areas": [
+            "cultural sensitivity",
+            "respect",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your approach to building trust with new people.",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of organizational behavior do you need to understand better?",
+          "focus_areas": [
+            "conflict resolution",
+            "negotiation",
+            "diplomacy"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 30,
+      "name": "Set 30",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "Describe how your parents have reacted to your independent decisions.",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "emotional intelligence"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would a coach say about your mental toughness during competitions?",
+          "focus_areas": [
+            "organizational skills",
+            "planning",
+            "execution"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your handling of disagreements?",
+          "focus_areas": [
+            "personal growth",
+            "self-improvement",
+            "maturity"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you respond when your authority is challenged?",
+          "focus_areas": [
+            "continuous learning",
+            "curiosity",
+            "intellectual growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan to improve your crisis management abilities.",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "change management"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 31,
+      "name": "Set 31",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your honesty and integrity?",
+          "focus_areas": [
+            "responsibility",
+            "discipline",
+            "emotional maturity"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your teacher view your respect for rules and authority?",
+          "focus_areas": [
+            "academic rigor",
+            "intellectual curiosity",
+            "classroom participation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your close friend say about your ambition?",
+          "focus_areas": [
+            "loyalty",
+            "trustworthiness",
+            "dependability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What is your definition of courage?",
+          "focus_areas": [
+            "self-awareness",
+            "introspection",
+            "personal growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What personal bias are you trying to overcome?",
+          "focus_areas": [
+            "weakness identification",
+            "action plan",
+            "progress tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 32,
+      "name": "Set 32",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What concerns do your parents have about you living away from home?",
+          "focus_areas": [
+            "family values",
+            "obedience",
+            "respect for elders"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback has your employer given about your decision-making?",
+          "focus_areas": [
+            "leadership",
+            "initiative",
+            "team management"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your cultural sensitivity?",
+          "focus_areas": [
+            "humor",
+            "social skills",
+            "approachability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe a time you went beyond your comfort zone.",
+          "focus_areas": [
+            "leadership potential",
+            "decision-making",
+            "authority"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you improving your listening skills?",
+          "focus_areas": [
+            "skill development",
+            "training",
+            "practice"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 33,
+      "name": "Set 33",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents view your financial responsibility?",
+          "focus_areas": [
+            "decision-making",
+            "independence",
+            "self-reliance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your teacher describe your creative thinking?",
+          "focus_areas": [
+            "work ethic",
+            "punctuality",
+            "dedication"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your peers think about your physical fitness commitment?",
+          "focus_areas": [
+            "crisis management",
+            "composure",
+            "quick thinking"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you handle boredom and routine?",
+          "focus_areas": [
+            "emotional regulation",
+            "stress management",
+            "composure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What writing skill needs your immediate attention?",
+          "focus_areas": [
+            "habit formation",
+            "consistency",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 34,
+      "name": "Set 34",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What would your mother say about your empathy towards others?",
+          "focus_areas": [
+            "temperament",
+            "patience",
+            "conflict resolution"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your mentor say about your professional growth?",
+          "focus_areas": [
+            "problem-solving",
+            "analytical thinking",
+            "logical reasoning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your response to criticism from peers?",
+          "focus_areas": [
+            "generosity",
+            "empathy",
+            "emotional support"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What role does physical fitness play in your daily life?",
+          "focus_areas": [
+            "physical fitness",
+            "endurance",
+            "health discipline"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your approach to developing more empathy.",
+          "focus_areas": [
+            "emotional control",
+            "patience",
+            "temperament"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 35,
+      "name": "Set 35",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents describe your reaction to criticism?",
+          "focus_areas": [
+            "academic performance",
+            "career focus",
+            "ambition"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your instructor view your technical competence?",
+          "focus_areas": [
+            "communication skills",
+            "presentation",
+            "articulation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your friends say about your initiative in social activities?",
+          "focus_areas": [
+            "adventurous spirit",
+            "risk-taking",
+            "courage"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your understanding of duty to the nation.",
+          "focus_areas": [
+            "values",
+            "integrity",
+            "moral compass"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What negotiation skill are you working on?",
+          "focus_areas": [
+            "communication gap",
+            "expression",
+            "clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 36,
+      "name": "Set 36",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents admire about your determination?",
+          "focus_areas": [
+            "physical fitness",
+            "health consciousness",
+            "endurance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would a teacher highlight as your biggest achievement?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "peer support"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers describe your ability to make new friends?",
+          "focus_areas": [
+            "conflict resolution",
+            "mediation",
+            "fairness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you deal with unfair treatment or injustice?",
+          "focus_areas": [
+            "motivation",
+            "drive",
+            "goal orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you building better relationships with authority figures?",
+          "focus_areas": [
+            "physical fitness improvement",
+            "endurance building",
+            "stamina"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 37,
+      "name": "Set 37",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your communication style?",
+          "focus_areas": [
+            "financial responsibility",
+            "planning",
+            "resource management"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your employer describe your conflict resolution skills?",
+          "focus_areas": [
+            "discipline",
+            "consistency",
+            "follow-through"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your decision to join the forces?",
+          "focus_areas": [
+            "influence",
+            "motivation",
+            "inspiration"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What is your biggest regret and what did you learn from it?",
+          "focus_areas": [
+            "risk assessment",
+            "courage",
+            "calculated boldness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What stress management technique are you adopting?",
+          "focus_areas": [
+            "knowledge expansion",
+            "reading",
+            "awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 38,
+      "name": "Set 38",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your risk-taking ability?",
+          "focus_areas": [
+            "social behavior",
+            "peer influence",
+            "character"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What areas of leadership would your teacher say you excel in?",
+          "focus_areas": [
+            "creativity",
+            "innovation",
+            "original thinking"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your sense of justice?",
+          "focus_areas": [
+            "honesty",
+            "straightforwardness",
+            "transparency"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your approach to mentoring or guiding juniors.",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan to improve your analytical thinking.",
+          "focus_areas": [
+            "confidence building",
+            "assertiveness",
+            "self-belief"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 39,
+      "name": "Set 39",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents view your leadership within the family?",
+          "focus_areas": [
+            "honesty",
+            "integrity",
+            "moral values"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your coach describe your team spirit?",
+          "focus_areas": [
+            "adaptability",
+            "learning agility",
+            "flexibility"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your peers say about your ability to forgive?",
+          "focus_areas": [
+            "team spirit",
+            "cooperation",
+            "inclusiveness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you react when plans fail unexpectedly?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "influence"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of self-awareness are you developing?",
+          "focus_areas": [
+            "time management",
+            "prioritization",
+            "efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 40,
+      "name": "Set 40",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "Describe how your parents see your growth from childhood to now.",
+          "focus_areas": [
+            "adaptability",
+            "resilience",
+            "mental strength"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your professor say about your intellectual curiosity?",
+          "focus_areas": [
+            "technical competence",
+            "practical skills",
+            "application"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your influence on younger students?",
+          "focus_areas": [
+            "fun-loving",
+            "energy",
+            "enthusiasm"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What personal habits contribute to your success?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "cooperation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you improving your ability to delegate tasks?",
+          "focus_areas": [
+            "leadership development",
+            "initiative",
+            "decision-making"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 41,
+      "name": "Set 41",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What would your parents say about your ability to inspire others?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "listening"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your teacher view your community service involvement?",
+          "focus_areas": [
+            "ethical conduct",
+            "professional integrity",
+            "accountability"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your close friend say about your personal growth?",
+          "focus_areas": [
+            "listening skills",
+            "understanding",
+            "patience"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your relationship with discipline and structure.",
+          "focus_areas": [
+            "discipline",
+            "routine",
+            "structure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What personal quality do your friends say needs improvement?",
+          "focus_areas": [
+            "social skills",
+            "networking",
+            "relationship building"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 42,
+      "name": "Set 42",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents perceive your adaptability to new environments?",
+          "focus_areas": [
+            "patriotism",
+            "national pride",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback has your employer given about your reliability?",
+          "focus_areas": [
+            "time management",
+            "deadline adherence",
+            "prioritization"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers describe your courage in everyday life?",
+          "focus_areas": [
+            "competitive nature",
+            "sportsmanship",
+            "fair play"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you handle success without becoming complacent?",
+          "focus_areas": [
+            "resilience",
+            "perseverance",
+            "mental toughness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your approach to managing anger or frustration.",
+          "focus_areas": [
+            "stress management",
+            "coping mechanisms",
+            "mental health"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 43,
+      "name": "Set 43",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your sense of humor?",
+          "focus_areas": [
+            "time management",
+            "punctuality",
+            "consistency"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your instructor rate your physical fitness standards?",
+          "focus_areas": [
+            "research skills",
+            "independent study",
+            "self-directed learning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your self-discipline?",
+          "focus_areas": [
+            "reliability",
+            "consistency",
+            "commitment"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What does integrity mean to you in practice?",
+          "focus_areas": [
+            "strategic thinking",
+            "planning",
+            "foresight"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What planning skill do you need to refine?",
+          "focus_areas": [
+            "academic improvement",
+            "study habits",
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 44,
+      "name": "Set 44",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your commitment to goals?",
+          "focus_areas": [
+            "leadership within family",
+            "initiative",
+            "proactiveness"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your teacher say about your written expression skills?",
+          "focus_areas": [
+            "mentorship",
+            "peer guidance",
+            "knowledge sharing"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your public behavior?",
+          "focus_areas": [
+            "cultural sensitivity",
+            "respect",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your method for staying calm under fire.",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you working on your attention to detail?",
+          "focus_areas": [
+            "conflict resolution",
+            "negotiation",
+            "diplomacy"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 45,
+      "name": "Set 45",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What feedback have your parents given about your public speaking?",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "emotional intelligence"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your mentor view your strategic thinking ability?",
+          "focus_areas": [
+            "organizational skills",
+            "planning",
+            "execution"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your peers say about your enthusiasm for learning?",
+          "focus_areas": [
+            "personal growth",
+            "self-improvement",
+            "maturity"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you evaluate your own performance objectively?",
+          "focus_areas": [
+            "continuous learning",
+            "curiosity",
+            "intellectual growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of courage do you need to develop?",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "change management"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 46,
+      "name": "Set 46",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents view your respect for traditions and culture?",
+          "focus_areas": [
+            "responsibility",
+            "discipline",
+            "emotional maturity"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback have you received about your classroom leadership?",
+          "focus_areas": [
+            "academic rigor",
+            "intellectual curiosity",
+            "classroom participation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your commitment to promises?",
+          "focus_areas": [
+            "loyalty",
+            "trustworthiness",
+            "dependability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What sacrifices are you willing to make for your career?",
+          "focus_areas": [
+            "self-awareness",
+            "introspection",
+            "personal growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan for improving your networking skills.",
+          "focus_areas": [
+            "weakness identification",
+            "action plan",
+            "progress tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 47,
+      "name": "Set 47",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What would your parents change about your daily routine?",
+          "focus_areas": [
+            "family values",
+            "obedience",
+            "respect for elders"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your employer describe your organizational skills?",
+          "focus_areas": [
+            "leadership",
+            "initiative",
+            "team management"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your negotiation skills?",
+          "focus_areas": [
+            "humor",
+            "social skills",
+            "approachability"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your approach to learning new skills quickly.",
+          "focus_areas": [
+            "leadership potential",
+            "decision-making",
+            "authority"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What cultural sensitivity gap are you addressing?",
+          "focus_areas": [
+            "skill development",
+            "training",
+            "practice"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 48,
+      "name": "Set 48",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents describe your mental toughness?",
+          "focus_areas": [
+            "decision-making",
+            "independence",
+            "self-reliance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would a teacher say about your ability to handle failure?",
+          "focus_areas": [
+            "work ethic",
+            "punctuality",
+            "dedication"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your reaction under pressure?",
+          "focus_areas": [
+            "crisis management",
+            "composure",
+            "quick thinking"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you handle responsibility for others' well-being?",
+          "focus_areas": [
+            "emotional regulation",
+            "stress management",
+            "composure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you working on your financial discipline?",
+          "focus_areas": [
+            "habit formation",
+            "consistency",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 49,
+      "name": "Set 49",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your volunteering and social work?",
+          "focus_areas": [
+            "temperament",
+            "patience",
+            "conflict resolution"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your coach view your training discipline?",
+          "focus_areas": [
+            "problem-solving",
+            "analytical thinking",
+            "logical reasoning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your close friend say about your biggest strength?",
+          "focus_areas": [
+            "generosity",
+            "empathy",
+            "emotional support"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What is your greatest fear about military life?",
+          "focus_areas": [
+            "physical fitness",
+            "endurance",
+            "health discipline"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of commitment do you struggle with?",
+          "focus_areas": [
+            "emotional control",
+            "patience",
+            "temperament"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 50,
+      "name": "Set 50",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your reliability in tough times?",
+          "focus_areas": [
+            "academic performance",
+            "career focus",
+            "ambition"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your professor say about your seminar participation?",
+          "focus_areas": [
+            "communication skills",
+            "presentation",
+            "articulation"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers describe your contribution to the friend group?",
+          "focus_areas": [
+            "adventurous spirit",
+            "risk-taking",
+            "courage"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe how you maintain work-life balance.",
+          "focus_areas": [
+            "values",
+            "integrity",
+            "moral compass"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your approach to improving your moral reasoning.",
+          "focus_areas": [
+            "communication gap",
+            "expression",
+            "clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 51,
+      "name": "Set 51",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What character traits do your parents wish you would develop further?",
+          "focus_areas": [
+            "physical fitness",
+            "health consciousness",
+            "endurance"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your teacher view your general knowledge and awareness?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "peer support"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your leadership outside academics?",
+          "focus_areas": [
+            "conflict resolution",
+            "mediation",
+            "fairness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you deal with people who underestimate you?",
+          "focus_areas": [
+            "motivation",
+            "drive",
+            "goal orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What health habit are you trying to establish?",
+          "focus_areas": [
+            "physical fitness improvement",
+            "endurance building",
+            "stamina"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 52,
+      "name": "Set 52",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents see your patriotism and national pride?",
+          "focus_areas": [
+            "financial responsibility",
+            "planning",
+            "resource management"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback has your employer given about your customer relations?",
+          "focus_areas": [
+            "discipline",
+            "consistency",
+            "follow-through"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your moral standards?",
+          "focus_areas": [
+            "influence",
+            "motivation",
+            "inspiration"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What legacy do you want to leave behind?",
+          "focus_areas": [
+            "risk assessment",
+            "courage",
+            "calculated boldness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you developing your creative problem-solving?",
+          "focus_areas": [
+            "knowledge expansion",
+            "reading",
+            "awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 53,
+      "name": "Set 53",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your interpersonal relationships?",
+          "focus_areas": [
+            "social behavior",
+            "peer influence",
+            "character"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your instructor describe your learning attitude?",
+          "focus_areas": [
+            "creativity",
+            "innovation",
+            "original thinking"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your peers say about your ability to motivate others?",
+          "focus_areas": [
+            "honesty",
+            "straightforwardness",
+            "transparency"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your approach to building resilience.",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of reliability do you need to improve?",
+          "focus_areas": [
+            "confidence building",
+            "assertiveness",
+            "self-belief"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 54,
+      "name": "Set 54",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your ability to learn from mistakes?",
+          "focus_areas": [
+            "honesty",
+            "integrity",
+            "moral values"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your mentor say about your emotional stability at work?",
+          "focus_areas": [
+            "adaptability",
+            "learning agility",
+            "flexibility"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your handling of jealousy or envy?",
+          "focus_areas": [
+            "team spirit",
+            "cooperation",
+            "inclusiveness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you stay updated with current affairs and developments?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "influence"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your plan for building mental toughness.",
+          "focus_areas": [
+            "time management",
+            "prioritization",
+            "efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 55,
+      "name": "Set 55",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your physical courage?",
+          "focus_areas": [
+            "adaptability",
+            "resilience",
+            "mental strength"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your teacher view your planning and execution skills?",
+          "focus_areas": [
+            "technical competence",
+            "practical skills",
+            "application"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What do your friends think about your time management?",
+          "focus_areas": [
+            "fun-loving",
+            "energy",
+            "enthusiasm"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What is your vision for your contribution to national security?",
+          "focus_areas": [
+            "teamwork",
+            "collaboration",
+            "cooperation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What cooperative skill needs your attention?",
+          "focus_areas": [
+            "leadership development",
+            "initiative",
+            "decision-making"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 56,
+      "name": "Set 56",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents view your competitive spirit?",
+          "focus_areas": [
+            "communication",
+            "expression",
+            "listening"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What feedback have you received about your cooperation with authorities?",
+          "focus_areas": [
+            "ethical conduct",
+            "professional integrity",
+            "accountability"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How would your friends describe your listening skills?",
+          "focus_areas": [
+            "listening skills",
+            "understanding",
+            "patience"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe a moral principle you would never violate.",
+          "focus_areas": [
+            "discipline",
+            "routine",
+            "structure"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you improving your ability to inspire others?",
+          "focus_areas": [
+            "social skills",
+            "networking",
+            "relationship building"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 57,
+      "name": "Set 57",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What would your parents say about your ability to work in a team?",
+          "focus_areas": [
+            "patriotism",
+            "national pride",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How would your employer rate your loyalty and dedication?",
+          "focus_areas": [
+            "time management",
+            "deadline adherence",
+            "prioritization"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your peers say about your conflict mediation?",
+          "focus_areas": [
+            "competitive nature",
+            "sportsmanship",
+            "fair play"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you handle situations where you lack expertise?",
+          "focus_areas": [
+            "resilience",
+            "perseverance",
+            "mental toughness"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What aspect of adaptability are you working on?",
+          "focus_areas": [
+            "stress management",
+            "coping mechanisms",
+            "mental health"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 58,
+      "name": "Set 58",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How do your parents perceive your emotional intelligence?",
+          "focus_areas": [
+            "time management",
+            "punctuality",
+            "consistency"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would a teacher say about your peer influence?",
+          "focus_areas": [
+            "research skills",
+            "independent study",
+            "self-directed learning"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your friends view your creativity?",
+          "focus_areas": [
+            "reliability",
+            "consistency",
+            "commitment"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "What does selfless service mean to you?",
+          "focus_areas": [
+            "strategic thinking",
+            "planning",
+            "foresight"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "Describe your approach to overcoming procrastination.",
+          "focus_areas": [
+            "academic improvement",
+            "study habits",
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 59,
+      "name": "Set 59",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "What do your parents think about your long-term planning ability?",
+          "focus_areas": [
+            "leadership within family",
+            "initiative",
+            "proactiveness"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "How does your coach view your competitiveness?",
+          "focus_areas": [
+            "mentorship",
+            "peer guidance",
+            "knowledge sharing"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "What would your close friend say about your biggest weakness?",
+          "focus_areas": [
+            "cultural sensitivity",
+            "respect",
+            "open-mindedness"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "Describe your biggest intellectual challenge and how you handled it.",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "service orientation"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "What quality of perseverance do you need to strengthen?",
+          "focus_areas": [
+            "conflict resolution",
+            "negotiation",
+            "diplomacy"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 60,
+      "name": "Set 60",
+      "prompts": [
+        {
+          "perspective": "Parents' View",
+          "prompt": "How would your parents describe your moral compass?",
+          "focus_areas": [
+            "empathy",
+            "compassion",
+            "emotional intelligence"
+          ]
+        },
+        {
+          "perspective": "Teachers'/Employers' View",
+          "prompt": "What would your professor say about your innovation potential?",
+          "focus_areas": [
+            "organizational skills",
+            "planning",
+            "execution"
+          ]
+        },
+        {
+          "perspective": "Friends' View",
+          "prompt": "How do your peers describe your overall personality?",
+          "focus_areas": [
+            "personal growth",
+            "self-improvement",
+            "maturity"
+          ]
+        },
+        {
+          "perspective": "Self-Assessment",
+          "prompt": "How do you maintain your mental health and emotional well-being?",
+          "focus_areas": [
+            "continuous learning",
+            "curiosity",
+            "intellectual growth"
+          ]
+        },
+        {
+          "perspective": "Improvement Areas",
+          "prompt": "How are you developing your sense of responsibility?",
+          "focus_areas": [
+            "adaptability",
+            "flexibility",
+            "change management"
+          ]
+        }
+      ]
+    }
+  ]
+}

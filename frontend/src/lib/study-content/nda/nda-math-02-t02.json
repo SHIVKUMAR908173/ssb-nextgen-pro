@@ -1,0 +1,187 @@
+{
+  "id": "nda-math-02-t02",
+  "title": "Algebra of Complex Numbers — Addition, Multiplication",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-02",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Complex numbers extend the real number system, allowing us to find solutions to equations like x² + 1 = 0, which have no real solutions. They are expressed in the form a + ib, where 'a' and 'b' are real numbers and 'i' is the imaginary unit (√-1). For the NDA examination, a strong understanding of fundamental operations like addition and multiplication of complex numbers is crucial."
+    },
+    {
+      "type": "heading",
+      "data": "Introduction to Complex Numbers"
+    },
+    {
+      "type": "text",
+      "data": "A complex number is typically written as z = a + ib, where 'a' is the real part (Re(z)) and 'b' is the imaginary part (Im(z)). The imaginary unit 'i' is defined by i² = -1."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Term",
+          "Definition",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Complex Number",
+            "z = a + ib (a, b ∈ ℝ)",
+            "3 + 4i"
+          ],
+          [
+            "Real Part (Re(z))",
+            "a",
+            "3 (from 3 + 4i)"
+          ],
+          [
+            "Imaginary Part (Im(z))",
+            "b",
+            "4 (from 3 + 4i)"
+          ],
+          [
+            "Imaginary Unit",
+            "i = √-1, such that i² = -1",
+            "i"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Addition of Complex Numbers"
+    },
+    {
+      "type": "text",
+      "data": "To add two complex numbers, you simply add their corresponding real parts and imaginary parts separately."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "If z₁ = a + ib and z₂ = c + id, then z₁ + z₂ = (a + c) + i(b + d)",
+        "note": "Add real parts with real parts, and imaginary parts with imaginary parts."
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: When adding or subtracting complex numbers, treat 'i' almost like an algebraic variable. Combine the constant terms (real parts) and the 'i' terms (imaginary parts) separately."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Find the sum of (5 + 3i) and (2 - 7i).",
+        "solution": "Let z₁ = 5 + 3i and z₂ = 2 - 7i.\nAccording to the addition rule: z₁ + z₂ = (5 + 2) + i(3 + (-7))\nz₁ + z₂ = 7 + i(3 - 7)\nz₁ + z₂ = 7 - 4i",
+        "answer": "7 - 4i"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Subtraction of Complex Numbers"
+    },
+    {
+      "type": "text",
+      "data": "Subtraction is performed similarly to addition, by subtracting the corresponding real and imaginary parts."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "If z₁ = a + ib and z₂ = c + id, then z₁ - z₂ = (a - c) + i(b - d)",
+        "note": "Subtract real parts from real parts, and imaginary parts from imaginary parts."
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Multiplication of Complex Numbers"
+    },
+    {
+      "type": "text",
+      "data": "To multiply two complex numbers, treat them like binomials and apply the distributive property (often called the FOIL method), remembering that i² = -1."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "If z₁ = a + ib and z₂ = c + id, then z₁ * z₂ = (ac - bd) + i(ad + bc)",
+        "note": "Expand (a+ib)(c+id) as ac + iad + ibc + i²bd, then substitute i² = -1 and combine like terms."
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: The most common error in multiplication is forgetting to substitute i² = -1. Always look for i² terms after expanding and replace them with -1 immediately."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Multiply (3 + 2i) by (1 - 4i).",
+        "solution": "Let z₁ = 3 + 2i and z₂ = 1 - 4i.\nUsing the distributive property (FOIL method):\nz₁ * z₂ = (3 + 2i)(1 - 4i)\n= 3(1) + 3(-4i) + 2i(1) + 2i(-4i)\n= 3 - 12i + 2i - 8i²\nNow, substitute i² = -1:\n= 3 - 10i - 8(-1)\n= 3 - 10i + 8\nCombine the real parts:\n= (3 + 8) - 10i\n= 11 - 10i",
+        "answer": "11 - 10i"
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "Commutative Law of Addition: z₁ + z₂ = z₂ + z₁",
+        "Associative Law of Addition: (z₁ + z₂) + z₃ = z₁ + (z₂ + z₃)",
+        "Commutative Law of Multiplication: z₁ * z₂ = z₂ * z₁",
+        "Associative Law of Multiplication: (z₁ * z₂) * z₃ = z₁ * (z₂ * z₃)",
+        "Distributive Law: z₁(z₂ + z₃) = z₁z₂ + z₁z₃"
+      ]
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Complex Number Operations Flow",
+        "description": "This diagram illustrates the conceptual steps involved in performing addition and multiplication of complex numbers.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Start: Complex Numbers z₁ = a+ib, z₂ = c+id] --> B{Choose Operation};\n    B -- Addition --> C[Identify Real (a, c) and Imaginary (b, d) Parts];\n    C --> D[Add Real Parts: (a+c)];\n    C --> E[Add Imaginary Parts: (b+d)];\n    D & E --> F[Result: (a+c) + i(b+d)];\n    B -- Multiplication --> G[Apply Distributive Property (FOIL)];\n    G --> H[Expand: ac + iad + ibc + i²bd];\n    H --> I{Substitute i² = -1};\n    I --> J[Simplify to: ac + iad + ibc - bd];\n    J --> K[Combine Real & Imaginary Terms: (ac-bd) + i(ad+bc)];\n    F & K --> L[End];"
+      }
+    }
+  ],
+  "keyPoints": [
+    "The fundamental identity for complex numbers is i² = -1. This is crucial for simplifying all expressions involving 'i'.",
+    "Addition and subtraction of complex numbers involve combining their respective real parts and imaginary parts separately.",
+    "Multiplication of complex numbers uses the distributive property (FOIL method), similar to multiplying binomials, followed by substituting i² = -1.",
+    "Complex numbers obey standard algebraic laws: commutative, associative, and distributive laws for both addition and multiplication.",
+    "Always ensure your final answer is in the standard form a + ib, with no i² terms or uncombined real/imaginary parts."
+  ],
+  "commonMistakes": [
+    "Forgetting to replace i² with -1 during multiplication, leading to incorrect real and imaginary components.",
+    "Incorrectly combining real and imaginary parts during addition or subtraction (e.g., adding 'a' with 'd' instead of 'c').",
+    "Errors in handling negative signs, especially when multiplying terms involving 'i' or substituting for i²."
+  ],
+  "examTips": [
+    "NDA questions on complex numbers often test these basic operations. Practice accuracy and speed to manage time effectively.",
+    "Pay close attention to the signs in the options provided for MCQs, as a single sign error can lead to a wrong answer. Double-check your calculations, especially with subtraction and multiplication."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "If z₁ = 4 + 5i and z₂ = 2 - 3i, what is z₁ + z₂?",
+      "options": [
+        "6 + 8i",
+        "6 - 2i",
+        "6 + 2i",
+        "2 - 8i"
+      ],
+      "correct": 2,
+      "explanation": "To add complex numbers, add their real parts and imaginary parts separately: z₁ + z₂ = (4 + 2) + i(5 + (-3)) = 6 + i(5 - 3) = 6 + 2i."
+    },
+    {
+      "question": "What is the product of (2 + i) and (3 - 2i)?",
+      "options": [
+        "8 + i",
+        "4 - i",
+        "8 - i",
+        "4 + i"
+      ],
+      "correct": 2,
+      "explanation": "Multiply using the distributive property: (2 + i)(3 - 2i) = 2(3) + 2(-2i) + i(3) + i(-2i) = 6 - 4i + 3i - 2i². Substitute i² = -1: 6 - i - 2(-1) = 6 - i + 2 = 8 - i."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Algebra%20of%20Complex%20Numbers%20%E2%80%94%20Addition%2C%20Multiplication%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Algebra%20of%20Complex%20Numbers%20%E2%80%94%20Addition%2C%20Multiplication%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Algebra%20of%20Complex%20Numbers%20%E2%80%94%20Addition%2C%20Multiplication%20NCERT%20Class%2011%2012"
+  }
+}

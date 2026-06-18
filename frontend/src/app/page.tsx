@@ -1,0 +1,300 @@
+'use client';
+
+import { 
+  Trophy, 
+  Brain, 
+  Flame, 
+  Star,
+  Lightbulb,
+  Image as ImageIcon,
+  MessageSquare,
+  HelpCircle,
+  Video,
+  ChevronRight,
+  ShieldAlert,
+  Target,
+  LayoutDashboard,
+  Map,
+  BookOpen,
+  ArrowRight,
+  Sparkles,
+  ShieldCheck,
+  Radio,
+  Globe
+} from 'lucide-react';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import TacticalMarquee from '../components/dashboard/TacticalMarquee';
+import { useAuth } from '@/components/auth/AuthProvider';
+import { createClient } from '@/lib/supabase/client';
+import { getDashboardData, type DashboardData } from '@/lib/dashboard-data';
+import { updateStreak } from '@/lib/streak-manager';
+
+const OlqRadarChart = dynamic(() => import('../components/charts/OlqRadarChart'), { ssr: false });
+const ProgressLineChart = dynamic(() => import('../components/charts/ProgressLineChart'), { ssr: false });
+
+const modules = [
+  { name: 'OIR Test', desc: 'Officer Intelligence Rating — Verbal & Non-verbal reasoning tests with 96 sets.', icon: Lightbulb, color: 'orange', tag: '96 Sets', path: '/oir' },
+  { name: 'Assessment Hub', desc: 'Full-spectrum Stage I & Stage II evaluation matrix with AI tracking.', icon: LayoutDashboard, color: 'emerald', tag: 'Full Suite', path: '/vacha/assessment' },
+  { name: 'TAT (Psychology)', desc: 'Thematic Apperception Test — Write stories based on images shown.', icon: ImageIcon, color: 'purple', tag: 'Psychology', path: '/mansa/tat' },
+  { name: 'Virtual Interview', desc: 'Practice your personal interview with Col. Arjun Singh (Virtual IO).', icon: Video, color: 'cyan', tag: 'AI Voice', path: '/vacha/interview' },
+  { name: 'Daily News', desc: 'Real-time geopolitical updates and military advancements.', icon: Globe, color: 'blue', tag: 'Intel', path: '/news' },
+  { name: 'Study Material', desc: 'Curated resources for SSB, NDA, CDS, and AFCAT examinations.', icon: BookOpen, color: 'orange', tag: 'Library', path: '/study-material' },
+];
+
+const MENTOR_QUOTES = [
+  "Candidate, your 'Power of Expression' is trending high. Focus on 'Group Influence' in upcoming tactical tasks. The board values consistency over flashes of brilliance.",
+  "Remember, the GTO doesn't look for the strongest person, but the most cooperative and practical thinker. Keep your ideas grounded.",
+  "In your TAT stories, ensure your hero is proactive, not reactive. A true officer creates solutions before problems escalate.",
+  "Your interview is a conversation, not an interrogation. Maintain composure, speak the truth, and show confidence in your journey.",
+  "Speed in OIR is crucial, but accuracy is paramount. Do not rush blindly; trust your training and process each question methodically.",
+  "Leadership is action, not position. Show your leadership through deeds in the GTO tasks.",
+  "When the mind is controlled, the body follows. Stay calm under pressure during the Command Task.",
+  "An officer's courage is tested not just in battle, but in the truth they speak during the interview.",
+  "Your Self-Description is your anchor. Do not portray an ideal version; portray the real, improving you.",
+  "A proactive hero in TAT doesn't wait for tragedy to strike to do their duty.",
+  "It is not about dominating the group discussion, but about steering it towards a logical conclusion.",
+  "Your physical stamina will get you through the obstacles, but mental stamina gets you recommended.",
+  "Treat the assessors as silent observers. Do not look at them; focus on your group.",
+  "A half-hearted attempt is worse than no attempt. Commit fully to every obstacle.",
+  "Your WAT responses reflect your subconscious. Keep them positive, constructive, and action-oriented.",
+  "In SRT, never leave a situation unresolved. An officer always completes the task.",
+  "Don't memorize answers for the interview. Speak from the heart, and back it with facts.",
+  "The chest number is an identity. Respect it, and make the board remember it for the right reasons.",
+  "PPDT is about perception. See what is there, not what you want to see.",
+  "Every setback in the GTO tasks is an opportunity to show your resilience.",
+  "Cooperation is the bedrock of the armed forces. Show it in every group task.",
+  "Your voice in the GD should be the voice of reason, not just the loudest voice.",
+  "Listen as much as you speak. A good leader is always a good listener.",
+  "The Military Planning Exercise tests your logic, not your imagination. Stick to the resources given.",
+  "In the command task, if your subordinates fail, you fail. Lead them well.",
+  "Your hobbies define your downtime. Make sure they reflect an active, inquisitive mind.",
+  "A true leader takes the blame and shares the credit.",
+  "The IO wants to know 'who' you are, not just 'what' you have done.",
+  "Don't fake a smile. Let your genuine enthusiasm for the forces shine through.",
+  "A strong story has a clear past, a logical present, and a positive future.",
+  "Don't write about superheroes. Write about ordinary people doing extraordinary things.",
+  "Your handwriting in the psych tests is the first impression. Keep it legible.",
+  "A blank SRT is a skipped responsibility. Attempt everything.",
+  "The conference is the final check. Maintain the same demeanor you had on day one.",
+  "Don't fear the cross-questioning. It means they are interested in you.",
+  "An officer never gives up. Show that fighting spirit until the last second.",
+  "Your PIQ form is your blueprint. Know every single detail you have written.",
+  "The obstacles are just wood and rope. The real test is your mind.",
+  "In the snake race, the snake is your responsibility. Never drop it.",
+  "Your general awareness reflects your curiosity about the world you will defend.",
+  "Be brutally honest about your weaknesses in the SD, and equally vocal about how you are fixing them.",
+  "A loud voice doesn't equal confidence. Clarity of thought does.",
+  "If you don't know the answer, say so. Integrity is tested constantly.",
+  "Don't be a follower, but know when to support a good idea.",
+  "Every word in your TAT story should drive the narrative forward.",
+  "The group obstacle race tests your team spirit under physical stress.",
+  "Don't let one bad test affect the next. Compartmentalize like a true soldier.",
+  "The psychologist reads between the lines. Keep your thoughts aligned with your actions.",
+  "Your posture speaks before you do. Walk in with your head held high.",
+  "In the SSB, you are competing with the standard, not with each other.",
+  "The final recommendation is just the beginning. The real training starts after."
+];
+
+export default function Dashboard() {
+  const { user } = useAuth();
+  const [dashData, setDashData] = useState<DashboardData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [quote, setQuote] = useState(MENTOR_QUOTES[0]);
+  const supabase = createClient();
+
+  const stats = [
+    { name: 'Overall Progress', value: dashData ? `${dashData.overallProgress}%` : '0%', icon: Trophy, color: 'text-orange-500', bg: 'bg-orange-500/10' },
+    { name: 'Tests Completed', value: `${dashData?.testsCompleted ?? 0}`, icon: Brain, color: 'text-blue-500', bg: 'bg-blue-500/10' },
+    { name: 'Current Streak', value: `${dashData?.currentStreak ?? 0} Days`, icon: Flame, color: 'text-green-500', bg: 'bg-green-500/10' },
+    { name: 'Avg Score', value: `${dashData?.avgScore ?? 0}`, icon: Star, color: 'text-purple-500', bg: 'bg-purple-500/10' },
+  ];
+
+  const radarScores = dashData?.radarData && dashData.radarData.length > 0
+    ? dashData.radarData.map(d => d.score)
+    : Array(15).fill(0);
+
+  const history = dashData?.trajectoryData
+    ? dashData.trajectoryData.map(d => ({ date: d.date, score: d.score ?? 0 }))
+    : [];
+
+  useEffect(() => {
+    // Rotating Quotes based on date seed
+    const todayStr = new Date().toDateString();
+    let seed = 0;
+    for (let i = 0; i < todayStr.length; i++) {
+      seed += todayStr.charCodeAt(i);
+    }
+    setQuote(MENTOR_QUOTES[seed % MENTOR_QUOTES.length]);
+
+    if (!user?.id) {
+      setLoading(false);
+      return;
+    }
+
+    // Update streak on every load
+    updateStreak(user.id, supabase).catch(console.error);
+
+    // Fetch dashboard data from Supabase
+    getDashboardData(user.id, supabase)
+      .then(setDashData)
+      .catch(console.error)
+      .finally(() => setLoading(false));
+
+    // Real-time: refresh dashboard on new session or profile changes
+    const fetchFreshData = () => getDashboardData(user.id, supabase).then(setDashData);
+    
+    const channel = supabase.channel('dash_updates')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'assessment_sessions', filter: `user_id=eq.${user.id}` }, fetchFreshData)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'study_progress', filter: `user_id=eq.${user.id}` }, fetchFreshData)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'user_streaks', filter: `user_id=eq.${user.id}` }, fetchFreshData)
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'assessment_profiles', filter: `user_id=eq.${user.id}` }, fetchFreshData)
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [user?.id]);
+
+  return (
+    <div className="space-y-12 pb-20">
+      {/* Tactical Marquee */}
+      <div className="-mx-8">
+        <TacticalMarquee />
+      </div>
+
+      {/* Welcome Banner */}
+      <section className="relative overflow-hidden rounded-[48px] bg-gradient-to-br from-[#0f2d4a] to-[#1a3d6e] p-16 border border-[#1E3A5F] shadow-2xl">
+        <div className="relative z-10 max-w-2xl space-y-6">
+          <div className="bg-orange-500/10 border border-orange-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
+            <Radio size={12} className="text-orange-500 animate-pulse" />
+            <span className="text-[10px] font-black text-orange-500 uppercase tracking-[0.2em]">Command Center: Active</span>
+          </div>
+          <h1 className="text-4xl md:text-7xl font-black text-white leading-none uppercase tracking-tighter">
+            SSB <span className="text-emerald-500">PREP</span>
+          </h1>
+          <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.4em] mb-4">by SSB NEXTGEN</p>
+          <p className="text-[#8BA0B8] text-lg font-bold leading-relaxed italic">
+            &quot;Your SSB preparation journey continues. Track your reflexes, practice psych batteries, 
+            and receive officer-grade feedback in real-time.&quot;
+          </p>
+          <div className="flex items-center gap-4 pt-4">
+             <Link href="/vacha/assessment" className="bg-orange-500 hover:bg-orange-400 text-black px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] shadow-2xl transition-all active:scale-95">
+                Initialize Mission
+             </Link>
+             <Link href="/guide" className="bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all">
+                Read SOP
+             </Link>
+             <Link href="/profile" className="bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all flex items-center gap-2">
+                <Trophy size={14} /> View Service Profile
+             </Link>
+          </div>
+        </div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/4 blur-[120px]" />
+      </section>
+
+      {/* Stats Grid */}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {stats.map((stat) => (
+          <div key={stat.name} className="bg-[#162840] border border-[#1E3A5F] rounded-[32px] p-8 flex items-center gap-6 hover:border-orange-500/30 transition-all shadow-xl group">
+            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${stat.bg} ${stat.color} transition-transform group-hover:scale-110`}>
+              <stat.icon size={28} />
+            </div>
+            <div>
+              <p className="text-3xl font-black text-white tracking-tight">{stat.value}</p>
+              <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">{stat.name}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      {/* OLQ Telemetry Section */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-8 bg-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 relative overflow-hidden group shadow-2xl">
+          <div className="absolute top-0 right-0 p-8">
+             <div className="bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-[9px] font-black text-emerald-500 uppercase tracking-widest">Live Telemetry Feed</span>
+             </div>
+          </div>
+          <h3 className="text-2xl font-black mb-8 flex items-center gap-4 text-white uppercase tracking-tight">
+            <ShieldAlert size={24} className="text-emerald-500" />
+            Performance Radar
+          </h3>
+          <div className="h-[450px] w-full">
+            <OlqRadarChart scores={radarScores} />
+          </div>
+        </div>
+        
+        <div className="lg:col-span-4 bg-gradient-to-br from-[#162840] to-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 flex flex-col justify-center shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-20"></div>
+          <div className="space-y-8">
+            <div className="space-y-2">
+               <h4 className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px] flex items-center gap-2">
+                  <Sparkles size={14} /> Mentor Briefing
+               </h4>
+               <p className="text-slate-300 font-bold leading-relaxed text-lg italic tracking-tight">
+                &quot;{quote}&quot;
+               </p>
+            </div>
+            <div className="flex items-center gap-4 p-4 bg-white/5 rounded-[24px] border border-white/5">
+               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-500 to-amber-600 flex items-center justify-center text-xs font-black text-black shadow-xl">YK</div>
+               <div>
+                  <p className="text-sm font-black text-white uppercase tracking-tight">Major Yashkumar Yadav</p>
+                  <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black">SSB Tactical Mentor</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Historical Progress Chart Section */}
+      <section className="bg-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 relative overflow-hidden group shadow-2xl">
+        <div className="absolute top-0 right-0 p-8">
+           <div className="bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full flex items-center gap-2">
+              <span className="text-[9px] font-black text-blue-500 uppercase tracking-widest">Historical Data</span>
+           </div>
+        </div>
+        <h3 className="text-2xl font-black mb-8 flex items-center gap-4 text-white uppercase tracking-tight">
+          <Trophy size={24} className="text-blue-500" />
+          Training Trajectory
+        </h3>
+        <div className="h-[350px] w-full">
+          <ProgressLineChart history={history} />
+        </div>
+      </section>
+
+      {/* Modules Grid */}
+      <section className="space-y-8">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+             <Target className="w-8 h-8 text-orange-500" />
+             <h3 className="font-black text-2xl tracking-tight uppercase text-white">Training Modules</h3>
+          </div>
+          <Link href="/vacha/assessment" className="text-[10px] font-black text-orange-500 uppercase tracking-[0.3em] flex items-center gap-2 hover:gap-4 transition-all">
+            Full Sector Map <ArrowRight size={14} />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {modules.map((mod) => (
+            <Link key={mod.name} href={mod.path} className="group bg-[#162840] border border-[#1E3A5F] rounded-[40px] p-10 hover:bg-[#1a3050] hover:border-orange-500/50 transition-all cursor-pointer relative overflow-hidden block shadow-xl">
+              <div className="w-14 h-14 bg-[#0f172a] rounded-2xl flex items-center justify-center mb-6 text-slate-600 group-hover:text-orange-500 group-hover:bg-orange-500/10 transition-all border border-white/5 shadow-2xl">
+                <mod.icon size={26} />
+              </div>
+              <h4 className="text-xl font-black text-white uppercase tracking-tight mb-2 group-hover:text-orange-500 transition-colors">{mod.name}</h4>
+              <p className="text-[11px] font-bold text-slate-500 leading-relaxed mb-6 uppercase tracking-widest">{mod.desc}</p>
+              <div className="flex items-center justify-between">
+                 <span className="inline-block text-[9px] font-black text-orange-500 bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20 uppercase tracking-[0.2em]">
+                   {mod.tag}
+                 </span>
+                 <ArrowRight size={16} className="text-slate-700 group-hover:text-orange-500 group-hover:translate-x-2 transition-all" />
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left opacity-50" />
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,195 @@
+{
+  "id": "afcat-ga-01-t13",
+  "title": "Indian Missiles — Surface-to-Air (Akash, S-400)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Surface-to-Air Missiles (SAMs) are crucial components of a nation's air defense strategy, designed to intercept and destroy incoming aerial threats such as aircraft, drones, and ballistic missiles. India has significantly strengthened its air defense capabilities with both indigenously developed systems like Akash and advanced acquisitions such as the Russian S-400 Triumf. Understanding these systems is vital for general awareness, especially in defense-related examinations like AFCAT."
+    },
+    {
+      "type": "heading",
+      "data": "Akash Missile System"
+    },
+    {
+      "type": "text",
+      "data": "The Akash (meaning 'Sky') is an indigenous, all-weather, medium-range surface-to-air missile system developed by India's Defence Research and Development Organisation (DRDO) and produced by Bharat Dynamics Limited (BDL). It is designed to protect vulnerable areas and points from air attacks. The system is highly mobile and can engage multiple targets simultaneously."
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Type:** Medium-range, all-weather, multi-target SAM.",
+        "**Development:** Indigenous (DRDO, BDL).",
+        "**Propulsion:** Ramjet-rocket propulsion for sustained velocity.",
+        "**Guidance:** Rajendra 3D active phased array radar for target tracking and missile guidance (terminal active seeker planned for future upgrades).",
+        "**Warhead:** Pre-fragmented high-explosive warhead.",
+        "**Operational Range:** Approximately 25-30 km.",
+        "**Altitude:** Up to 18 km.",
+        "**Speed:** Mach 2.5 to 3.5.",
+        "**Users:** Indian Army and Indian Air Force."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember Akash's 'Rajendra' radar is its eye and brain, allowing it to engage up to 4 targets simultaneously. It's fully indigenous and uses ramjet propulsion for sustained high speeds."
+    },
+    {
+      "type": "heading",
+      "data": "S-400 Triumf Air Defense System"
+    },
+    {
+      "type": "text",
+      "data": "The S-400 Triumf (NATO reporting name: SA-21 Growler) is an advanced, long-range surface-to-air missile system developed by Russia. It is considered one of the most sophisticated air defense systems in the world, capable of engaging aircraft, unmanned aerial vehicles, and ballistic and cruise missiles. India is procuring five S-400 regiments, significantly enhancing its air defense capabilities against a wide spectrum of threats."
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Type:** Long-range, multi-layered air defense system.",
+        "**Origin:** Russia (Almaz-Antey).",
+        "**Key Capability:** Can simultaneously engage up to 36 targets with up to 72 missiles.",
+        "**Missile Types:** Uses a family of missiles with varying ranges (40 km to 400 km) and altitudes, allowing multi-layered defense.",
+        "**Radar:** Advanced multi-functional radars (e.g., 92N6E 'Grave Stone' engagement radar, 91N6E 'Big Bird' acquisition radar).",
+        "**Operational Range:** Up to 400 km for aircraft, up to 60 km for ballistic missiles.",
+        "**Altitude:** Up to 30 km.",
+        "**Speed:** Hypersonic (up to Mach 14).",
+        "**Strategic Importance:** Provides a robust deterrent against aerial and missile threats, critical for protecting strategic assets and airspace."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: S-400 is not just one missile, but a system that can use different missiles for different ranges (40 km, 120 km, 250 km, 400 km). This makes it highly versatile for layered defense. Remember its Russian origin and 'Triumf' name."
+    },
+    {
+      "type": "heading",
+      "data": "Comparative Overview: Akash vs. S-400"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Feature",
+          "Akash Missile System",
+          "S-400 Triumf"
+        ],
+        "rows": [
+          [
+            "Origin",
+            "India (DRDO)",
+            "Russia (Almaz-Antey)"
+          ],
+          [
+            "Type",
+            "Medium-range SAM",
+            "Long-range, multi-layered SAM"
+          ],
+          [
+            "Primary Role",
+            "Point/Area defense against aircraft/drones",
+            "Area/Strategic defense against aircraft, drones, ballistic/cruise missiles"
+          ],
+          [
+            "Max Range",
+            "25-30 km",
+            "Up to 400 km (for aircraft)"
+          ],
+          [
+            "Max Altitude",
+            "18 km",
+            "Up to 30 km"
+          ],
+          [
+            "Targets Engaged",
+            "Aircraft, Helicopters, Drones",
+            "Aircraft, Helicopters, Drones, Ballistic Missiles, Cruise Missiles"
+          ],
+          [
+            "Guidance",
+            "Rajendra 3D active phased array radar",
+            "Multiple advanced radars, active/semi-active radar homing"
+          ],
+          [
+            "Propulsion",
+            "Ramjet-rocket",
+            "Solid-propellant rockets"
+          ],
+          [
+            "Mobility",
+            "Mobile (mounted on trucks/tanks)",
+            "Highly Mobile"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Simplified Surface-to-Air Missile System Components",
+        "description": "This diagram illustrates the basic components and flow of operations in a typical Surface-to-Air Missile (SAM) system, including acquisition radar, command post, engagement radar, and missile launcher.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Airspace Surveillance] --> B(Acquisition Radar)\n    B --> C{Threat Detection & Tracking}\n    C --> D[Command Post / Fire Control Centre]\n    D --> E(Engagement Radar)\n    E --> F[Missile Launcher]\n    F --> G[Missile Intercept]"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "A crucial air defense system acquired by India from Russia is known for its ability to engage multiple targets simultaneously, including ballistic missiles, and has a maximum interception range of 400 km. It employs a variety of missiles to create a multi-layered defense. Which air defense system is being described?",
+        "solution": "1. **Analyze the Keywords:** 'Acquired from Russia', 'engage multiple targets simultaneously', 'ballistic missiles', 'maximum interception range of 400 km', 'variety of missiles for multi-layered defense'.\n2. **Recall System Details:**\n    *   Akash is indigenous, medium-range (25-30 km), and primarily for aircraft/drones.\n    *   S-400 is Russian-made, long-range (up to 400 km), capable of engaging ballistic missiles, and uses a family of missiles for layered defense.\n3. **Match Keywords to System:** All keywords strongly point towards the S-400 Triumf system.\n4. **Conclusion:** The description perfectly matches the S-400 Triumf.",
+        "answer": "S-400 Triumf"
+      }
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "SAM Effectiveness = (Range_Capability × Speed_Capability × Target_Types_Intercepted) / Reaction_Time",
+        "note": "This informal 'formula' represents the general factors contributing to a Surface-to-Air Missile system's overall effectiveness in air defense. Higher range, speed, versatility in target types, and quicker reaction time lead to better effectiveness."
+      }
+    }
+  ],
+  "keyPoints": [
+    "Akash is an indigenous, medium-range (25-30 km) Surface-to-Air Missile (SAM) system developed by DRDO for point and area defense.",
+    "The Akash system uses the 'Rajendra' 3D active phased array radar for tracking and guidance, and employs ramjet-rocket propulsion.",
+    "S-400 Triumf is a highly advanced, long-range (up to 400 km) air defense system of Russian origin, acquired by India.",
+    "S-400 is capable of providing multi-layered defense against a wide spectrum of aerial threats, including aircraft, drones, cruise missiles, and ballistic missiles, by using different missile types.",
+    "Both Akash and S-400 are crucial for India's air defense, with Akash providing localized protection and S-400 offering strategic, wide-area coverage."
+  ],
+  "commonMistakes": [
+    "Confusing the origin and primary roles: Akash is Indian-made and medium-range; S-400 is Russian-made and long-range with strategic capabilities.",
+    "Underestimating the multi-layered defense capability of S-400, assuming it only uses one type of missile or only targets aircraft."
+  ],
+  "examTips": [
+    "For AFCAT, remember key specifications like 'indigenous' vs. 'foreign origin', approximate ranges, and unique features (e.g., Rajendra radar for Akash, multi-target/multi-missile capability for S-400).",
+    "Expect questions comparing these systems or asking to identify one based on its features. Pay attention to numerical ranges and the types of threats each system can neutralize."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following is an indigenously developed, medium-range surface-to-air missile system by India, primarily used for point and area defense?",
+      "options": [
+        "A. BrahMos",
+        "B. S-400 Triumf",
+        "C. Akash",
+        "D. Agni-V"
+      ],
+      "correct": 2,
+      "explanation": "Akash is India's indigenously developed medium-range SAM for point and area defense. BrahMos is a supersonic cruise missile, S-400 is Russian, and Agni-V is an ICBM."
+    },
+    {
+      "question": "The S-400 Triumf air defense system, acquired by India, is primarily known for its capability to:",
+      "options": [
+        "A. Serve as an anti-tank guided missile system.",
+        "B. Intercept only short-range ballistic missiles.",
+        "C. Provide multi-layered defense against various aerial threats, including aircraft, drones, and ballistic/cruise missiles, up to 400 km.",
+        "D. Conduct deep strike operations into enemy territory."
+      ],
+      "correct": 2,
+      "explanation": "The S-400 Triumf is a comprehensive long-range air defense system capable of multi-layered interception of a wide range of aerial targets, including ballistic and cruise missiles, with a maximum range of 400 km against aircraft."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Surface-to-Air%20(Akash%2C%20S-400)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Surface-to-Air%20(Akash%2C%20S-400)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

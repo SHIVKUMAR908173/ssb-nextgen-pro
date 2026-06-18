@@ -1,0 +1,302 @@
+[
+  {
+    "id": "W1",
+    "word": "Help",
+    "difficulty": "Easy",
+    "sample_sentences": [
+      "Helping others spreads goodwill.",
+      "I help my classmates understand difficult concepts.",
+      "We should help those in need without expecting anything in return."
+    ],
+    "olq_mapping": ["Cooperation", "Sense of Responsibility", "Social Adaptability"],
+    "category": "Social Values"
+  },
+  {
+    "id": "W2",
+    "word": "Organise",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "An organised room is an indication of an organised mind.",
+      "I organised a charity event in my college.",
+      "Good organisation is key to successful project completion."
+    ],
+    "olq_mapping": ["Organising Ability", "Initiative", "Effective Intelligence"],
+    "category": "Leadership"
+  },
+  {
+    "id": "W3",
+    "word": "Action",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "In an emergency it is better to act quickly rather than keep pondering.",
+      "Action drives results.",
+      "I believe in taking immediate action when situations demand."
+    ],
+    "olq_mapping": ["Speed of Decision", "Initiative", "Courage"],
+    "category": "Decision Making"
+  },
+  {
+    "id": "W4",
+    "word": "Determination",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "A determined man can achieve anything.",
+      "My determination helped me overcome academic challenges.",
+      "Determination and hard work always pay off in the long run."
+    ],
+    "olq_mapping": ["Determination", "Stamina", "Self-Confidence"],
+    "category": "Willpower"
+  },
+  {
+    "id": "W5",
+    "word": "Imagination",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Imagination has no limits.",
+      "I use my imagination to find creative solutions to problems.",
+      "Imagination is the foundation of innovation and progress."
+    ],
+    "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"],
+    "category": "Creativity"
+  },
+  {
+    "id": "W6",
+    "word": "Friends",
+    "difficulty": "Easy",
+    "sample_sentences": [
+      "Friends are the family we choose.",
+      "I maintain strong friendships through trust and mutual respect.",
+      "True friends support each other in times of need."
+    ],
+    "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"],
+    "category": "Relationships"
+  },
+  {
+    "id": "W7",
+    "word": "Lively",
+    "difficulty": "Easy",
+    "sample_sentences": [
+      "Lively people are good company.",
+      "I try to remain lively and cheerful even during stressful situations.",
+      "A lively attitude helps in building positive relationships."
+    ],
+    "olq_mapping": ["Liveliness", "Social Adaptability", "Cooperation"],
+    "category": "Personality"
+  },
+  {
+    "id": "W8",
+    "word": "Courage",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "Courageous men inspire generations.",
+      "I showed courage when I stood up against injustice in my locality.",
+      "Courage is not absence of fear but acting despite fear."
+    ],
+    "olq_mapping": ["Courage", "Self-Confidence", "Determination"],
+    "category": "Values"
+  },
+  {
+    "id": "W9",
+    "word": "Mind",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "The mind is the most powerful human organ.",
+      "I train my mind through meditation and reading.",
+      "A disciplined mind is essential for achieving goals."
+    ],
+    "olq_mapping": ["Reasoning Ability", "Effective Intelligence", "Self-Confidence"],
+    "category": "Mental Abilities"
+  },
+  {
+    "id": "W10",
+    "word": "Neighbour",
+    "difficulty": "Easy",
+    "sample_sentences": [
+      "Neighbours are good to you when you are good to them.",
+      "I maintain cordial relations with all my neighbours.",
+      "Good neighbours are a blessing and support system."
+    ],
+    "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"],
+    "category": "Social Relations"
+  },
+  {
+    "id": "W11",
+    "word": "Group",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Group cohesion leads to success.",
+      "I work effectively in groups by listening and contributing.",
+      "A strong group can achieve what individuals cannot."
+    ],
+    "olq_mapping": ["Cooperation", "Ability to Influence the Group", "Social Adaptability"],
+    "category": "Teamwork"
+  },
+  {
+    "id": "W12",
+    "word": "Strength",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Strength can be built with systematic effort.",
+      "I build my physical and mental strength through regular exercise.",
+      "True strength lies in helping others become strong."
+    ],
+    "olq_mapping": ["Determination", "Stamina", "Self-Confidence"],
+    "category": "Personal Development"
+  },
+  {
+    "id": "W13",
+    "word": "Reasonable",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "Reasonable prices attract customers.",
+      "I always try to be reasonable in my expectations from others.",
+      "Being reasonable helps in maintaining harmony in relationships."
+    ],
+    "olq_mapping": ["Reasoning Ability", "Social Adaptability", "Effective Intelligence"],
+    "category": "Judgment"
+  },
+  {
+    "id": "W14",
+    "word": "Sister",
+    "difficulty": "Easy",
+    "sample_sentences": [
+      "Sister is another form of mother.",
+      "I share a close bond with my sister and we support each other.",
+      "Sisters teach us about love, care and sharing."
+    ],
+    "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"],
+    "category": "Family"
+  },
+  {
+    "id": "W15",
+    "word": "Speed",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Speed often beats strength.",
+      "I balance speed with accuracy in my work.",
+      "Quick decision making is essential in emergency situations."
+    ],
+    "olq_mapping": ["Speed of Decision", "Effective Intelligence", "Reasoning Ability"],
+    "category": "Efficiency"
+  },
+  {
+    "id": "W16",
+    "word": "Timid",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "Timid people cannot be great leaders.",
+      "I overcame my timid nature by gradually facing my fears.",
+      "Being timid can prevent one from seizing opportunities."
+    ],
+    "olq_mapping": ["Self-Confidence", "Courage", "Initiative"],
+    "category": "Personality Traits"
+  },
+  {
+    "id": "W17",
+    "word": "Knowledge",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Knowledge is more powerful than money.",
+      "I continuously seek knowledge through reading and experiences.",
+      "Sharing knowledge multiplies its value."
+    ],
+    "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"],
+    "category": "Learning"
+  },
+  {
+    "id": "W18",
+    "word": "Country",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "A strong country is made by honest citizens.",
+      "I contribute to my country by being a responsible citizen.",
+      "Serving the country is the highest form of patriotism."
+    ],
+    "olq_mapping": ["Sense of Responsibility", "Courage", "Determination"],
+    "category": "Patriotism"
+  },
+  {
+    "id": "W19",
+    "word": "Dependence",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "Dependence is often seen in old age.",
+      "I strive to be self-reliant while helping those who depend on me.",
+      "Healthy dependence in relationships builds trust."
+    ],
+    "olq_mapping": ["Sense of Responsibility", "Social Adaptability", "Effective Intelligence"],
+    "category": "Relationships"
+  },
+  {
+    "id": "W20",
+    "word": "Brave",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Brave men inspire men and children alike.",
+      "I showed bravery when I rescued a child from an accident.",
+      "Being brave means facing challenges head-on."
+    ],
+    "olq_mapping": ["Courage", "Self-Confidence", "Determination"],
+    "category": "Values"
+  },
+  {
+    "id": "W21",
+    "word": "Expression",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "Simple and clear expression is well understood.",
+      "I work on improving my expression through practice.",
+      "Good expression is essential for effective communication."
+    ],
+    "olq_mapping": ["Power of Expression", "Effective Intelligence", "Social Adaptability"],
+    "category": "Communication"
+  },
+  {
+    "id": "W22",
+    "word": "Emotions",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "Emotions are unique to everyone.",
+      "I learn to manage my emotions through self-awareness.",
+      "Understanding emotions helps in building better relationships."
+    ],
+    "olq_mapping": ["Social Adaptability", "Self-Confidence", "Effective Intelligence"],
+    "category": "Emotional Intelligence"
+  },
+  {
+    "id": "W23",
+    "word": "Health",
+    "difficulty": "Easy",
+    "sample_sentences": [
+      "Healthy lifestyle comes with discipline.",
+      "I maintain my health through regular exercise and balanced diet.",
+      "Good health is the foundation of a productive life."
+    ],
+    "olq_mapping": ["Determination", "Self-Confidence", "Stamina"],
+    "category": "Personal Development"
+  },
+  {
+    "id": "W24",
+    "word": "Awareness",
+    "difficulty": "Medium",
+    "sample_sentences": [
+      "General awareness is improved by reading.",
+      "I stay aware of current affairs through newspapers and discussions.",
+      "Awareness about social issues makes us better citizens."
+    ],
+    "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"],
+    "category": "Knowledge"
+  },
+  {
+    "id": "W25",
+    "word": "Failure",
+    "difficulty": "Hard",
+    "sample_sentences": [
+      "Failure is a stepping stone to success.",
+      "I learn from my failures and use them to improve.",
+      "Accepting failure gracefully is a sign of maturity."
+    ],
+    "olq_mapping": ["Determination", "Self-Confidence", "Liveliness"],
+    "category": "Resilience"
+  }
+]

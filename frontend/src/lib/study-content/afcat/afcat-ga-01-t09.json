@@ -1,0 +1,188 @@
+{
+  "id": "afcat-ga-01-t09",
+  "title": "IAF Transport Aircraft (C-17 Globemaster, C-130J Super Hercules, Il-76, An-32, C-295)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Transport aircraft form the backbone of any modern air force, enabling rapid deployment of troops, equipment, and humanitarian aid across vast distances and challenging terrains. The Indian Air Force (IAF) operates a diverse fleet of transport aircraft, each designed for specific strategic and tactical roles. Understanding these aircraft, their capabilities, and their significance is crucial for General Awareness, especially for exams like AFCAT."
+    },
+    {
+      "type": "heading",
+      "data": "Role of Transport Aircraft in IAF"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Strategic Airlift: Moving large volumes of cargo and personnel over long distances.",
+        "Tactical Airlift: Deploying troops and equipment to forward operational areas, often on unprepared or short runways.",
+        "Special Operations: Supporting covert missions, air-dropping special forces and supplies.",
+        "Humanitarian Aid & Disaster Relief (HADR): Delivering relief supplies, evacuating personnel during natural calamities.",
+        "Logistical Support: Maintaining supply lines for deployed forces and remote outposts."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember the distinction between Strategic (long-range, heavy-lift, global reach) and Tactical (short-range, rapid deployment, challenging terrain) roles. This helps classify aircraft."
+    },
+    {
+      "type": "heading",
+      "data": "Key IAF Transport Aircraft"
+    },
+    {
+      "type": "heading",
+      "data": "C-17 Globemaster III"
+    },
+    {
+      "type": "text",
+      "data": "The Boeing C-17 Globemaster III is a premier strategic heavy-lift transport aircraft of the IAF. Acquired from the United States, it provides the IAF with unmatched capability to transport large combat equipment, troops, and humanitarian aid across intercontinental distances. Its ability to operate from short, austere airfields makes it highly versatile."
+    },
+    {
+      "type": "heading",
+      "data": "C-130J Super Hercules"
+    },
+    {
+      "type": "text",
+      "data": "Manufactured by Lockheed Martin (USA), the C-130J is a highly advanced tactical airlifter, specifically tailored for special operations and rapid response missions. Its robust design allows it to operate from semi-prepared surfaces, high-altitude airfields, and in adverse weather conditions. The IAF's C-130Js are primarily used by special forces."
+    },
+    {
+      "type": "heading",
+      "data": "Il-76 Candid"
+    },
+    {
+      "type": "text",
+      "data": "The Ilyushin Il-76 (NATO reporting name 'Candid') is a large, multi-purpose, four-engine turbofan strategic transport aircraft designed in the Soviet Union. It has served as the backbone of the IAF's heavy-lift capabilities for decades, capable of carrying heavy and bulky cargo, including tanks and combat vehicles, over long ranges. It also forms the basis for the A-50 Phalcon AWACS aircraft used by IAF."
+    },
+    {
+      "type": "heading",
+      "data": "An-32 Cline"
+    },
+    {
+      "type": "text",
+      "data": "The Antonov An-32 (NATO reporting name 'Cline') is a twin-engine turboprop military transport aircraft developed in the Soviet Union. It is the workhorse of the IAF's tactical transport fleet, renowned for its excellent performance in hot and high-altitude conditions, making it ideal for operations in the Himalayas and other challenging terrains. It underwent a major upgrade program to extend its service life."
+    },
+    {
+      "type": "heading",
+      "data": "C-295"
+    },
+    {
+      "type": "text",
+      "data": "The Airbus C-295 is a new generation medium tactical transport aircraft set to replace the ageing Avro HS-748 fleet of the IAF. Significantly, this project is a 'Make in India' initiative, with Tata Advanced Systems Ltd (TASL) manufacturing a substantial number of these aircraft in India. It offers excellent short take-off and landing (STOL) capabilities and versatility for various roles including paratrooping and cargo transport."
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: The C-295 program is a landmark 'Make in India' aerospace project. Associate C-295 with its replacement role for Avro aircraft and indigenous manufacturing."
+    },
+    {
+      "type": "heading",
+      "data": "Comparative Overview of IAF Transport Aircraft"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Aircraft",
+          "Origin",
+          "Primary Role",
+          "Key Feature"
+        ],
+        "rows": [
+          [
+            "C-17 Globemaster III",
+            "USA",
+            "Strategic Heavy Lift",
+            "Global reach, short field capability"
+          ],
+          [
+            "C-130J Super Hercules",
+            "USA",
+            "Tactical Airlift, Special Ops",
+            "Versatile, high-altitude ops, advanced avionics"
+          ],
+          [
+            "Il-76 Candid",
+            "Soviet Union/Russia",
+            "Strategic Heavy Lift",
+            "Long-range cargo, AWACS platform"
+          ],
+          [
+            "An-32 Cline",
+            "Soviet Union/Ukraine",
+            "Medium Tactical Transport",
+            "High altitude performance, rugged workhorse"
+          ],
+          [
+            "C-295",
+            "Spain (Airbus), India (TASL)",
+            "Medium Tactical Transport",
+            "Avro replacement, 'Make in India', STOL capability"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "The Indian Air Force requires an aircraft to swiftly airlift troops and supplies to a newly established forward post in a remote mountainous region with a short, semi-prepared runway. Which of the following aircraft would be most suitable for this mission?",
+        "solution": "1. Analyze the mission requirements: Swift airlift, troops and supplies, remote mountainous region, short/semi-prepared runway.\n2. Evaluate options:\n    - C-17 Globemaster III: Excellent heavy lift and short field capability, but might be an overkill for 'troops and supplies' and the 'mountainous region' aspect points towards tactical specialists.\n    - C-130J Super Hercules: Designed for tactical airlift, special operations, and excels in challenging environments, including high-altitude and semi-prepared airstrips. This closely matches the requirements.\n    - Il-76 Candid: Primarily a strategic heavy-lifter, less agile for specific tactical deployments to very remote, short strips compared to the C-130J.\n    - An-32 Cline: A robust tactical workhorse good for high-altitude, but the C-130J offers more advanced capabilities for swift troop deployment and special operations in such demanding scenarios.\n3. Conclusion: The C-130J Super Hercules's capabilities in tactical airlift, special operations, and performance in challenging terrain make it the most suitable choice.",
+        "answer": "B) C-130J Super Hercules"
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "IAF Transport Aircraft Fleet Overview by Capability",
+        "description": "This diagram illustrates the primary categorization of key IAF transport aircraft based on their strategic and tactical airlift capabilities.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[IAF Transport Fleet] --> B[Strategic Airlift (Heavy & Long-Range)]\n    A --> C[Tactical Airlift (Medium & Short-Range)]\n\n    B --> B1(C-17 Globemaster III)\n    B --> B2(Il-76 Candid)\n\n    C --> C1(C-130J Super Hercules)\n    C --> C2(An-32 Cline)\n    C --> C3(C-295)\n\n    style B1 fill:#FDE0DF,stroke:#E27D60,stroke-width:2px\n    style C1 fill:#DBEDF3,stroke:#66A5AD,stroke-width:2px\n    style C3 fill:#DBEDF3,stroke:#66A5AD,stroke-width:2px"
+      }
+    }
+  ],
+  "keyPoints": [
+    "C-17 Globemaster III is the IAF's primary strategic heavy-lift aircraft, capable of global reach and operating from short airfields.",
+    "C-130J Super Hercules is crucial for tactical airlift and special operations, excelling in challenging terrains and high altitudes.",
+    "Il-76 Candid has been the backbone of IAF's heavy-lift for decades and is also used as an AWACS platform (A-50 Phalcon).",
+    "An-32 Cline is the workhorse medium tactical transport, known for its ruggedness and high-altitude performance.",
+    "C-295 is the newest induction, replacing Avro HS-748, and signifies a major 'Make in India' initiative in aerospace."
+  ],
+  "commonMistakes": [
+    "Confusing strategic and tactical roles: C-17 is strategic, C-130J is tactical. While both are transport, their primary mission profiles differ significantly.",
+    "Misidentifying the origin of aircraft: E.g., Il-76 and An-32 are Soviet/Russian/Ukrainian, while C-17 and C-130J are American, and C-295 is European (with Indian manufacturing)."
+  ],
+  "examTips": [
+    "For AFCAT, focus on the 'What, Where, Why' for each aircraft: What is its name? Where is its origin/manufacturer? Why is it important (primary role/unique feature)?",
+    "Pay attention to 'Make in India' initiatives like the C-295 project, as these are frequently asked in General Awareness sections."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following IAF transport aircraft is known for its role in special operations and its ability to operate from challenging, high-altitude airfields?",
+      "options": [
+        "A) C-17 Globemaster III",
+        "B) C-130J Super Hercules",
+        "C) Il-76 Candid",
+        "D) An-32 Cline"
+      ],
+      "correct": 1,
+      "explanation": "The C-130J Super Hercules is specifically designed for tactical airlift and special operations, with superior capabilities for challenging environments like high-altitude and semi-prepared runways."
+    },
+    {
+      "question": "The C-295 transport aircraft program for the IAF is significant primarily because:",
+      "options": [
+        "A) It is the heaviest transport aircraft inducted by IAF.",
+        "B) It is a major 'Make in India' aerospace manufacturing initiative.",
+        "C) It replaces the C-17 Globemaster III fleet.",
+        "D) It is an entirely new design by HAL."
+      ],
+      "correct": 1,
+      "explanation": "The C-295 project is a landmark 'Make in India' initiative, with Tata Advanced Systems Ltd (TASL) manufacturing a substantial number of these aircraft in India, replacing the aging Avro fleet."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=IAF%20Transport%20Aircraft%20(C-17%20Globemaster%2C%20C-130J%20Super%20Hercules%2C%20Il-76%2C%20An-32%2C%20C-295)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=IAF%20Transport%20Aircraft%20(C-17%20Globemaster%2C%20C-130J%20Super%20Hercules%2C%20Il-76%2C%20An-32%2C%20C-295)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

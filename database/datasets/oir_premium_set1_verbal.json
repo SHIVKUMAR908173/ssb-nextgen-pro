@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "category": "Non-Verbal Logic",
+    "question_text": "From the following cubes, which cube matches with Set A? [Set A: Consonants | Set B: Vowels]",
+    "options": [
+      {"label": "Cube with 1 vowel", "value": "1"},
+      {"label": "Cube with 2 vowels", "value": "2"},
+      {"label": "Cube with only consonants", "value": "3"},
+      {"label": "None of the above", "value": "4"}
+    ],
+    "correct_option": "3",
+    "explanation": "Class A consists of cubes where all visible faces are consonants. Cube 3 is the only one that fits this rule."
+  },
+  {
+    "id": 2,
+    "category": "Verbal Logic",
+    "question_text": "When a car suddenly starts to move, in which direction does a person sitting on the back-seat bend?",
+    "options": [
+      {"label": "Backward", "value": "1"},
+      {"label": "Forward", "value": "2"},
+      {"label": "Sideways", "value": "3"},
+      {"label": "Does not bend", "value": "4"}
+    ],
+    "correct_option": "1",
+    "explanation": "Due to inertia of rest, the lower part of the body moves with the car while the upper part tends to stay at rest, causing a backward bend."
+  },
+  {
+    "id": 3,
+    "category": "Verbal Logic",
+    "question_text": "Write the last digit of the smallest number from the following: 467922, 468910, 461093, 497252.",
+    "options": [
+      {"label": "2", "value": "1"},
+      {"label": "0", "value": "2"},
+      {"label": "3", "value": "3"},
+      {"label": "2", "value": "4"}
+    ],
+    "correct_option": "3",
+    "explanation": "The smallest number is 461093. Its last digit is 3."
+  },
+  {
+    "id": 4,
+    "category": "Verbal Logic",
+    "question_text": "Which group of numbers does not belong to the same class as others?",
+    "options": [
+      {"label": "5212", "value": "1"},
+      {"label": "7111", "value": "2"},
+      {"label": "3214", "value": "3"},
+      {"label": "1090", "value": "4"},
+      {"label": "1608", "value": "5"}
+    ],
+    "correct_option": "5",
+    "explanation": "The sum of digits for options 1-4 is 10 (e.g., 5+2+1+2=10). For option 5, the sum is 15 (1+6+0+8=15)."
+  },
+  {
+    "id": 5,
+    "category": "Verbal Logic",
+    "question_text": "Rearrange the word 'HTNAEPEL' and write its SECOND letter.",
+    "options": [
+      {"label": "E", "value": "1"},
+      {"label": "L", "value": "2"},
+      {"label": "P", "value": "3"},
+      {"label": "H", "value": "4"}
+    ],
+    "correct_option": "2",
+    "explanation": "The rearranged word is 'ELEPHANT'. The second letter is 'L'."
+  },
+  {
+    "id": 6,
+    "category": "Dictionary Order",
+    "question_text": "Which word will come LAST in the dictionary?",
+    "options": [
+      {"label": "Sports", "value": "1"},
+      {"label": "Sparrow", "value": "2"},
+      {"label": "Study", "value": "3"},
+      {"label": "Speaker", "value": "4"},
+      {"label": "Swift", "value": "5"}
+    ],
+    "correct_option": "5",
+    "explanation": "In alphabetical order: Sparrow, Speaker, Sports, Study, Swift. 'Swift' is the last."
+  },
+  {
+    "id": 7,
+    "category": "Odd One Out",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      {"label": "Can", "value": "1"},
+      {"label": "Pot", "value": "2"},
+      {"label": "Mug", "value": "3"},
+      {"label": "Tank", "value": "4"},
+      {"label": "River", "value": "5"}
+    ],
+    "correct_option": "5",
+    "explanation": "Can, Pot, Mug, and Tank are man-made water containers. A river is a natural water body."
+  }
+]

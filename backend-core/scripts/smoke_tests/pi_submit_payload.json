@@ -1,0 +1,1 @@
+{"config":{"sessionId":"s1","rapidFireBundleSize":4,"maxTurns":6,"seed":42},"state":{"stage":"introduction","turnIndex":0,"turnHistory":[],"askedQuestionIds":[],"finished":false},"candidate":{"answersByQuestionId":{"intro-1":"a","intro-2":"b","intro-3":"c"}}}

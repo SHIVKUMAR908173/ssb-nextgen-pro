@@ -1,0 +1,21 @@
+[
+  {
+    "test": "WAT",
+    "stimulus": "Defeat",
+    "recommended_response": "Defeat is a stepping stone to final victory.",
+    "olq_flags": [
+      "Optimism",
+      "Determination"
+    ]
+  },
+  {
+    "test": "SRT",
+    "stimulus": "He was riding his bike and saw a man bleeding on the roadside. He...",
+    "recommended_response": "He immediately stopped, provided first aid using his emergency kit, stopped a passing vehicle to take the man to the nearest hospital, informed the police, and then proceeded to his destination.",
+    "olq_flags": [
+      "Speed of Decision",
+      "Sense of Responsibility",
+      "Initiative"
+    ]
+  }
+]

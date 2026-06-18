@@ -1,0 +1,174 @@
+{
+  "id": "afcat-ga-01-t07",
+  "title": "IAF Fighter Aircraft (Rafale, Su-30MKI, Tejas, MiG-29, Mirage 2000, Jaguar)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 8,
+  "content": [
+    {
+      "type": "text",
+      "data": "The Indian Air Force (IAF) operates a diverse fleet of fighter aircraft, each designed for specific roles ranging from air superiority and multi-role missions to deep penetration strike. Understanding the capabilities, origins, and key features of these aircraft is crucial for AFCAT aspirants, as questions often test knowledge about India's defense capabilities and equipment. This study material provides a comprehensive overview of some of the most prominent fighter aircraft in the IAF's inventory, highlighting their significance and operational strengths."
+    },
+    {
+      "type": "heading",
+      "data": "Key IAF Fighter Aircraft Overview"
+    },
+    {
+      "type": "text",
+      "data": "Below is a comparative table summarizing the critical aspects of the mentioned IAF fighter jets. This will help in quickly grasping their core characteristics."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Aircraft",
+          "Origin",
+          "Primary Role",
+          "Generation",
+          "Key Features / Nickname"
+        ],
+        "rows": [
+          [
+            "Rafale",
+            "France",
+            "Omni-role",
+            "4.5",
+            "SPECTRA EW suite, Meteor BVRAAM, SCALP cruise missile, AESA radar"
+          ],
+          [
+            "Su-30MKI",
+            "Russia (HAL licensed)",
+            "Multi-role, Air Superiority",
+            "4+",
+            "Thrust vectoring, canards, long-range, BrahMos integration ('Flanker-H')"
+          ],
+          [
+            "Tejas (LCA)",
+            "India (HAL)",
+            "Multi-role, Light Combat",
+            "4+",
+            "Indigenous, smallest & lightest, AESA radar (Mk1A), Air-to-air refueling"
+          ],
+          [
+            "MiG-29 (UPG)",
+            "Russia (Soviet-era)",
+            "Air Superiority, Interceptor",
+            "4",
+            "High maneuverability, UPG upgrades, BVR missile capability ('Fulcrum')"
+          ],
+          [
+            "Mirage 2000 (Vajra)",
+            "France",
+            "Multi-role, Air Superiority",
+            "4",
+            "Delta wing, Fly-by-wire, Kargil War fame, upgraded to 2000-5 ('Vajra')"
+          ],
+          [
+            "Jaguar (Shamsher)",
+            "UK-France",
+            "Deep Penetration Strike (DPSA)",
+            "3",
+            "Low-level attack, ground attack, nuclear strike capable ('Shamsher')"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember the indigenous aircraft and their roles. Tejas is India's pride, primarily a Light Combat Aircraft, crucial for self-reliance in defence."
+    },
+    {
+      "type": "heading",
+      "data": "Detailed Aircraft Profiles"
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Dassault Rafale:** The newest and most advanced acquisition, an omni-role fighter capable of simultaneously performing air-to-air interception, ground attack, reconnaissance, and nuclear deterrence missions. Its advanced SPECTRA electronic warfare system and MICA, Meteor, and SCALP missile capabilities make it a formidable asset.",
+        "**Sukhoi Su-30MKI:** The backbone of the IAF's fighter fleet, known for its long range, heavy payload capacity, and super-maneuverability due to thrust vectoring nozzles and canards. It's a truly potent multi-role platform, capable of air-to-air, air-to-surface, and anti-shipping missions, famously integrated with the BrahMos supersonic cruise missile.",
+        "**HAL Tejas (LCA):** India's indigenous Light Combat Aircraft, designed to meet the operational requirements of the IAF. It's a single-engine, delta-wing, multi-role fighter. Ongoing upgrades (Mk1A, Mk2) are continuously enhancing its capabilities with advanced avionics, AESA radar, and improved electronic warfare systems, moving towards greater self-sufficiency.",
+        "**Mikoyan MiG-29 (UPG):** A potent air superiority fighter, renowned for its excellent dogfighting capabilities and quick reaction time. The IAF's MiG-29s have undergone significant upgrades (UPG standard) enhancing their radar, avionics, and weapon-carrying capacity, extending their operational life and multi-role potential.",
+        "**Dassault Mirage 2000 (Vajra):** A highly agile and capable multi-role fighter that proved its mettle in the Kargil War and the Balakot Air Strike. Known for its delta-wing design and fly-by-wire system, it offers excellent performance in both air defense and ground attack roles. The 'Vajra' designation signifies its upgraded version.",
+        "**SEPECAT Jaguar (Shamsher):** A deep penetration strike aircraft (DPSA) designed for ground attack and anti-shipping roles, capable of carrying a significant payload over long distances at low altitudes. Though an older generation aircraft, its continuous upgrades and precision strike capabilities still make it relevant for specific missions within the IAF."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Associate the aircraft with their unique capabilities. E.g., Rafale with SPECTRA, Su-30MKI with BrahMos, Tejas with 'Indigenous', Jaguar with 'Deep Penetration'."
+    },
+    {
+      "type": "heading",
+      "data": "Understanding Aircraft Generations"
+    },
+    {
+      "type": "text",
+      "data": "Fighter aircraft are often classified into 'generations' to denote advancements in technology, avionics, stealth, and combat capabilities. While the exact definitions can vary, here’s a general understanding for the aircraft discussed:"
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "IAF Fighter Aircraft Generations (Simplified)",
+        "description": "A simplified flowchart illustrating the generational classification of key IAF fighter aircraft.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Fighter Aircraft Generations] --> B{3rd Generation}\n    A --> C{4th Generation}\n    A --> D{4.5th Generation}\n\n    B --> B1[Jaguar]\n\n    C --> C1[MiG-29]\n    C --> C2[Mirage 2000]\n\n    D --> D1[Su-30MKI]\n    D --> D2[Tejas]\n    D --> D3[Rafale]\n"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Solved Example Problem"
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Which of the following IAF fighter aircraft is an indigenous Indian design and is classified as a Light Combat Aircraft (LCA)?",
+        "solution": "1. Analyze the question: The question asks for an indigenous Indian design that is an LCA.\n2. Review the aircraft list: \n   - Rafale: French, Omni-role.\n   - Su-30MKI: Russian (licensed production), Multi-role/Air Superiority.\n   - Tejas: Indian (HAL), Light Combat Aircraft.\n   - MiG-29: Russian, Air Superiority.\n   - Mirage 2000: French, Multi-role.\n   - Jaguar: UK-French, Deep Penetration Strike.\n3. Identify the matching aircraft: The Tejas (LCA) perfectly fits both criteria: indigenous design and Light Combat Aircraft.",
+        "answer": "Tejas"
+      }
+    }
+  ],
+  "keyPoints": [
+    "Rafale is an omni-role (4.5th gen) fighter from France, known for SPECTRA EW and Meteor/SCALP missiles.",
+    "Su-30MKI is the backbone of IAF, a heavy (4+ gen) multi-role fighter from Russia, famous for thrust vectoring and BrahMos integration.",
+    "Tejas (LCA) is India's indigenous (4+ gen) Light Combat Aircraft, emphasizing self-reliance in defense.",
+    "Jaguar ('Shamsher') is a 3rd generation Deep Penetration Strike Aircraft, specialized for low-level ground attacks.",
+    "Mirage 2000 ('Vajra') and MiG-29 are 4th generation fighters, primarily for multi-role and air superiority, respectively, with significant operational history."
+  ],
+  "commonMistakes": [
+    "Confusing the origin and primary role of aircraft (e.g., thinking Su-30MKI is fully Indian or Tejas is a heavy fighter).",
+    "Misidentifying the generation of older aircraft like the Jaguar or placing MiG-29/Mirage 2000 in the same generation as Rafale."
+  ],
+  "examTips": [
+    "For AFCAT, focus on the 'Origin' (country), 'Primary Role', and 'Key Features' (like indigenous tag, specific missile integration, EW systems) of each aircraft. Match the aircraft name with its unique characteristics.",
+    "Pay attention to upgrades (e.g., MiG-29 UPG, Mirage 2000-5 equivalent) as they often enhance capabilities and are a common area for questions."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following fighter aircraft is known as the 'backbone' of the Indian Air Force fleet due to its numbers, multi-role capability, and long-range, often integrated with BrahMos supersonic cruise missiles?",
+      "options": [
+        "Dassault Rafale",
+        "HAL Tejas",
+        "Sukhoi Su-30MKI",
+        "SEPECAT Jaguar"
+      ],
+      "correct": 2,
+      "explanation": "The Sukhoi Su-30MKI forms the backbone of the IAF's fighter fleet due to its impressive numbers, extensive multi-role capabilities, long-range, and its successful integration with advanced weapons like the BrahMos missile."
+    },
+    {
+      "question": "The SPECTRA electronic warfare suite and the Meteor Beyond Visual Range Air-to-Air Missile (BVRAAM) are key features associated with which IAF fighter jet?",
+      "options": [
+        "Mirage 2000",
+        "Rafale",
+        "MiG-29",
+        "Tejas"
+      ],
+      "correct": 1,
+      "explanation": "The Dassault Rafale is equipped with the highly advanced SPECTRA electronic warfare suite and carries cutting-edge weaponry including the Meteor BVRAAM and SCALP cruise missiles, making it a formidable omni-role aircraft."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=IAF%20Fighter%20Aircraft%20(Rafale%2C%20Su-30MKI%2C%20Tejas%2C%20MiG-29%2C%20Mirage%202000%2C%20Jaguar)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=IAF%20Fighter%20Aircraft%20(Rafale%2C%20Su-30MKI%2C%20Tejas%2C%20MiG-29%2C%20Mirage%202000%2C%20Jaguar)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

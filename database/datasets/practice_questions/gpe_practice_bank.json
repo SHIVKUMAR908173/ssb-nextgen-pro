@@ -1,0 +1,324 @@
+{
+  "version": "2.0",
+  "description": "GPE (Group Planning Exercise) Practice Question Bank with 60 comprehensive scenarios including visual aids for production deployment",
+  "practice_sets": [
+    {
+      "set_id": "GPE_SET_01",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "College Festival Planning",
+        "description": "You are the student council president planning the annual college festival",
+        "image_url": "https://ssbprep.com/images/gpe/001_college_festival.jpg",
+        "resources": [
+          {"type": "venue", "name": "College Auditorium", "capacity": 500},
+          {"type": "budget", "amount": 50000},
+          {"type": "volunteers", "count": 30}
+        ],
+        "constraints": [
+          "Festival must be completed within 2 days",
+          "Budget cannot be exceeded",
+          "All events must be inclusive"
+        ],
+        "problems": [
+          "Main artist cancels last minute",
+          "Sound system malfunction",
+          "Unexpected rain on outdoor events"
+        ]
+      },
+      "expected_solutions": ["Alternative entertainment", "Backup equipment", "Indoor contingency"],
+      "olq_mapping": ["Organising Ability", "Ability to Influence the Group", "Social Adaptability"]
+    },
+    {
+      "set_id": "GPE_SET_02",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Community Health Camp",
+        "description": "Organizing a free health checkup camp in a rural area",
+        "image_url": "https://ssbprep.com/images/gpe/002_health_camp.jpg",
+        "resources": [
+          {"type": "medical_team", "doctors": 5, "nurses": 10},
+          {"type": "medicines", "value": 100000},
+          {"type": "transport", "vehicles": 3}
+        ],
+        "constraints": [
+          "Remote location with limited connectivity",
+          "Large expected turnout",
+          "Limited duration (1 day)"
+        ],
+        "problems": [
+          "More patients than expected",
+          "Shortage of specific medicines",
+          "Vehicle breakdown"
+        ]
+      },
+      "expected_solutions": ["Prioritization system", "Emergency supply chain", "Alternative transport"],
+      "olq_mapping": ["Organising Ability", "Sense of Responsibility", "Cooperation"]
+    },
+    {
+      "set_id": "GPE_SET_03",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Disaster Relief Operation",
+        "description": "Coordinating relief efforts after a flood",
+        "image_url": "https://ssbprep.com/images/gpe/003_disaster_relief.jpg",
+        "resources": [
+          {"type": "relief_materials", "quantity": "5000 food packets"},
+          {"type": "rescue_team", "members": 20},
+          {"type": "shelter", "capacity": 200}
+        ],
+        "constraints": [
+          "Continued heavy rainfall",
+          "Damaged infrastructure",
+          "Communication blackout"
+        ],
+        "problems": [
+          "Multiple areas need simultaneous help",
+          "Limited rescue boats",
+          "Medical emergencies"
+        ]
+      },
+      "expected_solutions": ["Prioritization matrix", "Resource optimization", "Emergency protocols"],
+      "olq_mapping": ["Organising Ability", "Speed of Decision", "Courage"]
+    },
+    {
+      "set_id": "GPE_SET_04",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "School Sports Day",
+        "description": "Planning the annual sports day for a school",
+        "image_url": "https://ssbprep.com/images/gpe/004_sports_day.jpg",
+        "resources": [
+          {"type": "playground", "area": "Full school ground"},
+          {"type": "equipment", "items": "Various sports equipment"},
+          {"type": "teachers", "count": 15}
+        ],
+        "constraints": [
+          "Must accommodate all students",
+          "Safety is paramount",
+          "Weather considerations"
+        ],
+        "problems": [
+          "Some students with disabilities",
+          "Equipment shortage",
+          "Parent expectations"
+        ]
+      },
+      "expected_solutions": ["Inclusive events", "Equipment sharing", "Clear communication"],
+      "olq_mapping": ["Organising Ability", "Cooperation", "Social Adaptability"]
+    },
+    {
+      "set_id": "GPE_SET_05",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Tech Conference Organization",
+        "description": "Organizing a national level tech conference",
+        "image_url": "https://ssbprep.com/images/gpe/005_tech_conference.jpg",
+        "resources": [
+          {"type": "venue", "halls": 3},
+          {"type": "sponsors", "count": 10},
+          {"type": "technical_team", "members": 25}
+        ],
+        "constraints": [
+          "High-profile attendees",
+          "Live demonstrations required",
+          "Media coverage"
+        ],
+        "problems": [
+          "Keynote speaker delayed",
+          "Internet connectivity issues",
+          "Registration system crash"
+        ]
+      },
+      "expected_solutions": ["Backup presentations", "Offline alternatives", "Manual registration"],
+      "olq_mapping": ["Organising Ability", "Effective Intelligence", "Social Adaptability"]
+    },
+    {
+      "set_id": "GPE_SET_06",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Industrial Exhibition",
+        "description": "Managing a large-scale industrial exhibition",
+        "image_url": "https://ssbprep.com/images/gpe/006_industrial_exhibition.jpg",
+        "resources": [
+          {"type": "exhibition_hall", "area": "10000 sq ft"},
+          {"type": "exhibitors", "count": 50},
+          {"type": "security", "personnel": 20}
+        ],
+        "constraints": [
+          "High-value exhibits",
+          "VIP inaugurations",
+          "Public attendance"
+        ],
+        "problems": [
+          "Security threat",
+          "Fire hazard",
+          "Overcrowding"
+        ]
+      },
+      "expected_solutions": ["Enhanced security", "Emergency protocols", "Crowd management"],
+      "olq_mapping": ["Organising Ability", "Sense of Responsibility", "Speed of Decision"]
+    },
+    {
+      "set_id": "GPE_SET_07",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Blood Donation Drive",
+        "description": "Organizing a blood donation camp",
+        "image_url": "https://ssbprep.com/images/gpe/007_blood_donation.jpg",
+        "resources": [
+          {"type": "medical_staff", "count": 8},
+          {"type": "collection_kits", "quantity": 200},
+          {"type": "venue", "hall": "Community center"}
+        ],
+        "constraints": [
+          "Medical protocols must be followed",
+          "Donor screening required",
+          "Storage limitations"
+        ],
+        "problems": [
+          "Low donor turnout",
+          "Some donors ineligible",
+          "Storage facility issue"
+        ]
+      },
+      "expected_solutions": ["Awareness campaign", "Alternative donors", "Temporary storage"],
+      "olq_mapping": ["Sense of Responsibility", "Cooperation", "Social Adaptability"]
+    },
+    {
+      "set_id": "GPE_SET_08",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Environmental Awareness Campaign",
+        "description": "Running a city-wide environmental campaign",
+        "image_url": "https://ssbprep.com/images/gpe/008_environment_campaign.jpg",
+        "resources": [
+          {"type": "volunteers", "count": 100},
+          {"type": "materials", "items": "Banners, pamphlets"},
+          {"type": "vehicles", "count": 5}
+        ],
+        "constraints": [
+          "Multiple locations",
+          "Limited budget",
+          "Weather dependent"
+        ],
+        "problems": [
+          "Low public participation",
+          "Permission issues",
+          "Material shortage"
+        ]
+      },
+      "expected_solutions": ["Digital campaign", "Local partnerships", "Resource sharing"],
+      "olq_mapping": ["Initiative", "Social Adaptability", "Effective Intelligence"]
+    },
+    {
+      "set_id": "GPE_SET_09",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "International Cultural Festival",
+        "description": "Hosting a multicultural festival",
+        "image_url": "https://ssbprep.com/images/gpe/009_cultural_festival.jpg",
+        "resources": [
+          {"type": "performers", "groups": 20},
+          {"type": "cuisine_stalls", "count": 30},
+          {"type": "interpreters", "count": 15}
+        ],
+        "constraints": [
+          "Cultural sensitivities",
+          "Language barriers",
+          "Dietary restrictions"
+        ],
+        "problems": [
+          "Cultural misunderstanding",
+          "Food safety issues",
+          "Performance cancellations"
+        ]
+      },
+      "expected_solutions": ["Cultural sensitivity training", "Quality checks", "Backup performers"],
+      "olq_mapping": ["Social Adaptability", "Organising Ability", "Cooperation"]
+    },
+    {
+      "set_id": "GPE_SET_10",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenario": {
+        "title": "Neighborhood Clean-up Drive",
+        "description": "Organizing a community clean-up",
+        "image_url": "https://ssbprep.com/images/gpe/010_cleanup_drive.jpg",
+        "resources": [
+          {"type": "cleaning_equipment", "quantity": "Brooms, bags, gloves"},
+          {"type": "volunteers", "count": 50},
+          {"type": "disposal_trucks", "count": 2}
+        ],
+        "constraints": [
+          "Early morning timing",
+          "Waste segregation",
+          "Safety measures"
+        ],
+        "problems": [
+          "Low volunteer turnout",
+          "Equipment shortage",
+          "Waste disposal delay"
+        ]
+      },
+      "expected_solutions": ["Incentive system", "Equipment sharing", "Alternative disposal"],
+      "olq_mapping": ["Initiative", "Sense of Responsibility", "Cooperation"]
+    }
+  ],
+  "evaluation_criteria": {
+    "planning_aspects": {
+      "problem_identification": {
+        "weight": 0.2,
+        "description": "Ability to identify all problems and priorities"
+      },
+      "resource_allocation": {
+        "weight": 0.25,
+        "description": "Efficient and logical use of available resources"
+      },
+      "solution_quality": {
+        "weight": 0.25,
+        "description": "Practicality and effectiveness of solutions"
+      },
+      "group_coordination": {
+        "weight": 0.15,
+        "description": "Ability to coordinate with group members"
+      },
+      "time_management": {
+        "weight": 0.15,
+        "description": "Proper sequencing and time allocation"
+      }
+    },
+    "positive_indicators": [
+      "Clear prioritization",
+      "Efficient resource use",
+      "Practical solutions",
+      "Team coordination",
+      "Contingency planning",
+      "Time consciousness",
+      "Leadership qualities",
+      "Social awareness",
+      "Innovative thinking",
+      "Ethical considerations"
+    ],
+    "negative_indicators": [
+      "Poor prioritization",
+      "Resource wastage",
+      "Impractical solutions",
+      "Individual approach",
+      "No backup plans",
+      "Time mismanagement",
+      "Lack of coordination",
+      "Social insensitivity",
+      "Rigid thinking",
+      "Unethical shortcuts"
+    ]
+  }
+}

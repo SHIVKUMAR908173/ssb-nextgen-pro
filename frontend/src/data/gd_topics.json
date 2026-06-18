@@ -1,0 +1,272 @@
+[
+  {
+    "category": "Technology & Cyber",
+    "topics": [
+      {
+        "title": "Modern Warfare & Cyber Threats",
+        "desc": "Is India ready for the invisible war of the future?"
+      },
+      {
+        "title": "Artificial Intelligence in Military",
+        "desc": "Lethal Autonomous Weapons: Ethics and necessities."
+      },
+      {
+        "title": "Space as the New Frontier",
+        "desc": "Weaponization of space and India's role (Mission Shakti)."
+      },
+      {
+        "title": "Deepfakes and Information Warfare",
+        "desc": "How misinformation is becoming a primary weapon of statecraft."
+      },
+      {
+        "title": "5G Technology",
+        "desc": "Boon for development or a security threat?"
+      },
+      {
+        "title": "Cryptocurrency in India",
+        "desc": "Should it be regulated or completely banned to prevent terror financing?"
+      },
+      {
+        "title": "Social Media Regulation",
+        "desc": "Freedom of Speech vs National Security concerns."
+      },
+      {
+        "title": "Drone Technology",
+        "desc": "Impact on modern border security and internal surveillance."
+      },
+      {
+        "title": "Data Privacy Laws",
+        "desc": "Is personal data the new oil or a security vulnerability?"
+      },
+      {
+        "title": "E-Learning",
+        "desc": "Can it completely replace the traditional classroom setup in the future?"
+      }
+    ]
+  },
+  {
+    "category": "Defense & Security",
+    "topics": [
+      {
+        "title": "India's Two-Front War Dilemma",
+        "desc": "Strategic preparedness for China and Pakistan threats."
+      },
+      {
+        "title": "Agnipath Scheme Evaluation",
+        "desc": "Short-term service vs traditional long-term careers in the Armed Forces."
+      },
+      {
+        "title": "Women in Combat Roles",
+        "desc": "Analyzing the tactical benefits and logistical challenges."
+      },
+      {
+        "title": "Self-Reliance in Defense",
+        "desc": "The role of Atmanirbhar Bharat in military procurement."
+      },
+      {
+        "title": "AFSPA (Armed Forces Special Powers Act)",
+        "desc": "Is it a necessary evil or a human rights violation?"
+      },
+      {
+        "title": "Theaterisation of the Armed Forces",
+        "desc": "Need for Joint Commands in modern Indian military structure."
+      },
+      {
+        "title": "Maritime Security in Indian Ocean",
+        "desc": "Countering China's 'String of Pearls' strategy."
+      },
+      {
+        "title": "Naxalism in India",
+        "desc": "A socio-economic problem or a pure law and order issue?"
+      },
+      {
+        "title": "Mandatory Military Service",
+        "desc": "Should conscription be introduced for Indian youth?"
+      },
+      {
+        "title": "Defense Budget",
+        "desc": "Is India spending enough on military modernization compared to welfare?"
+      },
+      {
+        "title": "Veterans Affairs",
+        "desc": "Are we doing enough for the resettlement of retiring defense personnel?"
+      },
+      {
+        "title": "Border Management",
+        "desc": "Fencing vs Smart Borders - what is the future?"
+      }
+    ]
+  },
+  {
+    "category": "Geopolitics & International Relations",
+    "topics": [
+      {
+        "title": "Geopolitics of the Indo-Pacific",
+        "desc": "China vs Quad: Navigating the strategic waters."
+      },
+      {
+        "title": "Russia-Ukraine Conflict",
+        "desc": "Lessons for India's defense and foreign policy."
+      },
+      {
+        "title": "India's Permanent Seat in UNSC",
+        "desc": "A distant dream or an impending reality?"
+      },
+      {
+        "title": "The Rise of China",
+        "desc": "Economic superpower or an expansionist threat?"
+      },
+      {
+        "title": "India-US Strategic Partnership",
+        "desc": "Are we becoming too dependent on the West?"
+      },
+      {
+        "title": "SAARC vs BIMSTEC",
+        "desc": "Which is more beneficial for India's regional interests?"
+      },
+      {
+        "title": "Middle East Dynamics",
+        "desc": "Balancing ties with Israel, Iran, and the Arab world."
+      },
+      {
+        "title": "Non-Aligned Movement",
+        "desc": "Is NAM still relevant in a multi-polar world?"
+      },
+      {
+        "title": "Soft Power vs Hard Power",
+        "desc": "What should be India's primary tool for global influence?"
+      },
+      {
+        "title": "Global Supply Chains",
+        "desc": "The push for decoupling from China post-COVID."
+      }
+    ]
+  },
+  {
+    "category": "Society & National Issues",
+    "topics": [
+      {
+        "title": "Uniform Civil Code (UCC)",
+        "desc": "Social integration vs religious freedom."
+      },
+      {
+        "title": "One Nation One Election",
+        "desc": "Feasibility and impact on democratic processes."
+      },
+      {
+        "title": "Brain Drain in India",
+        "desc": "Impact on national development and technological advancement."
+      },
+      {
+        "title": "Role of Media in National Security",
+        "desc": "Freedom of speech vs operational secrecy."
+      },
+      {
+        "title": "Youth in Politics",
+        "desc": "Necessity for the development of a modern India."
+      },
+      {
+        "title": "Reservation System",
+        "desc": "Should it be based on economic criteria instead of caste?"
+      },
+      {
+        "title": "Capital Punishment",
+        "desc": "Is it a deterrent to crime or a violation of human rights?"
+      },
+      {
+        "title": "Women Empowerment",
+        "desc": "Myth or reality in rural India?"
+      },
+      {
+        "title": "Censorship on OTT Platforms",
+        "desc": "Protecting culture or suppressing creative freedom?"
+      },
+      {
+        "title": "Sports Infrastructure",
+        "desc": "Why does a nation of 1.4 billion win so few Olympic medals?"
+      }
+    ]
+  },
+  {
+    "category": "Economy & Environment",
+    "topics": [
+      {
+        "title": "India's Demographic Dividend",
+        "desc": "Asset or ticking time bomb if left unemployed?"
+      },
+      {
+        "title": "Climate Change & National Security",
+        "desc": "Environmental degradation as a threat multiplier."
+      },
+      {
+        "title": "Privatization of Defense Sector",
+        "desc": "FDI in defense manufacturing: Boon or Bane?"
+      },
+      {
+        "title": "Cashless Economy",
+        "desc": "Successes, failures, and the road ahead for India."
+      },
+      {
+        "title": "Farming Subsidies",
+        "desc": "Are they truly helping the agricultural sector?"
+      },
+      {
+        "title": "Electric Vehicles",
+        "desc": "Is India ready for a complete transition by 2030?"
+      },
+      {
+        "title": "Universal Basic Income",
+        "desc": "A solution to poverty or a disincentive to work?"
+      },
+      {
+        "title": "Water Crisis",
+        "desc": "Will the next major war be fought over water resources?"
+      },
+      {
+        "title": "Make in India",
+        "desc": "Has it delivered on its manufacturing promises?"
+      },
+      {
+        "title": "Space Tourism",
+        "desc": "A waste of resources or the next giant leap for mankind?"
+      }
+    ]
+  },
+  {
+    "category": "Abstract & Philosophical",
+    "topics": [
+      {
+        "title": "Black vs White",
+        "desc": "Is the world truly binary or just shades of grey?"
+      },
+      {
+        "title": "Zero",
+        "desc": "Nothingness or the beginning of everything?"
+      },
+      {
+        "title": "The Glass is Half Full",
+        "desc": "Optimism vs Realism in today's society."
+      },
+      {
+        "title": "Hard Work vs Smart Work",
+        "desc": "Which is more essential for success in the 21st century?"
+      },
+      {
+        "title": "Money vs Happiness",
+        "desc": "Can economic wealth guarantee mental well-being?"
+      },
+      {
+        "title": "A Pen is Mightier than a Sword",
+        "desc": "Ideology vs Force in resolving conflicts."
+      },
+      {
+        "title": "Change is the Only Constant",
+        "desc": "Adapting to the rapid pace of technological evolution."
+      },
+      {
+        "title": "Beauty Lies in the Eyes of the Beholder",
+        "desc": "Subjectivity in modern art and culture."
+      }
+    ]
+  }
+]

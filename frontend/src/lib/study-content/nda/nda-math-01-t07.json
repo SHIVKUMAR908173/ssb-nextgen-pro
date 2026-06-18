@@ -1,0 +1,185 @@
+{
+  "id": "nda-math-01-t07",
+  "title": "Functions — Definition, Domain, Range",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Functions are a cornerstone of mathematics, representing a special type of relation where each input from one set (called the domain) is associated with exactly one output in another set (called the codomain). For the NDA exam, a thorough understanding of function definitions, how to determine their domain (the set of all valid inputs), and their range (the set of all possible outputs) is absolutely essential. Many questions test these fundamental concepts directly or indirectly."
+    },
+    {
+      "type": "heading",
+      "data": "1. Definition of a Function"
+    },
+    {
+      "type": "text",
+      "data": "A relation f from a set A to a set B is called a function if every element of set A has one and only one image in set B. This definition implies two crucial conditions:"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Every element in the domain (set A) must be mapped to an element in the codomain (set B).",
+        "No element in the domain can be mapped to more than one element in the codomain (i.e., for a given input, there is a unique output)."
+      ]
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Function Mapping",
+        "description": "Illustrates how each element in the domain maps to exactly one element in the codomain.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph LR\n    subgraph Domain (Set A)\n        A1\n        A2\n        A3\n    end\n    subgraph Codomain (Set B)\n        B1\n        B2\n        B3\n        B4\n    end\n    A1 --> B1\n    A2 --> B2\n    A3 --> B3"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "2. Domain of a Function"
+    },
+    {
+      "type": "text",
+      "data": "The domain of a function f(x) is the set of all real values of 'x' for which the function is defined and produces a real output. In other words, it's all the permissible input values for which the function's expression makes mathematical sense in the real number system."
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Denominators:** Cannot be zero. If f(x) = P(x)/Q(x), then Q(x) ≠ 0.",
+        "**Even Roots:** The expression under an even root (e.g., square root, fourth root) must be non-negative. If f(x) = √(g(x)), then g(x) ≥ 0.",
+        "**Logarithms:** The argument of a logarithm must be strictly positive. If f(x) = log(g(x)), then g(x) > 0.",
+        "**Inverse Trigonometric Functions:** For arcsin(x) and arccos(x), the argument x must be in the interval [-1, 1]."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: When finding the domain, always identify potential 'trouble spots' in the function's expression (e.g., fractions, roots, logarithms) and determine the values of 'x' that would make the function undefined. Exclude these values from the set of all real numbers (R)."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Find the domain of the function f(x) = 1 / (x^2 - 9).",
+        "solution": "The function is a rational function, so the denominator cannot be zero.\nSet the denominator to zero and solve for x:\n`x^2 - 9 = 0`\n`(x - 3)(x + 3) = 0`\n`x = 3` or `x = -3`\nThese are the values for which the function is undefined. Therefore, the domain is all real numbers except 3 and -3.",
+        "answer": "Domain = R - {-3, 3} or (-∞, -3) U (-3, 3) U (3, ∞)"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "3. Range of a Function"
+    },
+    {
+      "type": "text",
+      "data": "The range of a function is the set of all possible output values (y-values or f(x) values) that the function can produce for its domain. It represents the actual values that the dependent variable 'y' can take."
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Algebraic Method:** If y = f(x), try to express x in terms of y. Then, find the values of y for which x is defined (similar to finding the domain, but for y).",
+        "**Graphical Method:** If the graph of the function is available, observe the extent of the graph along the y-axis.",
+        "**Using Domain and Function Behavior:** Analyze how f(x) behaves for values within its domain. Consider minimum/maximum values, asymptotes, and limits."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: For NDA, look for functions involving squares (x²), absolute values (|x|), or square roots (√x) as these inherently restrict the range to non-negative values. For rational functions, consider horizontal asymptotes or limits as x approaches infinity/negative infinity, and limits as x approaches values where the function is undefined."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Find the range of the function f(x) = √(x - 4).",
+        "solution": "First, determine the domain: For √(x - 4) to be defined, `x - 4 ≥ 0`, which means `x ≥ 4`. So, the domain is `[4, ∞)`.\nLet `y = √(x - 4)`.\nSince the square root symbol (√) denotes the principal (non-negative) square root, the output 'y' must always be greater than or equal to zero. (`y ≥ 0`)\nAs x takes values from 4 upwards, `x - 4` takes values from 0 upwards. Consequently, `√(x - 4)` takes values from `√0 = 0` upwards to `∞`.\nThus, the minimum value of y is 0, and there is no upper bound.",
+        "answer": "Range = [0, ∞)"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "4. Distinguishing Functions from Relations"
+    },
+    {
+      "type": "text",
+      "data": "All functions are relations, but not all relations are functions. The defining characteristic of a function is that each input maps to exactly one output."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Feature",
+          "Relation",
+          "Function"
+        ],
+        "rows": [
+          [
+            "Mapping Rule",
+            "Can be one-to-many, many-to-one, one-to-one",
+            "Each input has exactly one output (can be many-to-one or one-to-one)"
+          ],
+          [
+            "Input Repetition",
+            "An input (x-value) can map to multiple outputs (y-values)",
+            "An input (x-value) cannot map to multiple outputs (Passes the vertical line test)"
+          ],
+          [
+            "Domain Coverage",
+            "Not all elements of the domain must necessarily map to an output",
+            "All elements of the domain MUST map to exactly one output"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Determine the domain and range of the function f(x) = (2x + 1) / (x - 3).",
+        "solution": "**Domain:**\nThe denominator cannot be zero. Set `x - 3 = 0` => `x = 3`. So, `x ≠ 3`.\nDomain = R - {3} or `(-∞, 3) U (3, ∞)`.\n\n**Range:**\nLet `y = (2x + 1) / (x - 3)`.\nMultiply both sides by `(x - 3)`: `y(x - 3) = 2x + 1`\n`xy - 3y = 2x + 1`\nGather terms with x on one side and terms without x on the other:\n`xy - 2x = 3y + 1`\nFactor out x: `x(y - 2) = 3y + 1`\nSolve for x: `x = (3y + 1) / (y - 2)`\nFor x to be defined, the denominator `(y - 2)` cannot be zero. Set `y - 2 = 0` => `y = 2`. So, `y ≠ 2`.\nThus, the range is all real numbers except 2.",
+        "answer": "Domain = R - {3}, Range = R - {2}"
+      }
+    }
+  ],
+  "keyPoints": [
+    "A function requires each domain element to have exactly one image in the codomain.",
+    "The domain is the set of all valid 'x' values, ensuring the function is mathematically defined.",
+    "Common domain restrictions involve denominators (non-zero), even roots (non-negative), and logarithms (positive argument).",
+    "The range is the set of all possible 'y' values (outputs) produced by the function.",
+    "To find the range, algebraically express 'x' in terms of 'y' and find restrictions on 'y', or analyze function behavior.",
+    "The vertical line test quickly identifies if a graph represents a function: if any vertical line intersects the graph more than once, it's not a function."
+  ],
+  "commonMistakes": [
+    "Confusing the domain restriction for square roots (`x ≥ 0`) with that for logarithms (`x > 0`). Always remember equality for roots.",
+    "Failing to consider all restrictions simultaneously when multiple conditions apply (e.g., `f(x) = 1/√(x-2)` requires `x-2 > 0`, not just `x-2 ≥ 0`).",
+    "Incorrectly manipulating inequalities or algebraic expressions when solving for the range, especially for rational functions."
+  ],
+  "examTips": [
+    "For MCQ questions, check the given options. Sometimes, plugging in values or eliminating options that violate basic definitions can save time.",
+    "Practice finding domain and range for various types of functions: polynomial, rational, radical, logarithmic, and trigonometric functions commonly appear in NDA.",
+    "Understand the graphical interpretation of domain (projection on x-axis) and range (projection on y-axis). While not always testable directly, it aids understanding."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following relations is NOT a function?",
+      "options": [
+        "{(1, 2), (2, 3), (3, 4)}",
+        "{(1, 2), (2, 2), (3, 4)}",
+        "{(1, 2), (1, 3), (2, 4)}",
+        "{(1, 2), (2, 3), (3, 3)}"
+      ],
+      "correct": 2,
+      "explanation": "In option C, the input '1' maps to two different outputs '2' and '3'. A function requires each input to have exactly one unique output."
+    },
+    {
+      "question": "The domain of the function f(x) = √(x - 7) / (x - 9) is:",
+      "options": [
+        "[7, ∞)",
+        "[7, 9) U (9, ∞)",
+        "(7, ∞)",
+        "R - {9}"
+      ],
+      "correct": 1,
+      "explanation": "For the square root √(x - 7), we must have `x - 7 ≥ 0`, so `x ≥ 7`. For the denominator (x - 9) to be non-zero, we must have `x - 9 ≠ 0`, so `x ≠ 9`. Combining these, the domain is `x ≥ 7` AND `x ≠ 9`. This is `[7, 9) U (9, ∞)`."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Functions%20%E2%80%94%20Definition%2C%20Domain%2C%20Range%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Functions%20%E2%80%94%20Definition%2C%20Domain%2C%20Range%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Functions%20%E2%80%94%20Definition%2C%20Domain%2C%20Range%20NCERT%20Class%2011%2012"
+  }
+}

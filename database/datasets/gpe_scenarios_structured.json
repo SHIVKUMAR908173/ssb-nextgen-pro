@@ -1,0 +1,463 @@
+[
+  {
+    "id": "GPE1",
+    "title": "NCC Students Fire Range Emergency",
+    "narrative": "You are a group of NCC students who had come from Rampur for Firing to the ranges by a van. You have been told to return for the Campfire, which is scheduled for 7PM. As you moved out from the ranges your vehicles stalled near the Road Junction as the filter was blocked. Driver informed that it would take half an hour to repair the van. Meanwhile You decided to have a cup of tea at the teashop. Just then the priest of the Kali Temple came and informed that an armed man in uniform was hiding in the temple. The priest also informed that he was the same individual who had deserted from the Chanda Police Station with a weapon 3 days back. As you were planning on your course of action, a scooterist came and halted near the tea shop as his tyre got punctured. You overheard him saying that he had seen a speeding car with two occupants skid off the road and overturn, halfway from Bangali Bosti, and since he was in a hurry to reach the Solio Railway Station to receive his son, he could not stop and help the injured persons. He requested for help as he wanted to reach the Railway Station at the station before the train arrive. In the meanwhile, you saw a man come on a bicycle to the Teashop from the direction of Bhagui Jungle. He told the shop owner that he saw the local goon Appan and two of his associates forcibly dragging a young girl, daughter of the doctor from Bengali basti, into the jungle. He requested to use the telephone at the shop; however he was informed that all the telephone lines are dead since the last two days. The time now is 4 PM. As a young and bold students what will you do?",
+    "current_time": "16:00",
+    "deadline": "19:00",
+    "group_size": "NCC Students (10-12)",
+    "resources": [
+      "Van (needs 30 min repair)",
+      "Tea shop",
+      "Telephone (not working)",
+      "NCC training (weapons knowledge)"
+    ],
+    "problems": [
+      {
+        "id": "P1",
+        "description": "Armed deserter hiding in Kali Temple",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Security Threat"
+      },
+      {
+        "id": "P2",
+        "description": "Car accident with injured persons",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Medical Emergency"
+      },
+      {
+        "id": "P3",
+        "description": "Girl being kidnapped into jungle",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Crime in Progress"
+      },
+      {
+        "id": "P4",
+        "description": "Scooterist needs to reach railway station",
+        "priority": "Low",
+        "urgency": "Medium",
+        "category": "Personal Emergency"
+      },
+      {
+        "id": "P5",
+        "description": "Van breakdown (30 min repair)",
+        "priority": "Medium",
+        "urgency": "Low",
+        "category": "Transport"
+      }
+    ],
+    "locations": {
+      "current": "Tea shop near Road Junction",
+      "temple": "Kali Temple (nearby)",
+      "accident": "Halfway to Bangali Bosti",
+      "jungle": "Bhagui Jungle",
+      "railway_station": "Solio Railway Station"
+    },
+    "sample_solution": {
+      "group_division": [
+        {
+          "team": "Team A (4 members)",
+          "task": "Handle armed deserter at temple",
+          "action": "Alert local police, surround temple, wait for police backup"
+        },
+        {
+          "team": "Team B (3 members)",
+          "task": "Rescue kidnapped girl",
+          "action": "Follow kidnappers, alert police, coordinate rescue"
+        },
+        {
+          "team": "Team C (3 members)",
+          "task": "Help accident victims",
+          "action": "Provide first aid, arrange transport to hospital"
+        },
+        {
+          "team": "Remaining",
+          "task": "Help scooterist",
+          "action": "Fix puncture or arrange alternate transport"
+        }
+      ],
+      "time_allocation": {
+        "immediate": "Alert police about all emergencies",
+        "16:30": "Teams deployed to respective tasks",
+        "17:30": "All emergencies resolved",
+        "18:00": "Van repaired, group ready",
+        "19:00": "Reach campfire on time"
+      }
+    },
+    "olq_assessment": ["Leadership", "Speed of Decision", "Organising Ability", "Courage", "Sense of Responsibility", "Effective Intelligence"]
+  },
+  {
+    "id": "GPE2",
+    "title": "Students Canal Rest House Crisis",
+    "narrative": "You are a group of students who have come from Bhagu, a District Headquarter in a matador to the Salia Canal rest house for a sight seeing trip. You were required to get back by 8.00 PM to participate in the annual function organised by your society. You got down at the rest house and saw a family boating in the river. Then you decided to visit the Salia Fort. When you returned to the rest house, one of your friends told you that he had forgotten the bag containing the camera in the fort. You were planning to receive the camera when you heard a shout coming from the direction of the track junction and saw a man stumbling towards you. When you rushed to him, he told you that he and his wife were scientists belonging to Rampur, a district headquarters. They had come to the Bhagu jungle on their motorcycle to carry out a research on rare birds. He further explained that two gangsters had followed them from Salia city. While they were returning back to Rampur from Bhagu jungle, the gangsters had stopped them at the track junction and took his wife as a hostage and demanded for his research papers. He tried to resist but was badly beaten up and told to get his research papers to the cave in the jungle by 6.30 PM. He also told you that they had warned him against informing the authorities. The man fell unconscious after narrating his tale. You were planning on your course of action when you heard screams from the riverside and saw a boat carrying three children drifting fast in the river towards Bhagu. As you rushed to help, you saw the parents in panic. The time now is 5.30 PM. As bold young students what will you do?",
+    "current_time": "17:30",
+    "deadline": "20:00",
+    "group_size": "Students (8-10)",
+    "resources": [
+      "Matador (transport)",
+      "Rest house",
+      "River with boats",
+      "Fort nearby"
+    ],
+    "problems": [
+      {
+        "id": "P1",
+        "description": "Children drifting in boat on river",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Life Threatening"
+      },
+      {
+        "id": "P2",
+        "description": "Scientist's wife kidnapped, deadline 6:30 PM",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Kidnapping"
+      },
+      {
+        "id": "P3",
+        "description": "Beaten scientist needs medical attention",
+        "priority": "Medium",
+        "urgency": "Medium",
+        "category": "Medical"
+      },
+      {
+        "id": "P4",
+        "description": "Camera bag forgotten at fort",
+        "priority": "Low",
+        "urgency": "Low",
+        "category": "Personal Belonging"
+      }
+    ],
+    "locations": {
+      "current": "Canal rest house",
+      "river": "Salia Canal",
+      "jungle_cave": "Bhagu Jungle cave",
+      "fort": "Salia Fort",
+      "hospital": "Bhagu District Hospital"
+    },
+    "sample_solution": {
+      "group_division": [
+        {
+          "team": "Team A (4 members)",
+          "task": "Rescue drifting children",
+          "action": "Use boats to rescue children immediately"
+        },
+        {
+          "team": "Team B (3 members)",
+          "task": "Handle kidnapping situation",
+          "action": "Alert police, go to cave with papers (copies), coordinate with police"
+        },
+        {
+          "team": "Team C (2 members)",
+          "task": "Medical care for scientist",
+          "action": "Take scientist to hospital, get treatment"
+        },
+        {
+          "team": "1 member",
+          "task": "Retrieve camera bag",
+          "action": "Go to fort, collect bag, meet group later"
+        }
+      ],
+      "time_allocation": {
+        "17:30": "Immediate rescue of children from river",
+        "17:45": "Alert police about kidnapping, send Team B",
+        "18:00": "Scientist taken to hospital",
+        "18:30": "Kidnapping resolved with police help",
+        "19:00": "All teams regroup",
+        "20:00": "Reach annual function on time"
+      }
+    },
+    "olq_assessment": ["Speed of Decision", "Organising Ability", "Courage", "Cooperation", "Effective Intelligence", "Sense of Responsibility"]
+  },
+  {
+    "id": "GPE22",
+    "title": "Exam Bound Students Terrorist Threat",
+    "narrative": "You are a group of 10 students coming from your small town Kalapur in a minibus going to neighbouring district town Nimganj to appear in an Exam commencing at 11:15 a.m. After dismounting from the minibus at village Ruppar you are waiting for the steamer to go across River Koyal. Suddenly a villager comes to you for help and informs that an old dilapidated haveli on the outskirts of the village Ruppar has crumbled down crushing five men, out of whom two are seriously injured. He also tells that while he was working in his field nearby, he overheard two terrorists who had planted a bomb on the Railway Bridge on River Koyal and timed it to blow up at 10:15 a.m., when Nimganj-Kalapur passenger passes over it. He further added that they have gone to village Chara where they plan to exchange the contraband, they were carrying with other party at 10:20 a.m. at Raju Hotel and chalk out a plan to destroy a Pontoon Bridge on River Koyal further upstream. Subsequently as you were listening to this villager another shepherd comes running asking for help to put out the fire in his hut where he stored haystack and fodder for his cattle. Some additional information is available as follows: 1. The steamer service is twice a day and comes at 9:30 a.m. to leave for Nimganj. 2. The minibus leaves back to Kalapur at 9:20 a.m. and its speed is 40 kmph. 3. Due to some problem local communication from village Ruppar is out of order. 4. The fishery department located on River Koyal has one rowing boat with capacity of four. Maximum speed upstream is 6 kmph and downstream is 15 kmph. 5. Down train leaves Kalapur at 10:30 a.m. to reach Nimganj at 11:00 a.m. 6. Police stations are at Nimganj & Kalapur. Time now is 9 a.m. as bold young men what action will you take?",
+    "current_time": "09:00",
+    "deadline": "11:15 (exam time)",
+    "group_size": "10 students",
+    "resources": [
+      "Minibus (leaves at 9:20 AM, 40 kmph)",
+      "Steamer (9:30 AM to Nimganj)",
+      "Fishery boat (capacity 4, upstream 6 kmph, downstream 15 kmph)",
+      "River Koyal crossing"
+    ],
+    "problems": [
+      {
+        "id": "P1",
+        "description": "Bomb on railway bridge, explodes at 10:15 AM",
+        "priority": "High",
+        "urgency": "High",
+        "category": "National Security"
+      },
+      {
+        "id": "P2",
+        "description": "Two seriously injured from building collapse",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Medical Emergency"
+      },
+      {
+        "id": "P3",
+        "description": "Terrorists at Raju Hotel (10:20 AM meeting)",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Security Threat"
+      },
+      {
+        "id": "P4",
+        "description": "Shepherd's hut fire (haystack and fodder)",
+        "priority": "Low",
+        "urgency": "Medium",
+        "category": "Property Loss"
+      },
+      {
+        "id": "P5",
+        "description": "Reach exam by 11:15 AM",
+        "priority": "Medium",
+        "urgency": "Medium",
+        "category": "Personal Commitment"
+      }
+    ],
+    "locations": {
+      "current": "Village Ruppar (waiting for steamer)",
+      "haveli": "Outskirts of Ruppar",
+      "railway_bridge": "River Koyal",
+      "raju_hotel": "Village Chara",
+      "nimganj": "District town (exam location)",
+      "kalapur": "Home town"
+    },
+    "sample_solution": {
+      "group_division": [
+        {
+          "team": "Team A (6 members)",
+          "task": "Rescue injured and take to hospital",
+          "action": "Take injured on steamer at 9:30 AM to Nimganj, then to hospital, then to exam center"
+        },
+        {
+          "team": "Team B (2 members)",
+          "task": "Alert police about bomb and terrorists",
+          "action": "Take fishery boat upstream to Nimganj, alert police at Nimganj PS about bomb and terrorists"
+        },
+        {
+          "team": "Team C (2 members)",
+          "task": "Help with fire and monitor situation",
+          "action": "Help shepherd put out fire (can be managed with local help), then join others"
+        }
+      ],
+      "time_allocation": {
+        "09:00": "Teams deployed, fishery boat sent to alert police",
+        "09:30": "Team A takes injured on steamer to Nimganj",
+        "10:00": "Police alerted, action taken on bomb and terrorists",
+        "10:30": "Down train from Kalapur available as backup",
+        "11:00": "Train reaches Nimganj",
+        "11:15": "All students reach exam center on time"
+      },
+      "key_decisions": [
+        "Shepherd's fire can be handled by locals - not priority",
+        "Bomb threat is highest priority - must alert police immediately",
+        "Injured need medical attention - use steamer",
+        "Exam can still be reached via multiple transport options"
+      ]
+    },
+    "olq_assessment": ["Effective Intelligence", "Organising Ability", "Speed of Decision", "Sense of Responsibility", "Reasoning Ability", "Prioritisation"]
+  },
+  {
+    "id": "GPE8",
+    "title": "Medical College Tsunami Relief Crisis",
+    "narrative": "You are a party of 10 students including 2 girls from a Medical College of City Social, engaged in Tsunami Relief Operations in Village Bekaar. After Completion of job in that village at 1400 hrs, while you are moving to other villages, you are informed by a villager from Chor that his village is in a very precarious condition, but has been infected by hardcore criminals and they do not allow outsiders to enter their village and earlier even the police who dared to enter the village were brutally murdered. Simultaneously a boy fell on your feet and became unconscious after telling that his Village Sick has mass epidemic due to post-Tsunami waves and all relief assistance people have withdrawn from their task fearing their own lives. While you were discussing as to what to do, you found that your beautiful girl friends were missing, on enquiry it is learnt that the girls have been molested and kidnapped by 3 goondas of that village. In the meanwhile, one of your friend, while saving 2 seriously injured old ladies and an infant from the second floor of a building, slipped, fell down and fractured his leg. A boy also cries to save his pet dog trapped in his completely damaged house. You also learn that the school building in which 1000 ladies and children of Tsunami victims were accommodated, caught fire due to LPG cylinder burst, while you see a helicopter carrying relief materials crash landed in a nearby paddy field. You have a jeep which has been fully submerged in the Tsunami mud during the relief operation. The Police station has got plenty of police personnel, arms and ammunition. You have been ordered by the Principal to return to the Hostel latest by 1800 hrs.",
+    "current_time": "14:00",
+    "deadline": "18:00",
+    "group_size": "10 students (2 girls kidnapped, 1 injured, so 7 available)",
+    "resources": [
+      "Medical knowledge and skills",
+      "Police station with personnel and arms",
+      "Jeep (submerged, not usable)"
+    ],
+    "problems": [
+      {
+        "id": "P1",
+        "description": "2 girls kidnapped by goondas",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Personal Safety"
+      },
+      {
+        "id": "P2",
+        "description": "School building fire with 1000 women and children",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Mass Casualty Risk"
+      },
+      {
+        "id": "P3",
+        "description": "Friend with fractured leg needs medical attention",
+        "priority": "Medium",
+        "urgency": "Medium",
+        "category": "Medical"
+      },
+      {
+        "id": "P4",
+        "description": "Village Sick has mass epidemic",
+        "priority": "High",
+        "urgency": "Medium",
+        "category": "Public Health"
+      },
+      {
+        "id": "P5",
+        "description": "Helicopter crash in paddy field",
+        "priority": "Medium",
+        "urgency": "High",
+        "category": "Rescue"
+      },
+      {
+        "id": "P6",
+        "description": "Boy's pet dog trapped",
+        "priority": "Low",
+        "urgency": "Low",
+        "category": "Personal"
+      },
+      {
+        "id": "P7",
+        "description": "Village Chor with criminals blocking relief",
+        "priority": "High",
+        "urgency": "Medium",
+        "category": "Security"
+      }
+    ],
+    "locations": {
+      "current": "Village Bekaar",
+      "chor": "Village Chor (criminal area)",
+      "sick": "Village Sick (epidemic area)",
+      "school": "School building (fire)",
+      "helicopter": "Paddy field nearby",
+      "police_station": "Nearby police station",
+      "hostel": "Medical College Hostel"
+    },
+    "sample_solution": {
+      "group_division": [
+        {
+          "team": "Team A (3 members)",
+          "task": "Alert police and coordinate rescue",
+          "action": "Go to police station, inform about kidnapped girls and criminals, coordinate rescue operation"
+        },
+        {
+          "team": "Team B (2 members)",
+          "task": "Handle school fire emergency",
+          "action": "Organize evacuation, provide first aid, coordinate with locals"
+        },
+        {
+          "team": "Team C (2 members)",
+          "task": "Helicopter crash rescue",
+          "action": "Check for survivors, provide medical aid, call for backup"
+        },
+        {
+          "team": "Team D (1 member)",
+          "task": "Care for injured friend",
+          "action": "Provide first aid for fracture, arrange transport to hospital"
+        }
+      ],
+      "time_allocation": {
+        "14:00": "Teams deployed, police alerted",
+        "15:00": "School fire managed, helicopter survivors rescued",
+        "16:00": "Girls rescued with police help",
+        "17:00": "All emergencies resolved, injured friend taken to hospital",
+        "18:00": "Return to hostel as ordered"
+      },
+      "key_decisions": [
+        "Pet dog is lowest priority - explain to boy",
+        "Epidemic in Village Sick needs separate planning - inform health authorities",
+        "Police involvement essential for criminal areas",
+        "Mass casualty situation (school) gets immediate attention"
+      ]
+    },
+    "olq_assessment": ["Leadership", "Organising Ability", "Sense of Responsibility", "Speed of Decision", "Cooperation", "Effective Intelligence"]
+  },
+  {
+    "id": "GPE9",
+    "title": "Marriage Party Dacoit Threat",
+    "narrative": "You are 8 College hostel students traveling in a jeep from City Mango to attend your room mate's marriage at Vill Apple at 2000 hrs. You are stopped by a beautiful girl in teens with a request to help her punctured Scooty. She was in panic, and you found that she is the sister of the bride of the same marriage you are going to attend and her bride sister has just been kidnapped by her lover and she was following to catch them. At the same time, you hear from a boy that his house has been completely damaged by an aircraft crash with 150 passengers on board just now and he is rushing to inform his father. He also tells that he overheard near the Temple that 5 dacoits with guns were planning to loot your own marriage party. There is a BSF Bn in Vill Orange, but their jawans are away on night firing practice except 25 men with rifles doing sentry/allied duties. There is a hospital in Vill Banana with 5 beds only. The time now is - 1800 hrs.",
+    "current_time": "18:00",
+    "deadline": "20:00 (marriage time)",
+    "group_size": "8 students",
+    "resources": [
+      "Jeep (transport)",
+      "Mobile phones",
+      "BSF Battalion (25 men available)"
+    ],
+    "problems": [
+      {
+        "id": "P1",
+        "description": "Bride kidnapped by lover",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Kidnapping"
+      },
+      {
+        "id": "P2",
+        "description": "5 dacoits planning to loot marriage party",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Security Threat"
+      },
+      {
+        "id": "P3",
+        "description": "Aircraft crash with 150 passengers",
+        "priority": "High",
+        "urgency": "High",
+        "category": "Mass Casualty"
+      },
+      {
+        "id": "P4",
+        "description": "Girl's scooty punctured",
+        "priority": "Low",
+        "urgency": "Low",
+        "category": "Minor Issue"
+      }
+    ],
+    "locations": {
+      "current": "On the way to Village Apple",
+      "village_orange": "BSF Battalion location",
+      "village_banana": "Hospital location (5 beds)",
+      "village_apple": "Marriage destination",
+      "crash_site": "Near the boy's house"
+    },
+    "sample_solution": {
+      "group_division": [
+        {
+          "team": "Team A (3 members)",
+          "task": "Alert BSF about dacoits",
+          "action": "Go to Village Orange, inform BSF about dacoit threat to marriage party"
+        },
+        {
+          "team": "Team B (3 members)",
+          "task": "Handle aircraft crash",
+          "action": "Go to crash site, provide first aid, coordinate rescue, inform authorities"
+        },
+        {
+          "team": "Team C (2 members)",
+          "task": "Handle kidnapping and marriage security",
+          "action": "Alert police about kidnapping, inform marriage party about dacoit threat, coordinate with BSF"
+        }
+      ],
+      "time_allocation": {
+        "18:00": "Teams deployed immediately",
+        "18:30": "BSF alerted, moves to protect marriage",
+        "19:00": "Crash site rescue operations underway",
+        "19:30": "Kidnapping reported to police",
+        "20:00": "Marriage secured, teams regroup"
+      },
+      "key_decisions": [
+        "Scooty puncture is minor - can be fixed later",
+        "Dacoit threat to marriage is immediate - needs BSF intervention",
+        "Aircraft crash needs medical and rescue coordination",
+        "Kidnapping needs police involvement"
+      ]
+    },
+    "olq_assessment": ["Speed of Decision", "Organising Ability", "Leadership", "Effective Intelligence", "Sense of Responsibility", "Courage"]
+  }
+]

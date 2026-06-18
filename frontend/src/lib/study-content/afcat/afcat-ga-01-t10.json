@@ -1,0 +1,200 @@
+{
+  "id": "afcat-ga-01-t10",
+  "title": "IAF Trainer Aircraft (Hawk, Pilatus PC-7, HTT-40, Kiran)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Trainer aircraft are the backbone of any air force, providing essential platforms for cadet pilots to hone their flying skills before transitioning to operational combat or transport aircraft. The Indian Air Force (IAF) employs a structured training program across various stages, each utilizing specific trainer aircraft types tailored to impart progressively advanced skills. Understanding these aircraft, their roles, origin, and key features is crucial for AFCAT aspirants, as questions often revolve around their identification, training stage, or indigenous status."
+    },
+    {
+      "type": "heading",
+      "data": "Stages of IAF Pilot Training"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Stage I: Basic Flying Training (BFT) - Focuses on fundamental flying skills, airmanship, and basic maneuvers.",
+        "Stage II: Intermediate Flying Training (IFT) - Builds upon basic skills, introducing more complex aerobatics, formation flying, and instrument flying.",
+        "Stage III: Advanced Jet Training (AJT) - Prepares pilots for high-performance jet operations, combat maneuvers, weapon delivery, and mission tactics. This stage is primarily for those destined for fighter streams."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "Key IAF Trainer Aircraft"
+    },
+    {
+      "type": "text",
+      "data": "The IAF currently operates a mix of domestically produced and internationally procured trainer aircraft to meet its diverse training requirements."
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY FACT: The progression through these training stages is critical for pilots to achieve the proficiency required for their respective operational roles (fighters, transport, helicopters)."
+    },
+    {
+      "type": "heading",
+      "data": "1. Pilatus PC-7 Mk II"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Role: Basic Trainer Aircraft (BTA) - Stage I",
+        "Origin: Switzerland",
+        "Manufacturer: Pilatus Aircraft",
+        "Key Features: Turboprop engine, tandem seating, excellent safety record, used for initial flight training, basic aerobatics, and instrument flying."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "2. HAL HTT-40 (Hindustan Turbo Trainer-40)"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Role: Basic Trainer Aircraft (BTA) - Stage I",
+        "Origin: India (Indigenous)",
+        "Manufacturer: Hindustan Aeronautics Limited (HAL)",
+        "Key Features: Turboprop engine, designed to replace the Pilatus PC-7 Mk II, features modern avionics, ejection seats, and a 'hot-cockpit' environment to prepare pilots for advanced jets."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 INDIGENOUS PRIDE: The HTT-40 is a significant step towards 'Atmanirbhar Bharat' (self-reliant India) in aviation, showcasing India's capabilities in aircraft design and manufacturing."
+    },
+    {
+      "type": "heading",
+      "data": "3. HJT-16 Kiran"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Role: Intermediate Jet Trainer (IJT) - Stage II",
+        "Origin: India (Indigenous)",
+        "Manufacturer: Hindustan Aeronautics Limited (HAL)",
+        "Key Features: First Indian jet aircraft designed and built by HAL, twin-seat jet trainer, used for intermediate flying, aerobatics, and weapon training. It is being phased out, with the Hawk Mk.132 taking over some of its roles and the HAL HJT-36 Sitara (under development) envisioned as its eventual replacement for the IJT role."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "4. BAE Systems Hawk Mk.132"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Role: Advanced Jet Trainer (AJT) - Stage III",
+        "Origin: United Kingdom (BAE Systems), License-produced in India by HAL.",
+        "Manufacturer: BAE Systems (original), Hindustan Aeronautics Limited (HAL) - license production.",
+        "Key Features: High-performance transonic jet trainer, tandem seating, capable of carrying weapons, prepares pilots for advanced fighter aircraft like the Sukhoi Su-30MKI and Dassault Rafale."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "Comparison of IAF Trainer Aircraft"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Aircraft",
+          "Role (Training Stage)",
+          "Origin",
+          "Manufacturer (Primary/License)"
+        ],
+        "rows": [
+          [
+            "Pilatus PC-7 Mk II",
+            "Basic Trainer (Stage I)",
+            "Switzerland",
+            "Pilatus Aircraft"
+          ],
+          [
+            "HAL HTT-40",
+            "Basic Trainer (Stage I)",
+            "India (Indigenous)",
+            "Hindustan Aeronautics Limited (HAL)"
+          ],
+          [
+            "HJT-16 Kiran",
+            "Intermediate Jet Trainer (Stage II)",
+            "India (Indigenous)",
+            "Hindustan Aeronautics Limited (HAL)"
+          ],
+          [
+            "BAE Systems Hawk Mk.132",
+            "Advanced Jet Trainer (Stage III)",
+            "United Kingdom",
+            "BAE Systems / HAL (License)"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "IAF Pilot Training Progression & Aircraft",
+        "description": "This flowchart illustrates the typical progression of pilot training in the Indian Air Force, highlighting the main trainer aircraft used at each stage.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Cadet Entry - Aspirants] --> B{Stage I: Basic Flying Training};\n    B --> |Aircraft: Pilatus PC-7 Mk II / HAL HTT-40| C[Fundamental Skills];\n    C --> D{Stage II: Intermediate Flying Training};\n    D --> |Aircraft: HJT-16 Kiran (phasing out) / Hawk (limited)| E[Advanced Maneuvers & Instruments];\n    E --> F{Stage III: Advanced Jet Training};\n    F --> |Aircraft: BAE Hawk Mk.132| G[Combat Readiness & Weaponry];\n    G --> H[Operational Conversion Unit (OCU)];\n    H --> I[Deployment to Squadrons (Fighter/Transport/Helicopter)];"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Solved Example"
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Which of the following aircraft is an indigenous Basic Trainer Aircraft (BTA) used by the IAF, designed to eventually replace the Pilatus PC-7 Mk II?",
+        "solution": "The question asks for an indigenous BTA that is a potential replacement for the PC-7 Mk II. \n\n1.  **BAE Hawk Mk.132** is an AJT (Stage III) and not primarily indigenous in design, though license-produced.\n2.  **Pilatus PC-7 Mk II** is a BTA (Stage I) but is of Swiss origin, not indigenous.\n3.  **HJT-16 Kiran** is an IJT (Stage II) and is indigenous, but its role is different and it's being phased out, not replacing PC-7.\n4.  **HAL HTT-40** is an indigenous BTA (Stage I) specifically designed and developed by HAL to succeed the PC-7 Mk II in the basic training role.",
+        "answer": "HAL HTT-40"
+      }
+    }
+  ],
+  "keyPoints": [
+    "Pilatus PC-7 Mk II and HAL HTT-40 are both used for Stage I (Basic) training, with HTT-40 being the indigenous successor.",
+    "HJT-16 Kiran serves as the Intermediate Jet Trainer (Stage II) but is being phased out.",
+    "BAE Systems Hawk Mk.132 is the Advanced Jet Trainer (Stage III), crucial for preparing fighter pilots.",
+    "HAL plays a pivotal role in the manufacturing and development of indigenous trainer aircraft like HTT-40 and Kiran.",
+    "Knowing the origin (e.g., Swiss, UK, Indian) and the primary training stage for each aircraft is critical for AFCAT."
+  ],
+  "commonMistakes": [
+    "Confusing the training stages for which each aircraft is used (e.g., thinking Hawk is for basic training).",
+    "Incorrectly identifying the origin country or primary manufacturer, especially between foreign design and Indian license production."
+  ],
+  "examTips": [
+    "Memorize the full names and abbreviations (e.g., HTT-40) along with their roles and origins. Expect direct factual questions.",
+    "Pay attention to current affairs related to new inductions, phased-out aircraft, or indigenous development updates from HAL. These are often targets for General Awareness questions."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following trainer aircraft is primarily used for Stage III (Advanced Jet Training) in the Indian Air Force?",
+      "options": [
+        "Pilatus PC-7 Mk II",
+        "HAL HTT-40",
+        "BAE Systems Hawk Mk.132",
+        "HJT-16 Kiran"
+      ],
+      "correct": 2,
+      "explanation": "The BAE Systems Hawk Mk.132 is the Advanced Jet Trainer (AJT) used for Stage III training, preparing pilots for combat aircraft."
+    },
+    {
+      "question": "The HAL HTT-40 is an indigenous Basic Trainer Aircraft. What is its intended role regarding the Pilatus PC-7 Mk II?",
+      "options": [
+        "To complement it for advanced training",
+        "To replace it as the primary basic trainer",
+        "To serve as an intermediate trainer alongside it",
+        "To provide tactical reconnaissance capabilities"
+      ],
+      "correct": 1,
+      "explanation": "The HAL HTT-40 is designed and developed indigenously by HAL with the specific intention of replacing the Pilatus PC-7 Mk II as the primary Basic Trainer Aircraft (BTA) for Stage I training."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=IAF%20Trainer%20Aircraft%20(Hawk%2C%20Pilatus%20PC-7%2C%20HTT-40%2C%20Kiran)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=IAF%20Trainer%20Aircraft%20(Hawk%2C%20Pilatus%20PC-7%2C%20HTT-40%2C%20Kiran)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

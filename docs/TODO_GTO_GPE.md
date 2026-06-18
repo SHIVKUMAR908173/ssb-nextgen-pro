@@ -1,0 +1,29 @@
+- [x] Decide MVP scope for “Virtual GTO / GPE” (likely MVP: GPE timer + capture plan + AI-evaluation stub)
+- [x] Define API contract (request/response shapes) for:
+  - [x] POST /api/gpe/session/init (timer start + scenario payload selection)
+  - [x] POST /api/gpe/session/submit (user plan + scoring/evaluation)
+- [x] Add shared types (Zod + TS types):
+  - [x] GPE session state
+  - [x] GPE evaluation result shape (MVP reused InterviewEvaluation shape)
+  - [x] Validation schemas
+- [x] Implement GPE timer/state machine logic (strict read/write windows)
+- [x] Implement deterministic/mock evaluator for GPE (until real AI wiring)
+- [x] Wire endpoints into src/server.ts
+- [ ] Add dataset/scenario stubs for GPE maps/emergencies (initial local stub)
+- [ ] Implement GPE scenario dataset schema (map scale, locations, incidents, resources, speed constants)
+- [ ] Implement priority extraction + rubric (Priority 1..4 ordering + coverage)
+- [ ] Implement time-distance feasibility validation (physical impossibility detection)
+- [ ] Replace mock scoring with GPE-specific scoring output (logical prioritization, feasibility, effective intelligence)
+- [ ] Implement Group Discussion (GD) phase backend
+  - [ ] Text-only MVP: bots + user chat transcript stored + scored
+  - [ ] Voice-to-voice MVP: accept client-transcribed messages first (no audio synthesis yet)
+  - [ ] Watcher agent scoring: Cooperation/Social Adaptability + Influence/Self-Confidence
+- [ ] Add GD endpoints + state machine stage(s)
+- [ ] Run typecheck (tsc --noEmit)
+- [ ] Run build (tsc -p tsconfig.json)
+- [ ] Smoke test with curl:
+  - [ ] health endpoint
+  - [ ] gpe init endpoint
+  - [ ] gpe submit endpoint
+  - [ ] gpe gd session init/send message/end (new endpoints)
+- [ ] Final verification: ensure endpoints return meaningful 4xx/5xx errors on invalid payloads

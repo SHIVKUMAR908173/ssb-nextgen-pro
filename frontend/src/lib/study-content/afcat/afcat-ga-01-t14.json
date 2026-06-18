@@ -1,0 +1,157 @@
+{
+  "id": "afcat-ga-01-t14",
+  "title": "Indian Missiles — Air-to-Air (Astra, Python, Derby)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Air-to-Air Missiles (AAMs) are critical components of modern aerial warfare, enabling fighter aircraft to engage and neutralize enemy aircraft. For the Indian Air Force (IAF), a diverse arsenal of AAMs, including indigenous developments like Astra and acquired systems like Python and Derby, is essential for maintaining air superiority. This study material focuses on these key AAMs, their characteristics, and their significance for India's defense capabilities, particularly relevant for the AFCAT General Awareness section."
+    },
+    {
+      "type": "heading",
+      "data": "Understanding Air-to-Air Missiles (AAMs)"
+    },
+    {
+      "type": "text",
+      "data": "AAMs are primarily categorized by their engagement range: Beyond Visual Range (BVR) missiles, which can engage targets from tens to over a hundred kilometers away, and Within Visual Range (WVR) missiles, designed for close-quarters combat. Their effectiveness heavily relies on advanced guidance systems, propulsion, and warhead technology."
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Beyond Visual Range (BVR) Missiles:** Designed for long-range engagements, often utilizing radar guidance to target aircraft that cannot be seen by the pilot. They allow for 'first-shot, first-kill' advantages.",
+        "**Within Visual Range (WVR) Missiles:** Also known as 'dogfight missiles', these are optimized for close-range combat, typically employing infrared (IR) guidance to home in on the heat signature of enemy aircraft.",
+        "**Guidance Systems:** Common types include Active Radar Homing (ARH), Semi-Active Radar Homing (SARH), and Infrared Homing (IRH)."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember 'BVR' for 'Beyond Visual Range' (long-range, radar-guided) and 'WVR' for 'Within Visual Range' (short-range, infrared-guided). This distinction is fundamental for AAMs."
+    },
+    {
+      "type": "heading",
+      "data": "Key Indian Air-to-Air Missiles: Astra, Python, Derby"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Missile",
+          "Type",
+          "Origin/Developer",
+          "Range",
+          "Guidance System",
+          "Key Features / Platform"
+        ],
+        "rows": [
+          [
+            "Astra Mk-I",
+            "BVR AAM",
+            "India (DRDO)",
+            "80-110 km (Mk-I)",
+            "Active Radar Homing",
+            "India's first indigenous BVR AAM. All-weather capable. Integrated with Su-30 MKI, Tejas, Mirage 2000, MiG-29."
+          ],
+          [
+            "Python-5",
+            "WVR AAM",
+            "Israel (Rafael Advanced Defense Systems)",
+            "Approx. 20 km",
+            "Advanced Imaging Infrared Homing",
+            "Fifth-generation WVR missile. Full-sphere (360-degree) engagement capability. 'Lock-on after launch' (LOAL) feature. Integrated with Rafale, Tejas, Mirage 2000."
+          ],
+          [
+            "Derby",
+            "BVR AAM",
+            "Israel (Rafael Advanced Defense Systems)",
+            "50-100 km",
+            "Active Radar Homing",
+            "Compact and lightweight BVR missile. Shares commonality with Python series. Integrated with Rafale, Tejas, Sea Harriers (earlier), MiG-29."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Connect 'Astra' with 'Indigenous' and 'BVR'. Connect 'Python' with 'Israel' and 'WVR'. Connect 'Derby' with 'Israel' and 'BVR'. This helps differentiate their core aspects."
+    },
+    {
+      "type": "heading",
+      "data": "Missile Engagement Envelope"
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "Missile Range = f(Propulsion, Aerodynamics, Target Speed, Launch Platform Speed, Altitude)",
+        "note": "The effective range of an air-to-air missile is not a fixed value but a complex function of multiple dynamic factors including the missile's own engine power, its aerodynamic design, the speed and maneuverability of both the target and the launching aircraft, and the atmospheric conditions at various altitudes."
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Identify the Indian Air-to-Air Missile (AAM) known for being indigenously developed, possessing Beyond Visual Range (BVR) capabilities, and employing an Active Radar Homing guidance system.",
+        "solution": "1. **Analyze Keywords:** The key descriptors are 'indigenously developed', 'Beyond Visual Range (BVR)', and 'Active Radar Homing'.\n2. **Review Missile Characteristics:**\n   - Python-5: Israel, WVR, Imaging Infrared Homing.\n   - Derby: Israel, BVR, Active Radar Homing.\n   - Astra Mk-I: India, BVR, Active Radar Homing.\n3. **Match Features:** Only Astra Mk-I matches all three criteria: indigenous, BVR, and Active Radar Homing.\n4. **Conclusion:** Astra Mk-I is the correct identification.",
+        "answer": "Astra Mk-I"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Missile Type Classification Diagram"
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Classification of Indian Air-to-Air Missiles (Selected)",
+        "description": "A simple flowchart illustrating the classification of Astra, Python, and Derby missiles based on their origin and engagement range.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Air-to-Air Missiles (AAMs)] --> B{Origin}\n    B --> C[Indigenous]\n    B --> D[Acquired]\n    C --> E[Astra]\n    D --> F{Range Type}\n    F --> G[WVR]\n    F --> H[BVR]\n    G --> I[Python-5 (Israel)]\n    H --> J[Derby (Israel)]\n    E --> K[BVR]\n    K --> L[Astra Mk-I]"
+      }
+    }
+  ],
+  "keyPoints": [
+    "Astra Mk-I is India's first indigenously developed Beyond Visual Range (BVR) Air-to-Air Missile.",
+    "Python-5 is an advanced Israeli-origin Within Visual Range (WVR) AAM, known for its imaging infrared seeker and full-sphere engagement capability.",
+    "Derby is also an Israeli-origin BVR AAM, lighter and more compact than some contemporaries, and uses active radar homing.",
+    "BVR missiles are crucial for long-range interception, while WVR missiles are vital for close-range aerial combat (dogfights).",
+    "All three missiles enhance the operational capabilities of various IAF fighter platforms like Su-30 MKI, Rafale, Tejas, and Mirage 2000."
+  ],
+  "commonMistakes": [
+    "Confusing the origins of Python and Derby (both Israeli) with indigenous Indian missiles like Astra.",
+    "Mixing up 'Beyond Visual Range' (BVR) and 'Within Visual Range' (WVR) capabilities and their associated guidance systems (radar vs. infrared)."
+  ],
+  "examTips": [
+    "For AFCAT, focus on the origin country, approximate range (BVR/WVR distinction), guidance type, and specific unique features (e.g., 'India's first indigenous BVR AAM').",
+    "Pay attention to the aircraft platforms these missiles are integrated with, as questions might ask about a missile's compatibility with a particular fighter jet."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following Air-to-Air Missiles is an indigenously developed Beyond Visual Range (BVR) missile for the Indian Air Force?",
+      "options": [
+        "Python-5",
+        "Derby",
+        "Astra Mk-I",
+        "MICA"
+      ],
+      "correct": 2,
+      "explanation": "Astra Mk-I is India's first indigenous BVR AAM. Python-5 and Derby are Israeli-origin, while MICA is French."
+    },
+    {
+      "question": "The Python-5 Air-to-Air Missile, known for its advanced Imaging Infrared Homing, originates from which country?",
+      "options": [
+        "India",
+        "USA",
+        "Russia",
+        "Israel"
+      ],
+      "correct": 3,
+      "explanation": "Both Python-5 and Derby missiles are developed by Rafael Advanced Defense Systems of Israel."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Air-to-Air%20(Astra%2C%20Python%2C%20Derby)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Air-to-Air%20(Astra%2C%20Python%2C%20Derby)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "metadata": {
+    "total_scenarios": 15,
+    "total_ppdt_images": 30,
+    "total_tat_slides": 32,
+    "source": "SSB Standard TAT/PPDT Theme Database â€” Psychology Battery"
+  },
+  "tat_stimuli": [
+    {
+      "slide_id": 1,
+      "description": "A person at a shop counter buying blankets for relief distribution.",
+      "suggested_themes": [
+        "Natural Disaster Relief",
+        "Social Service",
+        "Proactive Planning"
+      ],
+      "protagonist_age": 22,
+      "protagonist_gender": "Male",
+      "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"oir-haze-23-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"oir-bg-23-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#oir-bg-23-9)\" />\n      \n      <g filter=\"url(#oir-haze-23-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"335\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 310 420 L 360 420 L 345 550 L 325 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"255\" cy=\"299\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+    },
+    {
+      "slide_id": 2,
+      "description": "An HR manager resolving a dispute or organizing work in a factory setting.",
+      "suggested_themes": [
+        "Leadership",
+        "Conflict Resolution",
+        "Industrial Productivity"
+      ],
+      "protagonist_age": 30,
+      "protagonist_gender": "Neutral",
+      "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"oir-haze-24-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"oir-bg-24-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#oir-bg-24-0)\" />\n      \n      <g filter=\"url(#oir-haze-24-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"330\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 305 420 L 355 420 L 340 550 L 320 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+    },
+    {
+      "slide_id": 3,
+      "description": "A young woman teaching children in a village school under a tree.",
+      "suggested_themes": [
+        "Rural Education",
+        "Women Empowerment",
+        "Knowledge Sharing"
+      ],
+      "protagonist_age": 21,
+      "protagonist_gender": "Female",
+      "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"oir-haze-25-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"oir-bg-25-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#oir-bg-25-3)\" />\n      \n      <g filter=\"url(#oir-haze-25-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"325\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 300 420 L 350 420 L 335 550 L 315 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"275\" cy=\"375\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+    },
+    {
+      "slide_id": 4,
+      "description": "A group of people using a small boat or ropes during a flood rescue operation.",
+      "suggested_themes": [
+        "Bravery",
+        "Teamwork",
+        "Crisis Management"
+      ],
+      "protagonist_age": 25,
+      "protagonist_gender": "Male",
+      "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"oir-haze-26-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"oir-bg-26-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#oir-bg-26-6)\" />\n      \n      <g filter=\"url(#oir-haze-26-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"320\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 295 420 L 345 420 L 330 550 L 310 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"490\" cy=\"342\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+    },
+    {
+      "slide_id": 5,
+      "description": "A protagonist organizing a local sports event or coaching village youth in hockey.",
+      "suggested_themes": [
+        "Sportsmanship",
+        "Community Building",
+        "Physical Fitness"
+      ],
+      "protagonist_age": 23,
+      "protagonist_gender": "Male",
+      "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"oir-haze-27-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"oir-bg-27-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#oir-bg-27-9)\" />\n      \n      <g filter=\"url(#oir-haze-27-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"315\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 290 420 L 340 420 L 325 550 L 305 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"295\" cy=\"351\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+    },
+    {
+      "slide_id": 6,
+      "description": "A doctor treating patients in a rural health camp while villagers watch.",
+      "suggested_themes": [
+        "Medical Aid",
+        "Rural Healthcare",
+        "Selfless Service"
+      ],
+      "protagonist_age": 28,
+      "protagonist_gender": "Female",
+      "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"oir-haze-32-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"oir-bg-32-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#oir-bg-32-0)\" />\n      \n      <g filter=\"url(#oir-haze-32-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"440\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 415 420 L 465 420 L 450 550 L 430 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+    },
+    {
+      "slide_id": 7,
+      "description": "A soldier standing near a barbed wire fence at dawn looking at snow-capped mountains.",
+      "suggested_themes": [
+        "Border Security",
+        "Patriotism",
+        "Vigilance",
+        "Sacrifice"
+      ],
+      "protagonist_age": 27,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20soldier%20standing%20near%20a%20barbed%20wire%20fence%20at%20dawn%20looking%20at%20snow-capped%20mountains.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 8,
+      "description": "A person standing at a crossroads with one path leading to a village and another to a city.",
+      "suggested_themes": [
+        "Decision Making",
+        "Life Choices",
+        "Career vs Values"
+      ],
+      "protagonist_age": 22,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20standing%20at%20a%20crossroads%20with%20one%20path%20leading%20to%20a%20village%20and%20another%20to%20a%20city.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 9,
+      "description": "A person planting trees in a barren landscape while others look skeptical.",
+      "suggested_themes": [
+        "Environmental Conservation",
+        "Determination",
+        "Visionary Leadership"
+      ],
+      "protagonist_age": 26,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20planting%20trees%20in%20a%20barren%20landscape%20while%20others%20look%20skeptical.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 10,
+      "description": "A group of students around a campfire during an NCC camp in the mountains.",
+      "suggested_themes": [
+        "Camaraderie",
+        "Adventure",
+        "Team Building",
+        "NCC Spirit"
+      ],
+      "protagonist_age": 20,
+      "protagonist_gender": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20students%20around%20a%20campfire%20during%20an%20NCC%20camp%20in%20the%20mountains.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 11,
+      "description": "An elderly person sitting alone on a bench in a park looking at the sunset.",
+      "suggested_themes": [
+        "Reflection",
+        "Loneliness",
+        "Wisdom",
+        "Legacy"
+      ],
+      "protagonist_age": 70,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/An%20elderly%20person%20sitting%20alone%20on%20a%20bench%20in%20a%20park%20looking%20at%20the%20sunset.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 13,
+      "description": "A group of farmers looking at a dried-up well or cracked field.",
+      "suggested_themes": [
+        "Problem Solving",
+        "Agricultural Innovation",
+        "Resilience"
+      ],
+      "protagonist_age": 35,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20farmers%20looking%20at%20a%20dried-up%20well%20or%20cracked%20field.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 14,
+      "description": "A young person studying late at night under a street lamp.",
+      "suggested_themes": [
+        "Dedication",
+        "Hard Work",
+        "Overcoming Adversity"
+      ],
+      "protagonist_age": 18,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20young%20person%20studying%20late%20at%20night%20under%20a%20street%20lamp.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 15,
+      "description": "Two individuals arguing aggressively near a parked car that has a dent.",
+      "suggested_themes": [
+        "Conflict Resolution",
+        "Composure",
+        "Responsibility"
+      ],
+      "protagonist_age": 40,
+      "protagonist_gender": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Two%20individuals%20arguing%20aggressively%20near%20a%20parked%20car%20that%20has%20a%20dent.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 16,
+      "description": "A person addressing a small crowd holding placards in a town square.",
+      "suggested_themes": [
+        "Social Activism",
+        "Leadership",
+        "Persuasion"
+      ],
+      "protagonist_age": 25,
+      "protagonist_gender": "Female",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20addressing%20a%20small%20crowd%20holding%20placards%20in%20a%20town%20square.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 17,
+      "description": "A person running towards a moving train trying to catch it while holding a heavy bag.",
+      "suggested_themes": [
+        "Urgency",
+        "Determination",
+        "Time Management"
+      ],
+      "protagonist_age": 28,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20running%20towards%20a%20moving%20train%20trying%20to%20catch%20it%20while%20holding%20a%20heavy%20bag.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 18,
+      "description": "A scientist or doctor looking intently into a microscope in a laboratory.",
+      "suggested_themes": [
+        "Research",
+        "Focus",
+        "Scientific Temperament"
+      ],
+      "protagonist_age": 30,
+      "protagonist_gender": "Female",
+      "image_url": "https://image.pollinations.ai/prompt/A%20scientist%20or%20doctor%20looking%20intently%20into%20a%20microscope%20in%20a%20laboratory.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 19,
+      "description": "A group of teenagers cleaning up a polluted beach or park.",
+      "suggested_themes": [
+        "Environmental Awareness",
+        "Community Service",
+        "Initiative"
+      ],
+      "protagonist_age": 16,
+      "protagonist_gender": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20teenagers%20cleaning%20up%20a%20polluted%20beach%20or%20park.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 20,
+      "description": "An injured athlete being helped off the field by teammates.",
+      "suggested_themes": [
+        "Sportsmanship",
+        "Camaraderie",
+        "Empathy"
+      ],
+      "protagonist_age": 20,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/An%20injured%20athlete%20being%20helped%20off%20the%20field%20by%20teammates.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 21,
+      "description": "A person sitting with head in hands while another stands over them looking supportive.",
+      "suggested_themes": [
+        "Empathy",
+        "Mentorship",
+        "Overcoming Depression"
+      ],
+      "protagonist_age": 25,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20sitting%20with%20head%20in%20hands%20while%20another%20stands%20over%20them%20looking%20supportive.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 22,
+      "description": "A family loading luggage onto a cart or vehicle, looking like they are migrating.",
+      "suggested_themes": [
+        "Adaptability",
+        "Family Responsibility",
+        "New Beginnings"
+      ],
+      "protagonist_age": 35,
+      "protagonist_gender": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20family%20loading%20luggage%20onto%20a%20cart%20or%20vehicle%2C%20looking%20like%20they%20are%20migrating.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 23,
+      "description": "A person in formal attire presenting in front of a whiteboard to a skeptical audience.",
+      "suggested_themes": [
+        "Professional Competence",
+        "Confidence",
+        "Convincing Ability"
+      ],
+      "protagonist_age": 32,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20in%20formal%20attire%20presenting%20in%20front%20of%20a%20whiteboard%20to%20a%20skeptical%20audience.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 24,
+      "description": "A silhouette of a person standing alone on a hilltop looking at a stormy sky.",
+      "suggested_themes": [
+        "Courage",
+        "Facing Challenges",
+        "Vision"
+      ],
+      "protagonist_age": 24,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20silhouette%20of%20a%20person%20standing%20alone%20on%20a%20hilltop%20looking%20at%20a%20stormy%20sky.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 25,
+      "description": "Two children looking through a fence at a playground they cannot enter.",
+      "suggested_themes": [
+        "Social Equality",
+        "Compassion",
+        "Taking Action for Others"
+      ],
+      "protagonist_age": 10,
+      "protagonist_gender": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Two%20children%20looking%20through%20a%20fence%20at%20a%20playground%20they%20cannot%20enter.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 26,
+      "description": "A person operating a heavy machine in a factory while others watch.",
+      "suggested_themes": [
+        "Skill",
+        "Diligence",
+        "Industrial Work"
+      ],
+      "protagonist_age": 28,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20operating%20a%20heavy%20machine%20in%20a%20factory%20while%20others%20watch.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 27,
+      "description": "A group of women in a village gathered around a sewing machine.",
+      "suggested_themes": [
+        "Women Empowerment",
+        "Skill Development",
+        "Cooperation"
+      ],
+      "protagonist_age": 25,
+      "protagonist_gender": "Female",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20women%20in%20a%20village%20gathered%20around%20a%20sewing%20machine.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 28,
+      "description": "A person examining a map in a dense forest context.",
+      "suggested_themes": [
+        "Navigation",
+        "Adventure",
+        "Problem Solving"
+      ],
+      "protagonist_age": 22,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20examining%20a%20map%20in%20a%20dense%20forest%20context.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 29,
+      "description": "A young officer briefing a group of soldiers sitting on the ground.",
+      "suggested_themes": [
+        "Leadership",
+        "Military Planning",
+        "Communication"
+      ],
+      "protagonist_age": 24,
+      "protagonist_gender": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20young%20officer%20briefing%20a%20group%20of%20soldiers%20sitting%20on%20the%20ground.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 30,
+      "description": "A person helping a blind individual cross a busy intersection.",
+      "suggested_themes": [
+        "Social Responsibility",
+        "Kindness",
+        "Alertness"
+      ],
+      "protagonist_age": 20,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20helping%20a%20blind%20individual%20cross%20a%20busy%20intersection.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 31,
+      "description": "A group of people hastily packing sandbags near a rising river.",
+      "suggested_themes": [
+        "Disaster Management",
+        "Urgency",
+        "Teamwork"
+      ],
+      "protagonist_age": 30,
+      "protagonist_gender": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20people%20hastily%20packing%20sandbags%20near%20a%20rising%20river.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 32,
+      "description": "A student receiving a medal from a dignitary on a stage.",
+      "suggested_themes": [
+        "Achievement",
+        "Hard Work Rewarded",
+        "Pride"
+      ],
+      "protagonist_age": 21,
+      "protagonist_gender": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20student%20receiving%20a%20medal%20from%20a%20dignitary%20on%20a%20stage.%20realistic%20sketch%20style%20black%20and%20white%20military%20psychology%20test?width=800&height=600&nologo=true"
+    },
+    {
+      "slide_id": 12,
+      "description": "BLANK SLIDE â€” Write a story from your imagination.",
+      "suggested_themes": [
+        "Candidate's Default Psychological Projection"
+      ],
+      "protagonist_age": null,
+      "protagonist_gender": null,
+      "is_blank": true,
+      "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+    }
+  ],
+  "ppdt_stimuli": [
+    {
+      "ppdt_id": 1,
+      "description": "A hazy image showing silhouettes of 3-4 people near a broken bridge over a river.",
+      "mood": "POSITIVE",
+      "num_characters": 4,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20hazy%20image%20showing%20silhouettes%20of%203-4%20people%20near%20a%20broken%20bridge%20over%20a%20river..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 2,
+      "description": "A blurred image of a person carrying something heavy on their head walking on a muddy road.",
+      "mood": "NEGATIVE",
+      "num_characters": 1,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20blurred%20image%20of%20a%20person%20carrying%20something%20heavy%20on%20their%20head%20walking%20on%20a%20muddy%20road..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 3,
+      "description": "A group gathered around someone lying on the ground near a vehicle.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 5,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20gathered%20around%20someone%20lying%20on%20the%20ground%20near%20a%20vehicle..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 4,
+      "description": "A person standing on a cliff edge looking down at a valley below with arms outstretched.",
+      "mood": "POSITIVE",
+      "num_characters": 1,
+      "action_visible": true,
+      "gender_distribution": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20standing%20on%20a%20cliff%20edge%20looking%20down%20at%20a%20valley%20below%20with%20arms%20outstretched..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 5,
+      "description": "Two people sitting across a table in what appears to be a heated discussion.",
+      "mood": "NEGATIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Two%20people%20sitting%20across%20a%20table%20in%20what%20appears%20to%20be%20a%20heated%20discussion..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 6,
+      "description": "A hazy scene of someone running towards a building with smoke coming out.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20hazy%20scene%20of%20someone%20running%20towards%20a%20building%20with%20smoke%20coming%20out..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 7,
+      "description": "A group of people planting saplings in a barren field with the sun rising.",
+      "mood": "POSITIVE",
+      "num_characters": 6,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20people%20planting%20saplings%20in%20a%20barren%20field%20with%20the%20sun%20rising..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 8,
+      "description": "A lone figure standing at a train station platform with a bag, looking at the tracks.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 1,
+      "action_visible": false,
+      "gender_distribution": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20lone%20figure%20standing%20at%20a%20train%20station%20platform%20with%20a%20bag,%20looking%20at%20the%20tracks..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 9,
+      "description": "Children playing in a flooded street while an adult watches from a distance.",
+      "mood": "POSITIVE",
+      "num_characters": 5,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Children%20playing%20in%20a%20flooded%20street%20while%20an%20adult%20watches%20from%20a%20distance..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 10,
+      "description": "A person in uniform helping an elderly person cross a busy road.",
+      "mood": "POSITIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20in%20uniform%20helping%20an%20elderly%20person%20cross%20a%20busy%20road..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 11,
+      "description": "A blurry scene of someone climbing out of a window at night.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 1,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20blurry%20scene%20of%20someone%20climbing%20out%20of%20a%20window%20at%20night..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 12,
+      "description": "A hazy image of two people carrying a stretcher towards a vehicle.",
+      "mood": "NEGATIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20hazy%20image%20of%20two%20people%20carrying%20a%20stretcher%20towards%20a%20vehicle..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 13,
+      "description": "Silhouettes of people sitting around a table with papers scattered.",
+      "mood": "NEUTRAL",
+      "num_characters": 4,
+      "action_visible": false,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Silhouettes%20of%20people%20sitting%20around%20a%20table%20with%20papers%20scattered..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 14,
+      "description": "A person holding up a trophy or object in a crowd, very blurry.",
+      "mood": "POSITIVE",
+      "num_characters": 5,
+      "action_visible": true,
+      "gender_distribution": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20holding%20up%20a%20trophy%20or%20object%20in%20a%20crowd,%20very%20blurry..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 15,
+      "description": "A person pointing a stick or weapon towards an animal in a forest setting.",
+      "mood": "NEGATIVE",
+      "num_characters": 1,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20pointing%20a%20stick%20or%20weapon%20towards%20an%20animal%20in%20a%20forest%20setting..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 16,
+      "description": "A hazy picture of a vehicle overturned on the side of a road.",
+      "mood": "NEGATIVE",
+      "num_characters": 0,
+      "action_visible": false,
+      "gender_distribution": "None",
+      "image_url": "https://image.pollinations.ai/prompt/A%20hazy%20picture%20of%20a%20vehicle%20overturned%20on%20the%20side%20of%20a%20road..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 17,
+      "description": "Silhouettes of people dancing or celebrating around a fire.",
+      "mood": "POSITIVE",
+      "num_characters": 6,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Silhouettes%20of%20people%20dancing%20or%20celebrating%20around%20a%20fire..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 18,
+      "description": "A blurry image of a person shaking hands with another person across a desk.",
+      "mood": "POSITIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20blurry%20image%20of%20a%20person%20shaking%20hands%20with%20another%20person%20across%20a%20desk..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 19,
+      "description": "A person dragging a heavy sack or body away from a structure.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 1,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20dragging%20a%20heavy%20sack%20or%20body%20away%20from%20a%20structure..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 20,
+      "description": "A group of people standing in a line outside a building holding papers.",
+      "mood": "NEUTRAL",
+      "num_characters": 5,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20people%20standing%20in%20a%20line%20outside%20a%20building%20holding%20papers..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 21,
+      "description": "A hazy image of a person standing on a podium addressing a crowd.",
+      "mood": "POSITIVE",
+      "num_characters": 10,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20hazy%20image%20of%20a%20person%20standing%20on%20a%20podium%20addressing%20a%20crowd..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 22,
+      "description": "Silhouettes of people arguing, with one person raising a hand.",
+      "mood": "NEGATIVE",
+      "num_characters": 3,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/Silhouettes%20of%20people%20arguing,%20with%20one%20person%20raising%20a%20hand..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 23,
+      "description": "A blurry scene of someone pushing a wheelchair in a park.",
+      "mood": "POSITIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20blurry%20scene%20of%20someone%20pushing%20a%20wheelchair%20in%20a%20park..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 24,
+      "description": "A person kneeling beside a fallen tree or structure.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 1,
+      "action_visible": false,
+      "gender_distribution": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20person%20kneeling%20beside%20a%20fallen%20tree%20or%20structure..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 25,
+      "description": "A hazy image of people working in a field with hand tools.",
+      "mood": "NEUTRAL",
+      "num_characters": 4,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20hazy%20image%20of%20people%20working%20in%20a%20field%20with%20hand%20tools..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 26,
+      "description": "A blurry image of a person holding a child's hand walking away.",
+      "mood": "POSITIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20blurry%20image%20of%20a%20person%20holding%20a%20child's%20hand%20walking%20away..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 27,
+      "description": "A scene showing someone handing over an envelope or small packet to another secretly.",
+      "mood": "NEGATIVE",
+      "num_characters": 2,
+      "action_visible": true,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/A%20scene%20showing%20someone%20handing%20over%20an%20envelope%20or%20small%20packet%20to%20another%20secretly..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 28,
+      "description": "Silhouettes of soldiers or people in uniform standing in formation.",
+      "mood": "NEUTRAL",
+      "num_characters": 8,
+      "action_visible": false,
+      "gender_distribution": "Male",
+      "image_url": "https://image.pollinations.ai/prompt/Silhouettes%20of%20soldiers%20or%20people%20in%20uniform%20standing%20in%20formation..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 29,
+      "description": "A blurry image of a person standing on a bridge looking at the water below.",
+      "mood": "AMBIGUOUS",
+      "num_characters": 1,
+      "action_visible": false,
+      "gender_distribution": "Neutral",
+      "image_url": "https://image.pollinations.ai/prompt/A%20blurry%20image%20of%20a%20person%20standing%20on%20a%20bridge%20looking%20at%20the%20water%20below..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    },
+    {
+      "ppdt_id": 30,
+      "description": "A group of people lifting a heavy object together, hazy background.",
+      "mood": "POSITIVE",
+      "num_characters": 4,
+      "action_visible": true,
+      "gender_distribution": "Mixed",
+      "image_url": "https://image.pollinations.ai/prompt/A%20group%20of%20people%20lifting%20a%20heavy%20object%20together,%20hazy%20background..%20hazy%20black%20and%20white%20sketch%20style%20military%20psychology%20test%20picture?width=800&height=600&nologo=true"
+    }
+  ],
+  "gpe_scenarios": [
+    {
+      "gpe_id": 1,
+      "title": "Multi-Crisis GPE â€” Railway Bridge IED",
+      "resources": "Group Leader + 8 students",
+      "time_limit_minutes": 10,
+      "crises": [
+        {
+          "time": "11:30 AM",
+          "description": "Terrorist IED at railway bridge â€” explosive hazard and mass casualties risk.",
+          "priority": 1
+        },
+        {
+          "time": "Within 45 mins",
+          "description": "Severely injured villager with compound fracture bleeding profusely.",
+          "priority": 2
+        },
+        {
+          "time": "Ongoing",
+          "description": "Forest fire threatening nearby tribal settlement.",
+          "priority": 3
+        },
+        {
+          "time": "3:00 PM",
+          "description": "Catch the last bus for the group to return.",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "gpe_id": 2,
+      "title": "Multi-Crisis GPE â€” Flood & Epidemic",
+      "resources": "Group Leader + 10 team members",
+      "time_limit_minutes": 10,
+      "crises": [
+        {
+          "time": "6:00 AM",
+          "description": "Flash floods have submerged a village â€” 50+ people stranded on rooftops.",
+          "priority": 1
+        },
+        {
+          "time": "7:30 AM",
+          "description": "Cholera outbreak reported in relief camp â€” 20 patients critical.",
+          "priority": 2
+        },
+        {
+          "time": "9:00 AM",
+          "description": "Power grid failure â€” hospital backup generator will last only 4 hours.",
+          "priority": 3
+        },
+        {
+          "time": "11:00 AM",
+          "description": "Relief supply trucks stuck at a washed-out bridge 10km away.",
+          "priority": 4
+        }
+      ]
+    },
+    {
+      "gpe_id": 3,
+      "title": "Multi-Crisis GPE â€” Border Incursion",
+      "resources": "Platoon Commander + 12 soldiers + 2 vehicles",
+      "time_limit_minutes": 10,
+      "crises": [
+        {
+          "time": "0200 hrs",
+          "description": "Unidentified armed group spotted crossing the border fence.",
+          "priority": 1
+        },
+        {
+          "time": "0215 hrs",
+          "description": "Communication tower damaged â€” no radio contact with headquarters.",
+          "priority": 2
+        },
+        {
+          "time": "0230 hrs",
+          "description": "One of your soldiers is injured during patrol and needs medical evacuation.",
+          "priority": 3
+        },
+        {
+          "time": "0300 hrs",
+          "description": "Villagers near the border are panicking and attempting to flee towards your post.",
+          "priority": 4
+        }
+      ]
+    }
+  ],
+  "sd_sections": [
+    {
+      "section_id": 1,
+      "label": "Parents' Opinion",
+      "prompt": "What do your parents think about you? Describe their perception of your character, strengths, weaknesses, and their expectations from you.",
+      "time_minutes": 3
+    },
+    {
+      "section_id": 2,
+      "label": "Teachers' Opinion",
+      "prompt": "How do your teachers perceive you? Describe their view of your academic performance, behavior, leadership, and areas they think you need improvement.",
+      "time_minutes": 3
+    },
+    {
+      "section_id": 3,
+      "label": "Friends' Opinion",
+      "prompt": "What do your friends think about you? Describe their perception of your personality, your role in the group, and what they appreciate and criticize about you.",
+      "time_minutes": 3
+    },
+    {
+      "section_id": 4,
+      "label": "Self Assessment",
+      "prompt": "What is your own honest assessment of yourself? List your genuine strengths with examples and genuine weaknesses with what you are doing to fix them.",
+      "time_minutes": 3
+    },
+    {
+      "section_id": 5,
+      "label": "Officer Vision",
+      "prompt": "What kind of officer do you want to become? Be specific about the qualities you want to embody, the branch you prefer, and your long-term vision for your service.",
+      "time_minutes": 3
+    }
+  ]
+}

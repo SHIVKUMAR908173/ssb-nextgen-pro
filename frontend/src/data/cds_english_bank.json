@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "exam": "CDS",
+    "paper": "English",
+    "total_questions": 50,
+    "source": "UPSC Previous Year Papers",
+    "difficulty_distribution": {
+      "easy": "30%",
+      "medium": "50%",
+      "hard": "20%"
+    }
+  },
+  "questions": [
+    {
+      "id": "CDS-E-001",
+      "topic": "Grammar",
+      "subtopic": "Spotting Errors",
+      "difficulty": "medium",
+      "question_text": "Identify the error in the sentence: Neither of the two brothers (A) / are sure (B) / of passing the exam. (C) / No error (D)",
+      "options": {
+        "A": "Part A",
+        "B": "Part B",
+        "C": "Part C",
+        "D": "No error"
+      },
+      "correct_option": "B",
+      "explanation": "The subject 'Neither of' takes a singular verb. Therefore, 'are' should be replaced by 'is'.",
+      "tags": [
+        "Grammar",
+        "Subject-Verb Agreement"
+      ]
+    },
+    {
+      "id": "CDS-E-002",
+      "topic": "Vocabulary",
+      "subtopic": "Synonyms",
+      "difficulty": "hard",
+      "question_text": "Choose the correct synonym for the word: 'INDEFATIGABLE'",
+      "options": {
+        "A": "Tireless",
+        "B": "Defeated",
+        "C": "Incompetent",
+        "D": "Arrogant"
+      },
+      "correct_option": "A",
+      "explanation": "Indefatigable means persisting tirelessly.",
+      "tags": [
+        "Vocabulary",
+        "Synonyms"
+      ]
+    },
+    {
+      "id": "CDS-E-003",
+      "topic": "Idioms",
+      "subtopic": "Phrases",
+      "difficulty": "medium",
+      "question_text": "What does the idiom 'To bite the bullet' mean?",
+      "options": {
+        "A": "To get angry and start a fight",
+        "B": "To face a difficult situation courageously",
+        "C": "To surrender completely",
+        "D": "To get seriously injured"
+      },
+      "correct_option": "B",
+      "explanation": "To bite the bullet means to decide to do something difficult or unpleasant that one has been putting off or hesitating over.",
+      "tags": [
+        "Idioms",
+        "Phrases"
+      ]
+    },
+    {
+      "id": "CDS-E-004",
+      "topic": "Vocabulary",
+      "subtopic": "Antonyms",
+      "difficulty": "medium",
+      "question_text": "Choose the word opposite in meaning to: 'LUCID'",
+      "options": {
+        "A": "Clear",
+        "B": "Transparent",
+        "C": "Obscure",
+        "D": "Logical"
+      },
+      "correct_option": "C",
+      "explanation": "Lucid means expressed clearly or easy to understand. Obscure means not discovered or known about; uncertain or unclear.",
+      "tags": [
+        "Vocabulary",
+        "Antonyms"
+      ]
+    },
+    {
+      "id": "CDS-E-005",
+      "topic": "Grammar",
+      "subtopic": "Prepositions",
+      "difficulty": "easy",
+      "question_text": "Fill in the blank: He is addicted _____ smoking.",
+      "options": {
+        "A": "with",
+        "B": "to",
+        "C": "for",
+        "D": "in"
+      },
+      "correct_option": "B",
+      "explanation": "The correct preposition to follow 'addicted' is 'to'.",
+      "tags": [
+        "Grammar",
+        "Prepositions"
+      ]
+    },
+    {
+      "id": "CDS-E-006",
+      "topic": "Comprehension",
+      "subtopic": "Sentence Ordering",
+      "difficulty": "hard",
+      "question_text": "Arrange the parts (P, Q, R, S) to form a meaningful sentence: \nP: to protect the environment \nQ: it is the duty \nR: of every citizen \nS: from degradation",
+      "options": {
+        "A": "Q R P S",
+        "B": "P Q R S",
+        "C": "R Q S P",
+        "D": "Q P R S"
+      },
+      "correct_option": "A",
+      "explanation": "The correct grammatical order is: 'It is the duty (Q) of every citizen (R) to protect the environment (P) from degradation (S).'",
+      "tags": [
+        "Sentence Ordering",
+        "Grammar"
+      ]
+    },
+    {
+      "id": "CDS-E-007",
+      "topic": "Vocabulary",
+      "subtopic": "One Word Substitution",
+      "difficulty": "medium",
+      "question_text": "Give one word for: 'A person who hates mankind.'",
+      "options": {
+        "A": "Philanthropist",
+        "B": "Misanthrope",
+        "C": "Misogynist",
+        "D": "Anthropologist"
+      },
+      "correct_option": "B",
+      "explanation": "A misanthrope is a person who dislikes humankind and avoids human society. (Philanthropist loves mankind, Misogynist hates women).",
+      "tags": [
+        "One Word Substitution",
+        "Vocabulary"
+      ]
+    },
+    {
+      "id": "CDS-E-008",
+      "topic": "Grammar",
+      "subtopic": "Tenses",
+      "difficulty": "medium",
+      "question_text": "Fill in the blank: If I _____ you, I would not accept this offer.",
+      "options": {
+        "A": "was",
+        "B": "were",
+        "C": "am",
+        "D": "had been"
+      },
+      "correct_option": "B",
+      "explanation": "In hypothetical or conditional sentences indicating unreality, 'were' is used with all subjects (If I were, If he were).",
+      "tags": [
+        "Grammar",
+        "Conditionals"
+      ]
+    },
+    {
+      "id": "CDS-E-009",
+      "topic": "Vocabulary",
+      "subtopic": "Spelling",
+      "difficulty": "easy",
+      "question_text": "Choose the correctly spelt word:",
+      "options": {
+        "A": "Accomodation",
+        "B": "Accommodation",
+        "C": "Acommodation",
+        "D": "Acomodation"
+      },
+      "correct_option": "B",
+      "explanation": "The correct spelling is Accommodation (two c's and two m's).",
+      "tags": [
+        "Spelling",
+        "Vocabulary"
+      ]
+    },
+    {
+      "id": "CDS-E-010",
+      "topic": "Grammar",
+      "subtopic": "Active/Passive Voice",
+      "difficulty": "medium",
+      "question_text": "Change the voice: 'The teacher praised the student.'",
+      "options": {
+        "A": "The student has been praised by the teacher.",
+        "B": "The student is praised by the teacher.",
+        "C": "The student was praised by the teacher.",
+        "D": "The student had been praised by the teacher."
+      },
+      "correct_option": "C",
+      "explanation": "Simple past active ('praised') changes to simple past passive ('was/were praised').",
+      "tags": [
+        "Grammar",
+        "Voice"
+      ]
+    }
+  ]
+}

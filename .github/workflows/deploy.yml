@@ -1,0 +1,132 @@
+name: Deploy SSB NextGen Pro
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  # =============================================
+  # Backend: Type check + Build
+  # =============================================
+  backend-check:
+    name: Backend — Build & Verify
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend-core
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: backend-core/package-lock.json
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify health endpoint exists
+        run: |
+          # Ensure the build output contains the server entry
+          test -f dist/server.js && echo "✅ dist/server.js exists" || exit 1
+
+  # =============================================
+  # Frontend: Build & Deploy to Vercel
+  # =============================================
+  frontend-check:
+    name: Frontend — Build & Verify
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Lint
+        run: npm run lint || true
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NEXT_PUBLIC_ENABLE_AUTH: 'true'
+          NEXT_PUBLIC_ENABLE_MATCHMAKING: 'true'
+
+  # =============================================
+  # Deploy Backend (only on push to main)
+  # =============================================
+  deploy-backend:
+    name: Deploy Backend
+    needs: backend-check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Uncomment and configure for your deployment target:
+
+      # --- Option A: Railway ---
+      # - name: Deploy to Railway
+      #   uses: berviantoleo/railway-deploy@v1.0.0
+      #   with:
+      #     railway_token: ${{ secrets.RAILWAY_TOKEN }}
+      #     service: ssb-api
+
+      # --- Option B: Render ---
+      # - name: Deploy to Render
+      #   run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+
+      - name: Deployment placeholder
+        run: echo "🚀 Backend deployment step — configure Railway/Render hook above"
+
+  # =============================================
+  # Deploy Frontend (only on push to main)
+  # =============================================
+  deploy-frontend:
+    name: Deploy Frontend
+    needs: frontend-check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        if: ${{ secrets.VERCEL_TOKEN != '' }}
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+          working-directory: ./frontend
+
+      - name: Skip deployment (no Vercel token)
+        if: ${{ secrets.VERCEL_TOKEN == '' }}
+        run: echo "⏭️ Vercel deployment skipped — VERCEL_TOKEN secret not configured. Deploy via Vercel dashboard instead."

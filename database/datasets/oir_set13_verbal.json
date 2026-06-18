@@ -1,0 +1,512 @@
+[
+  {
+    "question_number": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Statement 1: Education is the key to success because it provides knowledge and skills.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Education is universally recognized as a tool for progress."
+  },
+  {
+    "question_number": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Statement 2: Education is the key to success because it provides knowledge and skills.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Education is universally recognized as a tool for progress."
+  },
+  {
+    "question_number": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "Statement 3: Education is the key to success because it provides knowledge and skills.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Education is universally recognized as a tool for progress."
+  },
+  {
+    "question_number": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "Statement 4: Education is the key to success because it provides knowledge and skills.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Education is universally recognized as a tool for progress."
+  },
+  {
+    "question_number": 5,
+    "category": "Statement Justification & Logic",
+    "question_text": "Statement 5: Education is the key to success because it provides knowledge and skills.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Education is universally recognized as a tool for progress."
+  },
+  {
+    "question_number": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: many too spoil cooks broth the",
+    "options": [],
+    "correct_option": "h",
+    "explanation": "Sentence: 'Too many cooks spoil the broth'. Last letter 'h'."
+  },
+  {
+    "question_number": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED: The loud silent bell rang at noon.",
+    "options": [],
+    "correct_option": "s",
+    "explanation": "Word to omit is 'silent'. First letter 's'."
+  },
+  {
+    "question_number": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: many too spoil cooks broth the",
+    "options": [],
+    "correct_option": "h",
+    "explanation": "Sentence: 'Too many cooks spoil the broth'. Last letter 'h'."
+  },
+  {
+    "question_number": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: many too spoil cooks broth the",
+    "options": [],
+    "correct_option": "h",
+    "explanation": "Sentence: 'Too many cooks spoil the broth'. Last letter 'h'."
+  },
+  {
+    "question_number": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: many too spoil cooks broth the",
+    "options": [],
+    "correct_option": "h",
+    "explanation": "Sentence: 'Too many cooks spoil the broth'. Last letter 'h'."
+  },
+  {
+    "question_number": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Doctor is to Hospital as Teacher is to __________.",
+    "options": [
+      "(1) Class",
+      "(2) School",
+      "(3) Student",
+      "(4) Book",
+      "(5) Chalk"
+    ],
+    "correct_option": "2",
+    "explanation": "Workplace: Doctor/Hospital, Teacher/School."
+  },
+  {
+    "question_number": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Lion is to Pride as Wolf is to __________.",
+    "options": [
+      "(1) Pack",
+      "(2) Herd",
+      "(3) Den",
+      "(4) Cub",
+      "(5) Forest"
+    ],
+    "correct_option": "1",
+    "explanation": "Group name: Lion/Pride, Wolf/Pack."
+  },
+  {
+    "question_number": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Lion is to Pride as Wolf is to __________.",
+    "options": [
+      "(1) Pack",
+      "(2) Herd",
+      "(3) Den",
+      "(4) Cub",
+      "(5) Forest"
+    ],
+    "correct_option": "1",
+    "explanation": "Group name: Lion/Pride, Wolf/Pack."
+  },
+  {
+    "question_number": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Day is to Night as Light is to __________.",
+    "options": [
+      "(1) Bright",
+      "(2) Sun",
+      "(3) Dark",
+      "(4) Bulb",
+      "(5) Heavy"
+    ],
+    "correct_option": "3",
+    "explanation": "Opposites: Day/Night, Light/Dark."
+  },
+  {
+    "question_number": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Day is to Night as Light is to __________.",
+    "options": [
+      "(1) Bright",
+      "(2) Sun",
+      "(3) Dark",
+      "(4) Bulb",
+      "(5) Heavy"
+    ],
+    "correct_option": "3",
+    "explanation": "Opposites: Day/Night, Light/Dark."
+  },
+  {
+    "question_number": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Lion is to Pride as Wolf is to __________.",
+    "options": [
+      "(1) Pack",
+      "(2) Herd",
+      "(3) Den",
+      "(4) Cub",
+      "(5) Forest"
+    ],
+    "correct_option": "1",
+    "explanation": "Group name: Lion/Pride, Wolf/Pack."
+  },
+  {
+    "question_number": 17,
+    "category": "Verbal Analogies",
+    "question_text": "Knife is to Cut as Pen is to __________.",
+    "options": [
+      "(1) Ink",
+      "(2) Paper",
+      "(3) Write",
+      "(4) Sharp",
+      "(5) Draw"
+    ],
+    "correct_option": "3",
+    "explanation": "Function: Knife/Cut, Pen/Write."
+  },
+  {
+    "question_number": 18,
+    "category": "Verbal Analogies",
+    "question_text": "Car is to Road as Boat is to __________.",
+    "options": [
+      "(1) Wheel",
+      "(2) Water",
+      "(3) Sail",
+      "(4) Sink",
+      "(5) Ocean"
+    ],
+    "correct_option": "2",
+    "explanation": "Travel surface: Car/Road, Boat/Water."
+  },
+  {
+    "question_number": 19,
+    "category": "Verbal Analogies",
+    "question_text": "Day is to Night as Light is to __________.",
+    "options": [
+      "(1) Bright",
+      "(2) Sun",
+      "(3) Dark",
+      "(4) Bulb",
+      "(5) Heavy"
+    ],
+    "correct_option": "3",
+    "explanation": "Opposites: Day/Night, Light/Dark."
+  },
+  {
+    "question_number": 20,
+    "category": "Verbal Analogies",
+    "question_text": "Day is to Night as Light is to __________.",
+    "options": [
+      "(1) Bright",
+      "(2) Sun",
+      "(3) Dark",
+      "(4) Bulb",
+      "(5) Heavy"
+    ],
+    "correct_option": "3",
+    "explanation": "Opposites: Day/Night, Light/Dark."
+  },
+  {
+    "question_number": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      "(1) Square",
+      "(2) Triangle",
+      "(3) Circle",
+      "(4) Sphere",
+      "(5) Pentagon"
+    ],
+    "correct_option": "4",
+    "explanation": "Sphere is 3D, others are 2D shapes."
+  },
+  {
+    "question_number": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      "(1) Copper",
+      "(2) Silver",
+      "(3) Gold",
+      "(4) Plastic",
+      "(5) Iron"
+    ],
+    "correct_option": "4",
+    "explanation": "Plastic is a polymer, others are metals."
+  },
+  {
+    "question_number": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      "(1) Copper",
+      "(2) Silver",
+      "(3) Gold",
+      "(4) Plastic",
+      "(5) Iron"
+    ],
+    "correct_option": "4",
+    "explanation": "Plastic is a polymer, others are metals."
+  },
+  {
+    "question_number": 24,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      "(1) Square",
+      "(2) Triangle",
+      "(3) Circle",
+      "(4) Sphere",
+      "(5) Pentagon"
+    ],
+    "correct_option": "4",
+    "explanation": "Sphere is 3D, others are 2D shapes."
+  },
+  {
+    "question_number": 25,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      "(1) Apple",
+      "(2) Mango",
+      "(3) Rose",
+      "(4) Banana",
+      "(5) Orange"
+    ],
+    "correct_option": "3",
+    "explanation": "Rose is a flower, others are fruits."
+  },
+  {
+    "question_number": 26,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 'DOG' is coded as 26, what is 'CAT' coded as? (A=1, B=2...)",
+    "options": [
+      "(1) 22",
+      "(2) 23",
+      "(3) 24",
+      "(4) 25"
+    ],
+    "correct_option": "3",
+    "explanation": "C=3, A=1, T=20. 3+1+20 = 24."
+  },
+  {
+    "question_number": 27,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 'DOG' is coded as 26, what is 'CAT' coded as? (A=1, B=2...)",
+    "options": [
+      "(1) 22",
+      "(2) 23",
+      "(3) 24",
+      "(4) 25"
+    ],
+    "correct_option": "3",
+    "explanation": "C=3, A=1, T=20. 3+1+20 = 24."
+  },
+  {
+    "question_number": 28,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are there in the sequence which are preceded by 3? 3 7 2 3 7 7 3 5 7",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "2",
+    "explanation": "Sequence '3 7' appears twice."
+  },
+  {
+    "question_number": 29,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are there in the sequence which are preceded by 3? 3 7 2 3 7 7 3 5 7",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "2",
+    "explanation": "Sequence '3 7' appears twice."
+  },
+  {
+    "question_number": 30,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 'DOG' is coded as 26, what is 'CAT' coded as? (A=1, B=2...)",
+    "options": [
+      "(1) 22",
+      "(2) 23",
+      "(3) 24",
+      "(4) 25"
+    ],
+    "correct_option": "3",
+    "explanation": "C=3, A=1, T=20. 3+1+20 = 24."
+  },
+  {
+    "question_number": 31,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 5 pencils cost 25 rupees, what is the cost of 8 pencils?",
+    "options": [
+      "(1) 35",
+      "(2) 40",
+      "(3) 45",
+      "(4) 50"
+    ],
+    "correct_option": "2",
+    "explanation": "1 pencil costs 5. 8 * 5 = 40."
+  },
+  {
+    "question_number": 32,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 'DOG' is coded as 26, what is 'CAT' coded as? (A=1, B=2...)",
+    "options": [
+      "(1) 22",
+      "(2) 23",
+      "(3) 24",
+      "(4) 25"
+    ],
+    "correct_option": "3",
+    "explanation": "C=3, A=1, T=20. 3+1+20 = 24."
+  },
+  {
+    "question_number": 33,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 'DOG' is coded as 26, what is 'CAT' coded as? (A=1, B=2...)",
+    "options": [
+      "(1) 22",
+      "(2) 23",
+      "(3) 24",
+      "(4) 25"
+    ],
+    "correct_option": "3",
+    "explanation": "C=3, A=1, T=20. 3+1+20 = 24."
+  },
+  {
+    "question_number": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are there in the sequence which are preceded by 3? 3 7 2 3 7 7 3 5 7",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "2",
+    "explanation": "Sequence '3 7' appears twice."
+  },
+  {
+    "question_number": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are there in the sequence which are preceded by 3? 3 7 2 3 7 7 3 5 7",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "2",
+    "explanation": "Sequence '3 7' appears twice."
+  },
+  {
+    "question_number": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 5 pencils cost 25 rupees, what is the cost of 8 pencils?",
+    "options": [
+      "(1) 35",
+      "(2) 40",
+      "(3) 45",
+      "(4) 50"
+    ],
+    "correct_option": "2",
+    "explanation": "1 pencil costs 5. 8 * 5 = 40."
+  },
+  {
+    "question_number": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 5 pencils cost 25 rupees, what is the cost of 8 pencils?",
+    "options": [
+      "(1) 35",
+      "(2) 40",
+      "(3) 45",
+      "(4) 50"
+    ],
+    "correct_option": "2",
+    "explanation": "1 pencil costs 5. 8 * 5 = 40."
+  },
+  {
+    "question_number": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are there in the sequence which are preceded by 3? 3 7 2 3 7 7 3 5 7",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "2",
+    "explanation": "Sequence '3 7' appears twice."
+  },
+  {
+    "question_number": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 5 pencils cost 25 rupees, what is the cost of 8 pencils?",
+    "options": [
+      "(1) 35",
+      "(2) 40",
+      "(3) 45",
+      "(4) 50"
+    ],
+    "correct_option": "2",
+    "explanation": "1 pencil costs 5. 8 * 5 = 40."
+  },
+  {
+    "question_number": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are there in the sequence which are preceded by 3? 3 7 2 3 7 7 3 5 7",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "2",
+    "explanation": "Sequence '3 7' appears twice."
+  }
+]

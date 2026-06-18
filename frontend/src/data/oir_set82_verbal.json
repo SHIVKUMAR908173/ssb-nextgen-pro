@@ -1,0 +1,572 @@
+[
+  {
+    "id": "82_1",
+    "set_id": 82,
+    "question_number": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nOil floats on top of liquid water because it has a lower density than water.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True."
+  },
+  {
+    "id": "82_2",
+    "set_id": 82,
+    "question_number": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nStaring at a photograph of the sun for exactly one hour will instantly cure any form of visual impairment.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "4",
+    "explanation": "Absurd."
+  },
+  {
+    "id": "82_3",
+    "set_id": 82,
+    "question_number": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nVehicle tires are made of vulcanized rubber because:-",
+    "options": [
+      "(1) Rubber makes the vehicle completely immune to lightning strikes.",
+      "(2) It provides essential friction/grip on the road and absorbs mechanical shocks.",
+      "(3) Rubber is the only material that can be painted black economically.",
+      "(4) It naturally repels water to keep the car clean during rainstorms."
+    ],
+    "correct_option": "2",
+    "explanation": "It provides essential friction/grip on the road and absorbs mechanical shocks."
+  },
+  {
+    "id": "82_4",
+    "set_id": 82,
+    "question_number": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nMassive steel cargo ships are able to float on water because:-",
+    "options": [
+      "(1) They are filled with helium balloons in the cargo hold.",
+      "(2) The engine's heat creates an updraft that lifts the hull.",
+      "(3) They displace a volume of water that weighs more than the ship itself.",
+      "(4) The saltwater magnetically repels the steel hull away from the ocean floor."
+    ],
+    "correct_option": "3",
+    "explanation": "They displace a volume of water that weighs more than the ship itself (Archimedes' displacement/buoyancy principle)."
+  },
+  {
+    "id": "82_5",
+    "set_id": 82,
+    "question_number": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\ntime stitch a saves nine in",
+    "options": [],
+    "correct_option": "E",
+    "explanation": "A stitch in time saves nine. Last letter of 'nine' is E."
+  },
+  {
+    "id": "82_6",
+    "set_id": 82,
+    "question_number": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nspilled cry over milk don't",
+    "options": [],
+    "correct_option": "K",
+    "explanation": "Don't cry over spilled milk. Last letter of 'milk' is K."
+  },
+  {
+    "id": "82_7",
+    "set_id": 82,
+    "question_number": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe quick slow brown fox jumped gracefully over the lazy dog.",
+    "options": [],
+    "correct_option": "S",
+    "explanation": "Omitted word is 'slow' (contradicts 'quick'). First letter is S."
+  },
+  {
+    "id": "82_8",
+    "set_id": 82,
+    "question_number": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe bright dark sun shone intensely in the clear summer sky.",
+    "options": [],
+    "correct_option": "K",
+    "explanation": "Omitted word is 'dark' (contradicts 'bright'). Last letter is K."
+  },
+  {
+    "id": "82_9",
+    "set_id": 82,
+    "question_number": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nI C R H A is a piece of furniture designed for a single person to sit on.",
+    "options": [],
+    "correct_option": "H",
+    "explanation": "The word is CHAIR. Second letter is H."
+  },
+  {
+    "id": "82_10",
+    "set_id": 82,
+    "question_number": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nB T E A L is a piece of furniture with a flat top and one or more legs.",
+    "options": [],
+    "correct_option": "A",
+    "explanation": "The word is TABLE. Second letter is A."
+  },
+  {
+    "id": "82_11",
+    "set_id": 82,
+    "question_number": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Hot is to Cold as High is to __________.",
+    "options": [
+      "(1) Sky",
+      "(2) Tall",
+      "(3) Low",
+      "(4) Mountain",
+      "(5) Peak"
+    ],
+    "correct_option": "3",
+    "explanation": "Hot and Cold are antonyms; High and Low are antonyms."
+  },
+  {
+    "id": "82_12",
+    "set_id": 82,
+    "question_number": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Pen is to Paper as Chalk is to __________.",
+    "options": [
+      "(1) Teacher",
+      "(2) Blackboard",
+      "(3) White",
+      "(4) Dust",
+      "(5) Write"
+    ],
+    "correct_option": "2",
+    "explanation": "A pen writes on paper; chalk writes on a blackboard."
+  },
+  {
+    "id": "82_13",
+    "set_id": 82,
+    "question_number": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Doctor is to Disease as Teacher is to __________.",
+    "options": [
+      "(1) Student",
+      "(2) School",
+      "(3) Ignorance",
+      "(4) Book",
+      "(5) Class"
+    ],
+    "correct_option": "3",
+    "explanation": "A doctor treats/cures disease; a teacher treats/cures ignorance."
+  },
+  {
+    "id": "82_14",
+    "set_id": 82,
+    "question_number": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Bird is to Nest as Spider is to __________.",
+    "options": [
+      "(1) Web",
+      "(2) Bug",
+      "(3) Bite",
+      "(4) Tree",
+      "(5) Silk"
+    ],
+    "correct_option": "1",
+    "explanation": "A bird lives in a nest; a spider lives in a web."
+  },
+  {
+    "id": "82_15",
+    "set_id": 82,
+    "question_number": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Thirst is to Water as Hunger is to __________.",
+    "options": [
+      "(1) Starve",
+      "(2) Cook",
+      "(3) Eat",
+      "(4) Plate",
+      "(5) Food"
+    ],
+    "correct_option": "5",
+    "explanation": "Thirst is relieved by water; hunger is relieved by food."
+  },
+  {
+    "id": "82_16",
+    "set_id": 82,
+    "question_number": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Eye is to Blind as Ear is to __________.",
+    "options": [
+      "(1) Sound",
+      "(2) Deaf",
+      "(3) Listen",
+      "(4) Hear",
+      "(5) Drum"
+    ],
+    "correct_option": "2",
+    "explanation": "A person without sight is Blind (eye); a person without hearing is Deaf (ear)."
+  },
+  {
+    "id": "82_17",
+    "set_id": 82,
+    "question_number": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical biological sequence?\n(1) Tree (2) Furniture (3) Seed (4) Wood (5) Sapling",
+    "options": [
+      "(1) Tree",
+      "(2) Furniture",
+      "(3) Seed",
+      "(4) Wood",
+      "(5) Sapling"
+    ],
+    "correct_option": "1",
+    "explanation": "Logical order: Seed, Sapling, Tree, Wood, Furniture. The middle (3rd) item is Tree."
+  },
+  {
+    "id": "82_18",
+    "set_id": 82,
+    "question_number": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of structural size (smallest to largest)?\n(1) Paragraph (2) Book (3) Word (4) Chapter (5) Sentence",
+    "options": [
+      "(1) Paragraph",
+      "(2) Book",
+      "(3) Word",
+      "(4) Chapter",
+      "(5) Sentence"
+    ],
+    "correct_option": "1",
+    "explanation": "Order: Word, Sentence, Paragraph, Chapter, Book. The middle (3rd) item is Paragraph."
+  },
+  {
+    "id": "82_19",
+    "set_id": 82,
+    "question_number": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Violet",
+      "(2) Blue",
+      "(3) Black",
+      "(4) Green",
+      "(5) Yellow"
+    ],
+    "correct_option": "3",
+    "explanation": "Black is an absence of light/a shade, not a color of the visible spectrum/rainbow; the others are spectral colors."
+  },
+  {
+    "id": "82_20",
+    "set_id": 82,
+    "question_number": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Car",
+      "(2) Motorcycle",
+      "(3) Airplane",
+      "(4) Bus",
+      "(5) Truck"
+    ],
+    "correct_option": "3",
+    "explanation": "Airplane travels by air; the others are road-based vehicles."
+  },
+  {
+    "id": "82_21",
+    "set_id": 82,
+    "question_number": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Algebra",
+      "(2) Geometry",
+      "(3) Calculus",
+      "(4) Biology",
+      "(5) Trigonometry"
+    ],
+    "correct_option": "4",
+    "explanation": "Biology is a natural science; the others are all branches of mathematics."
+  },
+  {
+    "id": "82_22",
+    "set_id": 82,
+    "question_number": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Happy",
+      "(2) Sad",
+      "(3) Angry",
+      "(4) Fearful",
+      "(5) Tall"
+    ],
+    "correct_option": "5",
+    "explanation": "Tall is a physical/dimensional trait; the others are all emotions."
+  },
+  {
+    "id": "82_23",
+    "set_id": 82,
+    "question_number": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Copper",
+      "(2) Iron",
+      "(3) Silver",
+      "(4) Wood",
+      "(5) Gold"
+    ],
+    "correct_option": "4",
+    "explanation": "Wood is an organic material; the others are metals."
+  },
+  {
+    "id": "82_24",
+    "set_id": 82,
+    "question_number": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Magic (2) Magnet (3) Master (4) Matter",
+    "options": [
+      "(1) Magic",
+      "(2) Magnet",
+      "(3) Master",
+      "(4) Matter"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Magic, Magnet, Master, Matter. Last is Matter."
+  },
+  {
+    "id": "82_25",
+    "set_id": 82,
+    "question_number": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Paint (2) Paper (3) Panel (4) Panic",
+    "options": [
+      "(1) Paint",
+      "(2) Paper",
+      "(3) Panel",
+      "(4) Panic"
+    ],
+    "correct_option": "2",
+    "explanation": "Alphabetical order: Paint, Panel, Panic, Paper. Last is Paper."
+  },
+  {
+    "id": "82_26",
+    "set_id": 82,
+    "question_number": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Sail (2) Salt (3) Same (4) Sand",
+    "options": [
+      "(1) Sail",
+      "(2) Salt",
+      "(3) Same",
+      "(4) Sand"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Sail, Salt, Same, Sand. Last is Sand."
+  },
+  {
+    "id": "82_27",
+    "set_id": 82,
+    "question_number": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Tale (2) Talk (3) Tall (4) Tame",
+    "options": [
+      "(1) Tale",
+      "(2) Talk",
+      "(3) Tall",
+      "(4) Tame"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Tale, Talk, Tall, Tame. Last is Tame."
+  },
+  {
+    "id": "82_28",
+    "set_id": 82,
+    "question_number": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Vast (2) Vase (3) Vary (4) Value",
+    "options": [
+      "(1) Vast",
+      "(2) Vase",
+      "(3) Vary",
+      "(4) Value"
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical order: Value, Vary, Vase, Vast. Last is Vast."
+  },
+  {
+    "id": "82_29",
+    "set_id": 82,
+    "question_number": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nB, E, I, N, T, _______, _______.",
+    "options": [],
+    "correct_option": "A, I",
+    "explanation": "The gap between letters increases by 1 each step: +3, +4, +5, +6, +7, +8. T(20)+7=A(1, wraps), A(1)+8=I(9)."
+  },
+  {
+    "id": "82_30",
+    "set_id": 82,
+    "question_number": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n2, 4, 8, 16, 32, _______, _______.",
+    "options": [],
+    "correct_option": "64, 128",
+    "explanation": "Multiply by 2 at each step."
+  },
+  {
+    "id": "82_31",
+    "set_id": 82,
+    "question_number": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n50, 45, 40, 35, 30, _______, _______.",
+    "options": [],
+    "correct_option": "25, 20",
+    "explanation": "Subtract 5 at each step."
+  },
+  {
+    "id": "82_32",
+    "set_id": 82,
+    "question_number": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?\n(1) BDF (2) HJL (3) NPR (4) TVX (5) ACE",
+    "options": [
+      "(1) BDF",
+      "(2) HJL",
+      "(3) NPR",
+      "(4) TVX",
+      "(5) ACE"
+    ],
+    "correct_option": "5",
+    "explanation": "ACE consists of odd-positioned letters (1, 3, 5). The others (BDF, HJL, NPR, TVX) all consist of consecutively skipped even-positioned letters."
+  },
+  {
+    "id": "82_33",
+    "set_id": 82,
+    "question_number": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?\n(1) 4 (2) 16 (3) 36 (4) 49 (5) 64",
+    "options": [
+      "(1) 4",
+      "(2) 16",
+      "(3) 36",
+      "(4) 49",
+      "(5) 64"
+    ],
+    "correct_option": "4",
+    "explanation": "49 is the square of an odd number (7²); the others are squares of even numbers: 2², 4², 6², 8²."
+  },
+  {
+    "id": "82_34",
+    "set_id": 82,
+    "question_number": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 7's are immediately followed by a 6 in the following sequence?\n7 6 4 7 6 6 7 6 9 7 6 2 7",
+    "options": [
+      "(1) 2",
+      "(2) 3",
+      "(3) 4",
+      "(4) 5"
+    ],
+    "correct_option": "3",
+    "explanation": "The sequence '7 6' appears at positions (1,2), (4,5), (7,8), (10,11) — 4 times."
+  },
+  {
+    "id": "82_35",
+    "set_id": 82,
+    "question_number": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 4 books cost 120 rupees, what is the cost of 9 books?",
+    "options": [
+      "(1) 240",
+      "(2) 270",
+      "(3) 300",
+      "(4) 330"
+    ],
+    "correct_option": "2",
+    "explanation": "1 book = 30 Rs. 9 x 30 = 270."
+  },
+  {
+    "id": "82_36",
+    "set_id": 82,
+    "question_number": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A woman walks 10 meters South, turns right and walks 10 meters, then turns right again and walks 10 meters. How far is she from her starting point?",
+    "options": [
+      "(1) 0 meters",
+      "(2) 10 meters",
+      "(3) 20 meters",
+      "(4) 30 meters"
+    ],
+    "correct_option": "2",
+    "explanation": "South 10m -> turn right (face West) -> West 10m -> turn right (face North) -> North 10m. She finishes 10m West of her start, so she is 10 meters away."
+  },
+  {
+    "id": "82_37",
+    "set_id": 82,
+    "question_number": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a man, a woman says, \"He is the son of my father's only son.\" How is the man related to the woman?",
+    "options": [
+      "(1) Brother",
+      "(2) Son",
+      "(3) Nephew",
+      "(4) Uncle"
+    ],
+    "correct_option": "3",
+    "explanation": "My father's only son is her brother. Her brother's son is her Nephew."
+  },
+  {
+    "id": "82_38",
+    "set_id": 82,
+    "question_number": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"CAT\" is coded as 24, and \"DOG\" is coded as 26, how is the word \"PIG\" coded? (A=1, B=2...)",
+    "options": [
+      "(1) 30",
+      "(2) 32",
+      "(3) 34",
+      "(4) 36"
+    ],
+    "correct_option": "2",
+    "explanation": "Sum of alphabetical positions: P=16, I=9, G=7. 16+9+7 = 32."
+  },
+  {
+    "id": "82_39",
+    "set_id": 82,
+    "question_number": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 3rd of a month falls on a Tuesday, what day of the week will the 24th of the same month be?",
+    "options": [
+      "(1) Monday",
+      "(2) Tuesday",
+      "(3) Wednesday",
+      "(4) Thursday"
+    ],
+    "correct_option": "2",
+    "explanation": "The difference is 24 - 3 = 21 days = exactly 3 full weeks. The day remains the same: Tuesday."
+  },
+  {
+    "id": "82_40",
+    "set_id": 82,
+    "question_number": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      "(1) 1/3",
+      "(2) 2/5",
+      "(3) 3/7",
+      "(4) 4/9"
+    ],
+    "correct_option": "4",
+    "explanation": "1/3≈0.333, 2/5=0.400, 3/7≈0.428, 4/9≈0.444. The largest is 4/9."
+  }
+]

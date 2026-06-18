@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "category": "Figure Matrix (Group A vs Group B)",
+    "question_text": "WHICH ONE OF THE FOLLOWING CUBES CAN POSSIBLY BELONG TO GROUP A?",
+    "reference_figures": [
+      {
+        "label": "Group A Examples",
+        "svg": "<svg viewBox='0 0 200 100'><path d='M20 40 L50 40 L60 30 L30 30 Z M20 40 L20 70 L50 70 L50 40 M50 70 L60 60 L60 30' fill='none' stroke='black' stroke-width='2'/><text x='32' y='60' font-size='12'>LL</text><path d='M120 40 L150 40 L160 30 L130 30 Z M120 40 L120 70 L150 70 L150 40 M150 70 L160 60 L160 30' fill='none' stroke='black' stroke-width='2'/><text x='132' y='60' font-size='12'>MM</text></svg>"
+      },
+      {
+        "label": "Group B Examples",
+        "svg": "<svg viewBox='0 0 200 100'><path d='M20 40 L50 40 L60 30 L30 30 Z M20 40 L20 70 L50 70 L50 40 M50 70 L60 60 L60 30' fill='none' stroke='black' stroke-width='2'/><text x='32' y='60' font-size='12'>33</text><path d='M120 40 L150 40 L160 30 L130 30 Z M120 40 L120 70 L150 70 L150 40 M150 70 L160 60 L160 30' fill='none' stroke='black' stroke-width='2'/><text x='132' y='60' font-size='12'>44</text></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='42' y='60' font-size='12'>55</text></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='42' y='60' font-size='12'>NN</text></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='42' y='60' font-size='12'>++</text></svg>"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Group A contains double-letter symbols. Group B contains double-number symbols. Option 2 matches the Group A pattern."
+  },
+  {
+    "id": 2,
+    "category": "Cube Comparison",
+    "question_text": "Find if the two cubes are alike. Write 'Yes' or 'No'.",
+    "reference_figures": [
+      {
+        "label": "Cube 1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 30 L70 30 L85 15 L45 15 Z M30 30 L30 70 L70 70 L70 30 M70 70 L85 55 L85 15' fill='none' stroke='black' stroke-width='2'/><text x='45' y='55' font-size='18'>M</text><text x='52' y='26' font-size='12'>N</text></svg>"
+      },
+      {
+        "label": "Cube 2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 30 L70 30 L85 15 L45 15 Z M30 30 L30 70 L70 70 L70 30 M70 70 L85 55 L85 15' fill='none' stroke='black' stroke-width='2'/><text x='45' y='55' font-size='18'>N</text><text x='52' y='26' font-size='12'>M</text></svg>"
+      }
+    ],
+    "correct_option": "No",
+    "explanation": "Swapping the top and front face symbols creates a different geometric orientation that cannot be resolved through valid 3D rotation.",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "Yes"
+      },
+      {
+        "label": "No",
+        "value": "No"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Figure Series Completion",
+    "question_text": "Write the number of the figure which will come next in the series:",
+    "reference_figures": [
+      {
+        "label": "Series",
+        "svg": "<svg viewBox='0 0 240 60'><text x='10' y='40' font-size='25'>\u00e2\u2013\u00a1</text><text x='40' y='40' font-size='25'>\u00ce\u201d</text><text x='70' y='40' font-size='25'>\u00e2\u2013\u00a1</text><text x='100' y='40' font-size='25'>\u00ce\u201d</text><text x='130' y='40' font-size='25'>\u00e2\u2013\u00a1</text></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 50 50'><text x='15' y='35' font-size='25'>\u00ce\u201d</text></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 50 50'><text x='15' y='35' font-size='25'>\u00e2\u2013\u00a1</text></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The series follows an alternating pattern between a square and a triangle. The item after a square must be a triangle."
+  },
+  {
+    "id": 4,
+    "category": "Visual Analogy",
+    "question_text": "Figure A is to B as C is to?",
+    "reference_figures": [
+      {
+        "label": "A to B",
+        "svg": "<svg viewBox='0 0 200 60'><circle cx='30' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/><text x='60' y='35'>TO</text><circle cx='130' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/><line x1='110' y1='30' x2='150' y2='30' stroke='black' stroke-width='2'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 60'><rect x='30' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/><line x1='10' y1='30' x2='50' y2='30' stroke='black' stroke-width='2'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The relationship involves adding a single horizontal bisecting line to the hollow figure. Option 1 correctly applies this to the square."
+  },
+  {
+    "id": 5,
+    "category": "Odd One Out",
+    "question_text": "Which figure does not belong to the same class as others?",
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><circle cx='30' cy='30' r='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 60 60'><line x1='10' y1='10' x2='50' y2='50' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "4",
+        "svg": "<svg viewBox='0 0 60 60'><polygon points='30,10 50,50 10,50' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Options 1, 2, and 4 are closed geometric figures. Option 3 is an open line segment, making it the odd one out."
+  }
+]

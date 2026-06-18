@@ -1,0 +1,147 @@
+[
+  {
+    "category": "Personal Background",
+    "questions": [
+      "Tell me about yourself.",
+      "What does your father do? Describe his daily routine.",
+      "What does your mother do? How does she manage the household?",
+      "How many siblings do you have? What are they doing currently?",
+      "Describe your hometown. What is it famous for?",
+      "Which school did you study in? Share a memorable incident.",
+      "Which college are you from? Why did you choose this college?",
+      "What is your educational qualification?",
+      "What are your hobbies? How much time do you devote to them?",
+      "What extracurricular activities have you participated in?",
+      "Have you held any leadership positions in school or college?",
+      "Describe your best friend. Why is he/she your best friend?",
+      "What do your friends say about you?",
+      "What do your parents think about your decision to join the forces?",
+      "Have you travelled anywhere recently? Describe your experience."
+    ]
+  },
+  {
+    "category": "Defence Knowledge & Motivation",
+    "questions": [
+      "Why do you want to join the Armed Forces?",
+      "Why Indian Army / Navy / Air Force specifically?",
+      "What do you know about the entry you have applied for?",
+      "Who is the current Chief of Army Staff?",
+      "Who is the current Chief of Naval Staff?",
+      "Who is the current Chief of Air Staff?",
+      "Who is the current Chief of Defence Staff?",
+      "What is the motto of the Indian Army?",
+      "Name the latest missile tested by India.",
+      "What is Agnipath Scheme? What are your views on it?",
+      "What are the theatres of Indian Army? Name the commands.",
+      "What is INS Vikrant? Why is it significant?",
+      "Name 3 Param Vir Chakra awardees and their stories.",
+      "What happened in the Galwan Valley incident?",
+      "Explain the difference between NDA, CDS, and AFCAT entries.",
+      "What is the role of a young officer in the Indian Army?",
+      "What do you understand by Officer Like Qualities (OLQs)?",
+      "How is SSB different from other competitive exams?",
+      "What will you do if you don't get selected this time?",
+      "How many times have you appeared for SSB before?"
+    ]
+  },
+  {
+    "category": "Current Affairs & General Awareness",
+    "questions": [
+      "Who is the President of India?",
+      "Who is the Prime Minister of India?",
+      "Name the Defence Minister of India.",
+      "What is India's GDP ranking in the world?",
+      "What is the latest satellite launched by ISRO?",
+      "What is Chandrayaan-3 and its significance?",
+      "What do you know about Gaganyaan mission?",
+      "What is G20? What happened when India hosted it?",
+      "What is BRICS? Name the new members.",
+      "What is the Russia-Ukraine war about? India's stance?",
+      "What is the Israel-Palestine conflict? India's position?",
+      "What is QUAD? Name the member countries.",
+      "What is AUKUS? How does it affect India?",
+      "What is Digital India programme?",
+      "What is Make in India? Give examples of success.",
+      "What is Atmanirbhar Bharat? How does it relate to defence?",
+      "What is the National Education Policy 2020?",
+      "What is UPI? Why is it successful?",
+      "What is 5G technology? Its impact on India?",
+      "What are the challenges India faces in the next decade?"
+    ]
+  },
+  {
+    "category": "Situational & Pressure Questions",
+    "questions": [
+      "If you become an officer, how will you handle a jawan who refuses your order?",
+      "Your unit is posted at Siachen. How will you motivate your troops?",
+      "You find your senior officer is corrupt. What will you do?",
+      "A soldier under your command is homesick and his performance is dropping. How will you handle it?",
+      "You are leading a patrol and encounter an ambush. What is your immediate action?",
+      "Your subordinate accidentally fires a weapon. What will you do?",
+      "You are posted in a remote area with no communication. How will you manage?",
+      "A local civilian complains about your troops' behaviour. How will you resolve it?",
+      "Your training is incomplete but you're deployed to a conflict zone. Your reaction?",
+      "You disagree with your commanding officer's strategy. What will you do?",
+      "You discover a fellow officer is leaking sensitive information. Your action?",
+      "You have two injured soldiers and only one stretcher. How do you decide?",
+      "You're offered a bribe by a contractor during a posting. What will you do?",
+      "A flood hits your area. You have limited resources. How will you manage rescue?",
+      "You receive orders that go against your moral values. How will you handle it?"
+    ]
+  },
+  {
+    "category": "Personal Values & Character",
+    "questions": [
+      "What is your biggest strength?",
+      "What is your biggest weakness? How are you working on it?",
+      "Describe a difficult situation you faced and how you handled it.",
+      "Have you ever failed at something? What did you learn?",
+      "Tell me about a time you showed leadership.",
+      "Describe an incident where you helped someone in need.",
+      "What makes you angry? How do you control it?",
+      "Do you get stressed easily? How do you handle stress?",
+      "What is your daily routine? Walk me through your day.",
+      "How do you spend your free time?",
+      "What book are you currently reading? Share its summary.",
+      "Who is your role model and why?",
+      "What values did your parents teach you?",
+      "Describe a situation where you showed courage.",
+      "What does integrity mean to you? Give an example."
+    ]
+  },
+  {
+    "category": "Sports, NCC & Adventure",
+    "questions": [
+      "Which sports do you play? At what level?",
+      "Are you a member of NCC? What certificate do you hold?",
+      "Have you attended any NCC camp? Describe your experience.",
+      "What adventure activities have you done?",
+      "Have you ever trekked? Describe the experience.",
+      "Do you follow any sport? Which team/player do you support?",
+      "What is the importance of physical fitness for an officer?",
+      "What is your fitness routine?",
+      "Have you participated in any marathon or running event?",
+      "What is the NCC motto? When is NCC Day celebrated?"
+    ]
+  },
+  {
+    "category": "Rapid Fire & Tricky Questions",
+    "questions": [
+      "Define yourself in three words.",
+      "If not the forces, what career would you choose?",
+      "What will you do in the next 5 years if you get selected?",
+      "Can you handle being away from your family for months?",
+      "Are you prepared for the physical hardships?",
+      "What if you're posted to a place you don't like?",
+      "Officer or Gentleman — which comes first?",
+      "Bravery or Intelligence — which is more important for an officer?",
+      "Would you sacrifice your life for the nation?",
+      "Rate yourself on a scale of 1-10 as a potential officer.",
+      "Tell me something that is not in your PIQ form.",
+      "If I ask your enemy about you, what would they say?",
+      "You have 60 seconds to convince me you should be selected.",
+      "What is the one thing you would change about India?",
+      "If you could have dinner with any person, alive or dead, who would it be?"
+    ]
+  }
+]

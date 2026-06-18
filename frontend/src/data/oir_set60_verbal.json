@@ -1,0 +1,906 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Water boils at 100 degrees Celsius at sea level due to standard atmospheric pressure.",
+    "options": [
+      {
+        "label": "1",
+        "text": "True"
+      },
+      {
+        "label": "2",
+        "text": "Probable"
+      },
+      {
+        "label": "3",
+        "text": "False"
+      },
+      {
+        "label": "4",
+        "text": "Absurd"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "At sea level, water boils at 100°C because atmospheric pressure is standard (1 atm)."
+  },
+  {
+    "id": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Planting a broken smartphone in fertile soil will result in a tree that grows electronic devices.",
+    "options": [
+      {
+        "label": "1",
+        "text": "True"
+      },
+      {
+        "label": "2",
+        "text": "Probable"
+      },
+      {
+        "label": "3",
+        "text": "False"
+      },
+      {
+        "label": "4",
+        "text": "Absurd"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "A smartphone cannot biologically reproduce; the statement is absurd."
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "We wear woolen clothes during the winter season because:-",
+    "options": [
+      {
+        "label": "1",
+        "text": "Wool absorbs the cold air and destroys it."
+      },
+      {
+        "label": "2",
+        "text": "Wool is a poor conductor of heat, trapping body heat and keeping us warm."
+      },
+      {
+        "label": "3",
+        "text": "Wearing wool makes people naturally immune to the common cold."
+      },
+      {
+        "label": "4",
+        "text": "Wool fibers generate their own electricity when exposed to sunlight."
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Wool’s low thermal conductivity retains body heat."
+  },
+  {
+    "id": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "Commercial airplanes are pressurized at high altitudes because:-",
+    "options": [
+      {
+        "label": "1",
+        "text": "It prevents the airplane's wings from snapping off in the wind."
+      },
+      {
+        "label": "2",
+        "text": "It makes the airplane fly faster by reducing air resistance."
+      },
+      {
+        "label": "3",
+        "text": "The air pressure outside is too low for humans to breathe normally."
+      },
+      {
+        "label": "4",
+        "text": "Pressurization prevents the luggage"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Cabin pressurization maintains a breathable atmosphere for crew and passengers."
+  },
+  {
+    "id": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "time stitch a saves nine in",
+    "instruction": "Rearrange to a meaningful sentence and write the LAST letter.",
+    "correct_option": "E",
+    "explanation": "'A stitch in time saves nine' – last letter is 'e'."
+  },
+  {
+    "id": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "barking seldom dogs bite",
+    "instruction": "Rearrange and write the LAST letter.",
+    "correct_option": "E",
+    "explanation": "'Barking dogs seldom bite' – last letter is 'e'."
+  },
+  {
+    "id": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "The fast slow athlete won the gold medal easily.",
+    "instruction": "Identify the word to omit and write its FIRST letter.",
+    "correct_option": "S",
+    "explanation": "Omit 'slow'; first letter is 's'."
+  },
+  {
+    "id": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "The hot freezing coffee violently burned my tongue.",
+    "instruction": "Identify the word to omit and write its LAST letter.",
+    "correct_option": "G",
+    "explanation": "Omit 'freezing'; last letter is 'g'."
+  },
+  {
+    "id": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "P O T L A P is a portable personal computer.",
+    "instruction": "Rearrange to form a word and write the SECOND letter.",
+    "correct_option": "A",
+    "explanation": "LAPTOP – second letter 'a'."
+  },
+  {
+    "id": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "C R O T D O is a qualified practitioner of medicine.",
+    "instruction": "Rearrange to form a word and write the SECOND letter.",
+    "correct_option": "O",
+    "explanation": "DOCTOR – second letter 'o'."
+  },
+  {
+    "id": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Hot is to Cold as Up is to ____.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Sky"
+      },
+      {
+        "label": "2",
+        "text": "Down"
+      },
+      {
+        "label": "3",
+        "text": "High"
+      },
+      {
+        "label": "4",
+        "text": "Fall"
+      },
+      {
+        "label": "5",
+        "text": "Above"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Opposite of up is down."
+  },
+  {
+    "id": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Car is to Garage as Airplane is to ____.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Sky"
+      },
+      {
+        "label": "2",
+        "text": "Pilot"
+      },
+      {
+        "label": "3",
+        "text": "Runway"
+      },
+      {
+        "label": "4",
+        "text": "Hangar"
+      },
+      {
+        "label": "5",
+        "text": "Airport"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Airplanes are stored in hangars."
+  },
+  {
+    "id": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Happy is to Laugh as Sad is to ____.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Cry"
+      },
+      {
+        "label": "2",
+        "text": "Smile"
+      },
+      {
+        "label": "3",
+        "text": "Anger"
+      },
+      {
+        "label": "4",
+        "text": "Frown"
+      },
+      {
+        "label": "5",
+        "text": "Tear"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Sadness leads to crying."
+  },
+  {
+    "id": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Author is to Novel as Director is to ____.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Actor"
+      },
+      {
+        "label": "2",
+        "text": "Camera"
+      },
+      {
+        "label": "3",
+        "text": "Movie"
+      },
+      {
+        "label": "4",
+        "text": "Theater"
+      },
+      {
+        "label": "5",
+        "text": "Screen"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Directors create movies."
+  },
+  {
+    "id": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Thirst is to Water as Hunger is to ____.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Eat"
+      },
+      {
+        "label": "2",
+        "text": "Food"
+      },
+      {
+        "label": "3",
+        "text": "Kitchen"
+      },
+      {
+        "label": "4",
+        "text": "Starve"
+      },
+      {
+        "label": "5",
+        "text": "Cook"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Food quenches hunger."
+  },
+  {
+    "id": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Eye is to See as Ear is to ____.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Sound"
+      },
+      {
+        "label": "2",
+        "text": "Drum"
+      },
+      {
+        "label": "3",
+        "text": "Listen"
+      },
+      {
+        "label": "4",
+        "text": "Hear"
+      },
+      {
+        "label": "5",
+        "text": "Deaf"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Ear enables hearing."
+  },
+  {
+    "id": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a proper logical sequence of scale (smallest to largest)?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Country"
+      },
+      {
+        "label": "2",
+        "text": "City"
+      },
+      {
+        "label": "3",
+        "text": "Universe"
+      },
+      {
+        "label": "4",
+        "text": "Planet"
+      },
+      {
+        "label": "5",
+        "text": "Continent"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "Ordered: City, Country, Continent, Planet, Universe – Continent is middle."
+  },
+  {
+    "id": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical chronological sequence?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Doctor"
+      },
+      {
+        "label": "2",
+        "text": "Fever"
+      },
+      {
+        "label": "3",
+        "text": "Prescribe"
+      },
+      {
+        "label": "4",
+        "text": "Diagnose"
+      },
+      {
+        "label": "5",
+        "text": "Medicine"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Chronology: Fever → Diagnose → Prescribe → Medicine – Diagnose is middle."
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Tiger"
+      },
+      {
+        "label": "2",
+        "text": "Lion"
+      },
+      {
+        "label": "3",
+        "text": "Leopard"
+      },
+      {
+        "label": "4",
+        "text": "Wolf"
+      },
+      {
+        "label": "5",
+        "text": "Cow"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "Cow is a herbivore/domestic, others are wild carnivores."
+  },
+  {
+    "id": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Mars"
+      },
+      {
+        "label": "2",
+        "text": "Earth"
+      },
+      {
+        "label": "3",
+        "text": "Jupiter"
+      },
+      {
+        "label": "4",
+        "text": "Moon"
+      },
+      {
+        "label": "5",
+        "text": "Venus"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Moon is a satellite, others are planets."
+  },
+  {
+    "id": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Square"
+      },
+      {
+        "label": "2",
+        "text": "Triangle"
+      },
+      {
+        "label": "3",
+        "text": "Cube"
+      },
+      {
+        "label": "4",
+        "text": "Rectangle"
+      },
+      {
+        "label": "5",
+        "text": "Circle"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Cube is 3‑D, others are 2‑D shapes."
+  },
+  {
+    "id": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Chair"
+      },
+      {
+        "label": "2",
+        "text": "Table"
+      },
+      {
+        "label": "3",
+        "text": "Bed"
+      },
+      {
+        "label": "4",
+        "text": "Sofa"
+      },
+      {
+        "label": "5",
+        "text": "Television"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "Television is electronic, others are furniture."
+  },
+  {
+    "id": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Physics"
+      },
+      {
+        "label": "2",
+        "text": "Chemistry"
+      },
+      {
+        "label": "3",
+        "text": "Geography"
+      },
+      {
+        "label": "4",
+        "text": "Botany"
+      },
+      {
+        "label": "5",
+        "text": "Zoology"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Geography is a social/Earth science, others are core natural sciences."
+  },
+  {
+    "id": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Babble"
+      },
+      {
+        "label": "2",
+        "text": "Back"
+      },
+      {
+        "label": "3",
+        "text": "Bacon"
+      },
+      {
+        "label": "4",
+        "text": "Badge"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Babble, Back, Bacon, Badge."
+  },
+  {
+    "id": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Eager"
+      },
+      {
+        "label": "2",
+        "text": "Eagle"
+      },
+      {
+        "label": "3",
+        "text": "Early"
+      },
+      {
+        "label": "4",
+        "text": "Earn"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Eager, Eagle, Early, Earn – Earn is last."
+  },
+  {
+    "id": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Habit"
+      },
+      {
+        "label": "2",
+        "text": "Hack"
+      },
+      {
+        "label": "3",
+        "text": "Hail"
+      },
+      {
+        "label": "4",
+        "text": "Hair"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical: Habit, Hack, Hail, Hair."
+  },
+  {
+    "id": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Pace"
+      },
+      {
+        "label": "2",
+        "text": "Pack"
+      },
+      {
+        "label": "3",
+        "text": "Pad"
+      },
+      {
+        "label": "4",
+        "text": "Page"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Pace, Pack, Pad, Page – Page is last."
+  },
+  {
+    "id": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      {
+        "label": "1",
+        "text": "Vacant"
+      },
+      {
+        "label": "2",
+        "text": "Vacuum"
+      },
+      {
+        "label": "3",
+        "text": "Vague"
+      },
+      {
+        "label": "4",
+        "text": "Vain"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical: Vacant, Vacuum, Vague, Vain."
+  },
+  {
+    "id": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series? C, F, I, L, O, __, __.",
+    "correct_option": "R, U",
+    "explanation": "Each step adds 3 letters in the alphabet."
+  },
+  {
+    "id": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series? 3, 6, 12, 24, 48, __, __.",
+    "correct_option": "96, 192",
+    "explanation": "Each term doubles the previous one."
+  },
+  {
+    "id": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series? 100, 90, 81, 73, 66, __, __.",
+    "correct_option": "60, 55",
+    "explanation": "Subtracting decreasing increments: -10, -9, -8, -7, -6, -5."
+  },
+  {
+    "id": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "DEF"
+      },
+      {
+        "label": "2",
+        "text": "HIJ"
+      },
+      {
+        "label": "3",
+        "text": "MNO"
+      },
+      {
+        "label": "4",
+        "text": "PQS"
+      },
+      {
+        "label": "5",
+        "text": "VWX"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "PQS skips the letter R."
+  },
+  {
+    "id": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?",
+    "options": [
+      {
+        "label": "1",
+        "text": "25"
+      },
+      {
+        "label": "2",
+        "text": "36"
+      },
+      {
+        "label": "3",
+        "text": "49"
+      },
+      {
+        "label": "4",
+        "text": "64"
+      },
+      {
+        "label": "5",
+        "text": "75"
+      }
+    ],
+    "correct_option": "5",
+    "explanation": "75 is not a perfect square."
+  },
+  {
+    "id": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 3’s come just before 8 in the following sequence? 8 3 8 4 3 8 2 3 8 9 3 8 3 8",
+    "options": [
+      {
+        "label": "1",
+        "text": "3"
+      },
+      {
+        "label": "2",
+        "text": "4"
+      },
+      {
+        "label": "3",
+        "text": "5"
+      },
+      {
+        "label": "4",
+        "text": "6"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "The pattern 3 before 8 occurs five times."
+  },
+  {
+    "id": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 7 bags cost 140 rupees, what is the cost of 9 bags?",
+    "options": [
+      {
+        "label": "1",
+        "text": "160"
+      },
+      {
+        "label": "2",
+        "text": "170"
+      },
+      {
+        "label": "3",
+        "text": "180"
+      },
+      {
+        "label": "4",
+        "text": "190"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "1 bag = 20 rupees; 9 bags = 180 rupees."
+  },
+  {
+    "id": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A boy walks 10 meters East, turns left and walks 10 meters, then turns left again and walks 10 meters. In which direction is he from his starting point?",
+    "options": [
+      {
+        "label": "1",
+        "text": "North"
+      },
+      {
+        "label": "2",
+        "text": "South"
+      },
+      {
+        "label": "3",
+        "text": "East"
+      },
+      {
+        "label": "4",
+        "text": "West"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The path forms a reversed U, ending 10 m north of the start."
+  },
+  {
+    "id": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a man, a girl says, \"He is the brother of my mother's only daughter.\" How is the man related to the girl?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Uncle"
+      },
+      {
+        "label": "2",
+        "text": "Cousin"
+      },
+      {
+        "label": "3",
+        "text": "Brother"
+      },
+      {
+        "label": "4",
+        "text": "Father"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "The girl's mother’s only daughter is the girl herself; her brother is the man."
+  },
+  {
+    "id": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"RED\" is coded as 27, and \"BLUE\" is coded as 43, how is the word \"PINK\" coded?",
+    "options": [
+      {
+        "label": "1",
+        "text": "48"
+      },
+      {
+        "label": "2",
+        "text": "49"
+      },
+      {
+        "label": "3",
+        "text": "50"
+      },
+      {
+        "label": "4",
+        "text": "51"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Sum of alphabet positions: P(16)+I(9)+N(14)+K(11)=50."
+  },
+  {
+    "id": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 3rd of a month is a Friday, what day of the week will the 24th of the same month be?",
+    "options": [
+      {
+        "label": "1",
+        "text": "Thursday"
+      },
+      {
+        "label": "2",
+        "text": "Friday"
+      },
+      {
+        "label": "3",
+        "text": "Saturday"
+      },
+      {
+        "label": "4",
+        "text": "Sunday"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "21 days later is exactly three weeks, same weekday."
+  },
+  {
+    "id": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      {
+        "label": "1",
+        "text": "1/2"
+      },
+      {
+        "label": "2",
+        "text": "3/4"
+      },
+      {
+        "label": "3",
+        "text": "5/6"
+      },
+      {
+        "label": "4",
+        "text": "7/8"
+      }
+    ],
+    "correct_option": "4",
+    "explanation": "7/8 = 0.875, the greatest value."
+  }
+]

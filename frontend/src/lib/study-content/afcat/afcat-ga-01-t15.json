@@ -1,0 +1,201 @@
+{
+  "id": "afcat-ga-01-t15",
+  "title": "Indian Missiles — Ballistic (Agni series, Prithvi)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 8,
+  "content": [
+    {
+      "type": "text",
+      "data": "India's defense capabilities are significantly bolstered by its indigenously developed missile programs, particularly the Integrated Guided Missile Development Program (IGMDP) initiated in 1983. Ballistic missiles, designed to follow a ballistic trajectory to deliver one or more warheads to a predetermined target, form a crucial component of India's strategic deterrence. The Prithvi and Agni series are the flagships of India's ballistic missile arsenal, known for their varying ranges and capabilities, playing a vital role in national security."
+    },
+    {
+      "type": "heading",
+      "data": "Understanding Ballistic Missiles"
+    },
+    {
+      "type": "text",
+      "data": "Ballistic missiles are rocket-propelled weapons that fly in a high arc, essentially using gravity to deliver their warhead after an initial powered flight phase. Unlike cruise missiles, which stay within the atmosphere and are guided throughout their flight, ballistic missiles primarily coast to their target after engine cut-off. Their trajectory is largely determined by ballistics. They are classified by range: Short-Range Ballistic Missiles (SRBM), Medium-Range Ballistic Missiles (MRBM), Intermediate-Range Ballistic Missiles (IRBM), and Intercontinental Ballistic Missiles (ICBM)."
+    },
+    {
+      "type": "heading",
+      "data": "The Prithvi Series – India's Tactical Ballistic Missiles"
+    },
+    {
+      "type": "text",
+      "data": "The Prithvi series was India's first indigenously developed ballistic missile under the IGMDP. It is a tactical surface-to-surface short-range ballistic missile (SRBM) designed for battlefield use. These missiles are liquid-propelled."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Missile Variant",
+          "Primary User",
+          "Range (approx.)",
+          "Warhead Capacity (approx.)",
+          "Key Features"
+        ],
+        "rows": [
+          [
+            "Prithvi-I",
+            "Indian Army",
+            "150 km",
+            "1000 kg",
+            "Liquid-propelled, road-mobile"
+          ],
+          [
+            "Prithvi-II",
+            "Indian Air Force",
+            "250-350 km",
+            "500-1000 kg",
+            "Liquid-propelled, improved accuracy, stealth features"
+          ],
+          [
+            "Prithvi-III (Dhanush)",
+            "Indian Navy",
+            "350-750 km",
+            "500-1000 kg",
+            "Liquid-propelled, ship-launched (naval version)"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember that Prithvi missiles are generally considered *tactical* (battlefield use, shorter range) while Agni missiles are *strategic* (deterrence, longer range). This distinction is crucial for AFCAT."
+    },
+    {
+      "type": "heading",
+      "data": "The Agni Series – India's Strategic Deterrent"
+    },
+    {
+      "type": "text",
+      "data": "The Agni series represents India's medium to intercontinental range ballistic missiles, forming the backbone of its nuclear deterrence. These are primarily strategic surface-to-surface missiles designed to deliver nuclear warheads. They are crucial for India's \"No First Use\" policy and maintaining credible minimum deterrence. Most Agni missiles are solid-fueled, offering quick launch times and easier maintenance."
+    },
+    {
+      "type": "list",
+      "data": [
+        "Can carry both conventional and nuclear warheads, making them dual-capable.",
+        "Equipped with advanced navigation and guidance systems for high accuracy.",
+        "Can be launched from road-mobile launchers or rail-mobile platforms, enhancing survivability and deployment flexibility.",
+        "Primarily solid-fueled, which provides faster reaction times compared to liquid-fueled systems.",
+        "Designed for a wide spectrum of ranges, from MRBM to potential ICBM capabilities, providing multi-layered deterrence."
+      ]
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Missile Variant",
+          "Type",
+          "Range (approx.)",
+          "Key Features"
+        ],
+        "rows": [
+          [
+            "Agni-I",
+            "MRBM (Medium Range)",
+            "700-1200 km",
+            "Single stage, solid-fueled, road-mobile"
+          ],
+          [
+            "Agni-II",
+            "MRBM",
+            "2000-3000 km",
+            "Two-stage, solid-fueled, rail and road-mobile"
+          ],
+          [
+            "Agni-III",
+            "IRBM (Intermediate Range)",
+            "3000-5000 km",
+            "Two-stage, solid-fueled, rail-mobile, improved accuracy"
+          ],
+          [
+            "Agni-IV",
+            "IRBM",
+            "3000-4000 km",
+            "Two-stage, solid-fueled, road-mobile, light and agile, advanced avionics"
+          ],
+          [
+            "Agni-V",
+            "IRBM / near-ICBM",
+            "5000-8000 km",
+            "Three-stage, solid-fueled, Canister-launched, MIRV capable (under development)"
+          ],
+          [
+            "Agni-Prime (P)",
+            "MRBM",
+            "1000-2000 km",
+            "Canisterized, two-stage solid-propellant, lighter, more agile, enhanced accuracy, advanced navigation"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember the Agni series ranges generally increase with the number (Agni-I is shortest, Agni-V is longest). Agni-P is a modern, lighter, and more accurate variant, falling into the MRBM category despite its higher number, reflecting technological advancements."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Which Indian ballistic missile is primarily designed for naval applications, launched from a ship, and has a range of up to 750 km?",
+        "solution": "1. Identify the key characteristics provided: naval application, ship-launched capability, and a range up to 750 km.\n2. Recall the different variants of the Prithvi series. Prithvi-I is for the Army (150 km), Prithvi-II is for the Air Force (250-350 km).\n3. Prithvi-III, also known as Dhanush, specifically matches these criteria, being the naval version with a range up to 750 km and designed for ship-launch.",
+        "answer": "Prithvi-III (Dhanush)"
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Indian Missile Classification (Ballistic Focus)",
+        "description": "A flowchart illustrating the primary classification of Indian missiles, focusing on Ballistic missiles and their major series: Prithvi and Agni.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Indian Missiles] --> B{Type?};\n    B -- Ballistic --> C[Ballistic Missiles];\n    B -- Cruise --> D[Cruise Missiles (e.g., BrahMos)];\n    C --> E[Prithvi Series];\n    C --> F[Agni Series];\n    E --> G[Prithvi-I (Army)];\n    E --> H[Prithvi-II (Air Force)];\n    E --> I[Prithvi-III / Dhanush (Navy)];\n    F --> J[Agni-I (MRBM)];\n    F --> K[Agni-II (MRBM)];\n    F --> L[Agni-III (IRBM)];\n    F --> M[Agni-IV (IRBM)];\n    F --> N[Agni-V (IRBM/ICBM)];\n    F --> O[Agni-Prime (MRBM)];"
+      }
+    }
+  ],
+  "keyPoints": [
+    "The Integrated Guided Missile Development Program (IGMDP), spearheaded by Dr. A.P.J. Abdul Kalam, was crucial for India's missile self-reliance.",
+    "Prithvi series missiles are India's first indigenous ballistic missiles, primarily tactical SRBMs, and are liquid-fueled.",
+    "The Agni series comprises India's strategic ballistic missiles (MRBMs, IRBMs, and near-ICBMs), forming the backbone of its nuclear deterrent, mostly solid-fueled.",
+    "Prithvi-III is specifically designated as Dhanush and is the ship-launched variant for the Indian Navy, capable of carrying nuclear warheads.",
+    "Agni-V is a highly significant missile, capable of being launched from a hermetically sealed canister (Canister-launched), enhancing its readiness and survivability, and is being developed for MIRV (Multiple Independently Targetable Reentry Vehicle) capability."
+  ],
+  "commonMistakes": [
+    "Confusing the roles and characteristics of ballistic missiles (like Agni/Prithvi) with cruise missiles (like BrahMos). Ballistic missiles follow an arc and coast, while cruise missiles fly within the atmosphere and are continuously guided.",
+    "Incorrectly recalling the approximate ranges or the primary users (Army, Air Force, Navy) for different Prithvi and Agni variants. Pay close attention to these details."
+  ],
+  "examTips": [
+    "For AFCAT, focus on the name, type (SRBM/MRBM/IRBM/ICBM), approximate range, and any unique features (e.g., ship-launched, canisterized, dual-capable) for each missile. Memorize the 'firsts' and 'largest' in the series.",
+    "Stay updated with recent developments, tests, or upgrades related to Indian missile systems, as current affairs often form a significant part of the General Awareness section. Keep an eye out for 'Agni-P' and its features."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following ballistic missiles is primarily a tactical short-range missile, liquid-fueled, and was the first to be developed under India's IGMDP?",
+      "options": [
+        "Agni-I",
+        "Prithvi-I",
+        "BrahMos",
+        "Dhanush"
+      ],
+      "correct": 1,
+      "explanation": "Prithvi-I was the first indigenously developed ballistic missile under IGMDP, serving tactical battlefield roles with a short range (150 km) and is liquid-fueled. Agni-I is a medium-range strategic missile. BrahMos is a cruise missile. Dhanush is a naval variant of Prithvi, but Prithvi-I was the initial development."
+    },
+    {
+      "question": "The Agni-V missile is known for its multi-stage, solid-fueled design and its capability to be launched from a canister. What is its approximate range classification?",
+      "options": [
+        "Short-Range Ballistic Missile (SRBM)",
+        "Medium-Range Ballistic Missile (MRBM)",
+        "Intermediate-Range Ballistic Missile (IRBM)",
+        "Anti-tank Guided Missile (ATGM)"
+      ],
+      "correct": 2,
+      "explanation": "Agni-V has an approximate range of 5000-8000 km, which falls under the definition of an Intermediate-Range Ballistic Missile (IRBM), approaching Intercontinental Ballistic Missile (ICBM) capabilities. SRBMs are under 1000 km, and MRBMs are typically 1000-3000 km. ATGMs are for anti-tank warfare."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Ballistic%20(Agni%20series%2C%20Prithvi)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Ballistic%20(Agni%20series%2C%20Prithvi)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

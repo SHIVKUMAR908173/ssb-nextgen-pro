@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "total_scenarios": 70,
+    "last_updated": "2026-05-20",
+    "source": "SSB Smart Learning App - Complete Scenario Bank"
+  },
+  "color_zone_rules": {
+    "WHITE": {
+      "description": "Safe zone - Men and materials allowed",
+      "men_allowed": true,
+      "materials_allowed": true
+    },
+    "YELLOW": {
+      "description": "Finish zone - Men and materials allowed",
+      "men_allowed": true,
+      "materials_allowed": true
+    },
+    "GREEN": {
+      "description": "Men only zone - Materials not allowed",
+      "men_allowed": true,
+      "materials_allowed": false
+    },
+    "BLUE": {
+      "description": "Restricted zone - Only specific materials allowed",
+      "men_allowed": false,
+      "materials_allowed": true
+    },
+    "RED": {
+      "description": "Danger zone - Neither men nor materials allowed",
+      "men_allowed": false,
+      "materials_allowed": false
+    }
+  },
+  "tool_specifications": {
+    "fattas": { "length": 3, "width": 0.3, "thickness": 0.05, "material": "wood", "weight": 5 },
+    "balli": { "length": 4, "diameter": 0.1, "material": "bamboo", "weight": 3 },
+    "rope": { "length": 10, "diameter": 0.02, "material": "jute", "weight": 2, "breaking_strength": 500 },
+    "plank": { "length": 3.5, "width": 0.4, "thickness": 0.04, "material": "wood", "weight": 6 },
+    "drum": { "height": 0.9, "diameter": 0.6, "material": "metal", "weight": 15 }
+  },
+  "scoring_rubric": {
+    "completion": 40,
+    "time_bonus": 20,
+    "technique": 20,
+    "teamwork": 10,
+    "leadership": 10,
+    "penalties": { "red_zone_violation": -15, "material_drop": -5, "timeout": -10 }
+  },
+  "pgt_scenarios": [
+    { "id": "PGT_01", "name": "The Double Barrel Bridge", "difficulty": "Easy", "description": "Cross using two barrels and a plank", "time_limit": 180, "resources": ["plank", "rope"], "olq": ["Cooperation", "Social Effectiveness"] },
+    { "id": "PGT_02", "name": "The Wall Climb", "difficulty": "Easy", "description": "Scale the 8ft wall as a group", "time_limit": 240, "resources": ["rope", "balli"], "olq": ["Leadership", "Cooperation"] },
+    { "id": "PGT_03", "name": "The Trench Crossing", "difficulty": "Medium", "description": "Cross 12ft trench without touching ground", "time_limit": 300, "resources": ["fattas", "rope", "balli"], "olq": ["Planning", "Organizing"] },
+    { "id": "PGT_04", "name": "The Spider Web", "difficulty": "Medium", "description": "Pass through rope web without touching", "time_limit": 300, "resources": [], "olq": ["Cooperation", "Planning"] },
+    { "id": "PGT_05", "name": "The Rolling Log", "difficulty": "Medium", "description": "Cross using unstable rolling logs", "time_limit": 240, "resources": ["rope"], "olq": ["Courage", "Determination"] },
+    { "id": "PGT_06", "name": "The Zigzag Path", "difficulty": "Easy", "description": "Navigate zigzag path with obstacles", "time_limit": 180, "resources": ["plank"], "olq": ["Speed", "Accuracy"] },
+    { "id": "PGT_07", "name": "The Rope Bridge", "difficulty": "Medium", "description": "Cross using suspended rope bridge", "time_limit": 240, "resources": ["rope"], "olq": ["Courage", "Balance"] },
+    { "id": "PGT_08", "name": "The Stepping Stones", "difficulty": "Easy", "description": "Cross using scattered stepping stones", "time_limit": 180, "resources": [], "olq": ["Balance", "Planning"] },
+    { "id": "PGT_09", "name": "The Cargo Net", "difficulty": "Medium", "description": "Climb over cargo net barrier", "time_limit": 240, "resources": [], "olq": ["Physical Courage", "Stamina"] },
+    { "id": "PGT_10", "name": "The Tire Walk", "difficulty": "Easy", "description": "Walk across suspended tires", "time_limit": 180, "resources": [], "olq": ["Balance", "Courage"] },
+    { "id": "PGT_11", "name": "The Ladder Cross", "difficulty": "Medium", "description": "Cross using horizontal ladder", "time_limit": 240, "resources": ["rope"], "olq": ["Upper Body Strength", "Courage"] },
+    { "id": "PGT_12", "name": "The Barrier Jump", "difficulty": "Easy", "description": "Jump over series of barriers", "time_limit": 180, "resources": [], "olq": ["Speed", "Agility"] },
+    { "id": "PGT_13", "name": "The Tunnel Crawl", "difficulty": "Medium", "description": "Crawl through narrow tunnel", "time_limit": 240, "resources": [], "olq": ["Courage", "Stamina"] },
+    { "id": "PGT_14", "name": "The Balance Bridge", "difficulty": "Medium", "description": "Cross narrow balance bridge", "time_limit": 240, "resources": ["rope"], "olq": ["Balance", "Self Confidence"] },
+    { "id": "PGT_15", "name": "The Chain Link", "difficulty": "Hard", "description": "Cross using chain links", "time_limit": 300, "resources": [], "olq": ["Upper Body Strength", "Courage"] },
+    { "id": "PGT_16", "name": "The Platform Hop", "difficulty": "Easy", "description": "Hop across raised platforms", "time_limit": 180, "resources": [], "olq": ["Balance", "Speed"] },
+    { "id": "PGT_17", "name": "The Rope Climb", "difficulty": "Hard", "description": "Climb rope to reach platform", "time_limit": 300, "resources": [], "olq": ["Physical Courage", "Stamina"] },
+    { "id": "PGT_18", "name": "The Slide Down", "difficulty": "Easy", "description": "Slide down inclined surface", "time_limit": 180, "resources": [], "olq": ["Courage", "Speed"] },
+    { "id": "PGT_19", "name": "The Monkey Bars", "difficulty": "Medium", "description": "Cross using monkey bars", "time_limit": 240, "resources": [], "olq": ["Upper Body Strength", "Coordination"] },
+    { "id": "PGT_20", "name": "The Wall Traverse", "difficulty": "Hard", "description": "Traverse along wall edge", "time_limit": 300, "resources": ["rope"], "olq": ["Balance", "Courage"] },
+    { "id": "PGT_21", "name": "The Double Wall", "difficulty": "Hard", "description": "Scale two consecutive walls", "time_limit": 360, "resources": ["balli", "rope"], "olq": ["Leadership", "Teamwork"] },
+    { "id": "PGT_22", "name": "The Water Trench", "difficulty": "Medium", "description": "Cross water-filled trench", "time_limit": 240, "resources": ["plank", "fattas"], "olq": ["Planning", "Resourcefulness"] },
+    { "id": "PGT_23", "name": "The Inclined Wall", "difficulty": "Medium", "description": "Climb inclined wall", "time_limit": 240, "resources": ["rope"], "olq": ["Physical Courage", "Determination"] },
+    { "id": "PGT_24", "name": "The Rope Swing Cross", "difficulty": "Hard", "description": "Swing across gap using rope", "time_limit": 300, "resources": ["rope"], "olq": ["Courage", "Timing"] },
+    { "id": "PGT_25", "name": "The Multi-Level Platform", "difficulty": "Hard", "description": "Navigate multi-level platforms", "time_limit": 360, "resources": ["fattas", "plank"], "olq": ["Planning", "Organizing"] },
+    { "id": "PGT_26", "name": "The Narrow Passage", "difficulty": "Medium", "description": "Squeeze through narrow passage", "time_limit": 240, "resources": [], "olq": ["Patience", "Perseverance"] },
+    { "id": "PGT_27", "name": "The Over-Under Barrier", "difficulty": "Medium", "description": "Go over and under barriers alternately", "time_limit": 240, "resources": [], "olq": ["Agility", "Speed"] },
+    { "id": "PGT_28", "name": "The Suspended Log", "difficulty": "Hard", "description": "Cross suspended swinging log", "time_limit": 300, "resources": ["rope"], "olq": ["Balance", "Courage"] },
+    { "id": "PGT_29", "name": "The Crate Stack", "difficulty": "Medium", "description": "Stack crates to climb over wall", "time_limit": 300, "resources": ["drum"], "olq": ["Resourcefulness", "Planning"] },
+    { "id": "PGT_30", "name": "The Rope Ladder", "difficulty": "Hard", "description": "Climb unstable rope ladder", "time_limit": 300, "resources": [], "olq": ["Physical Courage", "Balance"] },
+    { "id": "PGT_31", "name": "The Deep Trench", "difficulty": "Hard", "description": "Cross deep 15ft trench", "time_limit": 360, "resources": ["fattas", "balli", "rope"], "olq": ["Planning", "Leadership"] },
+    { "id": "PGT_32", "name": "The High Wall", "difficulty": "Hard", "description": "Scale 10ft smooth wall", "time_limit": 360, "resources": ["rope", "balli"], "olq": ["Leadership", "Cooperation"] },
+    { "id": "PGT_33", "name": "The Moving Platform", "difficulty": "Expert", "description": "Cross using moving platform", "time_limit": 360, "resources": ["rope"], "olq": ["Timing", "Courage"] },
+    { "id": "PGT_34", "name": "The Spiral Climb", "difficulty": "Hard", "description": "Climb spiral structure", "time_limit": 300, "resources": [], "olq": ["Stamina", "Determination"] },
+    { "id": "PGT_35", "name": "The Net Crawl", "difficulty": "Medium", "description": "Crawl across horizontal net", "time_limit": 240, "resources": [], "olq": ["Upper Body Strength", "Courage"] },
+    { "id": "PGT_36", "name": "The Pole Vault", "difficulty": "Hard", "description": "Use pole to vault over barrier", "time_limit": 300, "resources": ["balli"], "olq": ["Physical Courage", "Technique"] },
+    { "id": "PGT_37", "name": "The Chain Bridge", "difficulty": "Hard", "description": "Cross using chain bridge", "time_limit": 300, "resources": [], "olq": ["Balance", "Courage"] },
+    { "id": "PGT_38", "name": "The Obstacle Maze", "difficulty": "Expert", "description": "Navigate complex obstacle maze", "time_limit": 420, "resources": ["fattas", "rope"], "olq": ["Planning", "Reasoning"] },
+    { "id": "PGT_39", "name": "The Tower Climb", "difficulty": "Expert", "description": "Climb tower structure", "time_limit": 360, "resources": ["rope"], "olq": ["Physical Courage", "Stamina"] },
+    { "id": "PGT_40", "name": "The Grand Bridge", "difficulty": "Expert", "description": "Build and cross grand bridge", "time_limit": 480, "resources": ["fattas", "balli", "rope", "plank"], "olq": ["Leadership", "Planning", "Cooperation"] }
+  ],
+  "hgt_scenarios": [
+    { "id": "HGT_01", "name": "The Commando Crawl", "difficulty": "Medium", "description": "Crawl under wire mesh", "time_limit": 180, "resources": ["drum"], "olq": ["Courage", "Stamina"] },
+    { "id": "HGT_02", "name": "The Balance Beam", "difficulty": "Medium", "description": "Cross elevated beam", "time_limit": 240, "resources": ["rope"], "olq": ["Balance", "Self Confidence"] },
+    { "id": "HGT_03", "name": "The Rope Swing", "difficulty": "Hard", "description": "Swing across 20ft gap", "time_limit": 300, "resources": ["rope"], "olq": ["Courage", "Determination"] },
+    { "id": "HGT_04", "name": "The Wall Scale", "difficulty": "Medium", "description": "Scale 8ft wall solo", "time_limit": 240, "resources": [], "olq": ["Physical Courage", "Technique"] },
+    { "id": "HGT_05", "name": "The Trench Jump", "difficulty": "Medium", "description": "Jump across 10ft trench", "time_limit": 180, "resources": [], "olq": ["Courage", "Speed"] },
+    { "id": "HGT_06", "name": "The Rope Climb", "difficulty": "Hard", "description": "Climb 15ft rope", "time_limit": 240, "resources": [], "olq": ["Physical Courage", "Stamina"] },
+    { "id": "HGT_07", "name": "The Ladder Bridge", "difficulty": "Medium", "description": "Cross horizontal ladder", "time_limit": 240, "resources": [], "olq": ["Upper Body Strength", "Courage"] },
+    { "id": "HGT_08", "name": "The Tire Stack", "difficulty": "Medium", "description": "Stack tires to climb wall", "time_limit": 300, "resources": [], "olq": ["Resourcefulness", "Planning"] },
+    { "id": "HGT_09", "name": "The Narrow Ledge", "difficulty": "Hard", "description": "Traverse narrow ledge", "time_limit": 240, "resources": ["rope"], "olq": ["Balance", "Courage"] },
+    { "id": "HGT_10", "name": "The Cargo Lift", "difficulty": "Hard", "description": "Lift cargo to platform", "time_limit": 300, "resources": ["rope", "drum"], "olq": ["Planning", "Resourcefulness"] },
+    { "id": "HGT_11", "name": "The Web Pass", "difficulty": "Medium", "description": "Pass through rope web", "time_limit": 240, "resources": [], "olq": ["Flexibility", "Patience"] },
+    { "id": "HGT_12", "name": "The Log Balance", "difficulty": "Medium", "description": "Balance across log", "time_limit": 180, "resources": [], "olq": ["Balance", "Concentration"] },
+    { "id": "HGT_13", "name": "The Chain Climb", "difficulty": "Hard", "description": "Climb hanging chain", "time_limit": 240, "resources": [], "olq": ["Upper Body Strength", "Courage"] },
+    { "id": "HGT_14", "name": "The Platform Jump", "difficulty": "Hard", "description": "Jump between platforms", "time_limit": 240, "resources": [], "olq": ["Courage", "Accuracy"] },
+    { "id": "HGT_15", "name": "The Wall Traverse", "difficulty": "Expert", "description": "Traverse wall face", "time_limit": 300, "resources": ["rope"], "olq": ["Physical Courage", "Technique"] }
+  ],
+  "ct_scenarios": [
+    { "id": "CT_01", "name": "The Commander's Challenge", "difficulty": "Hard", "description": "Plan and execute complex crossing", "time_limit": 300, "resources": ["fattas", "balli", "rope", "drum"], "olq": ["Leadership", "Planning"] },
+    { "id": "CT_02", "name": "The Rescue Mission", "difficulty": "Hard", "description": "Rescue injured across obstacle", "time_limit": 360, "resources": ["fattas", "rope", "plank"], "olq": ["Responsibility", "Cooperation"] },
+    { "id": "CT_03", "name": "The Equipment Transport", "difficulty": "Hard", "description": "Transport equipment safely", "time_limit": 300, "resources": ["rope", "drum"], "olq": ["Planning", "Resourcefulness"] },
+    { "id": "CT_04", "name": "The Bridge Builder", "difficulty": "Expert", "description": "Build bridge for group", "time_limit": 420, "resources": ["fattas", "balli", "rope", "plank"], "olq": ["Leadership", "Organizing"] },
+    { "id": "CT_05", "name": "The Tower Rescue", "difficulty": "Expert", "description": "Rescue from tower", "time_limit": 420, "resources": ["rope", "balli"], "olq": ["Leadership", "Courage"] },
+    { "id": "CT_06", "name": "The Water Rescue", "difficulty": "Expert", "description": "Rescue from water trench", "time_limit": 360, "resources": ["rope", "plank", "drum"], "olq": ["Responsibility", "Quick Thinking"] },
+    { "id": "CT_07", "name": "The Double Crossing", "difficulty": "Expert", "description": "Cross and return with object", "time_limit": 420, "resources": ["fattas", "rope"], "olq": ["Planning", "Endurance"] },
+    { "id": "CT_08", "name": "The Blind Guide", "difficulty": "Expert", "description": "Guide blindfolded member", "time_limit": 360, "resources": ["rope"], "olq": ["Communication", "Trust"] },
+    { "id": "CT_09", "name": "The Heavy Load", "difficulty": "Expert", "description": "Move heavy object across", "time_limit": 420, "resources": ["fattas", "balli", "rope"], "olq": ["Teamwork", "Planning"] },
+    { "id": "CT_10", "name": "The Final Command", "difficulty": "Expert", "description": "Complete final command task", "time_limit": 480, "resources": ["fattas", "balli", "rope", "plank", "drum"], "olq": ["All OLQs"] },
+    { "id": "HGT_16", "name": "The High Wire", "difficulty": "Expert", "description": "Walk high wire", "time_limit": 300, "resources": ["rope"], "olq": ["Courage", "Balance"] },
+    { "id": "HGT_17", "name": "The Fire Walk", "difficulty": "Expert", "description": "Cross simulated fire zone", "time_limit": 240, "resources": [], "olq": ["Courage", "Determination"] },
+    { "id": "HGT_18", "name": "The Dark Tunnel", "difficulty": "Hard", "description": "Navigate dark tunnel", "time_limit": 240, "resources": [], "olq": ["Courage", "Confidence"] },
+    { "id": "HGT_19", "name": "The Slippery Slope", "difficulty": "Hard", "description": "Climb slippery incline", "time_limit": 300, "resources": ["rope"], "olq": ["Determination", "Stamina"] },
+    { "id": "HGT_20", "name": "The Final Hurdle", "difficulty": "Expert", "description": "Complete final HGT challenge", "time_limit": 360, "resources": ["fattas", "rope"], "olq": ["All OLQs"] }
+  ],
+  "fgt_scenarios": [
+    { "id": "FGT_01", "name": "The Grand Finale", "difficulty": "Expert", "description": "Complete multi-stage obstacle course", "time_limit": 600, "resources": ["fattas", "balli", "rope", "plank", "drum"], "olq": ["All 15 OLQs"] },
+    { "id": "FGT_02", "name": "The Ultimate Challenge", "difficulty": "Expert", "description": "Final group task with all elements", "time_limit": 720, "resources": ["fattas", "balli", "rope", "plank", "drum"], "olq": ["All 15 OLQs"] },
+    { "id": "FGT_03", "name": "The Master Test", "difficulty": "Expert", "description": "Master level group task", "time_limit": 600, "resources": ["fattas", "balli", "rope", "plank"], "olq": ["All 15 OLQs"] },
+    { "id": "FGT_04", "name": "The Champion's Course", "difficulty": "Expert", "description": "Champion level obstacle course", "time_limit": 720, "resources": ["fattas", "balli", "rope", "plank", "drum"], "olq": ["All 15 OLQs"] },
+    { "id": "FGT_05", "name": "The Final Battle", "difficulty": "Expert", "description": "Ultimate final group challenge", "time_limit": 900, "resources": ["fattas", "balli", "rope", "plank", "drum"], "olq": ["All 15 OLQs"] }
+  ]
+}

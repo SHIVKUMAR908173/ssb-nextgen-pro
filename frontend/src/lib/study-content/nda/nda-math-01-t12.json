@@ -1,0 +1,197 @@
+{
+  "id": "nda-math-01-t12",
+  "title": "Even and Odd Functions",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Even and odd functions are special types of functions characterized by their symmetry properties. Understanding these classifications simplifies various problems in calculus, such as integration and graphing, making them a fundamental concept for the NDA examination. This topic helps in quickly evaluating definite integrals and analyzing function behavior."
+    },
+    {
+      "type": "heading",
+      "data": "Even Functions"
+    },
+    {
+      "type": "text",
+      "data": "A function f(x) is said to be an even function if, for every x in its domain, replacing x with -x does not change the function's value. This implies a specific type of symmetry."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "f(-x) = f(x)",
+        "note": "The function's value remains unchanged when the sign of the input variable is reversed."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "The graph of an even function is symmetric about the y-axis.",
+        "Common examples include: x^2, x^4, cos(x), |x|, and any constant function.",
+        "The derivative of an even function is an odd function.",
+        "The product of two even functions is an even function."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY CONCEPT: Graphically, an even function is symmetric about the y-axis. If you fold the graph along the y-axis, the two halves perfectly overlap. Think of y = x^2."
+    },
+    {
+      "type": "heading",
+      "data": "Odd Functions"
+    },
+    {
+      "type": "text",
+      "data": "A function f(x) is said to be an odd function if, for every x in its domain, replacing x with -x results in the negative of the original function's value. This also implies a distinct type of symmetry."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "f(-x) = -f(x)",
+        "note": "The function's value becomes its negative when the sign of the input variable is reversed."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "The graph of an odd function is symmetric about the origin.",
+        "Common examples include: x^3, x^5, sin(x), tan(x), and 1/x.",
+        "The derivative of an odd function is an even function.",
+        "The product of two odd functions is an even function."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY CONCEPT: Graphically, an odd function is symmetric about the origin. If you rotate the graph 180 degrees about the origin, it looks identical. Think of y = x^3."
+    },
+    {
+      "type": "heading",
+      "data": "Properties and Combinations"
+    },
+    {
+      "type": "text",
+      "data": "Understanding how even and odd functions behave under various operations (addition, subtraction, multiplication, division, and composition) is crucial for solving problems efficiently in the NDA exam."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Operation",
+          "Resulting Function Type"
+        ],
+        "rows": [
+          [
+            "Even ± Even",
+            "Even"
+          ],
+          [
+            "Odd ± Odd",
+            "Odd"
+          ],
+          [
+            "Even ± Odd",
+            "Neither (unless one function is identically zero)"
+          ],
+          [
+            "Even × Even",
+            "Even"
+          ],
+          [
+            "Odd × Odd",
+            "Even"
+          ],
+          [
+            "Even × Odd",
+            "Odd"
+          ],
+          [
+            "Even / Even",
+            "Even"
+          ],
+          [
+            "Odd / Odd",
+            "Even"
+          ],
+          [
+            "Even / Odd",
+            "Odd"
+          ],
+          [
+            "f(g(x)) where f is Even, g is any function",
+            "Even"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "Any function f(x) can be uniquely expressed as the sum of an even function E(x) and an odd function O(x): f(x) = E(x) + O(x), where E(x) = [f(x) + f(-x)]/2 and O(x) = [f(x) - f(-x)]/2",
+        "note": "This property is useful for decomposing complex functions into simpler symmetric parts."
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Determine whether the function f(x) = x * sin(x) + cos(x) is even, odd, or neither.",
+        "solution": "To determine the type of function, we evaluate f(-x):\nf(-x) = (-x) * sin(-x) + cos(-x)\nWe know that sin(-x) = -sin(x) and cos(-x) = cos(x). Substitute these trigonometric identities into the expression:\nf(-x) = (-x) * (-sin(x)) + cos(x)\nf(-x) = x * sin(x) + cos(x)\nComparing f(-x) with f(x), we observe that f(-x) = f(x).\nTherefore, the function is an even function.",
+        "answer": "The function f(x) = x * sin(x) + cos(x) is an even function."
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Flowchart for Identifying Even/Odd Functions",
+        "description": "A step-by-step process to classify a given function as even, odd, or neither.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Start] --> B{Given function f(x)};\n    B --> C[Calculate f(-x)];\n    C --> D{Is f(-x) == f(x)?};\n    D -- Yes --> E[f(x) is Even];\n    D -- No --> F{Is f(-x) == -f(x)?};\n    F -- Yes --> G[f(x) is Odd];\n    F -- No --> H[f(x) is Neither Even nor Odd];\n    E --> I[End];\n    G --> I;\n    H --> I;"
+      }
+    }
+  ],
+  "keyPoints": [
+    "An even function satisfies f(-x) = f(x) and is symmetric about the y-axis.",
+    "An odd function satisfies f(-x) = -f(x) and is symmetric about the origin.",
+    "The derivative of an even function is odd, and the derivative of an odd function is even.",
+    "For definite integrals: ∫(-a to a) f(x) dx = 0 if f(x) is odd. ∫(-a to a) f(x) dx = 2 * ∫(0 to a) f(x) dx if f(x) is even.",
+    "Any function can be expressed as the sum of an even and an odd function: f(x) = [f(x) + f(-x)]/2 + [f(x) - f(-x)]/2."
+  ],
+  "commonMistakes": [
+    "Confusing the definitions: Always correctly substitute -x and compare f(-x) with f(x) and -f(x).",
+    "Assuming all functions must be either even or odd. Many functions (e.g., e^x, x+x^2) are neither."
+  ],
+  "examTips": [
+    "For NDA, master the integral properties of even and odd functions. They are frequently tested and can save significant time in definite integral calculations.",
+    "Quickly recall the multiplication and division rules from the table for composite functions. For instance, an 'Odd × Even' function is always odd."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following functions is an odd function?",
+      "options": [
+        "A. f(x) = x^2 * cos(x)",
+        "B. f(x) = sin(x) - x",
+        "C. f(x) = x^4 + 3",
+        "D. f(x) = e^x"
+      ],
+      "correct": 1,
+      "explanation": "Let's check each option:\nA. f(x) = x^2 * cos(x): f(-x) = (-x)^2 * cos(-x) = x^2 * cos(x) = f(x). This is even.\nB. f(x) = sin(x) - x: f(-x) = sin(-x) - (-x) = -sin(x) + x = -(sin(x) - x) = -f(x). This is odd.\nC. f(x) = x^4 + 3: f(-x) = (-x)^4 + 3 = x^4 + 3 = f(x). This is even.\nD. f(x) = e^x: f(-x) = e^(-x). This is neither f(x) nor -f(x). This is neither."
+    },
+    {
+      "question": "If f(x) is an even function and g(x) is an odd function, then h(x) = f(x) * g(x) is:",
+      "options": [
+        "A. An even function",
+        "B. An odd function",
+        "C. Neither even nor odd",
+        "D. Both even and odd"
+      ],
+      "correct": 1,
+      "explanation": "Let h(x) = f(x) * g(x). To determine its type, we evaluate h(-x):\nh(-x) = f(-x) * g(-x)\nSince f(x) is even, f(-x) = f(x).\nSince g(x) is odd, g(-x) = -g(x).\nSubstituting these into the expression for h(-x):\nh(-x) = f(x) * (-g(x))\nh(-x) = - (f(x) * g(x))\nh(-x) = -h(x)\nTherefore, h(x) is an odd function."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Even%20and%20Odd%20Functions%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Even%20and%20Odd%20Functions%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Even%20and%20Odd%20Functions%20NCERT%20Class%2011%2012"
+  }
+}

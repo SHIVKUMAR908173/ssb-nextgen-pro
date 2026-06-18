@@ -1,0 +1,174 @@
+import json
+import os
+
+OUTPUT_DIR = r"c:\Users\Shivkumar\.antigravity\ssb-nextgen-pro\database\datasets\curated_sets"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+set_27_data = {
+  "set_id": "SET_27",
+  "description": "High-Quality Curated SSB Dataset - Set 27",
+  "TAT": [
+    {"pic_no": 1, "description": "A young agricultural officer measuring soil salinity with a handheld conductivity meter in a coastal farm field.", "image_url": "https://picsum.photos/seed/tat_set27_1/800/600"},
+    {"pic_no": 2, "description": "A research assistant checking laser alignment on an optical bench in a university physics laboratory.", "image_url": "https://picsum.photos/seed/tat_set27_2/800/600"},
+    {"pic_no": 3, "description": "A group of NCC cadets setting up solar street lights in a remote power-deficient village square.", "image_url": "https://picsum.photos/seed/tat_set27_3/800/600"},
+    {"pic_no": 4, "description": "A medical student showing the correct operation of an emergency oxygen concentrator to health volunteers.", "image_url": "https://picsum.photos/seed/tat_set27_4/800/600"},
+    {"pic_no": 5, "description": "A design engineer adjusting weather vane linkages on the roof of a high-altitude research cabin.", "image_url": "https://picsum.photos/seed/tat_set27_5/800/600"},
+    {"pic_no": 6, "description": "An instructor demonstrating compass route plotting on a tactical grid map to cadets in an outdoor classroom.", "image_url": "https://picsum.photos/seed/tat_set27_6/800/600"},
+    {"pic_no": 7, "description": "A pilot checking fuel line bleed valve seals on the wing engine nacelle of a commercial jet.", "image_url": "https://picsum.photos/seed/tat_set27_7/800/600"},
+    {"pic_no": 8, "description": "A student volunteering to lead a basic financial accounting workshop for rural women's self-help groups.", "image_url": "https://picsum.photos/seed/tat_set27_8/800/600"},
+    {"pic_no": 9, "description": "Two marine conservationists placing concrete nursery domes to secure growing kelp seedlings on the sea bed.", "image_url": "https://picsum.photos/seed/tat_set27_9/800/600"},
+    {"pic_no": 10, "description": "A woman carefully harvesting premium dark red cherries in an orchard using a basket and pruning hook.", "image_url": "https://picsum.photos/seed/tat_set27_10/800/600"},
+    {"pic_no": 11, "description": "A volunteer rescue team organizing dry rations and water filtration kits on a muddy riverbank.", "image_url": "https://picsum.photos/seed/tat_set27_11/800/600"},
+    {"pic_no": 12, "description": "BLANK PICTURE", "image_url": None}
+  ],
+  
+  "WAT": [
+    "Saline", "Meter", "Laser", "Optic", "Sun", "Gasp", "Vane", "Bleed", "Wing", "Ledger", 
+    "Kelp", "Berry", "Sieve", "Bank", "Bold", "Valor", "Core", "Vigor", "Apex", "Keel", 
+    "Span", "Beam", "Bolt", "Weld", "Fuse", "Joint", "Ring", "Spur", "Crest", "Ridge", 
+    "Sow", "Till", "Plow", "Dig", "Mine", "Gold", "Steel", "Alloy", "Firm", "Stout", 
+    "Brave", "Wild", "Calm", "Cool", "Placid", "Mild", "Warm", "Cheer", "Bright", "Glow", 
+    "Light", "Hope", "Trust", "True", "Sinc", "Pure", "Clean", "Neat", "Trim", "Tidy"
+  ],
+
+  "SRT": [
+    "He is leading an agricultural survey team and a sudden coastal storm surges water into their seed storage tents. He...",
+    "His sister's engineering viva falls on the exact day of his crucial SSB medical board verification. He...",
+    "He discovers his neighbors are storing unauthorized commercial gas cylinders in a residential basement. He...",
+    "While riding a bicycle on a country road, he sees a major high-voltage line sag and touch the dry brushwood below. He...",
+    "He is organizing a college hackathon and a sudden network outage disconnects all developer terminals from the server. He...",
+    "He finds an active secure banking hard token device lying near the entrance of a financial district lift. He...",
+    "He is preparing for an important defense entrance exam but his building's lift fails and traps his key study materials inside. He...",
+    "A swarm of wild hornets nests inside his laboratory ventilation duct, stopping all clean room activities. He...",
+    "He is traveling on a mountain road and the driver of his SUV suffers from sudden high-altitude vertigo on a narrow ridge. He...",
+    "He is accused of copying a research paper structure that he had developed through extensive laboratory experiments. He...",
+    "He is coordinating a local basketball match and the scorer's table is caught in an intense dispute over points. He...",
+    "He is stuck in a cabin lift with a classmate who begins to show severe panic and claustrophobia during a blackout. He...",
+    "He notices a local gas cylinder distributor filling smaller domestic cylinders from commercial ones illegally. He...",
+    "He gets caught in a sudden severe dust storm while trekking in a remote desert canyon. He...",
+    "He is selected to lead his university team in a national sports event but the college budget is delayed, leaving no funds for travel. He...",
+    "He notices an industrial battery chemical yard dumping sulfuric waste directly into the municipal pond. He...",
+    "His research guide asks him to manipulate the calibration values of a laser sensor to match their thesis theory. He...",
+    "A local police officer delays issuing his passport verification certificate, hinting at an unofficial processing charge. He...",
+    "He is staying at a field camp and his teammate suffers a severe deep cut from a broken sample tube at 1 AM. He...",
+    "He presents a new mechanical drone design and the jury labels it unoriginal and copied from the internet. He...",
+    "He is trekking and his teammate gets bit by a wild snake on a remote mountain pass. He...",
+    "He finds out a local bird-market vendor is illegally selling protected owl feathers and nests. He...",
+    "While driving on a state highway, he sees a chemical supply truck spill acid across both lanes. He...",
+    "He is assigned a group project where the team members refuse to work unless the schedule is adjusted to their personal timings. He...",
+    "His roommate decides to withdraw from university because they failed the engineering entrance exam twice. He...",
+    "He sees a group of boys throwing heavy metal rods onto live overhead railway traction wires. He...",
+    "He is working in a chemistry lab and a flask containing a toxic acid breaks, spilling across his desk. He...",
+    "He is falsely accused of losing a crucial sports kit bag that was misplaced by the physical instructor. He...",
+    "He is leading a village afforestation drive and the volunteers refuse to work because the tools are dusty. He...",
+    "While rafting in a fast river, the main inflatable boat chamber gets a minor puncture from a sharp root. He...",
+    "He discovers his wallet and flight boarding pass are missing right before the security check-in gates. He...",
+    "He finds a cloned social media portal soliciting emergency medical funds in the name of his local NGO. He...",
+    "He is in a museum and notices visitors scratching names into an ancient bronze sculpture. He...",
+    "He is traveling and a sudden heavy rockfall completely blocks the single-lane mountain road ahead of him. He...",
+    "His cousin insists on launching heavy commercial fireworks in a narrow residential street. He...",
+    "He is organizing a village immunization camp and the refrigeration unit breaks down, threating the vaccine storage. He...",
+    "He sees a pregnant lady struggle to carry a heavy market basket across a busy, uncoordinated highway lane. He...",
+    "He is writing a competitive exam and a bottle of tea spills, completely ruining his answer sheet. He...",
+    "He finds an injured migratory bird with a bleeding wing tangled in a wire fence near his farm. He...",
+    "His college team is competing in a solar boat race and the main engine propeller gets clogged with weeds before launch. He...",
+    "He is on a trek and his companion gets a deep puncture wound from a sharp dry bamboo stick on the trail. He...",
+    "He is preparing an engineering presentation and his storage drive gets corrupted, wiping out the files a day before the presentation. He...",
+    "He notices a candidate attempting to use micro-slips to cheat during a high-stakes defense examination. He...",
+    "He is riding a motorcycle down a steep mountain road and the front brake lever snaps. He...",
+    "He smells strong chemical vapor coming from a locked storage room in his college dormitory. He...",
+    "His project team partner attempts to submit their joint research work as their individual project at a conference. He...",
+    "He is traveling on a remote road and his vehicle's fuel line springs a minor leak in a forest zone. He...",
+    "He sees a display stall's paper decorations catch fire from a short circuit at a crowded college fest. He...",
+    "He is asked to present a seminar on marine ecology at very short notice due to an absent speaker. He...",
+    "He is alone at a remote farmhouse and hears footsteps circling the ground floor windows at night. He...",
+    "He discovers his bank account has been debited a large sum via an unauthorized online transaction. He...",
+    "His friends try to pressure him into riding triples on a motorcycle to attend a late-night party. He...",
+    "He is participating in a cycling sprint and the front wheel rim of his bicycle buckles before the start. He...",
+    "He is stuck in a cable car with a passenger who suffers a sudden high-altitude panic attack. He...",
+    "He is in a forest nursery and spots dry packaging straw catching fire near the seed racks. He...",
+    "He receives his SSB call letter only 15 hours before reporting due to a major postal delay. He...",
+    "He finds out his training partner is planning to withdraw from the sports selection because they cannot afford the travel gear. He...",
+    "He is riding pillion and the driver attempts to perform a dangerous stunt on a crowded avenue. He...",
+    "He finds an injured migratory bird with a bleeding wing tangled in a kite string. He...",
+    "He is attending an international conference and the presenter projects an outdated, incorrect map of India. He..."
+  ],
+
+  "PPDT": {
+    "image_url": "https://picsum.photos/seed/ppdt_set27/800/600?blur=5",
+    "description": "Hazy picture of a young agricultural officer measuring soil salinity with a handheld conductivity meter in a coastal farm field."
+  },
+
+  "PI": [
+    "How do you handle a teammate who takes sole credit for a group project that you developed?",
+    "Tell me about a time you volunteered to manage a crowd of thousands at a local railway station.",
+    "What is your view on the military implications of hypersonic glide vehicles in strategic warfare?",
+    "How do you structure your revisions during the final 48 hours before a major entrance exam?",
+    "Tell me about a time you successfully negotiated a peace agreement between two rival college factions.",
+    "What are the main operational differences between single-stage-to-orbit and multi-stage space rockets?",
+    "How do you handle peer pressure when your roommates insist on playing loud video games during study hours?",
+    "Tell me about a time you mastered a high-precision chemical calibration or lab technique within 3 days.",
+    "If you are assigned to lead a task where the resources are cut by 50% overnight, how do you proceed?",
+    "What is your opinion on the strategic importance of the Northern Sea Route in Arctic transit?",
+    "Tell me about a major family medical crisis where you had to coordinate all the hospital logistics.",
+    "What is the difference between physical fitness and physical resilience, in your own words?",
+    "What is the significance of the army motto 'Valour and Faith' in your own everyday actions?",
+    "How do you handle a team member who is highly experienced but refuses to learn new software tools?",
+    "What role does tactical air superiority play in modern combined-arms operations?",
+    "Tell me about a time you volunteered to clean up an entire public pond or park in your area.",
+    "What are your views on India's strategic partnerships with East African nations?",
+    "If you are selected, how do you plan to utilize your engineering background in technical surveillance?",
+    "How do you handle a close friend who is constantly attempting to demotivate you from defense prep?",
+    "What is the most challenging 10K running or swimming race you have ever completed?"
+  ],
+
+  "SD": [
+    "What is the opinion of your parents about you?",
+    "What do your teachers or employers think about you?",
+    "What do your friends or colleagues think about you?",
+    "What is your own opinion about yourself?",
+    "What are the qualities you would like to develop in yourself?"
+  ],
+
+  "Lecturette": [
+    "The Role of Hypersonic Glide Vehicles in Modern Warfare",
+    "Strategic Importance of the Northern Sea Route in Arctic Transit",
+    "India's Strategic Partnerships with East African Nations",
+    "The Distinction Between Physical Fitness and Physical Resilience"
+  ],
+
+  "GD": [
+    "Should the development of hypersonic defense systems be strictly banned under global treaties, or is it an inevitable step in deterrence?",
+    "Does the expansion of high-altitude research stations serve purely scientific exploration, or is it a cover for tactical territorial claims?"
+  ],
+
+  "GPE": {
+    "narrative": "You are a group of 6 technical cadets visiting a high-altitude optical research observatory. It is 1100 hours. A local meteorological ranger runs up to you with urgent news: 1. A sudden severe solar storm warning has been issued, and the main laser alignment systems (5 km North) must be recalibrated and secured in exactly 2 hours (1300 hours) to prevent total equipment damage. 2. A research weather van has skidded off the icy road 6 km East, and 3 scientists are injured and trapped inside. The nearest medical camp is 8 km away. 3. A pack of endangered wild wolves is caught in a poacher's wire net 3 km South near an avalanche zone. You have a rugged snow jeep (seats 5), some tow cables, a medical kit, and a satellite radio. The base station is 12 km away. How will you divide your group and prioritize these tasks to ensure the laser alignment systems are secured, the scientists are rescued, and the wild wolves are released before 1300 hours?",
+    "map_url": "https://picsum.photos/seed/gpe_map_set27/800/600"
+  },
+
+  "GTO": {
+    "PGT": "Progressive Group Task: 4 progressive obstacles requiring heavy cantilever structures to cross high walls. Resources: 1 long Plank, 1 short Balli, 2 Ropes, 1 steel pipe. Time: 40 mins.",
+    "HGT": "Half Group Task: 1 complex obstacle involving crossing a suspended wooden platform. Resources: 1 Plank, 1 Balli, 1 Rope. Time: 15 mins.",
+    "IO": "Individual Obstacles: 10 standard GTO obstacles including the Tiger Leap. Time: 3 mins.",
+    "FGT": "Final Group Task: A coordinated team effort to transport a heavy gas cylinder across the final defensive line. Resources: 1 Plank, 1 Balli, 2 Ropes. Time: 15 mins."
+  },
+
+  "CPSS": [
+    "Spatial orientation: If the slip indicator ball is deflected to the left during a left turn, how should you correct the rudder?",
+    "Artificial Horizon: The horizon bar is pitched down 15 degrees and banked 45 degrees to the left. Describe the aircraft's current attitude.",
+    "Altimeter Reading: Read the altimeter showing the 10,000-ft pointer at 9, the 1,000-ft pointer at 1, and the 100-ft pointer at 5. What is the current altitude?",
+    "Instrument Landing System: The localizer needle is deflected to the right and the glide slope needle is centered. Where is the aircraft relative to the correct glide path?",
+    "Visual Spatial Reasoning: An unfolded 2D pattern shaped like a cross has faces marked 1 to 6. If folded into a 3D cube, which face will be opposite to 4?",
+    "Cognitive Memory Challenge: Study the radar display featuring 6 aircraft tracks for 5 seconds. Identify which track number has changed its bearing.",
+    "Compass Heading: The aircraft is heading 090 degrees (East). You receive a command to make a standard rate turn to a heading of 180 degrees. How many degrees of turn are required?",
+    "Multi-tasking Psychomotor Test: Maintain the flight simulator joystick within the target green circle while solving basic subtraction problems on the Head-Up Display (HUD).",
+    "Aircraft Recognition: Identify the silhouette of the Mirage 2000 fighter aircraft based on its clean delta wing and lack of canards.",
+    "Reaction Time & Auditory Vigilance: Press the missile launch button within 250 milliseconds only when the radar target locks (turns green) and a high-pitch warning beep is heard."
+  ]
+}
+
+with open(os.path.join(OUTPUT_DIR, "set_27.json"), 'w', encoding='utf-8') as f:
+    json.dump(set_27_data, f, indent=2)
+
+print("Set 27 created successfully with CPSS.")

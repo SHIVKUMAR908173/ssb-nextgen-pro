@@ -1,0 +1,1322 @@
+[
+  {
+    "set_id": "SET_01",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Water Crisis"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_02",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_03",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Water Crisis"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_04",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Unemployment"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_05",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Make in India"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_06",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Role of Media"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_07",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Poverty"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_08",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_09",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Make in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Sports in India"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_10",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_11",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 2,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_12",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Electric Vehicles"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_13",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_14",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Poverty"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_15",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Make in India"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_16",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_17",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_18",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Global Warming"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_19",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Terrorism"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_20",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Agnipath Scheme"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_21",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_22",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_23",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Agnipath Scheme"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_24",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Democracy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_25",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_26",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Terrorism"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_27",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Sports in India"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_28",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Make in India"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Terrorism"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_29",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Terrorism"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_30",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Space Exploration"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_31",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Electric Vehicles"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_32",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Space Exploration"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_33",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Make in India"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_34",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Electric Vehicles"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_35",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_36",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Terrorism"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_37",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 3,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Role of Media"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_38",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Global Warming"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_39",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_40",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Unemployment"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_41",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 4,
+        "topic": "My Favorite Personality"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_42",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Space Exploration"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_43",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Sports in India"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_44",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Global Warming"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_45",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_46",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Make in India"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_47",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Unemployment"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_48",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Sports in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "My Favorite Personality"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_49",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Poverty"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_50",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_51",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Role of Media"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Democracy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_52",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Agnipath Scheme"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_53",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Democracy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Agnipath Scheme"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_54",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Unemployment"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Electric Vehicles"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_55",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Make in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Indian Economy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Unemployment"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_56",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 2,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Indian Economy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_57",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Poverty"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Nuclear Energy"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Role of Media"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_58",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Global Warming"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Make in India"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Nuclear Energy"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_59",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Make in India"
+      },
+      {
+        "topic_no": 2,
+        "topic": "Electric Vehicles"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Terrorism"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Role of Media"
+      }
+    ]
+  },
+  {
+    "set_id": "SET_60",
+    "test": "Lecturette",
+    "questions": [
+      {
+        "topic_no": 1,
+        "topic": "Water Crisis"
+      },
+      {
+        "topic_no": 2,
+        "topic": "My Favorite Personality"
+      },
+      {
+        "topic_no": 3,
+        "topic": "Space Exploration"
+      },
+      {
+        "topic_no": 4,
+        "topic": "Unemployment"
+      }
+    ]
+  }
+]

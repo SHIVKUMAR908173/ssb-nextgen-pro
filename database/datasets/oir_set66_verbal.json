@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification",
+    "question_text": "Under standard atmospheric pressure, pure liquid water freezes and becomes solid ice at 0 degrees Celsius.",
+    "options": [
+      "True",
+      "Probable",
+      "False",
+      "Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "Standard freezing point of water."
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification",
+    "question_text": "We boil raw milk before consuming it because:-",
+    "options": [
+      "Changes color",
+      "Kills harmful bacteria",
+      "Extracts water",
+      "Makes it colder"
+    ],
+    "correct_option": "2",
+    "explanation": "Pasteurization/boiling makes milk safe by killing pathogens."
+  },
+  {
+    "id": 5,
+    "category": "Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: worm bird the early the catches",
+    "options": [
+      "M",
+      "D",
+      "E",
+      "R"
+    ],
+    "correct_option": "1",
+    "explanation": "The early bird catches the worm. Last letter is M."
+  },
+  {
+    "id": 12,
+    "category": "Analogies",
+    "question_text": "Sheep is to Flock as Fish is to __________.",
+    "options": [
+      "Ocean",
+      "Swim",
+      "School",
+      "Water",
+      "Herd"
+    ],
+    "correct_option": "3",
+    "explanation": "Group noun for fish is school."
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "Physics",
+      "Chemistry",
+      "Biology",
+      "Mathematics",
+      "History"
+    ],
+    "correct_option": "5",
+    "explanation": "History is humanities; others are sciences."
+  },
+  {
+    "id": 35,
+    "category": "Math",
+    "question_text": "If 5 pens cost 40 rupees, what is the cost of 8 pens?",
+    "options": [
+      "56",
+      "64",
+      "72",
+      "80"
+    ],
+    "correct_option": "2",
+    "explanation": "1 pen = 8. 8 * 8 = 64."
+  }
+]

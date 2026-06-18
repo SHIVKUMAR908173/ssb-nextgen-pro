@@ -1,0 +1,321 @@
+@import "tailwindcss";
+
+@theme {
+  --color-olive: #3b533e;
+  --color-olive-light: #527256;
+  --color-olive-dark: #273729;
+  --color-charcoal: #1b241c;
+}
+
+:root {
+  /* Dark Mode Color Scheme (Primary) */
+  --bg-primary: #020617; /* Deep navy black */
+  --bg-secondary: #0f172a; /* Slate dark */
+  --bg-card: #0f172a; /* Card dark */
+  --bg-card2: #1e293b;
+  --accent: #3b533e; /* Military Olive */
+  --accent-light: #527256;
+  --accent-dark: #273729;
+  --blue: #2d6a4f;
+  --green: #40916c;
+  --red: #b7094c;
+  --cyan: #3b533e;
+  --purple: #5c677d;
+  --text-primary: #f8fafc; /* Light text for dark mode */
+  --text-secondary: #94a3b8; /* Slate gray */
+  --text-muted: #64748b;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* iOS momentum scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* Safe area padding for iOS */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Base minimum touch targets */
+button, 
+a, 
+input, 
+select, 
+.touch-target {
+  min-height: 44px;
+  touch-action: manipulation; /* Prevent double-tap zoom */
+}
+
+/* Fluid typography scale using clamp */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+}
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+}
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem) !important;
+}
+
+/* Sidebar Styling - Dark Mode */
+aside {
+  background-color: #0f172a !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+aside h1, aside h2, aside h3, aside span:not(.bg-red-500):not(.bg-emerald-500) {
+  color: #f8fafc !important;
+}
+
+aside a {
+  color: #94a3b8 !important;
+}
+
+aside a:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #f8fafc !important;
+}
+
+/* Sidebar active links - Military Olive accent */
+aside a.bg-white\/10 {
+  background-color: rgba(59, 83, 62, 0.3) !important;
+  color: #527256 !important;
+}
+
+aside a svg {
+  color: inherit !important;
+}
+
+/* Sidebar active line highlight in military olive */
+aside div.bg-yellow-400 {
+  background-color: #3b533e !important;
+  box-shadow: 0 0 10px rgba(59, 83, 62, 0.5) !important;
+}
+
+/* Header Styling - Dark Mode */
+header {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(12px);
+}
+
+header h2 {
+  color: #94a3b8 !important;
+}
+
+header div.bg-white\/5 {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+header div.bg-white\/5 span {
+  color: #f8fafc !important;
+}
+
+/* Main Dashboard & Content Sections */
+main {
+  background-color: var(--bg-primary);
+}
+
+/* Cards - Dark Mode */
+.bg-charcoal,
+.bg-charcoal\/80,
+.bg-charcoal\/90,
+.bg-slate-900,
+.bg-slate-950,
+.bg-slate-900\/80,
+.bg-slate-950\/80,
+.bg-\[\#0f172a\],
+.bg-\[\#162840\],
+.bg-\[\#020617\],
+.bg-\[\#162840\/60\],
+.bg-\[\#0f2d4a\],
+.bg-\[\#1a3d6e\],
+.bg-\[\#1a3050\] {
+  background-color: #0f172a !important;
+  border-color: rgba(59, 83, 62, 0.2) !important;
+  color: #f8fafc !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Card subtitles and subtext elements */
+.text-slate-200,
+.text-slate-300,
+.text-slate-400,
+.text-white,
+.text-slate-100 {
+  color: #f8fafc !important;
+}
+
+.text-slate-500,
+.text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+/* Sub-card elements */
+.bg-\[\#162840\] .bg-\[\#0f172a\] {
+  background-color: #1e293b !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Borders for dark mode */
+.border-white\/5,
+.border-white\/10,
+.border-white\/20,
+.border-\[\#1E3A5F\] {
+  border-color: rgba(59, 83, 62, 0.2) !important;
+}
+
+/* Forms and Inputs - Dark Mode */
+input, textarea, select {
+  background-color: #1e293b !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #f8fafc !important;
+  /* Prevent iOS auto-zoom on focus by enforcing 16px font-size minimum */
+  font-size: max(16px, 1rem) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #3b533e !important;
+  box-shadow: 0 0 0 1px rgba(59, 83, 62, 0.5) !important;
+}
+
+/* Make accent text stand out in dark mode - convert all accent colors to military olive */
+.text-yellow-500,
+.text-yellow-400,
+.text-orange-500,
+.text-orange-400,
+.text-blue-500,
+.text-blue-400,
+.text-green-500,
+.text-green-400,
+.text-purple-500,
+.text-purple-400,
+.text-cyan-500,
+.text-cyan-400,
+.text-emerald-500,
+.text-emerald-400 {
+  color: #527256 !important;
+}
+
+/* Primary Action Buttons - Military Olive */
+.bg-yellow-500,
+.bg-accent,
+.btn-primary {
+  background-color: #3b533e !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.bg-yellow-500:hover,
+.btn-primary:hover {
+  background-color: #273729 !important;
+  color: #ffffff !important;
+}
+
+/* Secondary / outlined buttons */
+button.border-yellow-500 {
+  border-color: #3b533e !important;
+  color: #527256 !important;
+}
+
+button.border-yellow-500:hover {
+  background-color: rgba(59, 83, 62, 0.2) !important;
+  color: #527256 !important;
+}
+
+/* Accent lines and backgrounds - convert all to military olive theme */
+.bg-yellow-500\/10,
+.bg-yellow-500\/15,
+.bg-emerald-500\/10,
+.bg-emerald-500\/15,
+.bg-orange-500\/10,
+.bg-orange-500\/15,
+.bg-blue-500\/10,
+.bg-blue-500\/15,
+.bg-green-500\/10,
+.bg-green-500\/15,
+.bg-purple-500\/10,
+.bg-purple-500\/15,
+.bg-cyan-500\/10,
+.bg-cyan-500\/15,
+.bg-red-500\/10,
+.bg-red-500\/15 {
+  background-color: rgba(59, 83, 62, 0.15) !important;
+  border-color: rgba(59, 83, 62, 0.3) !important;
+}
+
+/* Custom badges - convert all badge colors to military olive theme */
+span.bg-emerald-500,
+span.bg-yellow-500,
+span.bg-orange-500,
+span.bg-blue-500,
+span.bg-green-500,
+span.bg-purple-500,
+span.bg-cyan-500,
+span.bg-red-500 {
+  background-color: #3b533e !important;
+  color: #ffffff !important;
+}
+
+/* Adjust gradients to military olive hues */
+.from-yellow-400\/5,
+.from-orange-500\/5 {
+  background-image: linear-gradient(to bottom, rgba(59, 83, 62, 0.1), transparent) !important;
+}
+
+.bg-yellow-400\/5,
+.bg-orange-500\/5 {
+  background-color: rgba(59, 83, 62, 0.1) !important;
+}
+
+/* Gradient backgrounds - convert to olive theme */
+.from-\[\#0f2d4a\],
+.from-\[\#162840\] {
+  background-image: linear-gradient(to bottom right, #0f172a, #1e293b) !important;
+}
+
+.to-\[\#1a3d6e\],
+.to-\[\#0f172a\] {
+  background-image: linear-gradient(to bottom right, #1e293b, #0f172a) !important;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--accent)] text-white font-bold py-3 px-6 rounded-lg transition-all hover:bg-[var(--accent-dark)] active:scale-95;
+  }
+  
+  .card-glass {
+    @apply bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-6 transition-all hover:border-[var(--accent)];
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 p-3 rounded-lg text-[var(--text-secondary)] transition-all hover:bg-[var(--accent)]/20 hover:text-[var(--accent-light)] cursor-pointer;
+  }
+
+  .nav-item-active {
+    @apply bg-[var(--accent)]/30 text-[var(--accent-light)] border-l-4 border-[var(--accent)];
+  }
+}
+
+/* Custom Scrollbar - Dark Mode */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(59, 83, 62, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 83, 62, 0.5);
+}

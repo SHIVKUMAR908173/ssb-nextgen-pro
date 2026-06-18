@@ -1,0 +1,249 @@
+[
+  {
+    "id": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Table" },
+      { "label": "2", "text": "Chair" },
+      { "label": "3", "text": "Desk" },
+      { "label": "4", "text": "Stool" },
+      { "label": "5", "text": "Bed" }
+    ],
+    "correct_option": "5",
+    "explanation": "A bed is primarily for sleeping; the others are primarily for sitting or working."
+  },
+  {
+    "id": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Copper" },
+      { "label": "2", "text": "Silver" },
+      { "label": "3", "text": "Gold" },
+      { "label": "4", "text": "Aluminum" },
+      { "label": "5", "text": "Carbon" }
+    ],
+    "correct_option": "5",
+    "explanation": "Carbon is a non-metal, while the others are metals."
+  },
+  {
+    "id": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Ear" },
+      { "label": "2", "text": "Eye" },
+      { "label": "3", "text": "Nose" },
+      { "label": "4", "text": "Heart" },
+      { "label": "5", "text": "Skin" }
+    ],
+    "correct_option": "4",
+    "explanation": "The heart is an internal organ; the others are external sensory organs."
+  },
+  {
+    "id": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Paper" },
+      { "label": "2", "text": "Panic" },
+      { "label": "3", "text": "Panel" },
+      { "label": "4", "text": "Panda" }
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical: Panda, Panel, Panic, Paper. 'Paper' comes last."
+  },
+  {
+    "id": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Quiet" },
+      { "label": "2", "text": "Quick" },
+      { "label": "3", "text": "Query" },
+      { "label": "4", "text": "Quest" }
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical: Query, Quest, Quick, Quiet. 'Quiet' comes last."
+  },
+  {
+    "id": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Raise" },
+      { "label": "2", "text": "Radio" },
+      { "label": "3", "text": "Radar" },
+      { "label": "4", "text": "Rain" }
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical: Radar, Radio, Rain, Raise. 'Raise' comes last."
+  },
+  {
+    "id": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Table" },
+      { "label": "2", "text": "Tact" },
+      { "label": "3", "text": "Tail" },
+      { "label": "4", "text": "Take" }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical: Table, Tact, Tail, Take. 'Take' comes last."
+  },
+  {
+    "id": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Under" },
+      { "label": "2", "text": "Uncle" },
+      { "label": "3", "text": "Unit" },
+      { "label": "4", "text": "Until" }
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical: Uncle, Under, Unit, Until. 'Until' comes last."
+  },
+  {
+    "id": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nB, D, F, H, J, _______, _______.",
+    "correct_option": "L, N",
+    "explanation": "The series skips letters by adding 2 (+2): B(2), D(4), F(6), H(8), J(10) -> L(12), N(14)."
+  },
+  {
+    "id": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n1, 4, 9, 16, 25, _______, _______.",
+    "correct_option": "36, 49",
+    "explanation": "Consecutive perfect squares: 1^2, 2^2, 3^2, 4^2, 5^2 -> 6^2 (36), 7^2 (49)."
+  },
+  {
+    "id": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n5, 10, 20, 40, 80, _______, _______.",
+    "correct_option": "160, 320",
+    "explanation": "Each term is doubled (x2) to get the next term."
+  },
+  {
+    "id": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "AEI" },
+      { "label": "2", "text": "OUA" },
+      { "label": "3", "text": "EIO" },
+      { "label": "4", "text": "XYZ" },
+      { "label": "5", "text": "UEO" }
+    ],
+    "correct_option": "4",
+    "explanation": "XYZ is a sequence of consonants; the other groups are composed of vowels."
+  },
+  {
+    "id": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "3" },
+      { "label": "2", "text": "5" },
+      { "label": "3", "text": "7" },
+      { "label": "4", "text": "9" },
+      { "label": "5", "text": "11" }
+    ],
+    "correct_option": "4",
+    "explanation": "9 is a composite number (3x3); the others are prime numbers."
+  },
+  {
+    "id": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 4’s are immediately preceded by a 7 AND immediately followed by a 1 in the following sequence?\n7 4 1 3 7 4 1 4 1 7 4 1 9",
+    "options": [
+      { "label": "1", "text": "1" },
+      { "label": "2", "text": "2" },
+      { "label": "3", "text": "3" },
+      { "label": "4", "text": "4" }
+    ],
+    "correct_option": "3",
+    "explanation": "The specific sequence '7 4 1' appears at index [1,2,3], [5,6,7], and [10,11,12]."
+  },
+  {
+    "id": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 8 notebooks cost 120 rupees, what is the cost of 5 notebooks?",
+    "options": [
+      { "label": "1", "text": "65" },
+      { "label": "2", "text": "70" },
+      { "label": "3", "text": "75" },
+      { "label": "4", "text": "80" }
+    ],
+    "correct_option": "3",
+    "explanation": "120 / 8 = 15 rupees per notebook. 5 x 15 = 75 rupees."
+  },
+  {
+    "id": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A man walks 10 meters East, turns right and walks 5 meters, then turns right again and walks 10 meters. In which direction is he now from his starting point?",
+    "options": [
+      { "label": "1", "text": "North" },
+      { "label": "2", "text": "South" },
+      { "label": "3", "text": "East" },
+      { "label": "4", "text": "West" }
+    ],
+    "correct_option": "2",
+    "explanation": "10m East + 5m South + 10m West = 5m South of start."
+  },
+  {
+    "id": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a woman, a man says, \"She is the daughter of my only brother's wife.\" How is the man related to the woman?",
+    "options": [
+      { "label": "1", "text": "Father" },
+      { "label": "2", "text": "Brother" },
+      { "label": "3", "text": "Uncle" },
+      { "label": "4", "text": "Cousin" }
+    ],
+    "correct_option": "3",
+    "explanation": "Only brother's daughter is the man's niece, making him her uncle."
+  },
+  {
+    "id": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"BAT\" is coded as 23, and \"CAT\" is coded as 24, how is the word \"RAT\" coded? (Hint: A=1, B=2...)",
+    "options": [
+      { "label": "1", "text": "37" },
+      { "label": "2", "text": "38" },
+      { "label": "3", "text": "39" },
+      { "label": "4", "text": "40" }
+    ],
+    "correct_option": "3",
+    "explanation": "R=18, A=1, T=20. Sum: 18+1+20 = 39."
+  },
+  {
+    "id": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 4th of a month falls on a Monday, what day of the week will the 25th of the same month be?",
+    "options": [
+      { "label": "1", "text": "Sunday" },
+      { "label": "2", "text": "Monday" },
+      { "label": "3", "text": "Tuesday" },
+      { "label": "4", "text": "Wednesday" }
+    ],
+    "correct_option": "2",
+    "explanation": "25 - 4 = 21 days. 21 is exactly 3 weeks, so it remains a Monday."
+  },
+  {
+    "id": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      { "label": "1", "text": "1/2" },
+      { "label": "2", "text": "3/4" },
+      { "label": "3", "text": "2/3" },
+      { "label": "4", "text": "5/8" }
+    ],
+    "correct_option": "2",
+    "explanation": "1/2=0.5, 3/4=0.75, 2/3≈0.66, 5/8=0.625. 3/4 is the largest."
+  }
+]

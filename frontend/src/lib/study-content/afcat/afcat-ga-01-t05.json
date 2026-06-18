@@ -1,0 +1,237 @@
+{
+  "id": "afcat-ga-01-t05",
+  "title": "IAF Rank Structure (Airman to Air Chief Marshal)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "The Indian Air Force (IAF) operates with a clearly defined rank structure, similar to other armed forces, to establish command hierarchy, responsibility, and operational efficiency. Understanding these ranks, their insignia, and equivalents in other services is crucial for general awareness and is often tested in competitive exams like AFCAT. The structure progresses from the lowest enlisted rank (Aircraftsman) to the highest commissioned rank (Air Chief Marshal)."
+    },
+    {
+      "type": "heading",
+      "data": "Ranks of Enlisted Personnel (Airmen Ranks)"
+    },
+    {
+      "type": "text",
+      "data": "Airmen constitute the backbone of the Indian Air Force, performing technical, administrative, and support roles. Their ranks are primarily identified by chevrons (V-shaped stripes) on their sleeves."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "IAF Airman Rank",
+          "Insignia Description",
+          "Equivalent Army Rank"
+        ],
+        "rows": [
+          [
+            "Aircraftsman (AC)",
+            "No insignia on sleeve",
+            "Sepoy"
+          ],
+          [
+            "Leading Aircraftsman (LAC)",
+            "One chevron",
+            "Lance Naik"
+          ],
+          [
+            "Corporal (Cpl)",
+            "Two chevrons",
+            "Naik"
+          ],
+          [
+            "Sergeant (Sgt)",
+            "Three chevrons",
+            "Havildar"
+          ],
+          [
+            "Junior Warrant Officer (JWO)",
+            "Ashok Chakra with one stripe (brass/chrome metal)",
+            "Naib Subedar"
+          ],
+          [
+            "Warrant Officer (WO)",
+            "Ashok Chakra with two stripes (brass/chrome metal)",
+            "Subedar"
+          ],
+          [
+            "Master Warrant Officer (MWO)",
+            "Ashok Chakra with three stripes (brass/chrome metal)",
+            "Subedar Major"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Airmen ranks are distinguished by the number of chevrons up to Sergeant. JWO, WO, and MWO are identified by the Ashoka Chakra emblem, indicating their higher authority and experience within the PBOR (Personnel Below Officer Rank) cadre."
+    },
+    {
+      "type": "heading",
+      "data": "Ranks of Commissioned Officers"
+    },
+    {
+      "type": "text",
+      "data": "Commissioned officers lead and command units, responsible for planning, strategy, and execution of air operations. Their ranks are displayed on shoulder badges and are broadly categorized into Junior, Field, and General Officer Ranks."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "IAF Officer Rank",
+          "Insignia Description",
+          "Equivalent Army Rank",
+          "Equivalent Navy Rank"
+        ],
+        "rows": [
+          [
+            "Pilot Officer (Plt Off)",
+            "One star",
+            "Second Lieutenant",
+            "Midshipman / Sub Lieutenant"
+          ],
+          [
+            "Flying Officer (Fg Off)",
+            "Two stars",
+            "Lieutenant",
+            "Sub Lieutenant"
+          ],
+          [
+            "Flight Lieutenant (Flt Lt)",
+            "Three stars",
+            "Captain",
+            "Lieutenant"
+          ],
+          [
+            "Squadron Leader (Sqn Ldr)",
+            "Four stars",
+            "Major",
+            "Lieutenant Commander"
+          ],
+          [
+            "Wing Commander (Wg Cdr)",
+            "One star, one eagle",
+            "Lieutenant Colonel",
+            "Commander"
+          ],
+          [
+            "Group Captain (Gp Capt)",
+            "Two stars, one eagle",
+            "Colonel",
+            "Captain"
+          ],
+          [
+            "Air Commodore (Air Cmde)",
+            "One star, eagle, laurel wreath",
+            "Brigadier",
+            "Commodore"
+          ],
+          [
+            "Air Vice Marshal (AVM)",
+            "Two stars, eagle, laurel wreath",
+            "Major General",
+            "Rear Admiral"
+          ],
+          [
+            "Air Marshal (AM)",
+            "One star, national emblem, laurel wreath",
+            "Lieutenant General",
+            "Vice Admiral"
+          ],
+          [
+            "Air Chief Marshal (ACM)",
+            "Four stars, national emblem, laurel wreath",
+            "General",
+            "Admiral"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Pilot Officer**: Entry-level commissioned rank, typically held by cadets under training or recently commissioned officers.",
+        "**Air Commodore**: The first General Officer rank, often commanding a base or a large formation.",
+        "**Air Vice Marshal**: Senior General Officer, typically commanding an Air Force Region or holding principal staff appointments.",
+        "**Air Marshal**: Senior-most General Officer ranks, often commanding an Air Command or holding very high staff appointments at Air Headquarters.",
+        "**Air Chief Marshal**: The highest active rank in the IAF, held by the Chief of the Air Staff (CAS), who is the professional head and commander of the Indian Air Force."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: For officer ranks, remember the progression of stars and the addition of the 'Eagle' (symbolizing the Air Force) and the 'National Emblem' (Ashoka Chakra) for higher ranks. The laurel wreath signifies senior ranks from Air Commodore upwards."
+    },
+    {
+      "type": "heading",
+      "data": "Identifying Ranks: An Example"
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "An officer is seen wearing shoulder insignia consisting of a single star above an eagle. What is his rank in the Indian Air Force?",
+        "solution": "1. Identify the key elements of the insignia: one star and one eagle.\n2. Refer to the commissioned officer rank structure table.\n3. Ranks involving an 'eagle' begin from Wing Commander.\n4. A Wing Commander wears one star and one eagle.\n5. Therefore, the officer's rank is Wing Commander.",
+        "answer": "Wing Commander"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "IAF Rank Hierarchy (Simplified Flow)"
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Indian Air Force Rank Progression",
+        "description": "A simplified hierarchical flow illustrating the primary progression path through Airmen and Officer ranks.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    ACM[Air Chief Marshal] --> AM[Air Marshal]\n    AM --> AVM[Air Vice Marshal]\n    AVM --> AirCmde[Air Commodore]\n    AirCmde --> GpCapt[Group Captain]\n    GpCapt --> WgCdr[Wing Commander]\n    WgCdr --> SqnLdr[Squadron Leader]\n    SqnLdr --> FltLt[Flight Lieutenant]\n    FltLt --> FgOff[Flying Officer]\n    FgOff --> PltOff[Pilot Officer]\n    PltOff --> MWO[Master Warrant Officer]\n    MWO --> WO[Warrant Officer]\n    WO --> JWO[Junior Warrant Officer]\n    JWO --> Sgt[Sergeant]\n    Sgt --> Cpl[Corporal]\n    Cpl --> LAC[Leading Aircraftsman]\n    LAC --> AC[Aircraftsman]\n\n    subgraph Commissioned Officers\n        ACM -- Highest Command --> PltOff\n    end\n\n    subgraph Personnel Below Officer Rank (PBOR)\n        MWO -- Senior Enlisted --> AC\n    end"
+      }
+    }
+  ],
+  "keyPoints": [
+    "IAF ranks are broadly categorized into Commissioned Officers and Personnel Below Officer Rank (PBOR - Airmen including JWO, WO, MWO).",
+    "Insignia for Airmen primarily involve chevrons, while officers display stars, eagles, national emblem, and laurel wreaths on their shoulders.",
+    "The Chief of the Air Staff (CAS) holds the rank of Air Chief Marshal, the highest active rank in the IAF.",
+    "Pilot Officer is the entry-level rank for commissioned officers, and Aircraftsman is the entry-level for Airmen.",
+    "Understanding the equivalent ranks in the Army and Navy is also important for comparative general awareness questions."
+  ],
+  "commonMistakes": [
+    "Confusing the insignia of similar-looking ranks, especially between Wing Commander/Group Captain and Air Commodore/Air Vice Marshal.",
+    "Mixing up Army/Navy equivalents with IAF ranks, e.g., calling an Air Commodore a 'Brigadier' in the IAF context."
+  ],
+  "examTips": [
+    "Create flashcards with rank names on one side and insignia description/visual on the other. Include Army/Navy equivalents.",
+    "Practice identifying ranks from insignia descriptions. AFCAT questions often describe an insignia and ask for the corresponding rank."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following insignia would an Air Marshal wear on his shoulder?",
+      "options": [
+        "Four stars, national emblem, laurel wreath",
+        "One star, national emblem, laurel wreath",
+        "Two stars, eagle, laurel wreath",
+        "One star, eagle, laurel wreath"
+      ],
+      "correct": 1,
+      "explanation": "An Air Marshal wears one star, a national emblem (Ashoka Chakra), and a laurel wreath. Air Chief Marshal wears four stars with the national emblem and wreath. Option C is Air Vice Marshal, Option D is Air Commodore."
+    },
+    {
+      "question": "What is the equivalent Army rank for an Indian Air Force Squadron Leader?",
+      "options": [
+        "Captain",
+        "Major",
+        "Lieutenant Colonel",
+        "Colonel"
+      ],
+      "correct": 1,
+      "explanation": "A Squadron Leader in the Indian Air Force is equivalent to a Major in the Indian Army and a Lieutenant Commander in the Indian Navy. Captain is equivalent to Flight Lieutenant, Lieutenant Colonel to Wing Commander, and Colonel to Group Captain."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=IAF%20Rank%20Structure%20(Airman%20to%20Air%20Chief%20Marshal)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=IAF%20Rank%20Structure%20(Airman%20to%20Air%20Chief%20Marshal)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

@@ -1,0 +1,21 @@
+# TODO: Personal Interview (PI) module (SSB-style)
+
+- [ ] Implement PI conversational flow as deterministic Conversational State Machine
+  - [ ] Add/extend CIQ stages: 1 Education, 2 Family & Routine, 3 Hobbies & Interests, 4 General Awareness, 5 Self-Assessment, 6 Defense Motivation
+  - [ ] Ensure CIQ 1..6 progression is enforced (no open-ended wandering)
+  - [ ] Add “rapid-fire” bundling: ask 5–10 questions in one prompt without pausing
+- [ ] Add virtual interviewer persona branding
+  - [ ] Virtual AI name: **Col Anshul Thakur**
+  - [ ] Ensure interviewer “voice”/prompt style includes **army/colonel dress** vibe
+- [ ] Add evaluation output JSON
+  - [ ] Map transcript answers (+ provided acoustic metrics placeholders) to exactly 15 OLQs
+  - [ ] Output schema: OLQ scores (1-10) + per-OLQ justification + acoustic biomarker fields
+  - [ ] Deterministic mock evaluator is acceptable for MVP; keep strict JSON
+- [ ] Add/extend backend routes to expose PI session
+  - [ ] POST endpoint to start PI session (init state)
+  - [ ] POST endpoint to submit answers / progress state
+  - [ ] POST endpoint to get final evaluation JSON
+- [ ] Validate & verify
+  - [ ] Run `tsc --noEmit`
+  - [ ] Run smoke test / build if present
+  - [ ] Hit new endpoints with curl and verify JSON schema

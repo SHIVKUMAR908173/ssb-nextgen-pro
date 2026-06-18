@@ -1,0 +1,70 @@
+{
+  "Factor I: Planning and Organising": [
+    {
+      "name": "Effective Intelligence",
+      "description": "Ability to find practical solutions to complex problems."
+    },
+    {
+      "name": "Reasoning Ability",
+      "description": "Ability to grasp the essentials of a problem and arrive at logical conclusions."
+    },
+    {
+      "name": "Organising Ability",
+      "description": "Ability to arrange resources in a systematic manner."
+    },
+    {
+      "name": "Power of Expression",
+      "description": "Ability to put across one's ideas clearly and with ease."
+    }
+  ],
+  "Factor II: Social Adjustment": [
+    {
+      "name": "Social Adaptability",
+      "description": "Ability to adapt oneself to the social environment."
+    },
+    {
+      "name": "Cooperation",
+      "description": "Ability to willingly work with others in a group."
+    },
+    {
+      "name": "Sense of Responsibility",
+      "description": "Understanding one's duties and discharging them faithfully."
+    }
+  ],
+  "Factor III: Social Effectiveness": [
+    {
+      "name": "Initiative",
+      "description": "Ability to originate an action and sustain it."
+    },
+    {
+      "name": "Self-Confidence",
+      "description": "Faith in one's own abilities to meet stressful situations."
+    },
+    {
+      "name": "Speed of Decision",
+      "description": "Ability to arrive at workable decisions quickly."
+    },
+    {
+      "name": "Ability to Influence the Group",
+      "description": "Capacity to persuade others to achieve a common objective."
+    }
+  ],
+  "Factor IV: Dynamic": [
+    {
+      "name": "Liveliness",
+      "description": "Capacity to remain buoyant and cheerful in adversity."
+    },
+    {
+      "name": "Determination",
+      "description": "Sustained effort to achieve an objective in spite of obstacles."
+    },
+    {
+      "name": "Courage",
+      "description": "Ability to take calculated risks willingly."
+    },
+    {
+      "name": "Stamina",
+      "description": "Capacity to withstand prolonged physical and mental strain."
+    }
+  ]
+}

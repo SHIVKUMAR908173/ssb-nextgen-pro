@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nThe physical weight of an object remains identical whether it is measured on the surface of the Earth or the surface of the Moon.",
+    "options": [
+      { "label": "1", "text": "True" },
+      { "label": "2", "text": "Probable" },
+      { "label": "3", "text": "False" },
+      { "label": "4", "text": "Absurd" }
+    ],
+    "correct_option": "3",
+    "explanation": "Mass remains the same, but weight is the force of gravity acting on an object, which is much lower on the Moon than on Earth."
+  },
+  {
+    "id": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nA solar eclipse occurs when the Moon passes between the Sun and the Earth, blocking the Sun's light.",
+    "options": [
+      { "label": "1", "text": "True" },
+      { "label": "2", "text": "Probable" },
+      { "label": "3", "text": "False" },
+      { "label": "4", "text": "Absurd" }
+    ],
+    "correct_option": "1",
+    "explanation": "This is the definition of a solar eclipse."
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nWe use mirrors in the headlamps of cars because:-",
+    "options": [
+      { "label": "1", "text": "They make the car look more expensive and stylish." },
+      { "label": "2", "text": "They reflect and concentrate the light into a directed beam for better visibility." },
+      { "label": "3", "text": "They prevent the light bulbs from getting too hot and exploding." },
+      { "label": "4", "text": "They allow the driver to see their own reflection while driving." }
+    ],
+    "correct_option": "2",
+    "explanation": "Parabolic reflectors in headlamps are designed to concentrate light from the bulb into a powerful, forward-facing beam."
+  },
+  {
+    "id": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nDeserts are generally very cold at night despite being very hot during the day because:-",
+    "options": [
+      { "label": "1", "text": "The sand turns into ice once the sun goes down." },
+      { "label": "2", "text": "Deserts lack moisture and vegetation to trap and hold the day's heat." },
+      { "label": "3", "text": "The Moon pulls all the heat away from the Earth's surface at night." },
+      { "label": "4", "text": "Desert animals release cooling gases into the atmosphere after sunset." }
+    ],
+    "correct_option": "2",
+    "explanation": "Dry air and a lack of vegetation allow the heat absorbed by the ground during the day to radiate back into space very rapidly at night."
+  },
+  {
+    "id": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nmoss gathers stone rolling a no",
+    "correct_option": "s",
+    "explanation": "The rearranged sentence is 'A rolling stone gathers no moss'. The last letter is 's'."
+  },
+  {
+    "id": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nhalf-done begun well is",
+    "correct_option": "e",
+    "explanation": "The rearranged sentence is 'Well begun is half-done'. The last letter is 'e'."
+  },
+  {
+    "id": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe tiny giant mountain loomed over the small village below.",
+    "correct_option": "t",
+    "explanation": "The word to be omitted is 'tiny' (as it contradicts 'giant'). The first letter of 'tiny' is 't'."
+  },
+  {
+    "id": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe sharp blunt razor sliced through the paper with ease.",
+    "correct_option": "t",
+    "explanation": "The word to be omitted is 'blunt' (as it contradicts 'sharp' and the action of slicing). The last letter of 'blunt' is 't'."
+  },
+  {
+    "id": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nN O C U S I is the child of one's aunt or uncle.",
+    "correct_option": "O",
+    "explanation": "The rearranged word is 'COUSIN'. The second letter is 'O'."
+  },
+  {
+    "id": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nR I T G E is a large striped cat found in the forests of Asia.",
+    "correct_option": "I",
+    "explanation": "The rearranged word is 'TIGER'. The second letter is 'I'."
+  },
+  {
+    "id": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Doctor is to Patient as Lawyer is to __________.",
+    "options": [
+      { "label": "1", "text": "Court" },
+      { "label": "2", "text": "Judge" },
+      { "label": "3", "text": "Client" },
+      { "label": "4", "text": "Case" },
+      { "label": "5", "text": "Law" }
+    ],
+    "correct_option": "3",
+    "explanation": "A doctor provides services to a patient, just as a lawyer provides services to a client."
+  },
+  {
+    "id": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Needle is to Thread as Pen is to __________.",
+    "options": [
+      { "label": "1", "text": "Paper" },
+      { "label": "2", "text": "Write" },
+      { "label": "3", "text": "Ink" },
+      { "label": "4", "text": "Nib" },
+      { "label": "5", "text": "Cap" }
+    ],
+    "correct_option": "3",
+    "explanation": "A needle uses thread to perform its function, just as a pen uses ink."
+  },
+  {
+    "id": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Bird is to Fly as Snake is to __________.",
+    "options": [
+      { "label": "1", "text": "Bite" },
+      { "label": "2", "text": "Slither" },
+      { "label": "3", "text": "Poison" },
+      { "label": "4", "text": "Reptile" },
+      { "label": "5", "text": "Egg" }
+    ],
+    "correct_option": "2",
+    "explanation": "To fly is the primary mode of movement for a bird, just as to slither is for a snake."
+  },
+  {
+    "id": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Chef is to Kitchen as Scientist is to __________.",
+    "options": [
+      { "label": "1", "text": "Experiment" },
+      { "label": "2", "text": "Lab" },
+      { "label": "3", "text": "Discovery" },
+      { "label": "4", "text": "White coat" },
+      { "label": "5", "text": "Microscope" }
+    ],
+    "correct_option": "2",
+    "explanation": "A chef works in a kitchen, just as a scientist works in a lab."
+  },
+  {
+    "id": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Stethoscope is to Heartbeat as Scale is to __________.",
+    "options": [
+      { "label": "1", "text": "Weight" },
+      { "label": "2", "text": "Balance" },
+      { "label": "3", "text": "Heavy" },
+      { "label": "4", "text": "Measure" },
+      { "label": "5", "text": "Kilogram" }
+    ],
+    "correct_option": "1",
+    "explanation": "A stethoscope is used to measure heartbeats, just as a scale is used to measure weight."
+  },
+  {
+    "id": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Melt is to Liquid as Freeze is to __________.",
+    "options": [
+      { "label": "1", "text": "Cold" },
+      { "label": "2", "text": "Ice" },
+      { "label": "3", "text": "Solid" },
+      { "label": "4", "text": "Water" },
+      { "label": "5", "text": "Temperature" }
+    ],
+    "correct_option": "3",
+    "explanation": "Melting turns a solid into a liquid, just as freezing turns a liquid into a solid."
+  },
+  {
+    "id": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of military hierarchy (highest to lowest)?",
+    "options": [
+      { "label": "1", "text": "Major" },
+      { "label": "2", "text": "Lieutenant" },
+      { "label": "3", "text": "Colonel" },
+      { "label": "4", "text": "Captain" },
+      { "label": "5", "text": "General" }
+    ],
+    "correct_option": "1",
+    "explanation": "The order from highest to lowest is: General, Colonel, Major, Captain, Lieutenant. The middle rank is Major."
+  },
+  {
+    "id": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical biological sequence?",
+    "options": [
+      { "label": "1", "text": "Organ" },
+      { "label": "2", "text": "Cell" },
+      { "label": "3", "text": "Organism" },
+      { "label": "4", "text": "Tissue" },
+      { "label": "5", "text": "System" }
+    ],
+    "correct_option": "1",
+    "explanation": "The sequence from smallest to largest is: Cell, Tissue, Organ, System, Organism. The middle item is Organ."
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Violin" },
+      { "label": "2", "text": "Cello" },
+      { "label": "3", "text": "Harp" },
+      { "label": "4", "text": "Flute" },
+      { "label": "5", "text": "Banjo" }
+    ],
+    "correct_option": "4",
+    "explanation": "Flute is a wind instrument, while the others are stringed instruments."
+  },
+  {
+    "id": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Asia" },
+      { "label": "2", "text": "Africa" },
+      { "label": "3", "text": "Europe" },
+      { "label": "4", "text": "Australia" },
+      { "label": "5", "text": "India" }
+    ],
+    "correct_option": "5",
+    "explanation": "India is a country, while the others are continents."
+  }
+]

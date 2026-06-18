@@ -1,0 +1,396 @@
+{
+  "version": "1.0",
+  "description": "PPDT (Picture Perception and Description Test) Practice Question Bank with 60 sets including image references for production deployment",
+  "practice_sets": [
+    {
+      "set_id": "PPDT_SET_01",
+      "difficulty": "Easy",
+      "time_limit_seconds": 600,
+      "pictures": [
+        {
+          "id": "PPDT_IMG_001",
+          "image_url": "https://ssbprep.com/images/ppdt/001_bridge.jpg",
+          "description": "A person standing on a bridge looking at water",
+          "characters": [
+            {"name": "Rahul", "age": 22, "gender": "Male", "mood": "Thoughtful"}
+          ],
+          "expected_story_themes": ["Planning", "Decision making", "Future goals"],
+          "olq_mapping": ["Reasoning Ability", "Effective Intelligence", "Determination"]
+        },
+        {
+          "id": "PPDT_IMG_002",
+          "image_url": "https://ssbprep.com/images/ppdt/002_classroom.jpg",
+          "description": "Students in a classroom with a teacher",
+          "characters": [
+            {"name": "Priya", "age": 20, "gender": "Female", "mood": "Attentive"}
+          ],
+          "expected_story_themes": ["Learning", "Education", "Guidance"],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_003",
+          "image_url": "https://ssbprep.com/images/ppdt/003_accident.jpg",
+          "description": "A person helping someone who has fallen",
+          "characters": [
+            {"name": "Amit", "age": 25, "gender": "Male", "mood": "Concerned"}
+          ],
+          "expected_story_themes": ["Helping", "Quick response", "Compassion"],
+          "olq_mapping": ["Sense of Responsibility", "Speed of Decision", "Cooperation"]
+        },
+        {
+          "id": "PPDT_IMG_004",
+          "image_url": "https://ssbprep.com/images/ppdt/004_meeting.jpg",
+          "description": "People sitting around a table in discussion",
+          "characters": [
+            {"name": "Sneha", "age": 28, "gender": "Female", "mood": "Confident"}
+          ],
+          "expected_story_themes": ["Leadership", "Teamwork", "Planning"],
+          "olq_mapping": ["Organising Ability", "Ability to Influence the Group", "Power of Expression"]
+        },
+        {
+          "id": "PPDT_IMG_005",
+          "image_url": "https://ssbprep.com/images/ppdt/005_mountain.jpg",
+          "description": "A person climbing a mountain",
+          "characters": [
+            {"name": "Vikram", "age": 24, "gender": "Male", "mood": "Determined"}
+          ],
+          "expected_story_themes": ["Challenge", "Perseverance", "Achievement"],
+          "olq_mapping": ["Determination", "Stamina", "Self-Confidence"]
+        }
+      ]
+    },
+    {
+      "set_id": "PPDT_SET_02",
+      "difficulty": "Medium",
+      "time_limit_seconds": 600,
+      "pictures": [
+        {
+          "id": "PPDT_IMG_006",
+          "image_url": "https://ssbprep.com/images/ppdt/006_hospital.jpg",
+          "description": "A person visiting someone in a hospital",
+          "characters": [
+            {"name": "Neha", "age": 26, "gender": "Female", "mood": "Worried"}
+          ],
+          "expected_story_themes": ["Care", "Friendship", "Support"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"]
+        },
+        {
+          "id": "PPDT_IMG_007",
+          "image_url": "https://ssbprep.com/images/ppdt/007_farm.jpg",
+          "description": "A person working in a field",
+          "characters": [
+            {"name": "Rajesh", "age": 30, "gender": "Male", "mood": "Hardworking"}
+          ],
+          "expected_story_themes": ["Hard work", "Dedication", "Self-reliance"],
+          "olq_mapping": ["Determination", "Stamina", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_008",
+          "image_url": "https://ssbprep.com/images/ppdt/008_fire.jpg",
+          "description": "People responding to a fire incident",
+          "characters": [
+            {"name": "Arjun", "age": 27, "gender": "Male", "mood": "Urgent"}
+          ],
+          "expected_story_themes": ["Emergency response", "Leadership", "Quick action"],
+          "olq_mapping": ["Speed of Decision", "Courage", "Organising Ability"]
+        },
+        {
+          "id": "PPDT_IMG_009",
+          "image_url": "https://ssbprep.com/images/ppdt/009_award.jpg",
+          "description": "Someone receiving recognition",
+          "characters": [
+            {"name": "Kavya", "age": 23, "gender": "Female", "mood": "Proud"}
+          ],
+          "expected_story_themes": ["Achievement", "Recognition", "Success"],
+          "olq_mapping": ["Self-Confidence", "Determination", "Effective Intelligence"]
+        },
+        {
+          "id": "PPDT_IMG_010",
+          "image_url": "https://ssbprep.com/images/ppdt/010_boat.jpg",
+          "description": "People in a boat on water",
+          "characters": [
+            {"name": "Rohan", "age": 25, "gender": "Male", "mood": "Adventurous"}
+          ],
+          "expected_story_themes": ["Teamwork", "Adventure", "Coordination"],
+          "olq_mapping": ["Cooperation", "Organising Ability", "Courage"]
+        }
+      ]
+    },
+    {
+      "set_id": "PPDT_SET_03",
+      "difficulty": "Hard",
+      "time_limit_seconds": 600,
+      "pictures": [
+        {
+          "id": "PPDT_IMG_011",
+          "image_url": "https://ssbprep.com/images/ppdt/011_protest.jpg",
+          "description": "A group of people protesting",
+          "characters": [
+            {"name": "Anjali", "age": 24, "gender": "Female", "mood": "Passionate"}
+          ],
+          "expected_story_themes": ["Social justice", "Leadership", "Conviction"],
+          "olq_mapping": ["Courage", "Ability to Influence the Group", "Sense of Responsibility"]
+        },
+        {
+          "id": "PPDT_IMG_012",
+          "image_url": "https://ssbprep.com/images/ppdt/012_flood.jpg",
+          "description": "People helping during a flood",
+          "characters": [
+            {"name": "Karan", "age": 28, "gender": "Male", "mood": "Determined"}
+          ],
+          "expected_story_themes": ["Disaster response", "Helping", "Community service"],
+          "olq_mapping": ["Sense of Responsibility", "Organising Ability", "Cooperation"]
+        },
+        {
+          "id": "PPDT_IMG_013",
+          "image_url": "https://ssbprep.com/images/ppdt/013_interview.jpg",
+          "description": "A person in an interview setting",
+          "characters": [
+            {"name": "Meera", "age": 22, "gender": "Female", "mood": "Nervous but confident"}
+          ],
+          "expected_story_themes": ["Career aspiration", "Preparation", "Opportunity"],
+          "olq_mapping": ["Self-Confidence", "Effective Intelligence", "Power of Expression"]
+        },
+        {
+          "id": "PPDT_IMG_014",
+          "image_url": "https://ssbprep.com/images/ppdt/014_conflict.jpg",
+          "description": "Two people in a heated discussion",
+          "characters": [
+            {"name": "Suresh", "age": 30, "gender": "Male", "mood": "Frustrated"}
+          ],
+          "expected_story_themes": ["Conflict resolution", "Understanding", "Compromise"],
+          "olq_mapping": ["Social Adaptability", "Reasoning Ability", "Cooperation"]
+        },
+        {
+          "id": "PPDT_IMG_015",
+          "image_url": "https://ssbprep.com/images/ppdt/015_rescue.jpg",
+          "description": "A rescue operation in progress",
+          "characters": [
+            {"name": "Captain Sharma", "age": 35, "gender": "Male", "mood": "Focused"}
+          ],
+          "expected_story_themes": ["Leadership", "Crisis management", "Bravery"],
+          "olq_mapping": ["Courage", "Organising Ability", "Speed of Decision"]
+        }
+      ]
+    },
+    {
+      "set_id": "PPDT_SET_04",
+      "difficulty": "Easy",
+      "time_limit_seconds": 600,
+      "pictures": [
+        {
+          "id": "PPDT_IMG_016",
+          "image_url": "https://ssbprep.com/images/ppdt/016_playground.jpg",
+          "description": "Children playing in a playground",
+          "characters": [
+            {"name": "Ravi", "age": 10, "gender": "Male", "mood": "Happy"}
+          ],
+          "expected_story_themes": ["Childhood", "Friendship", "Joy"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Liveliness"]
+        },
+        {
+          "id": "PPDT_IMG_017",
+          "image_url": "https://ssbprep.com/images/ppdt/017_library.jpg",
+          "description": "Someone reading in a library",
+          "characters": [
+            {"name": "Anita", "age": 21, "gender": "Female", "mood": "Focused"}
+          ],
+          "expected_story_themes": ["Learning", "Self-improvement", "Knowledge"],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_018",
+          "image_url": "https://ssbprep.com/images/ppdt/018_garden.jpg",
+          "description": "A person gardening",
+          "characters": [
+            {"name": "Sunita", "age": 45, "gender": "Female", "mood": "Peaceful"}
+          ],
+          "expected_story_themes": ["Nurturing", "Patience", "Nature"],
+          "olq_mapping": ["Sense of Responsibility", "Determination", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_019",
+          "image_url": "https://ssbprep.com/images/ppdt/019_sports.jpg",
+          "description": "A sports competition",
+          "characters": [
+            {"name": "Deepak", "age": 20, "gender": "Male", "mood": "Competitive"}
+          ],
+          "expected_story_themes": ["Competition", "Sportsmanship", "Team spirit"],
+          "olq_mapping": ["Determination", "Cooperation", "Liveliness"]
+        },
+        {
+          "id": "PPDT_IMG_020",
+          "image_url": "https://ssbprep.com/images/ppdt/020_family.jpg",
+          "description": "A family gathering",
+          "characters": [
+            {"name": "Mrs. Gupta", "age": 50, "gender": "Female", "mood": "Happy"}
+          ],
+          "expected_story_themes": ["Family bonds", "Togetherness", "Celebration"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"]
+        }
+      ]
+    },
+    {
+      "set_id": "PPDT_SET_05",
+      "difficulty": "Medium",
+      "time_limit_seconds": 600,
+      "pictures": [
+        {
+          "id": "PPDT_IMG_021",
+          "image_url": "https://ssbprep.com/images/ppdt/021_construction.jpg",
+          "description": "Workers at a construction site",
+          "characters": [
+            {"name": "Engineer Patel", "age": 32, "gender": "Male", "mood": "Supervising"}
+          ],
+          "expected_story_themes": ["Project management", "Leadership", "Progress"],
+          "olq_mapping": ["Organising Ability", "Sense of Responsibility", "Effective Intelligence"]
+        },
+        {
+          "id": "PPDT_IMG_022",
+          "image_url": "https://ssbprep.com/images/ppdt/022_stage.jpg",
+          "description": "Someone performing on stage",
+          "characters": [
+            {"name": "Pooja", "age": 19, "gender": "Female", "mood": "Confident"}
+          ],
+          "expected_story_themes": ["Performance", "Confidence", "Expression"],
+          "olq_mapping": ["Self-Confidence", "Power of Expression", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_023",
+          "image_url": "https://ssbprep.com/images/ppdt/023_traffic.jpg",
+          "description": "A traffic police officer directing vehicles",
+          "characters": [
+            {"name": "Constable Singh", "age": 28, "gender": "Male", "mood": "Dutiful"}
+          ],
+          "expected_story_themes": ["Duty", "Discipline", "Service"],
+          "olq_mapping": ["Sense of Responsibility", "Discipline", "Cooperation"]
+        },
+        {
+          "id": "PPDT_IMG_024",
+          "image_url": "https://ssbprep.com/images/ppdt/024_village.jpg",
+          "description": "A person teaching in a village",
+          "characters": [
+            {"name": "Teacher Sharma", "age": 26, "gender": "Female", "mood": "Dedicated"}
+          ],
+          "expected_story_themes": ["Social service", "Education", "Dedication"],
+          "olq_mapping": ["Sense of Responsibility", "Power of Expression", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_025",
+          "image_url": "https://ssbprep.com/images/ppdt/025_race.jpg",
+          "description": "Runners in a race",
+          "characters": [
+            {"name": "Athlete Kumar", "age": 22, "gender": "Male", "mood": "Determined"}
+          ],
+          "expected_story_themes": ["Competition", "Endurance", "Goal achievement"],
+          "olq_mapping": ["Determination", "Stamina", "Self-Confidence"]
+        }
+      ]
+    },
+    {
+      "set_id": "PPDT_SET_06",
+      "difficulty": "Hard",
+      "time_limit_seconds": 600,
+      "pictures": [
+        {
+          "id": "PPDT_IMG_026",
+          "image_url": "https://ssbprep.com/images/ppdt/026_border.jpg",
+          "description": "Soldiers at a border post",
+          "characters": [
+            {"name": "Major Verma", "age": 30, "gender": "Male", "mood": "Alert"}
+          ],
+          "expected_story_themes": ["Duty", "Patriotism", "Vigilance"],
+          "olq_mapping": ["Courage", "Sense of Responsibility", "Determination"]
+        },
+        {
+          "id": "PPDT_IMG_027",
+          "image_url": "https://ssbprep.com/images/ppdt/027_boardroom.jpg",
+          "description": "A tense boardroom meeting",
+          "characters": [
+            {"name": "CEO Malhotra", "age": 45, "gender": "Male", "mood": "Decisive"}
+          ],
+          "expected_story_themes": ["Leadership", "Decision making", "Crisis"],
+          "olq_mapping": ["Organising Ability", "Speed of Decision", "Effective Intelligence"]
+        },
+        {
+          "id": "PPDT_IMG_028",
+          "image_url": "https://ssbprep.com/images/ppdt/028_lab.jpg",
+          "description": "Scientists working in a laboratory",
+          "characters": [
+            {"name": "Dr. Reddy", "age": 35, "gender": "Female", "mood": "Focused"}
+          ],
+          "expected_story_themes": ["Research", "Innovation", "Discovery"],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"]
+        },
+        {
+          "id": "PPDT_IMG_029",
+          "image_url": "https://ssbprep.com/images/ppdt/029_court.jpg",
+          "description": "A courtroom scene",
+          "characters": [
+            {"name": "Advocate Joshi", "age": 38, "gender": "Male", "mood": "Arguing"}
+          ],
+          "expected_story_themes": ["Justice", "Truth", "Advocacy"],
+          "olq_mapping": ["Power of Expression", "Courage", "Reasoning Ability"]
+        },
+        {
+          "id": "PPDT_IMG_030",
+          "image_url": "https://ssbprep.com/images/ppdt/030_helicopter.jpg",
+          "description": "A helicopter rescue mission",
+          "characters": [
+            {"name": "Pilot Kapoor", "age": 32, "gender": "Male", "mood": "Skilled"}
+          ],
+          "expected_story_themes": ["Bravery", "Skill", "Rescue"],
+          "olq_mapping": ["Courage", "Effective Intelligence", "Speed of Decision"]
+        }
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "story_writing_aspects": {
+      "time_dimension": {
+        "weight": 0.15,
+        "description": "Past, present, and future aspects of the story"
+      },
+      "theme_quality": {
+        "weight": 0.25,
+        "description": "Relevance, depth, and positivity of themes"
+      },
+      "character_development": {
+        "weight": 0.2,
+        "description": "How well characters are portrayed and developed"
+      },
+      "olq_demonstration": {
+        "weight": 0.25,
+        "description": "Demonstration of Officer Like Qualities"
+      },
+      "expression_quality": {
+        "weight": 0.15,
+        "description": "Clarity and coherence of expression"
+      }
+    },
+    "positive_indicators": [
+      "Proactive protagonist",
+      "Positive themes",
+      "Leadership qualities",
+      "Social responsibility",
+      "Problem-solving approach",
+      "Team orientation",
+      "Perseverance",
+      "Ethical behavior",
+      "Future orientation",
+      "Constructive outcomes"
+    ],
+    "negative_indicators": [
+      "Passive protagonist",
+      "Negative themes",
+      "Self-centered behavior",
+      "Unethical actions",
+      "Giving up easily",
+      "Blaming others",
+      "Violent solutions",
+      "Escapist tendencies",
+      "Pessimistic outlook",
+      "Destructive outcomes"
+    ]
+  }
+}

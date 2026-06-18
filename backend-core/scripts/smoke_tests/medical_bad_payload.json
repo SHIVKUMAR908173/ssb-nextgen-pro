@@ -1,0 +1,24 @@
+{
+  "candidate": {
+    "sex": "male",
+    "region": "plains",
+    "heightCm": 180,
+    "hasSkinDisease": false,
+    "dentalHealthyPoints": 20,
+    "hasHistoryOfMentalBreakdown": false,
+    "hadAbdominalOrHerniaSurgeryWithinPastYear": false,
+    "mandatoryTests": {
+      "restingECGDone": true,
+      "abdominalUltrasoundDone": true,
+      "completeHaemogramDone": true
+    },
+    "vision": {
+      "myopiaDioptres": -2.6,
+      "entryType": "standard"
+    },
+    "colorPerception": {
+      "cpLevel": "cp-ii",
+      "roleCategory": "flying_technical"
+    }
+  }
+}

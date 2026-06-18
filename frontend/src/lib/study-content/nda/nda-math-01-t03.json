@@ -1,0 +1,167 @@
+{
+  "id": "nda-math-01-t03",
+  "title": "De Morgan's Laws and Venn Diagrams",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 8,
+  "content": [
+    {
+      "type": "text",
+      "data": "De Morgan's Laws are fundamental rules in set theory that describe how set operations—specifically union, intersection, and complement—interact. These laws are crucial for simplifying complex set expressions and are extensively used in various fields including logic, computer science, and probability. Paired with Venn Diagrams, which are visual representations of sets and their relationships, these concepts provide a powerful toolkit for understanding and solving problems involving collections of objects. For the NDA exam, a clear understanding of these laws and the ability to interpret and construct Venn diagrams is essential for tackling questions on set theory."
+    },
+    {
+      "type": "heading",
+      "data": "De Morgan's Laws"
+    },
+    {
+      "type": "text",
+      "data": "De Morgan's Laws provide a way to express the complement of a union or intersection in terms of the complements of the individual sets. There are two primary laws:"
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "1. (A \\cup B)' = A' \\cap B'",
+        "note": "The complement of the union of two sets is equal to the intersection of their complements. (Read as: Not (A or B) is the same as (Not A) and (Not B))."
+      }
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "2. (A \\cap B)' = A' \\cup B'",
+        "note": "The complement of the intersection of two sets is equal to the union of their complements. (Read as: Not (A and B) is the same as (Not A) or (Not B))."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "**A' (A complement)**: The set of all elements in the universal set (U) that are NOT in A.",
+        "**A \\cup B (A union B)**: The set of all elements that are in A, or in B, or in both.",
+        "**A \\cap B (A intersection B)**: The set of all elements that are common to both A and B."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: When you 'break' the complement over a parenthesis, flip the set operation symbol (\\cup becomes \\cap, and \\cap becomes \\cup) and apply the complement to individual sets. Think of 'distributing' the complement and flipping the sign."
+    },
+    {
+      "type": "heading",
+      "data": "Venn Diagrams"
+    },
+    {
+      "type": "text",
+      "data": "Venn Diagrams are graphical representations used to show relationships between sets. They typically consist of overlapping circles, each representing a set, enclosed within a rectangle that represents the universal set. The overlapping regions show common elements, while non-overlapping regions show unique elements to each set."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Set Operation",
+          "Symbol",
+          "Description",
+          "Venn Diagram Region"
+        ],
+        "rows": [
+          [
+            "Union",
+            "A \\cup B",
+            "Elements in A OR B OR BOTH",
+            "Shade A, Shade B"
+          ],
+          [
+            "Intersection",
+            "A \\cap B",
+            "Elements common to A AND B",
+            "Shade only the overlapping region of A and B"
+          ],
+          [
+            "Complement",
+            "A'",
+            "Elements NOT in A (within U)",
+            "Shade everything outside A within the Universal Set"
+          ],
+          [
+            "Difference",
+            "A - B",
+            "Elements in A but NOT in B",
+            "Shade only the part of A that does not overlap with B"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "De Morgan's First Law (A \\cup B)' = A' \\cap B'",
+        "description": "This diagram illustrates De Morgan's First Law. The left side (A \\cup B)' represents the area outside both Set A and Set B. The right side (A' \\cap B') represents the area that is outside Set A AND outside Set B simultaneously. Both expressions shade the exact same region, which is the area within the universal set but outside of the union of A and B.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    subgraph Universal Set\n        A(Set A)\n        B(Set B)\n    end\n    Complement_of_Union[(A U B)']\n    Intersection_of_Complements[A' \\cap B']\n    Complement_of_Union -- is equivalent to --> Intersection_of_Complements"
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "De Morgan's Second Law (A \\cap B)' = A' \\cup B'",
+        "description": "This diagram illustrates De Morgan's Second Law. The left side (A \\cap B)' represents the area everywhere EXCEPT the overlapping region of A and B. The right side (A' \\cup B') represents the area that is outside Set A OR outside Set B (or both). Both expressions shade the exact same region, encompassing all areas except the intersection of A and B.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    subgraph Universal Set\n        A(Set A)\n        B(Set B)\n    end\n    Complement_of_Intersection[(A \\cap B)']\n    Union_of_Complements[A' \\cup B']\n    Complement_of_Intersection -- is equivalent to --> Union_of_Complements"
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: To verify De Morgan's Laws (or any set identity) using Venn Diagrams, draw the diagram for the Left Hand Side (LHS) and the Right Hand Side (RHS) separately. If the shaded regions are identical, the identity holds true."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Given a universal set U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, Set A = {1, 2, 3, 4, 5}, and Set B = {4, 5, 6, 7}. Verify De Morgan's First Law: (A \\cup B)' = A' \\cap B'.",
+        "solution": "1.  **Find A \\cup B**: A \\cup B = {1, 2, 3, 4, 5} \\cup {4, 5, 6, 7} = {1, 2, 3, 4, 5, 6, 7}\n2.  **Find (A \\cup B)'**: (A \\cup B)' = U - (A \\cup B) = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} - {1, 2, 3, 4, 5, 6, 7} = {8, 9, 10}. (This is our LHS).\n3.  **Find A'**: A' = U - A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} - {1, 2, 3, 4, 5} = {6, 7, 8, 9, 10}.\n4.  **Find B'**: B' = U - B = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} - {4, 5, 6, 7} = {1, 2, 3, 8, 9, 10}.\n5.  **Find A' \\cap B'**: A' \\cap B' = {6, 7, 8, 9, 10} \\cap {1, 2, 3, 8, 9, 10} = {8, 9, 10}. (This is our RHS).\n6.  **Compare LHS and RHS**: Since {8, 9, 10} = {8, 9, 10}, De Morgan's First Law is verified for these sets.",
+        "answer": "(A \\cup B)' = {8, 9, 10} and A' \\cap B' = {8, 9, 10}, hence the law is verified."
+      }
+    }
+  ],
+  "keyPoints": [
+    "De Morgan's Laws are fundamental: `(A \\cup B)' = A' \\cap B'` and `(A \\cap B)' = A' \\cup B'`.",
+    "The complement symbol (') effectively 'distributes' over the parenthesis, changing union to intersection and vice versa.",
+    "Venn Diagrams are visual tools to represent set relationships and verify set identities.",
+    "Understanding set operations (union, intersection, complement, difference) is prerequisite for applying De Morgan's laws and Venn diagrams.",
+    "De Morgan's Laws have direct applications in Boolean algebra, logic gates, and probability calculations often tested in NDA."
+  ],
+  "commonMistakes": [
+    "Forgetting to flip the operator (union to intersection or vice versa) when applying the complement across parentheses.",
+    "Incorrectly identifying regions in Venn Diagrams, especially for complements of unions/intersections or complex differences."
+  ],
+  "examTips": [
+    "For complex set problems in NDA, draw a Venn Diagram first to visualize the problem; it often simplifies the solution process significantly.",
+    "Always remember the Universal Set (U) when dealing with complements. Elements must be within U but outside the specific set."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following expressions is equivalent to (X \\cup Y)'?",
+      "options": [
+        "X' \\cup Y'",
+        "X' \\cap Y'",
+        "X \\cap Y",
+        "X \\cup Y"
+      ],
+      "correct": 1,
+      "explanation": "According to De Morgan's First Law, the complement of the union of two sets is equal to the intersection of their complements. So, (X \\cup Y)' = X' \\cap Y'."
+    },
+    {
+      "question": "If the shaded region in a Venn Diagram represents the elements that are NOT in Set A and NOT in Set B, which set expression correctly describes this region?",
+      "options": [
+        "A \\cup B",
+        "A \\cap B",
+        "(A \\cup B)'",
+        "(A \\cap B)'"
+      ],
+      "correct": 2,
+      "explanation": "Elements that are NOT in Set A and NOT in Set B mean they are outside A AND outside B. This is precisely A' \\cap B'. By De Morgan's First Law, A' \\cap B' is equivalent to (A \\cup B)'. Thus, the region is the complement of the union of A and B."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=De%20Morgan's%20Laws%20and%20Venn%20Diagrams%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=De%20Morgan's%20Laws%20and%20Venn%20Diagrams%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=De%20Morgan's%20Laws%20and%20Venn%20Diagrams%20NCERT%20Class%2011%2012"
+  }
+}

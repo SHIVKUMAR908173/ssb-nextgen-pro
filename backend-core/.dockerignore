@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-output
+tmp
+.env
+.env.*
+!.env.example
+*.md
+.sixth
+ms-python.*

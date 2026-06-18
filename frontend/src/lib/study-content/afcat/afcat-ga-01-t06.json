@@ -1,0 +1,167 @@
+{
+  "id": "afcat-ga-01-t06",
+  "title": "IAF Commands (Western, Eastern, Central, Southern, South-Western, Training, Maintenance)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 8,
+  "content": [
+    {
+      "type": "text",
+      "data": "The Indian Air Force (IAF), as one of the world's largest air forces, organizes its vast operational and functional responsibilities through a robust command structure. These commands are strategically located across the country, each with a specific area of responsibility or a specialized function, ensuring comprehensive air defense, offensive capabilities, and maintenance of its diverse fleet. Understanding these commands is crucial for comprehending the organizational backbone of the IAF and its role in national security."
+    },
+    {
+      "type": "heading",
+      "data": "Overview of IAF Commands"
+    },
+    {
+      "type": "text",
+      "data": "The IAF is divided into seven commands, comprising five operational commands, one functional command for training, and another functional command for maintenance. Each command is headed by an Air Officer Commanding-in-Chief (AOC-in-C) with the rank of Air Marshal."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Command",
+          "Type",
+          "Headquarters",
+          "Primary Area/Role"
+        ],
+        "rows": [
+          [
+            "Western Air Command (WAC)",
+            "Operational",
+            "New Delhi",
+            "Northern, Western, and South Western parts of India."
+          ],
+          [
+            "Eastern Air Command (EAC)",
+            "Operational",
+            "Shillong, Meghalaya",
+            "North-Eastern states and adjacent areas."
+          ],
+          [
+            "Central Air Command (CAC)",
+            "Operational",
+            "Prayagraj, Uttar Pradesh",
+            "Central plains of India, support for other commands."
+          ],
+          [
+            "Southern Air Command (SAC)",
+            "Operational",
+            "Thiruvananthapuram, Kerala",
+            "Southern peninsula and island territories."
+          ],
+          [
+            "South Western Air Command (SWAC)",
+            "Operational",
+            "Gandhinagar, Gujarat",
+            "Western borders including Rajasthan and Gujarat."
+          ],
+          [
+            "Training Command (TC)",
+            "Functional",
+            "Bengaluru, Karnataka",
+            "Training of all IAF personnel."
+          ],
+          [
+            "Maintenance Command (MC)",
+            "Functional",
+            "Nagpur, Maharashtra",
+            "Repair, overhaul, and maintenance of aircraft and equipment."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Group commands by 'Operational' and 'Functional' types. The 5 operational commands cover geographical regions, while Training and Maintenance are functional across the entire IAF."
+    },
+    {
+      "type": "heading",
+      "data": "Key Functions of Each Command"
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Western Air Command (WAC):** This is one of the most critical operational commands, responsible for air operations across the Indo-Pak border in the west and parts of the northern Himalayas. It houses many frontline fighter bases.",
+        "**Eastern Air Command (EAC):** Primarily responsible for air defense and offensive operations in the sensitive North-Eastern region, sharing borders with multiple countries. Its area includes Arunachal Pradesh, Assam, Nagaland, etc.",
+        "**Central Air Command (CAC):** Acts as a strategic reserve and support command, providing logistical support, strategic airlift, and reconnaissance assets. It also oversees bases in the central plains, crucial for rapid deployment.",
+        "**Southern Air Command (SAC):** Focuses on the air defense of the peninsular region, including island territories like Andaman & Nicobar and Lakshadweep. It plays a significant role in maritime surveillance and security.",
+        "**South Western Air Command (SWAC):** Secures India's vital western flank, particularly the desert and coastal regions of Gujarat and Rajasthan, ensuring air superiority and surveillance over the Arabian Sea.",
+        "**Training Command (TC):** Manages the entire training infrastructure of the IAF, from basic flying training for pilots to technical and non-technical ground duty personnel, ensuring a continuous supply of skilled manpower.",
+        "**Maintenance Command (MC):** Oversees the maintenance, repair, and overhaul (MRO) facilities for all IAF aircraft, engines, and equipment. It ensures the operational readiness and prolonged service life of the IAF's assets."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Note that 'New Delhi' is the HQ for Western Air Command, not Air Headquarters, which is also in Delhi. Don't confuse the two! WAC is an operational command, while Air HQ is the apex body."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "An IAF transport aircraft squadron based in Nagpur is involved in the repair and overhaul of C-17 Globemaster aircraft components. Under which specific IAF command would this squadron's primary function fall?",
+        "solution": "The question specifies 'repair and overhaul' of aircraft components and mentions Nagpur. Nagpur is the headquarters of the Maintenance Command. The primary role of Maintenance Command is the repair, overhaul, and maintenance of all IAF aircraft and equipment. Therefore, this squadron's function falls directly under the Maintenance Command.",
+        "answer": "Maintenance Command (MC)"
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "IAF Command Structure (Conceptual)",
+        "description": "This diagram illustrates the conceptual division of the Indian Air Force into operational and functional commands, highlighting their reporting relationship to Air Headquarters.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Indian Air Force]\n    A -- Administered by --> B(Air Headquarters)\n    B -- Oversees --> C(Operational Commands)\n    B -- Oversees --> D(Functional Commands)\n\n    C -- Consists of --> C1(Western Air Command - WAC)\n    C -- Consists of --> C2(Eastern Air Command - EAC)\n    C -- Consists of --> C3(Central Air Command - CAC)\n    C -- Consists of --> C4(Southern Air Command - SAC)\n    C -- Consists of --> C5(South Western Air Command - SWAC)\n\n    D -- Consists of --> D1(Training Command - TC)\n    D -- Consists of --> D2(Maintenance Command - MC)\n\n    C1 --> C1a(New Delhi)\n    C2 --> C2a(Shillong)\n    C3 --> C3a(Prayagraj)\n    C4 --> C4a(Thiruvananthapuram)\n    C5 --> C5a(Gandhinagar)\n    D1 --> D1a(Bengaluru)\n    D2 --> D2a(Nagpur)"
+      }
+    }
+  ],
+  "keyPoints": [
+    "The IAF has 7 commands: 5 operational (geographical) and 2 functional (specialized).",
+    "Western Air Command (WAC) has its HQ in New Delhi, covering critical western and northern sectors.",
+    "Eastern Air Command (EAC) HQ is in Shillong, crucial for the North-East.",
+    "South Western Air Command (SWAC) HQ is in Gandhinagar, covering Rajasthan and Gujarat.",
+    "Training Command (TC) HQ is in Bengaluru, responsible for all IAF training.",
+    "Maintenance Command (MC) HQ is in Nagpur, handling all MRO activities.",
+    "Central Air Command (CAC) HQ is in Prayagraj, acting as a strategic reserve and support.",
+    "Southern Air Command (SAC) HQ is in Thiruvananthapuram, focused on the peninsular region and islands."
+  ],
+  "commonMistakes": [
+    "Confusing the Headquarters of Western Air Command (New Delhi) with Air Headquarters (also in Delhi).",
+    "Misidentifying Training Command or Maintenance Command as operational commands; they are functional.",
+    "Incorrectly associating commands with specific geographical states without considering the full area of responsibility (e.g., assuming Central Command is only for UP)."
+  ],
+  "examTips": [
+    "Create flashcards for each command, listing its type, HQ, and primary role. Focus on geographical locations for operational commands.",
+    "Practice recalling HQs by visualizing a map of India and marking command locations. Pay special attention to commands whose HQs are in states that might seem geographically 'off' from their primary operational zone (e.g., Central Air Command in Prayagraj supports a broader region).",
+    "Remember that AFCAT questions often test direct recall of HQs or ask about the command responsible for a specific type of operation or region."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which Indian Air Force command is headquartered in Shillong and is responsible for air operations in the North-Eastern sector?",
+      "options": [
+        "Western Air Command",
+        "Eastern Air Command",
+        "Central Air Command",
+        "Southern Air Command"
+      ],
+      "correct": 1,
+      "explanation": "Eastern Air Command (EAC) has its headquarters in Shillong, Meghalaya, and is specifically tasked with air operations in the North-Eastern states and adjacent areas."
+    },
+    {
+      "question": "Which of the following is considered a 'functional' command of the Indian Air Force, rather than an 'operational' one?",
+      "options": [
+        "South Western Air Command",
+        "Maintenance Command",
+        "Central Air Command",
+        "Southern Air Command"
+      ],
+      "correct": 1,
+      "explanation": "The IAF has two functional commands: Training Command (TC) and Maintenance Command (MC). All other listed options (South Western, Central, Southern) are operational commands, responsible for geographical sectors."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=IAF%20Commands%20(Western%2C%20Eastern%2C%20Central%2C%20Southern%2C%20South-Western%2C%20Training%2C%20Maintenance)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=IAF%20Commands%20(Western%2C%20Eastern%2C%20Central%2C%20Southern%2C%20South-Western%2C%20Training%2C%20Maintenance)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

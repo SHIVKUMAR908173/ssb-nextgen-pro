@@ -1,0 +1,27 @@
+[
+  {
+    "id": "S1",
+    "scenario": "He was riding his bike and saw a man bleeding on the roadside. He...",
+    "category": "Emergency Response"
+  },
+  {
+    "id": "S2",
+    "scenario": "During a patrol, his commander is suddenly injured by a sniper and unconscious. He...",
+    "category": "Combat Leadership"
+  },
+  {
+    "id": "S3",
+    "scenario": "His exams are tomorrow, but his best friend needs urgent financial help for a hospital bill. He...",
+    "category": "Social Adjustment"
+  },
+  {
+    "id": "S4",
+    "scenario": "He is the captain of the football team, but his star player refuses to practice before the final match. He...",
+    "category": "Team Management"
+  },
+  {
+    "id": "S5",
+    "scenario": "While traveling in a train, he notices a suspicious unattended bag under his seat. He...",
+    "category": "Vigilance"
+  }
+]

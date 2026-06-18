@@ -1,0 +1,1080 @@
+{
+  "version": "1.0",
+  "description": "SRT Practice Question Bank with 60 comprehensive practice sets for production deployment",
+  "practice_sets": [
+    {
+      "set_id": "SRT_SET_01",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was going to school and found a lost wallet on the road. He", "category": "Honesty"},
+        {"scenario": "His friend was struggling with studies and asked for help. He", "category": "Cooperation"},
+        {"scenario": "He saw a child crying alone in the market. He", "category": "Social Responsibility"},
+        {"scenario": "His team lost an important match due to his mistake. He", "category": "Accountability"},
+        {"scenario": "He found a confidential document lying unattended. He", "category": "Integrity"},
+        {"scenario": "His neighbor needed help shifting heavy furniture. He", "category": "Helpfulness"},
+        {"scenario": "He was late for an important meeting due to traffic. He", "category": "Problem Solving"},
+        {"scenario": "His younger brother was being bullied by seniors. He", "category": "Protection"},
+        {"scenario": "He accidentally broke his friend's expensive watch. He", "category": "Honesty"},
+        {"scenario": "He saw someone cheating in an examination. He", "category": "Ethics"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_02",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was leading a project and a team member fell ill before deadline. He", "category": "Leadership"},
+        {"scenario": "He witnessed a road accident and was the only bystander. He", "category": "Emergency Response"},
+        {"scenario": "His company asked him to work on an unethical project. He", "category": "Ethical Dilemma"},
+        {"scenario": "He had to choose between family function and important work assignment. He", "category": "Priority Management"},
+        {"scenario": "His subordinate made a costly mistake that could affect his career. He", "category": "Leadership"},
+        {"scenario": "He discovered his best friend was involved in illegal activities. He", "category": "Moral Dilemma"},
+        {"scenario": "He was given credit for work done by his teammate. He", "category": "Integrity"},
+        {"scenario": "He had to deliver bad news to his team about budget cuts. He", "category": "Communication"},
+        {"scenario": "His team was demotivated after a major failure. He", "category": "Motivation"},
+        {"scenario": "He found evidence of corruption in his organization. He", "category": "Whistleblowing"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_03",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a patrol and received conflicting intelligence reports. He", "category": "Decision Making"},
+        {"scenario": "His unit was ambushed and he was the senior surviving officer. He", "category": "Crisis Leadership"},
+        {"scenario": "He had to evacuate civilians while under enemy fire. He", "category": "Combat Leadership"},
+        {"scenario": "He discovered a security breach that could compromise national security. He", "category": "Security"},
+        {"scenario": "His mission conflicted with humanitarian concerns. He", "category": "Ethical Dilemma"},
+        {"scenario": "He had to discipline a talented but insubordinate subordinate. He", "category": "Discipline"},
+        {"scenario": "He was offered a bribe to overlook safety violations. He", "category": "Corruption"},
+        {"scenario": "He had to make a decision that would save many but endanger few. He", "category": "Utilitarian Dilemma"},
+        {"scenario": "His superior ordered him to do something against regulations. He", "category": "Chain of Command"},
+        {"scenario": "He was captured by enemy forces and interrogated. He", "category": "Resistance"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_04",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw an elderly person struggling to cross the road. He", "category": "Helpfulness"},
+        {"scenario": "His classmate forgot lunch money and was hungry. He", "category": "Sharing"},
+        {"scenario": "He found a phone in the school library. He", "category": "Honesty"},
+        {"scenario": "His sister needed help with homework while he was watching TV. He", "category": "Family"},
+        {"scenario": "He saw litter in the park and no dustbin nearby. He", "category": "Environmental Sense"},
+        {"scenario": "His friend was feeling sad and needed someone to talk to. He", "category": "Empathy"},
+        {"scenario": "He was asked to water the plants while parents were away. He", "category": "Responsibility"},
+        {"scenario": "He saw someone drop money without realizing. He", "category": "Honesty"},
+        {"scenario": "His teammate couldn't attend practice due to injury. He", "category": "Support"},
+        {"scenario": "He was asked to babysit his younger cousin. He", "category": "Care"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_05",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a crisis when the media arrived seeking information. He", "category": "Crisis Management"},
+        {"scenario": "His team had a conflict between two strong personalities. He", "category": "Conflict Resolution"},
+        {"scenario": "He had to implement an unpopular decision from management. He", "category": "Leadership"},
+        {"scenario": "He discovered a safety hazard that would be expensive to fix. He", "category": "Safety"},
+        {"scenario": "His department was understaffed during peak season. He", "category": "Resource Management"},
+        {"scenario": "He had to train a new employee who was resistant to learning. He", "category": "Training"},
+        {"scenario": "He received complaints about a high-performing employee's behavior. He", "category": "Performance Management"},
+        {"scenario": "He had to cut costs without reducing quality. He", "category": "Efficiency"},
+        {"scenario": "His team was working on multiple urgent projects simultaneously. He", "category": "Prioritization"},
+        {"scenario": "He had to deliver critical feedback to a sensitive team member. He", "category": "Communication"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_06",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was leading a peacekeeping mission in a hostile environment. He", "category": "Peacekeeping"},
+        {"scenario": "His unit was running low on supplies behind enemy lines. He", "category": "Survival"},
+        {"scenario": "He had to negotiate with hostile forces to release hostages. He", "category": "Negotiation"},
+        {"scenario": "He discovered friendly fire had occurred and had to report it. He", "category": "Accountability"},
+        {"scenario": "He had to make a tactical decision with incomplete intelligence. He", "category": "Tactical Decision"},
+        {"scenario": "His mission parameters changed mid-operation due to political reasons. He", "category": "Adaptability"},
+        {"scenario": "He had to maintain discipline in his unit during prolonged combat. He", "category": "Morale"},
+        {"scenario": "He was offered sensitive information by a defector. He", "category": "Intelligence"},
+        {"scenario": "He had to coordinate with allied forces who didn't speak his language. He", "category": "Coordination"},
+        {"scenario": "He received orders that would result in civilian casualties. He", "category": "Rules of Engagement"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_07",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw a classmate being laughed at for wrong answer. He", "category": "Support"},
+        {"scenario": "His mother asked him to pick up groceries on way home. He", "category": "Obedience"},
+        {"scenario": "He found exam paper on teacher's desk before test. He", "category": "Integrity"},
+        {"scenario": "His friend wanted to copy his homework. He", "category": "Academic Honesty"},
+        {"scenario": "He was chosen as class monitor and had to maintain discipline. He", "category": "Leadership"},
+        {"scenario": "He saw someone vandalizing school property. He", "category": "Rule Enforcement"},
+        {"scenario": "His group project member wasn't contributing. He", "category": "Team Management"},
+        {"scenario": "He was offered cigarettes by older students. He", "category": "Peer Pressure"},
+        {"scenario": "He witnessed cyberbullying on social media. He", "category": "Digital Citizenship"},
+        {"scenario": "He had to choose between playing games and studying. He", "category": "Self-Discipline"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_08",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was organizing a major event and the main speaker cancelled. He", "category": "Event Management"},
+        {"scenario": "His startup was running out of funds before product launch. He", "category": "Entrepreneurship"},
+        {"scenario": "He had to manage a team with diverse cultural backgrounds. He", "category": "Diversity Management"},
+        {"scenario": "His company was facing negative publicity due to a mistake. He", "category": "Public Relations"},
+        {"scenario": "He had to implement new technology that older employees resisted. He", "category": "Change Management"},
+        {"scenario": "He discovered a competitor was using unethical practices. He", "category": "Competition"},
+        {"scenario": "His team was working remotely and communication was breaking down. He", "category": "Remote Management"},
+        {"scenario": "He had to meet aggressive targets with limited resources. He", "category": "Target Achievement"},
+        {"scenario": "He was asked to relocate to a different city for work. He", "category": "Career Decision"},
+        {"scenario": "He had to manage a project with stakeholders having conflicting interests. He", "category": "Stakeholder Management"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_09",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a disaster relief operation with limited resources. He", "category": "Disaster Management"},
+        {"scenario": "His intelligence indicated a terrorist attack but evidence was circumstantial. He", "category": "Intelligence Assessment"},
+        {"scenario": "He had to lead a rescue mission in extreme weather conditions. He", "category": "Rescue Operations"},
+        {"scenario": "He discovered a mole in his organization passing secrets. He", "category": "Counter-Intelligence"},
+        {"scenario": "He had to make a decision that would affect thousands of lives. He", "category": "Strategic Decision"},
+        {"scenario": "His unit was surrounded and he had to plan a breakout. He", "category": "Tactical Planning"},
+        {"scenario": "He had to coordinate multi-agency response to a major incident. He", "category": "Inter-Agency Coordination"},
+        {"scenario": "He was responsible for protecting a VIP during an assassination attempt. He", "category": "Security Detail"},
+        {"scenario": "He had to maintain operational security while planning a critical mission. He", "category": "OPSEC"},
+        {"scenario": "He received orders that violated international law. He", "category": "International Law"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_10",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw a stray dog injured on the road. He", "category": "Animal Welfare"},
+        {"scenario": "His friend was spreading rumors about another friend. He", "category": "Loyalty"},
+        {"scenario": "He was asked to look after the house while family was away. He", "category": "Trust"},
+        {"scenario": "He found extra money returned by the shopkeeper. He", "category": "Honesty"},
+        {"scenario": "His classmate was being excluded from group activities. He", "category": "Inclusion"},
+        {"scenario": "He was running for class representative. He", "category": "Leadership"},
+        {"scenario": "He saw someone cutting in queue at the store. He", "category": "Queue Discipline"},
+        {"scenario": "His friend wanted to bunk classes. He", "category": "Peer Influence"},
+        {"scenario": "He was asked to keep a secret that could harm someone. He", "category": "Moral Choice"},
+        {"scenario": "He witnessed plagiarism in a competition. He", "category": "Fair Play"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_11",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a merger between two companies with different cultures. He", "category": "Merger Management"},
+        {"scenario": "His team discovered a critical bug before product launch. He", "category": "Crisis Management"},
+        {"scenario": "He had to negotiate salary with a key employee threatening to leave. He", "category": "Retention"},
+        {"scenario": "He was leading a diverse team with communication barriers. He", "category": "Cross-Cultural Management"},
+        {"scenario": "He had to implement cost-cutting measures affecting his team. He", "category": "Difficult Decisions"},
+        {"scenario": "He discovered fraudulent activities by a senior colleague. He", "category": "Ethics"},
+        {"scenario": "He was asked to work on a project outside his expertise. He", "category": "Learning Agility"},
+        {"scenario": "He had to manage a team during organizational restructuring. He", "category": "Change Management"},
+        {"scenario": "He received conflicting feedback from multiple managers. He", "category": "Feedback Management"},
+        {"scenario": "He had to present bad quarterly results to the board. He", "category": "Accountability"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_12",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding forces in a complex urban warfare environment. He", "category": "Urban Warfare"},
+        {"scenario": "He had to plan an operation with high risk of collateral damage. He", "category": "Collateral Damage"},
+        {"scenario": "He discovered his unit had committed war crimes. He", "category": "War Crimes"},
+        {"scenario": "He had to maintain morale during a prolonged deployment. He", "category": "Morale Management"},
+        {"scenario": "He was leading a covert operation behind enemy lines. He", "category": "Covert Operations"},
+        {"scenario": "He had to make a decision with incomplete information under time pressure. He", "category": "Time-Critical Decision"},
+        {"scenario": "He was responsible for managing relations with hostile local population. He", "category": "Civil-Military Relations"},
+        {"scenario": "He had to adapt his strategy when the enemy changed tactics. He", "category": "Adaptive Leadership"},
+        {"scenario": "He was offered intelligence that could save lives but came from questionable source. He", "category": "Intelligence Ethics"},
+        {"scenario": "He had to balance mission objectives with force protection. He", "category": "Risk Management"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_13",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw a junior being harassed by seniors. He", "category": "Anti-Ragging"},
+        {"scenario": "His teacher was sick and class was disruptive. He", "category": "Initiative"},
+        {"scenario": "He found a valuable item in the school bus. He", "category": "Honesty"},
+        {"scenario": "His friend was addicted to video games and failing studies. He", "category": "Intervention"},
+        {"scenario": "He was asked to organize a charity event. He", "category": "Social Service"},
+        {"scenario": "He saw someone throwing garbage on the street. He", "category": "Civic Sense"},
+        {"scenario": "His group was planning to watch a movie but he had exams. He", "category": "Priorities"},
+        {"scenario": "He witnessed favoritism in team selection. He", "category": "Fairness"},
+        {"scenario": "He was asked to lie to his parents about his whereabouts. He", "category": "Truthfulness"},
+        {"scenario": "He saw someone in distress on social media. He", "category": "Digital Responsibility"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_14",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a project when a key team member resigned. He", "category": "Team Management"},
+        {"scenario": "His company was facing a PR crisis due to social media backlash. He", "category": "Crisis Communication"},
+        {"scenario": "He had to train a replacement while preparing for his own promotion. He", "category": "Succession Planning"},
+        {"scenario": "He discovered his team was overworked and burning out. He", "category": "Employee Welfare"},
+        {"scenario": "He was asked to meet an impossible deadline. He", "category": "Deadline Management"},
+        {"scenario": "He had to manage a client who was constantly changing requirements. He", "category": "Client Management"},
+        {"scenario": "He found out his competitor was poaching his team members. He", "category": "Talent Retention"},
+        {"scenario": "He had to implement a new policy that was unpopular with staff. He", "category": "Policy Implementation"},
+        {"scenario": "He was managing a project with budget constraints. He", "category": "Budget Management"},
+        {"scenario": "He had to handle a sexual harassment complaint in his team. He", "category": "Workplace Safety"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_15",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was leading a counter-insurgency operation in a populated area. He", "category": "Counter-Insurgency"},
+        {"scenario": "He had to make a decision that would affect international relations. He", "category": "Diplomatic Implications"},
+        {"scenario": "He discovered his superior was involved in illegal activities. He", "category": "Chain of Command"},
+        {"scenario": "He was responsible for a mission that could start a war. He", "category": "Strategic Responsibility"},
+        {"scenario": "He had to manage a humanitarian crisis while maintaining security. He", "category": "Humanitarian-Security Nexus"},
+        {"scenario": "He was leading a multinational force with different rules of engagement. He", "category": "Multinational Operations"},
+        {"scenario": "He had to make a decision that would sacrifice mission for lives. He", "category": "Mission vs Lives"},
+        {"scenario": "He discovered the enemy was using human shields. He", "category": "Human Shields"},
+        {"scenario": "He was offered a peaceful solution that would mean abandoning objectives. He", "category": "Peace vs Objectives"},
+        {"scenario": "He had to maintain operational effectiveness after heavy casualties. He", "category": "Casualty Management"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_16",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone cheating in a game. He", "category": "Sportsmanship"},
+        {"scenario": "His friend was feeling depressed and isolated. He", "category": "Mental Health"},
+        {"scenario": "He was asked to water neighbor's plants while they were away. He", "category": "Trust"},
+        {"scenario": "He found a mistake in his favor in billing. He", "category": "Honesty"},
+        {"scenario": "His sibling was being mean to parents. He", "category": "Family Values"},
+        {"scenario": "He saw someone being discriminated against. He", "category": "Equality"},
+        {"scenario": "He was asked to keep a promise that was hard to fulfill. He", "category": "Commitment"},
+        {"scenario": "He witnessed someone taking credit for others' work. He", "category": "Credit Giving"},
+        {"scenario": "He was offered to copy in an exam. He", "category": "Academic Integrity"},
+        {"scenario": "He saw someone in need of urgent medical help. He", "category": "First Aid"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_17",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a pandemic lockdown. He", "category": "Pandemic Management"},
+        {"scenario": "His company was acquiring another and he had to integrate teams. He", "category": "Integration"},
+        {"scenario": "He had to manage a high-profile client with unrealistic expectations. He", "category": "Expectation Management"},
+        {"scenario": "He discovered his team was engaging in office politics. He", "category": "Office Politics"},
+        {"scenario": "He was asked to lead a turnaround for a failing project. He", "category": "Turnaround Management"},
+        {"scenario": "He had to manage a team with remote and office workers. He", "category": "Hybrid Management"},
+        {"scenario": "He discovered a data breach in his department. He", "category": "Data Security"},
+        {"scenario": "He was managing a project with regulatory compliance issues. He", "category": "Compliance"},
+        {"scenario": "He had to handle a workplace accident. He", "category": "Workplace Safety"},
+        {"scenario": "He was asked to implement AI that would replace some jobs. He", "category": "Technology Ethics"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_18",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a peacekeeping force in a civil war zone. He", "category": "Peacekeeping"},
+        {"scenario": "He had to make a decision that would affect the lives of POWs. He", "category": "POW Treatment"},
+        {"scenario": "He discovered his unit was using prohibited weapons. He", "category": "Weapons Compliance"},
+        {"scenario": "He was leading a mission with high risk of friendly fire. He", "category": "Friendly Fire Prevention"},
+        {"scenario": "He had to manage relations with a hostile government. He", "category": "Government Relations"},
+        {"scenario": "He was responsible for a border dispute escalation. He", "category": "Border Management"},
+        {"scenario": "He had to make a decision under media scrutiny. He", "category": "Media Management"},
+        {"scenario": "He discovered intelligence that could prevent an attack but source would be compromised. He", "category": "Source Protection"},
+        {"scenario": "He was leading a mission that violated sovereignty. He", "category": "Sovereignty"},
+        {"scenario": "He had to balance tactical advantage with strategic objectives. He", "category": "Strategic Balance"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_19",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being left out of a group activity. He", "category": "Inclusion"},
+        {"scenario": "His teacher gave him extra marks by mistake. He", "category": "Honesty"},
+        {"scenario": "He was asked to share his notes with a sick classmate. He", "category": "Sharing"},
+        {"scenario": "He found a lost pet in the neighborhood. He", "category": "Animal Care"},
+        {"scenario": "His friend was being pressured to try drugs. He", "category": "Peer Pressure"},
+        {"scenario": "He was asked to vote in a school election. He", "category": "Civic Duty"},
+        {"scenario": "He saw someone being rude to a service worker. He", "category": "Respect"},
+        {"scenario": "He was asked to keep a secret from parents. He", "category": "Transparency"},
+        {"scenario": "He witnessed someone being bullied online. He", "category": "Cyber Safety"},
+        {"scenario": "He found a way to win by breaking rules. He", "category": "Fair Play"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_20",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major system migration. He", "category": "System Migration"},
+        {"scenario": "His company was facing a hostile takeover. He", "category": "Takeover Defense"},
+        {"scenario": "He had to manage a team with generational differences. He", "category": "Generational Management"},
+        {"scenario": "He discovered his team was cutting corners on quality. He", "category": "Quality Control"},
+        {"scenario": "He was asked to implement a policy he disagreed with. He", "category": "Policy Implementation"},
+        {"scenario": "He had to manage a project with scope creep. He", "category": "Scope Management"},
+        {"scenario": "He discovered a conflict of interest in his team. He", "category": "Conflict of Interest"},
+        {"scenario": "He was managing a team with performance issues. He", "category": "Performance Management"},
+        {"scenario": "He had to handle a discrimination complaint. He", "category": "Discrimination"},
+        {"scenario": "He was asked to work with a competitor on a joint venture. He", "category": "Coopetition"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_21",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a special operations mission in hostile territory. He", "category": "Special Operations"},
+        {"scenario": "He had to make a decision that would affect alliance relationships. He", "category": "Alliance Management"},
+        {"scenario": "He discovered his mission was based on faulty intelligence. He", "category": "Intelligence Failure"},
+        {"scenario": "He was leading a mission with political constraints. He", "category": "Political Constraints"},
+        {"scenario": "He had to manage a crisis with nuclear implications. He", "category": "Nuclear Crisis"},
+        {"scenario": "He was responsible for a mission that could cause environmental disaster. He", "category": "Environmental Risk"},
+        {"scenario": "He had to make a decision that would affect future generations. He", "category": "Intergenerational Impact"},
+        {"scenario": "He discovered his unit was being used for political purposes. He", "category": "Political Misuse"},
+        {"scenario": "He was leading a mission with unclear objectives. He", "category": "Objective Clarity"},
+        {"scenario": "He had to balance national security with civil liberties. He", "category": "Security vs Liberty"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_22",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone struggling with heavy bags. He", "category": "Helpfulness"},
+        {"scenario": "His friend was copying in a test. He", "category": "Academic Honesty"},
+        {"scenario": "He was asked to look after a lost child. He", "category": "Child Safety"},
+        {"scenario": "He found a wallet with ID and money. He", "category": "Honesty"},
+        {"scenario": "His teammate was injured during practice. He", "category": "First Aid"},
+        {"scenario": "He was asked to speak up against injustice. He", "category": "Courage"},
+        {"scenario": "He saw someone being disrespectful to elders. He", "category": "Respect"},
+        {"scenario": "He was offered to skip paying for a movie. He", "category": "Integrity"},
+        {"scenario": "He found a shortcut that would save time but break rules. He", "category": "Rule Following"},
+        {"scenario": "He was asked to keep a promise that was inconvenient. He", "category": "Commitment"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_23",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major organizational change. He", "category": "Change Management"},
+        {"scenario": "His company was facing a product recall. He", "category": "Product Recall"},
+        {"scenario": "He had to manage a team with skill gaps. He", "category": "Skill Development"},
+        {"scenario": "He discovered his team was working on outdated technology. He", "category": "Technology Upgrade"},
+        {"scenario": "He was asked to lead a cross-functional team. He", "category": "Cross-Functional Leadership"},
+        {"scenario": "He had to manage a project with international stakeholders. He", "category": "International Stakeholders"},
+        {"scenario": "He discovered his team was resistant to feedback. He", "category": "Feedback Culture"},
+        {"scenario": "He was managing a team with attendance issues. He", "category": "Attendance Management"},
+        {"scenario": "He had to handle a workplace violence incident. He", "category": "Workplace Violence"},
+        {"scenario": "He was asked to implement a new performance management system. He", "category": "Performance System"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_24",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex humanitarian emergency. He", "category": "Humanitarian Emergency"},
+        {"scenario": "He had to make a decision that would affect refugee populations. He", "category": "Refugee Management"},
+        {"scenario": "He discovered his unit was involved in human rights violations. He", "category": "Human Rights"},
+        {"scenario": "He was leading a mission with unclear rules of engagement. He", "category": "Rules of Engagement"},
+        {"scenario": "He had to manage a crisis with cyber warfare implications. He", "category": "Cyber Warfare"},
+        {"scenario": "He was responsible for a mission that could cause diplomatic incident. He", "category": "Diplomatic Incident"},
+        {"scenario": "He had to make a decision that would affect minority populations. He", "category": "Minority Rights"},
+        {"scenario": "He discovered his mission was being used for propaganda. He", "category": "Propaganda"},
+        {"scenario": "He was leading a mission with religious sensitivities. He", "category": "Religious Sensitivities"},
+        {"scenario": "He had to balance military necessity with humanitarian concerns. He", "category": "Military-Humanitarian Balance"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_25",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being treated unfairly. He", "category": "Justice"},
+        {"scenario": "His friend was feeling left out. He", "category": "Friendship"},
+        {"scenario": "He was asked to help with community service. He", "category": "Community Service"},
+        {"scenario": "He found a mistake in his favor. He", "category": "Honesty"},
+        {"scenario": "His classmate was being teased. He", "category": "Anti-Bullying"},
+        {"scenario": "He was asked to lead a group project. He", "category": "Leadership"},
+        {"scenario": "He saw someone in need of help. He", "category": "Helpfulness"},
+        {"scenario": "He was offered to take credit for others' work. He", "category": "Credit"},
+        {"scenario": "He found a way to win unfairly. He", "category": "Fair Play"},
+        {"scenario": "He was asked to keep a dangerous secret. He", "category": "Safety"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_26",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during an economic downturn. He", "category": "Economic Crisis"},
+        {"scenario": "His company was facing supply chain disruptions. He", "category": "Supply Chain"},
+        {"scenario": "He had to manage a team with burnout issues. He", "category": "Burnout Prevention"},
+        {"scenario": "He discovered his team was engaging in unethical practices. He", "category": "Ethics"},
+        {"scenario": "He was asked to lead a digital transformation. He", "category": "Digital Transformation"},
+        {"scenario": "He had to manage a project with regulatory changes. He", "category": "Regulatory Changes"},
+        {"scenario": "He discovered his team was resistant to innovation. He", "category": "Innovation Resistance"},
+        {"scenario": "He was managing a team with diversity issues. He", "category": "Diversity Issues"},
+        {"scenario": "He had to handle a workplace harassment case. He", "category": "Harassment"},
+        {"scenario": "He was asked to implement a controversial policy. He", "category": "Controversial Policy"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_27",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a multi-dimensional conflict. He", "category": "Multi-Dimensional Conflict"},
+        {"scenario": "He had to make a decision that would affect global security. He", "category": "Global Security"},
+        {"scenario": "He discovered his mission was compromising long-term strategic goals. He", "category": "Strategic Goals"},
+        {"scenario": "He was leading a mission with space warfare implications. He", "category": "Space Warfare"},
+        {"scenario": "He had to manage a crisis with AI implications. He", "category": "AI Ethics"},
+        {"scenario": "He was responsible for a mission that could cause ecological disaster. He", "category": "Ecological Disaster"},
+        {"scenario": "He had to make a decision that would affect future warfare. He", "category": "Future Warfare"},
+        {"scenario": "He discovered his unit was being used for covert political action. He", "category": "Covert Action"},
+        {"scenario": "He was leading a mission with autonomous weapons. He", "category": "Autonomous Weapons"},
+        {"scenario": "He had to balance tactical success with strategic failure. He", "category": "Tactical-Strategic Balance"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_28",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being ignored in a group. He", "category": "Inclusion"},
+        {"scenario": "His friend was feeling anxious about exams. He", "category": "Support"},
+        {"scenario": "He was asked to help with a charity drive. He", "category": "Charity"},
+        {"scenario": "He found extra change returned by mistake. He", "category": "Honesty"},
+        {"scenario": "His classmate was being excluded. He", "category": "Inclusion"},
+        {"scenario": "He was asked to organize a study group. He", "category": "Leadership"},
+        {"scenario": "He saw someone being treated rudely. He", "category": "Respect"},
+        {"scenario": "He was offered to get answers before a test. He", "category": "Integrity"},
+        {"scenario": "He found a way to avoid work. He", "category": "Responsibility"},
+        {"scenario": "He was asked to keep a promise. He", "category": "Commitment"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_29",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major crisis. He", "category": "Crisis Management"},
+        {"scenario": "His company was facing bankruptcy. He", "category": "Bankruptcy"},
+        {"scenario": "He had to manage a team with trust issues. He", "category": "Trust Building"},
+        {"scenario": "He discovered his team was working in silos. He", "category": "Silo Breaking"},
+        {"scenario": "He was asked to lead a merger integration. He", "category": "Merger Integration"},
+        {"scenario": "He had to manage a project with scope changes. He", "category": "Scope Changes"},
+        {"scenario": "He discovered his team was resistant to change. He", "category": "Change Resistance"},
+        {"scenario": "He was managing a team with motivation issues. He", "category": "Motivation"},
+        {"scenario": "He had to handle a workplace conflict. He", "category": "Conflict"},
+        {"scenario": "He was asked to implement a new technology. He", "category": "Technology Implementation"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_30",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a hybrid warfare environment. He", "category": "Hybrid Warfare"},
+        {"scenario": "He had to make a decision that would affect international law. He", "category": "International Law"},
+        {"scenario": "He discovered his mission was violating ethical norms. He", "category": "Ethical Norms"},
+        {"scenario": "He was leading a mission with biological warfare implications. He", "category": "Biological Warfare"},
+        {"scenario": "He had to manage a crisis with information warfare. He", "category": "Information Warfare"},
+        {"scenario": "He was responsible for a mission that could cause political instability. He", "category": "Political Instability"},
+        {"scenario": "He had to make a decision that would affect regional stability. He", "category": "Regional Stability"},
+        {"scenario": "He discovered his unit was being used for economic warfare. He", "category": "Economic Warfare"},
+        {"scenario": "He was leading a mission with cultural sensitivities. He", "category": "Cultural Sensitivities"},
+        {"scenario": "He had to balance short-term gains with long-term consequences. He", "category": "Long-Term Thinking"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_31",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone drop their books in the hallway. He", "category": "Helpfulness"},
+        {"scenario": "His friend was feeling nervous before a presentation. He", "category": "Support"},
+        {"scenario": "He was asked to return a borrowed item. He", "category": "Responsibility"},
+        {"scenario": "He found a mistake in his test paper that was marked correct. He", "category": "Honesty"},
+        {"scenario": "His classmate was being ignored during group discussion. He", "category": "Inclusion"},
+        {"scenario": "He was asked to lead the morning assembly. He", "category": "Leadership"},
+        {"scenario": "He saw someone being treated unfairly by a teacher. He", "category": "Justice"},
+        {"scenario": "He was offered to skip a boring class. He", "category": "Integrity"},
+        {"scenario": "He found a way to get better grades by cheating. He", "category": "Academic Integrity"},
+        {"scenario": "He was asked to keep a promise to help someone. He", "category": "Commitment"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_32",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a critical product launch. He", "category": "Product Launch"},
+        {"scenario": "His company was facing a competitor's aggressive pricing. He", "category": "Competition"},
+        {"scenario": "He had to manage a team with conflicting personal issues. He", "category": "Personal Issues"},
+        {"scenario": "He discovered his team was working overtime without compensation. He", "category": "Employee Rights"},
+        {"scenario": "He was asked to lead a turnaround for a failing department. He", "category": "Turnaround"},
+        {"scenario": "He had to manage a project with unrealistic client expectations. He", "category": "Client Expectations"},
+        {"scenario": "He discovered his team was resistant to new processes. He", "category": "Process Change"},
+        {"scenario": "He was managing a team with skill deficiencies. He", "category": "Skill Gap"},
+        {"scenario": "He had to handle a workplace discrimination case. He", "category": "Discrimination"},
+        {"scenario": "He was asked to implement a controversial new policy. He", "category": "Policy Implementation"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_33",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex peace enforcement mission. He", "category": "Peace Enforcement"},
+        {"scenario": "He had to make a decision that would affect arms control treaties. He", "category": "Arms Control"},
+        {"scenario": "He discovered his mission was being compromised by insider threats. He", "category": "Insider Threat"},
+        {"scenario": "He was leading a mission with electromagnetic warfare implications. He", "category": "Electronic Warfare"},
+        {"scenario": "He had to manage a crisis with satellite communication failure. He", "category": "Communication Failure"},
+        {"scenario": "He was responsible for a mission that could cause international incident. He", "category": "International Incident"},
+        {"scenario": "He had to make a decision that would affect energy security. He", "category": "Energy Security"},
+        {"scenario": "He discovered his unit was being used for economic espionage. He", "category": "Economic Espionage"},
+        {"scenario": "He was leading a mission with environmental warfare implications. He", "category": "Environmental Warfare"},
+        {"scenario": "He had to balance operational security with transparency. He", "category": "OPSEC vs Transparency"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_34",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being teased for their accent. He", "category": "Anti-Discrimination"},
+        {"scenario": "His friend was feeling overwhelmed with work. He", "category": "Support"},
+        {"scenario": "He was asked to help organize a school event. He", "category": "Event Planning"},
+        {"scenario": "He found money on the ground in the classroom. He", "category": "Honesty"},
+        {"scenario": "His classmate was being excluded from lunch table. He", "category": "Inclusion"},
+        {"scenario": "He was asked to represent his class in a competition. He", "category": "Representation"},
+        {"scenario": "He saw someone being bullied on the playground. He", "category": "Anti-Bullying"},
+        {"scenario": "He was offered to get special treatment. He", "category": "Fairness"},
+        {"scenario": "He found a way to avoid punishment by lying. He", "category": "Truthfulness"},
+        {"scenario": "He was asked to keep a secret that was bothering him. He", "category": "Mental Health"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_35",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major system outage. He", "category": "System Outage"},
+        {"scenario": "His company was facing a data privacy scandal. He", "category": "Data Privacy"},
+        {"scenario": "He had to manage a team with remote work challenges. He", "category": "Remote Work"},
+        {"scenario": "He discovered his team was engaging in time theft. He", "category": "Time Theft"},
+        {"scenario": "He was asked to lead a diversity and inclusion initiative. He", "category": "Diversity Initiative"},
+        {"scenario": "He had to manage a project with scope and budget changes. He", "category": "Scope and Budget"},
+        {"scenario": "He discovered his team was resistant to performance metrics. He", "category": "Performance Metrics"},
+        {"scenario": "He was managing a team with work-life balance issues. He", "category": "Work-Life Balance"},
+        {"scenario": "He had to handle a workplace retaliation complaint. He", "category": "Retaliation"},
+        {"scenario": "He was asked to implement a new compliance program. He", "category": "Compliance Program"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_36",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex stabilization operation. He", "category": "Stabilization"},
+        {"scenario": "He had to make a decision that would affect cyber defense posture. He", "category": "Cyber Defense"},
+        {"scenario": "He discovered his mission was being affected by disinformation. He", "category": "Disinformation"},
+        {"scenario": "He was leading a mission with drone warfare implications. He", "category": "Drone Warfare"},
+        {"scenario": "He had to manage a crisis with GPS jamming. He", "category": "GPS Jamming"},
+        {"scenario": "He was responsible for a mission that could cause supply chain disruption. He", "category": "Supply Chain"},
+        {"scenario": "He had to make a decision that would affect food security. He", "category": "Food Security"},
+        {"scenario": "He discovered his unit was being used for political influence. He", "category": "Political Influence"},
+        {"scenario": "He was leading a mission with climate security implications. He", "category": "Climate Security"},
+        {"scenario": "He had to balance tactical success with strategic communication. He", "category": "Strategic Communication"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_37",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being left out of a game. He", "category": "Inclusion"},
+        {"scenario": "His friend was feeling sad about a breakup. He", "category": "Emotional Support"},
+        {"scenario": "He was asked to help clean up the neighborhood. He", "category": "Community Service"},
+        {"scenario": "He found a lost toy in the park. He", "category": "Honesty"},
+        {"scenario": "His classmate was being made fun of for their clothes. He", "category": "Anti-Bullying"},
+        {"scenario": "He was asked to lead a team sport. He", "category": "Sports Leadership"},
+        {"scenario": "He saw someone being ignored in a conversation. He", "category": "Inclusion"},
+        {"scenario": "He was offered to take something that wasn't his. He", "category": "Integrity"},
+        {"scenario": "He found a way to win by breaking the rules. He", "category": "Fair Play"},
+        {"scenario": "He was asked to keep a promise to a younger sibling. He", "category": "Commitment"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_38",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major security breach. He", "category": "Security Breach"},
+        {"scenario": "His company was facing a lawsuit from a former employee. He", "category": "Legal Issues"},
+        {"scenario": "He had to manage a team with cultural misunderstandings. He", "category": "Cultural Understanding"},
+        {"scenario": "He discovered his team was cutting corners on safety. He", "category": "Safety Compliance"},
+        {"scenario": "He was asked to lead a sustainability initiative. He", "category": "Sustainability"},
+        {"scenario": "He had to manage a project with stakeholder conflicts. He", "category": "Stakeholder Conflicts"},
+        {"scenario": "He discovered his team was resistant to accountability. He", "category": "Accountability"},
+        {"scenario": "He was managing a team with engagement issues. He", "category": "Employee Engagement"},
+        {"scenario": "He had to handle a workplace substance abuse issue. He", "category": "Substance Abuse"},
+        {"scenario": "He was asked to implement a new quality management system. He", "category": "Quality Management"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_39",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex counter-terrorism operation. He", "category": "Counter-Terrorism"},
+        {"scenario": "He had to make a decision that would affect intelligence sharing. He", "category": "Intelligence Sharing"},
+        {"scenario": "He discovered his mission was being affected by corruption. He", "category": "Corruption"},
+        {"scenario": "He was leading a mission with naval warfare implications. He", "category": "Naval Warfare"},
+        {"scenario": "He had to manage a crisis with undersea cable damage. He", "category": "Infrastructure Protection"},
+        {"scenario": "He was responsible for a mission that could cause financial market disruption. He", "category": "Financial Stability"},
+        {"scenario": "He had to make a decision that would affect water security. He", "category": "Water Security"},
+        {"scenario": "He discovered his unit was being used for surveillance abuse. He", "category": "Surveillance Abuse"},
+        {"scenario": "He was leading a mission with health security implications. He", "category": "Health Security"},
+        {"scenario": "He had to balance operational effectiveness with legal constraints. He", "category": "Legal Constraints"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_40",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone struggling to understand a concept. He", "category": "Teaching"},
+        {"scenario": "His friend was feeling insecure about their appearance. He", "category": "Confidence Building"},
+        {"scenario": "He was asked to help with a community garden. He", "category": "Environmental Service"},
+        {"scenario": "He found a lost key in the parking lot. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to skip school. He", "category": "Peer Pressure"},
+        {"scenario": "He was asked to lead a volunteer group. He", "category": "Volunteer Leadership"},
+        {"scenario": "He saw someone being treated differently because of their background. He", "category": "Equality"},
+        {"scenario": "He was offered to get ahead by being dishonest. He", "category": "Integrity"},
+        {"scenario": "He found a way to avoid responsibility. He", "category": "Responsibility"},
+        {"scenario": "He was asked to keep a promise that was difficult. He", "category": "Commitment"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_41",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major PR crisis. He", "category": "PR Crisis"},
+        {"scenario": "His company was facing a merger with cultural clashes. He", "category": "Cultural Integration"},
+        {"scenario": "He had to manage a team with generational conflicts. He", "category": "Generational Conflict"},
+        {"scenario": "He discovered his team was engaging in favoritism. He", "category": "Favoritism"},
+        {"scenario": "He was asked to lead a digital transformation initiative. He", "category": "Digital Transformation"},
+        {"scenario": "He had to manage a project with vendor issues. He", "category": "Vendor Management"},
+        {"scenario": "He discovered his team was resistant to collaboration. He", "category": "Collaboration"},
+        {"scenario": "He was managing a team with recognition issues. He", "category": "Recognition"},
+        {"scenario": "He had to handle a workplace violence threat. He", "category": "Violence Prevention"},
+        {"scenario": "He was asked to implement a new risk management framework. He", "category": "Risk Management"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_42",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex border security operation. He", "category": "Border Security"},
+        {"scenario": "He had to make a decision that would affect military modernization. He", "category": "Military Modernization"},
+        {"scenario": "He discovered his mission was being affected by budget constraints. He", "category": "Budget Constraints"},
+        {"scenario": "He was leading a mission with air warfare implications. He", "category": "Air Warfare"},
+        {"scenario": "He had to manage a crisis with air traffic control failure. He", "category": "Air Traffic Control"},
+        {"scenario": "He was responsible for a mission that could cause technology transfer issues. He", "category": "Technology Transfer"},
+        {"scenario": "He had to make a decision that would affect critical infrastructure. He", "category": "Critical Infrastructure"},
+        {"scenario": "He discovered his unit was being used for unauthorized operations. He", "category": "Unauthorized Operations"},
+        {"scenario": "He was leading a mission with space security implications. He", "category": "Space Security"},
+        {"scenario": "He had to balance operational needs with resource limitations. He", "category": "Resource Allocation"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_43",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being excluded from a celebration. He", "category": "Inclusion"},
+        {"scenario": "His friend was feeling stressed about future plans. He", "category": "Career Guidance"},
+        {"scenario": "He was asked to help with a blood donation drive. He", "category": "Health Service"},
+        {"scenario": "He found a lost ID card on campus. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to engage in risky behavior. He", "category": "Risk Prevention"},
+        {"scenario": "He was asked to lead a study session. He", "category": "Academic Leadership"},
+        {"scenario": "He saw someone being treated unfairly due to their beliefs. He", "category": "Religious Tolerance"},
+        {"scenario": "He was offered to get special favors. He", "category": "Fairness"},
+        {"scenario": "He found a way to avoid helping someone in need. He", "category": "Helpfulness"},
+        {"scenario": "He was asked to keep a promise to a friend. He", "category": "Loyalty"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_44",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major technology failure. He", "category": "Technology Failure"},
+        {"scenario": "His company was facing a regulatory investigation. He", "category": "Regulatory Investigation"},
+        {"scenario": "He had to manage a team with communication breakdowns. He", "category": "Communication Breakdown"},
+        {"scenario": "He discovered his team was engaging in groupthink. He", "category": "Groupthink"},
+        {"scenario": "He was asked to lead a business continuity initiative. He", "category": "Business Continuity"},
+        {"scenario": "He had to manage a project with timeline pressures. He", "category": "Timeline Pressure"},
+        {"scenario": "He discovered his team was resistant to transparency. He", "category": "Transparency"},
+        {"scenario": "He was managing a team with development issues. He", "category": "Professional Development"},
+        {"scenario": "He had to handle a workplace mental health crisis. He", "category": "Mental Health Crisis"},
+        {"scenario": "He was asked to implement a new ethics program. He", "category": "Ethics Program"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_45",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex humanitarian intervention. He", "category": "Humanitarian Intervention"},
+        {"scenario": "He had to make a decision that would affect defense diplomacy. He", "category": "Defense Diplomacy"},
+        {"scenario": "He discovered his mission was being affected by media leaks. He", "category": "Media Leaks"},
+        {"scenario": "He was leading a mission with mountain warfare implications. He", "category": "Mountain Warfare"},
+        {"scenario": "He had to manage a crisis with extreme weather conditions. He", "category": "Extreme Weather"},
+        {"scenario": "He was responsible for a mission that could cause refugee crisis. He", "category": "Refugee Crisis"},
+        {"scenario": "He had to make a decision that would affect public health. He", "category": "Public Health"},
+        {"scenario": "He discovered his unit was being used for unauthorized surveillance. He", "category": "Unauthorized Surveillance"},
+        {"scenario": "He was leading a mission with nuclear security implications. He", "category": "Nuclear Security"},
+        {"scenario": "He had to balance humanitarian imperatives with security concerns. He", "category": "Humanitarian-Security Balance"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_46",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being ignored during a meeting. He", "category": "Inclusion"},
+        {"scenario": "His friend was feeling discouraged after a failure. He", "category": "Encouragement"},
+        {"scenario": "He was asked to help with an elderly neighbor. He", "category": "Elder Care"},
+        {"scenario": "He found a lost bag at the bus stop. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to engage in academic dishonesty. He", "category": "Academic Integrity"},
+        {"scenario": "He was asked to lead a fundraising campaign. He", "category": "Fundraising"},
+        {"scenario": "He saw someone being treated differently due to disability. He", "category": "Disability Rights"},
+        {"scenario": "He was offered to get ahead by taking credit for others' work. He", "category": "Credit"},
+        {"scenario": "He found a way to avoid attending an important event. He", "category": "Responsibility"},
+        {"scenario": "He was asked to keep a promise to help with a project. He", "category": "Commitment"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_47",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major supply chain disruption. He", "category": "Supply Chain Disruption"},
+        {"scenario": "His company was facing a brand reputation crisis. He", "category": "Brand Crisis"},
+        {"scenario": "He had to manage a team with trust erosion. He", "category": "Trust Erosion"},
+        {"scenario": "He discovered his team was engaging in knowledge hoarding. He", "category": "Knowledge Sharing"},
+        {"scenario": "He was asked to lead a customer experience transformation. He", "category": "Customer Experience"},
+        {"scenario": "He had to manage a project with quality issues. He", "category": "Quality Issues"},
+        {"scenario": "He discovered his team was resistant to customer feedback. He", "category": "Customer Feedback"},
+        {"scenario": "He was managing a team with innovation challenges. He", "category": "Innovation"},
+        {"scenario": "He had to handle a workplace ethical dilemma. He", "category": "Ethical Dilemma"},
+        {"scenario": "He was asked to implement a new customer service standard. He", "category": "Customer Service"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_48",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex maritime security operation. He", "category": "Maritime Security"},
+        {"scenario": "He had to make a decision that would affect strategic deterrence. He", "category": "Strategic Deterrence"},
+        {"scenario": "He discovered his mission was being affected by supply chain vulnerabilities. He", "category": "Supply Chain Vulnerability"},
+        {"scenario": "He was leading a mission with desert warfare implications. He", "category": "Desert Warfare"},
+        {"scenario": "He had to manage a crisis with water scarcity. He", "category": "Water Scarcity"},
+        {"scenario": "He was responsible for a mission that could cause energy crisis. He", "category": "Energy Crisis"},
+        {"scenario": "He had to make a decision that would affect technological superiority. He", "category": "Technological Superiority"},
+        {"scenario": "He discovered his unit was being used for covert action without authorization. He", "category": "Covert Action Authorization"},
+        {"scenario": "He was leading a mission with Arctic security implications. He", "category": "Arctic Security"},
+        {"scenario": "He had to balance tactical objectives with strategic partnerships. He", "category": "Strategic Partnerships"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_49",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being left out of a decision. He", "category": "Inclusion"},
+        {"scenario": "His friend was feeling anxious about a medical test. He", "category": "Health Support"},
+        {"scenario": "He was asked to help with a tree planting drive. He", "category": "Environmental Service"},
+        {"scenario": "He found a lost phone at the mall. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to skip an important event. He", "category": "Peer Pressure"},
+        {"scenario": "He was asked to lead a recycling initiative. He", "category": "Environmental Leadership"},
+        {"scenario": "He saw someone being treated unfairly due to their gender. He", "category": "Gender Equality"},
+        {"scenario": "He was offered to get special treatment due to connections. He", "category": "Fairness"},
+        {"scenario": "He found a way to avoid participating in a group activity. He", "category": "Teamwork"},
+        {"scenario": "He was asked to keep a promise to mentor someone. He", "category": "Mentorship"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_50",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major competitive threat. He", "category": "Competitive Threat"},
+        {"scenario": "His company was facing a talent retention crisis. He", "category": "Talent Retention"},
+        {"scenario": "He had to manage a team with motivation decline. He", "category": "Motivation Decline"},
+        {"scenario": "He discovered his team was engaging in silo mentality. He", "category": "Silo Mentality"},
+        {"scenario": "He was asked to lead a market expansion initiative. He", "category": "Market Expansion"},
+        {"scenario": "He had to manage a project with resource constraints. He", "category": "Resource Constraints"},
+        {"scenario": "He discovered his team was resistant to market changes. He", "category": "Market Adaptation"},
+        {"scenario": "He was managing a team with leadership pipeline issues. He", "category": "Leadership Pipeline"},
+        {"scenario": "He had to handle a workplace conflict of interest. He", "category": "Conflict of Interest"},
+        {"scenario": "He was asked to implement a new talent development program. He", "category": "Talent Development"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_51",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex jungle warfare operation. He", "category": "Jungle Warfare"},
+        {"scenario": "He had to make a decision that would affect alliance cohesion. He", "category": "Alliance Cohesion"},
+        {"scenario": "He discovered his mission was being affected by technological disruption. He", "category": "Technological Disruption"},
+        {"scenario": "He was leading a mission with riverine warfare implications. He", "category": "Riverine Warfare"},
+        {"scenario": "He had to manage a crisis with pandemic outbreak. He", "category": "Pandemic Response"},
+        {"scenario": "He was responsible for a mission that could cause migration crisis. He", "category": "Migration Crisis"},
+        {"scenario": "He had to make a decision that would affect demographic balance. He", "category": "Demographic Balance"},
+        {"scenario": "He discovered his unit was being used for influence operations. He", "category": "Influence Operations"},
+        {"scenario": "He was leading a mission with polar security implications. He", "category": "Polar Security"},
+        {"scenario": "He had to balance operational tempo with force sustainability. He", "category": "Force Sustainability"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_52",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being excluded from a team photo. He", "category": "Inclusion"},
+        {"scenario": "His friend was feeling overwhelmed by social media. He", "category": "Digital Wellness"},
+        {"scenario": "He was asked to help with a senior citizen program. He", "category": "Elder Service"},
+        {"scenario": "He found a lost wallet at the restaurant. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to engage in cyberbullying. He", "category": "Cyber Safety"},
+        {"scenario": "He was asked to lead a digital literacy program. He", "category": "Digital Education"},
+        {"scenario": "He saw someone being treated unfairly due to their age. He", "category": "Age Discrimination"},
+        {"scenario": "He was offered to get ahead by manipulating data. He", "category": "Data Integrity"},
+        {"scenario": "He found a way to avoid participating in a community event. He", "category": "Community Engagement"},
+        {"scenario": "He was asked to keep a promise to support a cause. He", "category": "Social Cause"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_53",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major industry disruption. He", "category": "Industry Disruption"},
+        {"scenario": "His company was facing a succession planning crisis. He", "category": "Succession Crisis"},
+        {"scenario": "He had to manage a team with knowledge transfer issues. He", "category": "Knowledge Transfer"},
+        {"scenario": "He discovered his team was engaging in short-term thinking. He", "category": "Long-Term Thinking"},
+        {"scenario": "He was asked to lead a strategic planning initiative. He", "category": "Strategic Planning"},
+        {"scenario": "He had to manage a project with dependency issues. He", "category": "Dependency Management"},
+        {"scenario": "He discovered his team was resistant to strategic alignment. He", "category": "Strategic Alignment"},
+        {"scenario": "He was managing a team with capability gaps. He", "category": "Capability Development"},
+        {"scenario": "He had to handle a workplace integrity breach. He", "category": "Integrity Breach"},
+        {"scenario": "He was asked to implement a new strategic framework. He", "category": "Strategic Framework"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_54",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex amphibious operation. He", "category": "Amphibious Warfare"},
+        {"scenario": "He had to make a decision that would affect strategic communications. He", "category": "Strategic Communications"},
+        {"scenario": "He discovered his mission was being affected by supply chain attacks. He", "category": "Supply Chain Attack"},
+        {"scenario": "He was leading a mission with special forces implications. He", "category": "Special Forces"},
+        {"scenario": "He had to manage a crisis with critical infrastructure attack. He", "category": "Infrastructure Attack"},
+        {"scenario": "He was responsible for a mission that could cause economic warfare. He", "category": "Economic Warfare"},
+        {"scenario": "He had to make a decision that would affect strategic stability. He", "category": "Strategic Stability"},
+        {"scenario": "He discovered his unit was being used for false flag operations. He", "category": "False Flag"},
+        {"scenario": "He was leading a mission with deep sea security implications. He", "category": "Deep Sea Security"},
+        {"scenario": "He had to balance operational security with public accountability. He", "category": "Public Accountability"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_55",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being ignored at a social gathering. He", "category": "Social Inclusion"},
+        {"scenario": "His friend was feeling burnt out from work. He", "category": "Burnout Support"},
+        {"scenario": "He was asked to help with a disaster relief drive. He", "category": "Disaster Relief"},
+        {"scenario": "He found a lost passport at the airport. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to skip an important deadline. He", "category": "Deadline Management"},
+        {"scenario": "He was asked to lead a wellness program. He", "category": "Wellness Leadership"},
+        {"scenario": "He saw someone being treated unfairly due to their appearance. He", "category": "Appearance Discrimination"},
+        {"scenario": "He was offered to get ahead by exploiting loopholes. He", "category": "Ethical Standards"},
+        {"scenario": "He found a way to avoid taking on a leadership role. He", "category": "Leadership Avoidance"},
+        {"scenario": "He was asked to keep a promise to advocate for change. He", "category": "Advocacy"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_56",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major geopolitical shift. He", "category": "Geopolitical Shift"},
+        {"scenario": "His company was facing an innovation stagnation crisis. He", "category": "Innovation Stagnation"},
+        {"scenario": "He had to manage a team with creativity blocks. He", "category": "Creativity Block"},
+        {"scenario": "He discovered his team was engaging in risk aversion. He", "category": "Risk Aversion"},
+        {"scenario": "He was asked to lead a culture transformation initiative. He", "category": "Culture Transformation"},
+        {"scenario": "He had to manage a project with innovation bottlenecks. He", "category": "Innovation Bottleneck"},
+        {"scenario": "He discovered his team was resistant to creative destruction. He", "category": "Creative Destruction"},
+        {"scenario": "He was managing a team with experimentation challenges. He", "category": "Experimentation"},
+        {"scenario": "He had to handle a workplace learning resistance. He", "category": "Learning Resistance"},
+        {"scenario": "He was asked to implement a new innovation framework. He", "category": "Innovation Framework"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_57",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex multi-domain operation. He", "category": "Multi-Domain Operations"},
+        {"scenario": "He had to make a decision that would affect strategic posture. He", "category": "Strategic Posture"},
+        {"scenario": "He discovered his mission was being affected by cognitive warfare. He", "category": "Cognitive Warfare"},
+        {"scenario": "He was leading a mission with hypersonic warfare implications. He", "category": "Hypersonic Warfare"},
+        {"scenario": "He had to manage a crisis with AI system failure. He", "category": "AI System Failure"},
+        {"scenario": "He was responsible for a mission that could cause technological singularity. He", "category": "Technological Singularity"},
+        {"scenario": "He had to make a decision that would affect human-machine teaming. He", "category": "Human-Machine Teaming"},
+        {"scenario": "He discovered his unit was being used for algorithmic warfare. He", "category": "Algorithmic Warfare"},
+        {"scenario": "He was leading a mission with quantum security implications. He", "category": "Quantum Security"},
+        {"scenario": "He had to balance operational advantage with ethical AI use. He", "category": "Ethical AI"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_58",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He saw someone being excluded from a learning opportunity. He", "category": "Learning Inclusion"},
+        {"scenario": "His friend was feeling uncertain about career choices. He", "category": "Career Uncertainty"},
+        {"scenario": "He was asked to help with a youth mentorship program. He", "category": "Youth Mentorship"},
+        {"scenario": "He found a lost laptop at the cafe. He", "category": "Honesty"},
+        {"scenario": "His classmate was being pressured to compromise on values. He", "category": "Value Compromise"},
+        {"scenario": "He was asked to lead a skill development workshop. He", "category": "Skill Development"},
+        {"scenario": "He saw someone being treated unfairly due to their accent. He", "category": "Accent Discrimination"},
+        {"scenario": "He was offered to get ahead by misrepresenting qualifications. He", "category": "Qualification Integrity"},
+        {"scenario": "He found a way to avoid continuous learning. He", "category": "Continuous Learning"},
+        {"scenario": "He was asked to keep a promise to champion diversity. He", "category": "Diversity Champion"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_59",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was managing a team during a major ecosystem disruption. He", "category": "Ecosystem Disruption"},
+        {"scenario": "His company was facing a platform strategy crisis. He", "category": "Platform Strategy"},
+        {"scenario": "He had to manage a team with network effect challenges. He", "category": "Network Effects"},
+        {"scenario": "He discovered his team was engaging in platform dependency. He", "category": "Platform Dependency"},
+        {"scenario": "He was asked to lead an ecosystem partnership initiative. He", "category": "Ecosystem Partnership"},
+        {"scenario": "He had to manage a project with platform migration issues. He", "category": "Platform Migration"},
+        {"scenario": "He discovered his team was resistant to ecosystem thinking. He", "category": "Ecosystem Thinking"},
+        {"scenario": "He was managing a team with platform governance issues. He", "category": "Platform Governance"},
+        {"scenario": "He had to handle a workplace platform ethics issue. He", "category": "Platform Ethics"},
+        {"scenario": "He was asked to implement a new ecosystem strategy. He", "category": "Ecosystem Strategy"}
+      ]
+    },
+    {
+      "set_id": "SRT_SET_60",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "scenarios": [
+        {"scenario": "He was commanding a force in a complex cognitive domain operation. He", "category": "Cognitive Domain"},
+        {"scenario": "He had to make a decision that would affect strategic competition. He", "category": "Strategic Competition"},
+        {"scenario": "He discovered his mission was being affected by gray zone tactics. He", "category": "Gray Zone"},
+        {"scenario": "He was leading a mission with bio-security implications. He", "category": "Bio-Security"},
+        {"scenario": "He had to manage a crisis with synthetic biology threat. He", "category": "Synthetic Biology"},
+        {"scenario": "He was responsible for a mission that could cause nano-technology risk. He", "category": "Nano-Technology Risk"},
+        {"scenario": "He had to make a decision that would affect brain-computer interface security. He", "category": "BCI Security"},
+        {"scenario": "He discovered his unit was being used for neuro-warfare. He", "category": "Neuro-Warfare"},
+        {"scenario": "He was leading a mission with genetic security implications. He", "category": "Genetic Security"},
+        {"scenario": "He had to balance operational effectiveness with human enhancement ethics. He", "category": "Human Enhancement Ethics"}
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "positive_response_indicators": [
+      "Takes initiative",
+      "Shows leadership",
+      "Demonstrates integrity",
+      "Thinks practically",
+      "Considers others",
+      "Follows rules and ethics",
+      "Shows courage",
+      "Takes responsibility",
+      "Finds solutions",
+      "Helps those in need",
+      "Maintains composure",
+      "Shows empathy",
+      "Demonstrates teamwork",
+      "Shows determination",
+      "Thinks strategically"
+    ],
+    "negative_response_indicators": [
+      "Avoids responsibility",
+      "Shows cowardice",
+      "Acts unethically",
+      "Ignores problems",
+      "Blames others",
+      "Gives up easily",
+      "Acts selfishly",
+      "Breaks rules",
+      "Shows poor judgment",
+      "Lacks empathy",
+      "Acts impulsively",
+      "Shows weakness",
+      "Avoids confrontation",
+      "Makes excuses",
+      "Shows indecision"
+    ],
+    "scoring_rubric": {
+      "olq_demonstration": {
+        "weight": 0.4,
+        "description": "Demonstration of Officer Like Qualities"
+      },
+      "practicality": {
+        "weight": 0.25,
+        "description": "Practical applicability of response"
+      },
+      "ethical_soundness": {
+        "weight": 0.2,
+        "description": "Ethical and moral soundness"
+      },
+      "completeness": {
+        "weight": 0.15,
+        "description": "Completeness of response"
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "afcat-ga-01-t19",
+  "title": "Gallantry Awards — IAF specific (Vir Chakra, Kirti Chakra, Param Vir Chakra)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Gallantry Awards in India are established to honour the acts of bravery and self-sacrifice of personnel from the Indian Armed Forces and sometimes civilians. These awards are broadly categorised into Wartime Gallantry Awards and Peacetime Gallantry Awards. For the AFCAT examination, understanding the specific awards, their hierarchy, and notable recipients, especially from the Indian Air Force (IAF), is crucial. This material will focus on Param Vir Chakra, Kirti Chakra, and Vir Chakra, with an emphasis on their significance and IAF connections."
+    },
+    {
+      "type": "heading",
+      "data": "Hierarchy of Indian Gallantry Awards"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Category",
+          "Highest",
+          "Second Highest",
+          "Third Highest"
+        ],
+        "rows": [
+          [
+            "Wartime Gallantry Awards",
+            "Param Vir Chakra (PVC)",
+            "Maha Vir Chakra (MVC)",
+            "Vir Chakra (VrC)"
+          ],
+          [
+            "Peacetime Gallantry Awards",
+            "Ashok Chakra (AC)",
+            "Kirti Chakra (KC)",
+            "Shaurya Chakra (SC)"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Param Vir Chakra (PVC) - The Highest Wartime Gallantry Award"
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Awarded for:** Most conspicuous bravery or some daring or pre-eminent act of valour or self-sacrifice in the presence of the enemy, whether on land, at sea, or in the air.",
+        "**Status:** It is the highest military decoration of India, equivalent to the Victoria Cross (UK) or the Medal of Honor (USA).",
+        "**Design:** Circular bronze medal, with the State Emblem in the centre, surrounded by four replicas of 'Indra's Vajra' (thunderbolt). The reverse has 'Param Vir Chakra' inscribed in Hindi and English with two lotus flowers in between.",
+        "**First Recipient:** Major Somnath Sharma (Kumaon Regiment), posthumously, for his actions in the Battle of Badgam during the 1947-48 Indo-Pak War."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY FACT: Flying Officer Nirmal Jit Singh Sekhon is the ONLY Indian Air Force officer to have been awarded the Param Vir Chakra, posthumously, for his extraordinary valour during the 1971 Indo-Pak War."
+    },
+    {
+      "type": "heading",
+      "data": "Kirti Chakra (KC) - Peacetime Gallantry"
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Awarded for:** Conspicuous gallantry. It can be awarded to military personnel, including those of the Territorial Army, auxiliary and reserve forces, and other armed forces of the Union, as well as civilians.",
+        "**Status:** Second highest peacetime gallantry award, awarded for acts of bravery away from the battlefield.",
+        "**Design:** Circular silver medal, with a replica of 'Indra's Vajra' in the centre, encircled by a lotus wreath. The reverse has 'Kirti Chakra' inscribed in Hindi and English with two lotus flowers in between.",
+        "**Notable IAF Recipients:** Several IAF personnel have received the Kirti Chakra for acts of bravery in anti-insurgency operations, rescue missions, and other non-combat bravery scenarios. For example, Wing Commander (then Squadron Leader) Rakesh Sharma was awarded the Kirti Chakra for his gallantry as a cosmonaut in the joint Indo-Soviet space mission in 1984."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "💡 EXAM TIP: Remember that Kirti Chakra (KC) is a peacetime award, distinguished from Maha Vir Chakra (MVC) and Vir Chakra (VrC) which are wartime awards, despite their similar hierarchy within their respective categories."
+    },
+    {
+      "type": "heading",
+      "data": "Vir Chakra (VrC) - Acts of Bravery in Conflict"
+    },
+    {
+      "type": "list",
+      "data": [
+        "**Awarded for:** Acts of gallantry in the presence of the enemy, whether on land, at sea, or in the air.",
+        "**Status:** Third highest wartime gallantry award, conferred for acts of bravery of a high order.",
+        "**Design:** Circular silver medal, with a five-pointed star in the centre, encircled by a lotus wreath. The reverse has 'Vir Chakra' inscribed in Hindi and English with two lotus flowers in between.",
+        "**Notable IAF Recipients:** Many IAF officers have been awarded the Vir Chakra. A recent prominent recipient is Wing Commander Abhinandan Varthaman for his gallantry during the aerial engagement with Pakistani aircraft in February 2019, where he shot down a Pakistani F-16."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "Overview of Gallantry Awards Hierarchy"
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Hierarchy of Indian Gallantry Awards",
+        "description": "A flowchart illustrating the classification and hierarchy of Indian Gallantry Awards into Wartime and Peacetime categories.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Gallantry Awards] --> B{Wartime Gallantry Awards}\n    A --> C{Peacetime Gallantry Awards}\n\n    B --> D[Param Vir Chakra (PVC)]\n    B --> E[Maha Vir Chakra (MVC)]\n    B --> F[Vir Chakra (VrC)]\n\n    C --> G[Ashok Chakra (AC)]\n    C --> H[Kirti Chakra (KC)]\n    C --> I[Shaurya Chakra (SC)]"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "IAF Specific Examples and Their Acts of Valour"
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Wing Commander Abhinandan Varthaman was awarded a gallantry medal for his exemplary courage and combat skill shown during an aerial engagement with Pakistani aircraft on 27 February 2019, leading to him shooting down a Pakistani F-16 before his own MiG-21 was hit. Which of the following gallantry awards was conferred upon him?",
+        "solution": "1. **Analyze the context:** The event described occurred during an active aerial engagement with an enemy nation, making it an act 'in the presence of the enemy'.\n2. **Identify the award category:** Acts of bravery 'in the presence of the enemy' fall under the Wartime Gallantry Awards category.\n3. **Recall the specific award:** For conspicuous gallantry in the presence of the enemy, the Vir Chakra is the appropriate award for acts of high order. Param Vir Chakra is for 'most conspicuous bravery' and Maha Vir Chakra for 'conspicuous bravery'. While Abhinandan's act was highly brave, the specific award conferred for this specific act was the Vir Chakra.\n4. **Confirm with known facts:** Wing Commander Abhinandan Varthaman was indeed awarded the Vir Chakra for his actions.",
+        "answer": "Vir Chakra"
+      }
+    },
+    {
+      "type": "text",
+      "data": "Understanding these awards, their criteria, and key IAF recipients is vital for AFCAT aspirants as questions often test this knowledge under the General Awareness section."
+    }
+  ],
+  "keyPoints": [
+    "Param Vir Chakra is India's highest wartime gallantry award, with Flying Officer Nirmal Jit Singh Sekhon being the only IAF recipient.",
+    "Kirti Chakra is the second-highest peacetime gallantry award, awarded for conspicuous gallantry away from the battlefield.",
+    "Vir Chakra is the third-highest wartime gallantry award, conferred for acts of gallantry in the presence of the enemy (e.g., Wg Cdr Abhinandan Varthaman).",
+    "Distinguish clearly between wartime awards (PVC, MVC, VrC) and peacetime awards (AC, KC, SC).",
+    "Remember the key criteria: 'in the presence of the enemy' for wartime awards vs. 'away from the battlefield' for peacetime awards."
+  ],
+  "commonMistakes": [
+    "Confusing the hierarchy or category (wartime vs. peacetime) of the awards, e.g., thinking Kirti Chakra is a wartime award.",
+    "Incorrectly associating specific acts of valour or recipients with the wrong gallantry award."
+  ],
+  "examTips": [
+    "Create a mnemonic or a chart for the hierarchy of awards (e.g., PV-MV-V for wartime, A-K-S for peacetime) to recall quickly.",
+    "Focus on recent recipients and historical milestones, especially for IAF personnel, as these are frequently asked in AFCAT."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Who is the only Indian Air Force officer to have been awarded the Param Vir Chakra?",
+      "options": [
+        "A) Air Chief Marshal Arjan Singh",
+        "B) Flying Officer Nirmal Jit Singh Sekhon",
+        "C) Wing Commander Rakesh Sharma",
+        "D) Group Captain Sachin Tendulkar (Honorary)"
+      ],
+      "correct": 1,
+      "explanation": "Flying Officer Nirmal Jit Singh Sekhon (Posthumous) is the sole Indian Air Force officer to be awarded the Param Vir Chakra, for his exceptional bravery during the 1971 Indo-Pak War."
+    },
+    {
+      "question": "The Kirti Chakra is primarily awarded for acts of:",
+      "options": [
+        "A) Most conspicuous bravery in the presence of the enemy",
+        "B) Conspicuous gallantry away from the battlefield",
+        "C) Distinguished service of an exceptional order during wartime",
+        "D) Leadership in international peacekeeping missions"
+      ],
+      "correct": 1,
+      "explanation": "The Kirti Chakra is the second-highest peacetime gallantry award and is awarded for conspicuous gallantry, typically for acts performed away from the battlefield or not directly against an enemy force."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Gallantry%20Awards%20%E2%80%94%20IAF%20specific%20(Vir%20Chakra%2C%20Kirti%20Chakra%2C%20Param%20Vir%20Chakra)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Gallantry%20Awards%20%E2%80%94%20IAF%20specific%20(Vir%20Chakra%2C%20Kirti%20Chakra%2C%20Param%20Vir%20Chakra)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

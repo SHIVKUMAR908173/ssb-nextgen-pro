@@ -1,0 +1,492 @@
+[
+  {
+    "question_number": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nWalking on solid ice is more difficult than walking on asphalt because ice provides significantly less friction.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Ice provides very little friction compared to asphalt, making it difficult to maintain traction while walking."
+  },
+  {
+    "question_number": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nSwallowing a handful of gravel every morning will make a human's skin completely bulletproof.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "4",
+    "explanation": "Absurd. Swallowing gravel is harmful, causes serious internal damage, and has absolutely no effect on making human skin bulletproof."
+  },
+  {
+    "question_number": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\n<u >Copper is predominantly used in household electrical wiring because:-</u >",
+    "options": [
+      "(1) It is the most expensive metal available, ensuring high quality.",
+      "(2) It is a highly efficient conductor of electricity with low resistance.",
+      "(3) It naturally glows in the dark, making it easier to find in walls.",
+      "(4) It repels rodents and prevents them from chewing the wires."
+    ],
+    "correct_option": "2",
+    "explanation": "High efficiency and low electrical resistance."
+  },
+  {
+    "question_number": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\n<u >Large ships drop heavy metal anchors into the water when docked because:-</u >",
+    "options": [
+      "(1) The anchor physically holds the ship to the seabed, preventing it from drifting with currents and wind.",
+      "(2) Dropping the anchor makes the ship lighter so it can float higher in the water.",
+      "(3) The anchor acts as an electrical ground to protect the ship from lightning.",
+      "(4) It provides a safe pathway for deep-sea divers to climb back up to the ship."
+    ],
+    "correct_option": "1",
+    "explanation": "Holds the ship to the seabed to prevent drifting."
+  },
+  {
+    "question_number": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\ntoo spoil cooks broth the many",
+    "options": [],
+    "correct_option": "h",
+    "explanation": "The correctly rearranged sentence is 'Too many cooks spoil the broth'. The last letter is 'h'."
+  },
+  {
+    "question_number": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nwords louder speak than actions",
+    "options": [],
+    "correct_option": "s",
+    "explanation": "The correctly rearranged sentence is 'Actions speak louder than words'. The last letter is 's'."
+  },
+  {
+    "question_number": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe deafening silent thunder woke the entire village during the storm.",
+    "options": [],
+    "correct_option": "s",
+    "explanation": "The word to be omitted is 'silent' because thunder is deafening or loud, never silent. The first letter is 's'."
+  },
+  {
+    "question_number": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe freezing boiling ice water chilled the drinks perfectly.",
+    "options": [],
+    "correct_option": "g",
+    "explanation": "The word to be omitted is 'boiling' because ice water is freezing/cold, not boiling. The last letter is 'g'."
+  },
+  {
+    "question_number": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nN R I T A is a form of transport consisting of a series of connected vehicles that run along a railway track.",
+    "options": [],
+    "correct_option": "R",
+    "explanation": "The rearranged word is 'TRAIN'. The second letter is 'R'."
+  },
+  {
+    "question_number": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nB D A R O is a flat piece of wood or other hard material used for a specific purpose.",
+    "options": [],
+    "correct_option": "O",
+    "explanation": "The rearranged word is 'BOARD'. The second letter is 'O'."
+  },
+  {
+    "question_number": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Car is to Road as Boat is to __________.",
+    "options": [
+      "(1) Wheel",
+      "(2) Water",
+      "(3) Sail",
+      "(4) Sink",
+      "(5) Ocean"
+    ],
+    "correct_option": "2",
+    "explanation": "A car travels on a road, just as a boat travels on water."
+  },
+  {
+    "question_number": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Thermometer is to Temperature as Barometer is to __________.",
+    "options": [
+      "(1) Direction",
+      "(2) Weather",
+      "(3) Pressure",
+      "(4) Wind",
+      "(5) Heat"
+    ],
+    "correct_option": "3",
+    "explanation": "A thermometer measures temperature, while a barometer measures atmospheric pressure."
+  },
+  {
+    "question_number": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Doctor is to Hospital as Professor is to __________.",
+    "options": [
+      "(1) Book",
+      "(2) Student",
+      "(3) University",
+      "(4) Teach",
+      "(5) Degree"
+    ],
+    "correct_option": "3",
+    "explanation": "A doctor's primary workplace is a hospital, just as a professor's primary workplace is a university."
+  },
+  {
+    "question_number": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Pen is to Write as Knife is to __________.",
+    "options": [
+      "(1) Sharp",
+      "(2) Cut",
+      "(3) Blade",
+      "(4) Fork",
+      "(5) Weapon"
+    ],
+    "correct_option": "2",
+    "explanation": "The primary function of a pen is to write, and the primary function of a knife is to cut."
+  },
+  {
+    "question_number": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Day is to Night as Light is to __________.",
+    "options": [
+      "(1) Bright",
+      "(2) Sun",
+      "(3) Dark",
+      "(4) Bulb",
+      "(5) Heavy"
+    ],
+    "correct_option": "3",
+    "explanation": "Day is the opposite of night, and light is the opposite of dark."
+  },
+  {
+    "question_number": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Tree is to Forest as Soldier is to __________.",
+    "options": [
+      "(1) Army",
+      "(2) Uniform",
+      "(3) Gun",
+      "(4) Battle",
+      "(5) Officer"
+    ],
+    "correct_option": "1",
+    "explanation": "A forest is a large group made primarily of trees, just as an army is a large group made primarily of soldiers."
+  },
+  {
+    "question_number": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of size (smallest to largest)?\n(1) Millimeter (2) Kilometer (3) Centimeter (4) Mile (5) Meter",
+    "options": [
+      "(1) Millimeter",
+      "(2) Kilometer",
+      "(3) Centimeter",
+      "(4) Mile",
+      "(5) Meter"
+    ],
+    "correct_option": "5",
+    "explanation": "The correct order of size is: Millimeter, Centimeter, Meter, Kilometer, Mile. The middle item is Meter."
+  },
+  {
+    "question_number": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical geographic sequence (smallest to largest)?\n(1) Country (2) City (3) Continent (4) Village (5) State",
+    "options": [
+      "(1) Country",
+      "(2) City",
+      "(3) Continent",
+      "(4) Village",
+      "(5) State"
+    ],
+    "correct_option": "5",
+    "explanation": "The logical sequence is: Village, City, State, Country, Continent. The middle item is State."
+  },
+  {
+    "question_number": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Apple",
+      "(2) Mango",
+      "(3) Potato",
+      "(4) Banana",
+      "(5) Orange"
+    ],
+    "correct_option": "3",
+    "explanation": "Potato is a root vegetable; the other items are fruits."
+  },
+  {
+    "question_number": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Square",
+      "(2) Triangle",
+      "(3) Sphere",
+      "(4) Rectangle",
+      "(5) Hexagon"
+    ],
+    "correct_option": "3",
+    "explanation": "Sphere is a 3D object; the rest are 2D flat polygons."
+  },
+  {
+    "question_number": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Copper",
+      "(2) Silver",
+      "(3) Gold",
+      "(4) Oxygen",
+      "(5) Iron"
+    ],
+    "correct_option": "4",
+    "explanation": "Oxygen is a gas/non-metal at room temperature; the others are solid metals."
+  },
+  {
+    "question_number": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Car",
+      "(2) Bus",
+      "(3) Train",
+      "(4) Ship",
+      "(5) Truck"
+    ],
+    "correct_option": "4",
+    "explanation": "A ship is a mode of transport that travels on water; the others travel on land."
+  },
+  {
+    "question_number": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Eye",
+      "(2) Nose",
+      "(3) Ear",
+      "(4) Brain",
+      "(5) Skin"
+    ],
+    "correct_option": "4",
+    "explanation": "The brain is an internal organ; the others (eye, nose, ear, skin) are external sensory organs associated directly with the 5 senses."
+  },
+  {
+    "question_number": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Bake (2) Bail (3) Bait (4) Bald",
+    "options": [
+      "(1) Bake",
+      "(2) Bail",
+      "(3) Bait",
+      "(4) Bald"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Bail, Bait, Bake, Bald. Bald comes last."
+  },
+  {
+    "question_number": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Camp (2) Camel (3) Came (4) Camera",
+    "options": [
+      "(1) Camp",
+      "(2) Camel",
+      "(3) Came",
+      "(4) Camera"
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical order: Came, Camel, Camera, Camp. Camp comes last."
+  },
+  {
+    "question_number": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Dark (2) Dare (3) Dart (4) Darn",
+    "options": [
+      "(1) Dark",
+      "(2) Dare",
+      "(3) Dart",
+      "(4) Darn"
+    ],
+    "correct_option": "3",
+    "explanation": "Alphabetical order: Dare, Dark, Darn, Dart. Dart comes last."
+  },
+  {
+    "question_number": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Eagle (2) Eager (3) Ear (4) Each",
+    "options": [
+      "(1) Eagle",
+      "(2) Eager",
+      "(3) Ear",
+      "(4) Each"
+    ],
+    "correct_option": "3",
+    "explanation": "Alphabetical order: Each, Eager, Eagle, Ear. Ear comes last."
+  },
+  {
+    "question_number": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Face (2) Fact (3) Fade (4) Fail",
+    "options": [
+      "(1) Face",
+      "(2) Fact",
+      "(3) Fade",
+      "(4) Fail"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Face, Fact, Fade, Fail. Fail comes last."
+  },
+  {
+    "question_number": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nA, D, G, J, M, _______, _______.",
+    "options": [],
+    "correct_option": "P, S",
+    "explanation": "The series skips two letters (+3 positions) each time. M+3=P, P+3=S."
+  },
+  {
+    "question_number": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n2, 6, 18, 54, _______, _______.",
+    "options": [],
+    "correct_option": "162, 486",
+    "explanation": "Each consecutive number is multiplied by 3. 54 * 3 = 162. 162 * 3 = 486."
+  },
+  {
+    "question_number": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n100, 90, 80, 70, _______, _______.",
+    "options": [],
+    "correct_option": "60, 50",
+    "explanation": "Subtract 10 from the previous number sequentially."
+  },
+  {
+    "question_number": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?",
+    "options": [
+      "(1) ABC",
+      "(2) DEF",
+      "(3) GHI",
+      "(4) JKL",
+      "(5) MOX"
+    ],
+    "correct_option": "5",
+    "explanation": "MOX does not consist of consecutive alphabetical letters. The others (ABC, DEF, GHI, JKL) are all sequential triplets."
+  },
+  {
+    "question_number": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?",
+    "options": [
+      "(1) 9",
+      "(2) 16",
+      "(3) 25",
+      "(4) 36",
+      "(5) 42"
+    ],
+    "correct_option": "5",
+    "explanation": "42 is not a perfect square. The others are: 3² (9), 4² (16), 5² (25), 6² (36)."
+  },
+  {
+    "question_number": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 8's are immediately preceded by a 5 AND immediately followed by a 2 in the following sequence?\n5 8 2 4 5 8 2 8 2 5 8 2 1",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "3",
+    "explanation": "The exact target sequence '5 8 2' appears exactly 3 times in the entire block."
+  },
+  {
+    "question_number": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 7 pens cost 105 rupees, what is the cost of 4 pens?",
+    "options": [
+      "(1) 45",
+      "(2) 50",
+      "(3) 60",
+      "(4) 75"
+    ],
+    "correct_option": "3",
+    "explanation": "The cost of 1 pen is 105 / 7 = 15 rupees. The cost of 4 pens is 4 * 15 = 60 rupees."
+  },
+  {
+    "question_number": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A man walks 10 meters East, turns right and walks 10 meters, then turns right again and walks 10 meters. In which direction is he now from his starting point?",
+    "options": [
+      "(1) North",
+      "(2) South",
+      "(3) East",
+      "(4) West"
+    ],
+    "correct_option": "2",
+    "explanation": "He walks East, turns right (facing South) and walks, turns right (facing West) and walks back the same distance. He ends up exactly 10m directly South of his starting point."
+  },
+  {
+    "question_number": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a man, a woman says, \"He is the son of my mother's brother.\" How is the man related to the woman?",
+    "options": [
+      "(1) Uncle",
+      "(2) Brother",
+      "(3) Cousin",
+      "(4) Nephew"
+    ],
+    "correct_option": "3",
+    "explanation": "'Mother's brother' is her uncle. Her uncle's son is her first cousin."
+  },
+  {
+    "question_number": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"BAT\" is coded as 23, and \"CAT\" is coded as 24, how is the word \"MAT\" coded? (Hint: A=1, B=2...)",
+    "options": [
+      "(1) 32",
+      "(2) 33",
+      "(3) 34",
+      "(4) 35"
+    ],
+    "correct_option": "3",
+    "explanation": "It's the sum of alphabetical positions: M=13, A=1, T=20. 13 + 1 + 20 = 34."
+  },
+  {
+    "question_number": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 2nd of a month falls on a Monday, what day of the week will the 23rd of the same month be?",
+    "options": [
+      "(1) Sunday",
+      "(2) Monday",
+      "(3) Tuesday",
+      "(4) Wednesday"
+    ],
+    "correct_option": "2",
+    "explanation": "The difference between the 23rd and the 2nd is exactly 21 days, which is exactly 3 weeks. The day of the week will be the same, so Monday."
+  },
+  {
+    "question_number": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      "(1) 1/2",
+      "(2) 2/3",
+      "(3) 3/4",
+      "(4) 4/5"
+    ],
+    "correct_option": "4",
+    "explanation": "Converting to decimals: 1/2 = 0.50, 2/3 ≈ 0.67, 3/4 = 0.75, 4/5 = 0.80. Thus, 4/5 is the largest fraction."
+  }
+]

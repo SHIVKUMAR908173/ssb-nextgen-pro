@@ -1,0 +1,1570 @@
+{
+  "metadata": {
+    "total_topics": 120,
+    "total_sets": 60,
+    "time_per_discussion_minutes": 20,
+    "version": "2.0"
+  },
+  "sets": [
+    {
+      "set_id": 1,
+      "name": "Set 01",
+      "topics": [
+        {
+          "topic": "Should AI be used in military decision-making?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Ethical risks of autonomous weapons",
+            "Speed vs human judgment",
+            "Current global AI arms race",
+            "India's DRDO AI initiatives"
+          ]
+        },
+        {
+          "topic": "Is social media a threat to national security?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Misinformation and propaganda warfare",
+            "Data privacy concerns",
+            "Foreign influence operations",
+            "Regulation vs freedom of speech"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 2,
+      "name": "Set 02",
+      "topics": [
+        {
+          "topic": "Cybersecurity as the fifth domain of warfare",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "State-sponsored cyber attacks",
+            "Critical infrastructure vulnerability",
+            "India's cyber command structure",
+            "International cyber norms"
+          ]
+        },
+        {
+          "topic": "Digital India: Achievement or hype?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Rural internet penetration statistics",
+            "UPI and digital payments success",
+            "Digital divide challenges",
+            "E-governance implementation"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 3,
+      "name": "Set 03",
+      "topics": [
+        {
+          "topic": "Should India develop its own operating system and tech ecosystem?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Strategic autonomy in technology",
+            "Cost and feasibility challenges",
+            "Current dependence on US-China tech",
+            "BharOS and indigenous efforts"
+          ]
+        },
+        {
+          "topic": "5G and its implications for defense and society",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Enhanced battlefield communications",
+            "IoT and smart city integration",
+            "Chinese equipment security concerns",
+            "Spectrum allocation challenges"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 4,
+      "name": "Set 04",
+      "topics": [
+        {
+          "topic": "Deepfakes and synthetic media: How should India respond?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Election manipulation risks",
+            "Legal framework gaps",
+            "Detection technology development",
+            "Impact on judicial evidence"
+          ]
+        },
+        {
+          "topic": "Space technology for national defense",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "ASAT capability demonstration",
+            "Satellite surveillance systems",
+            "Space debris concerns",
+            "Dual-use technology potential"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 5,
+      "name": "Set 05",
+      "topics": [
+        {
+          "topic": "Should cryptocurrencies be banned in India?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Terrorism financing risks",
+            "Blockchain technology benefits",
+            "RBI digital rupee initiative",
+            "Global regulatory approaches"
+          ]
+        },
+        {
+          "topic": "Quantum computing and its impact on defense",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Encryption breaking potential",
+            "India's quantum computing mission",
+            "Military communication security",
+            "Research investment needs"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 6,
+      "name": "Set 06",
+      "topics": [
+        {
+          "topic": "Drones in modern warfare and civilian use",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Counter-drone technology",
+            "Agricultural applications",
+            "Privacy and surveillance concerns",
+            "India's drone policy framework"
+          ]
+        },
+        {
+          "topic": "Ethical hacking and India's cyber defense capability",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Bug bounty programs",
+            "Cyber warrior training",
+            "Offensive vs defensive capabilities",
+            "Public-private partnerships"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 7,
+      "name": "Set 07",
+      "topics": [
+        {
+          "topic": "Internet shutdowns: Security measure or rights violation?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Kashmir shutdown precedent",
+            "Economic impact data",
+            "Alternative security measures",
+            "Supreme Court rulings"
+          ]
+        },
+        {
+          "topic": "Robotics in Indian manufacturing and defense",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Job displacement concerns",
+            "Unmanned ground vehicles",
+            "Make in India robotics push",
+            "Skill development needs"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 8,
+      "name": "Set 08",
+      "topics": [
+        {
+          "topic": "Data sovereignty and cross-border data flows",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Personal Data Protection Bill",
+            "Server localization debate",
+            "Trade agreement implications",
+            "National security vs business needs"
+          ]
+        },
+        {
+          "topic": "Electric vehicles and India's energy security",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Battery technology challenges",
+            "Charging infrastructure gaps",
+            "Lithium import dependency",
+            "FAME scheme effectiveness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 9,
+      "name": "Set 09",
+      "topics": [
+        {
+          "topic": "Biometric surveillance and privacy in India",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Aadhaar security concerns",
+            "Facial recognition deployment",
+            "Right to privacy judgment",
+            "Surveillance state risks"
+          ]
+        },
+        {
+          "topic": "Indian IT industry: From outsourcing to innovation",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Product vs service company shift",
+            "Startup ecosystem growth",
+            "Brain drain reversal trends",
+            "Global competitiveness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 10,
+      "name": "Set 10",
+      "topics": [
+        {
+          "topic": "Satellite internet and bridging the digital divide",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Starlink and OneWeb in India",
+            "Rural connectivity potential",
+            "Spectrum sharing challenges",
+            "ISRO's broadband satellite plans"
+          ]
+        },
+        {
+          "topic": "Artificial intelligence in healthcare: Promise and peril",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Diagnostic accuracy improvements",
+            "Data privacy in health records",
+            "Rural healthcare delivery",
+            "Ethical AI in treatment decisions"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 11,
+      "name": "Set 11",
+      "topics": [
+        {
+          "topic": "Agnipath scheme: Reform or gamble?",
+          "category": "Defense & Security",
+          "key_points": [
+            "Short-service model benefits",
+            "Veteran rehabilitation concerns",
+            "Youth employment impact",
+            "Military readiness questions"
+          ]
+        },
+        {
+          "topic": "Should India have a Chief of Defense Staff with more powers?",
+          "category": "Defense & Security",
+          "key_points": [
+            "Theaterisation of armed forces",
+            "Inter-service coordination",
+            "Democratic civilian control",
+            "Global CDS models comparison"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 12,
+      "name": "Set 12",
+      "topics": [
+        {
+          "topic": "India's two-front war challenge: China and Pakistan",
+          "category": "Defense & Security",
+          "key_points": [
+            "Force deployment strategy",
+            "Nuclear deterrence dynamics",
+            "Diplomatic balancing act",
+            "Infrastructure development on borders"
+          ]
+        },
+        {
+          "topic": "Women in combat roles: Progress and challenges",
+          "category": "Defense & Security",
+          "key_points": [
+            "Permanent commission achievements",
+            "Physical standards debate",
+            "Global examples of integration",
+            "Cultural mindset changes needed"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 13,
+      "name": "Set 13",
+      "topics": [
+        {
+          "topic": "Is India's nuclear doctrine still relevant?",
+          "category": "Defense & Security",
+          "key_points": [
+            "No-first-use policy debate",
+            "Credible minimum deterrence",
+            "Pakistan's tactical nuclear weapons",
+            "Disarmament pressure"
+          ]
+        },
+        {
+          "topic": "Maritime security in the Indo-Pacific",
+          "category": "Defense & Security",
+          "key_points": [
+            "Chinese naval expansion",
+            "QUAD alliance significance",
+            "Indian Ocean Region strategy",
+            "Blue water navy development"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 14,
+      "name": "Set 14",
+      "topics": [
+        {
+          "topic": "Defense indigenization: Progress and gaps",
+          "category": "Defense & Security",
+          "key_points": [
+            "HAL Tejas achievements",
+            "DRDO project delays",
+            "Private sector participation",
+            "Technology transfer challenges"
+          ]
+        },
+        {
+          "topic": "Counter-terrorism strategy post-Pulwama",
+          "category": "Defense & Security",
+          "key_points": [
+            "Surgical strike doctrine",
+            "Intelligence sharing mechanisms",
+            "De-radicalization programs",
+            "Cross-border terrorism response"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 15,
+      "name": "Set 15",
+      "topics": [
+        {
+          "topic": "Theaterisation of Indian armed forces",
+          "category": "Defense & Security",
+          "key_points": [
+            "Joint commands concept",
+            "Service-specific resistance",
+            "Operational efficiency gains",
+            "Budget allocation reforms"
+          ]
+        },
+        {
+          "topic": "Border infrastructure: Road to security",
+          "category": "Defense & Security",
+          "key_points": [
+            "BRO project acceleration",
+            "LAC infrastructure gaps",
+            "Strategic tunnel projects",
+            "Environmental impact balance"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 16,
+      "name": "Set 16",
+      "topics": [
+        {
+          "topic": "Defense budget: Is India spending enough?",
+          "category": "Defense & Security",
+          "key_points": [
+            "GDP percentage comparison globally",
+            "Revenue vs capital expenditure",
+            "Modernization backlog",
+            "Pension burden impact"
+          ]
+        },
+        {
+          "topic": "Role of paramilitary forces in internal security",
+          "category": "Defense & Security",
+          "key_points": [
+            "CRPF deployment challenges",
+            "Naxal affected areas",
+            "Border guarding efficiency",
+            "Force multiplier technology"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 17,
+      "name": "Set 17",
+      "topics": [
+        {
+          "topic": "India's missile defense shield",
+          "category": "Defense & Security",
+          "key_points": [
+            "BMD program development",
+            "S-400 acquisition significance",
+            "Indigenous vs imported systems",
+            "Multi-layered defense strategy"
+          ]
+        },
+        {
+          "topic": "Cyber warfare readiness of Indian armed forces",
+          "category": "Defense & Security",
+          "key_points": [
+            "Defence Cyber Agency capabilities",
+            "Critical infrastructure protection",
+            "Offensive cyber operations",
+            "Training and personnel"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 18,
+      "name": "Set 18",
+      "topics": [
+        {
+          "topic": "Veterans' welfare and rehabilitation in India",
+          "category": "Defense & Security",
+          "key_points": [
+            "OROP implementation issues",
+            "Skill transition programs",
+            "Mental health support",
+            "Corporate sector integration"
+          ]
+        },
+        {
+          "topic": "India-US defense partnership evolution",
+          "category": "Defense & Security",
+          "key_points": [
+            "LEMOA, COMCASA, BECA agreements",
+            "Technology transfer potential",
+            "Strategic autonomy concerns",
+            "Joint exercises significance"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 19,
+      "name": "Set 19",
+      "topics": [
+        {
+          "topic": "Insurgency in Northeast India: Current status",
+          "category": "Defense & Security",
+          "key_points": [
+            "AFSPA debate continues",
+            "Peace accord progress",
+            "Development as counter-insurgency",
+            "Cross-border safe havens"
+          ]
+        },
+        {
+          "topic": "Submarine capability and underwater warfare",
+          "category": "Defense & Security",
+          "key_points": [
+            "Project 75 India progress",
+            "Nuclear submarine fleet",
+            "Underwater domain awareness",
+            "Anti-submarine warfare gaps"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 20,
+      "name": "Set 20",
+      "topics": [
+        {
+          "topic": "Role of Indian armed forces in disaster management",
+          "category": "Defense & Security",
+          "key_points": [
+            "NDRF vs military deployment",
+            "Flood rescue operations",
+            "COVID-19 response contribution",
+            "Dual-use capability development"
+          ]
+        },
+        {
+          "topic": "Private military companies: Should India allow them?",
+          "category": "Defense & Security",
+          "key_points": [
+            "Global PMC market analysis",
+            "Accountability concerns",
+            "Cost-effectiveness debate",
+            "Strategic outsourcing limits"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 21,
+      "name": "Set 21",
+      "topics": [
+        {
+          "topic": "India's permanent seat on UN Security Council",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Reform proposals and opposition",
+            "P5 veto power dynamics",
+            "India's contribution to UN peacekeeping",
+            "Alternative reform models"
+          ]
+        },
+        {
+          "topic": "China's Belt and Road Initiative: Opportunity or threat?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Debt trap diplomacy allegations",
+            "CPEC through PoK",
+            "India's counter-connectivity projects",
+            "ASEAN countries' experience"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 22,
+      "name": "Set 22",
+      "topics": [
+        {
+          "topic": "Russia-Ukraine conflict: Lessons for India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "India's diplomatic balancing act",
+            "Energy security implications",
+            "Defense equipment dependency",
+            "Nuclear escalation risks"
+          ]
+        },
+        {
+          "topic": "QUAD: Asian NATO or loose partnership?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Military cooperation scope",
+            "Economic agenda potential",
+            "China's containment perception",
+            "India's strategic autonomy"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 23,
+      "name": "Set 23",
+      "topics": [
+        {
+          "topic": "India's neighborhood first policy: Success or failure?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Sri Lanka crisis response",
+            "Nepal relations fluctuation",
+            "Bangladesh migration issue",
+            "Chinese influence in South Asia"
+          ]
+        },
+        {
+          "topic": "Middle East conflicts and India's diplomatic tightrope",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Energy dependency management",
+            "Diaspora safety concerns",
+            "Arms trade relationships",
+            "Abraham Accords impact"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 24,
+      "name": "Set 24",
+      "topics": [
+        {
+          "topic": "Should India join RCEP?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Trade deficit concerns with China",
+            "Market access opportunities",
+            "Manufacturing sector impact",
+            "Strategic trade alignment"
+          ]
+        },
+        {
+          "topic": "Africa: India's next strategic frontier",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Chinese influence competition",
+            "Development partnership model",
+            "Resource access strategy",
+            "Cultural and diaspora ties"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 25,
+      "name": "Set 25",
+      "topics": [
+        {
+          "topic": "India-Pakistan relations: Is dialogue possible?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Kashmir issue centrality",
+            "Cross-border terrorism linkage",
+            "Trade and people-to-people contact",
+            "Third-party mediation debate"
+          ]
+        },
+        {
+          "topic": "Climate diplomacy and India's position",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Net-zero target commitments",
+            "Developed vs developing nation debate",
+            "Green technology transfer",
+            "Loss and damage funding"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 26,
+      "name": "Set 26",
+      "topics": [
+        {
+          "topic": "BRICS expansion: Counterweight to Western dominance?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "New Development Bank role",
+            "De-dollarization agenda",
+            "Internal contradictions",
+            "Geopolitical realignment"
+          ]
+        },
+        {
+          "topic": "Taiwan strait crisis and implications for India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "One-China policy position",
+            "Trade route disruption risks",
+            "Semiconductor supply chain",
+            "Military preparedness lessons"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 27,
+      "name": "Set 27",
+      "topics": [
+        {
+          "topic": "India's Act East policy effectiveness",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "ASEAN connectivity projects",
+            "Northeast as gateway",
+            "Economic integration progress",
+            "Security cooperation with Vietnam"
+          ]
+        },
+        {
+          "topic": "Arctic geopolitics and India's interests",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Northern Sea Route access",
+            "Scientific research stations",
+            "Resource extraction opportunities",
+            "Environmental protection advocacy"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 28,
+      "name": "Set 28",
+      "topics": [
+        {
+          "topic": "Multilateralism vs bilateralism in Indian foreign policy",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "UN system effectiveness",
+            "Regional groupings value",
+            "Issue-based coalitions",
+            "Great power relationships"
+          ]
+        },
+        {
+          "topic": "Global refugee crisis and India's responsibilities",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Rohingya and Afghan refugees",
+            "No refugee convention ratification",
+            "Citizenship Amendment Act",
+            "Humanitarian vs security balance"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 29,
+      "name": "Set 29",
+      "topics": [
+        {
+          "topic": "De-dollarization and India's trade in rupees",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Rupee trade agreements",
+            "SWIFT alternative development",
+            "Sanctions evasion concerns",
+            "Currency internationalization"
+          ]
+        },
+        {
+          "topic": "Space race 2.0: Competition or cooperation?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "ISRO's commercial launch success",
+            "Artemis Accords participation",
+            "Space militarization concerns",
+            "International space law reform"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 30,
+      "name": "Set 30",
+      "topics": [
+        {
+          "topic": "Indian diaspora as soft power",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Political influence in key countries",
+            "Remittance contribution",
+            "Brain drain vs brain gain",
+            "Cultural diplomacy potential"
+          ]
+        },
+        {
+          "topic": "Global food security and India's role",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Wheat export ban controversy",
+            "Agricultural technology sharing",
+            "Climate change impact on farming",
+            "International food aid policies"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 31,
+      "name": "Set 31",
+      "topics": [
+        {
+          "topic": "Uniform Civil Code: Need of the hour?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Constitutional directive principle",
+            "Religious freedom concerns",
+            "Gender justice arguments",
+            "Implementation challenges"
+          ]
+        },
+        {
+          "topic": "Reservation policy: Time for reform?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Creamy layer implementation",
+            "Economic basis vs caste basis",
+            "50% cap and exceptions",
+            "Merit vs social justice debate"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 32,
+      "name": "Set 32",
+      "topics": [
+        {
+          "topic": "Mental health crisis among Indian youth",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Suicide rate statistics",
+            "Social media impact",
+            "Access to mental health services",
+            "Stigma reduction efforts"
+          ]
+        },
+        {
+          "topic": "Education system reform: NEP 2020 impact",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Mother tongue instruction debate",
+            "Vocational education integration",
+            "Research funding increase",
+            "Implementation at state level"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 33,
+      "name": "Set 33",
+      "topics": [
+        {
+          "topic": "Farmer protests and agricultural reforms",
+          "category": "Society & National Issues",
+          "key_points": [
+            "MSP guarantee demand",
+            "Corporate farming concerns",
+            "Small farmer vulnerability",
+            "Global agricultural models"
+          ]
+        },
+        {
+          "topic": "Population control: Should India have a policy?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Demographic dividend vs burden",
+            "State-level population laws",
+            "Women's empowerment approach",
+            "Economic development correlation"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 34,
+      "name": "Set 34",
+      "topics": [
+        {
+          "topic": "Judicial reforms needed in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Case pendency crisis",
+            "Collegium vs NJAC",
+            "Fast-track courts effectiveness",
+            "Access to justice in rural areas"
+          ]
+        },
+        {
+          "topic": "Caste system: Is it weakening or strengthening?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Urban vs rural dynamics",
+            "Inter-caste marriage trends",
+            "Political mobilization on caste",
+            "Economic mobility data"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 35,
+      "name": "Set 35",
+      "topics": [
+        {
+          "topic": "Media freedom and responsible journalism in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Press freedom index ranking",
+            "Paid news phenomenon",
+            "Social media journalism",
+            "Self-regulation vs government control"
+          ]
+        },
+        {
+          "topic": "Urban-rural divide: How to bridge it?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Infrastructure gap statistics",
+            "Migration patterns",
+            "Smart village concept",
+            "Telecom and internet penetration"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 36,
+      "name": "Set 36",
+      "topics": [
+        {
+          "topic": "Drug menace in India: Prevention and cure",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Punjab and Northeast drug corridor",
+            "Youth vulnerability",
+            "Rehabilitation infrastructure",
+            "Cross-border smuggling routes"
+          ]
+        },
+        {
+          "topic": "Should voting be made compulsory in India?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Low voter turnout concerns",
+            "Democratic participation importance",
+            "Enforcement challenges",
+            "International examples"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 37,
+      "name": "Set 37",
+      "topics": [
+        {
+          "topic": "Child labor and trafficking: Ground reality",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Legislative framework gaps",
+            "Rehabilitation programs",
+            "Economic root causes",
+            "Role of civil society"
+          ]
+        },
+        {
+          "topic": "Water crisis in India: Solutions and strategies",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Groundwater depletion data",
+            "River interlinking project",
+            "Rainwater harvesting mandate",
+            "Industrial water usage"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 38,
+      "name": "Set 38",
+      "topics": [
+        {
+          "topic": "Gender equality in the Indian armed forces",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Supreme Court directives",
+            "Combat role expansion",
+            "Infrastructure requirements",
+            "Cultural shift needed"
+          ]
+        },
+        {
+          "topic": "Corruption: Can India become corruption-free?",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Lokpal and CBI effectiveness",
+            "Digital governance impact",
+            "Whistleblower protection",
+            "Political will assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 39,
+      "name": "Set 39",
+      "topics": [
+        {
+          "topic": "Right to privacy in the digital age",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Puttaswamy judgment significance",
+            "Surveillance state concerns",
+            "Data protection legislation",
+            "Corporate data misuse"
+          ]
+        },
+        {
+          "topic": "Sports culture in India: Beyond cricket",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Olympic medal tally analysis",
+            "Grassroots infrastructure",
+            "Corporate sponsorship role",
+            "Khelo India scheme impact"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 40,
+      "name": "Set 40",
+      "topics": [
+        {
+          "topic": "Elderly care and aging population challenges",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Joint family system decline",
+            "Healthcare infrastructure needs",
+            "Pension and social security",
+            "Technology for elder care"
+          ]
+        },
+        {
+          "topic": "Language policy and national unity",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Three-language formula",
+            "Hindi imposition resistance",
+            "English as link language",
+            "Regional language preservation"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 41,
+      "name": "Set 41",
+      "topics": [
+        {
+          "topic": "Make in India: Has it delivered?",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Manufacturing GDP share trends",
+            "FDI inflow data",
+            "Ease of doing business ranking",
+            "China+1 strategy opportunity"
+          ]
+        },
+        {
+          "topic": "Privatization of public sector: Boon or bane?",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Air India sale precedent",
+            "Banking sector reform",
+            "Strategic sector definition",
+            "Employee welfare concerns"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 42,
+      "name": "Set 42",
+      "topics": [
+        {
+          "topic": "Climate change and India's development dilemma",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Energy transition timeline",
+            "Green hydrogen mission",
+            "Carbon credit trading",
+            "Just transition for coal workers"
+          ]
+        },
+        {
+          "topic": "Gig economy: Future of work in India?",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Social security for gig workers",
+            "Platform company regulation",
+            "Skill development alignment",
+            "Labor law reform needs"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 43,
+      "name": "Set 43",
+      "topics": [
+        {
+          "topic": "India's semiconductor ambitions",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Fab manufacturing challenges",
+            "Supply chain vulnerabilities",
+            "Government incentive programs",
+            "Global competition for talent"
+          ]
+        },
+        {
+          "topic": "Cryptocurrency vs digital rupee",
+          "category": "Economy & Environment",
+          "key_points": [
+            "RBI's CBDC framework",
+            "Taxation of crypto assets",
+            "Financial inclusion potential",
+            "Technology infrastructure needs"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 44,
+      "name": "Set 44",
+      "topics": [
+        {
+          "topic": "Renewable energy: Can India achieve its targets?",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Solar and wind capacity growth",
+            "Grid integration challenges",
+            "Storage technology gaps",
+            "International climate commitments"
+          ]
+        },
+        {
+          "topic": "Infrastructure development vs environmental protection",
+          "category": "Economy & Environment",
+          "key_points": [
+            "EIA dilution concerns",
+            "Forest clearance process",
+            "Compensatory afforestation",
+            "Sustainable development models"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 45,
+      "name": "Set 45",
+      "topics": [
+        {
+          "topic": "India's trade deficit: Causes and solutions",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Oil import dependency",
+            "Electronics import reduction",
+            "Export promotion schemes",
+            "FTA negotiation strategy"
+          ]
+        },
+        {
+          "topic": "Startup India: Building the next Silicon Valley?",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Unicorn growth trajectory",
+            "Funding winter challenges",
+            "Tier-2 city ecosystem",
+            "Deep tech vs consumer tech"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 46,
+      "name": "Set 46",
+      "topics": [
+        {
+          "topic": "Plastic pollution and India's response",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Single-use plastic ban enforcement",
+            "Alternative material development",
+            "Waste management infrastructure",
+            "Extended producer responsibility"
+          ]
+        },
+        {
+          "topic": "Food processing industry: Untapped potential",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Post-harvest loss reduction",
+            "Cold chain infrastructure",
+            "Export market development",
+            "Farmer income improvement"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 47,
+      "name": "Set 47",
+      "topics": [
+        {
+          "topic": "Universal Basic Income for India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Fiscal feasibility analysis",
+            "Existing subsidy replacement",
+            "Pilot project results",
+            "Inflation impact concerns"
+          ]
+        },
+        {
+          "topic": "Blue economy: India's maritime economic potential",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Sagarmala project progress",
+            "Deep-sea mining prospects",
+            "Sustainable fishing practices",
+            "Port-led industrialization"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 48,
+      "name": "Set 48",
+      "topics": [
+        {
+          "topic": "Air pollution crisis in Indian cities",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Stubble burning solutions",
+            "Vehicle emission standards",
+            "Industrial pollution control",
+            "Health impact costs"
+          ]
+        },
+        {
+          "topic": "Tourism as economic driver for India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Heritage site conservation",
+            "Eco-tourism potential",
+            "Northeast tourism development",
+            "Infrastructure and safety needs"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 49,
+      "name": "Set 49",
+      "topics": [
+        {
+          "topic": "India's banking sector challenges",
+          "category": "Economy & Environment",
+          "key_points": [
+            "NPA resolution progress",
+            "Digital banking adoption",
+            "Financial inclusion depth",
+            "Public vs private bank performance"
+          ]
+        },
+        {
+          "topic": "Circular economy: India's waste management future",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Waste-to-energy projects",
+            "Recycling infrastructure",
+            "Behavioral change requirements",
+            "Extended producer responsibility"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 50,
+      "name": "Set 50",
+      "topics": [
+        {
+          "topic": "Skill development and employability in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Skill India mission outcomes",
+            "Industry-academia gap",
+            "Vocational training quality",
+            "Demographic dividend window"
+          ]
+        },
+        {
+          "topic": "Organic farming: Viable alternative?",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Sikkim organic state model",
+            "Yield reduction concerns",
+            "Market premium access",
+            "Chemical fertilizer subsidy reform"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 51,
+      "name": "Set 51",
+      "topics": [
+        {
+          "topic": "Is patriotism the same as nationalism?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Definitional differences",
+            "Historical examples",
+            "Inclusive vs exclusive identity",
+            "Modern nation-state context"
+          ]
+        },
+        {
+          "topic": "Can violence ever be justified for a cause?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Self-defense doctrine",
+            "Freedom struggle examples",
+            "Just war theory",
+            "Gandhian non-violence relevance"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 52,
+      "name": "Set 52",
+      "topics": [
+        {
+          "topic": "Is democracy the best form of government?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Churchill's famous quote analysis",
+            "Efficiency vs representation",
+            "Informed electorate requirement",
+            "Authoritarian development models"
+          ]
+        },
+        {
+          "topic": "Success: Is it about the journey or the destination?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Process vs outcome orientation",
+            "Learning from failure",
+            "Defining personal success",
+            "Societal pressure on achievement"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 53,
+      "name": "Set 53",
+      "topics": [
+        {
+          "topic": "Should ethics change with changing times?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Moral relativism debate",
+            "Universal human values",
+            "Cultural context influence",
+            "Technology-driven ethical questions"
+          ]
+        },
+        {
+          "topic": "Individual freedom vs collective responsibility",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "COVID lockdown experience",
+            "Libertarian vs communitarian views",
+            "Constitutional fundamental rights",
+            "Duty as reciprocal to rights"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 54,
+      "name": "Set 54",
+      "topics": [
+        {
+          "topic": "Is competition necessary for progress?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Cooperation as alternative model",
+            "Evolutionary perspective",
+            "Economic competition effects",
+            "Education system implications"
+          ]
+        },
+        {
+          "topic": "Power corrupts: Is this always true?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Lord Acton's maxim analysis",
+            "Servant leadership concept",
+            "Institutional checks on power",
+            "Historical counter-examples"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 55,
+      "name": "Set 55",
+      "topics": [
+        {
+          "topic": "Is privacy a luxury in the 21st century?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Surveillance capitalism",
+            "Nothing to hide argument",
+            "Human dignity connection",
+            "Democratic freedom linkage"
+          ]
+        },
+        {
+          "topic": "Duty or ambition: What should drive a soldier?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Selfless service ideal",
+            "Career progression motivation",
+            "National interest framework",
+            "Personal growth within service"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 56,
+      "name": "Set 56",
+      "topics": [
+        {
+          "topic": "Is tradition an obstacle to progress?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Cultural preservation value",
+            "Innovation and disruption",
+            "Selective modernization",
+            "Identity and rootedness"
+          ]
+        },
+        {
+          "topic": "Can artificial intelligence have consciousness?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Chinese room argument",
+            "Turing test limitations",
+            "Ethical implications of sentient AI",
+            "Human uniqueness debate"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 57,
+      "name": "Set 57",
+      "topics": [
+        {
+          "topic": "Is social media making us more or less connected?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Superficial vs deep connections",
+            "Echo chamber effects",
+            "Global awareness increase",
+            "Mental health impact"
+          ]
+        },
+        {
+          "topic": "Forgiveness: Weakness or strength?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Psychological benefits",
+            "Justice vs mercy balance",
+            "National reconciliation examples",
+            "Personal growth through forgiveness"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 58,
+      "name": "Set 58",
+      "topics": [
+        {
+          "topic": "Is there such a thing as a just war?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "International humanitarian law",
+            "Proportionality principle",
+            "Civilian protection imperative",
+            "Pre-emptive strike ethics"
+          ]
+        },
+        {
+          "topic": "Should leaders be feared or loved?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Machiavelli vs modern leadership",
+            "Respect as middle ground",
+            "Military leadership styles",
+            "Situational leadership theory"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 59,
+      "name": "Set 59",
+      "topics": [
+        {
+          "topic": "Is meritocracy a myth?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Structural inequality factors",
+            "Equal opportunity vs equal outcome",
+            "Education as equalizer",
+            "Social mobility data"
+          ]
+        },
+        {
+          "topic": "Happiness: Is it a choice or a circumstance?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Positive psychology research",
+            "Hedonic adaptation",
+            "Material vs experiential happiness",
+            "Stoic philosophy application"
+          ]
+        }
+      ]
+    },
+    {
+      "set_id": 60,
+      "name": "Set 60",
+      "topics": [
+        {
+          "topic": "Risk-taking: Recklessness or courage?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Calculated risk framework",
+            "Military decision-making context",
+            "Entrepreneurial risk parallels",
+            "Cost of inaction analysis"
+          ]
+        },
+        {
+          "topic": "Can one person change the world?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Great man theory critique",
+            "Systemic change requirements",
+            "Butterfly effect concept",
+            "Leadership as catalyst"
+          ]
+        }
+      ]
+    }
+  ]
+}

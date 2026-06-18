@@ -1,0 +1,39 @@
+[
+  {
+    "test_type": "PPDT",
+    "image_description": "A person at a shop counter buying blankets for relief distribution.",
+    "image_url": "/images/ppdt_relief.png",
+    "suggested_themes": ["Natural Disaster Relief", "Social Service", "Proactive Planning"],
+    "protagonist_age": 22,
+    "protagonist_gender": "Male"
+  },
+  {
+    "test_type": "TAT",
+    "image_description": "An HR manager resolving a dispute or organizing work in a factory setting.",
+    "suggested_themes": ["Leadership", "Conflict Resolution", "Industrial Productivity"],
+    "protagonist_age": 30,
+    "protagonist_gender": "Neutral"
+  },
+  {
+    "test_type": "TAT",
+    "image_description": "A young woman teaching children in a village school under a tree.",
+    "image_url": "/images/tat_village.png",
+    "suggested_themes": ["Rural Education", "Women Empowerment", "Knowledge Sharing"],
+    "protagonist_age": 21,
+    "protagonist_gender": "Female"
+  },
+  {
+    "test_type": "PPDT",
+    "image_description": "A group of people using a small boat or ropes during a flood rescue operation.",
+    "suggested_themes": ["Bravery", "Teamwork", "Crisis Management"],
+    "protagonist_age": 25,
+    "protagonist_gender": "Male"
+  },
+  {
+    "test_type": "TAT",
+    "image_description": "A protagonist organizing a local sports event or coaching village youth in hockey.",
+    "suggested_themes": ["Sportsmanship", "Community Building", "Physical Fitness"],
+    "protagonist_age": 23,
+    "protagonist_gender": "Male"
+  }
+]

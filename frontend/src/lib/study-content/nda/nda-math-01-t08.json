@@ -1,0 +1,176 @@
+{
+  "id": "nda-math-01-t08",
+  "title": "Types of Functions — Injective, Surjective, Bijective",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 8,
+  "content": [
+    {
+      "type": "text",
+      "data": "Understanding the types of functions — Injective (One-to-One), Surjective (Onto), and Bijective (One-to-One Correspondence) — is fundamental in mathematics and crucial for the NDA examination. These classifications describe how elements from a function's domain map to its codomain, forming the basis for advanced topics like inverse functions, calculus, and abstract algebra. Mastering these distinctions will significantly enhance your problem-solving abilities for function-related questions."
+    },
+    {
+      "type": "heading",
+      "data": "1. Injective Functions (One-to-One)"
+    },
+    {
+      "type": "text",
+      "data": "A function f: A → B is said to be an injective function or a one-to-one function if distinct elements of A have distinct images in B. In simpler terms, no two different elements in the domain A map to the same element in the codomain B."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "For all x₁, x₂ ∈ A, if f(x₁) = f(x₂), then x₁ = x₂.",
+        "note": "This is the formal definition. Alternatively, if x₁ ≠ x₂, then f(x₁) ≠ f(x₂)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: To prove a function f is injective, assume f(x₁) = f(x₂) for arbitrary x₁, x₂ in the domain and then algebraically show that x₁ must be equal to x₂. To disprove injectivity, find two distinct values x₁ and x₂ in the domain such that f(x₁) = f(x₂)."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Show that the function f: R → R defined by f(x) = 3x - 5 is injective.",
+        "solution": "Let x₁, x₂ be any two elements in the domain R such that f(x₁) = f(x₂).\nAccording to the function definition, we have:\n3x₁ - 5 = 3x₂ - 5\nAdding 5 to both sides:\n3x₁ = 3x₂\nDividing by 3:\nx₁ = x₂\nSince f(x₁) = f(x₂) implies x₁ = x₂, the function f is injective (one-to-one).",
+        "answer": "The function f(x) = 3x - 5 is injective."
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Injective Function Mapping",
+        "description": "This diagram illustrates an injective function where each element in the domain maps to a unique element in the codomain. No two arrows point to the same element in the codomain.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph LR\n    subgraph Domain A\n        A1[1] -->|f|\n        A2[2] -->|f|\n        A3[3] -->|f|\n    end\n    subgraph Codomain B\n        B1(a)\n        B2(b)\n        B3(c)\n        B4(d)\n    end\n    A1 --> B1\n    A2 --> B2\n    A3 --> B3"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "2. Surjective Functions (Onto)"
+    },
+    {
+      "type": "text",
+      "data": "A function f: A → B is said to be a surjective function or an onto function if every element in the codomain B is the image of at least one element in the domain A. In other words, the range of the function is equal to its codomain."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "For every y ∈ B, there exists at least one x ∈ A such that f(x) = y.",
+        "note": "This means that the range of f is equal to the codomain B (Range(f) = B)."
+      }
+    },
+    {
+      "type": "list",
+      "data": [
+        "The range of a surjective function is always equal to its codomain.",
+        "If the codomain B is finite, then for a function to be surjective, the number of elements in the domain A must be greater than or equal to the number of elements in B (i.e., |A| ≥ |B|).",
+        "To prove surjectivity, you typically take an arbitrary element 'y' from the codomain and show that there exists an 'x' in the domain such that f(x) = y. This usually involves solving f(x)=y for x."
+      ]
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: For surjectivity, assume y = f(x) and solve for x in terms of y. If for every y in the codomain, you find a valid x in the domain, the function is surjective. If there's any y for which x is not in the domain (e.g., a square root of a negative number if the domain is R), it's not surjective."
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Show that the function f: R → R defined by f(x) = x³ is surjective.",
+        "solution": "Let y be an arbitrary element in the codomain R. We need to find an element x in the domain R such that f(x) = y.\nAccording to the function definition:\nx³ = y\nTaking the cube root of both sides:\nx = ³√y\nSince the cube root of any real number y is always a real number, for every y ∈ R (codomain), there exists an x = ³√y ∈ R (domain) such that f(x) = y.\nTherefore, the function f is surjective (onto).",
+        "answer": "The function f(x) = x³ is surjective."
+      }
+    },
+    {
+      "type": "heading",
+      "data": "3. Bijective Functions (One-to-One Correspondence)"
+    },
+    {
+      "type": "text",
+      "data": "A function f: A → B is said to be a bijective function or a one-to-one correspondence if it is both injective (one-to-one) and surjective (onto). Bijective functions are especially important because they possess an inverse function."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Type of Function",
+          "Definition / Property",
+          "NDA Exam Focus / Graphical Test"
+        ],
+        "rows": [
+          [
+            "Injective (One-to-One)",
+            "Distinct domain elements map to distinct codomain elements. (f(x₁)=f(x₂) ⇒ x₁=x₂)",
+            "Horizontal Line Test: Any horizontal line intersects the graph at most once."
+          ],
+          [
+            "Surjective (Onto)",
+            "Every element in the codomain has at least one pre-image in the domain. (Range = Codomain)",
+            "Verify if the function's range covers the entire specified codomain. (e.g., if f:R→R and Range is [0,∞), it's not surjective)."
+          ],
+          [
+            "Bijective",
+            "Both injective and surjective. Establishes a one-to-one correspondence.",
+            "Horizontal Line Test: Any horizontal line intersects the graph exactly once. Function must be invertible."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Determine if the function f: R → R defined by f(x) = 2x + 1 is bijective.",
+        "solution": "To be bijective, the function must be both injective and surjective.\n\n**1. Check for Injectivity:**\nLet x₁, x₂ ∈ R such that f(x₁) = f(x₂).\n2x₁ + 1 = 2x₂ + 1\n2x₁ = 2x₂\nx₁ = x₂\nSince f(x₁) = f(x₂) implies x₁ = x₂, f is injective.\n\n**2. Check for Surjectivity:**\nLet y be an arbitrary element in the codomain R. We need to find x ∈ R such that f(x) = y.\n2x + 1 = y\n2x = y - 1\nx = (y - 1) / 2\nFor every y ∈ R, (y - 1) / 2 is a real number, which is in the domain R. Thus, for every element in the codomain, there exists a pre-image in the domain.\nHence, f is surjective.\n\nSince f is both injective and surjective, it is bijective.",
+        "answer": "The function f(x) = 2x + 1 is bijective."
+      }
+    },
+    {
+      "type": "text",
+      "data": "Mastering these classifications is not just about definitions, but about applying them to various functions, especially polynomial, trigonometric, and exponential functions, often encountered in NDA problems. The ability to quickly identify a function's type can simplify complex problems involving inverse functions and function compositions."
+    }
+  ],
+  "keyPoints": [
+    "An **injective** function (one-to-one) means each element in the domain maps to a unique element in the codomain. No two domain elements share the same image.",
+    "A **surjective** function (onto) means every element in the codomain has at least one pre-image in the domain. The range of the function is equal to its codomain.",
+    "A **bijective** function is both injective and surjective. These functions are precisely the ones that have inverse functions.",
+    "The **Horizontal Line Test** is a quick graphical method: if any horizontal line intersects the graph of a function at most once, it's injective. If it intersects exactly once for all values in the codomain, it's bijective.",
+    "For finite sets, if |A| < |B|, no function from A to B can be surjective. If |A| > |B|, no function from A to B can be injective. If |A| = |B|, then a function is injective if and only if it is surjective, and thus bijective."
+  ],
+  "commonMistakes": [
+    "Confusing 'codomain' with 'range': The range is a subset of the codomain. A function is surjective only when its range is identical to its codomain.",
+    "Incorrectly applying graphical tests: The Horizontal Line Test determines injectivity/bijectivity, while the Vertical Line Test determines if a relation is a function at all."
+  ],
+  "examTips": [
+    "For NDA, be prepared to prove or disprove the injectivity/surjectivity of standard functions (e.g., linear, quadratic, cubic, exponential, logarithmic) with different domains and codomains (e.g., R→R, N→N, R⁺→R).",
+    "When dealing with finite sets, drawing arrow diagrams can be very helpful to visualize mappings and determine the type of function. For infinite sets, algebraic proofs are necessary."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following functions f: R → R defined by f(x) = x² is correct?",
+      "options": [
+        "A) It is injective but not surjective.",
+        "B) It is surjective but not injective.",
+        "C) It is bijective.",
+        "D) It is neither injective nor surjective."
+      ],
+      "correct": 3,
+      "explanation": "The function f(x) = x² is not injective because f(-2) = 4 and f(2) = 4, but -2 ≠ 2. It is not surjective because negative real numbers in the codomain have no real pre-image (e.g., there is no real x such that x² = -4)."
+    },
+    {
+      "question": "A function f: A → B is called 'one-to-one and onto' if it is:",
+      "options": [
+        "A) Injective only",
+        "B) Surjective only",
+        "C) Bijective",
+        "D) Not necessarily a function"
+      ],
+      "correct": 2,
+      "explanation": "A function that is both 'one-to-one' (injective) and 'onto' (surjective) is defined as a bijective function or a one-to-one correspondence. Such functions always have an inverse."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Types%20of%20Functions%20%E2%80%94%20Injective%2C%20Surjective%2C%20Bijective%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Types%20of%20Functions%20%E2%80%94%20Injective%2C%20Surjective%2C%20Bijective%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Types%20of%20Functions%20%E2%80%94%20Injective%2C%20Surjective%2C%20Bijective%20NCERT%20Class%2011%2012"
+  }
+}

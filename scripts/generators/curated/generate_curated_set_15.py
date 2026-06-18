@@ -1,0 +1,174 @@
+import json
+import os
+
+OUTPUT_DIR = r"c:\Users\Shivkumar\.antigravity\ssb-nextgen-pro\database\datasets\curated_sets"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+set_15_data = {
+  "set_id": "SET_15",
+  "description": "High-Quality Curated SSB Dataset - Set 15",
+  "TAT": [
+    {"pic_no": 1, "description": "A professional mentor guiding a young programmer who is coding on a dual-monitor setup.", "image_url": "https://picsum.photos/seed/tat_set15_1/800/600"},
+    {"pic_no": 2, "description": "A researcher placing a test tube into a centrifuge in a clean chemistry laboratory.", "image_url": "https://picsum.photos/seed/tat_set15_2/800/600"},
+    {"pic_no": 3, "description": "A group of villagers laying bricks to construct a community health center under the sun.", "image_url": "https://picsum.photos/seed/tat_set15_3/800/600"},
+    {"pic_no": 4, "description": "A rescue worker descending from a helicopter via a winch cable towards a ship in distress.", "image_url": "https://picsum.photos/seed/tat_set15_4/800/600"},
+    {"pic_no": 5, "description": "A dental surgeon showing a dental X-ray to a patient and explaining the treatment.", "image_url": "https://picsum.photos/seed/tat_set15_5/800/600"},
+    {"pic_no": 6, "description": "An agricultural expert demonstrating organic pest control methods to a group of farmers.", "image_url": "https://picsum.photos/seed/tat_set15_6/800/600"},
+    {"pic_no": 7, "description": "A pilot checking the exterior wing flaps of a fighter aircraft during a pre-flight inspection.", "image_url": "https://picsum.photos/seed/tat_set15_7/800/600"},
+    {"pic_no": 8, "description": "A young student explaining mathematical formulas to a group of rural kids on a makeshift whiteboard.", "image_url": "https://picsum.photos/seed/tat_set15_8/800/600"},
+    {"pic_no": 9, "description": "Two urban planners looking at a 3D physical model of a sustainable city layout.", "image_url": "https://picsum.photos/seed/tat_set15_9/800/600"},
+    {"pic_no": 10, "description": "A craftsman carving intricate designs on a block of wood in an open workshop.", "image_url": "https://picsum.photos/seed/tat_set15_10/800/600"},
+    {"pic_no": 11, "description": "A disaster management team carrying relief packages into a flood-shelter building.", "image_url": "https://picsum.photos/seed/tat_set15_11/800/600"},
+    {"pic_no": 12, "description": "BLANK PICTURE", "image_url": None}
+  ],
+  
+  "WAT": [
+    "Plan", "Map", "Step", "Lead", "Rise", "Jump", "Leap", "Bold", "Sure", "True", 
+    "Warm", "Kind", "Help", "Seek", "Find", "Glow", "Light", "Fire", "Spark", "Calm", 
+    "Cool", "Placid", "Still", "Quiet", "Soft", "Hard", "Firm", "Stout", "Brave", "Valor", 
+    "Glory", "Pride", "Honor", "Faith", "Devote", "Serve", "Duty", "Task", "Job", "Work", 
+    "Play", "Sport", "Game", "Win", "Gain", "Grow", "Build", "Create", "Form", "Shape", 
+    "Fit", "Trim", "Swift", "Fast", "Speed", "Quick", "Smart", "Wise", "Keen", "Alert"
+  ],
+
+  "SRT": [
+    "He is leading a river rafting team and the raft flips over in rapid white waters. He...",
+    "His family insists on him marrying early, which will disrupt his career plans in the army. He...",
+    "He finds a classmate taking photos of the confidential exam question paper in the staff room. He...",
+    "While returning home late, he notices a gas cylinder catching fire outside a street-side food stall. He...",
+    "He is organizing a district science exhibition, and the main power supply line trips, plunging the hall into darkness. He...",
+    "He finds an expensive smart watch on the washbasin of a public gym. He...",
+    "He is preparing for his exams, but his neighbor's dog barks continuously all night. He...",
+    "A stray deer wanders into his village and is chased by a pack of stray dogs. He...",
+    "He is on a long-distance train and notices a passenger having a severe panic attack. He...",
+    "He is accused of copying a project paper from the internet, which he wrote with original research. He...",
+    "He is managing a stage play, and the main lead actor gets a severe throat infection and loses their voice on the day of the show. He...",
+    "He is stuck in a lift that suddenly drops a few inches and stops, causing other passengers to scream. He...",
+    "He sees an auto-driver demand three times the normal fare from an elderly foreign tourist. He...",
+    "He gets caught in a sudden heavy sandstorm while on a desert safari. He...",
+    "He is selected for a physical endurance test, but he pulls a hamstring muscle 3 days before the test. He...",
+    "He notices a heavily overloaded truck driving precariously on a winding mountain road. He...",
+    "His supervisor asks him to approve a substandard raw material batch to save costs. He...",
+    "A clerk at the land registry office refuses to hand over his property document without an illegal gratification. He...",
+    "He is staying at a hotel and hears a child crying hysterically in the locked room next door. He...",
+    "He is presenting his business plan and a senior investor dismisses it as a waste of time. He...",
+    "He is on a high-altitude trek and begins to show signs of cerebral edema. He...",
+    "He finds out that a close relative is involved in an online financial scam. He...",
+    "While driving on a highway, he witnesses a container truck tip over, blocking all lanes. He...",
+    "He is assigned a task with a team member who refuses to communicate or share progress. He...",
+    "His childhood friend has lost their job and is unable to pay their house rent. He...",
+    "He sees a group of youngsters teasing a street vendor. He...",
+    "He is working on his computer and the battery starts swelling and emitting smoke. He...",
+    "He is falsely accused of leak of department budget figures to the press. He...",
+    "He is heading a sports club and the members are split into two hostile factions. He...",
+    "While boating, a sudden leak appears in the hull and water starts entering the cabin. He...",
+    "He discovers his wallet was picked while standing in a long queue at the railway ticket counter. He...",
+    "He finds that someone has opened a fake social media account in his sister's name. He...",
+    "He is in a museum and notices a visitor attempting to touch and damage an ancient sculpture. He...",
+    "He is on a journey and a sudden landslide blocks the highway ahead for at least 24 hours. He...",
+    "His cousin demands to drive his car at night, but he knows the cousin does not have a license. He...",
+    "He is organizing a plantation drive and the nursery delivers the wrong plant species at the venue. He...",
+    "He sees a blind person trying to cross a busy road with chaotic traffic. He...",
+    "He is sitting in a formal test and his pen runs out of ink, and he has no spare. He...",
+    "He finds a large swarm of hornets building a nest under the eaves of his front porch. He...",
+    "His team is playing an online tournament and their internet connection starts fluctuating wildly. He...",
+    "He is on a hike and his teammate gets a deep cut on their ankle from a rusty wire. He...",
+    "He is preparing a digital project and the hard drive gets corrupted, wiping out the work a day before the review. He...",
+    "He sees a student copying from a mobile phone during a competitive exam. He...",
+    "He is riding a motorbike and the chain snaps in the middle of a deserted highway. He...",
+    "He notices a strong smell of cooking gas from a neighbor's flat and no one is answering the bell. He...",
+    "His project partner takes full credit for a research paper they co-authored. He...",
+    "He is traveling through a remote area and the vehicle's radiator starts overheating rapidly. He...",
+    "He sees a passenger's jacket catch fire from a stray spark of firecrackers during a festival crowd. He...",
+    "He is asked to give a presentation on an advanced technical topic in place of an absent colleague. He...",
+    "He is at home at night and hears someone trying to break open the window grill of the ground floor. He...",
+    "He finds a severe error in his salary slip showing a large overpayment. He...",
+    "His friends try to pressure him into trying synthetic drugs during a vacation trip. He...",
+    "He is participating in a high-jump event and the landing mattress gets torn and deflated. He...",
+    "He is stuck in a passenger lift with an expectant mother who starts feeling labor pains. He...",
+    "He is in a national park and spots a small forest fire starting near a dry leaf pile. He...",
+    "He is selected for an interview, but the calling letter reaches him with only 2 hours to spare. He...",
+    "He finds out his friend is planning to leave college due to severe exam stress. He...",
+    "He is riding a pillion on a motorcycle and the rider starts driving on the wrong side of the road. He...",
+    "He finds an injured kingfisher bird near his garden pond. He...",
+    "He is attending a scientific seminar and the presenter makes a highly controversial statement. He..."
+  ],
+
+  "PPDT": {
+    "image_url": "https://picsum.photos/seed/ppdt_set15/800/600?blur=5",
+    "description": "Hazy picture of two people carrying water pots, walking down a dirt path near a village well."
+  },
+
+  "PI": [
+    "How do you evaluate your own performance after completing a major task?",
+    "Tell me about a time you had to handle an extremely uncooperative team member.",
+    "What is your view on the privatization of space exploration by private players?",
+    "How do you ensure you maintain your mental health during times of high stress?",
+    "Tell me about a time you stood up for something you believed was right, despite opposition.",
+    "What are the most significant internal security challenges facing India today?",
+    "How do you balance your hobbies with your professional responsibilities?",
+    "Tell me about a time you had to learn a completely new skill in a short timeframe.",
+    "If you are given a task with no clear instructions, how do you proceed?",
+    "What is your opinion on the digital rupee initiatives launched by the RBI?",
+    "Tell me about a time you had a major disagreement with your parents regarding your career choice.",
+    "Why do you want to join the Army specifically, rather than the Navy or Air Force?",
+    "What is the difference between a leader and a manager in high-stress situations?",
+    "How do you deal with a team member who is underperforming due to personal issues?",
+    "What is your strategy to build long-term focus and avoid distractions?",
+    "Tell me about a time you organized an initiative that benefited your local community.",
+    "What are your views on India's efforts towards green energy transition?",
+    "If you are not selected in this attempt, what specific steps will you take next?",
+    "How do you react when your ideas are rejected by your peers or seniors?",
+    "What is the most physically challenging task you have ever accomplished?"
+  ],
+
+  "SD": [
+    "What is the opinion of your parents about you?",
+    "What do your teachers or employers think about you?",
+    "What do your friends or colleagues think about you?",
+    "What is your own opinion about yourself?",
+    "What are the qualities you would like to develop in yourself?"
+  ],
+
+  "Lecturette": [
+    "Self-Reliance in Defence (Aatmanirbhar Bharat)",
+    "The Future of Artificial Intelligence in Healthcare",
+    "Climate Change: Mitigation and Adaptation Strategies",
+    "The Role of Sports in Nation Building"
+  ],
+
+  "GD": [
+    "Is globalization still relevant, or are countries moving towards economic protectionism?",
+    "Should social media platforms be held legally responsible for user-generated content?"
+  ],
+
+  "GPE": {
+    "narrative": "You are a group of 6 college students on a nature camping trip in a forest reserve. It is 1500 hours. A forest guard approaches you in a hurry with the following information: 1. A minor forest fire has started in the North sector (4 km away) and will block the main entry/exit road in exactly 2 hours (1700 hours). 2. A researcher has been bitten by a venomous snake near the marshes 3 km West and needs antivenom within 90 minutes (1630 hours). 3. A group of tourists is stranded near the waterfall 5 km East as their boat's propeller got entangled in weeds. You have a rugged SUV (seats 5), some ropes, a first-aid kit, and one satellite phone. The forest guard's post is 10 km South. How will you divide your group and prioritize these tasks to ensure the researcher is saved, the tourists are rescued, and the SUV escapes before the road gets blocked?",
+    "map_url": "https://picsum.photos/seed/gpe_map_set15/800/600"
+  },
+
+  "GTO": {
+    "PGT": "Progressive Group Task: 4 progressive obstacles emphasizing bridging over water channels. Resources: 1 long Plank, 1 short Balli, 2 Ropes, 1 wooden block. Time: 40 mins.",
+    "HGT": "Half Group Task: 1 complex obstacle involving a tricky cantilever bridge across a ditch. Resources: 1 Plank, 1 Balli, 1 Rope. Time: 15 mins.",
+    "IO": "Individual Obstacles: 10 standard GTO obstacles. Time: 3 mins.",
+    "FGT": "Final Group Task: A coordinated team effort to transport a heavy ammunition box across a final barrier. Resources: 1 Plank, 1 Balli, 2 Ropes. Time: 15 mins."
+  },
+
+  "CPSS": [
+    "Spatial orientation: If the slip indicator ball is deflected to the left during a right turn, how should you correct the rudder?",
+    "Artificial Horizon: The horizon bar is pitched up 15 degrees and banked 30 degrees to the left. Describe the aircraft's current attitude.",
+    "Altimeter Reading: Read the altimeter showing the 10,000-ft pointer at 5, the 1,000-ft pointer at 4, and the 100-ft pointer at 2. What is the current altitude?",
+    "Instrument Landing System: The localizer needle is deflected to the left and the glide slope needle is deflected upwards. Where is the aircraft relative to the correct glide path?",
+    "Visual Spatial Reasoning: An unfolded 2D pattern shaped like an L has faces marked 1 to 6. If folded into a 3D cube, which face will be opposite to 3?",
+    "Cognitive Memory Challenge: Study the instrument display featuring 6 gauges for 5 seconds. Identify which gauge reading has changed in the subsequent screen.",
+    "Compass Heading: The aircraft is heading 180 degrees (South). You receive a command to make a standard rate turn to a heading of 270 degrees. How many degrees of turn are required?",
+    "Multi-tasking Psychomotor Test: Maintain the flight simulator joystick within the target green circle while solving basic subtraction problems on the Head-Up Display (HUD).",
+    "Aircraft Recognition: Identify the silhouette of the Rafale fighter aircraft based on its delta wing and canards design.",
+    "Reaction Time & Auditory Vigilance: Press the missile release button within 250 milliseconds only when the radar target locks (turns green) and a high-pitch tone is heard."
+  ]
+}
+
+with open(os.path.join(OUTPUT_DIR, "set_15.json"), 'w', encoding='utf-8') as f:
+    json.dump(set_15_data, f, indent=2)
+
+print("Set 15 created successfully with CPSS.")

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Government Priority during Pandemic",
+    "lead_points": [
+      "Safeguarding lives via lockdowns",
+      "Protecting livelihood of daily wage earners",
+      "Reviving national economic interests"
+    ],
+    "background_info": "Focuses on the trade-offs between health safety and economic survival during global crises."
+  },
+  {
+    "title": "Major Hindrances to Indian Development",
+    "lead_points": [
+      "Caste-based reservation system",
+      "Communal and identity politics",
+      "Criminalization of politics and corruption"
+    ],
+    "background_info": "Analyzes the socio-political factors that slow down the pace of national progress."
+  },
+  {
+    "title": "Post-COVID National Focus",
+    "lead_points": [
+      "Massive upgrade of healthcare infrastructure",
+      "Digital transformation of education",
+      "Structural reforms in the economy"
+    ],
+    "background_info": "Discusses where the majority of the budget and energy should be spent in the next decade."
+  },
+  {
+    "title": "Insurgency in J&K: Primary Cause",
+    "lead_points": [
+      "Radicalization by separatist leaders",
+      "Underdevelopment and lack of employment",
+      "External funding and cross-border support"
+    ],
+    "background_info": "Explores the root causes of the internal security challenges in Jammu and Kashmir."
+  },
+  {
+    "title": "India-China Border Dispute Resolution",
+    "lead_points": [
+      "Continuous diplomatic and high-level talks",
+      "Strengthening military presence and infrastructure",
+      "Leveraging international pressure and trade"
+    ],
+    "background_info": "Evaluates the best strategy for handling the complex LAC standoff."
+  }
+]

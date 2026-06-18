@@ -1,0 +1,217 @@
+{
+  "id": "nda-math-01-t01",
+  "title": "Sets — Definition, Types and Notation",
+  "exam": "nda",
+  "subject": "Mathematics",
+  "chapter": "nda-math-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Sets form a fundamental concept in mathematics, providing a structured way to group distinct objects into a single unit. In the context of the NDA exam, a solid understanding of sets, their types, and notation is crucial for tackling questions related to relations, functions, probability, and other advanced topics. This section will cover the basics of set theory, from defining what a set is to understanding its various classifications and how to represent them effectively."
+    },
+    {
+      "type": "heading",
+      "data": "Definition of a Set"
+    },
+    {
+      "type": "text",
+      "data": "A set is a well-defined collection of distinct objects. The objects in the collection are called elements or members of the set. The term 'well-defined' means that there is no ambiguity about whether a particular object belongs to the set or not. The order of elements in a set does not matter, and elements are not repeated."
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: Remember that the order of elements in a set does not matter, and elements are not repeated. For example, {1, 2, 3} is the same as {3, 1, 2}, and {1, 1, 2, 3} is simply {1, 2, 3}."
+    },
+    {
+      "type": "heading",
+      "data": "Methods of Representing a Set"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Roster or Tabular Form: In this method, all the elements of a set are listed, separated by commas, and enclosed within curly braces {}. For example, the set of even numbers less than 10 can be written as A = {2, 4, 6, 8}.",
+        "Set-Builder Form: In this method, a common property or rule that all the elements of the set satisfy, and no other element satisfies, is written. It is represented as {x : P(x)} or {x | P(x)}, where P(x) is the property. For example, the set of even numbers less than 10 can be written as A = {x | x is an even natural number and x < 10}."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "Types of Sets"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Type of Set",
+          "Definition",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Empty Set (Null Set)",
+            "A set containing no elements. Denoted by Ø or {}",
+            "A = {x : x is an even prime number greater than 2} = Ø"
+          ],
+          [
+            "Singleton Set",
+            "A set containing exactly one element.",
+            "A = {x : x is an even prime number} = {2}"
+          ],
+          [
+            "Finite Set",
+            "A set with a countable number of elements; the process of counting elements comes to an end.",
+            "A = {1, 2, 3, 4, 5}"
+          ],
+          [
+            "Infinite Set",
+            "A set whose elements cannot be listed by a finite number of elements.",
+            "A = {x : x is a natural number} = {1, 2, 3, ...}"
+          ],
+          [
+            "Equal Sets",
+            "Two sets A and B are equal if they have exactly the same elements.",
+            "A = {1, 2, 3}, B = {3, 1, 2} ⇒ A = B"
+          ],
+          [
+            "Equivalent Sets",
+            "Two finite sets A and B are equivalent if they have the same number of elements (i.e., same cardinality).",
+            "A = {1, 2, 3}, B = {a, b, c} ⇒ A ≈ B (n(A)=n(B)=3)"
+          ],
+          [
+            "Subset (⊆)",
+            "If every element of set A is also an element of set B, then A is a subset of B.",
+            "A = {1, 2}, B = {1, 2, 3} ⇒ A ⊆ B"
+          ],
+          [
+            "Proper Subset (⊂)",
+            "If A is a subset of B and A ≠ B, then A is a proper subset of B.",
+            "A = {1, 2}, B = {1, 2, 3} ⇒ A ⊂ B"
+          ],
+          [
+            "Universal Set (U)",
+            "The mother set of all sets under consideration in a particular context.",
+            "If we are discussing integers, U could be Z (set of all integers)."
+          ],
+          [
+            "Power Set (P(A))",
+            "The set of all possible subsets of a given set A.",
+            "If A = {1, 2}, then P(A) = {Ø, {1}, {2}, {1, 2}}"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: For NDA, distinguishing between 'subset' (⊆) and 'proper subset' (⊂) is crucial, especially when counting possibilities in Power Sets. The empty set (Ø) and the set itself are always subsets of any set."
+    },
+    {
+      "type": "heading",
+      "data": "Cardinality of a Set"
+    },
+    {
+      "type": "text",
+      "data": "The cardinality of a finite set is the number of distinct elements in the set. It is denoted by n(A) or |A|."
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "n(A) = Number of distinct elements in set A",
+        "note": "For example, if A = {a, b, c, d}, then n(A) = 4."
+      }
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "Number of subsets of a set with n elements = 2^n",
+        "note": "Number of proper subsets of a set with n elements = 2^n - 1"
+      }
+    },
+    {
+      "type": "heading",
+      "data": "Important Notations and Symbols"
+    },
+    {
+      "type": "list",
+      "data": [
+        "{} : Represents a set (Roster Form)",
+        "| or : : \"such that\" (Set-Builder Form)",
+        "∈ : \"is an element of\" or \"belongs to\"",
+        "∉ : \"is not an element of\"",
+        "⊆ : \"is a subset of\" (proper or improper)",
+        "⊂ : \"is a proper subset of\"",
+        "⊇ : \"is a superset of\"",
+        "⊃ : \"is a proper superset of\"",
+        "U : Universal Set",
+        "Ø or {} : Empty Set or Null Set",
+        "N : Set of Natural Numbers ({1, 2, 3, ...})",
+        "Z : Set of Integers ({..., -2, -1, 0, 1, 2, ...})",
+        "Q : Set of Rational Numbers",
+        "R : Set of Real Numbers",
+        "P(A) : Power Set of A",
+        "n(A) or |A| : Cardinality of set A"
+      ]
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Let A = {x | x is an integer and 1 < x ≤ 4}.\n(i) Write set A in Roster form.\n(ii) Find the number of elements in A, i.e., n(A).\n(iii) List all proper subsets of A.",
+        "solution": "(i) The integers greater than 1 and less than or equal to 4 are 2, 3, 4. So, A = {2, 3, 4}.\n(ii) The number of elements in A is 3. So, n(A) = 3.\n(iii) The number of all subsets of A is 2^(n(A)) = 2^3 = 8.\nThe subsets are:\nØ\n{2}, {3}, {4}\n{2, 3}, {2, 4}, {3, 4}\n{2, 3, 4}\nProper subsets are all subsets except the set A itself.\nSo, proper subsets are: Ø, {2}, {3}, {4}, {2, 3}, {2, 4}, {3, 4}.",
+        "answer": "(i) A = {2, 3, 4}\n(ii) n(A) = 3\n(iii) Proper subsets: Ø, {2}, {3}, {4}, {2, 3}, {2, 4}, {3, 4}"
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Basic Set Classification",
+        "description": "Illustrates a simple hierarchy of sets based on their element count, differentiating between finite and infinite sets, and further classifying finite sets.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[Set] --> B{Number of Elements?};\n    B --> C{Finite};\n    B --> D{Infinite};\n    C --> E[Empty Set];\n    C --> F[Singleton Set];\n    C --> G[Non-empty Finite Set];\n    E -- 0 Elements --> Empty;\n    F -- 1 Element --> Singleton;\n    G -- >1 Elements --> FiniteNonEmpty;"
+      }
+    }
+  ],
+  "keyPoints": [
+    "A set is a well-defined collection of distinct objects; elements are not repeated, and their order does not matter.",
+    "Sets can be represented in Roster (listing elements) or Set-builder (describing a property) form.",
+    "Key types of sets include Empty, Singleton, Finite, Infinite, Equal, Equivalent, Subsets, and Universal sets.",
+    "The cardinality n(A) or |A| denotes the number of elements in set A. If n(A) = n, then the number of subsets is 2^n and proper subsets is 2^n - 1.",
+    "Familiarize yourself with standard number sets (N, Z, Q, R) and their symbols, as they often appear in NDA questions in set-builder form."
+  ],
+  "commonMistakes": [
+    "Confusing elements with sets: Forgetting that {a} is a set containing 'a', not 'a' itself. 'a' ∈ {a}, but {a} ⊆ {a, b}.",
+    "Incorrectly identifying proper subsets: Always remember to exclude the set itself when listing proper subsets (2^n - 1).",
+    "Misinterpreting set-builder notation, especially inequalities (e.g., `<` meaning strictly less than, while `≤` includes the value)."
+  ],
+  "examTips": [
+    "Practice converting between Roster form and Set-builder form extensively, as NDA often tests this fundamental skill.",
+    "Master the calculation of the number of subsets and proper subsets for a given set; it's a frequent MCQ topic and directly impacts probability questions.",
+    "Always pay close attention to the definition of the Universal Set provided in a problem, as it defines the scope for all other sets in that specific question."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "Which of the following collections is NOT a set?",
+      "options": [
+        "A. The collection of all prime numbers less than 10.",
+        "B. The collection of all good hockey players in India.",
+        "C. The collection of all integers between -2 and 2 (inclusive).",
+        "D. The collection of all states in India."
+      ],
+      "correct": 1,
+      "explanation": "A set must be well-defined. 'Good hockey players' is subjective and not well-defined, as 'good' can mean different things to different people. Therefore, it cannot form a set."
+    },
+    {
+      "question": "If a set A has 5 elements, how many proper subsets does it have?",
+      "options": [
+        "A. 32",
+        "B. 31",
+        "C. 16",
+        "D. 15"
+      ],
+      "correct": 1,
+      "explanation": "The number of subsets of a set with 'n' elements is 2^n. The number of proper subsets is 2^n - 1. For n=5, the number of proper subsets = 2^5 - 1 = 32 - 1 = 31."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Sets%20%E2%80%94%20Definition%2C%20Types%20and%20Notation%20nda%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Sets%20%E2%80%94%20Definition%2C%20Types%20and%20Notation%20in%20Hindi%20nda",
+    "ncert": "https://www.youtube.com/results?search_query=Sets%20%E2%80%94%20Definition%2C%20Types%20and%20Notation%20NCERT%20Class%2011%2012"
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nStandard batteries (like AA or AAA) generate electricity through a chemical reaction between the internal materials.",
+    "options": [
+      { "label": "1", "text": "True" },
+      { "label": "2", "text": "Probable" },
+      { "label": "3", "text": "False" },
+      { "label": "4", "text": "Absurd" }
+    ],
+    "correct_option": "1",
+    "explanation": "Batteries use electrochemical cells to convert chemical energy into electrical energy."
+  },
+  {
+    "id": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nPainting a bicycle bright neon green will make it travel at the speed of light.",
+    "options": [
+      { "label": "1", "text": "True" },
+      { "label": "2", "text": "Probable" },
+      { "label": "3", "text": "False" },
+      { "label": "4", "text": "Absurd" }
+    ],
+    "correct_option": "4",
+    "explanation": "Color has no effect on the physical velocity limits of a mechanical vehicle."
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nWe use specialized winter tires in snowy regions because:-",
+    "options": [
+      { "label": "1", "text": "They are designed to make the car look more aggressive in the snow." },
+      { "label": "2", "text": "The rubber compound stays soft in cold temperatures and the tread pattern provides better grip on ice." },
+      { "label": "3", "text": "They are filled with hot air to melt the snow as the car drives over it." },
+      { "label": "4", "text": "They are made of recycled plastic to help the environment." }
+    ],
+    "correct_option": "2",
+    "explanation": "Winter tires are engineered for low-temperature flexibility and traction on slippery surfaces."
+  },
+  {
+    "id": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nIron objects are often coated with zinc (galvanized) because:-",
+    "options": [
+      { "label": "1", "text": "Zinc makes the iron much heavier so it won't blow away in the wind." },
+      { "label": "2", "text": "Zinc provides a protective layer that prevents the iron from rusting (oxidizing)." },
+      { "label": "3", "text": "Zinc makes the iron naturally magnetic." },
+      { "label": "4", "text": "Galvanizing makes the metal taste better to animals so they won't chew it." }
+    ],
+    "correct_option": "2",
+    "explanation": "Galvanization uses zinc as a sacrificial anode to prevent the underlying iron/steel from corroding."
+  },
+  {
+    "id": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nis might right",
+    "correct_option": "t",
+    "explanation": "The rearranged sentence is 'Might is right'. The last letter is 't'."
+  },
+  {
+    "id": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nsilver cloud every lining a has",
+    "correct_option": "g",
+    "explanation": "The rearranged sentence is 'Every cloud has a silver lining'. The last letter is 'g'."
+  },
+  {
+    "id": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe scorching freezing ice chilled the water instantly.",
+    "correct_option": "s",
+    "explanation": "The word to be omitted is 'scorching' (contradicts 'ice' and 'freezing'). The first letter is 's'."
+  },
+  {
+    "id": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe ancient modern computer was built in the year 2024.",
+    "correct_option": "t",
+    "explanation": "The word to be omitted is 'ancient' (built in 2024 makes it modern). The last letter is 't'."
+  },
+  {
+    "id": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nG L E N A is a geometric figure formed by two rays meeting at a common vertex.",
+    "correct_option": "N",
+    "explanation": "The rearranged word is 'ANGLE'. The second letter is 'N'."
+  },
+  {
+    "id": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nN O P E S S is a tool with a handle and a small bowl used for eating or stirring.",
+    "correct_option": "P",
+    "explanation": "The rearranged word is 'SPOON'. The second letter is 'P'."
+  },
+  {
+    "id": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Engine is to Car as Heart is to __________.",
+    "options": [
+      { "label": "1", "text": "Blood" },
+      { "label": "2", "text": "Body" },
+      { "label": "3", "text": "Beat" },
+      { "label": "4", "text": "Chest" },
+      { "label": "5", "text": "Life" }
+    ],
+    "correct_option": "2",
+    "explanation": "The engine is the power unit of a car; the heart is the power/pumping unit of a body."
+  },
+  {
+    "id": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Moon is to Night as Sun is to __________.",
+    "options": [
+      { "label": "1", "text": "Hot" },
+      { "label": "2", "text": "Day" },
+      { "label": "3", "text": "Light" },
+      { "label": "4", "text": "Sky" },
+      { "label": "5", "text": "Star" }
+    ],
+    "correct_option": "2",
+    "explanation": "The moon is the primary celestial features of the night; the sun is the central feature of the day."
+  },
+  {
+    "id": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Scale is to Weight as Ruler is to __________.",
+    "options": [
+      { "label": "1", "text": "Measure" },
+      { "label": "2", "text": "Inch" },
+      { "label": "3", "text": "Length" },
+      { "label": "4", "text": "Straight" },
+      { "label": "5", "text": "Tool" }
+    ],
+    "correct_option": "3",
+    "explanation": "A scale measures weight; a ruler measures length."
+  },
+  {
+    "id": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Spider is to Web as Bee is to __________.",
+    "options": [
+      { "label": "1", "text": "Honey" },
+      { "label": "2", "text": "Sting" },
+      { "label": "3", "text": "Hive" },
+      { "label": "4", "text": "Insect" },
+      { "label": "5", "text": "Flower" }
+    ],
+    "correct_option": "3",
+    "explanation": "A spider lives in/constructs a web; a bee lives in/constructs a hive."
+  },
+  {
+    "id": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Solid is to Ice as Gas is to __________.",
+    "options": [
+      { "label": "1", "text": "Water" },
+      { "label": "2", "text": "Steam" },
+      { "label": "3", "text": "Cold" },
+      { "label": "4", "text": "Liquid" },
+      { "label": "5", "text": "Air" }
+    ],
+    "correct_option": "2",
+    "explanation": "Ice is the solid state of water; steam is the gaseous state."
+  },
+  {
+    "id": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Wheat is to Grain as Apple is to __________.",
+    "options": [
+      { "label": "1", "text": "Tree" },
+      { "label": "2", "text": "Fruit" },
+      { "label": "3", "text": "Red" },
+      { "label": "4", "text": "Food" },
+      { "label": "5", "text": "Sweet" }
+    ],
+    "correct_option": "2",
+    "explanation": "Wheat is a type of grain; an apple is a type of fruit."
+  },
+  {
+    "id": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a logical sequence of time?",
+    "options": [
+      { "label": "1", "text": "Decade" },
+      { "label": "2", "text": "Century" },
+      { "label": "3", "text": "Year" },
+      { "label": "4", "text": "Millennium" },
+      { "label": "5", "text": "Month" }
+    ],
+    "correct_option": "3",
+    "explanation": "Sequence: Month, Year, Decade, Century, Millennium. The middle item is Year."
+  },
+  {
+    "id": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of biological complexity (simplest to most complex)?",
+    "options": [
+      { "label": "1", "text": "Organ" },
+      { "label": "2", "text": "Tissue" },
+      { "label": "3", "text": "Cell" },
+      { "label": "4", "text": "Organism" },
+      { "label": "5", "text": "System" }
+    ],
+    "correct_option": "1",
+    "explanation": "Sequence: Cell, Tissue, Organ, System, Organism. The middle item is Organ."
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Physics" },
+      { "label": "2", "text": "Chemistry" },
+      { "label": "3", "text": "Biology" },
+      { "label": "4", "text": "History" },
+      { "label": "5", "text": "Geology" }
+    ],
+    "correct_option": "4",
+    "explanation": "History is a humanity/social science, whereas the others are natural sciences."
+  },
+  {
+    "id": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Mars" },
+      { "label": "2", "text": "Venus" },
+      { "label": "3", "text": "Saturn" },
+      { "label": "4", "text": "Jupiter" },
+      { "label": "5", "text": "Sun" }
+    ],
+    "correct_option": "5",
+    "explanation": "The Sun is a star, while the others are planets."
+  }
+]

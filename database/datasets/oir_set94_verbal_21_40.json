@@ -1,0 +1,249 @@
+[
+  {
+    "id": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Pencil" },
+      { "label": "2", "text": "Pen" },
+      { "label": "3", "text": "Eraser" },
+      { "label": "4", "text": "Marker" },
+      { "label": "5", "text": "Crayon" }
+    ],
+    "correct_option": "3",
+    "explanation": "Eraser is for removing marks, while the others are for making marks."
+  },
+  {
+    "id": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "India" },
+      { "label": "2", "text": "Pakistan" },
+      { "label": "3", "text": "China" },
+      { "label": "4", "text": "Japan" },
+      { "label": "5", "text": "Canada" }
+    ],
+    "correct_option": "5",
+    "explanation": "Canada is in North America, while the others are in Asia."
+  },
+  {
+    "id": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "Running" },
+      { "label": "2", "text": "Swimming" },
+      { "label": "3", "text": "Thinking" },
+      { "label": "4", "text": "Jumping" },
+      { "label": "5", "text": "Cycling" }
+    ],
+    "correct_option": "3",
+    "explanation": "Thinking is a mental activity, whereas the others are physical movements/exercises."
+  },
+  {
+    "id": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Habit" },
+      { "label": "2", "text": "Hammer" },
+      { "label": "3", "text": "Handle" },
+      { "label": "4", "text": "Happy" }
+    ],
+    "correct_option": "4",
+    "explanation": "The alphabetical order is: Habit, Hammer, Handle, Happy."
+  },
+  {
+    "id": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Machine" },
+      { "label": "2", "text": "Magnet" },
+      { "label": "3", "text": "Magic" },
+      { "label": "4", "text": "Major" }
+    ],
+    "correct_option": "4",
+    "explanation": "The alphabetical order is: Machine, Magic, Magnet, Major."
+  },
+  {
+    "id": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Ocean" },
+      { "label": "2", "text": "Occur" },
+      { "label": "3", "text": "Occupay" },
+      { "label": "4", "text": "Octave" }
+    ],
+    "correct_option": "4",
+    "explanation": "The alphabetical order is: Occupy, Occur, Ocean, Octave."
+  },
+  {
+    "id": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Paper" },
+      { "label": "2", "text": "Party" },
+      { "label": "3", "text": "Panel" },
+      { "label": "4", "text": "Panic" }
+    ],
+    "correct_option": "2",
+    "explanation": "The alphabetical order is: Panel, Panic, Paper, Party."
+  },
+  {
+    "id": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Radio" },
+      { "label": "2", "text": "Radar" },
+      { "label": "3", "text": "Raise" },
+      { "label": "4", "text": "Rain" }
+    ],
+    "correct_option": "3",
+    "explanation": "The alphabetical order is: Radar, Radio, Rain, Raise."
+  },
+  {
+    "id": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nB, E, H, K, N, _______, _______.",
+    "correct_option": "Q, T",
+    "explanation": "The series follows a pattern of adding 3 positions in the alphabet: B+3=E, E+3=H, H+3=K, K+3=N, N+3=Q, Q+3=T."
+  },
+  {
+    "id": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n10, 20, 31, 43, 56, _______, _______.",
+    "correct_option": "70, 85",
+    "explanation": "The difference between consecutive numbers increases by 1: 10+10=20, 20+11=31, 31+12=43, 43+13=56, 56+14=70, 70+15=85."
+  },
+  {
+    "id": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n128, 64, 32, 16, _______, _______.",
+    "correct_option": "8, 4",
+    "explanation": "Each number is half of the previous number: 128/2=64, 64/2=32, 32/2=16, 16/2=8, 8/2=4."
+  },
+  {
+    "id": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "XZW" },
+      { "label": "2", "text": "MKJ" },
+      { "label": "3", "text": "GFE" },
+      { "label": "4", "text": "PNM" },
+      { "label": "5", "text": "VUT" }
+    ],
+    "correct_option": "1",
+    "explanation": "GFE, VUT, PNM, and MKJ are all consecutive letters in reverse alphabetical order. XZW is not consecutive."
+  },
+  {
+    "id": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?",
+    "options": [
+      { "label": "1", "text": "11" },
+      { "label": "2", "text": "13" },
+      { "label": "3", "text": "15" },
+      { "label": "4", "text": "17" },
+      { "label": "5", "text": "19" }
+    ],
+    "correct_option": "3",
+    "explanation": "15 is a composite number (3 x 5), while the others are all prime numbers."
+  },
+  {
+    "id": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 6’s are immediately preceded by a 9 AND immediately followed by a 3 in the following sequence?\n9 6 3 4 9 6 3 6 3 9 6 3 1",
+    "options": [
+      { "label": "1", "text": "1" },
+      { "label": "2", "text": "2" },
+      { "label": "3", "text": "3" },
+      { "label": "4", "text": "4" }
+    ],
+    "correct_option": "3",
+    "explanation": "The sequence '9 6 3' appears three times: at the beginning, at index 4, and at index 9."
+  },
+  {
+    "id": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 12 eggs cost 72 rupees, what is the cost of 15 eggs?",
+    "options": [
+      { "label": "1", "text": "80" },
+      { "label": "2", "text": "84" },
+      { "label": "3", "text": "90" },
+      { "label": "4", "text": "96" }
+    ],
+    "correct_option": "3",
+    "explanation": "Cost per egg = 72 / 12 = 6. Cost for 15 eggs = 15 * 6 = 90."
+  },
+  {
+    "id": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A man walks 10 meters South, turns left and walks 10 meters, then turns left again and walks 10 meters. How far is he from his starting point?",
+    "options": [
+      { "label": "1", "text": "10 meters" },
+      { "label": "2", "text": "20 meters" },
+      { "label": "3", "text": "30 meters" },
+      { "label": "4", "text": "0 meters" }
+    ],
+    "correct_option": "1",
+    "explanation": "Starting at origin (0,0): 10m South -> (0, -10). Left turn = East, 10m -> (10, -10). Left turn = North, 10m -> (10, 0). Distance from start (0,0) to end (10,0) is 10 meters."
+  },
+  {
+    "id": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a man, a girl says, 'He is the only son of my mother's father.' How is the man related to the girl?",
+    "options": [
+      { "label": "1", "text": "Father" },
+      { "label": "2", "text": "Uncle" },
+      { "label": "3", "text": "Brother" },
+      { "label": "4", "text": "Grandfather" }
+    ],
+    "correct_option": "2",
+    "explanation": "Mother's father is the girl's grandfather. Grandfather's only son is her mother's brother, which is her uncle."
+  },
+  {
+    "id": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word 'PEN' is coded as 35, and 'PIN' is coded as 39, how is the word 'PAN' coded? (Hint: A=1, B=2...)",
+    "options": [
+      { "label": "1", "text": "29" },
+      { "label": "2", "text": "30" },
+      { "label": "3", "text": "31" },
+      { "label": "4", "text": "32" }
+    ],
+    "correct_option": "3",
+    "explanation": "P(16) + A(1) + N(14) = 31."
+  },
+  {
+    "id": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 6th of a month falls on a Wednesday, what day of the week will the 27th of the same month be?",
+    "options": [
+      { "label": "1", "text": "Tuesday" },
+      { "label": "2", "text": "Wednesday" },
+      { "label": "3", "text": "Thursday" },
+      { "label": "4", "text": "Friday" }
+    ],
+    "correct_option": "2",
+    "explanation": "27th - 6th = 21 days. 21 / 7 = 3.0 (exact weeks). Wednesday + 0 days = Wednesday."
+  },
+  {
+    "id": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      { "label": "1", "text": "1/3" },
+      { "label": "2", "text": "2/5" },
+      { "label": "3", "text": "3/7" },
+      { "label": "4", "text": "4/9" }
+    ],
+    "correct_option": "4",
+    "explanation": "1/3=0.33, 2/5=0.40, 3/7 approx 0.428, 4/9 approx 0.444. 4/9 is the largest."
+  }
+]

@@ -1,0 +1,162 @@
+import json
+import os
+
+OUTPUT_DIR = r"c:\Users\Shivkumar\.antigravity\ssb-nextgen-pro\database\datasets\curated_sets"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+set_04_data = {
+  "set_id": "SET_04",
+  "description": "High-Quality Curated SSB Dataset - Set 4 (Without CPSS)",
+  
+  "TAT": [
+    {"pic_no": 1, "description": "A woman hurriedly packing a suitcase with a worried expression.", "image_url": "https://picsum.photos/seed/tat_set4_1/800/600"},
+    {"pic_no": 2, "description": "Two men pushing a broken-down car on a dark, rainy road.", "image_url": "https://picsum.photos/seed/tat_set4_2/800/600"},
+    {"pic_no": 3, "description": "A person standing in front of a heavily padlocked door.", "image_url": "https://picsum.photos/seed/tat_set4_3/800/600"},
+    {"pic_no": 4, "description": "A young girl handing a cup of tea to a tired-looking police officer.", "image_url": "https://picsum.photos/seed/tat_set4_4/800/600"},
+    {"pic_no": 5, "description": "A group of farmers looking at a dried-up water canal.", "image_url": "https://picsum.photos/seed/tat_set4_5/800/600"},
+    {"pic_no": 6, "description": "A man in uniform speaking to a group of teenagers on a sports field.", "image_url": "https://picsum.photos/seed/tat_set4_6/800/600"},
+    {"pic_no": 7, "description": "Two people working late at night in an office, illuminated by a single desk lamp.", "image_url": "https://picsum.photos/seed/tat_set4_7/800/600"},
+    {"pic_no": 8, "description": "A child pointing at an airplane in the sky while holding their father's hand.", "image_url": "https://picsum.photos/seed/tat_set4_8/800/600"},
+    {"pic_no": 9, "description": "A person standing on a stage looking at a large, empty auditorium.", "image_url": "https://picsum.photos/seed/tat_set4_9/800/600"},
+    {"pic_no": 10, "description": "A woman helping a visually impaired person board a bus.", "image_url": "https://picsum.photos/seed/tat_set4_10/800/600"},
+    {"pic_no": 11, "description": "A group of friends laughing around a campfire in the woods.", "image_url": "https://picsum.photos/seed/tat_set4_11/800/600"},
+    {"pic_no": 12, "description": "BLANK PICTURE", "image_url": None}
+  ],
+  
+  "WAT": [
+    "Plan", "Execute", "Retreat", "Surrender", "Win", "Victory", "Champion", "Hero", "Coward", "Brave",
+    "Bold", "Shy", "Speak", "Silence", "Quiet", "Loud", "Noise", "Sound", "Music", "Rhythm",
+    "Dance", "Jump", "Leap", "Fall", "Rise", "Stand", "Kneel", "Pray", "God", "Faith",
+    "Belief", "Doubt", "Certain", "Sure", "Never", "Ever", "Forever", "Time", "Space", "Earth",
+    "Universe", "Galaxy", "Star", "Sun", "Heat", "Cold", "Ice", "Fire", "Burn", "Ash",
+    "Dust", "Wind", "Storm", "Rain", "Cloud", "Fog", "Mist", "Clear", "Vision", "Blind"
+  ],
+
+  "SRT": [
+    "He is newly appointed as the head boy and the senior students threaten him to bend the rules. He...",
+    "While returning from a late-night shift, he sees a woman being followed by two suspicious men. He...",
+    "He accidentally spills coffee on his manager's highly important, unbacked-up documents. He...",
+    "During a trekking expedition, one of his teammates suffers a severe allergic reaction to a bee sting. He...",
+    "He finds out his close friend has forged his signature on an important official document. He...",
+    "He is waiting for a train and sees a pickpocket stealing a purse from an elderly lady. He...",
+    "His team is losing badly in the final match, and morale is at rock bottom at halftime. He...",
+    "He sees a stray dog trapped in a deep, narrow pit. He...",
+    "He is given a promotion, but it requires relocating to a city his family strongly dislikes. He...",
+    "While driving on a highway, he notices the car ahead of him is driving very erratically. He...",
+    "He is assigned to a group project, but two members refuse to talk to each other. He...",
+    "He finds a mobile phone ringing on a park bench with no one around. He...",
+    "He is preparing for an exam and the power goes out in his entire neighborhood for the night. He...",
+    "He sees a classmate stealing a question paper from the staff room. He...",
+    "He is managing a stall at a fest and a sudden heavy downpour ruins his display. He...",
+    "His younger brother wants to drop out of college to pursue an unconventional career. He...",
+    "He is driving a friend to the hospital for an emergency and gets pulled over by a cop for speeding. He...",
+    "He is in a crowded mall and hears a loud explosion from the food court. He...",
+    "He finds out his teammate is taking performance-enhancing drugs before a major tournament. He...",
+    "He is stranded at an airport due to a canceled flight with no money for a hotel. He...",
+    "He is asked to give a speech on a topic he knows absolutely nothing about, in 5 minutes. He...",
+    "He sees a neighbor beating their pet dog mercilessly. He...",
+    "He is leading a group in the forest and realizes his compass is broken. He...",
+    "He is falsely accused of ragging a junior student. He...",
+    "His bike breaks down in a notoriously unsafe neighborhood late at night. He...",
+    "He is given a critical task, but his immediate superior is completely incompetent. He...",
+    "He sees a snake crawling into a child's school bag. He...",
+    "He is in an elevator with a pregnant woman who goes into labor. He...",
+    "He finds an unattended briefcase at a bus stop. He...",
+    "He is trekking in the snow and begins to feel symptoms of hypothermia. He...",
+    "He is at a restaurant and a customer at the next table starts choking on food. He...",
+    "He sees a person trying to break into his neighbor's car. He...",
+    "He is studying for a crucial exam, but his roommate insists on having friends over. He...",
+    "He discovers a major accounting error in his company's records. He...",
+    "He is in a foreign country and gets severely sick. He...",
+    "He is appointed team captain, but the previous captain is actively sabotaging him. He...",
+    "He sees a man harassing a female colleague at an office party. He...",
+    "He is driving and a rock shatters his windshield on a highway. He...",
+    "He is trapped inside a building during a severe earthquake. He...",
+    "He receives a blackmail email threatening to release private photos. He...",
+    "He is preparing for the SSB, but his family faces a sudden, massive financial crisis. He...",
+    "He is hiking and his friend falls into a fast-flowing river. He...",
+    "He is cooking and a small grease fire starts on the stove. He...",
+    "He is on a ferry that engines fail and is drifting towards rocks. He...",
+    "He sees a colleague taking credit for his idea in front of the boss. He...",
+    "He is walking home and a gang of youths demands his expensive watch. He...",
+    "He is at a busy intersection and sees an ambulance stuck in traffic. He...",
+    "He is given a task that requires a large budget, but is given zero funds. He...",
+    "He is in a movie theater and someone is constantly talking loudly on their phone. He...",
+    "He finds out his brother is involved in a street gang. He...",
+    "He is leading a patrol and one of his men refuses to obey a direct order. He...",
+    "He sees a child wandering alone near a busy railway track. He...",
+    "He is taking a shower and the geyser bursts, filling the room with steam. He...",
+    "He is unfairly passed over for a promotion and his junior is promoted instead. He...",
+    "He is in a crowded bus and a passenger faints. He...",
+    "He is trekking and a thick fog rolls in, reducing visibility to zero. He...",
+    "He is presenting a project and his laptop battery dies with no charger around. He...",
+    "He is walking in the woods and gets hopelessly lost. He...",
+    "He finds a wallet with Rs. 50,000 and an ID card belonging to a poor laborer. He...",
+    "He is on a train and a group of rowdies starts harassing passengers. He..."
+  ],
+
+  "PPDT": {
+    "image_url": "https://picsum.photos/seed/ppdt_set4/800/600?blur=5",
+    "description": "Hazy picture of a person carrying someone else in their arms, walking towards a light source."
+  },
+
+  "PI": [
+    "What are your hobbies and how do you pursue them?",
+    "Tell me about a time you took a major risk. Did it pay off?",
+    "How do you define success?",
+    "If you are the team leader and your team fails to achieve the target, who is responsible?",
+    "What are the major threats to India's internal security?",
+    "Describe a time when you had to make a split-second decision.",
+    "What is the most important lesson you've learned from your parents?",
+    "Tell me about a situation where you had to persuade someone to see things your way.",
+    "How do you handle a situation where you don't know the answer to a problem?",
+    "What is your opinion on the recent changes in India's foreign policy?",
+    "Why did you choose your specific hobbies?",
+    "Have you ever been in a leadership position? What were your challenges?",
+    "What are your views on the increasing role of private companies in space exploration?",
+    "Tell me about a time you had to work with someone you strongly disliked.",
+    "If you could change one thing about the Indian education system, what would it be?",
+    "What role does physical fitness play in your daily life?",
+    "How do you deal with success or praise?",
+    "What are the core values that you look for in a friend?",
+    "Tell me about a time you failed to meet a commitment.",
+    "If you were the Prime Minister of India for one day, what three decisions would you make?"
+  ],
+
+  "SD": [
+    "What is the opinion of your parents about you?",
+    "What do your teachers or employers think about you?",
+    "What do your friends think about you?",
+    "What is your own opinion about yourself?",
+    "What are the qualities you would like to improve in yourself?"
+  ],
+
+  "Lecturette": [
+    "Space Debris: A Growing Threat",
+    "Online Gaming Addiction among Youth",
+    "India's Foreign Policy",
+    "Right to Privacy in the Digital Age"
+  ],
+
+  "GD": [
+    "Should exams be abolished in schools to reduce stress?",
+    "Has the United Nations failed in its role of maintaining global peace?"
+  ],
+
+  "GPE": {
+    "narrative": "You are a group of 8 medical students volunteering in a rural area. It is 1500 hours. A local villager informs you that: 1. A local passenger train has derailed 8 km away, and several passengers are injured. 2. A thief has stolen a box of critical, life-saving medicines from your camp and ran towards the forest 2 km away. 3. The local river dam has developed a crack and the village (5 km away) needs to be evacuated before 1730 hours. 4. One of your group members has suddenly collapsed due to severe heatstroke. You have one ambulance (can seat 4 patients), two bicycles, and your medical kits. The nearest fully equipped hospital is 15 km away, and the police station is 10 km away. How will you divide your group and prioritize these tasks to handle the emergencies?",
+    "map_url": "https://picsum.photos/seed/gpe_map_set4/800/600"
+  },
+
+  "GTO": {
+    "PGT": "Progressive Group Task: 4 progressive obstacles requiring heavy lifting and balancing. Resources: 1 Plank, 1 Balli, 2 Ropes, 1 Load (sandbag). Time: 45 mins. Strict 'no touching red' rules.",
+    "HGT": "Half Group Task: 1 complex obstacle involving a narrow bridge mechanism. Resources: 1 Plank, 1 Balli, 1 Rope. Time: 15 mins.",
+    "IO": "Individual Obstacles: 10 obstacles (High Jump, Double Ditch, Zig-Zag Balance, Tarzan Swing, Commando Walk, Tiger Leap, Rope Climbing, Screen Jump, Burma Bridge, Monkey Crawl). Time: 3 mins.",
+    "FGT": "Final Group Task: 1 long, complex obstacle requiring the entire group to transport a 'casualty' (dummy) across a wide gap. Resources: Plank, Balli, Rope, Stretcher. Time: 15 mins."
+  }
+}
+
+with open(os.path.join(OUTPUT_DIR, "set_04.json"), 'w', encoding='utf-8') as f:
+    json.dump(set_04_data, f, indent=2)
+
+print("Set 4 created successfully without CPSS.")

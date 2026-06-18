@@ -1,0 +1,32 @@
+# Production Integrations (2026 “Next-Gen”) TODO
+
+- [ ] Analyze current backend architecture (routes, dataset serving, AI pipeline entrypoints)
+- [ ] Identify dataset/IP exposure points (static assets + any JSON/CSV dataset export routes)
+- [ ] Add WAF/rate-limiting + anomaly detection middleware for dataset endpoints
+  - [ ] Implement IP-based rate limiting
+  - [ ] Implement behavioral anomaly detection (request burst, payload patterning, missing session tokens)
+  - [ ] Ensure “legit timed tests” requests are allowed (session-validated)
+  - [ ] Add audit logs for blocked/flagged requests
+- [ ] Implement Redis-backed matchmaking service for GD/GPE group practice
+  - [ ] Add Redis client + queue abstraction
+  - [ ] Add matchmaking Pub/Sub evaluation (latency/region/skill metadata)
+  - [ ] Group 8–10 candidates and handle timeouts
+  - [ ] Generate secure room tokens after match
+  - [ ] Add WebRTC room signaling drop-in path (minimal signaling endpoint(s))
+- [ ] Integrate LLM observability/tracing (LLMOps)
+  - [ ] Choose instrumentation approach (provider SDK) and add env-config support
+  - [ ] Add trace/span per dialogue turn (PI 6-stage CIQ flow)
+  - [ ] Record STT latency and TTS latency
+  - [ ] Record AI response quality signals + persona compliance checks
+  - [ ] Ensure all traces include sessionId/userId/turnIndex metadata
+- [ ] Enforce exact medical parameter datasets via schema-level rejection/flagging
+  - [ ] Implement cutoffs for myopia by entry type (standard vs TGC)
+  - [ ] Implement CP-II vs CP-III differentiation rules by role category
+  - [ ] Decide “reject vs flag” semantics and wire to API responses
+  - [ ] Add unit tests / smoke tests for boundary values (-2.5, -3.5 etc.)
+- [ ] Update/extend server endpoints to wire all above integrations
+- [ ] Add required dependencies + env var documentation
+- [ ] Run typecheck (`npm run typecheck`)
+- [ ] Run build (`npm run build`)
+- [ ] Smoke test all modified endpoints with curl/node scripts
+- [ ] Verify runtime behavior (no blank responses, correct status codes, correct rate limit behavior)

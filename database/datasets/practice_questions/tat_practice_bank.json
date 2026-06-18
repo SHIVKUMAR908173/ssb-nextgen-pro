@@ -1,0 +1,522 @@
+{
+  "version": "2.0",
+  "description": "TAT Practice Question Bank with 60 comprehensive practice sets including image references for production deployment",
+  "practice_sets": [
+    {
+      "set_id": "TAT_SET_01",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "pictures": [
+        {
+          "id": "TAT_IMG_001",
+          "image_url": "https://ssbprep.com/images/tat/001_student_studying.jpg",
+          "description": "A young person sitting at a desk with books, looking thoughtful",
+          "expected_themes": ["Education", "Goal setting", "Planning"],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Determination"]
+        },
+        {
+          "id": "TAT_IMG_002",
+          "image_url": "https://ssbprep.com/images/tat/002_teamwork.jpg",
+          "description": "Two people working together on a project",
+          "expected_themes": ["Teamwork", "Collaboration", "Friendship"],
+          "olq_mapping": ["Cooperation", "Social Adaptability", "Organising Ability"]
+        },
+        {
+          "id": "TAT_IMG_003",
+          "image_url": "https://ssbprep.com/images/tat/003_helping_elderly.jpg",
+          "description": "A person helping an elderly individual cross the road",
+          "expected_themes": ["Helpfulness", "Social responsibility", "Compassion"],
+          "olq_mapping": ["Sense of Responsibility", "Social Adaptability", "Cooperation"]
+        },
+        {
+          "id": "TAT_IMG_004",
+          "image_url": "https://ssbprep.com/images/tat/004_team_sport.jpg",
+          "description": "A group of people playing a team sport",
+          "expected_themes": ["Sportsmanship", "Team spirit", "Competition"],
+          "olq_mapping": ["Cooperation", "Determination", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_005",
+          "image_url": "https://ssbprep.com/images/tat/005_award_ceremony.jpg",
+          "description": "A person standing on a stage receiving an award",
+          "expected_themes": ["Achievement", "Recognition", "Success"],
+          "olq_mapping": ["Self-Confidence", "Determination", "Effective Intelligence"]
+        },
+        {
+          "id": "TAT_IMG_006",
+          "image_url": "https://ssbprep.com/images/tat/006_family_dinner.jpg",
+          "description": "A family gathered around a dinner table",
+          "expected_themes": ["Family bonding", "Togetherness", "Values"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"]
+        },
+        {
+          "id": "TAT_IMG_007",
+          "image_url": "https://ssbprep.com/images/tat/007_reading_under_tree.jpg",
+          "description": "A person reading a book under a tree",
+          "expected_themes": ["Learning", "Peace", "Self-improvement"],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_008",
+          "image_url": "https://ssbprep.com/images/tat/008_comforting_friend.jpg",
+          "description": "Someone comforting a crying friend",
+          "expected_themes": ["Empathy", "Support", "Friendship"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Sense of Responsibility"]
+        },
+        {
+          "id": "TAT_IMG_009",
+          "image_url": "https://ssbprep.com/images/tat/009_planting_tree.jpg",
+          "description": "A person planting a sapling",
+          "expected_themes": ["Environmental care", "Future thinking", "Growth"],
+          "olq_mapping": ["Sense of Responsibility", "Initiative", "Determination"]
+        },
+        {
+          "id": "TAT_IMG_010",
+          "image_url": "https://ssbprep.com/images/tat/010_teacher_students.jpg",
+          "description": "A teacher explaining something to students",
+          "expected_themes": ["Education", "Guidance", "Knowledge sharing"],
+          "olq_mapping": ["Power of Expression", "Effective Intelligence", "Organising Ability"]
+        }
+      ]
+    },
+    {
+      "set_id": "TAT_SET_02",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "pictures": [
+        {
+          "id": "TAT_IMG_011",
+          "image_url": "https://ssbprep.com/images/tat/011_mountain_view.jpg",
+          "description": "A person looking at a mountain peak in the distance",
+          "expected_themes": ["Ambition", "Challenge", "Determination"],
+          "olq_mapping": ["Determination", "Self-Confidence", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_012",
+          "image_url": "https://ssbprep.com/images/tat/012_serious_discussion.jpg",
+          "description": "Two colleagues having a serious discussion",
+          "expected_themes": ["Problem solving", "Communication", "Decision making"],
+          "olq_mapping": ["Reasoning Ability", "Effective Intelligence", "Power of Expression"]
+        },
+        {
+          "id": "TAT_IMG_013",
+          "image_url": "https://ssbprep.com/images/tat/013_fork_in_road.jpg",
+          "description": "A person standing between two paths in a forest",
+          "expected_themes": ["Choice", "Decision", "Life direction"],
+          "olq_mapping": ["Speed of Decision", "Reasoning Ability", "Self-Confidence"]
+        },
+        {
+          "id": "TAT_IMG_014",
+          "image_url": "https://ssbprep.com/images/tat/014_leader_speaking.jpg",
+          "description": "A leader addressing a group of people",
+          "expected_themes": ["Leadership", "Influence", "Responsibility"],
+          "olq_mapping": ["Ability to Influence the Group", "Power of Expression", "Organising Ability"]
+        },
+        {
+          "id": "TAT_IMG_015",
+          "image_url": "https://ssbprep.com/images/tat/015_working_late.jpg",
+          "description": "Someone working late at night in an office",
+          "expected_themes": ["Dedication", "Hard work", "Commitment"],
+          "olq_mapping": ["Determination", "Stamina", "Sense of Responsibility"]
+        },
+        {
+          "id": "TAT_IMG_016",
+          "image_url": "https://ssbprep.com/images/tat/016_helping_cyclist.jpg",
+          "description": "A person helping a fallen cyclist",
+          "expected_themes": ["Helpfulness", "Quick response", "Care"],
+          "olq_mapping": ["Sense of Responsibility", "Speed of Decision", "Cooperation"]
+        },
+        {
+          "id": "TAT_IMG_017",
+          "image_url": "https://ssbprep.com/images/tat/017_team_celebration.jpg",
+          "description": "A team celebrating after completing a project",
+          "expected_themes": ["Success", "Teamwork", "Achievement"],
+          "olq_mapping": ["Cooperation", "Organising Ability", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_018",
+          "image_url": "https://ssbprep.com/images/tat/018_practicing_skill.jpg",
+          "description": "A person practicing a skill repeatedly",
+          "expected_themes": ["Practice", "Perseverance", "Skill development"],
+          "olq_mapping": ["Determination", "Stamina", "Self-Confidence"]
+        },
+        {
+          "id": "TAT_IMG_019",
+          "image_url": "https://ssbprep.com/images/tat/019_public_speaking.jpg",
+          "description": "Someone speaking confidently in front of an audience",
+          "expected_themes": ["Confidence", "Communication", "Leadership"],
+          "olq_mapping": ["Self-Confidence", "Power of Expression", "Ability to Influence the Group"]
+        },
+        {
+          "id": "TAT_IMG_020",
+          "image_url": "https://ssbprep.com/images/tat/020_donation.jpg",
+          "description": "A person donating to a charity",
+          "expected_themes": ["Generosity", "Social responsibility", "Compassion"],
+          "olq_mapping": ["Sense of Responsibility", "Social Adaptability", "Cooperation"]
+        }
+      ]
+    },
+    {
+      "set_id": "TAT_SET_03",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "pictures": [
+        {
+          "id": "TAT_IMG_021",
+          "image_url": "https://ssbprep.com/images/tat/021_stormy_sea.jpg",
+          "description": "A person standing alone looking at a stormy sea",
+          "expected_themes": ["Adversity", "Contemplation", "Resilience"],
+          "olq_mapping": ["Determination", "Stamina", "Self-Confidence"]
+        },
+        {
+          "id": "TAT_IMG_022",
+          "image_url": "https://ssbprep.com/images/tat/022_conflict.jpg",
+          "description": "Two people in conflicting positions",
+          "expected_themes": ["Conflict resolution", "Understanding", "Compromise"],
+          "olq_mapping": ["Social Adaptability", "Reasoning Ability", "Cooperation"]
+        },
+        {
+          "id": "TAT_IMG_023",
+          "image_url": "https://ssbprep.com/images/tat/023_difficult_call.jpg",
+          "description": "A person making a difficult phone call",
+          "expected_themes": ["Courage", "Difficult decisions", "Communication"],
+          "olq_mapping": ["Courage", "Speed of Decision", "Power of Expression"]
+        },
+        {
+          "id": "TAT_IMG_024",
+          "image_url": "https://ssbprep.com/images/tat/024_injustice.jpg",
+          "description": "Someone witnessing an injustice",
+          "expected_themes": ["Moral courage", "Standing up", "Justice"],
+          "olq_mapping": ["Courage", "Sense of Responsibility", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_025",
+          "image_url": "https://ssbprep.com/images/tat/025_leader_decision.jpg",
+          "description": "A leader making a tough decision affecting many",
+          "expected_themes": ["Leadership burden", "Responsibility", "Decision making"],
+          "olq_mapping": ["Organising Ability", "Speed of Decision", "Sense of Responsibility"]
+        },
+        {
+          "id": "TAT_IMG_026",
+          "image_url": "https://ssbprep.com/images/tat/026_goodbye_family.jpg",
+          "description": "A person saying goodbye to family for an important mission",
+          "expected_themes": ["Sacrifice", "Duty", "Family bonds"],
+          "olq_mapping": ["Sense of Responsibility", "Determination", "Courage"]
+        },
+        {
+          "id": "TAT_IMG_027",
+          "image_url": "https://ssbprep.com/images/tat/027_getting_up.jpg",
+          "description": "Someone facing failure but getting back up",
+          "expected_themes": ["Resilience", "Determination", "Learning from failure"],
+          "olq_mapping": ["Determination", "Stamina", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_028",
+          "image_url": "https://ssbprep.com/images/tat/028_ethical_choice.jpg",
+          "description": "A person choosing between personal gain and ethical action",
+          "expected_themes": ["Ethics", "Integrity", "Moral choice"],
+          "olq_mapping": ["Sense of Responsibility", "Courage", "Effective Intelligence"]
+        },
+        {
+          "id": "TAT_IMG_029",
+          "image_url": "https://ssbprep.com/images/tat/029_crisis_team.jpg",
+          "description": "A team facing a crisis situation",
+          "expected_themes": ["Crisis management", "Leadership", "Teamwork"],
+          "olq_mapping": ["Organising Ability", "Cooperation", "Speed of Decision"]
+        },
+        {
+          "id": "TAT_IMG_030",
+          "image_url": "https://ssbprep.com/images/tat/030_mentoring.jpg",
+          "description": "Someone mentoring a younger person",
+          "expected_themes": ["Guidance", "Knowledge transfer", "Legacy"],
+          "olq_mapping": ["Power of Expression", "Effective Intelligence", "Sense of Responsibility"]
+        }
+      ]
+    },
+    {
+      "set_id": "TAT_SET_04",
+      "difficulty": "Easy",
+      "time_limit_seconds": 1800,
+      "pictures": [
+        {
+          "id": "TAT_IMG_031",
+          "image_url": "https://ssbprep.com/images/tat/031_children_playing.jpg",
+          "description": "Children playing together in a park",
+          "expected_themes": ["Friendship", "Joy", "Childhood"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_032",
+          "image_url": "https://ssbprep.com/images/tat/032_cooking_family.jpg",
+          "description": "A person cooking for their family",
+          "expected_themes": ["Care", "Family", "Love"],
+          "olq_mapping": ["Sense of Responsibility", "Social Adaptability", "Cooperation"]
+        },
+        {
+          "id": "TAT_IMG_033",
+          "image_url": "https://ssbprep.com/images/tat/033_receiving_gift.jpg",
+          "description": "Someone receiving a gift with a smile",
+          "expected_themes": ["Gratitude", "Happiness", "Relationships"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_034",
+          "image_url": "https://ssbprep.com/images/tat/034_exercising.jpg",
+          "description": "A person exercising in the morning",
+          "expected_themes": ["Health", "Discipline", "Self-care"],
+          "olq_mapping": ["Determination", "Stamina", "Self-Confidence"]
+        },
+        {
+          "id": "TAT_IMG_035",
+          "image_url": "https://ssbprep.com/images/tat/035_study_group.jpg",
+          "description": "Friends studying together in a library",
+          "expected_themes": ["Education", "Friendship", "Collaboration"],
+          "olq_mapping": ["Cooperation", "Effective Intelligence", "Social Adaptability"]
+        },
+        {
+          "id": "TAT_IMG_036",
+          "image_url": "https://ssbprep.com/images/tat/036_feeding_animals.jpg",
+          "description": "A person feeding stray animals",
+          "expected_themes": ["Compassion", "Animal welfare", "Kindness"],
+          "olq_mapping": ["Sense of Responsibility", "Cooperation", "Social Adaptability"]
+        },
+        {
+          "id": "TAT_IMG_037",
+          "image_url": "https://ssbprep.com/images/tat/037_watering_plants.jpg",
+          "description": "Someone watering plants in a garden",
+          "expected_themes": ["Nurturing", "Patience", "Nature"],
+          "olq_mapping": ["Sense of Responsibility", "Determination", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_038",
+          "image_url": "https://ssbprep.com/images/tat/038_family_walk.jpg",
+          "description": "A family going for a walk together",
+          "expected_themes": ["Family time", "Health", "Bonding"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_039",
+          "image_url": "https://ssbprep.com/images/tat/039_diary_writing.jpg",
+          "description": "A person writing in a diary",
+          "expected_themes": ["Self-reflection", "Personal growth", "Expression"],
+          "olq_mapping": ["Reasoning Ability", "Effective Intelligence", "Power of Expression"]
+        },
+        {
+          "id": "TAT_IMG_040",
+          "image_url": "https://ssbprep.com/images/tat/040_sharing_lunch.jpg",
+          "description": "Someone sharing lunch with a colleague",
+          "expected_themes": ["Sharing", "Friendship", "Kindness"],
+          "olq_mapping": ["Cooperation", "Social Adaptability", "Sense of Responsibility"]
+        }
+      ]
+    },
+    {
+      "set_id": "TAT_SET_05",
+      "difficulty": "Medium",
+      "time_limit_seconds": 1800,
+      "pictures": [
+        {
+          "id": "TAT_IMG_041",
+          "image_url": "https://ssbprep.com/images/tat/041_presentation.jpg",
+          "description": "A person presenting an idea to skeptical colleagues",
+          "expected_themes": ["Innovation", "Persuasion", "Leadership"],
+          "olq_mapping": ["Power of Expression", "Self-Confidence", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_042",
+          "image_url": "https://ssbprep.com/images/tat/042_marathon_training.jpg",
+          "description": "Someone training for a marathon",
+          "expected_themes": ["Determination", "Goal setting", "Endurance"],
+          "olq_mapping": ["Determination", "Stamina", "Self-Confidence"]
+        },
+        {
+          "id": "TAT_IMG_043",
+          "image_url": "https://ssbprep.com/images/tat/043_community_event.jpg",
+          "description": "A person organizing a community event",
+          "expected_themes": ["Leadership", "Community service", "Organization"],
+          "olq_mapping": ["Organising Ability", "Initiative", "Ability to Influence the Group"]
+        },
+        {
+          "id": "TAT_IMG_044",
+          "image_url": "https://ssbprep.com/images/tat/044_mentorship.jpg",
+          "description": "Someone learning a new skill from a mentor",
+          "expected_themes": ["Learning", "Mentorship", "Growth"],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_045",
+          "image_url": "https://ssbprep.com/images/tat/045_puzzle_team.jpg",
+          "description": "A team working on a challenging puzzle",
+          "expected_themes": ["Problem solving", "Teamwork", "Critical thinking"],
+          "olq_mapping": ["Reasoning Ability", "Cooperation", "Effective Intelligence"]
+        },
+        {
+          "id": "TAT_IMG_046",
+          "image_url": "https://ssbprep.com/images/tat/046_startup.jpg",
+          "description": "A person starting their own business",
+          "expected_themes": ["Entrepreneurship", "Risk taking", "Ambition"],
+          "olq_mapping": ["Initiative", "Self-Confidence", "Determination"]
+        },
+        {
+          "id": "TAT_IMG_047",
+          "image_url": "https://ssbprep.com/images/tat/047_volunteering.jpg",
+          "description": "Someone volunteering at a hospital",
+          "expected_themes": ["Service", "Compassion", "Social responsibility"],
+          "olq_mapping": ["Sense of Responsibility", "Cooperation", "Social Adaptability"]
+        },
+        {
+          "id": "TAT_IMG_048",
+          "image_url": "https://ssbprep.com/images/tat/048_negotiation.jpg",
+          "description": "A person negotiating a deal",
+          "expected_themes": ["Negotiation", "Communication", "Strategy"],
+          "olq_mapping": ["Power of Expression", "Reasoning Ability", "Social Adaptability"]
+        },
+        {
+          "id": "TAT_IMG_049",
+          "image_url": "https://ssbprep.com/images/tat/049_overcoming_fear.jpg",
+          "description": "Someone overcoming a fear",
+          "expected_themes": ["Courage", "Personal growth", "Overcoming obstacles"],
+          "olq_mapping": ["Courage", "Self-Confidence", "Determination"]
+        },
+        {
+          "id": "TAT_IMG_050",
+          "image_url": "https://ssbprep.com/images/tat/050_work_life_balance.jpg",
+          "description": "A person balancing work and family responsibilities",
+          "expected_themes": ["Work-life balance", "Priorities", "Responsibility"],
+          "olq_mapping": ["Organising Ability", "Sense of Responsibility", "Reasoning Ability"]
+        }
+      ]
+    },
+    {
+      "set_id": "TAT_SET_06",
+      "difficulty": "Hard",
+      "time_limit_seconds": 1800,
+      "pictures": [
+        {
+          "id": "TAT_IMG_051",
+          "image_url": "https://ssbprep.com/images/tat/051_moral_dilemma.jpg",
+          "description": "A leader facing a moral dilemma",
+          "expected_themes": ["Ethics", "Leadership", "Moral courage"],
+          "olq_mapping": ["Sense of Responsibility", "Courage", "Effective Intelligence"]
+        },
+        {
+          "id": "TAT_IMG_052",
+          "image_url": "https://ssbprep.com/images/tat/052_whistleblower.jpg",
+          "description": "Someone whistleblowing on organizational misconduct",
+          "expected_themes": ["Integrity", "Courage", "Justice"],
+          "olq_mapping": ["Courage", "Sense of Responsibility", "Initiative"]
+        },
+        {
+          "id": "TAT_IMG_053",
+          "image_url": "https://ssbprep.com/images/tat/053_losing_everything.jpg",
+          "description": "A person losing everything but maintaining hope",
+          "expected_themes": ["Resilience", "Hope", "Strength"],
+          "olq_mapping": ["Determination", "Stamina", "Liveliness"]
+        },
+        {
+          "id": "TAT_IMG_054",
+          "image_url": "https://ssbprep.com/images/tat/054_sacrifice.jpg",
+          "description": "Someone making a sacrifice for the greater good",
+          "expected_themes": ["Sacrifice", "Altruism", "Greater good"],
+          "olq_mapping": ["Sense of Responsibility", "Courage", "Cooperation"]
+        },
+        {
+          "id": "TAT_IMG_055",
+          "image_url": "https://ssbprep.com/images/tat/055_team_failure.jpg",
+          "description": "A team dealing with a catastrophic failure",
+          "expected_themes": ["Crisis management", "Accountability", "Recovery"],
+          "olq_mapping": ["Organising Ability", "Speed of Decision", "Cooperation"]
+        },
+        {
+          "id": "TAT_IMG_056",
+          "image_url": "https://ssbprep.com/images/tat/056_peer_pressure.jpg",
+          "description": "A person standing up against peer pressure",
+          "expected_themes": ["Individuality", "Moral courage", "Conviction"],
+          "olq_mapping": ["Courage", "Self-Confidence", "Determination"]
+        },
+        {
+          "id": "TAT_IMG_057",
+          "image_url": "https://ssbprep.com/images/tat/057_forgiveness.jpg",
+          "description": "Someone forgiving a major betrayal",
+          "expected_themes": ["Forgiveness", "Emotional maturity", "Growth"],
+          "olq_mapping": ["Social Adaptability", "Reasoning Ability", "Emotional Stability"]
+        },
+        {
+          "id": "TAT_IMG_058",
+          "image_url": "https://ssbprep.com/images/tat/058_accountability.jpg",
+          "description": "A leader taking responsibility for team failure",
+          "expected_themes": ["Accountability", "Leadership", "Integrity"],
+          "olq_mapping": ["Sense of Responsibility", "Courage", "Organising Ability"]
+        },
+        {
+          "id": "TAT_IMG_059",
+          "image_url": "https://ssbprep.com/images/tat/059_principle_over_profit.jpg",
+          "description": "A person choosing principle over profit",
+          "expected_themes": ["Integrity", "Values", "Ethics"],
+          "olq_mapping": ["Sense of Responsibility", "Courage", "Effective Intelligence"]
+        },
+        {
+          "id": "TAT_IMG_060",
+          "image_url": "https://ssbprep.com/images/tat/060_peace_building.jpg",
+          "description": "Someone building bridges between conflicting groups",
+          "expected_themes": ["Mediation", "Unity", "Peace building"],
+          "olq_mapping": ["Social Adaptability", "Cooperation", "Power of Expression"]
+        }
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "positive_themes": [
+      "Achievement and success orientation",
+      "Helping and helping others",
+      "Leadership and initiative",
+      "Teamwork and cooperation",
+      "Perseverance and determination",
+      "Ethical and moral behavior",
+      "Social responsibility",
+      "Problem-solving approach",
+      "Positive relationships",
+      "Personal growth and learning",
+      "Courage and bravery",
+      "Empathy and compassion",
+      "Resilience in adversity",
+      "Future orientation and planning",
+      "Constructive conflict resolution"
+    ],
+    "negative_themes": [
+      "Aggression and violence",
+      "Passivity and helplessness",
+      "Unethical behavior",
+      "Self-centered thinking",
+      "Giving up easily",
+      "Blaming others",
+      "Negative relationships",
+      "Avoidance of responsibility",
+      "Pessimistic outlook",
+      "Destructive behavior",
+      "Lack of empathy",
+      "Short-term thinking",
+      "Escapist tendencies",
+      "Victim mentality",
+      "Cynical worldview"
+    ],
+    "scoring_dimensions": {
+      "theme_quality": {
+        "weight": 0.3,
+        "description": "Relevance, depth, and positivity of themes expressed"
+      },
+      "protagonist_portrayal": {
+        "weight": 0.25,
+        "description": "How the protagonist is characterized and their actions"
+      },
+      "outcome_orientation": {
+        "weight": 0.25,
+        "description": "Whether the story leads to positive or negative outcomes"
+      },
+      "olq_alignment": {
+        "weight": 0.2,
+        "description": "Alignment with Officer Like Qualities"
+      }
+    }
+  }
+}

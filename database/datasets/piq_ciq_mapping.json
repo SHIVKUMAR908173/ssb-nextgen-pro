@@ -1,0 +1,23 @@
+[
+  {
+    "piq_trigger": {
+      "field": "sports",
+      "condition": "None"
+    },
+    "ciq_question": "I see you haven't actively participated in sports. How do you maintain your physical stamina and teamwork skills without athletic involvement?"
+  },
+  {
+    "piq_trigger": {
+      "field": "previous_attempts",
+      "condition": "> 0"
+    },
+    "ciq_question": "You were screened out/conferenced out previously. What specific structural failures did you identify in your last attempt, and what exact actions have you taken to rectify them?"
+  },
+  {
+    "piq_trigger": {
+      "field": "education_gap",
+      "condition": "Yes"
+    },
+    "ciq_question": "There is a gap in your academic record. Walk me through exactly what you were doing during this period and what productive skills you acquired."
+  }
+]

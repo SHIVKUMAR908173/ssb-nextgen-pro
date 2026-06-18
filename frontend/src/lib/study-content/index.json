@@ -1,0 +1,1433 @@
+{
+  "nda": {
+    "nda-math-01": [
+      {
+        "id": "nda-math-01-t01",
+        "title": "Sets — Definition, Types and Notation",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t02",
+        "title": "Set Operations — Union, Intersection, Complement",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t03",
+        "title": "De Morgan's Laws and Venn Diagrams",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t04",
+        "title": "Cartesian Product and Relations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t05",
+        "title": "Types of Relations — Reflexive, Symmetric, Transitive",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t06",
+        "title": "Equivalence Relations and Partitions",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t07",
+        "title": "Functions — Definition, Domain, Range",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t08",
+        "title": "Types of Functions — Injective, Surjective, Bijective",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t09",
+        "title": "Composition of Functions and Inverse",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t10",
+        "title": "Standard Functions — Identity, Modulus, Signum",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t11",
+        "title": "Greatest Integer and Fractional Part Functions",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t12",
+        "title": "Even and Odd Functions",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t13",
+        "title": "Periodic Functions",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t14",
+        "title": "Inclusion-Exclusion Principle and Word Problems",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-01-t15",
+        "title": "Power Sets and Counting Subsets",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-math-02": [
+      {
+        "id": "nda-math-02-t01",
+        "title": "Complex Numbers — Introduction and Argand Plane",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t02",
+        "title": "Algebra of Complex Numbers — Addition, Multiplication",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t03",
+        "title": "Modulus, Argument and Conjugate",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t04",
+        "title": "Polar Form and Euler Form",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t05",
+        "title": "De Moivre's Theorem",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t06",
+        "title": "Roots of Complex Numbers",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t07",
+        "title": "Quadratic Equations — Nature of Roots, Discriminant",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t08",
+        "title": "Sum and Product of Roots",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t09",
+        "title": "Formation of Quadratic Equation from Roots",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t10",
+        "title": "Symmetric Functions of Roots",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t11",
+        "title": "Common Roots and Relation Between Equations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-02-t12",
+        "title": "Complex Numbers in Geometry — Locus Problems",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-math-03": [
+      {
+        "id": "nda-math-03-t01",
+        "title": "Matrices — Types and Basic Operations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t02",
+        "title": "Matrix Multiplication and Properties",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t03",
+        "title": "Transpose, Symmetric and Skew-Symmetric Matrices",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t04",
+        "title": "Determinants — Definition and Properties",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t05",
+        "title": "Expansion of Determinants — Cofactors",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t06",
+        "title": "Adjoint and Inverse of a Matrix",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t07",
+        "title": "Rank of a Matrix",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t08",
+        "title": "System of Linear Equations — Cramer Rule",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t09",
+        "title": "Consistency of Linear Equations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t10",
+        "title": "Eigenvalues and Eigenvectors (Basic)",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t11",
+        "title": "Special Matrices — Orthogonal, Idempotent, Nilpotent",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-03-t12",
+        "title": "Applications of Matrices in Geometry",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-math-05": [
+      {
+        "id": "nda-math-05-t01",
+        "title": "Trigonometric Ratios and Standard Values",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t02",
+        "title": "ASTC Rule and Signs in Quadrants",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t03",
+        "title": "Pythagorean and Reciprocal Identities",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t04",
+        "title": "Compound Angle Formulas (sin/cos/tan A±B)",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t05",
+        "title": "Double and Half Angle Formulas",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t06",
+        "title": "Product to Sum and Sum to Product Formulas",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t07",
+        "title": "Properties of Triangles — Sine and Cosine Rule",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t08",
+        "title": "Area of Triangle — Multiple Formulas",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t09",
+        "title": "Inverse Trigonometric Functions — Domain and Range",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t10",
+        "title": "Inverse Trig Identities and Properties",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t11",
+        "title": "Heights and Distances — Angle of Elevation/Depression",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t12",
+        "title": "Trigonometric Equations — General Solutions",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t13",
+        "title": "Graphs of Sin, Cos, Tan and Transformations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t14",
+        "title": "Solving Triangles — Ambiguous Case",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-05-t15",
+        "title": "Circumradius, Inradius and Exradii",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-math-09": [
+      {
+        "id": "nda-math-09-t01",
+        "title": "Limits — Definition and Standard Results",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t02",
+        "title": "Continuity — Definition and Types of Discontinuity",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t03",
+        "title": "Differentiability and Relation with Continuity",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t04",
+        "title": "Differentiation — First Principles",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t05",
+        "title": "Standard Derivatives and Chain Rule",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t06",
+        "title": "Product Rule, Quotient Rule",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t07",
+        "title": "Implicit and Parametric Differentiation",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t08",
+        "title": "Higher Order Derivatives",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t09",
+        "title": "Applications — Tangent and Normal to Curve",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t10",
+        "title": "Maxima and Minima — First and Second Derivative Test",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t11",
+        "title": "Rate of Change and Approximations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t12",
+        "title": "Rolles Theorem and Mean Value Theorem",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t13",
+        "title": "Integration — Indefinite — Standard Forms",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t14",
+        "title": "Integration by Substitution",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t15",
+        "title": "Integration by Parts",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t16",
+        "title": "Partial Fractions Integration",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t17",
+        "title": "Definite Integration — Properties",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t18",
+        "title": "Area Under Curves",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t19",
+        "title": "Differential Equations — Order and Degree",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-09-t20",
+        "title": "Variable Separable Differential Equations",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-math-07": [
+      {
+        "id": "nda-math-07-t01",
+        "title": "Straight Line — Slope, Intercepts, Forms of Equation",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t02",
+        "title": "Distance Between Lines, Angle Between Lines",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t03",
+        "title": "Circle — Standard Equation and Properties",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t04",
+        "title": "Tangent and Normal to Circle",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t05",
+        "title": "Parabola — Standard Forms and Properties",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t06",
+        "title": "Ellipse — Standard Form, Eccentricity, Foci",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t07",
+        "title": "Hyperbola — Standard Form and Asymptotes",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t08",
+        "title": "3D Geometry — Direction Cosines and Ratios",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t09",
+        "title": "Equation of Line in 3D — Cartesian and Vector",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t10",
+        "title": "Plane in 3D — Equation and Distance",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t11",
+        "title": "Vector Algebra — Addition, Scalar and Vector Product",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-07-t12",
+        "title": "Triple Product and Applications",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-math-12": [
+      {
+        "id": "nda-math-12-t01",
+        "title": "Measures of Central Tendency — Mean, Median, Mode",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t02",
+        "title": "Measures of Dispersion — Variance, Standard Deviation",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t03",
+        "title": "Probability — Basic Concepts, Sample Space",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t04",
+        "title": "Addition and Multiplication Theorems",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t05",
+        "title": "Conditional Probability and Bayes Theorem",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t06",
+        "title": "Random Variables and Probability Distributions",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t07",
+        "title": "Binomial Distribution",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t08",
+        "title": "Permutations — nPr and Arrangements",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "nda-math-12-t09",
+        "title": "Combinations — nCr and Word Problems",
+        "subject": "Mathematics"
+      }
+    ],
+    "nda-phy-01": [
+      {
+        "id": "nda-phy-01-t01",
+        "title": "Physical World and Measurement",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t02",
+        "title": "Kinematics — Motion in a Straight Line",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t03",
+        "title": "Projectile Motion and Circular Motion",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t04",
+        "title": "Newton's Laws of Motion",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t05",
+        "title": "Friction — Static, Kinetic, Rolling",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t06",
+        "title": "Work, Energy and Power",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t07",
+        "title": "Conservation of Energy and Momentum",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t08",
+        "title": "Rotational Motion — Moment of Inertia",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t09",
+        "title": "Gravitation — Laws and Satellites",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t10",
+        "title": "Simple Harmonic Motion",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t11",
+        "title": "Waves — Types, Properties, Superposition",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t12",
+        "title": "Sound — Doppler Effect, Beats",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t13",
+        "title": "Heat — Thermometry and Calorimetry",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t14",
+        "title": "Laws of Thermodynamics",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t15",
+        "title": "Kinetic Theory of Gases",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t16",
+        "title": "Transfer of Heat — Conduction, Convection, Radiation",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t17",
+        "title": "Light — Reflection and Refraction",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t18",
+        "title": "Lenses and Mirrors — Ray Diagrams",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t19",
+        "title": "Wave Optics — Interference and Diffraction",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t20",
+        "title": "Electrostatics — Coulombs Law, Electric Field",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t21",
+        "title": "Electric Potential and Capacitance",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t22",
+        "title": "Current Electricity — Ohms Law, Circuits",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t23",
+        "title": "Magnetic Effects of Current",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t24",
+        "title": "Electromagnetic Induction and AC Circuits",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t25",
+        "title": "Semiconductors and Electronic Devices",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t26",
+        "title": "Atomic Structure — Bohr Model",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t27",
+        "title": "Nuclear Physics — Radioactivity, Fission, Fusion",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t28",
+        "title": "Photoelectric Effect and Dual Nature",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t29",
+        "title": "Properties of Matter — Elasticity, Viscosity",
+        "subject": "Physics"
+      },
+      {
+        "id": "nda-phy-01-t30",
+        "title": "Fluid Mechanics — Bernoullis Theorem",
+        "subject": "Physics"
+      }
+    ],
+    "nda-chem-01": [
+      {
+        "id": "nda-chem-01-t01",
+        "title": "Physical and Chemical Changes",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t02",
+        "title": "Elements, Compounds and Mixtures",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t03",
+        "title": "Atomic Structure — Electrons, Protons, Neutrons",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t04",
+        "title": "Periodic Table — Trends and Properties",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t05",
+        "title": "Chemical Bonding — Ionic, Covalent",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t06",
+        "title": "Acids, Bases and Salts — pH Scale",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t07",
+        "title": "Oxidation and Reduction — Redox Reactions",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t08",
+        "title": "Electrochemistry — Electrolysis",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t09",
+        "title": "Carbon and Its Compounds",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t10",
+        "title": "Hydrocarbons — Alkanes, Alkenes, Alkynes",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t11",
+        "title": "Polymers and Plastics",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t12",
+        "title": "Fertilizers and Pesticides",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t13",
+        "title": "Metals and Non-Metals — Properties",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t14",
+        "title": "Chemical Reactions and Equations — Balancing",
+        "subject": "Chemistry"
+      },
+      {
+        "id": "nda-chem-01-t15",
+        "title": "Mole Concept and Stoichiometry",
+        "subject": "Chemistry"
+      }
+    ],
+    "nda-hist-01": [
+      {
+        "id": "nda-hist-01-t01",
+        "title": "Indus Valley Civilization",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-01-t02",
+        "title": "Vedic Age — Rigvedic and Later Vedic",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-01-t03",
+        "title": "Buddhism and Jainism",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-01-t04",
+        "title": "Maurya Empire — Chandragupta and Ashoka",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-01-t05",
+        "title": "Gupta Empire — Golden Age of India",
+        "subject": "History"
+      }
+    ],
+    "nda-hist-02": [
+      {
+        "id": "nda-hist-02-t01",
+        "title": "Delhi Sultanate — Major Dynasties",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-02-t02",
+        "title": "Mughal Empire — Akbar to Aurangzeb",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-02-t03",
+        "title": "Maratha Empire and Shivaji",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-02-t04",
+        "title": "Bhakti and Sufi Movements",
+        "subject": "History"
+      }
+    ],
+    "nda-hist-03": [
+      {
+        "id": "nda-hist-03-t01",
+        "title": "British Conquest — Plassey to Buxar",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t02",
+        "title": "Governor Generals and Viceroys",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t03",
+        "title": "Revolt of 1857 — Causes and Consequences",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t04",
+        "title": "Indian National Congress — Formation and Phases",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t05",
+        "title": "Partition of Bengal and Swadeshi Movement",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t06",
+        "title": "Gandhian Movements — Non-Cooperation to Quit India",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t07",
+        "title": "World War I and II — Indian Context",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t08",
+        "title": "Partition and Independence 1947",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t09",
+        "title": "Indian States Reorganization Post-Independence",
+        "subject": "History"
+      },
+      {
+        "id": "nda-hist-03-t10",
+        "title": "Cold War and India — Non-Aligned Movement",
+        "subject": "History"
+      }
+    ],
+    "nda-geo-01": [
+      {
+        "id": "nda-geo-01-t01",
+        "title": "Interior of Earth — Layers and Structure",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-01-t02",
+        "title": "Plate Tectonics and Earthquakes",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-01-t03",
+        "title": "Volcanoes — Types and Distribution",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-01-t04",
+        "title": "Atmosphere — Layers and Composition",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-01-t05",
+        "title": "Winds — Trade Winds, Westerlies, Monsoon",
+        "subject": "Geography"
+      }
+    ],
+    "nda-geo-02": [
+      {
+        "id": "nda-geo-02-t01",
+        "title": "Rivers of India — Major River Systems",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t02",
+        "title": "Climate of India — Monsoon Mechanism",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t03",
+        "title": "Soils of India — Types and Distribution",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t04",
+        "title": "Natural Vegetation and Wildlife",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t05",
+        "title": "Agriculture — Major Crops and Regions",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t06",
+        "title": "Minerals and Energy Resources of India",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t07",
+        "title": "Industries — Location Factors and Major Industries",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-02-t08",
+        "title": "Transport and Communication Networks",
+        "subject": "Geography"
+      }
+    ],
+    "nda-geo-03": [
+      {
+        "id": "nda-geo-03-t01",
+        "title": "World Physical Geography — Continents, Oceans",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-03-t02",
+        "title": "Ocean Currents and Tides",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-03-t03",
+        "title": "World Climate Zones",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-03-t04",
+        "title": "Map Reading — Latitude, Longitude, Scale",
+        "subject": "Geography"
+      },
+      {
+        "id": "nda-geo-03-t05",
+        "title": "India — Physical Features and Location",
+        "subject": "Geography"
+      }
+    ],
+    "nda-pol-01": [
+      {
+        "id": "nda-pol-01-t01",
+        "title": "Indian Constitution — Key Features and Sources",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t02",
+        "title": "Preamble and Fundamental Rights",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t03",
+        "title": "Directive Principles and Fundamental Duties",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t04",
+        "title": "Parliament — Structure and Functions",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t05",
+        "title": "President, Vice President and Council of Ministers",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t06",
+        "title": "Supreme Court and High Courts",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t07",
+        "title": "Election Commission and CAG",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t08",
+        "title": "Emergency Provisions",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t09",
+        "title": "Federal Structure — Centre-State Relations",
+        "subject": "Polity"
+      },
+      {
+        "id": "nda-pol-01-t10",
+        "title": "Indian Economy — Basic Concepts and Planning",
+        "subject": "Polity"
+      }
+    ],
+    "nda-bio-01": [
+      {
+        "id": "nda-bio-01-t01",
+        "title": "Cell — Structure and Functions",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t02",
+        "title": "Cell Division — Mitosis and Meiosis",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t03",
+        "title": "Genetics — Mendels Laws and DNA",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t04",
+        "title": "Human Digestive System",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t05",
+        "title": "Human Circulatory System",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t06",
+        "title": "Human Respiratory System",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t07",
+        "title": "Nervous System and Sense Organs",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t08",
+        "title": "Endocrine System and Hormones",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t09",
+        "title": "Plant Physiology — Photosynthesis, Respiration",
+        "subject": "Biology"
+      },
+      {
+        "id": "nda-bio-01-t10",
+        "title": "Ecology and Environment",
+        "subject": "Biology"
+      }
+    ]
+  },
+  "cds": {
+    "cds-math-01": [
+      {
+        "id": "cds-math-01-t01",
+        "title": "Number System — Types, Divisibility Rules",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-01-t02",
+        "title": "HCF and LCM — Methods and Applications",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-01-t03",
+        "title": "BODMAS and Simplification",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-01-t04",
+        "title": "Fractions and Decimals",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-01-t05",
+        "title": "Surds and Indices",
+        "subject": "Mathematics"
+      }
+    ],
+    "cds-math-02": [
+      {
+        "id": "cds-math-02-t01",
+        "title": "Percentage — Calculation Tricks and Problems",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-02-t02",
+        "title": "Profit and Loss — Discount and Markup",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-02-t03",
+        "title": "Simple Interest — Formula and Problems",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-02-t04",
+        "title": "Compound Interest — Formula and Problems",
+        "subject": "Mathematics"
+      }
+    ],
+    "cds-math-03": [
+      {
+        "id": "cds-math-03-t01",
+        "title": "Ratio and Proportion",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-03-t02",
+        "title": "Partnership Problems",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-03-t03",
+        "title": "Mixture and Alligation",
+        "subject": "Mathematics"
+      }
+    ],
+    "cds-math-04": [
+      {
+        "id": "cds-math-04-t01",
+        "title": "Time and Work — Pipes and Cisterns",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-04-t02",
+        "title": "Time Speed Distance — Train Problems",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-04-t03",
+        "title": "Boats and Streams",
+        "subject": "Mathematics"
+      }
+    ],
+    "cds-math-05": [
+      {
+        "id": "cds-math-05-t01",
+        "title": "Area — Triangle, Quadrilateral, Circle",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-05-t02",
+        "title": "Volume and Surface Area — 3D Shapes",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-05-t03",
+        "title": "Algebra — Linear and Quadratic Equations",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-05-t04",
+        "title": "Trigonometry — Basic Ratios and Applications",
+        "subject": "Mathematics"
+      },
+      {
+        "id": "cds-math-05-t05",
+        "title": "Statistics — Mean, Median, Mode, Standard Deviation",
+        "subject": "Mathematics"
+      }
+    ],
+    "cds-gk-01": [
+      {
+        "id": "cds-gk-01-t01",
+        "title": "Ancient India — Key Dynasties and Events",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-01-t02",
+        "title": "Medieval India — Sultanate and Mughals",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-01-t03",
+        "title": "Modern India — British Period and Freedom Struggle",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-01-t04",
+        "title": "Post-Independence India — Key Events",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-01-t05",
+        "title": "World History — Revolutions and World Wars",
+        "subject": "General Knowledge"
+      }
+    ],
+    "cds-gk-02": [
+      {
+        "id": "cds-gk-02-t01",
+        "title": "Physical Geography — Landforms and Processes",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-02-t02",
+        "title": "Indian Geography — Physical Features",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-02-t03",
+        "title": "World Geography — Countries and Capitals",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-02-t04",
+        "title": "Economic Geography — Resources and Trade",
+        "subject": "General Knowledge"
+      }
+    ],
+    "cds-gk-03": [
+      {
+        "id": "cds-gk-03-t01",
+        "title": "Indian Constitution — Key Features",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-03-t02",
+        "title": "Fundamental Rights and DPSP",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-03-t03",
+        "title": "Parliament and State Legislature",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-03-t04",
+        "title": "Judiciary — Supreme Court and High Courts",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-03-t05",
+        "title": "Election System and Constitutional Bodies",
+        "subject": "General Knowledge"
+      }
+    ],
+    "cds-gk-04": [
+      {
+        "id": "cds-gk-04-t01",
+        "title": "Science and Technology — Recent Developments",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-04-t02",
+        "title": "Space Technology — ISRO and Missions",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-04-t03",
+        "title": "Defence Technology — Missiles and Weapons",
+        "subject": "General Knowledge"
+      },
+      {
+        "id": "cds-gk-04-t04",
+        "title": "Computer and IT Fundamentals",
+        "subject": "General Knowledge"
+      }
+    ],
+    "cds-gk-05": [
+      {
+        "id": "cds-gk-05-t01",
+        "title": "Defence Current Affairs 2025-2026",
+        "subject": "General Knowledge"
+      }
+    ],
+    "cds-eng-01": [
+      {
+        "id": "cds-eng-01-t01",
+        "title": "Spotting Errors — Noun and Pronoun",
+        "subject": "English"
+      },
+      {
+        "id": "cds-eng-01-t02",
+        "title": "Spotting Errors — Verb and Tense",
+        "subject": "English"
+      },
+      {
+        "id": "cds-eng-01-t03",
+        "title": "Sentence Correction — Common Mistakes",
+        "subject": "English"
+      }
+    ],
+    "cds-eng-02": [
+      {
+        "id": "cds-eng-02-t01",
+        "title": "Vocabulary — Synonyms and Antonyms",
+        "subject": "English"
+      },
+      {
+        "id": "cds-eng-02-t02",
+        "title": "One Word Substitution and Idioms",
+        "subject": "English"
+      }
+    ],
+    "cds-eng-03": [
+      {
+        "id": "cds-eng-03-t01",
+        "title": "Reading Comprehension — Strategy and Practice",
+        "subject": "English"
+      }
+    ],
+    "cds-eng-04": [
+      {
+        "id": "cds-eng-04-t01",
+        "title": "Ordering of Sentences",
+        "subject": "English"
+      }
+    ]
+  },
+  "afcat": {
+    "afcat-ga-01": [
+      {
+        "id": "afcat-ga-01-t01",
+        "title": "IAF — History, Formation and Motto",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-01-t02",
+        "title": "IAF Aircraft Fleet — Fighters and Transport",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-01-t03",
+        "title": "IAF Missiles and Weapons Systems",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-01-t04",
+        "title": "IAF Operations — Balakot, Kargil, Historical",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-01-t05",
+        "title": "IAF Ranks, Insignia and Awards",
+        "subject": "General Awareness"
+      }
+    ],
+    "afcat-ga-02": [
+      {
+        "id": "afcat-ga-02-t01",
+        "title": "Indian Army — Structure and Major Commands",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-02-t02",
+        "title": "Indian Navy — Ships, Submarines and Operations",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-02-t03",
+        "title": "Defence Current Affairs 2025-2026",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-02-t04",
+        "title": "Important Defence Exercises — India and International",
+        "subject": "General Awareness"
+      }
+    ],
+    "afcat-ga-03": [
+      {
+        "id": "afcat-ga-03-t01",
+        "title": "Aviation Basics — Principles of Flight",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-03-t02",
+        "title": "Aerodynamics — Lift, Drag, Thrust, Weight",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-03-t03",
+        "title": "Aircraft Navigation Basics",
+        "subject": "General Awareness"
+      }
+    ],
+    "afcat-ga-04": [
+      {
+        "id": "afcat-ga-04-t01",
+        "title": "Sports — Major Events and Indian Champions",
+        "subject": "General Awareness"
+      },
+      {
+        "id": "afcat-ga-04-t02",
+        "title": "Awards — Gallantry, National, International",
+        "subject": "General Awareness"
+      }
+    ],
+    "afcat-num-01": [
+      {
+        "id": "afcat-num-01-t01",
+        "title": "Arithmetic — Percentage and Profit Loss",
+        "subject": "Numerical Ability"
+      },
+      {
+        "id": "afcat-num-01-t02",
+        "title": "Arithmetic — Ratio, Time, Speed Distance",
+        "subject": "Numerical Ability"
+      },
+      {
+        "id": "afcat-num-01-t03",
+        "title": "Algebra — Equations and Inequalities",
+        "subject": "Numerical Ability"
+      }
+    ],
+    "afcat-num-02": [
+      {
+        "id": "afcat-num-02-t01",
+        "title": "Data Interpretation — Tables and Charts",
+        "subject": "Numerical Ability"
+      }
+    ],
+    "afcat-rea-01": [
+      {
+        "id": "afcat-rea-01-t01",
+        "title": "Verbal Reasoning — Analogies and Series",
+        "subject": "Reasoning"
+      },
+      {
+        "id": "afcat-rea-01-t02",
+        "title": "Verbal Reasoning — Coding Decoding",
+        "subject": "Reasoning"
+      },
+      {
+        "id": "afcat-rea-01-t03",
+        "title": "Verbal Reasoning — Blood Relations and Directions",
+        "subject": "Reasoning"
+      }
+    ],
+    "afcat-rea-02": [
+      {
+        "id": "afcat-rea-02-t01",
+        "title": "Non-Verbal — Figure Series and Pattern",
+        "subject": "Reasoning"
+      },
+      {
+        "id": "afcat-rea-02-t02",
+        "title": "Non-Verbal — Mirror Image and Paper Folding",
+        "subject": "Reasoning"
+      },
+      {
+        "id": "afcat-rea-02-t03",
+        "title": "Spatial Reasoning for Pilot Aptitude",
+        "subject": "Reasoning"
+      }
+    ],
+    "afcat-eng-01": [
+      {
+        "id": "afcat-eng-01-t01",
+        "title": "Comprehension and Vocabulary",
+        "subject": "English"
+      },
+      {
+        "id": "afcat-eng-01-t02",
+        "title": "Grammar — Error Detection and Correction",
+        "subject": "English"
+      }
+    ]
+  }
+}

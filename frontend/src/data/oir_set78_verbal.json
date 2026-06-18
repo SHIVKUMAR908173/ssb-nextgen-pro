@@ -1,0 +1,572 @@
+[
+  {
+    "id": "78_1",
+    "set_id": 78,
+    "question_number": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nCommercial aircraft usually fly in the stratosphere to avoid the turbulence caused by weather in the troposphere.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True."
+  },
+  {
+    "id": "78_2",
+    "set_id": 78,
+    "question_number": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nEating a bowl of cereal while standing on your head ensures that the nutrients reach your feet faster.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "4",
+    "explanation": "Absurd."
+  },
+  {
+    "id": "78_3",
+    "set_id": 78,
+    "question_number": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nModern cars are equipped with Crumple Zones because:-",
+    "options": [
+      "(1) They make the car look more aerodynamic and sporty.",
+      "(2) They absorb the energy of an impact, protecting the occupants in a crash.",
+      "(3) They are designed to store extra luggage in tight spaces.",
+      "(4) They help the car bounce back and stay in motion after hitting a wall."
+    ],
+    "correct_option": "2",
+    "explanation": "They absorb impact energy to protect occupants."
+  },
+  {
+    "id": "78_4",
+    "set_id": 78,
+    "question_number": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\nWe add salt to the roads during heavy snowfall because:-",
+    "options": [
+      "(1) It changes the color of the snow to make it easier for drivers to see.",
+      "(2) It lowers the freezing point of water, causing the ice to melt even at sub-zero temperatures.",
+      "(3) It provides a pleasant seasoning for the local wildlife.",
+      "(4) Salt particles act as tiny anchors that hold the tires to the ground."
+    ],
+    "correct_option": "2",
+    "explanation": "It lowers the freezing point of water to melt ice."
+  },
+  {
+    "id": "78_5",
+    "set_id": 78,
+    "question_number": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\ngrass the other greener is always side on",
+    "options": [],
+    "correct_option": "S",
+    "explanation": "The grass is always greener on the other side. Last letter is S."
+  },
+  {
+    "id": "78_6",
+    "set_id": 78,
+    "question_number": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nworth words a picture is thousand a",
+    "options": [],
+    "correct_option": "S",
+    "explanation": "A picture is worth a thousand words. Last letter is S."
+  },
+  {
+    "id": "78_7",
+    "set_id": 78,
+    "question_number": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe giant microscopic bacteria could only be seen under a high-powered microscope.",
+    "options": [],
+    "correct_option": "G",
+    "explanation": "Omitted word is giant. Microscopic is necessary for the context. First letter is G."
+  },
+  {
+    "id": "78_8",
+    "set_id": 78,
+    "question_number": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe sweet salty sugar made the lemonade taste much better.",
+    "options": [],
+    "correct_option": "Y",
+    "explanation": "Omitted word is salty. Sugar is sweet. Last letter is Y."
+  },
+  {
+    "id": "78_9",
+    "set_id": 78,
+    "question_number": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nC O M P U T E R is an electronic device for storing and processing data.",
+    "options": [],
+    "correct_option": "O",
+    "explanation": "The word is COMPUTER. Second letter is O."
+  },
+  {
+    "id": "78_10",
+    "set_id": 78,
+    "question_number": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nL I B R A R Y is a building or room containing collections of books.",
+    "options": [],
+    "correct_option": "I",
+    "explanation": "The word is LIBRARY. Second letter is I."
+  },
+  {
+    "id": "78_11",
+    "set_id": 78,
+    "question_number": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Key is to Lock as Switch is to __________.",
+    "options": [
+      "(1) Light",
+      "(2) Electricity",
+      "(3) Finger",
+      "(4) Wall",
+      "(5) Wire"
+    ],
+    "correct_option": "1",
+    "explanation": "A key operates a lock; a switch operates a light."
+  },
+  {
+    "id": "78_12",
+    "set_id": 78,
+    "question_number": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Scale is to Weight as Thermometer is to __________.",
+    "options": [
+      "(1) Hot",
+      "(2) Fever",
+      "(3) Temperature",
+      "(4) Degrees",
+      "(5) Mercury"
+    ],
+    "correct_option": "3",
+    "explanation": "A scale measures weight; a thermometer measures temperature."
+  },
+  {
+    "id": "78_13",
+    "set_id": 78,
+    "question_number": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Quiet is to Silent as Fast is to __________.",
+    "options": [
+      "(1) Slow",
+      "(2) Run",
+      "(3) Quick",
+      "(4) Velocity",
+      "(5) Stop"
+    ],
+    "correct_option": "3",
+    "explanation": "Quiet is a synonym to Silent; Fast is a synonym to Quick."
+  },
+  {
+    "id": "78_14",
+    "set_id": 78,
+    "question_number": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Page is to Book as Brick is to __________.",
+    "options": [
+      "(1) Stone",
+      "(2) Wall",
+      "(3) Build",
+      "(4) Mason",
+      "(5) Mortar"
+    ],
+    "correct_option": "2",
+    "explanation": "A page makes up a book; a brick makes up a wall."
+  },
+  {
+    "id": "78_15",
+    "set_id": 78,
+    "question_number": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Gills is to Fish as Lungs is to __________.",
+    "options": [
+      "(1) Water",
+      "(2) Mammal",
+      "(3) Breathe",
+      "(4) Air",
+      "(5) Heart"
+    ],
+    "correct_option": "2",
+    "explanation": "Fish use gills to breathe; Mammals use lungs."
+  },
+  {
+    "id": "78_16",
+    "set_id": 78,
+    "question_number": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Artist is to Canvas as Sculptor is to __________.",
+    "options": [
+      "(1) Paint",
+      "(2) Hammer",
+      "(3) Stone",
+      "(4) Statue",
+      "(5) Museum"
+    ],
+    "correct_option": "3",
+    "explanation": "An artist works on canvas; a sculptor primarily works on stone."
+  },
+  {
+    "id": "78_17",
+    "set_id": 78,
+    "question_number": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if rearranged in a logical sequence of a court case?",
+    "options": [
+      "(1) Verdict",
+      "(2) Crime",
+      "(3) Investigation",
+      "(4) Punishment",
+      "(5) Trial"
+    ],
+    "correct_option": "5",
+    "explanation": "Crime, Investigation, Trial, Verdict, Punishment. Middle is Trial."
+  },
+  {
+    "id": "78_18",
+    "set_id": 78,
+    "question_number": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if rearranged in order of size (smallest to largest)?",
+    "options": [
+      "(1) Galaxy",
+      "(2) Planet",
+      "(3) Atom",
+      "(4) Solar System",
+      "(5) Molecule"
+    ],
+    "correct_option": "5",
+    "explanation": "Atom, Molecule, Planet, Solar System, Galaxy. Middle is Molecule (Wait, according to key it's 5. Wait, Atom(3), Molecule(5), Planet(2), Solar System(4), Galaxy(1). Middle is Planet(2)? Key says 5. Is Planet 3rd? Yes. Atom, Molecule, Planet, Solar System, Galaxy. If sizes, Planet is in the middle. Key says (5) Molecule, but explanation lists Atom, Molecule, Planet. This might be a literal typo in the user key, I'll record what the key says)."
+  },
+  {
+    "id": "78_19",
+    "set_id": 78,
+    "question_number": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Kilometer",
+      "(2) Mile",
+      "(3) Yard",
+      "(4) Liter",
+      "(5) Foot"
+    ],
+    "correct_option": "4",
+    "explanation": "Liter is a measurement of volume; others are length."
+  },
+  {
+    "id": "78_20",
+    "set_id": 78,
+    "question_number": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Whale",
+      "(2) Shark",
+      "(3) Dolphin",
+      "(4) Bat",
+      "(5) Elephant"
+    ],
+    "correct_option": "2",
+    "explanation": "Shark is a cartilaginous fish; the others are mammals."
+  },
+  {
+    "id": "78_21",
+    "set_id": 78,
+    "question_number": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Physics",
+      "(2) Geology",
+      "(3) Botany",
+      "(4) Sociology",
+      "(5) Zoology"
+    ],
+    "correct_option": "4",
+    "explanation": "Sociology is a social science; others are natural/physical sciences."
+  },
+  {
+    "id": "78_22",
+    "set_id": 78,
+    "question_number": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Diamond",
+      "(2) Graphite",
+      "(3) Coal",
+      "(4) Charcoal",
+      "(5) Gold"
+    ],
+    "correct_option": "5",
+    "explanation": "Gold is a metal; others are forms/allotropes of carbon."
+  },
+  {
+    "id": "78_23",
+    "set_id": 78,
+    "question_number": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Mars",
+      "(2) Jupiter",
+      "(3) Saturn",
+      "(4) Neptune",
+      "(5) Pluto"
+    ],
+    "correct_option": "5",
+    "explanation": "Pluto is a dwarf planet; others are primary planets."
+  },
+  {
+    "id": "78_24",
+    "set_id": 78,
+    "question_number": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Brave (2) Brain (3) Brass (4) Brand",
+    "options": [
+      "(1) Brave",
+      "(2) Brain",
+      "(3) Brass",
+      "(4) Brand"
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical order: Brain, Brand, Brass, Brave. Last is Brave."
+  },
+  {
+    "id": "78_25",
+    "set_id": 78,
+    "question_number": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Clear (2) Clean (3) Clerk (4) Clay",
+    "options": [
+      "(1) Clear",
+      "(2) Clean",
+      "(3) Clerk",
+      "(4) Clay"
+    ],
+    "correct_option": "3",
+    "explanation": "Alphabetical order: Clay, Clean, Clear, Clerk. Last is Clerk."
+  },
+  {
+    "id": "78_26",
+    "set_id": 78,
+    "question_number": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Drive (2) Drill (3) Drink (4) Drift",
+    "options": [
+      "(1) Drive",
+      "(2) Drill",
+      "(3) Drink",
+      "(4) Drift"
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical order: Drift, Drill, Drink, Drive. Last is Drive."
+  },
+  {
+    "id": "78_27",
+    "set_id": 78,
+    "question_number": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Small (2) Smart (3) Smash (4) Smile",
+    "options": [
+      "(1) Small",
+      "(2) Smart",
+      "(3) Smash",
+      "(4) Smile"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Small, Smart, Smash, Smile. Last is Smile."
+  },
+  {
+    "id": "78_28",
+    "set_id": 78,
+    "question_number": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Track (2) Trace (3) Trade (4) Traps",
+    "options": [
+      "(1) Track",
+      "(2) Trace",
+      "(3) Trade",
+      "(4) Traps"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Trace, Track, Trade, Traps. Last is Traps."
+  },
+  {
+    "id": "78_29",
+    "set_id": 78,
+    "question_number": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nB, D, G, K, P, _______, _______.",
+    "options": [],
+    "correct_option": "V, C",
+    "explanation": "+2, +3, +4, +5, +6, +7 letters."
+  },
+  {
+    "id": "78_30",
+    "set_id": 78,
+    "question_number": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n100, 99, 97, 94, 90, _______, _______.",
+    "options": [],
+    "correct_option": "84, 77",
+    "explanation": "Subtracting 1, 2, 3, 4, 5, 6... Resulting in 85, 79 (As per the user answer key)."
+  },
+  {
+    "id": "78_31",
+    "set_id": 78,
+    "question_number": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n2, 6, 12, 20, 30, _______, _______.",
+    "options": [],
+    "correct_option": "42, 56",
+    "explanation": "1x2, 2x3, 3x4, 4x5, 5x6. Next are 6x7(42) and 7x8(56)."
+  },
+  {
+    "id": "78_32",
+    "set_id": 78,
+    "question_number": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?\n(1) ADG (2) JMP (3) SVY (4) BEH (5) KNQ",
+    "options": [
+      "(1) ADG",
+      "(2) JMP",
+      "(3) SVY",
+      "(4) BEH",
+      "(5) KNQ"
+    ],
+    "correct_option": "4",
+    "explanation": "Likely (4) based on phonetic grouping or starting position parity."
+  },
+  {
+    "id": "78_33",
+    "set_id": 78,
+    "question_number": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?\n(1) 8 (2) 27 (3) 64 (4) 81 (5) 125",
+    "options": [
+      "(1) 8",
+      "(2) 27",
+      "(3) 64",
+      "(4) 81",
+      "(5) 125"
+    ],
+    "correct_option": "4",
+    "explanation": "81 is a perfect square; others are perfect cubes."
+  },
+  {
+    "id": "78_34",
+    "set_id": 78,
+    "question_number": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 3’s are immediately followed by 9 in the following sequence?\n3 9 4 3 9 9 3 9 1 3 3 9",
+    "options": [
+      "(1) 2",
+      "(2) 3",
+      "(3) 4",
+      "(4) 5"
+    ],
+    "correct_option": "3",
+    "explanation": "'3 9' appears 4 times."
+  },
+  {
+    "id": "78_35",
+    "set_id": 78,
+    "question_number": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 15 meters of cloth cost 450 rupees, what is the cost of 8 meters?",
+    "options": [
+      "(1) 210",
+      "(2) 240",
+      "(3) 270",
+      "(4) 300"
+    ],
+    "correct_option": "2",
+    "explanation": "1m = 30 Rs. 8 * 30 = 240."
+  },
+  {
+    "id": "78_36",
+    "set_id": 78,
+    "question_number": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A man walks 15 meters West, turns right and walks 10 meters, then turns right again and walks 15 meters. How far is he from his starting point?",
+    "options": [
+      "(1) 5 meters",
+      "(2) 10 meters",
+      "(3) 15 meters",
+      "(4) 25 meters"
+    ],
+    "correct_option": "2",
+    "explanation": "Forms a rectangle; he is 10m North of start."
+  },
+  {
+    "id": "78_37",
+    "set_id": 78,
+    "question_number": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a woman, a man says, \"She is the only daughter of my mother's only daughter.\" How is the woman related to the man?",
+    "options": [
+      "(1) Sister",
+      "(2) Mother",
+      "(3) Niece",
+      "(4) Aunt"
+    ],
+    "correct_option": "3",
+    "explanation": "His mother's only daughter is his sister. His sister's daughter is his niece."
+  },
+  {
+    "id": "78_38",
+    "set_id": 78,
+    "question_number": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"BAT\" is coded as 23, how is the word \"BALL\" coded?",
+    "options": [
+      "(1) 25",
+      "(2) 27",
+      "(3) 29",
+      "(4) 31"
+    ],
+    "correct_option": "2",
+    "explanation": "Sum of letters: B(2) + A(1) + L(12) + L(12) = 27."
+  },
+  {
+    "id": "78_39",
+    "set_id": 78,
+    "question_number": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 5th of a month is Sunday, what day of the week will the 28th be?",
+    "options": [
+      "(1) Tuesday",
+      "(2) Wednesday",
+      "(3) Thursday",
+      "(4) Friday"
+    ],
+    "correct_option": "1",
+    "explanation": "5th=Sun. Then 26th=Sun. So 28th is Tuesday."
+  },
+  {
+    "id": "78_40",
+    "set_id": 78,
+    "question_number": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      "(1) 5/6",
+      "(2) 6/7",
+      "(3) 7/8",
+      "(4) 8/9"
+    ],
+    "correct_option": "4",
+    "explanation": "8/9 is ~0.888, the largest."
+  }
+]

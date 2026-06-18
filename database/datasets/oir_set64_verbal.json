@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification",
+    "question_text": "Photosynthesis is the process by which green plants convert light energy into chemical energy.",
+    "options": [
+      "True",
+      "Probable",
+      "False",
+      "Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "This is a basic biological fact."
+  },
+  {
+    "id": 2,
+    "category": "Statement Justification",
+    "question_text": "Eating a dictionary will immediately and permanently improve your spoken vocabulary.",
+    "options": [
+      "True",
+      "Probable",
+      "False",
+      "Absurd"
+    ],
+    "correct_option": "4",
+    "explanation": "Digesting paper does not transfer information to the brain."
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification",
+    "question_text": "We use refrigerators to store food because:-",
+    "options": [
+      "They eliminate calories",
+      "Cold temperature slows bacterial growth",
+      "Internal light cooks food",
+      "Makes food sweeter"
+    ],
+    "correct_option": "2",
+    "explanation": "Low temperature preserves food by inhibiting microbial activity."
+  },
+  {
+    "id": 5,
+    "category": "Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: gold glitters is all not that",
+    "options": [
+      "D",
+      "G",
+      "L",
+      "T"
+    ],
+    "correct_option": "1",
+    "explanation": "All that glitters is not gold. Last letter is D."
+  },
+  {
+    "id": 9,
+    "category": "Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word: C H L O O S is an institution for educating children.",
+    "options": [
+      "C",
+      "H",
+      "L",
+      "O"
+    ],
+    "correct_option": "1",
+    "explanation": "SCHOOL. Second letter is C."
+  },
+  {
+    "id": 11,
+    "category": "Analogies",
+    "question_text": "Fire is to Hot as Ice is to __________.",
+    "options": [
+      "Freeze",
+      "Melt",
+      "Cold",
+      "Water",
+      "Winter"
+    ],
+    "correct_option": "3",
+    "explanation": "Antonym relationship for intensity."
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "Apple",
+      "Banana",
+      "Potato",
+      "Grape",
+      "Orange"
+    ],
+    "correct_option": "3",
+    "explanation": "Potato is a vegetable; the others are fruits."
+  },
+  {
+    "id": 35,
+    "category": "Math",
+    "question_text": "If 4 books cost 120 rupees, what is the cost of 7 books?",
+    "options": [
+      "180",
+      "210",
+      "240",
+      "280"
+    ],
+    "correct_option": "2",
+    "explanation": "1 book = 30. 7 * 30 = 210."
+  }
+]

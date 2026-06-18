@@ -1,0 +1,62 @@
+# TODO: Remaining SSB Platform Modules (OIR, GD Topics, 900 Aggregation/Conference, Medical/Physical Checklist)
+
+- [ ] Analyze existing backend architecture and integration points (routing, session state machines, dataset loading, AI evaluator interfaces)
+- [ ] Inspect current “Day 1/Day 5” flow wiring (from `src/server.ts`, `src/index.ts`, and any existing AI session orchestrators)
+- [ ] Design data models for the 4 remaining modules:
+  - [ ] OIR: question bank schema, category tags (verbal/non-verbal), option schema, answer key schema, difficulty/metadata
+  - [ ] GD: topic schema (title, description, difficulty tier, sub-themes, “high-probability” flags), scoring rubric schema
+  - [ ] 900 Aggregation: assessor score inputs schema (psychologist/gto/io), aggregation rules, thresholds, borderline logic, conference Q schema
+  - [ ] Medical/Physical: medical parameters schema (sex, height rules + hilly-region relaxation), rejection rules, checklist items + required tests
+- [ ] Build OIR dataset(s) scaffold in `src/lib/datasets/`:
+  - [ ] Create separate dataset files for Verbal Reasoning and Non-Verbal Reasoning (hundreds of questions requirement: implement tooling to add/scale content)
+  - [ ] Provide initial starter bank (minimum viable) with enough questions to support 40–50-question sets
+  - [ ] Add question-provider utility to randomize and slice sets of 40–50 while maintaining category balance rules
+- [ ] Implement OIR Test Engine backend:
+  - [ ] Create an API endpoint to initialize an OIR session (returns question set + global timer config)
+  - [ ] Create an API endpoint to submit answers (no negative marking) and return computed score + per-section breakdown
+  - [ ] Enforce strict global timer behavior (reject/lock submissions after expiry)
+  - [ ] Add scoring logic (correct answers only) and deterministic result shape for frontend/AI
+  - [ ] Add smoke tests for OIR scoring and timer enforcement
+- [ ] Build GD Topics dataset:
+  - [ ] Create dataset file with 2025/2026 trending topics across multiple difficulty tiers
+  - [ ] Include at least the current high-probability topics listed in the prompt
+  - [ ] Add helper for “topic selection by tier” and for retrieving follow-up sub-prompts/sub-themes
+- [ ] Implement GD AI evaluation backend logic (voice simulator optional if already integrated):
+  - [ ] Define evaluation rubric fields: content relevance, active listening signals, turn-taking, tone/friendliness, respect for others
+  - [ ] Integrate with existing mock evaluator / AI evaluator interface(s) in `src/ai/`
+  - [ ] Provide deterministic fallback scoring for non-LLM runs (for tests)
+  - [ ] Add smoke tests for GD scoring output format and rubric compliance
+- [ ] Implement 900-Mark Aggregation & Conference simulation:
+  - [ ] Add API endpoint that aggregates assessor scores (psychologist, gto, io) to a total out of 900
+  - [ ] Enforce passing thresholds:
+    - [ ] min 90 marks from each assessor (0–300 scale)
+    - [ ] total >= 270 for recommendation
+  - [ ] Implement borderline rule: if total is between 240–269 inclusive -> trigger Virtual Conference
+  - [ ] Create Virtual Conference question set retrieval + scoring adjustments (simple rule: bump attempts to reach passing, bounded)
+  - [ ] Return final recommendation + conference rationale fields
+  - [ ] Add unit tests for aggregation, threshold edges, and borderline behavior
+- [ ] Build Medical & Physical Standards Checklist dataset:
+  - [ ] Create structured dataset for armed forces medical parameters:
+    - [ ] Height thresholds by sex: 157.5 cm (male) and 152 cm (female)
+    - [ ] 5 cm relaxations for hilly regions (e.g., Gorkhas, Uttarakhand)
+  - [ ] Implement automatic rejection rules:
+    - [ ] No skin diseases (severe acne, warts, etc.)
+    - [ ] Minimum 14 healthy dental points
+    - [ ] No past history of mental breakdowns
+    - [ ] No abdominal/hernia surgeries within past year
+  - [ ] Mandatory tests checklist with explicit items (resting ECG, abdominal ultrasound, complete haemograms)
+  - [ ] Add evaluation function returning: eligible / borderline / rejected + list of reasons
+- [ ] Wire everything into the server routing:
+  - [ ] Register endpoints in `src/server.ts` (or existing router modules)
+  - [ ] Ensure exports are connected from `src/index.ts` if needed
+  - [ ] Update any client-facing routing/session initialization conventions
+- [ ] Verify via local test harness:
+  - [ ] Run existing smoke tests and add new ones for all 4 modules
+  - [ ] Run `tsc --noEmit`
+  - [ ] Run full test suite (if present)
+- [ ] Frontend integration sanity check:
+  - [ ] Ensure response shapes match existing frontend expectations (or implement minimal wiring if missing)
+  - [ ] Confirm no blank screens / console errors in the flows for each new module
+- [ ] Build / start verification:
+  - [ ] Run build output successfully
+  - [ ] Optionally run dev server and navigate through Day 1 -> Day 5 end-to-end (using mocks if needed)

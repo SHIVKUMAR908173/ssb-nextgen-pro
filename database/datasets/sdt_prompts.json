@@ -1,0 +1,27 @@
+[
+  {
+    "id": "SDT1",
+    "perspective": "Parents",
+    "prompt": "What is the opinion of your parents about you?"
+  },
+  {
+    "id": "SDT2",
+    "perspective": "Teachers",
+    "prompt": "What do your teachers or employers think about you?"
+  },
+  {
+    "id": "SDT3",
+    "perspective": "Friends",
+    "prompt": "What do your friends think about you?"
+  },
+  {
+    "id": "SDT4",
+    "perspective": "Self",
+    "prompt": "What is your own opinion about yourself?"
+  },
+  {
+    "id": "SDT5",
+    "perspective": "Future",
+    "prompt": "What are the qualities you would like to improve in yourself?"
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "S1",
+    "scenario": "His captain was injured before a crucial match, he was asked to lead the team?",
+    "category": "Leadership",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "He led the team to victory.",
+      "He accepted the responsibility, motivated the team and they won the match.",
+      "He studied the opponent's strategy, planned accordingly and led the team to victory."
+    ],
+    "olq_assessment": ["Self-Confidence", "Ability to Influence the Group", "Initiative", "Courage"],
+    "positive_indicators": ["Accepts responsibility", "Shows leadership", "Achieves objective"],
+    "negative_indicators": ["Hesitates", "Blames circumstances", "Gives up"]
+  },
+  {
+    "id": "S2",
+    "scenario": "He was on his way to home and suddenly it started raining heavily?",
+    "category": "Daily Life",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "He ran fast and reached home.",
+      "He took shelter under a tree and waited for the rain to stop.",
+      "He called his family to bring an umbrella and then went home."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Reasoning Ability", "Liveliness"],
+    "positive_indicators": ["Takes practical action", "Remains calm", "Finds solution"],
+    "negative_indicators": ["Panics", "Gets drenched without action", "Complains"]
+  },
+  {
+    "id": "S3",
+    "scenario": "You are an officer posted at the border and suddenly shelling happens from the other side, you will",
+    "category": "Combat Leadership",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Order troops to stay in shell-proof bunkers, inform the CO and request for counter shelling.",
+      "Ensure all soldiers are in protective positions, assess the situation and respond as per orders.",
+      "Take cover, communicate with headquarters and prepare for any eventuality."
+    ],
+    "olq_assessment": ["Courage", "Speed of Decision", "Organising Ability", "Sense of Responsibility"],
+    "positive_indicators": ["Prioritizes safety", "Follows protocol", "Takes command"],
+    "negative_indicators": ["Acts recklessly", "Ignores safety", "Panics"]
+  },
+  {
+    "id": "S4",
+    "scenario": "You are in an unknown city and lost your purse. You need money. As a stranger how will you manage?",
+    "category": "Problem Solving",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "I will ask my parents to send money through PayTm.",
+      "I will go to the police station, report the loss and contact my family for help.",
+      "I will find a cyber cafe, contact my family and arrange for money transfer."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Reasoning Ability", "Self-Confidence"],
+    "positive_indicators": ["Uses technology", "Seeks proper help", "Remains calm"],
+    "negative_indicators": ["Borrows from strangers", "Gives up", "Becomes anxious"]
+  },
+  {
+    "id": "S5",
+    "scenario": "Your brother wants to get admission in a medical college but his marks fall short by 1% for admission. You'll",
+    "category": "Social Adjustment",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "Ask him to try in other colleges where his marks are within cut-off.",
+      "Help him explore other medical colleges or consider taking a drop and preparing better.",
+      "Support him in finding alternative options like private colleges or related courses."
+    ],
+    "olq_assessment": ["Reasoning Ability", "Social Adaptability", "Effective Intelligence"],
+    "positive_indicators": ["Provides support", "Explores alternatives", "Thinks practically"],
+    "negative_indicators": ["Loses hope", "Blames system", "Gives wrong advice"]
+  },
+  {
+    "id": "S6",
+    "scenario": "You have to go to a city with cash to work but the way is dangerous as dacoits. How will you manage to go?",
+    "category": "Risk Management",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "I will avoid carrying cash and use the credit card.",
+      "I will travel with a group, inform the police and take necessary precautions.",
+      "I will use digital payment methods or arrange for bank transfer instead of carrying cash."
+    ],
+    "olq_assessment": ["Courage", "Effective Intelligence", "Reasoning Ability"],
+    "positive_indicators": ["Finds safe alternative", "Takes precautions", "Thinks ahead"],
+    "negative_indicators": ["Takes unnecessary risk", "Gives up the task", "Acts carelessly"]
+  },
+  {
+    "id": "S7",
+    "scenario": "He was traveling by train and suddenly a person snatches purse from lady and jumps out of train. He",
+    "category": "Emergency Response",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "He pulls chain, jumps down and catches the criminal, recovers purse and hands over criminal to police.",
+      "He immediately alerts the TTE, pulls the emergency chain and helps the lady file a report.",
+      "He notes the criminal's description, informs the police at next station and assists in identification."
+    ],
+    "olq_assessment": ["Courage", "Initiative", "Sense of Responsibility", "Speed of Decision"],
+    "positive_indicators": ["Takes immediate action", "Helps victim", "Follows legal process"],
+    "negative_indicators": ["Ignores", "Only watches", "Doesn't help"]
+  },
+  {
+    "id": "S8",
+    "scenario": "You are going to sign a contract suddenly you got news that one of your friend who had helped you once met an accident and is in ICU. You'll",
+    "category": "Priority Management",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Sign the contract and then go to the hospital to meet the friend.",
+      "Quickly inform my family to go to the hospital, complete the contract signing and then rush to meet my friend.",
+      "Explain the situation to the concerned parties, try to reschedule if possible, otherwise complete the task and go."
+    ],
+    "olq_assessment": ["Sense of Responsibility", "Reasoning Ability", "Emotional Stability"],
+    "positive_indicators": ["Balances responsibilities", "Shows concern", "Plans effectively"],
+    "negative_indicators": ["Abandons duty", "Ignores friend", "Panics"]
+  },
+  {
+    "id": "S9",
+    "scenario": "He had boarded a wrong train and came to know only when he was asked to pay money to TT. He",
+    "category": "Daily Life",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "Explained the situation to TT, apologised and took the right train.",
+      "Paid the penalty fare, got off at the next station and took the correct train.",
+      "Explained his mistake to the TT and sought his help in getting off at the nearest station to catch the right train."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Social Adaptability", "Liveliness"],
+    "positive_indicators": ["Accepts mistake", "Handles situation calmly", "Finds solution"],
+    "negative_indicators": ["Argues with TT", "Gets angry", "Becomes anxious"]
+  },
+  {
+    "id": "S10",
+    "scenario": "He saw his girlfriend walking with another person on his way. He",
+    "category": "Social Adjustment",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "Trusted his friend and did nothing.",
+      "Greeted them politely and continued on his way, trusting his relationship.",
+      "Later asked his girlfriend about the person in a calm and mature manner."
+    ],
+    "olq_assessment": ["Emotional Stability", "Social Adaptability", "Self-Confidence"],
+    "positive_indicators": ["Shows trust", "Remains calm", "Communicates maturely"],
+    "negative_indicators": ["Gets angry", "Creates scene", "Becomes suspicious"]
+  },
+  {
+    "id": "S11",
+    "scenario": "He was on his way to the railway station to catch a train; suddenly a car passes by and throws a person out of the running car. He",
+    "category": "Emergency Response",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "He will help the person with the appropriate first aid, inform police, and then catch his train.",
+      "Immediately calls for ambulance, provides first aid, informs police and then proceeds to catch his train.",
+      "Notes the car number, helps the injured person, calls for medical help and then continues his journey."
+    ],
+    "olq_assessment": ["Sense of Responsibility", "Courage", "Speed of Decision", "Cooperation"],
+    "positive_indicators": ["Helps victim", "Takes appropriate action", "Balances priorities"],
+    "negative_indicators": ["Ignores", "Only watches", "Runs away"]
+  },
+  {
+    "id": "S12",
+    "scenario": "He was driving the bike without a helmet and the traffic police caught him. He",
+    "category": "Rule Compliance",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "He apologised, paid fine and never repeated the mistake.",
+      "Accepted his mistake, paid the challan and promised to always wear a helmet.",
+      "Understood the importance of the rule, paid the fine and became more responsible."
+    ],
+    "olq_assessment": ["Sense of Responsibility", "Social Adaptability", "Effective Intelligence"],
+    "positive_indicators": ["Accepts mistake", "Pays fine", "Learns from experience"],
+    "negative_indicators": ["Argues", "Tries to escape", "Repeats mistake"]
+  },
+  {
+    "id": "S13",
+    "scenario": "He was asked to organise the farewell party. He",
+    "category": "Organising Ability",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "Organised it well.",
+      "Planned the event systematically, delegated tasks and made it memorable for everyone.",
+      "Created a team, planned the budget, arranged entertainment and ensured everyone enjoyed."
+    ],
+    "olq_assessment": ["Organising Ability", "Initiative", "Ability to Influence the Group"],
+    "positive_indicators": ["Plans well", "Executes effectively", "Ensures success"],
+    "negative_indicators": ["Does it casually", "Fails to plan", "Creates chaos"]
+  },
+  {
+    "id": "S14",
+    "scenario": "He was ironing his clothes when suddenly he received an electric shock and he noticed the wire burning. He",
+    "category": "Emergency Response",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "He will turn the switch off, remove the plug and get the iron repaired.",
+      "Immediately switched off the main power, disconnected the iron and got it checked by an electrician.",
+      "Turned off the power, ensured safety and got the faulty equipment replaced."
+    ],
+    "olq_assessment": ["Speed of Decision", "Effective Intelligence", "Reasoning Ability"],
+    "positive_indicators": ["Acts quickly", "Ensures safety", "Prevents future incidents"],
+    "negative_indicators": ["Panics", "Ignores danger", "Continues using"]
+  },
+  {
+    "id": "S15",
+    "scenario": "He was in charge of the wireless board in a sailing ship which lost its communication with the coast. He",
+    "category": "Technical Problem Solving",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Restored communication quickly.",
+      "Checked the equipment, identified the fault and fixed it using backup systems.",
+      "Tried different frequencies, used emergency communication methods and established contact."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Reasoning Ability", "Speed of Decision", "Stamina"],
+    "positive_indicators": ["Technical knowledge", "Quick action", "Uses alternatives"],
+    "negative_indicators": ["Panics", "Gives up", "Waits passively"]
+  },
+  {
+    "id": "S16",
+    "scenario": "In a discussion with your colleagues, you find your losing ground, you will",
+    "category": "Social Adjustment",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "Agree to their better logic.",
+      "Listen to their arguments, accept valid points and modify my view if their logic is sound.",
+      "Acknowledge their valid points, present my perspective clearly and reach a consensus."
+    ],
+    "olq_assessment": ["Social Adaptability", "Reasoning Ability", "Cooperation"],
+    "positive_indicators": ["Accepts better logic", "Remains open-minded", "Respects others"],
+    "negative_indicators": ["Argues stubbornly", "Gets defensive", "Refuses to listen"]
+  },
+  {
+    "id": "S17",
+    "scenario": "He was to appear for an exam and all of a sudden the curfew was imposed in that area, he",
+    "category": "Problem Solving",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Showed admit card to the police and took the exam.",
+      "Contacted the exam authorities, explained the situation, showed his admit card and sought police escort.",
+      "Informed the police about his exam, showed documents and requested them to help him reach the center."
+    ],
+    "olq_assessment": ["Determination", "Effective Intelligence", "Speed of Decision"],
+    "positive_indicators": ["Takes initiative", "Uses proper channels", "Doesn't give up"],
+    "negative_indicators": ["Gives up", "Violates curfew", "Panics"]
+  },
+  {
+    "id": "S18",
+    "scenario": "He went for the picnic with his friends and on the way he had hot arguments with them. He",
+    "category": "Social Adjustment",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "Will calm down the situation and enjoy the picnic.",
+      "Apologised if he was wrong, resolved the misunderstanding and enjoyed the rest of the trip.",
+      "Took a break, cooled down, discussed the issue maturely and continued with the picnic."
+    ],
+    "olq_assessment": ["Social Adaptability", "Cooperation", "Liveliness"],
+    "positive_indicators": ["Resolves conflict", "Maintains relationships", "Stays positive"],
+    "negative_indicators": ["Continues arguing", "Spoils the mood", "Holds grudges"]
+  },
+  {
+    "id": "S19",
+    "scenario": "There is a person who sells smuggled goods. You too, like many others, have purchased a wristwatch from him. But it doesn't work. You'll",
+    "category": "Ethical Dilemma",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Ask for the replacement.",
+      "Confront the seller about the defective product and demand a replacement or refund.",
+      "Report the matter to the authorities and warn others about such illegal activities."
+    ],
+    "olq_assessment": ["Sense of Responsibility", "Courage", "Effective Intelligence"],
+    "positive_indicators": ["Takes appropriate action", "Stands up for rights", "Thinks ethically"],
+    "negative_indicators": ["Accepts loss", "Continues buying", "Ignores illegality"]
+  },
+  {
+    "id": "S20",
+    "scenario": "Just two days before the semi-finals of the bridge tournament, his partner was called by his parents and had to go out of station for an urgent work. He",
+    "category": "Team Management",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "Took another partner and won.",
+      "Found a suitable replacement, practiced with him and participated in the tournament.",
+      "Informed the organizers about the situation, arranged for a substitute and played to the best of their ability."
+    ],
+    "olq_assessment": ["Adaptability", "Determination", "Effective Intelligence"],
+    "positive_indicators": ["Finds solution", "Adapts quickly", "Doesn't give up"],
+    "negative_indicators": ["Withdraws from tournament", "Blames partner", "Gets demotivated"]
+  },
+  {
+    "id": "S21",
+    "scenario": "He was rather young when his father was killed in the war and later mother kidnapped by the rival group. He had no other relative. He",
+    "category": "Adversity Management",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Approached the Police to get his mother back and register case against the criminals.",
+      "Contacted the police and social services, sought help from authorities and fought the case legally.",
+      "Took support from government schemes for war widows, studied hard and built a better future."
+    ],
+    "olq_assessment": ["Determination", "Courage", "Effective Intelligence", "Stamina"],
+    "positive_indicators": ["Seeks proper help", "Fights legally", "Shows resilience"],
+    "negative_indicators": ["Takes law in own hands", "Gets depressed", "Gives up"]
+  },
+  {
+    "id": "S22",
+    "scenario": "You are on the way to your home suddenly your bicycle got punctured. You'll",
+    "category": "Daily Life",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "Get down, walk with the cycle, get it repaired and ride back home.",
+      "Find the nearest puncture shop, get it fixed and continue the journey.",
+      "Call a friend for help or take public transport and get the cycle repaired later."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Reasoning Ability", "Liveliness"],
+    "positive_indicators": ["Handles practically", "Finds solution", "Remains calm"],
+    "negative_indicators": ["Gets angry", "Abandons cycle", "Waits helplessly"]
+  },
+  {
+    "id": "S23",
+    "scenario": "He urgently needed money. He",
+    "category": "Problem Solving",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "Took it from parents.",
+      "Arranged from family or close friends and returned it as soon as possible.",
+      "Explored legitimate sources like bank loan or advance from employer if it was for genuine need."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Social Adaptability", "Sense of Responsibility"],
+    "positive_indicators": ["Uses proper channels", "Plans repayment", "Thinks responsibly"],
+    "negative_indicators": ["Borrows from wrong sources", "Doesn't repay", "Takes risky decisions"]
+  },
+  {
+    "id": "S24",
+    "scenario": "During the exams his teacher threatened him to fail in examination. He",
+    "category": "Academic Pressure",
+    "difficulty": "Medium",
+    "sample_responses": [
+      "Prepared and performed well and ignored the empty threat.",
+      "Worked harder, sought help from other teachers and proved his capability through performance.",
+      "Discussed the matter with parents and principal, focused on studies and performed well."
+    ],
+    "olq_assessment": ["Determination", "Self-Confidence", "Effective Intelligence"],
+    "positive_indicators": ["Works harder", "Seeks help", "Proves through performance"],
+    "negative_indicators": ["Gets demotivated", "Argues with teacher", "Gives up"]
+  },
+  {
+    "id": "S25",
+    "scenario": "You are getting late in reaching meeting. You would",
+    "category": "Time Management",
+    "difficulty": "Easy",
+    "sample_responses": [
+      "Inform the organiser and reach at the earliest.",
+      "Call the concerned person, explain the situation, apologize and give expected time of arrival.",
+      "Send a message about the delay, find the fastest route and reach as soon as possible."
+    ],
+    "olq_assessment": ["Sense of Responsibility", "Social Adaptability", "Effective Intelligence"],
+    "positive_indicators": ["Communicates proactively", "Shows responsibility", "Minimizes delay"],
+    "negative_indicators": ["Doesn't inform", "Makes excuses", "Takes it casually"]
+  },
+  {
+    "id": "S26",
+    "scenario": "He receives conflicting orders from his two superior officers. He",
+    "category": "Leadership",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Went to his immediate reporting officer and told him the conflicting order received from the other senior and after clarification obeyed the order.",
+      "Politely explained the situation to both seniors, sought clarification and followed the correct chain of command.",
+      "Requested a meeting with both officers to resolve the conflict and then proceeded as per final decision."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Sense of Responsibility", "Social Adaptability"],
+    "positive_indicators": ["Follows protocol", "Seeks clarification", "Maintains professionalism"],
+    "negative_indicators": ["Follows one blindly", "Ignores both", "Creates conflict"]
+  },
+  {
+    "id": "S27",
+    "scenario": "He was going to attend SSB interview. On reaching the Railway Station he noticed that his suitcase has been stolen with his original certificates needed at SSB. He",
+    "category": "Adversity Management",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Immediately lodged an FIR, went back and got the original certificates from the college and then attended SSB.",
+      "Filed police complaint, contacted his college for duplicate certificates, informed SSB about the situation and attended with available documents.",
+      "Reported the theft, arranged for attested copies from home, explained to SSB authorities and appeared for the interview."
+    ],
+    "olq_assessment": ["Determination", "Effective Intelligence", "Speed of Decision", "Stamina"],
+    "positive_indicators": ["Takes immediate action", "Finds alternatives", "Doesn't give up"],
+    "negative_indicators": ["Gives up", "Blames others", "Gets demoralized"]
+  },
+  {
+    "id": "S28",
+    "scenario": "While he was traveling on his scooter, someone at gunpoint demanded his purse. He",
+    "category": "Emergency Response",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Rammed the scooter into him, took his gun and lodged FIR against the criminal.",
+      "Stayed calm, tried to alert nearby people, noted the criminal's features and informed the police immediately.",
+      "Used his presence of mind, created a distraction, sought help from bystanders and called the police."
+    ],
+    "olq_assessment": ["Courage", "Speed of Decision", "Effective Intelligence"],
+    "positive_indicators": ["Shows presence of mind", "Takes calculated risk", "Seeks help"],
+    "negative_indicators": ["Hands over quietly", "Panics", "Takes unnecessary risk"]
+  },
+  {
+    "id": "S29",
+    "scenario": "He was going on a bicycle in thick jungle. It was already dark and his destination was 10 Km away. His cycle got punctured. He",
+    "category": "Adversity Management",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Walked with the cycle to destination.",
+      "Assessed the puncture, if repairable fixed it, otherwise continued on foot while pushing the cycle.",
+      "Used his mobile phone to call for help, if no network then continued walking while staying alert."
+    ],
+    "olq_assessment": ["Determination", "Stamina", "Effective Intelligence", "Courage"],
+    "positive_indicators": ["Shows perseverance", "Adapts to situation", "Stays calm"],
+    "negative_indicators": ["Gives up", "Panics", "Gets lost"]
+  },
+  {
+    "id": "S30",
+    "scenario": "He is new in the city. Suddenly he noticed that all his items were stolen. He had no money in his pocket. He",
+    "category": "Adversity Management",
+    "difficulty": "Hard",
+    "sample_responses": [
+      "Got money from home through PAYTM, lodged FIR and managed.",
+      "Went to the nearest police station, filed a report, contacted his family for financial help and arranged for basic necessities.",
+      "Sought help from local authorities, contacted his family and found temporary accommodation while sorting out the situation."
+    ],
+    "olq_assessment": ["Effective Intelligence", "Self-Confidence", "Social Adaptability"],
+    "positive_indicators": ["Seeks proper help", "Uses available resources", "Stays positive"],
+    "negative_indicators": ["Becomes helpless", "Borrows from wrong people", "Gets depressed"]
+  }
+]

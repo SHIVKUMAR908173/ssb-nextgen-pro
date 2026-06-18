@@ -1,0 +1,492 @@
+[
+  {
+    "question_number": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nIron naturally rusts when exposed to prolonged moisture and oxygen.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "1",
+    "explanation": "True. Rust is an iron oxide, a usually reddish-brown oxide formed by the reaction of iron and oxygen in the catalytic presence of water or air moisture."
+  },
+  {
+    "question_number": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Write the number of the choice that applies best to the statement given below:\nDrinking a glass of boiling water will instantly cure any viral infection in the human body.",
+    "options": [
+      "(1) True",
+      "(2) Probable",
+      "(3) False",
+      "(4) Absurd"
+    ],
+    "correct_option": "4",
+    "explanation": "Absurd. Boiling water will not cure a viral infection and will cause severe burns to the mouth and throat."
+  },
+  {
+    "question_number": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\n<u >We use electrical fuses in household wiring because:-</u >",
+    "options": [
+      "(1) They make the electricity flow much faster to appliances.",
+      "(2) They break the circuit to prevent fire or damage from excessive current.",
+      "(3) They lower the cost of the monthly electricity bill.",
+      "(4) They convert alternating current (AC) to direct current (DC)."
+    ],
+    "correct_option": "2",
+    "explanation": "They break the circuit to prevent fire or damage from excessive current."
+  },
+  {
+    "question_number": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "The underlined statement has four reasons for its justification. Write the serial number of the reason you think correct:\n<u >Astronauts wear pressurized spacesuits outside the spacecraft because:-</u >",
+    "options": [
+      "(1) They provide oxygen and protect against the deadly vacuum and extreme temperatures of space.",
+      "(2) They are designed to make the astronauts easily visible against the black background.",
+      "(3) They generate artificial gravity so the astronaut does not float away.",
+      "(4) They absorb starlight to power the spacecraft's engines."
+    ],
+    "correct_option": "1",
+    "explanation": "They provide oxygen and protect against the deadly vacuum and extreme temperatures of space."
+  },
+  {
+    "question_number": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nlate never than better",
+    "options": [],
+    "correct_option": "r",
+    "explanation": "The rearranged sentence is 'Better late than never'. The last letter is 'r'."
+  },
+  {
+    "question_number": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence:\nday apple an keeps doctor away the a",
+    "options": [],
+    "correct_option": "y",
+    "explanation": "The rearranged sentence is 'An apple a day keeps the doctor away'. The last letter is 'y'."
+  },
+  {
+    "question_number": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED:\nThe freezing hot sun burned the hikers' skin during the desert trek.",
+    "options": [],
+    "correct_option": "f",
+    "explanation": "The word to be omitted is 'freezing' because the sun is hot, not freezing. The first letter is 'f'."
+  },
+  {
+    "question_number": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED:\nThe quiet loud explosion shattered the windows of the building.",
+    "options": [],
+    "correct_option": "t",
+    "explanation": "The word to be omitted is 'quiet' because an explosion is loud, not quiet. The last letter is 't'."
+  },
+  {
+    "question_number": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nR W T E A is a transparent, tasteless liquid essential for all known forms of life.",
+    "options": [],
+    "correct_option": "A",
+    "explanation": "The rearranged word is 'WATER'. The second letter is 'A'."
+  },
+  {
+    "question_number": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word:\nU M S O E is a small handheld input device used to control a computer screen.",
+    "options": [],
+    "correct_option": "O",
+    "explanation": "The rearranged word is 'MOUSE'. The second letter is 'O'."
+  },
+  {
+    "question_number": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Teacher is to Chalk as Surgeon is to __________.",
+    "options": [
+      "(1) Hospital",
+      "(2) Patient",
+      "(3) Scalpel",
+      "(4) Medicine",
+      "(5) Ward"
+    ],
+    "correct_option": "3",
+    "explanation": "A chalk is the primary handheld tool of a teacher, just as a scalpel is the primary handheld tool of a surgeon."
+  },
+  {
+    "question_number": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Hive is to Bee as Web is to __________.",
+    "options": [
+      "(1) Spider",
+      "(2) Silk",
+      "(3) Insect",
+      "(4) Trap",
+      "(5) Fly"
+    ],
+    "correct_option": "1",
+    "explanation": "A hive is made and inhabited by a bee; a web is made and inhabited by a spider."
+  },
+  {
+    "question_number": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Happy is to Smile as Sad is to __________.",
+    "options": [
+      "(1) Anger",
+      "(2) Cry",
+      "(3) Frown",
+      "(4) Emotion",
+      "(5) Tear"
+    ],
+    "correct_option": "2",
+    "explanation": "A smile is a physical expression of being happy, just as a cry is a physical expression of being sad."
+  },
+  {
+    "question_number": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Author is to Book as Director is to __________.",
+    "options": [
+      "(1) Actor",
+      "(2) Movie",
+      "(3) Stage",
+      "(4) Theater",
+      "(5) Script"
+    ],
+    "correct_option": "2",
+    "explanation": "An author creates a book; a director creates a movie."
+  },
+  {
+    "question_number": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Heat is to Evaporation as Cold is to __________.",
+    "options": [
+      "(1) Ice",
+      "(2) Winter",
+      "(3) Freezing",
+      "(4) Snow",
+      "(5) Shiver"
+    ],
+    "correct_option": "3",
+    "explanation": "Heat causes evaporation; cold causes freezing."
+  },
+  {
+    "question_number": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Clock is to Time as Compass is to __________.",
+    "options": [
+      "(1) North",
+      "(2) Travel",
+      "(3) Needle",
+      "(4) Direction",
+      "(5) Map"
+    ],
+    "correct_option": "4",
+    "explanation": "A clock is an instrument used to determine time, while a compass is an instrument used to determine direction."
+  },
+  {
+    "question_number": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in the logical sequence of a plant's life cycle?\n(1) Sapling (2) Flower (3) Seed (4) Fruit (5) Tree",
+    "options": [
+      "(1) Sapling",
+      "(2) Flower",
+      "(3) Seed",
+      "(4) Fruit",
+      "(5) Tree"
+    ],
+    "correct_option": "5",
+    "explanation": "The logical sequence is: Seed (3), Sapling (1), Tree (5), Flower (2), Fruit (4). The middle item is Tree."
+  },
+  {
+    "question_number": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in order of duration (shortest to longest)?\n(1) Minute (2) Day (3) Millisecond (4) Hour (5) Second",
+    "options": [
+      "(1) Minute",
+      "(2) Day",
+      "(3) Millisecond",
+      "(4) Hour",
+      "(5) Second"
+    ],
+    "correct_option": "1",
+    "explanation": "The logical sequence is: Millisecond, Second, Minute, Hour, Day. The middle item is Minute."
+  },
+  {
+    "question_number": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Tiger",
+      "(2) Leopard",
+      "(3) Fox",
+      "(4) Cow",
+      "(5) Lion"
+    ],
+    "correct_option": "4",
+    "explanation": "Cow is a domesticated herbivore; the rest are wild carnivores/predators."
+  },
+  {
+    "question_number": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Venus",
+      "(2) Sirius",
+      "(3) Mars",
+      "(4) Saturn",
+      "(5) Earth"
+    ],
+    "correct_option": "2",
+    "explanation": "Sirius is a star; the rest are planets in our solar system."
+  },
+  {
+    "question_number": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Ear",
+      "(2) Eye",
+      "(3) Nose",
+      "(4) Tongue",
+      "(5) Heart"
+    ],
+    "correct_option": "5",
+    "explanation": "Heart is an internal organ; the rest are external sensory organs."
+  },
+  {
+    "question_number": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Rectangle",
+      "(2) Pentagon",
+      "(3) Circle",
+      "(4) Hexagon",
+      "(5) Octagon"
+    ],
+    "correct_option": "3",
+    "explanation": "A circle has no straight edges or vertices; the rest are polygons with straight edges."
+  },
+  {
+    "question_number": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as the others?",
+    "options": [
+      "(1) Nitrogen",
+      "(2) Oxygen",
+      "(3) Water",
+      "(4) Hydrogen",
+      "(5) Helium"
+    ],
+    "correct_option": "3",
+    "explanation": "Water is a chemical compound (H2O); the rest are pure elements."
+  },
+  {
+    "question_number": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Cable (2) Cabin (3) Cabinets (4) Cabbage",
+    "options": [
+      "(1) Cable",
+      "(2) Cabin",
+      "(3) Cabinets",
+      "(4) Cabbage"
+    ],
+    "correct_option": "1",
+    "explanation": "Alphabetical order: Cabbage, Cabin, Cabinets, Cable. Cable comes last."
+  },
+  {
+    "question_number": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Eagle (2) Eager (3) Each (4) Earn",
+    "options": [
+      "(1) Eagle",
+      "(2) Eager",
+      "(3) Each",
+      "(4) Earn"
+    ],
+    "correct_option": "4",
+    "explanation": "Alphabetical order: Each, Eager, Eagle, Earn. Earn comes last."
+  },
+  {
+    "question_number": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Habit (2) Hack (3) Hair (4) Hail",
+    "options": [
+      "(1) Habit",
+      "(2) Hack",
+      "(3) Hair",
+      "(4) Hail"
+    ],
+    "correct_option": "3",
+    "explanation": "Alphabetical order: Habit, Hack, Hail, Hair. Hair comes last."
+  },
+  {
+    "question_number": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Paint (2) Pair (3) Pain (4) Pace",
+    "options": [
+      "(1) Paint",
+      "(2) Pair",
+      "(3) Pain",
+      "(4) Pace"
+    ],
+    "correct_option": "2",
+    "explanation": "Alphabetical order: Pace, Pain, Paint, Pair. Pair comes last."
+  },
+  {
+    "question_number": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:\n(1) Zebra (2) Zero (3) Zenith (4) Zeal",
+    "options": [
+      "(1) Zebra",
+      "(2) Zero",
+      "(3) Zenith",
+      "(4) Zeal"
+    ],
+    "correct_option": "2",
+    "explanation": "Alphabetical order: Zeal, Zebra, Zenith, Zero. Zero comes last."
+  },
+  {
+    "question_number": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series?\nD, H, L, P, T, _______, _______.",
+    "options": [],
+    "correct_option": "X, B",
+    "explanation": "The sequence skips exactly 3 letters (adds 4 positions): D+4=H, H+4=L, L+4=P, P+4=T, T+4=X, X+4=B."
+  },
+  {
+    "question_number": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n1, 4, 9, 16, 25, _______, _______.",
+    "options": [],
+    "correct_option": "36, 49",
+    "explanation": "These are consecutive perfect squares: 1², 2², 3², 4², 5², 6² (36), 7² (49)."
+  },
+  {
+    "question_number": 31,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series?\n5, 10, 20, 40, _______, _______.",
+    "options": [],
+    "correct_option": "80, 160",
+    "explanation": "Each number is multiplied by 2. 40 * 2 = 80, 80 * 2 = 160."
+  },
+  {
+    "question_number": 32,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of letters does not belong to the same class as the others?",
+    "options": [
+      "(1) MOQ",
+      "(2) SUW",
+      "(3) ACE",
+      "(4) GIK",
+      "(5) LNO"
+    ],
+    "correct_option": "5",
+    "explanation": "The sequence of letters in LNO is +2, +1. The others follow a strict +2, +2 pattern, skipping exactly one letter each time."
+  },
+  {
+    "question_number": 33,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which group of numbers does not belong to the same class as the others?",
+    "options": [
+      "(1) 27",
+      "(2) 64",
+      "(3) 125",
+      "(4) 216",
+      "(5) 250"
+    ],
+    "correct_option": "5",
+    "explanation": "250 is not a perfect cube. The others are cubes: 3³, 4³, 5³, 6³."
+  },
+  {
+    "question_number": 34,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "How many 9's are immediately preceded by a 6 AND immediately followed by a 3 in the following sequence?\n6 9 3 4 6 9 3 9 3 6 9 3 1",
+    "options": [
+      "(1) 1",
+      "(2) 2",
+      "(3) 3",
+      "(4) 4"
+    ],
+    "correct_option": "3",
+    "explanation": "The specific block '6 9 3' appears exactly 3 times in the sequence."
+  },
+  {
+    "question_number": 35,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If 6 shirts cost 180 rupees, what is the cost of 10 shirts?",
+    "options": [
+      "(1) 240",
+      "(2) 280",
+      "(3) 300",
+      "(4) 360"
+    ],
+    "correct_option": "3",
+    "explanation": "1 shirt costs 180 / 6 = 30 rupees. 10 shirts cost 10 * 30 = 300 rupees."
+  },
+  {
+    "question_number": 36,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "A boy walks 5 meters North, turns left and walks 5 meters, then turns left again and walks 5 meters. In which direction is he now from his starting point?",
+    "options": [
+      "(1) North",
+      "(2) South",
+      "(3) East",
+      "(4) West"
+    ],
+    "correct_option": "4",
+    "explanation": "He walks a U-shape: North, West, South. He finishes exactly 5m West of his starting point."
+  },
+  {
+    "question_number": 37,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Pointing to a photograph, a man says, \"She is the daughter of my grandfather's only son.\" How is the girl in the photograph related to the man?",
+    "options": [
+      "(1) Cousin",
+      "(2) Sister",
+      "(3) Aunt",
+      "(4) Niece"
+    ],
+    "correct_option": "2",
+    "explanation": "'My grandfather's only son' is the man's father. The daughter of his father is his sister."
+  },
+  {
+    "question_number": 38,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the word \"CAT\" is coded as 24, and \"DOG\" is coded as 26, how is the word \"FOX\" coded? (Hint: A=1, B=2...)",
+    "options": [
+      "(1) 43",
+      "(2) 44",
+      "(3) 45",
+      "(4) 46"
+    ],
+    "correct_option": "3",
+    "explanation": "Sum of alphabetical positions: F=6, O=15, X=24. 6 + 15 + 24 = 45."
+  },
+  {
+    "question_number": 39,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "If the 4th of a month falls on a Friday, what day of the week will the 25th of the same month be?",
+    "options": [
+      "(1) Thursday",
+      "(2) Friday",
+      "(3) Saturday",
+      "(4) Sunday"
+    ],
+    "correct_option": "2",
+    "explanation": "The difference is exactly 21 days, which is exactly 3 weeks. The day of the week remains the same, Friday."
+  },
+  {
+    "question_number": 40,
+    "category": "Math, Counting & Logical Operations",
+    "question_text": "Which fraction is the largest?",
+    "options": [
+      "(1) 1/4",
+      "(2) 2/5",
+      "(3) 3/8",
+      "(4) 4/7"
+    ],
+    "correct_option": "4",
+    "explanation": "1/4 = 0.25, 2/5 = 0.40, 3/8 = 0.375, 4/7 ≈ 0.571 (largest)."
+  }
+]

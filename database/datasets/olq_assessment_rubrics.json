@@ -1,0 +1,374 @@
+{
+  "version": "1.0",
+  "description": "OLQ Assessment Rubrics based on SSB evaluation criteria",
+  "factors": {
+    "Factor I: Planning and Organising": {
+      "Effective Intelligence": {
+        "description": "Ability to find practical solutions to complex problems.",
+        "positive_indicators": [
+          "Finds practical solutions to problems",
+          "Adapts to changing situations",
+          "Uses available resources effectively",
+          "Thinks ahead and plans",
+          "Learns from experience"
+        ],
+        "negative_indicators": [
+          "Rigid thinking",
+          "Unable to adapt",
+          "Wasteful use of resources",
+          "Reactive rather than proactive",
+          "Repeats same mistakes"
+        ],
+        "assessment_criteria": {
+          "excellent": "Consistently finds innovative practical solutions, adapts quickly to change",
+          "good": "Finds workable solutions, adapts with minimal guidance",
+          "average": "Finds basic solutions, needs some guidance to adapt",
+          "below_average": "Struggles to find solutions, resistant to change"
+        }
+      },
+      "Reasoning Ability": {
+        "description": "Ability to grasp the essentials of a problem and arrive at logical conclusions.",
+        "positive_indicators": [
+          "Identifies key issues quickly",
+          "Thinks logically and systematically",
+          "Makes sound judgments",
+          "Analyzes situations thoroughly",
+          "Draws valid conclusions"
+        ],
+        "negative_indicators": [
+          "Misses key points",
+          "Illogical thinking",
+          "Poor judgment",
+          "Superficial analysis",
+          "Jumping to conclusions"
+        ],
+        "assessment_criteria": {
+          "excellent": "Quickly identifies essentials, consistently logical, sound reasoning",
+          "good": "Identifies most key points, generally logical",
+          "average": "Identifies some key points, reasoning is adequate",
+          "below_average": "Misses essentials, poor reasoning ability"
+        }
+      },
+      "Organising Ability": {
+        "description": "Ability to arrange resources in a systematic manner.",
+        "positive_indicators": [
+          "Plans and organizes systematically",
+          "Delegates tasks effectively",
+          "Manages time well",
+          "Coordinates resources efficiently",
+          "Maintains order and structure"
+        ],
+        "negative_indicators": [
+          "Disorganized approach",
+          "Poor delegation",
+          "Time mismanagement",
+          "Inefficient resource use",
+          "Creates chaos"
+        ],
+        "assessment_criteria": {
+          "excellent": "Highly systematic, excellent delegation and time management",
+          "good": "Well organized, good delegation skills",
+          "average": "Adequately organized, basic delegation",
+          "below_average": "Disorganized, poor planning and coordination"
+        }
+      },
+      "Power of Expression": {
+        "description": "Ability to put across one's ideas clearly and with ease.",
+        "positive_indicators": [
+          "Expresses ideas clearly",
+          "Speaks confidently",
+          "Good vocabulary and grammar",
+          "Logical flow of thoughts",
+          "Effective communication"
+        ],
+        "negative_indicators": [
+          "Unclear expression",
+          "Hesitant speech",
+          "Poor vocabulary",
+          "Disjointed thoughts",
+          "Ineffective communication"
+        ],
+        "assessment_criteria": {
+          "excellent": "Very clear, confident, well-articulated expression",
+          "good": "Clear expression with minor hesitations",
+          "average": "Adequate expression, some difficulty",
+          "below_average": "Poor expression, difficult to understand"
+        }
+      }
+    },
+    "Factor II: Social Adjustment": {
+      "Social Adaptability": {
+        "description": "Ability to adapt oneself to the social environment.",
+        "positive_indicators": [
+          "Gets along with all types of people",
+          "Respects others' views",
+          "Adjusts to group dynamics",
+          "Handles social situations well",
+          "Builds rapport easily"
+        ],
+        "negative_indicators": [
+          "Difficulty relating to others",
+          "Disrespectful of others' views",
+          "Cannot adjust to groups",
+          "Socially awkward",
+          "Isolates self"
+        ],
+        "assessment_criteria": {
+          "excellent": "Highly adaptable, excellent interpersonal skills",
+          "good": "Good social skills, adapts well",
+          "average": "Adequate social skills, some adjustment needed",
+          "below_average": "Poor social skills, difficulty adapting"
+        }
+      },
+      "Cooperation": {
+        "description": "Ability to willingly work with others in a group.",
+        "positive_indicators": [
+          "Works well in teams",
+          "Supports group members",
+          "Shares credit with others",
+          "Puts group goals first",
+          "Helpful and collaborative"
+        ],
+        "negative_indicators": [
+          "Works alone",
+          "Doesn't support others",
+          "Takes all credit",
+          "Selfish approach",
+          "Uncooperative"
+        ],
+        "assessment_criteria": {
+          "excellent": "Excellent team player, highly collaborative",
+          "good": "Good team worker, cooperative",
+          "average": "Adequate cooperation, prefers some independence",
+          "below_average": "Poor team player, uncooperative"
+        }
+      },
+      "Sense of Responsibility": {
+        "description": "Understanding one's duties and discharging them faithfully.",
+        "positive_indicators": [
+          "Takes ownership of tasks",
+          "Fulfills commitments",
+          "Accountable for actions",
+          "Reliable and dependable",
+          "Puts duty before pleasure"
+        ],
+        "negative_indicators": [
+          "Avoids responsibility",
+          "Breaks commitments",
+          "Blames others",
+          "Unreliable",
+          "Shirks duties"
+        ],
+        "assessment_criteria": {
+          "excellent": "Highly responsible, always fulfills duties",
+          "good": "Responsible, generally reliable",
+          "average": "Adequate sense of responsibility",
+          "below_average": "Irresponsible, unreliable"
+        }
+      }
+    },
+    "Factor III: Social Effectiveness": {
+      "Initiative": {
+        "description": "Ability to originate an action and sustain it.",
+        "positive_indicators": [
+          "Takes first step",
+          "Self-starter",
+          "Sustains effort",
+          "Proactive approach",
+          "Seizes opportunities"
+        ],
+        "negative_indicators": [
+          "Waits for others",
+          "Needs prompting",
+          "Gives up easily",
+          "Reactive approach",
+          "Misses opportunities"
+        ],
+        "assessment_criteria": {
+          "excellent": "Highly proactive, initiates and sustains effectively",
+          "good": "Takes initiative, sustains effort",
+          "average": "Some initiative, needs occasional prompting",
+          "below_average": "Passive, lacks initiative"
+        }
+      },
+      "Self-Confidence": {
+        "description": "Faith in one's own abilities to meet stressful situations.",
+        "positive_indicators": [
+          "Confident demeanor",
+          "Handles pressure well",
+          "Trusts own abilities",
+          "Positive self-talk",
+          "Takes calculated risks"
+        ],
+        "negative_indicators": [
+          "Lacks confidence",
+          "Panics under pressure",
+          "Doubts abilities",
+          "Negative self-talk",
+          "Avoids risks"
+        ],
+        "assessment_criteria": {
+          "excellent": "Very confident, handles stress excellently",
+          "good": "Confident, handles most pressure well",
+          "average": "Adequate confidence, some stress management",
+          "below_average": "Low confidence, poor stress handling"
+        }
+      },
+      "Speed of Decision": {
+        "description": "Ability to arrive at workable decisions quickly.",
+        "positive_indicators": [
+          "Makes decisions quickly",
+          "Decisions are practical",
+          "Decisive under pressure",
+          "Commits to course of action",
+          "Minimal hesitation"
+        ],
+        "negative_indicators": [
+          "Slow to decide",
+          "Impractical decisions",
+          "Indecisive under pressure",
+          "Frequently changes mind",
+          "Excessive hesitation"
+        ],
+        "assessment_criteria": {
+          "excellent": "Quick, practical decisions consistently",
+          "good": "Makes timely decisions, generally practical",
+          "average": "Adequate speed, decisions sometimes impractical",
+          "below_average": "Slow, indecisive, poor decisions"
+        }
+      },
+      "Ability to Influence the Group": {
+        "description": "Capacity to persuade others to achieve a common objective.",
+        "positive_indicators": [
+          "Persuades effectively",
+          "Leads by example",
+          "Motivates others",
+          "Gains group consensus",
+          "Respected by peers"
+        ],
+        "negative_indicators": [
+          "Cannot persuade",
+          "Poor leadership",
+          "Demotivates others",
+          "Cannot build consensus",
+          "Not respected"
+        ],
+        "assessment_criteria": {
+          "excellent": "Highly influential, natural leader",
+          "good": "Good influencing skills, effective leader",
+          "average": "Adequate influence, basic leadership",
+          "below_average": "Poor influence, ineffective leader"
+        }
+      }
+    },
+    "Factor IV: Dynamic": {
+      "Liveliness": {
+        "description": "Capacity to remain buoyant and cheerful in adversity.",
+        "positive_indicators": [
+          "Remains cheerful",
+          "Positive attitude",
+          "Buoyant in adversity",
+          "Uplifts others' spirits",
+          "Enthusiastic approach"
+        ],
+        "negative_indicators": [
+          "Gets depressed easily",
+          "Negative attitude",
+          "Gives up in adversity",
+          "Brings others down",
+          "Lack of enthusiasm"
+        ],
+        "assessment_criteria": {
+          "excellent": "Always cheerful, highly resilient",
+          "good": "Generally positive, good resilience",
+          "average": "Adequate positivity, some resilience",
+          "below_average": "Negative, poor resilience"
+        }
+      },
+      "Determination": {
+        "description": "Sustained effort to achieve an objective in spite of obstacles.",
+        "positive_indicators": [
+          "Persists despite obstacles",
+          "Never gives up",
+          "Sustained effort",
+          "Overcomes challenges",
+          "Goal-oriented"
+        ],
+        "negative_indicators": [
+          "Gives up easily",
+          "Avoids challenges",
+          "Inconsistent effort",
+          "Overcome by obstacles",
+          "Lack of focus"
+        ],
+        "assessment_criteria": {
+          "excellent": "Highly determined, overcomes all obstacles",
+          "good": "Determined, persists through most challenges",
+          "average": "Some determination, gives up on difficult tasks",
+          "below_average": "Lacks determination, easily defeated"
+        }
+      },
+      "Courage": {
+        "description": "Ability to take calculated risks willingly.",
+        "positive_indicators": [
+          "Takes calculated risks",
+          "Faces fears",
+          "Stands up for what's right",
+          "Handles danger calmly",
+          "Moral courage"
+        ],
+        "negative_indicators": [
+          "Avoids risks",
+          "Easily frightened",
+          "Doesn't stand up",
+          "Panics in danger",
+          "Lacks moral courage"
+        ],
+        "assessment_criteria": {
+          "excellent": "Very courageous, faces all challenges",
+          "good": "Courageous, faces most challenges",
+          "average": "Some courage, avoids certain risks",
+          "below_average": "Timid, avoids all risks"
+        }
+      },
+      "Stamina": {
+        "description": "Capacity to withstand prolonged physical and mental strain.",
+        "positive_indicators": [
+          "High energy levels",
+          "Works long hours",
+          "Mental toughness",
+          "Recovers quickly",
+          "Consistent performance"
+        ],
+        "negative_indicators": [
+          "Low energy",
+          "Tires easily",
+          "Mentally weak",
+          "Slow recovery",
+          "Inconsistent performance"
+        ],
+        "assessment_criteria": {
+          "excellent": "Excellent stamina, sustained high performance",
+          "good": "Good stamina, maintains performance",
+          "average": "Adequate stamina, some decline over time",
+          "below_average": "Poor stamina, performance drops quickly"
+        }
+      }
+    }
+  },
+  "scoring_guide": {
+    "scale": "1-5 for each OLQ",
+    "interpretation": {
+      "5": "Excellent - Consistently demonstrates the quality at a high level",
+      "4": "Good - Demonstrates the quality well with minor gaps",
+      "3": "Average - Adequate demonstration with some inconsistencies",
+      "2": "Below Average - Limited demonstration, significant gaps",
+      "1": "Poor - Quality not demonstrated or negative indicators present"
+    },
+    "recommendation_threshold": {
+      "minimum_average": 3.0,
+      "no_olq_below": 2,
+      "critical_olqs": ["Sense of Responsibility", "Courage", "Determination", "Effective Intelligence"]
+    }
+  }
+}

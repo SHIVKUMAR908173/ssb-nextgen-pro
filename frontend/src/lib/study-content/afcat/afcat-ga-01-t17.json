@@ -1,0 +1,197 @@
+{
+  "id": "afcat-ga-01-t17",
+  "title": "Indian Missiles — Anti-Tank (Nag, HELINA)",
+  "exam": "afcat",
+  "subject": "General Awareness",
+  "chapter": "afcat-ga-01",
+  "readTimeMinutes": 7,
+  "content": [
+    {
+      "type": "text",
+      "data": "Anti-Tank Guided Missiles (ATGMs) are precision-guided munitions designed primarily to destroy heavily armored tanks and other armored vehicles. They are crucial for modern warfare, providing infantry, ground vehicles, and aerial platforms with the capability to engage and neutralize enemy armor from safe distances. India's indigenous missile development program, led by the Defence Research and Development Organisation (DRDO), has made significant strides in this domain, with the Nag and HELINA missiles being prime examples of its capabilities."
+    },
+    {
+      "type": "heading",
+      "data": "Understanding Anti-Tank Guided Missiles (ATGMs)"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Guidance Systems: Utilize various methods like wire-guidance, laser guidance, infrared homing, or millimeter-wave radar for accuracy.",
+        "Warheads: Typically employ High-Explosive Anti-Tank (HEAT) warheads designed to penetrate thick armor.",
+        "Platforms: Can be launched from infantry, ground vehicles, helicopters, or aircraft.",
+        "Fire-and-Forget: Some modern ATGMs allow the launch platform to disengage immediately after firing, as the missile guides itself to the target."
+      ]
+    },
+    {
+      "type": "heading",
+      "data": "Nag Missile: The 'Pro-Weapon'"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Feature",
+          "Description"
+        ],
+        "rows": [
+          [
+            "Type",
+            "3rd generation 'Fire-and-Forget' ATGM"
+          ],
+          [
+            "Range",
+            "4 km (land-based variant)"
+          ],
+          [
+            "Guidance",
+            "Integrated all-weather day/night capability; Imaging Infrared (IIR) Seeker"
+          ],
+          [
+            "Launch Platforms",
+            "NAMICA (Nag Missile Carrier - tracked vehicle), ALH Dhruv (testing), HAL Rudra (testing)"
+          ],
+          [
+            "Warhead",
+            "Tandem High-Explosive Anti-Tank (HEAT) warhead for Explosive Reactive Armor (ERA) penetration"
+          ],
+          [
+            "Developer",
+            "DRDO"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: The Nag missile is renowned for its 'Fire-and-Forget' capability, meaning once launched, the missile tracks and engages the target autonomously, allowing the launch platform to relocate immediately without further guidance input."
+    },
+    {
+      "type": "heading",
+      "data": "HELINA/Dhruvastra: The Air-Launched Power"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Feature",
+          "Description"
+        ],
+        "rows": [
+          [
+            "Type",
+            "Air-launched variant of Nag missile (3rd generation 'Fire-and-Forget' ATGM)"
+          ],
+          [
+            "Range",
+            "7-10 km"
+          ],
+          [
+            "Guidance",
+            "Imaging Infrared (IIR) Seeker"
+          ],
+          [
+            "Launch Platforms",
+            "Advanced Light Helicopter (ALH) Dhruv, Light Combat Helicopter (LCH)"
+          ],
+          [
+            "Warhead",
+            "Tandem HEAT warhead"
+          ],
+          [
+            "Other Name",
+            "Dhruvastra (for Indian Air Force and Army variants)"
+          ],
+          [
+            "Developer",
+            "DRDO"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "data": "🎯 KEY TRICK: HELINA (Helicopter-launched NAG) is specifically designed for air superiority, mounted on attack helicopters like ALH Dhruv and LCH. Its longer range compared to the land-based Nag enhances aerial anti-armor capabilities."
+    },
+    {
+      "type": "heading",
+      "data": "Key Differences and Applications"
+    },
+    {
+      "type": "list",
+      "data": [
+        "Launch Platform: Nag is primarily land-based (NAMICA), though air-launched tests were done. HELINA/Dhruvastra is exclusively air-launched.",
+        "Range: HELINA has a significantly longer range (7-10 km) compared to the land-based Nag (4 km).",
+        "Role: Both are 'Fire-and-Forget' ATGMs, but Nag focuses on ground-based engagements, while HELINA provides crucial air-to-ground anti-armor capabilities for attack helicopters."
+      ]
+    },
+    {
+      "type": "formula",
+      "data": {
+        "expression": "ATGM Effectiveness = (Probability of Hit) × (Probability of Kill on Hit)",
+        "note": "This conceptual formula highlights that an ATGM's overall effectiveness depends on both its accuracy in striking the target and its warhead's ability to destroy it."
+      }
+    },
+    {
+      "type": "diagram",
+      "data": {
+        "title": "Indian ATGM Development: Nag Family",
+        "description": "This diagram illustrates the lineage and key variants of India's indigenous anti-tank missile program, focusing on the Nag family.",
+        "diagramType": "mermaid",
+        "diagramCode": "graph TD\n    A[DRDO ATGM Program] --> B(Nag Missile)\n    B --> C(NAMICA - Nag Missile Carrier)\n    B --> D(HELINA)\n    D --> E(Dhruvastra - Army/IAF designation)\n    D --> F(Launched from ALH Dhruv, LCH)"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "problem": "Which of the following Indian missiles is primarily designed for air-launched anti-tank operations with a range of 7-10 km and is also known as Dhruvastra?",
+        "solution": "The question describes an air-launched anti-tank missile with a longer range (7-10 km) and mentions the alternate name 'Dhruvastra'. The Nag missile is primarily land-based with a 4 km range. Akash is a surface-to-air missile. BrahMos is a supersonic cruise missile. HELINA perfectly matches the description, being the helicopter-launched variant of Nag, designed for aerial platforms like ALH Dhruv and LCH, and is indeed called Dhruvastra.",
+        "answer": "HELINA"
+      }
+    }
+  ],
+  "keyPoints": [
+    "Nag and HELINA are 3rd generation 'Fire-and-Forget' ATGMs developed by DRDO.",
+    "Nag's land-based variant has a range of 4 km and is primarily launched from NAMICA (Nag Missile Carrier).",
+    "HELINA (also known as Dhruvastra) is the air-launched variant of Nag, with a significantly longer range of 7-10 km.",
+    "HELINA is primarily launched from Advanced Light Helicopters (ALH) Dhruv and Light Combat Helicopters (LCH).",
+    "Both missiles use Imaging Infrared (IIR) seekers for guidance and tandem HEAT warheads, designed to penetrate Explosive Reactive Armor (ERA)."
+  ],
+  "commonMistakes": [
+    "Confusing Nag (land-based focus) with HELINA/Dhruvastra (air-launched focus) or mixing up their respective effective ranges.",
+    "Not recognizing that Dhruvastra is the specific designation for the HELINA missile variant deployed by the Indian Army and Air Force."
+  ],
+  "examTips": [
+    "AFCAT General Awareness section frequently asks about the type, range, guidance system, and primary launch platforms of indigenous Indian missiles. Memorize these specific details for Nag and HELINA.",
+    "Pay close attention to key terminologies like 'Fire-and-Forget' and '3rd Generation ATGM', as these highlight the advanced capabilities that are often tested."
+  ],
+  "inlineQuiz": [
+    {
+      "question": "The Nag missile is primarily known for its capability to be launched from which of the following platforms in its land-based variant?",
+      "options": [
+        "A) Sukhoi-30MKI",
+        "B) NAMICA",
+        "C) Indian Naval Ships",
+        "D) Pinaka MLRS"
+      ],
+      "correct": 1,
+      "explanation": "NAMICA (Nag Missile Carrier) is the dedicated tracked vehicle for launching the land-based Nag ATGM."
+    },
+    {
+      "question": "Which Indian Anti-Tank Guided Missile (ATGM) is also known as 'Dhruvastra' and is designed for deployment from helicopters?",
+      "options": [
+        "A) Prithvi",
+        "B) Akash",
+        "C) HELINA",
+        "D) Agni"
+      ],
+      "correct": 2,
+      "explanation": "HELINA is the helicopter-launched variant of the Nag missile and is officially designated 'Dhruvastra' for the Indian Army and Air Force, designed to be fired from platforms like ALH Dhruv and LCH."
+    }
+  ],
+  "youtubeLinks": {
+    "english": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Anti-Tank%20(Nag%2C%20HELINA)%20afcat%20exam%20tutorial",
+    "hindi": "https://www.youtube.com/results?search_query=Indian%20Missiles%20%E2%80%94%20Anti-Tank%20(Nag%2C%20HELINA)%20in%20Hindi%20afcat",
+    "ncert": null
+  }
+}

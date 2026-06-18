@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "exam": "CDS",
+    "paper": "General Knowledge",
+    "total_questions": 50,
+    "source": "UPSC Previous Year Papers / Standard Material",
+    "difficulty_distribution": {
+      "easy": "30%",
+      "medium": "50%",
+      "hard": "20%"
+    }
+  },
+  "questions": [
+    {
+      "id": "CDS-GK-001",
+      "topic": "History of India",
+      "subtopic": "Modern History",
+      "difficulty": "easy",
+      "question_text": "Who among the following was the founder of the Indian National Congress?",
+      "options": {
+        "A": "Mahatma Gandhi",
+        "B": "A.O. Hume",
+        "C": "Annie Besant",
+        "D": "W.C. Bonnerjee"
+      },
+      "correct_option": "B",
+      "explanation": "Allan Octavian Hume (A.O. Hume), a retired British civil servant, was the primary founder of the Indian National Congress in 1885.",
+      "tags": [
+        "INC",
+        "Modern History",
+        "Freedom Struggle"
+      ]
+    },
+    {
+      "id": "CDS-GK-002",
+      "topic": "Indian Polity",
+      "subtopic": "Fundamental Rights",
+      "difficulty": "medium",
+      "question_text": "Which Article of the Indian Constitution is related to the Right to Equality?",
+      "options": {
+        "A": "Article 14-18",
+        "B": "Article 19-22",
+        "C": "Article 23-24",
+        "D": "Article 25-28"
+      },
+      "correct_option": "A",
+      "explanation": "Articles 14 to 18 of the Indian Constitution guarantee the Right to Equality to all citizens.",
+      "tags": [
+        "Constitution",
+        "Polity",
+        "Rights"
+      ]
+    },
+    {
+      "id": "CDS-GK-003",
+      "topic": "Geography",
+      "subtopic": "Physical Geography",
+      "difficulty": "medium",
+      "question_text": "Which of the following ocean currents is a cold current?",
+      "options": {
+        "A": "Gulf Stream",
+        "B": "Kuroshio Current",
+        "C": "Canary Current",
+        "D": "Brazilian Current"
+      },
+      "correct_option": "C",
+      "explanation": "The Canary Current is a wind-driven surface current that is part of the North Atlantic Gyre. It is a cold, wide, and slow-moving current.",
+      "tags": [
+        "Oceanography",
+        "Currents"
+      ]
+    },
+    {
+      "id": "CDS-GK-004",
+      "topic": "Defence",
+      "subtopic": "Military Exercises",
+      "difficulty": "easy",
+      "question_text": "Exercise 'Surya Kiran' is a joint military exercise between India and which country?",
+      "options": {
+        "A": "Sri Lanka",
+        "B": "Nepal",
+        "C": "Bangladesh",
+        "D": "Bhutan"
+      },
+      "correct_option": "B",
+      "explanation": "Surya Kiran is an annual joint military exercise conducted between the Indian Army and the Nepali Army.",
+      "tags": [
+        "Exercises",
+        "Bilateral",
+        "Army"
+      ]
+    },
+    {
+      "id": "CDS-GK-005",
+      "topic": "Everyday Science",
+      "subtopic": "Physics",
+      "difficulty": "easy",
+      "question_text": "What is the SI unit of electrical resistance?",
+      "options": {
+        "A": "Ampere",
+        "B": "Volt",
+        "C": "Ohm",
+        "D": "Watt"
+      },
+      "correct_option": "C",
+      "explanation": "The SI unit of electrical resistance is the ohm (Ω).",
+      "tags": [
+        "Units",
+        "Electricity",
+        "Science"
+      ]
+    },
+    {
+      "id": "CDS-GK-006",
+      "topic": "Current Affairs",
+      "subtopic": "International",
+      "difficulty": "medium",
+      "question_text": "Which country recently hosted the G20 Summit in 2023?",
+      "options": {
+        "A": "Indonesia",
+        "B": "India",
+        "C": "Brazil",
+        "D": "Italy"
+      },
+      "correct_option": "B",
+      "explanation": "India held the Presidency of the G20 from 1 December 2022 to 30 November 2023 and hosted the summit in New Delhi.",
+      "tags": [
+        "G20",
+        "Summits",
+        "India"
+      ]
+    },
+    {
+      "id": "CDS-GK-007",
+      "topic": "Indian Economy",
+      "subtopic": "Macroeconomics",
+      "difficulty": "hard",
+      "question_text": "What does the term 'Stagflation' refer to?",
+      "options": {
+        "A": "High inflation and high economic growth",
+        "B": "Low inflation and low economic growth",
+        "C": "High inflation and stagnant economic growth",
+        "D": "Deflation and high unemployment"
+      },
+      "correct_option": "C",
+      "explanation": "Stagflation is an economic condition characterized by slow economic growth and relatively high unemployment—economic stagnation—which is at the same time accompanied by rising prices (i.e., inflation).",
+      "tags": [
+        "Economy",
+        "Inflation",
+        "Macroeconomics"
+      ]
+    },
+    {
+      "id": "CDS-GK-008",
+      "topic": "Defence",
+      "subtopic": "Weapons and Equipment",
+      "difficulty": "medium",
+      "question_text": "Which of the following is a stealth guided-missile destroyer built under Project 15B?",
+      "options": {
+        "A": "INS Vikramaditya",
+        "B": "INS Arihant",
+        "C": "INS Visakhapatnam",
+        "D": "INS Kalvari"
+      },
+      "correct_option": "C",
+      "explanation": "INS Visakhapatnam (D66) is the lead ship of the Visakhapatnam-class stealth guided-missile destroyers of the Indian Navy, built under Project 15B.",
+      "tags": [
+        "Navy",
+        "Project 15B",
+        "Destroyer"
+      ]
+    },
+    {
+      "id": "CDS-GK-009",
+      "topic": "History of India",
+      "subtopic": "Ancient History",
+      "difficulty": "easy",
+      "question_text": "Which Maurya ruler was known by the title 'Devanampiya Piyadasi'?",
+      "options": {
+        "A": "Chandragupta Maurya",
+        "B": "Bindusara",
+        "C": "Ashoka",
+        "D": "Dasharatha"
+      },
+      "correct_option": "C",
+      "explanation": "Ashoka used the titles 'Devanampiya' (Beloved of the Gods) and 'Piyadasi' (He who regards everyone with affection) in his edicts.",
+      "tags": [
+        "Mauryan Empire",
+        "Ashoka",
+        "Ancient History"
+      ]
+    },
+    {
+      "id": "CDS-GK-010",
+      "topic": "Geography",
+      "subtopic": "Indian Geography",
+      "difficulty": "easy",
+      "question_text": "Which Indian state has the longest coastline?",
+      "options": {
+        "A": "Tamil Nadu",
+        "B": "Maharashtra",
+        "C": "Gujarat",
+        "D": "Andhra Pradesh"
+      },
+      "correct_option": "C",
+      "explanation": "Gujarat has the longest mainland coastline in India.",
+      "tags": [
+        "Coastline",
+        "States",
+        "India"
+      ]
+    }
+  ]
+}

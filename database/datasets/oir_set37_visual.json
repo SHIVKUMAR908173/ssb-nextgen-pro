@@ -1,0 +1,286 @@
+[
+  {
+    "id": 1,
+    "category": "Figure Matrix (Group A vs Group B)",
+    "question_text": "WHICH ONE OF THE FOLLOWING CUBES CAN POSSIBLY BELONG TO GROUP A?",
+    "reference_figures": [
+      {
+        "label": "Group A Examples",
+        "svg": "<svg viewBox='0 0 200 100'><path d='M20 40 L50 40 L60 30 L30 30 Z M20 40 L20 70 L50 70 L50 40 M50 70 L60 60 L60 30' fill='none' stroke='black' stroke-width='2'/><text x='30' y='60' font-size='12' font-weight='bold'>++</text><path d='M120 40 L150 40 L160 30 L130 30 Z M120 40 L120 70 L150 70 L150 40 M150 70 L160 60 L160 30' fill='none' stroke='black' stroke-width='2'/><circle cx='135' cy='55' r='8' fill='none' stroke='black' stroke-width='2'/><circle cx='135' cy='55' r='3' fill='black'/></svg>"
+      },
+      {
+        "label": "Group B Examples",
+        "svg": "<svg viewBox='0 0 200 100'><path d='M20 40 L50 40 L60 30 L30 30 Z M20 40 L20 70 L50 70 L50 40 M50 70 L60 60 L60 30' fill='none' stroke='black' stroke-width='2'/><text x='32' y='60' font-size='12'>AA</text><path d='M120 40 L150 40 L160 30 L130 30 Z M120 40 L120 70 L150 70 L150 40 M150 70 L160 60 L160 30' fill='none' stroke='black' stroke-width='2'/><text x='132' y='60' font-size='12'>XX</text></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='42' y='60' font-size='12'>SS</text></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='42' y='60' font-size='12'>XX</text></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='42' y='60' font-size='12' font-weight='bold'>++</text></svg>"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Group A contains symbols that are mathematical or geometric (like '+' and nested circles). Group B contains repeating alphabetic characters. Option 3 matches the Group A rule."
+  },
+  {
+    "id": 2,
+    "category": "Figure Matrix (Class A vs Class B)",
+    "question_text": "WHICH ONE OF THE FOLLOWING CUBES CAN POSSIBLY BELONG TO GROUP A?",
+    "reference_figures": [
+      {
+        "label": "Group A Examples",
+        "svg": "<svg viewBox='0 0 200 100'><path d='M20 40 L50 40 L60 30 L30 30 Z M20 40 L20 70 L50 70 L50 40 M50 70 L60 60 L60 30' fill='none' stroke='black' stroke-width='2'/><circle cx='35' cy='55' r='5' fill='black'/><path d='M120 40 L150 40 L160 30 L130 30 Z M120 40 L120 70 L150 70 L150 40 M150 70 L160 60 L160 30' fill='none' stroke='black' stroke-width='2'/><circle cx='135' cy='55' r='5' fill='black'/><circle cx='135' cy='35' r='5' fill='none' stroke='black'/></svg>"
+      },
+      {
+        "label": "Group B Examples",
+        "svg": "<svg viewBox='0 0 200 100'><path d='M20 40 L50 40 L60 30 L30 30 Z M20 40 L20 70 L50 70 L50 40 M50 70 L60 60 L60 30' fill='none' stroke='black' stroke-width='2'/><text x='35' y='55'>X</text><path d='M120 40 L150 40 L160 30 L130 30 Z M120 40 L120 70 L150 70 L150 40 M150 70 L160 60 L160 30' fill='none' stroke='black' stroke-width='2'/><text x='135' y='55'>X</text><text x='140' y='35'>X</text></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='45' y='55'>X</text></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><circle cx='45' cy='55' r='5' fill='black'/></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><rect x='40' y='45' width='10' height='10' fill='none' stroke='black'/></svg>"
+      }
+    ],
+    "correct_option": "2",
+    "explanation": "Group A uses circles (solid or hollow) as symbols. Group B uses the letter 'X'. Option 2 follows the Group A rule."
+  },
+  {
+    "id": 3,
+    "category": "Visual Pattern Recognition",
+    "question_text": "Find if the two cubes are alike. Write 'Yes' or 'No' on the Answer Sheet.",
+    "reference_figures": [
+      {
+        "label": "Cube 1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 30 L70 30 L85 15 L45 15 Z M30 30 L30 70 L70 70 L70 30 M70 70 L85 55 L85 15' fill='none' stroke='black' stroke-width='2'/><circle cx='50' cy='50' r='10' fill='none' stroke='black' stroke-width='2'/><circle cx='50' cy='50' r='4' fill='black'/></svg>"
+      },
+      {
+        "label": "Cube 2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 30 L70 30 L85 15 L45 15 Z M30 30 L30 70 L70 70 L70 30 M70 70 L85 55 L85 15' fill='none' stroke='black' stroke-width='2'/><circle cx='50' cy='22' r='10' fill='none' stroke='black' stroke-width='2'/><circle cx='50' cy='22' r='4' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "No",
+    "explanation": "In Cube 1, the nested circle symbol is on the front face. In Cube 2, the same symbol is on the top face. Since we only see one symbol and it has changed positions without showing other faces, they are not alike.",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "Yes"
+      },
+      {
+        "label": "No",
+        "value": "No"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Visual Logic (Subtraction)",
+    "question_text": "Write the number of the figure which will come next in the series:",
+    "reference_figures": [
+      {
+        "label": "Step 1",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='30' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='20' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='10' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "Step 2",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='30' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='20' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "Step 3",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='30' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='30' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='black' stroke-width='4'/><circle cx='50' cy='50' r='10' fill='none' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The innermost circle is removed at each step. After Step 3 (two circles), the next logical step is to have only one outer circle left."
+  },
+  {
+    "id": 5,
+    "category": "Figure Matrix (Class A vs Class B)",
+    "question_text": "WHICH TWO OF THE FOLLOWING FIGURES BELONG TO CLASS A?",
+    "reference_figures": [
+      {
+        "label": "Class A Examples",
+        "svg": "<svg viewBox='0 0 200 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/><circle cx='30' cy='30' r='10' fill='black'/><circle cx='130' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/><rect x='125' y='25' width='10' height='10' fill='black'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><circle cx='30' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/><circle cx='30' cy='30' r='8' fill='black'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/><text x='25' y='35'>X</text></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 60 60'><polygon points='30,10 50,50 10,50' fill='none' stroke='black' stroke-width='2'/><circle cx='30' cy='35' r='8' fill='black'/></svg>"
+      },
+      {
+        "label": "4",
+        "svg": "<svg viewBox='0 0 60 60'><circle cx='20' cy='30' r='10' fill='black'/><circle cx='45' cy='30' r='10' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "1 and 3",
+    "explanation": "Class A contains a solid black element centered inside a hollow geometric shape. Options 1 and 3 follow this rule."
+  },
+  {
+    "id": 6,
+    "category": "Visual Analogy",
+    "question_text": "Figure A is to B as C is to?",
+    "reference_figures": [
+      {
+        "label": "A to B",
+        "svg": "<svg viewBox='0 0 200 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/><text x='60' y='35'>TO</text><path d='M100 10 L140 10 L140 30 L100 30 Z' fill='none' stroke='black' stroke-width='2'/><path d='M100 30 L140 30 L140 50 L100 50 Z' fill='black'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 60'><circle cx='30' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><path d='M10 30 A 20 20 0 0 1 50 30 Z' fill='none' stroke='black' stroke-width='2'/><path d='M10 30 A 20 20 0 0 0 50 30 Z' fill='black'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><circle cx='30' cy='30' r='20' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The shape is divided in half; the top half remains hollow, and the bottom half becomes solid black. Option 1 correctly applies this to the circle."
+  },
+  {
+    "id": 7,
+    "category": "Cube Logic",
+    "question_text": "WHICH ONE OF THE FOLLOWING CUBES CAN POSSIBLY BELONG TO GROUP A?",
+    "reference_figures": [
+      {
+        "label": "Group A",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='38' y='60' font-size='12'>XX</text></svg>"
+      },
+      {
+        "label": "Group B",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='38' y='60' font-size='12'>++</text></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='38' y='60' font-size='12'>XX</text></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 100 100'><path d='M30 40 L60 40 L70 30 L40 30 Z M30 40 L30 70 L60 70 L60 40 M60 70 L70 60 L70 30' fill='none' stroke='black' stroke-width='2'/><text x='38' y='60' font-size='12'>SS</text></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "Group A uses letters. Option 1 (XX) follows this classification rule."
+  },
+  {
+    "id": 8,
+    "category": "Odd One Out",
+    "question_text": "Which figure does not belong to the same class as others?",
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><line x1='10' y1='10' x2='10' y2='50' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><line x1='10' y1='10' x2='50' y2='10' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "3",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='4'/></svg>"
+      },
+      {
+        "label": "4",
+        "svg": "<svg viewBox='0 0 60 60'><line x1='10' y1='50' x2='50' y2='10' stroke='black' stroke-width='4'/></svg>"
+      }
+    ],
+    "correct_option": "3",
+    "explanation": "Options 1, 2, and 4 are open lines. Option 3 is a closed figure (square)."
+  },
+  {
+    "id": 9,
+    "category": "Visual Analogy",
+    "question_text": "Figure A is to B as C is to?",
+    "reference_figures": [
+      {
+        "label": "A to B",
+        "svg": "<svg viewBox='0 0 200 60'><circle cx='30' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/><text x='60' y='35'>TO</text><circle cx='110' cy='30' r='20' fill='none' stroke='black' stroke-width='2'/><line x1='110' y1='10' x2='110' y2='50' stroke='black' stroke-width='2'/></svg>"
+      },
+      {
+        "label": "C",
+        "svg": "<svg viewBox='0 0 100 60'><rect x='20' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/><line x1='30' y1='10' x2='30' y2='50' stroke='black' stroke-width='2'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><rect x='10' y='10' width='40' height='40' fill='none' stroke='black' stroke-width='2'/><line x1='10' y1='30' x2='50' y2='30' stroke='black' stroke-width='2'/></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The shape is bisected by a single vertical line. Option 1 correctly applies this to the square."
+  },
+  {
+    "id": 10,
+    "category": "Figure Series Completion",
+    "question_text": "Write the number of the figure which will come next in the series:",
+    "reference_figures": [
+      {
+        "label": "Series",
+        "svg": "<svg viewBox='0 0 300 60'><circle cx='20' cy='30' r='5' fill='black'/><circle cx='60' cy='30' r='10' fill='black'/><circle cx='110' cy='30' r='15' fill='black'/><circle cx='170' cy='30' r='20' fill='black'/></svg>"
+      }
+    ],
+    "options": [
+      {
+        "label": "1",
+        "svg": "<svg viewBox='0 0 60 60'><circle cx='30' cy='30' r='25' fill='black'/></svg>"
+      },
+      {
+        "label": "2",
+        "svg": "<svg viewBox='0 0 60 60'><circle cx='30' cy='30' r='5' fill='black'/></svg>"
+      }
+    ],
+    "correct_option": "1",
+    "explanation": "The size of the circle is increasing at each step. The next circle must be the largest (Option 1)."
+  }
+]

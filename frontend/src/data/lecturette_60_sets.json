@@ -1,0 +1,3011 @@
+{
+  "metadata": {
+    "total_topics": 240,
+    "total_sets": 60,
+    "speech_duration_minutes": 3,
+    "prep_time_seconds": 180,
+    "version": "2.0"
+  },
+  "sets": [
+    {
+      "set_id": 1,
+      "name": "Set 01",
+      "topics": [
+        {
+          "topic": "Artificial Intelligence in Everyday Life",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Smart assistants",
+            "Recommendation algorithms",
+            "Healthcare diagnostics",
+            "Ethical concerns"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Blockchain Beyond Cryptocurrency",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Supply chain transparency",
+            "Smart contracts",
+            "Voting systems",
+            "Land registry"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Internet of Things: Connected World",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Smart cities",
+            "Industrial automation",
+            "Privacy risks",
+            "Healthcare monitoring"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Cloud Computing and Data Sovereignty",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Government cloud adoption",
+            "Cross-border data flows",
+            "Security challenges",
+            "Cost optimization"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 2,
+      "name": "Set 02",
+      "topics": [
+        {
+          "topic": "Augmented Reality in Education",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Interactive learning",
+            "Medical training",
+            "Cost barriers",
+            "Content development"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "3D Printing Revolution",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Manufacturing disruption",
+            "Medical implants",
+            "Housing construction",
+            "IP challenges"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Autonomous Vehicles: Road to the Future",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Safety statistics",
+            "Legal liability",
+            "Infrastructure needs",
+            "Job displacement"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Nanotechnology Applications",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Medical nano-robots",
+            "Material science advances",
+            "Water purification",
+            "Environmental risks"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 3,
+      "name": "Set 03",
+      "topics": [
+        {
+          "topic": "Big Data Analytics in Governance",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Predictive policing",
+            "Healthcare resource allocation",
+            "Tax compliance",
+            "Privacy protection"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Wearable Technology and Health",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Fitness tracking accuracy",
+            "Continuous health monitoring",
+            "Data sharing ethics",
+            "Military applications"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Gene Editing and CRISPR Technology",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Disease elimination potential",
+            "Designer baby ethics",
+            "Agricultural applications",
+            "Regulatory framework"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Virtual Reality in Military Training",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Combat simulation",
+            "Cost reduction",
+            "PTSD treatment",
+            "Limitations and risks"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 4,
+      "name": "Set 04",
+      "topics": [
+        {
+          "topic": "Digital Twin Technology",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Industrial applications",
+            "Urban planning",
+            "Healthcare simulation",
+            "Cost-benefit analysis"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Edge Computing and Its Applications",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Real-time processing",
+            "IoT device support",
+            "Security advantages",
+            "5G integration"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Biometric Authentication Systems",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Fingerprint vs facial recognition",
+            "Spoofing vulnerabilities",
+            "Privacy concerns",
+            "Government adoption"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Green Technology Innovations",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Solar cell efficiency",
+            "Wind turbine advances",
+            "Battery storage",
+            "Carbon capture"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 5,
+      "name": "Set 05",
+      "topics": [
+        {
+          "topic": "Telemedicine: Healthcare at a Distance",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Rural access improvement",
+            "Regulatory challenges",
+            "Quality assurance",
+            "COVID-19 acceleration"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Social Engineering and Cyber Fraud",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Phishing techniques",
+            "Psychological manipulation",
+            "Prevention strategies",
+            "Financial impact"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Open Source Software Movement",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Community-driven development",
+            "Security through transparency",
+            "Government adoption",
+            "Business models"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Digital Literacy for All",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Rural skill development",
+            "Senior citizen inclusion",
+            "Vernacular content",
+            "Cyber safety awareness"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 6,
+      "name": "Set 06",
+      "topics": [
+        {
+          "topic": "Robotics in Agriculture",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Precision farming",
+            "Labor shortage solution",
+            "Cost considerations",
+            "Indian suitability"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Ethical AI: Bias and Fairness",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Algorithmic discrimination",
+            "Training data bias",
+            "Accountability frameworks",
+            "Diversity in AI teams"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Smart Cities Mission: Progress Review",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "100 cities target",
+            "Infrastructure digitization",
+            "Citizen participation",
+            "Sustainability focus"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Fintech Revolution in India",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "UPI global model",
+            "Micro-lending platforms",
+            "Regulatory sandbox",
+            "Financial inclusion impact"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 7,
+      "name": "Set 07",
+      "topics": [
+        {
+          "topic": "Quantum Internet and Secure Communications",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Quantum key distribution",
+            "Unbreakable encryption",
+            "Current research status",
+            "Military applications"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Brain-Computer Interface Technology",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Medical rehabilitation",
+            "Neuralink developments",
+            "Ethical boundaries",
+            "Military potential"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Metaverse: Future of Digital Interaction",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Virtual economies",
+            "Social isolation risks",
+            "Business applications",
+            "Technology requirements"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Cyberbullying and Online Safety",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Youth vulnerability",
+            "Legal remedies",
+            "Platform responsibility",
+            "Prevention education"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 8,
+      "name": "Set 08",
+      "topics": [
+        {
+          "topic": "Technology in Disaster Management",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Early warning systems",
+            "Drone-based surveys",
+            "Communication resilience",
+            "AI prediction models"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "India's Semiconductor Mission",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Fab manufacturing strategy",
+            "Global supply chain position",
+            "Talent development",
+            "Investment requirements"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Precision Medicine and Genomics",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Personalized treatment",
+            "Genetic testing ethics",
+            "Cost accessibility",
+            "Indian genome project"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Digital Payments Security",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Fraud prevention",
+            "Two-factor authentication",
+            "Consumer protection",
+            "Cross-border transactions"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 9,
+      "name": "Set 09",
+      "topics": [
+        {
+          "topic": "Space Tourism: Science or Luxury?",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Commercial space companies",
+            "Environmental impact",
+            "Democratization of space",
+            "ISRO's commercial potential"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Internet Governance and Net Neutrality",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "TRAI regulations",
+            "Content throttling",
+            "Digital rights",
+            "Global governance models"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "E-Waste Management Challenges",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Toxic material disposal",
+            "Recycling infrastructure",
+            "Extended producer responsibility",
+            "Informal sector role"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Hyperloop and Future Transportation",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Technical feasibility",
+            "Indian route proposals",
+            "Cost analysis",
+            "Environmental benefits"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 10,
+      "name": "Set 10",
+      "topics": [
+        {
+          "topic": "Lab-Grown Meat and Food Technology",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Environmental benefits",
+            "Cultural acceptance",
+            "Nutritional comparison",
+            "Regulatory approval"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Digital Detox: Need of Modern Times",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Screen addiction statistics",
+            "Cognitive impact",
+            "Workplace productivity",
+            "Mindfulness practices"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Synthetic Biology and Its Promise",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Biofuel production",
+            "Disease treatment",
+            "Biosecurity risks",
+            "Ethical guidelines"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Tech-Enabled Farming in India",
+          "category": "Technology & Cyber",
+          "key_points": [
+            "Soil health monitoring",
+            "Weather prediction",
+            "Market access platforms",
+            "Smallholder adoption barriers"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 11,
+      "name": "Set 11",
+      "topics": [
+        {
+          "topic": "Indian Navy: Guardian of the Seas",
+          "category": "Defense & Security",
+          "key_points": [
+            "Aircraft carrier program",
+            "Submarine fleet modernization",
+            "Indo-Pacific presence",
+            "Maritime domain awareness"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Special Forces of India",
+          "category": "Defense & Security",
+          "key_points": [
+            "Para SF operations",
+            "MARCOS capabilities",
+            "NSG role",
+            "Training and selection"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Mountain Warfare: Challenges and Strategy",
+          "category": "Defense & Security",
+          "key_points": [
+            "High altitude operations",
+            "Equipment requirements",
+            "Ladakh deployment",
+            "Acclimatization protocols"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "India's Nuclear Triad Capability",
+          "category": "Defense & Security",
+          "key_points": [
+            "Agni missile series",
+            "SSBN Arihant class",
+            "Strategic Forces Command",
+            "Deterrence credibility"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 12,
+      "name": "Set 12",
+      "topics": [
+        {
+          "topic": "Integrated Battle Groups Concept",
+          "category": "Defense & Security",
+          "key_points": [
+            "Cold Start doctrine evolution",
+            "Quick mobilization",
+            "Pakistan's response",
+            "Operational challenges"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Indian Air Force Modernization",
+          "category": "Defense & Security",
+          "key_points": [
+            "Rafale induction impact",
+            "AMCA development",
+            "Squadron strength gap",
+            "AESA radar program"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Role of NCC in Nation Building",
+          "category": "Defense & Security",
+          "key_points": [
+            "Youth leadership development",
+            "Disaster relief contribution",
+            "Social integration",
+            "NCC directorate reforms"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Left Wing Extremism in India",
+          "category": "Defense & Security",
+          "key_points": [
+            "Red corridor mapping",
+            "SAMADHAN strategy",
+            "Development approach",
+            "Security operations"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 13,
+      "name": "Set 13",
+      "topics": [
+        {
+          "topic": "India's Defense Export Potential",
+          "category": "Defense & Security",
+          "key_points": [
+            "BrahMos export deals",
+            "Tejas for friendly nations",
+            "Policy framework",
+            "Competition with global players"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Chemical, Biological, Radiological and Nuclear Defense",
+          "category": "Defense & Security",
+          "key_points": [
+            "Threat assessment",
+            "Detection capabilities",
+            "Decontamination procedures",
+            "International conventions"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Joint Military Exercises: Significance",
+          "category": "Defense & Security",
+          "key_points": [
+            "Interoperability building",
+            "Diplomatic signaling",
+            "Best practices exchange",
+            "Recent exercise highlights"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Artificial Intelligence in Defense",
+          "category": "Defense & Security",
+          "key_points": [
+            "Autonomous weapon systems",
+            "Intelligence analysis",
+            "Logistics optimization",
+            "Ethical guidelines"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 14,
+      "name": "Set 14",
+      "topics": [
+        {
+          "topic": "Indian Coast Guard: Silent Sentinel",
+          "category": "Defense & Security",
+          "key_points": [
+            "Maritime border patrol",
+            "Fishermen protection",
+            "Anti-smuggling operations",
+            "Pollution control"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Electronic Warfare Capabilities",
+          "category": "Defense & Security",
+          "key_points": [
+            "Spectrum dominance",
+            "Radar jamming",
+            "Communication security",
+            "Indigenous development"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Military Logistics and Supply Chain",
+          "category": "Defense & Security",
+          "key_points": [
+            "Forward area provisioning",
+            "Cold chain challenges",
+            "Ammunition management",
+            "Technology integration"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "India's Strategic Airlift Capability",
+          "category": "Defense & Security",
+          "key_points": [
+            "C-17 Globemaster fleet",
+            "Humanitarian aid delivery",
+            "Rapid deployment",
+            "Multi-role transport aircraft"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 15,
+      "name": "Set 15",
+      "topics": [
+        {
+          "topic": "Psychological Warfare in Modern Conflicts",
+          "category": "Defense & Security",
+          "key_points": [
+            "Information operations",
+            "Social media manipulation",
+            "Counter-narrative strategies",
+            "Historical examples"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Indian Military History: Lessons for Today",
+          "category": "Defense & Security",
+          "key_points": [
+            "1971 war strategy",
+            "Kargil conflict lessons",
+            "Siachen operations",
+            "Battle of Longewala"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Unmanned Combat Vehicles",
+          "category": "Defense & Security",
+          "key_points": [
+            "Drone swarm technology",
+            "Armed UAV development",
+            "Counter-UAS systems",
+            "Legal and ethical issues"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Military Intelligence: Art and Science",
+          "category": "Defense & Security",
+          "key_points": [
+            "HUMINT vs SIGINT",
+            "Satellite reconnaissance",
+            "Open source intelligence",
+            "Coordination mechanisms"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 16,
+      "name": "Set 16",
+      "topics": [
+        {
+          "topic": "India's Ballistic Missile Defense",
+          "category": "Defense & Security",
+          "key_points": [
+            "PAD and AAD systems",
+            "S-400 integration",
+            "Layered defense concept",
+            "Technology maturity"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Defense Procurement Reforms",
+          "category": "Defense & Security",
+          "key_points": [
+            "DAP 2020 changes",
+            "Make in India priority",
+            "Offset policy",
+            "Strategic partnership model"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Role of Army in Counter-Insurgency",
+          "category": "Defense & Security",
+          "key_points": [
+            "Hearts and minds approach",
+            "Operation Sadbhavana",
+            "Minimum force principle",
+            "Civil-military cooperation"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "India's Military Diplomacy",
+          "category": "Defense & Security",
+          "key_points": [
+            "Defense attaches network",
+            "UN peacekeeping contribution",
+            "Training foreign military",
+            "Arms trade relationships"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 17,
+      "name": "Set 17",
+      "topics": [
+        {
+          "topic": "Integrated Air Defense System",
+          "category": "Defense & Security",
+          "key_points": [
+            "Multi-layer concept",
+            "Radar network coverage",
+            "Surface-to-air missiles",
+            "Air defense identification zones"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Veterans in National Development",
+          "category": "Defense & Security",
+          "key_points": [
+            "Corporate sector placement",
+            "Entrepreneurship support",
+            "Policy advocacy role",
+            "Mentoring young officers"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Combat Engineering in Modern Warfare",
+          "category": "Defense & Security",
+          "key_points": [
+            "Mine warfare",
+            "Bridge laying capability",
+            "Obstacle creation",
+            "Rapid infrastructure"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Military Medicine and Battlefield Healthcare",
+          "category": "Defense & Security",
+          "key_points": [
+            "Golden hour concept",
+            "Evacuation protocols",
+            "PTSD management",
+            "Telemedicine in field"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 18,
+      "name": "Set 18",
+      "topics": [
+        {
+          "topic": "Information Warfare in 21st Century",
+          "category": "Defense & Security",
+          "key_points": [
+            "Fake news as weapon",
+            "Social media operations",
+            "Attribution challenges",
+            "Democratic resilience"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "India's Overseas Military Bases Debate",
+          "category": "Defense & Security",
+          "key_points": [
+            "Djibouti facility",
+            "Indian Ocean presence",
+            "Strategic necessity",
+            "Non-alignment evolution"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Night Vision and Thermal Imaging Technology",
+          "category": "Defense & Security",
+          "key_points": [
+            "Gen-4 systems",
+            "Border surveillance",
+            "Indigenous development",
+            "Cost reduction strategies"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Military Space Command",
+          "category": "Defense & Security",
+          "key_points": [
+            "Defence Space Agency",
+            "Space situational awareness",
+            "Anti-satellite capability",
+            "Space-based communication"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 19,
+      "name": "Set 19",
+      "topics": [
+        {
+          "topic": "Terrain Analysis in Military Operations",
+          "category": "Defense & Security",
+          "key_points": [
+            "GIS and remote sensing",
+            "Riverine operations",
+            "Desert warfare",
+            "Jungle warfare"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Indian Army's Corps of Signals",
+          "category": "Defense & Security",
+          "key_points": [
+            "Secure communication networks",
+            "Electronic warfare role",
+            "Digital army transformation",
+            "Software defined radios"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Amphibious Operations Capability",
+          "category": "Defense & Security",
+          "key_points": [
+            "Island territory defense",
+            "Andaman Nicobar deployment",
+            "Landing ships and craft",
+            "Joint forces integration"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Military Ethics and Laws of Armed Conflict",
+          "category": "Defense & Security",
+          "key_points": [
+            "Geneva Conventions",
+            "Rules of engagement",
+            "Proportionality principle",
+            "War crimes accountability"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 20,
+      "name": "Set 20",
+      "topics": [
+        {
+          "topic": "Artillery Modernization of Indian Army",
+          "category": "Defense & Security",
+          "key_points": [
+            "Dhanush and Vajra systems",
+            "Guided munitions",
+            "Fire control technology",
+            "Korean K9 induction"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Civil-Military Relations in India",
+          "category": "Defense & Security",
+          "key_points": [
+            "Constitutional framework",
+            "Political control mechanisms",
+            "Professional military advice",
+            "Historical tension points"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Indian Navy's Carrier Battle Groups",
+          "category": "Defense & Security",
+          "key_points": [
+            "INS Vikrant commissioning",
+            "Air wing composition",
+            "Escort vessel requirements",
+            "Power projection capability"
+          ],
+          "difficulty": "Easy"
+        },
+        {
+          "topic": "Disaster Relief: Military's Force Multiplier Role",
+          "category": "Defense & Security",
+          "key_points": [
+            "Kerala floods response",
+            "COVID hospital setup",
+            "Engineering capability",
+            "International HADR"
+          ],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "set_id": 21,
+      "name": "Set 21",
+      "topics": [
+        {
+          "topic": "Rise of China: Implications for World Order",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Economic dominance strategy",
+            "Military modernization pace",
+            "Belt and Road expansion",
+            "Debt trap diplomacy"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India-Japan Strategic Partnership",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Economic cooperation",
+            "Nuclear deal significance",
+            "Maritime security",
+            "2+2 dialogue mechanism"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "United Nations Reform: Urgency and Roadblocks",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Security Council expansion",
+            "Veto power reform",
+            "Peacekeeping reform",
+            "Financing challenges"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India's Vaccine Diplomacy",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "COVID-19 distribution",
+            "Soft power projection",
+            "Manufacturing capability",
+            "WHO partnership"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 22,
+      "name": "Set 22",
+      "topics": [
+        {
+          "topic": "South China Sea Dispute",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Freedom of navigation",
+            "Artificial island building",
+            "UNCLOS application",
+            "India's position"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Energy Security in Indian Context",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Oil import dependency reduction",
+            "Strategic petroleum reserves",
+            "Renewable energy transition",
+            "Nuclear power expansion"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Indo-Pacific Concept: Evolving Framework",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Free and open Indo-Pacific",
+            "Maritime cooperation",
+            "Economic dimension",
+            "Security architecture"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Afghanistan After US Withdrawal",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Taliban governance",
+            "Regional security impact",
+            "India's development investment",
+            "Terrorism safe haven risk"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 23,
+      "name": "Set 23",
+      "topics": [
+        {
+          "topic": "SCO: India's Engagement Strategy",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Counter-terrorism cooperation",
+            "Central Asian connectivity",
+            "China-Pakistan factor",
+            "Economic potential"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Water Wars: India's Transboundary River Disputes",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Indus Water Treaty stress",
+            "Brahmaputra dam concerns",
+            "Ganges water sharing",
+            "Climate change impact"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Non-Aligned Movement in Current Context",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Historical relevance",
+            "Strategic autonomy concept",
+            "Multi-alignment approach",
+            "Developing world leadership"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Nuclear Non-Proliferation and India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "NPT status",
+            "NSG membership quest",
+            "CTBT position",
+            "Responsible nuclear power"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 24,
+      "name": "Set 24",
+      "topics": [
+        {
+          "topic": "India-France Defense Partnership",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Rafale deal significance",
+            "Submarine technology",
+            "Space cooperation",
+            "Indian Ocean partnership"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Maldives: India's Island Neighbor",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "India First policy",
+            "Chinese influence counter",
+            "Tourism and trade",
+            "Maritime security"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "International Criminal Court and India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Non-member status reason",
+            "War crimes accountability",
+            "Sovereignty concerns",
+            "Selective justice criticism"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India-Australia Strategic Convergence",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "ECTA trade agreement",
+            "Maritime cooperation",
+            "Chinese factor",
+            "Diaspora connections"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 25,
+      "name": "Set 25",
+      "topics": [
+        {
+          "topic": "Horn of Africa: Strategic Significance for India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Anti-piracy operations",
+            "Trade route security",
+            "Djibouti facility",
+            "China's base proximity"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India's Role in G20 Leadership",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Presidency achievements",
+            "Climate finance advocacy",
+            "Digital public infrastructure",
+            "Voice of Global South"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Emerging Multi-Polar World Order",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "US-China rivalry",
+            "Middle power strategies",
+            "Regional organizations",
+            "India's positioning"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "SAARC: Revival or Replacement?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Pakistan as obstacle",
+            "BIMSTEC alternative",
+            "Sub-regional groupings",
+            "Trade integration potential"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 26,
+      "name": "Set 26",
+      "topics": [
+        {
+          "topic": "India-Israel Defense Cooperation",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Weapons procurement",
+            "Technology transfer",
+            "Intelligence sharing",
+            "Palestine policy balance"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Central Asian Geopolitics and India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "INSTC corridor",
+            "Energy resources",
+            "Chabahar port route",
+            "Cultural historical ties"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Sanctions as Foreign Policy Tool",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Effectiveness debate",
+            "Secondary sanctions impact",
+            "India's position",
+            "Economic warfare implications"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Pacific Islands: New Geopolitical Battleground",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Climate change vulnerability",
+            "Chinese checkbook diplomacy",
+            "India's FIPIC initiative",
+            "Strategic location value"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 27,
+      "name": "Set 27",
+      "topics": [
+        {
+          "topic": "India-UK Free Trade Agreement",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Post-Brexit opportunity",
+            "Migration provisions",
+            "Service sector access",
+            "Historical relationship evolution"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Indian Ocean Rim Association",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Blue economy focus",
+            "Maritime security",
+            "Trade facilitation",
+            "Disaster risk management"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India-Bangladesh Relations Transformation",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Water sharing agreements",
+            "Connectivity projects",
+            "Border management",
+            "Rohingya issue"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Global Governance Reform Agenda",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "IMF quota reform",
+            "World Bank restructuring",
+            "WTO dispute resolution",
+            "Representation equity"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 28,
+      "name": "Set 28",
+      "topics": [
+        {
+          "topic": "India and ASEAN: 30 Years of Partnership",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Trade integration",
+            "Connectivity projects",
+            "Maritime cooperation",
+            "Cultural exchanges"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Geopolitics of Rare Earth Minerals",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Chinese monopoly",
+            "Supply chain diversification",
+            "Strategic reserves",
+            "Recycling technology"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India-Gulf Cooperation Council Relations",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Energy partnership",
+            "Diaspora welfare",
+            "Investment flows",
+            "Security cooperation"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "International Humanitarian Law Evolution",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Cyber warfare rules",
+            "Autonomous weapons regulation",
+            "Non-state actors",
+            "Climate refugees"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 29,
+      "name": "Set 29",
+      "topics": [
+        {
+          "topic": "India-Canada Relations: Opportunities and Tensions",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Trade potential",
+            "Khalistan issue",
+            "Student migration",
+            "Arctic cooperation"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Small Island Developing States and India",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Climate finance",
+            "Capacity building",
+            "Solar alliance",
+            "Maritime domain cooperation"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "India in the Arctic Council",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Observer status activities",
+            "Scientific research",
+            "Northern Sea Route",
+            "Resource access"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Digital Silk Road: China's Tech Expansion",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "5G infrastructure export",
+            "Surveillance technology",
+            "Data governance",
+            "India's counter-strategy"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 30,
+      "name": "Set 30",
+      "topics": [
+        {
+          "topic": "India-Russia Relations in Changing World",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Defense dependency evolution",
+            "Energy cooperation",
+            "Technology transfer",
+            "Multi-polar world vision"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Global Health Security Architecture",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Pandemic preparedness",
+            "WHO reform",
+            "Vaccine equity",
+            "India's pharmaceutical role"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Responsible AI Governance: Global Frameworks",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "EU AI Act influence",
+            "India's AI strategy",
+            "Cross-border regulation",
+            "Military AI limitations"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Outer Space Treaty: Need for Update?",
+          "category": "Geopolitics & International Relations",
+          "key_points": [
+            "Space resource mining",
+            "Military use restrictions",
+            "Orbital debris management",
+            "Commercial activities regulation"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 31,
+      "name": "Set 31",
+      "topics": [
+        {
+          "topic": "Youth Empowerment in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Skill development programs",
+            "Political participation",
+            "Entrepreneurship encouragement",
+            "Mental health support"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Role of Women in Indian Military",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Combat role milestones",
+            "Glass ceiling challenges",
+            "Training equality",
+            "Global comparisons"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Right to Education: Ground Reality",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Enrollment vs learning outcomes",
+            "Teacher quality crisis",
+            "Digital education divide",
+            "Budget allocation"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Social Media and Democracy",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Information democratization",
+            "Fake news challenge",
+            "Political mobilization",
+            "Platform accountability"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 32,
+      "name": "Set 32",
+      "topics": [
+        {
+          "topic": "Substance Abuse Among Youth",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Prevalence statistics",
+            "Root cause analysis",
+            "Rehabilitation models",
+            "Preventive education"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Road Safety in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Accident statistics",
+            "Enforcement challenges",
+            "Infrastructure design",
+            "Behavioral change campaigns"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Tribal Development and Rights",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Forest Rights Act",
+            "Cultural preservation",
+            "Development model",
+            "Displacement issues"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Role of NGOs in Indian Development",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Service delivery gap filling",
+            "Accountability concerns",
+            "FCRA restrictions",
+            "Partnership with government"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 33,
+      "name": "Set 33",
+      "topics": [
+        {
+          "topic": "Urbanization Challenges in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Slum proliferation",
+            "Water and sanitation",
+            "Transportation congestion",
+            "Smart city solutions"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Disability Rights and Inclusion",
+          "category": "Society & National Issues",
+          "key_points": [
+            "RPwD Act implementation",
+            "Accessible infrastructure",
+            "Employment quota",
+            "Attitude change needed"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Communal Harmony in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Constitutional secularism",
+            "Interfaith dialogue",
+            "Media responsibility",
+            "Historical coexistence"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Prison Reform in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Overcrowding crisis",
+            "Undertrial population",
+            "Rehabilitation focus",
+            "Model prison manual"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 34,
+      "name": "Set 34",
+      "topics": [
+        {
+          "topic": "Freedom of Speech: Limits and Responsibilities",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Constitutional provisions",
+            "Hate speech boundaries",
+            "Self-censorship trend",
+            "International comparisons"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "National Service for Youth",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Character building",
+            "Social cohesion",
+            "Skill development",
+            "International models"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Impact of Migration on Indian Society",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Rural to urban shift",
+            "Remittance economy",
+            "Cultural assimilation",
+            "Social security portability"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Elderly Care in Modern India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Aging demographics",
+            "Healthcare needs",
+            "Pension adequacy",
+            "Technology solutions"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 35,
+      "name": "Set 35",
+      "topics": [
+        {
+          "topic": "Sports as Character Builder",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Discipline and teamwork",
+            "Competitive spirit",
+            "Physical fitness",
+            "Leadership development"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Sanitation and Public Health",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Swachh Bharat outcomes",
+            "Open defecation statistics",
+            "Waste management",
+            "Behavioral change"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Child Marriage: Ending the Practice",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Legal framework",
+            "Poverty linkage",
+            "Education solution",
+            "Community engagement"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Ethics in Public Life",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Political accountability",
+            "Bureaucratic integrity",
+            "Whistleblower protection",
+            "Citizens' role"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 36,
+      "name": "Set 36",
+      "topics": [
+        {
+          "topic": "Indian Languages: Preservation vs Modernization",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Endangered languages",
+            "Technology in local languages",
+            "Literary traditions",
+            "Education policy"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Volunteerism and Community Service",
+          "category": "Society & National Issues",
+          "key_points": [
+            "NSS and NCC contribution",
+            "Corporate volunteering",
+            "Disaster response",
+            "Social bonding"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Mental Health Awareness in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Stigma reduction",
+            "Professional shortage",
+            "Workplace wellness",
+            "Government initiatives"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Organ Donation Awareness",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Donation statistics",
+            "Legal framework",
+            "Religious and cultural barriers",
+            "Awareness campaigns"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 37,
+      "name": "Set 37",
+      "topics": [
+        {
+          "topic": "Traffic Management in Indian Cities",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Public transport development",
+            "Parking solutions",
+            "Pedestrian safety",
+            "Technology integration"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Heritage Conservation in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "ASI capacity",
+            "Private sector role",
+            "Tourism potential",
+            "Community involvement"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Quality of Higher Education in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Global ranking position",
+            "Faculty shortage",
+            "Research output",
+            "Industry connection"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "River Conservation and Rejuvenation",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Namami Gange progress",
+            "Industrial pollution",
+            "Sewage treatment",
+            "Community participation"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 38,
+      "name": "Set 38",
+      "topics": [
+        {
+          "topic": "Animal Welfare and Rights",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Stray dog management",
+            "Wildlife protection",
+            "Animal testing alternatives",
+            "Dairy industry practices"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Electoral Reforms in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "State funding of elections",
+            "Criminalization of politics",
+            "EVM security",
+            "One nation one election"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Civic Education and Responsible Citizenship",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Rights and duties balance",
+            "Environmental responsibility",
+            "Democratic participation",
+            "Community engagement"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Child Nutrition and Stunting",
+          "category": "Society & National Issues",
+          "key_points": [
+            "ICDS effectiveness",
+            "Mid-day meal impact",
+            "Micronutrient deficiency",
+            "POSHAN Abhiyaan"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 39,
+      "name": "Set 39",
+      "topics": [
+        {
+          "topic": "Digital Education: Post-COVID Reality",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Device accessibility",
+            "Learning outcome measurement",
+            "Teacher training needs",
+            "Hybrid model adoption"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Blood Donation and Voluntary Culture",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Voluntary vs replacement donation",
+            "Blood bank infrastructure",
+            "Thalassemia management",
+            "Awareness strategies"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Public-Private Partnership in Education",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Quality improvement",
+            "Accountability mechanisms",
+            "Equity concerns",
+            "Successful models"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Cooperative Movement in India",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Amul success model",
+            "Credit cooperatives",
+            "Agriculture cooperatives",
+            "Government role"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 40,
+      "name": "Set 40",
+      "topics": [
+        {
+          "topic": "Role of Libraries in Knowledge Society",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Digital library initiatives",
+            "Community learning centers",
+            "Reading habit decline",
+            "Open access movement"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Environmental Education for Youth",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Curriculum integration",
+            "Eco-clubs",
+            "Nature conservation",
+            "Sustainable lifestyle"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Cultural Diversity as National Strength",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Unity in diversity",
+            "Festival celebrations",
+            "Cross-cultural understanding",
+            "National integration"
+          ],
+          "difficulty": "Medium"
+        },
+        {
+          "topic": "Responsible Use of Technology by Youth",
+          "category": "Society & National Issues",
+          "key_points": [
+            "Screen time management",
+            "Cyberbullying prevention",
+            "Digital citizenship",
+            "Creative applications"
+          ],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "set_id": 41,
+      "name": "Set 41",
+      "topics": [
+        {
+          "topic": "Indian Railways Modernization",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Bullet train project",
+            "Station redevelopment",
+            "Safety improvements",
+            "Freight corridor"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "MSMEs: Backbone of Indian Economy",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Employment generation",
+            "Credit access challenges",
+            "Technology adoption",
+            "Export potential"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Green Hydrogen Mission",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Production technology",
+            "Cost competitiveness",
+            "Industrial applications",
+            "Export opportunity"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Insurance Penetration in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Life vs general insurance",
+            "Crop insurance effectiveness",
+            "Health insurance expansion",
+            "Micro-insurance models"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 42,
+      "name": "Set 42",
+      "topics": [
+        {
+          "topic": "Smart Agriculture Practices",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Precision farming",
+            "Drip irrigation adoption",
+            "Soil health management",
+            "Market linkage"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Coastal Economy Development",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Sagarmala project",
+            "Port modernization",
+            "Fishing industry",
+            "Coastal tourism"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Nuclear Energy: India's Clean Power Option",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Thorium fuel cycle",
+            "Safety record",
+            "Cost competitiveness",
+            "Public acceptance"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Waste-to-Wealth: Circular Economy Model",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Composting and recycling",
+            "Biogas generation",
+            "Construction material from waste",
+            "Job creation"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 43,
+      "name": "Set 43",
+      "topics": [
+        {
+          "topic": "Real Estate Sector Reforms",
+          "category": "Economy & Environment",
+          "key_points": [
+            "RERA impact",
+            "Affordable housing push",
+            "Construction technology",
+            "Smart cities integration"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Logistics Sector in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "National Logistics Policy",
+            "Multimodal transport",
+            "Cost reduction strategies",
+            "Technology integration"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Micro-Finance and Financial Inclusion",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Self-help group model",
+            "Jan Dhan Yojana",
+            "Mobile banking growth",
+            "Over-indebtedness risks"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Solar Energy Revolution in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Installed capacity growth",
+            "International Solar Alliance",
+            "Manufacturing push",
+            "Rooftop solar potential"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 44,
+      "name": "Set 44",
+      "topics": [
+        {
+          "topic": "Fiscal Federalism in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "GST revenue sharing",
+            "Finance Commission recommendations",
+            "State debt concerns",
+            "Central grants criteria"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Pharmaceutical Industry: India's Global Role",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Generic medicines supply",
+            "API dependency on China",
+            "Research and innovation",
+            "Quality standards"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "National Highway Development",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Bharatmala project",
+            "Expressway network",
+            "Toll collection reform",
+            "Road safety engineering"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Sustainable Fashion Industry",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Fast fashion environmental cost",
+            "Handloom and khadi revival",
+            "Textile waste recycling",
+            "Cotton farming sustainability"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 45,
+      "name": "Set 45",
+      "topics": [
+        {
+          "topic": "Inland Waterway Development",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Cargo transportation potential",
+            "Environmental benefits",
+            "Infrastructure investment",
+            "Success stories"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "India's Defence Industrial Corridor",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Tamil Nadu and UP corridors",
+            "Private sector attraction",
+            "Technology development",
+            "Employment generation"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Bamboo Economy: Green Gold",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Northeast potential",
+            "Industrial applications",
+            "Carbon sequestration",
+            "Policy support needs"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Healthcare Infrastructure in Tier-2 Cities",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Hospital density gaps",
+            "Specialist availability",
+            "Medical tourism potential",
+            "Telemedicine supplement"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 46,
+      "name": "Set 46",
+      "topics": [
+        {
+          "topic": "Wetland Conservation in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Ecosystem services value",
+            "Ramsar site management",
+            "Urban encroachment",
+            "Biodiversity protection"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Value Addition in Agriculture",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Food processing parks",
+            "Cold chain development",
+            "Brand building for farm products",
+            "Export market access"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Textile Industry Competitiveness",
+          "category": "Economy & Environment",
+          "key_points": [
+            "PLI scheme impact",
+            "Technology upgradation",
+            "Sustainability compliance",
+            "Vietnam and Bangladesh competition"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Mining Sector Governance",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Auction transparency",
+            "Environmental compliance",
+            "Community benefit sharing",
+            "Illegal mining control"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 47,
+      "name": "Set 47",
+      "topics": [
+        {
+          "topic": "Electric Mobility Ecosystem",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Charging infrastructure",
+            "Battery swapping",
+            "Two-wheeler electrification",
+            "Public transport conversion"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "National Education Mission Financing",
+          "category": "Economy & Environment",
+          "key_points": [
+            "6% GDP target",
+            "Public-private investment",
+            "Research funding",
+            "International collaboration"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Forest-Based Livelihoods",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Tribal community rights",
+            "Minor forest produce",
+            "Eco-tourism opportunities",
+            "Conservation incentives"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "India's Dairy Revolution 2.0",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Technology in dairying",
+            "Cold chain gaps",
+            "Export potential",
+            "Cooperative model scaling"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 48,
+      "name": "Set 48",
+      "topics": [
+        {
+          "topic": "Urban Flooding: Causes and Solutions",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Concretization impact",
+            "Drainage infrastructure",
+            "Sponge city concept",
+            "Wetland preservation"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Defense Production Corridor Impact",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Investment attraction",
+            "MSMEs in defense",
+            "Technology clusters",
+            "Export orientation"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "India's Steel Industry Growth",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Infrastructure demand linkage",
+            "Green steel transition",
+            "Import protection",
+            "Technology modernization"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Agri-Tech Startups in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Farm-to-fork platforms",
+            "Precision agriculture",
+            "Drone technology",
+            "Farmer income impact"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 49,
+      "name": "Set 49",
+      "topics": [
+        {
+          "topic": "Credit Guarantee for Small Business",
+          "category": "Economy & Environment",
+          "key_points": [
+            "CGTMSE scheme",
+            "Banks' risk appetite",
+            "Collateral-free lending impact",
+            "Default management"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Rainwater Harvesting: Policy and Practice",
+          "category": "Economy & Environment",
+          "key_points": [
+            "State-level mandates",
+            "Traditional wisdom integration",
+            "Groundwater recharge",
+            "Urban implementation"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "India's Aviation Sector Growth",
+          "category": "Economy & Environment",
+          "key_points": [
+            "UDAN scheme impact",
+            "Airport privatization",
+            "MRO development",
+            "Sustainability challenges"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Tribal Art and Craft Economy",
+          "category": "Economy & Environment",
+          "key_points": [
+            "GI tag protection",
+            "E-commerce market access",
+            "Skill preservation",
+            "Fair trade practices"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 50,
+      "name": "Set 50",
+      "topics": [
+        {
+          "topic": "River-Linking Project: Pros and Cons",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Water redistribution benefits",
+            "Environmental impact",
+            "Interstate disputes",
+            "Cost-benefit analysis"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Corporate Social Responsibility in India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Mandatory CSR spending",
+            "Impact measurement",
+            "Best practices",
+            "Rural development focus"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Natural Gas Economy for India",
+          "category": "Economy & Environment",
+          "key_points": [
+            "LNG import infrastructure",
+            "City gas distribution",
+            "Compressed bio-gas",
+            "Pricing reform"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Honey Mission and Bee Economy",
+          "category": "Economy & Environment",
+          "key_points": [
+            "Pollination services value",
+            "Income generation for farmers",
+            "Quality standards",
+            "Export potential"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 51,
+      "name": "Set 51",
+      "topics": [
+        {
+          "topic": "Pen is Mightier Than the Sword",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Historical examples",
+            "Media influence",
+            "Diplomatic solutions",
+            "Literature as weapon"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Unity in Diversity: India's Strength",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Cultural plurality",
+            "Federal structure",
+            "Social cohesion challenges",
+            "National identity"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Knowledge is Power",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Information age relevance",
+            "Education as equalizer",
+            "Wisdom vs information",
+            "Power dynamics"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Fortune Favors the Brave",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Risk-taking in leadership",
+            "Military courage examples",
+            "Calculated boldness",
+            "Fear management"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 52,
+      "name": "Set 52",
+      "topics": [
+        {
+          "topic": "Actions Speak Louder Than Words",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Leadership by example",
+            "Promise vs delivery gap",
+            "Body language importance",
+            "Consistency in behavior"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "The Role of Failure in Success",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Growth mindset concept",
+            "Resilience building",
+            "Innovation through iteration",
+            "Famous failure stories"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Character vs Reputation",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Internal vs external perception",
+            "Integrity in private life",
+            "Social media persona",
+            "Long-term vs short-term"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Is Money the Root of All Evil?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Wealth creation benefits",
+            "Corruption and greed",
+            "Philanthropy examples",
+            "Material vs spiritual"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 53,
+      "name": "Set 53",
+      "topics": [
+        {
+          "topic": "Leadership in Times of Crisis",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Decision-making under pressure",
+            "Communication importance",
+            "Empathy and firmness",
+            "Historical crisis leaders"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Simplicity as a Way of Life",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Gandhian simplicity",
+            "Minimalism movement",
+            "Environmental benefits",
+            "Mental clarity"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Blood is Thicker Than Water",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Family bonds importance",
+            "Chosen family concept",
+            "Military brotherhood",
+            "Conflicting loyalties"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Time and Tide Wait for None",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Time management",
+            "Seizing opportunities",
+            "Procrastination dangers",
+            "Legacy building"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 54,
+      "name": "Set 54",
+      "topics": [
+        {
+          "topic": "Where There is a Will There is a Way",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Determination stories",
+            "Obstacle overcoming",
+            "Mental strength",
+            "Goal setting"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Is Discipline More Important Than Talent?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "10,000 hour rule",
+            "Military discipline culture",
+            "Natural ability limits",
+            "Consistency as skill"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Service Before Self",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Military ethos",
+            "Public service motivation",
+            "Sacrifice and duty",
+            "Selfless leadership examples"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "The Best Defense is a Good Offense",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Proactive vs reactive",
+            "Military strategy debate",
+            "Business competition",
+            "Personal growth application"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 55,
+      "name": "Set 55",
+      "topics": [
+        {
+          "topic": "All That Glitters is Not Gold",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Surface vs substance",
+            "Social media deception",
+            "Critical thinking importance",
+            "True value assessment"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Hope: Last Resort or First Strategy?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Optimism in adversity",
+            "Strategic hope vs naive hope",
+            "Prisoner of war survival",
+            "Building morale"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Gratitude as a Life Philosophy",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Psychological benefits",
+            "Relationship strengthening",
+            "Professional success link",
+            "Cultural expressions"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Solitude vs Loneliness",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Creative benefits of solitude",
+            "Leadership introspection",
+            "Military isolation handling",
+            "Self-awareness development"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 56,
+      "name": "Set 56",
+      "topics": [
+        {
+          "topic": "Art of Listening",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Active listening techniques",
+            "Intelligence gathering",
+            "Empathetic leadership",
+            "Conflict resolution"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Integrity: The Foundation of Trust",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Institutional trust erosion",
+            "Personal integrity tests",
+            "Military honor code",
+            "Whistleblower dilemmas"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Adaptability: Darwin's Lesson for Leaders",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Survival of fittest adaptation",
+            "Military flexibility",
+            "Business pivot examples",
+            "Personal growth mindset"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Courage of Conviction",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Standing against majority",
+            "Moral courage vs physical",
+            "Decision ownership",
+            "Historical examples"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 57,
+      "name": "Set 57",
+      "topics": [
+        {
+          "topic": "Empathy in Leadership",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Understanding subordinates",
+            "Mission vs welfare balance",
+            "Emotional intelligence",
+            "Building team loyalty"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Patience: A Forgotten Virtue",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Strategic patience in warfare",
+            "Instant gratification culture",
+            "Long-term planning",
+            "Perseverance stories"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Excellence vs Perfection",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Continuous improvement",
+            "Analysis paralysis",
+            "Good enough principle",
+            "Quality commitment"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Wisdom of Crowds vs Expert Opinion",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Democratic decision-making",
+            "Group think dangers",
+            "Specialist knowledge value",
+            "Balanced approach"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 58,
+      "name": "Set 58",
+      "topics": [
+        {
+          "topic": "Does History Repeat Itself?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Pattern recognition",
+            "Learning from past",
+            "Contextual differences",
+            "Predictive value"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Mind Over Matter",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Mental strength training",
+            "Physical endurance link",
+            "Meditation and focus",
+            "Military mental conditioning"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Legacy: What Will You Leave Behind?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Purpose-driven life",
+            "Impact measurement",
+            "Institutional vs personal legacy",
+            "Generational responsibility"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Humor as Leadership Tool",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Morale building",
+            "Stress relief",
+            "Cultural sensitivity",
+            "Appropriate timing"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 59,
+      "name": "Set 59",
+      "topics": [
+        {
+          "topic": "Responsibility vs Authority",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Accountability without power",
+            "Delegation principles",
+            "Mission command concept",
+            "Empowerment culture"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Is History Written by Winners?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Historiography bias",
+            "Alternative narratives",
+            "Post-colonial perspectives",
+            "Truth and reconciliation"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Silence as Communication",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Strategic silence",
+            "Active listening",
+            "Meditation practice",
+            "Diplomatic signaling"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Innovation vs Tradition in Armed Forces",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Doctrinal evolution",
+            "Technology adoption resistance",
+            "Core values preservation",
+            "Generational change"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "set_id": 60,
+      "name": "Set 60",
+      "topics": [
+        {
+          "topic": "Self-Discipline: The Master Key",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Habit formation science",
+            "Military regiment life",
+            "Goal achievement",
+            "Freedom through discipline"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Are Leaders Born or Made?",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Nature vs nurture",
+            "Military leadership training",
+            "Trait vs situational theory",
+            "Developmental experiences"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Value of Sacrifice in Modern World",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Military sacrifice culture",
+            "Personal sacrifices for goals",
+            "Societal expectations",
+            "Recognition and remembrance"
+          ],
+          "difficulty": "Hard"
+        },
+        {
+          "topic": "Trust: The Currency of Leadership",
+          "category": "Abstract & Philosophical",
+          "key_points": [
+            "Building trust mechanisms",
+            "Rebuilding broken trust",
+            "Institutional trust crisis",
+            "Leading with vulnerability"
+          ],
+          "difficulty": "Hard"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "version": "1.0",
+  "description": "Personal Interview (PI) Practice Question Bank with AI Brigadier Interviewer for live mock interviews",
+  "ai_interviewer_config": {
+    "persona": {
+      "rank": "Brigadier",
+      "name": "AI Interviewer",
+      "experience_years": 25,
+      "interviews_conducted": 5000,
+      "tone": "Professional yet supportive",
+      "style": "Socratic method with progressive probing"
+    },
+    "assessment_modes": ["practice", "assessment", "training", "full_ssb"],
+    "difficulty_levels": ["easy", "medium", "hard", "stress_test"]
+  },
+  "question_categories": [
+    {
+      "category": "Personal Background",
+      "description": "Questions about candidate's personal history, family, and background",
+      "questions": [
+        {
+          "id": "PI_PB_001",
+          "question": "Tell me about yourself and your family background.",
+          "purpose": "Ice breaker and understanding candidate's roots",
+          "follow_up_prompts": [
+            "What values did your family instill in you?",
+            "How has your family influenced your career choice?",
+            "What is your relationship with your siblings?"
+          ],
+          "olq_mapping": ["Social Adaptability", "Sense of Responsibility"]
+        },
+        {
+          "id": "PI_PB_002",
+          "question": "What are your strengths and weaknesses?",
+          "purpose": "Self-awareness assessment",
+          "follow_up_prompts": [
+            "Can you give an example of when your weakness affected your performance?",
+            "What steps are you taking to overcome your weaknesses?",
+            "How do your strengths align with a career in the armed forces?"
+          ],
+          "olq_mapping": ["Self-Confidence", "Effective Intelligence"]
+        },
+        {
+          "id": "PI_PB_003",
+          "question": "Describe a typical day in your life.",
+          "purpose": "Understanding daily habits and discipline",
+          "follow_up_prompts": [
+            "How do you manage your time effectively?",
+            "What changes would you make to your routine?",
+            "How do you balance studies/work with extracurricular activities?"
+          ],
+          "olq_mapping": ["Organising Ability", "Determination"]
+        }
+      ]
+    },
+    {
+      "category": "Education & Career",
+      "description": "Questions about academic background and career aspirations",
+      "questions": [
+        {
+          "id": "PI_EC_001",
+          "question": "Why did you choose your current field of study?",
+          "purpose": "Understanding motivation and decision-making",
+          "follow_up_prompts": [
+            "How will your education help you in the armed forces?",
+            "What if you had to choose a different field?",
+            "Did you consider other career options?"
+          ],
+          "olq_mapping": ["Reasoning Ability", "Effective Intelligence"]
+        },
+        {
+          "id": "PI_EC_002",
+          "question": "What are your career goals for the next 10 years?",
+          "purpose": "Future orientation and planning ability",
+          "follow_up_prompts": [
+            "How do you plan to achieve these goals?",
+            "What if you don't get selected for the armed forces?",
+            "Where do you see yourself if you have to leave the forces early?"
+          ],
+          "olq_mapping": ["Effective Intelligence", "Determination"]
+        },
+        {
+          "id": "PI_EC_003",
+          "question": "Tell me about your academic achievements and failures.",
+          "purpose": "Handling success and failure",
+          "follow_up_prompts": [
+            "What did you learn from your failures?",
+            "How did you bounce back from academic setbacks?",
+            "Do you think grades define intelligence?"
+          ],
+          "olq_mapping": ["Determination", "Liveliness"]
+        }
+      ]
+    },
+    {
+      "category": "Leadership & Teamwork",
+      "description": "Questions assessing leadership potential and team orientation",
+      "questions": [
+        {
+          "id": "PI_LT_001",
+          "question": "Describe a situation where you demonstrated leadership.",
+          "purpose": "Leadership experience assessment",
+          "follow_up_prompts": [
+            "What challenges did you face as a leader?",
+            "How did you handle team conflicts?",
+            "What would you do differently if given another chance?"
+          ],
+          "olq_mapping": ["Ability to Influence the Group", "Organising Ability"]
+        },
+        {
+          "id": "PI_LT_002",
+          "question": "Tell me about a time when you had to work in a team with difficult people.",
+          "purpose": "Team dynamics and conflict resolution",
+          "follow_up_prompts": [
+            "How did you handle the situation?",
+            "What did you learn about teamwork?",
+            "Would you report a team member who was not contributing?"
+          ],
+          "olq_mapping": ["Social Adaptability", "Cooperation"]
+        },
+        {
+          "id": "PI_LT_003",
+          "question": "What qualities make a good leader in the armed forces?",
+          "purpose": "Understanding of military leadership",
+          "follow_up_prompts": [
+            "Can you name a leader you admire and why?",
+            "How do you develop these qualities in yourself?",
+            "What's the difference between a boss and a leader?"
+          ],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability"]
+        }
+      ]
+    },
+    {
+      "category": "Ethics & Values",
+      "description": "Questions testing moral compass and ethical decision-making",
+      "questions": [
+        {
+          "id": "PI_EV_001",
+          "question": "What would you do if you saw a senior officer violating rules?",
+          "purpose": "Moral courage and integrity assessment",
+          "follow_up_prompts": [
+            "Would your response change if it was a peer?",
+            "What if reporting could affect your career?",
+            "How do you balance loyalty and duty?"
+          ],
+          "olq_mapping": ["Courage", "Sense of Responsibility"]
+        },
+        {
+          "id": "PI_EV_002",
+          "question": "Describe an ethical dilemma you faced and how you resolved it.",
+          "purpose": "Past ethical decision-making",
+          "follow_up_prompts": [
+            "What principles guided your decision?",
+            "Would you make the same choice today?",
+            "How do you define right and wrong?"
+          ],
+          "olq_mapping": ["Sense of Responsibility", "Effective Intelligence"]
+        },
+        {
+          "id": "PI_EV_003",
+          "question": "Is it ever acceptable to lie in the armed forces?",
+          "purpose": "Understanding of honesty and situational ethics",
+          "follow_up_prompts": [
+            "What about in combat situations?",
+            "How do you differentiate between lying and operational security?",
+            "What are the consequences of dishonesty in the forces?"
+          ],
+          "olq_mapping": ["Sense of Responsibility", "Reasoning Ability"]
+        }
+      ]
+    },
+    {
+      "category": "Current Affairs & General Awareness",
+      "description": "Questions about national and international affairs",
+      "questions": [
+        {
+          "id": "PI_CA_001",
+          "question": "What are your views on the current geopolitical situation in our region?",
+          "purpose": "Awareness of strategic environment",
+          "follow_up_prompts": [
+            "How does this affect India's security?",
+            "What role should the armed forces play?",
+            "What are the economic implications?"
+          ],
+          "olq_mapping": ["Effective Intelligence", "Reasoning Ability"]
+        },
+        {
+          "id": "PI_CA_002",
+          "question": "Tell me about a recent defense acquisition or policy you read about.",
+          "purpose": "Interest in defense matters",
+          "follow_up_prompts": [
+            "Do you think it's the right choice for India?",
+            "What are the strategic implications?",
+            "How does it compare to our neighbors' capabilities?"
+          ],
+          "olq_mapping": ["Effective Intelligence", "Initiative"]
+        },
+        {
+          "id": "PI_CA_003",
+          "question": "What are the major internal security challenges facing India today?",
+          "purpose": "Understanding of internal security",
+          "follow_up_prompts": [
+            "How should these be addressed?",
+            "What is the role of the armed forces in internal security?",
+            "How do we balance development and security?"
+          ],
+          "olq_mapping": ["Reasoning Ability", "Effective Intelligence"]
+        }
+      ]
+    },
+    {
+      "category": "Situational & Stress Questions",
+      "description": "Challenging questions to test composure under pressure",
+      "questions": [
+        {
+          "id": "PI_SS_001",
+          "question": "I don't think you have what it takes to be an officer. Convince me otherwise.",
+          "purpose": "Stress test and self-confidence assessment",
+          "follow_up_prompts": [
+            "Why should we select you over other candidates?",
+            "What makes you think you can handle the pressure?",
+            "Your performance today doesn't seem impressive."
+          ],
+          "olq_mapping": ["Self-Confidence", "Power of Expression"]
+        },
+        {
+          "id": "PI_SS_002",
+          "question": "You have to choose between saving your men or completing the mission. What do you choose?",
+          "purpose": "Decision-making under moral dilemma",
+          "follow_up_prompts": [
+            "What if the mission is critical for national security?",
+            "How do you live with your decision?",
+            "Is there a third option?"
+          ],
+          "olq_mapping": ["Speed of Decision", "Courage"]
+        },
+        {
+          "id": "PI_SS_003",
+          "question": "Describe a situation where you failed completely. What did you learn?",
+          "purpose": "Resilience and learning from failure",
+          "follow_up_prompts": [
+            "How did you recover from that failure?",
+            "Did it change your approach to challenges?",
+            "Would you take the same risk again?"
+          ],
+          "olq_mapping": ["Determination", "Liveliness"]
+        }
+      ]
+    },
+    {
+      "category": "Motivation & Commitment",
+      "description": "Questions about why the candidate wants to join the armed forces",
+      "questions": [
+        {
+          "id": "PI_MC_001",
+          "question": "Why do you want to join the armed forces?",
+          "purpose": "Core motivation assessment",
+          "follow_up_prompts": [
+            "Is it just for the uniform and prestige?",
+            "What if you're posted to a dangerous location?",
+            "How will you handle being away from family for long periods?"
+          ],
+          "olq_mapping": ["Determination", "Sense of Responsibility"]
+        },
+        {
+          "id": "PI_MC_002",
+          "question": "What sacrifices are you willing to make for the nation?",
+          "purpose": "Understanding of commitment required",
+          "follow_up_prompts": [
+            "Are you ready to miss important family events?",
+            "What if you're injured in the line of duty?",
+            "How will your family cope with your absence?"
+          ],
+          "olq_mapping": ["Sense of Responsibility", "Determination"]
+        },
+        {
+          "id": "PI_MC_003",
+          "question": "What will you do if you're not recommended after multiple attempts?",
+          "purpose": "Perseverance and backup planning",
+          "follow_up_prompts": [
+            "How many attempts have you made?",
+            "Do you have a Plan B?",
+            "Is the armed forces the only career for you?"
+          ],
+          "olq_mapping": ["Determination", "Effective Intelligence"]
+        }
+      ]
+    }
+  ],
+  "evaluation_framework": {
+    "scoring_dimensions": {
+      "communication_skills": {
+        "weight": 0.2,
+        "criteria": [
+          "Clarity of expression",
+          "Logical flow of thoughts",
+          "Appropriate vocabulary",
+          "Confidence in delivery"
+        ]
+      },
+      "subject_knowledge": {
+        "weight": 0.2,
+        "criteria": [
+          "Depth of understanding",
+          "Accuracy of information",
+          "Ability to connect concepts",
+          "Awareness of current affairs"
+        ]
+      },
+      "personality_traits": {
+        "weight": 0.3,
+        "criteria": [
+          "Self-awareness",
+          "Emotional stability",
+          "Integrity and honesty",
+          "Leadership potential"
+        ]
+      },
+      "stress_handling": {
+        "weight": 0.15,
+        "criteria": [
+          "Composure under pressure",
+          "Quick thinking",
+          "Adaptability",
+          "Resilience"
+        ]
+      },
+      "motivation_alignment": {
+        "weight": 0.15,
+        "criteria": [
+          "Clarity of career goals",
+          "Understanding of armed forces",
+          "Commitment level",
+          "Realistic expectations"
+        ]
+      }
+    },
+    "red_flags": [
+      "Inconsistent answers",
+      "Lack of preparation",
+      "Overconfidence or arrogance",
+      "Inability to admit mistakes",
+      "Blaming others for failures",
+      "Lack of knowledge about armed forces",
+      "Unrealistic expectations",
+      "Poor communication skills",
+      "Ethical compromises",
+      "Lack of commitment"
+    ],
+    "green_flags": [
+      "Honest and authentic responses",
+      "Well-prepared and informed",
+      "Balanced confidence",
+      "Willingness to learn",
+      "Taking responsibility",
+      "Clear understanding of armed forces",
+      "Realistic career expectations",
+      "Good communication skills",
+      "Strong ethical foundation",
+      "Genuine motivation"
+    ]
+  },
+  "interview_flow": {
+    "stages": [
+      {
+        "name": "Introduction",
+        "duration_minutes": 5,
+        "purpose": "Build rapport and ease candidate into the interview",
+        "question_types": ["Personal Background"]
+      },
+      {
+        "name": "Core Assessment",
+        "duration_minutes": 25,
+        "purpose": "Deep dive into candidate's capabilities and personality",
+        "question_types": ["Education & Career", "Leadership & Teamwork", "Ethics & Values", "Current Affairs"]
+      },
+      {
+        "name": "Stress Testing",
+        "duration_minutes": 10,
+        "purpose": "Assess candidate's response under pressure",
+        "question_types": ["Situational & Stress Questions"]
+      },
+      {
+        "name": "Motivation Assessment",
+        "duration_minutes": 10,
+        "purpose": "Verify candidate's commitment and understanding",
+        "question_types": ["Motivation & Commitment"]
+      },
+      {
+        "name": "Closure",
+        "duration_minutes": 5,
+        "purpose": "Allow candidate to ask questions and end on positive note",
+        "question_types": []
+      }
+    ],
+    "total_duration_minutes": 55,
+    "recommended_question_count": {
+      "easy_mode": 15,
+      "medium_mode": 20,
+      "hard_mode": 25,
+      "stress_test_mode": 30
+    }
+  }
+}

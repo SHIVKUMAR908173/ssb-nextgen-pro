@@ -1,0 +1,365 @@
+[
+  {
+    "id": 1,
+    "category": "Statement Justification & Logic",
+    "question_text": "A bat is considered a mammal because it gives birth to live young and nurses them with milk.",
+    "options": [
+      { "label": "1", "text": "True" },
+      { "label": "2", "text": "Probable" },
+      { "label": "3", "text": "False" },
+      { "label": "4", "text": "Absurd" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 2,
+    "category": "Statement Justification & Logic",
+    "question_text": "Staring directly at the sun for several hours is a scientifically proven method to develop superhuman night vision.",
+    "options": [
+      { "label": "1", "text": "True" },
+      { "label": "2", "text": "Probable" },
+      { "label": "3", "text": "False" },
+      { "label": "4", "text": "Absurd" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 3,
+    "category": "Statement Justification & Logic",
+    "question_text": "We paint iron gates and grills outside our homes because:-",
+    "options": [
+      { "label": "1", "text": "It makes the iron significantly heavier and stronger." },
+      { "label": "2", "text": "It forms a protective layer that prevents the iron from rusting." },
+      { "label": "3", "text": "Painted iron absorbs more heat during the winter months." },
+      { "label": "4", "text": "It scares away insects and birds." }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 4,
+    "category": "Statement Justification & Logic",
+    "question_text": "Mountains are generally cooler than plains during the summer because:-",
+    "options": [
+      { "label": "1", "text": "Mountains are physically closer to the moon." },
+      { "label": "2", "text": "Temperature naturally decreases with an increase in altitude." },
+      { "label": "3", "text": "It constantly snows on all mountains all year round." },
+      { "label": "4", "text": "The trees on mountains absorb all the heat from the sun." }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 5,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: broth cooks too many spoil the",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 6,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the rearranged sentence: two make to a it quarrel takes",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 7,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the FIRST letter of the word to be OMITTED: The bright intelligent stupid student passed the difficult exam.",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 8,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the LAST letter of the word to be OMITTED: He drove the fast slow car very quickly down the highway.",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 9,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word: N I A R T is a connected series of vehicles running on tracks.",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 10,
+    "category": "Sentence & Word Rearrangement",
+    "question_text": "Write the SECOND letter of the rearranged word: N A C E O is a vast continuous body of salt water.",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 11,
+    "category": "Verbal Analogies",
+    "question_text": "Telescope is to Stars as Microscope is to ________.",
+    "options": [
+      { "label": "1", "text": "Space" },
+      { "label": "2", "text": "Cells" },
+      { "label": "3", "text": "Doctor" },
+      { "label": "4", "text": "Lens" },
+      { "label": "5", "text": "Laboratory" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 12,
+    "category": "Verbal Analogies",
+    "question_text": "Cow is to Calf as Horse is to ________.",
+    "options": [
+      { "label": "1", "text": "Cub" },
+      { "label": "2", "text": "Kitten" },
+      { "label": "3", "text": "Foal" },
+      { "label": "4", "text": "Puppy" },
+      { "label": "5", "text": "Pony" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 13,
+    "category": "Verbal Analogies",
+    "question_text": "Smile is to Happiness as Tears is to ________.",
+    "options": [
+      { "label": "1", "text": "Water" },
+      { "label": "2", "text": "Eyes" },
+      { "label": "3", "text": "Sorrow" },
+      { "label": "4", "text": "Cry" },
+      { "label": "5", "text": "Joy" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 14,
+    "category": "Verbal Analogies",
+    "question_text": "Tailor is to Cloth as Carpenter is to ________.",
+    "options": [
+      { "label": "1", "text": "Iron" },
+      { "label": "2", "text": "Wood" },
+      { "label": "3", "text": "Furniture" },
+      { "label": "4", "text": "Hammer" },
+      { "label": "5", "text": "Nails" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 15,
+    "category": "Verbal Analogies",
+    "question_text": "Hungry is to Eat as Tired is to ________.",
+    "options": [
+      { "label": "1", "text": "Run" },
+      { "label": "2", "text": "Work" },
+      { "label": "3", "text": "Sleep" },
+      { "label": "4", "text": "Food" },
+      { "label": "5", "text": "Night" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 16,
+    "category": "Verbal Analogies",
+    "question_text": "Ice is to Solid as Steam is to ________.",
+    "options": [
+      { "label": "1", "text": "Liquid" },
+      { "label": "2", "text": "Gas" },
+      { "label": "3", "text": "Water" },
+      { "label": "4", "text": "Heat" },
+      { "label": "5", "text": "Hot" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 17,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following are rearranged in a proper logical sequence?",
+    "options": [
+      { "label": "1", "text": "Seed" },
+      { "label": "2", "text": "Table" },
+      { "label": "3", "text": "Tree" },
+      { "label": "4", "text": "Plant" },
+      { "label": "5", "text": "Wood" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 18,
+    "category": "Logical Order / Word Sequence",
+    "question_text": "Which item will stand middle if the following animals are rearranged in order of their typical physical size (smallest to largest)?",
+    "options": [
+      { "label": "1", "text": "Elephant" },
+      { "label": "2", "text": "Cat" },
+      { "label": "3", "text": "Mosquito" },
+      { "label": "4", "text": "Tiger" },
+      { "label": "5", "text": "Blue Whale" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 19,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      { "label": "1", "text": "Copper" },
+      { "label": "2", "text": "Silver" },
+      { "label": "3", "text": "Gold" },
+      { "label": "4", "text": "Diamond" },
+      { "label": "5", "text": "Platinum" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 20,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      { "label": "1", "text": "Rectangle" },
+      { "label": "2", "text": "Square" },
+      { "label": "3", "text": "Sphere" },
+      { "label": "4", "text": "Rhombus" },
+      { "label": "5", "text": "Parallelogram" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 21,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      { "label": "1", "text": "Piano" },
+      { "label": "2", "text": "Violin" },
+      { "label": "3", "text": "Guitar" },
+      { "label": "4", "text": "Flute" },
+      { "label": "5", "text": "Cello" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 22,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      { "label": "1", "text": "Carrot" },
+      { "label": "2", "text": "Apple" },
+      { "label": "3", "text": "Orange" },
+      { "label": "4", "text": "Mango" },
+      { "label": "5", "text": "Papaya" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 23,
+    "category": "Odd One Out (Verbal)",
+    "question_text": "Which word does not belong to the same class as others?",
+    "options": [
+      { "label": "1", "text": "Hindi" },
+      { "label": "2", "text": "English" },
+      { "label": "3", "text": "French" },
+      { "label": "4", "text": "Mathematics" },
+      { "label": "5", "text": "Spanish" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 24,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Handle" },
+      { "label": "2", "text": "Hamper" },
+      { "label": "3", "text": "Hammer" },
+      { "label": "4", "text": "Hangar" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 25,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Radical" },
+      { "label": "2", "text": "Radar" },
+      { "label": "3", "text": "Radiate" },
+      { "label": "4", "text": "Radio" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 26,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Salty" },
+      { "label": "2", "text": "Salon" },
+      { "label": "3", "text": "Salad" },
+      { "label": "4", "text": "Salvage" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 27,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Temple" },
+      { "label": "2", "text": "Tempo" },
+      { "label": "3", "text": "Temper" },
+      { "label": "4", "text": "Tempt" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 28,
+    "category": "Dictionary Order",
+    "question_text": "Write the number of the word which will come LAST in the dictionary:",
+    "options": [
+      { "label": "1", "text": "Master" },
+      { "label": "2", "text": "Mask" },
+      { "label": "3", "text": "Mass" },
+      { "label": "4", "text": "Mast" }
+    ],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 29,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two letters will come next in the following series? Z, X, V, T, R, __, __.",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  },
+  {
+    "id": 30,
+    "category": "Number & Letter Sequences",
+    "question_text": "Which two numbers will come next in the following series? 2, 4, 8, 16, 32, __, __.",
+    "options": [],
+    "correct_option": null,
+    "explanation": null
+  }
+]
