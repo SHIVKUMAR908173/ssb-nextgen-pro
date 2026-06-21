@@ -57,7 +57,7 @@ class InterviewOrchestrator:
             model=self.model_name,
             contents=prompt
         )
-        return response.text
+        return response.text or ""
 
     async def _generate_next_question(self, analysis: str, history: List[Dict[str, str]], profile: dict) -> str:
         history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in history[-4:]])
@@ -82,12 +82,11 @@ class InterviewOrchestrator:
         - Break them out of their comfort zone. If they give a generic answer, cut them off ("I don't want textbook answers. What would YOU actually do on the ground?").
         - Output ONLY the exact text of your spoken response. No quotation marks, no internal thoughts.
         """
-        """
         response = await self.client.aio.models.generate_content(
             model=self.model_name,
             contents=prompt
         )
-        return response.text
+        return response.text or ""
 
     async def _evaluate_traits(self, analysis: str) -> dict:
         prompt = f"""
@@ -106,7 +105,16 @@ class InterviewOrchestrator:
                     response_schema=EvaluatedTraits,
                 ),
             )
-            parsed = json.loads(response.text)
+            if response.parsed:
+                parsed = response.parsed if isinstance(response.parsed, dict) else getattr(response.parsed, "model_dump")()
+            else:
+                text_response = response.text or "{}"
+                if "```json" in text_response:
+                    text_response = text_response.split("```json")[1].split("```")[0].strip()
+                elif "```" in text_response:
+                    text_response = text_response.split("```")[1].split("```")[0].strip()
+                parsed = json.loads(text_response)
+            
             return {
                 "Effective Intelligence": parsed.get("effective_intelligence", 0.5),
                 "Self Confidence": parsed.get("self_confidence", 0.5),

@@ -42,7 +42,15 @@ class PsychologistAssessor:
                     response_schema=PsychologistAssessmentOutput,
                 ),
             )
-            parsed = json.loads(response.text)
+            if response.parsed:
+                return response.parsed if isinstance(response.parsed, dict) else getattr(response.parsed, "model_dump")()
+            
+            text_response = response.text or "{}"
+            if "```json" in text_response:
+                text_response = text_response.split("```json")[1].split("```")[0].strip()
+            elif "```" in text_response:
+                text_response = text_response.split("```")[1].split("```")[0].strip()
+            parsed = json.loads(text_response)
             return parsed
         except Exception as e:
             print(f"Psychologist evaluation failed: {e}")

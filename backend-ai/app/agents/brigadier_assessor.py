@@ -16,12 +16,14 @@ The system uses a multi-layered approach:
 import os
 import json
 import re
+import random
 from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime
 from enum import Enum
 from google import genai
 from pydantic import BaseModel, Field
 from google.genai import types
+from app.agents.guardrails import sanitize_candidate_input
 
 
 class AssessmentOutput(BaseModel):
@@ -443,8 +445,6 @@ class BrigadierAssessor:
         else:
             return self._rule_based_olq_analysis(response, olq_name, olq_info, context)
     
-    from app.agents.guardrails import sanitize_candidate_input
-
     def _model_based_olq_analysis(self, response: str, olq_name: str, olq_info: Dict, context: Dict) -> Dict:
         """Use AI model for OLQ analysis"""
         sanitized_response, injections = sanitize_candidate_input(response)
@@ -478,13 +478,13 @@ class BrigadierAssessor:
         {self._get_relevant_training_examples(olq_name, context)}
         
         Provide your analysis purely in valid JSON format. Do not use markdown blocks, just raw JSON. The JSON structure MUST be:
-        {
+        {{
           "score": [number 1-5],
           "evidence": ["[Quote 1]", "[Quote 2]"],
           "assessment": "[Brief explanation of your scoring]",
           "concerns": ["[concern 1]", "[concern 2]"],
           "positive_indicators": ["[indicator 1]"]
-        }
+        }}
         
         Be strict but fair in your assessment. Remember, you are evaluating potential officers
         for the armed forces.
@@ -980,12 +980,207 @@ class BrigadierAssessor:
             The candidate has not demonstrated the required level of OLQs expected for commissioning.
             Significant gaps exist in critical areas, and the overall performance is below the
             standard expected of an officer in the armed forces.
+        Args:
+            difficulty: easy, medium, hard, very_hard
+            
+        Returns:
+            Complete scenario with context and expected OLQs to assess
+        """
+        scenarios = {
+            "easy": [
+                {
+                    "type": "SRT",
+                    "scenario": "You see a junior colleague struggling with a task. You:",
+                    "expected_olqs": ["Cooperation", "Social Adaptability", "Initiative"],
+                    "assessment_focus": "Willingness to help and team orientation"
+                },
+                {
+                    "type": "WAT",
+                    "word": "Responsibility",
+                    "expected_olqs": ["Sense of Responsibility", "Determination"],
+                    "assessment_focus": "Understanding of duty and accountability"
+                }
+            ],
+            "medium": [
+                {
+                    "type": "SRT",
+                    "scenario": "You are leading a team project and two members have a serious conflict. You:",
+                    "expected_olqs": ["Ability to Influence the Group", "Social Adaptability", "Reasoning Ability"],
+                    "assessment_focus": "Conflict resolution and leadership"
+                },
+                {
+                    "type": "GPE",
+                    "scenario": "Plan a college festival with limited budget and unexpected weather forecast.",
+                    "expected_olqs": ["Organising Ability", "Effective Intelligence", "Speed of Decision"],
+                    "assessment_focus": "Planning under constraints"
+                }
+            ],
+            "hard": [
+                {
+                    "type": "SRT",
+                    "scenario": "You discover your best friend and team member has been cheating in an important examination. You:",
+                    "expected_olqs": ["Sense of Responsibility", "Courage", "Reasoning Ability"],
+                    "assessment_focus": "Ethical decision making under personal conflict"
+                },
+                {
+                    "type": "Interview",
+                    "question": "If you had to choose between following an unlawful order and your career, what would you do?",
+                    "expected_olqs": ["Courage", "Sense of Responsibility", "Self-Confidence"],
+                    "assessment_focus": "Moral courage and integrity"
+                }
+            ],
+            "very_hard": [
+                {
+                    "type": "GPE",
+                    "scenario": "A natural disaster has struck. You are the senior-most officer available. Multiple crises are unfolding simultaneously. Prioritize and manage.",
+                    "expected_olqs": ["Speed of Decision", "Organising Ability", "Effective Intelligence", "Courage"],
+                    "assessment_focus": "Crisis management and decision-making under extreme pressure"
+                },
+                {
+                    "type": "Interview",
+                    "question": "Describe a situation where you failed completely. What did you learn and how did it change you?",
+                    "expected_olqs": ["Self-Confidence", "Determination", "Effective Intelligence"],
+                    "assessment_focus": "Self-awareness, resilience, and learning ability"
+                }
+            ]
+        }
+        
+        import random
+        difficulty_scenarios = scenarios.get(difficulty, scenarios["medium"])
+        return random.choice(difficulty_scenarios)
+    
+    def evaluate_complete_interview(self, responses: List[Dict]) -> Dict[str, Any]:
+        """
+        Evaluate a complete interview session
+        
+        Args:
+            responses: List of response analyses from the interview
+            
+        Returns:
+            Comprehensive interview evaluation report
+        """
+        if not responses:
+            return {"error": "No responses to evaluate"}
+        
+        # Aggregate OLQ scores across all responses
+        aggregated_olqs = {}
+        for olq_name in self.olq_framework.keys():
+            scores = []
+            for response in responses:
+                if olq_name in response.get("olq_analysis", {}):
+                    scores.append(response["olq_analysis"][olq_name]["score"])
+            if scores:
+                aggregated_olqs[olq_name] = {
+                    "average_score": round(sum(scores) / len(scores), 2),
+                    "consistency": self._calculate_consistency(scores),
+                    "trend": self._calculate_trend(scores),
+                    "response_count": len(scores)
+                }
+        
+        # Calculate overall recommendation
+        overall_score = sum(v["average_score"] * self.olq_framework[k]["weight"] 
+                          for k, v in aggregated_olqs.items()) / sum(self.olq_framework[k]["weight"] 
+                          for k in aggregated_olqs.keys())
+        
+        # Check critical OLQs
+        critical_olqs_pass = all(
+            aggregated_olqs.get(k, {}).get("average_score", 0) >= 3.0
+            for k, v in self.olq_framework.items() if v["critical"]
+        )
+        
+        # Final recommendation
+        if overall_score >= 3.5 and critical_olqs_pass:
+            recommendation = "RECOMMEND"
+            confidence = min(95, 50 + overall_score * 12)
+        elif overall_score >= 3.0:
+            recommendation = "BORDERLINE"
+            confidence = 60
+        else:
+            recommendation = "NOT RECOMMEND"
+            confidence = max(30, 50 - (3.5 - overall_score) * 15)
+        
+        return {
+            "overall_score": round(overall_score, 2),
+            "recommendation": recommendation,
+            "confidence": round(confidence, 1),
+            "olq_summary": aggregated_olqs,
+            "critical_olqs_met": critical_olqs_pass,
+            "total_responses": len(responses),
+            "strengths": [k for k, v in aggregated_olqs.items() if v["average_score"] >= 4.0],
+            "concerns": [k for k, v in aggregated_olqs.items() if v["average_score"] < 3.0],
+            "final_assessment": self._generate_final_assessment(overall_score, critical_olqs_pass, aggregated_olqs),
+            "timestamp": datetime.now().isoformat()
+        }
+    
+    def _calculate_consistency(self, scores: List[float]) -> str:
+        """Calculate consistency of scores"""
+        if len(scores) < 2:
+            return "N/A"
+        variance = sum((s - sum(scores)/len(scores))**2 for s in scores) / len(scores)
+        if variance < 0.5:
+            return "High"
+        elif variance < 1.5:
+            return "Medium"
+        else:
+            return "Low"
+    
+    def _calculate_trend(self, scores: List[float]) -> str:
+        """Calculate trend in scores"""
+        if len(scores) < 2:
+            return "N/A"
+        if scores[-1] > scores[0]:
+            return "Improving"
+        elif scores[-1] < scores[0]:
+            return "Declining"
+        else:
+            return "Stable"
+    
+    def _generate_final_assessment(self, overall_score: float, critical_met: bool, olqs: Dict) -> str:
+        """Generate final assessment in Brigadier's authoritative voice"""
+        if overall_score >= 4.0 and critical_met:
+            return """
+            FINAL ASSESSMENT: OUTSTANDING CANDIDATE
+            
+            This candidate has demonstrated exceptional officer potential across all assessed parameters.
+            Strong leadership qualities, sound judgment, and excellent OLQs have been consistently displayed
+            throughout the interview. The candidate shows the maturity, integrity, and capability required
+            for commissioning into the armed forces.
+            
+            RECOMMENDATION: STRONGLY RECOMMEND FOR COMMISSIONING
+            """
+        elif overall_score >= 3.5 and critical_met:
+            return """
+            FINAL ASSESSMENT: GOOD CANDIDATE
+            
+            The candidate has shown good officer potential with solid demonstration of most OLQs.
+            While there are minor areas for improvement, the overall profile is positive.
+            Critical OLQs are adequately demonstrated.
+            
+            RECOMMENDATION: RECOMMEND FOR COMMISSIONING
+            """
+        elif overall_score >= 3.0:
+            return """
+            FINAL ASSESSMENT: BORDERLINE CANDIDATE
+            
+            The candidate shows potential but with notable gaps in some OLQs. Performance has been
+            inconsistent, and some critical areas need development. The candidate may benefit from
+            additional preparation before reconsideration.
+            
+            RECOMMENDATION: BORDERLINE - CONFER CONFIRMATION
+            """
+        else:
+            return """
+            FINAL ASSESSMENT: BELOW STANDARD
+            
+            The candidate has not demonstrated the required level of OLQs expected for commissioning.
+            Significant gaps exist in critical areas, and the overall performance is below the
+            standard expected of an officer in the armed forces.
             
             RECOMMENDATION: NOT RECOMMENDED FOR COMMISSIONING
             """
 
 
-def create_brigadier_assessor(client=None) -> BrigadierAssessor:
+def get_brigadier_assessor(client=None) -> BrigadierAssessor:
     """Create a new Brigadier Assessor instance"""
     if client is None:
         # If no client provided, try to instantiate the best Gemini client automatically
@@ -995,3 +1190,5 @@ def create_brigadier_assessor(client=None) -> BrigadierAssessor:
             client = genai.Client(api_key=api_key)
             
     return BrigadierAssessor(client)
+
+create_brigadier_assessor = get_brigadier_assessor

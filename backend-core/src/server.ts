@@ -232,7 +232,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
   // ASSETS (MVP)
   // Serve static image files from ./assets so dataset imagePath like:
   // "assets/tat/tat-0001.jpg" can be fetched by a frontend.
-  app.get("/assets/*", async (req: Request, res: Response) => {
+  app.get(/^\/assets\/(.*)/, async (req: Request, res: Response) => {
     const rel = req.url.replace(/^\/assets\//, ""); // e.g. "tat/tat-0001.jpg"
     const safeRel = normalize(rel).replace(/^(\.\.(\/|\\|$))+/, "");
     const assetsRoot = join(process.cwd(), "assets");
@@ -398,7 +398,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
     });
 
   // GET /api/gd-gpe/matchmaking/status?candidateId=...
-  app.get("/api/gd-gpe/matchmaking/status*", async (req: Request, res: Response) => {
+  app.get("/api/gd-gpe/matchmaking/status", async (req: Request, res: Response) => {
     try {
       const u = new URL(req.url, "http://localhost");
       const candidateId = u.searchParams.get("candidateId");

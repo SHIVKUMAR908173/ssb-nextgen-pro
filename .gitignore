@@ -11,8 +11,9 @@
 **/*.pyc
 
 # Environment variables
-**/.env
-**/.env.local
+**/.env*
+!**/.env.example
+!**/.env.template
 
 # OS files
 .DS_Store

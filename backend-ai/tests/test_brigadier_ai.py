@@ -16,7 +16,7 @@ from datetime import datetime
 sys.path.insert(0, '.')
 
 from app.agents.brigadier_assessor import BrigadierAssessor, get_brigadier_assessor, OLQ_FRAMEWORK
-from app.agents.ssb_simulator import SSBInterviewSimulator, get_ssb_simulator, InterviewMode, InterviewStage
+from app.agents.ssb_simulator import SSBInterviewSimulator, create_ssb_simulator, InterviewMode, InterviewStage
 
 
 def test_olq_framework():
@@ -123,7 +123,7 @@ def test_interview_simulator():
     print("="*60)
     
     # Test in practice mode
-    simulator = get_ssb_simulator(InterviewMode.PRACTICE)
+    simulator = create_ssb_simulator(InterviewMode.PRACTICE)
     
     # Test starting an interview
     candidate_profile = {

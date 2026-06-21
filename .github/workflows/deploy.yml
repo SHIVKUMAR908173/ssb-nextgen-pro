@@ -114,11 +114,13 @@ jobs:
     needs: frontend-check
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    env:
+      HAS_VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Deploy to Vercel
-        if: ${{ secrets.VERCEL_TOKEN != '' }}
+        if: env.HAS_VERCEL_TOKEN == 'true'
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -128,5 +130,5 @@ jobs:
           working-directory: ./frontend
 
       - name: Skip deployment (no Vercel token)
-        if: ${{ secrets.VERCEL_TOKEN == '' }}
+        if: env.HAS_VERCEL_TOKEN != 'true'
         run: echo "⏭️ Vercel deployment skipped — VERCEL_TOKEN secret not configured. Deploy via Vercel dashboard instead."
