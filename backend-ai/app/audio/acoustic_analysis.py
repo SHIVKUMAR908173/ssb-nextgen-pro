@@ -1,11 +1,11 @@
 import io
 import asyncio
 from concurrent.futures import ProcessPoolExecutor
-import numpy as np
-
 try:
+    import numpy as np
     import librosa
 except ImportError:
+    np = None
     librosa = None
 
 # Use ProcessPoolExecutor for true CPU parallelism

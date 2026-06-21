@@ -9,8 +9,5 @@ python-multipart==0.0.12
 PyJWT==2.10.1
 websockets==13.1
 google-genai==0.3.0
-librosa==0.10.2
-numpy==1.26.4
-scipy==1.14.1
 pytest==8.3.3
 gunicorn==23.0.0
