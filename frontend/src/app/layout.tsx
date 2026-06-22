@@ -22,6 +22,8 @@ export const viewport = {
   themeColor: "#020617",
 };
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,6 +35,7 @@ export default function RootLayout({
         <AuthProvider>
           <AppShell>{children}</AppShell>
         </AuthProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
