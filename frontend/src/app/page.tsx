@@ -22,6 +22,7 @@ import {
   Radio,
   Globe
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -160,12 +161,24 @@ export default function Dashboard() {
   return (
     <div className="space-y-12 pb-20">
       {/* Tactical Marquee */}
-      <div className="-mx-8">
+      <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="-mx-8"
+      >
         <TacticalMarquee />
-      </div>
+      </motion.div>
 
       {/* Welcome Banner */}
-      <section className="relative overflow-hidden rounded-[48px] bg-gradient-to-br from-[#0f2d4a] to-[#1a3d6e] p-16 border border-[#1E3A5F] shadow-2xl">
+      <motion.section 
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+        className="relative overflow-hidden rounded-[48px] bg-[#0f2d4a]/40 backdrop-blur-xl p-16 border border-white/10 shadow-[0_0_50px_rgba(30,58,95,0.5)]"
+      >
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0f2d4a]/80 via-[#1a3d6e]/50 to-[#020617]/90"></div>
         <div className="relative z-10 max-w-2xl space-y-6">
           <div className="bg-orange-500/10 border border-orange-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
             <Radio size={12} className="text-orange-500 animate-pulse" />
@@ -191,106 +204,155 @@ export default function Dashboard() {
              </Link>
           </div>
         </div>
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/4 blur-[120px]" />
-      </section>
+        <motion.div 
+          animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-[120px]" 
+        />
+        <motion.div 
+          animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-orange-500/10 rounded-full translate-y-1/2 blur-[100px]" 
+        />
+      </motion.section>
 
       {/* Stats Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {stats.map((stat) => (
-          <div key={stat.name} className="bg-[#162840] border border-[#1E3A5F] rounded-[32px] p-8 flex items-center gap-6 hover:border-orange-500/30 transition-all shadow-xl group">
-            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${stat.bg} ${stat.color} transition-transform group-hover:scale-110`}>
+        {stats.map((stat, index) => (
+          <motion.div 
+            key={stat.name} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
+            whileHover={{ y: -5, scale: 1.02 }}
+            className="bg-[#162840]/60 backdrop-blur-md border border-white/5 rounded-[32px] p-8 flex items-center gap-6 hover:border-orange-500/50 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] group relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${stat.bg} ${stat.color} transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-inner`}>
               <stat.icon size={28} />
             </div>
             <div>
               <p className="text-3xl font-black text-white tracking-tight">{stat.value}</p>
-              <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">{stat.name}</p>
+              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest">{stat.name}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </section>
 
       {/* OLQ Telemetry Section */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <div className="lg:col-span-8 bg-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 relative overflow-hidden group shadow-2xl">
+        <motion.div 
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="lg:col-span-8 bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-[48px] p-12 relative overflow-hidden group shadow-[0_0_40px_rgba(0,0,0,0.3)]"
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
           <div className="absolute top-0 right-0 p-8">
-             <div className="bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full flex items-center gap-2">
+             <div className="bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full flex items-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-[9px] font-black text-emerald-500 uppercase tracking-widest">Live Telemetry Feed</span>
              </div>
           </div>
-          <h3 className="text-2xl font-black mb-8 flex items-center gap-4 text-white uppercase tracking-tight">
-            <ShieldAlert size={24} className="text-emerald-500" />
+          <h3 className="text-2xl font-black mb-8 flex items-center gap-4 text-white uppercase tracking-tight relative z-10">
+            <ShieldAlert size={24} className="text-emerald-500 animate-pulse" />
             Performance Radar
           </h3>
-          <div className="h-[450px] w-full">
+          <div className="h-[450px] w-full relative z-10">
             <OlqRadarChart scores={radarScores} />
           </div>
-        </div>
+        </motion.div>
         
-        <div className="lg:col-span-4 bg-gradient-to-br from-[#162840] to-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 flex flex-col justify-center shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-20"></div>
-          <div className="space-y-8">
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="lg:col-span-4 bg-gradient-to-br from-[#162840]/90 to-[#0f172a]/90 backdrop-blur-xl border border-white/10 rounded-[48px] p-12 flex flex-col justify-center shadow-[0_0_40px_rgba(0,0,0,0.3)] relative overflow-hidden group"
+        >
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-20 group-hover:opacity-100 transition-opacity duration-700"></div>
+          <div className="absolute -inset-24 bg-orange-500/5 rounded-full blur-[80px] group-hover:bg-orange-500/10 transition-colors duration-1000" />
+          <div className="space-y-8 relative z-10">
             <div className="space-y-2">
                <h4 className="text-orange-500 font-black uppercase tracking-[0.3em] text-[10px] flex items-center gap-2">
-                  <Sparkles size={14} /> Mentor Briefing
+                  <Sparkles size={14} className="animate-pulse" /> Mentor Briefing
                </h4>
-               <p className="text-slate-300 font-bold leading-relaxed text-lg italic tracking-tight">
+               <p className="text-slate-200 font-bold leading-relaxed text-lg italic tracking-tight drop-shadow-md">
                 &quot;{quote}&quot;
                </p>
             </div>
-            <div className="flex items-center gap-4 p-4 bg-white/5 rounded-[24px] border border-white/5">
-               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-500 to-amber-600 flex items-center justify-center text-xs font-black text-black shadow-xl">YK</div>
+            <div className="flex items-center gap-4 p-4 bg-white/5 rounded-[24px] border border-white/10 hover:bg-white/10 transition-colors cursor-default backdrop-blur-md">
+               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-500 to-amber-600 flex items-center justify-center text-xs font-black text-black shadow-[0_0_15px_rgba(245,158,11,0.5)]">YK</div>
                <div>
                   <p className="text-sm font-black text-white uppercase tracking-tight">Major Yashkumar Yadav</p>
-                  <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black">SSB Tactical Mentor</p>
+                  <p className="text-[10px] text-slate-400 uppercase tracking-widest font-black">SSB Tactical Mentor</p>
                </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Historical Progress Chart Section */}
-      <section className="bg-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 relative overflow-hidden group shadow-2xl">
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1.0 }}
+        className="bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-[48px] p-12 relative overflow-hidden group shadow-[0_0_40px_rgba(0,0,0,0.3)]"
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
         <div className="absolute top-0 right-0 p-8">
-           <div className="bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full flex items-center gap-2">
+           <div className="bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full flex items-center gap-2 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
               <span className="text-[9px] font-black text-blue-500 uppercase tracking-widest">Historical Data</span>
            </div>
         </div>
-        <h3 className="text-2xl font-black mb-8 flex items-center gap-4 text-white uppercase tracking-tight">
+        <h3 className="text-2xl font-black mb-8 flex items-center gap-4 text-white uppercase tracking-tight relative z-10">
           <Trophy size={24} className="text-blue-500" />
           Training Trajectory
         </h3>
-        <div className="h-[350px] w-full">
+        <div className="h-[350px] w-full relative z-10">
           <ProgressLineChart history={history} />
         </div>
-      </section>
+      </motion.section>
 
       {/* Modules Grid */}
       <section className="space-y-8">
-        <div className="flex items-center justify-between">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="flex items-center justify-between"
+        >
           <div className="flex items-center gap-4">
-             <Target className="w-8 h-8 text-orange-500" />
+             <Target className="w-8 h-8 text-orange-500 animate-pulse" />
              <h3 className="font-black text-2xl tracking-tight uppercase text-white">Training Modules</h3>
           </div>
           <Link href="/vacha/assessment" className="text-[10px] font-black text-orange-500 uppercase tracking-[0.3em] flex items-center gap-2 hover:gap-4 transition-all">
             Full Sector Map <ArrowRight size={14} />
           </Link>
-        </div>
+        </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {modules.map((mod) => (
-            <Link key={mod.name} href={mod.path} className="group bg-[#162840] border border-[#1E3A5F] rounded-[40px] p-10 hover:bg-[#1a3050] hover:border-orange-500/50 transition-all cursor-pointer relative overflow-hidden block shadow-xl">
-              <div className="w-14 h-14 bg-[#0f172a] rounded-2xl flex items-center justify-center mb-6 text-slate-600 group-hover:text-orange-500 group-hover:bg-orange-500/10 transition-all border border-white/5 shadow-2xl">
-                <mod.icon size={26} />
-              </div>
-              <h4 className="text-xl font-black text-white uppercase tracking-tight mb-2 group-hover:text-orange-500 transition-colors">{mod.name}</h4>
-              <p className="text-[11px] font-bold text-slate-500 leading-relaxed mb-6 uppercase tracking-widest">{mod.desc}</p>
-              <div className="flex items-center justify-between">
-                 <span className="inline-block text-[9px] font-black text-orange-500 bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20 uppercase tracking-[0.2em]">
-                   {mod.tag}
-                 </span>
-                 <ArrowRight size={16} className="text-slate-700 group-hover:text-orange-500 group-hover:translate-x-2 transition-all" />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left opacity-50" />
+          {modules.map((mod, index) => (
+            <Link key={mod.name} href={mod.path}>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 1.3 + (index * 0.1) }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group bg-[#162840]/80 backdrop-blur-md border border-white/10 rounded-[40px] p-10 hover:bg-[#1a3050] hover:border-orange-500/50 transition-all cursor-pointer relative overflow-hidden block shadow-xl hover:shadow-[0_0_40px_rgba(249,115,22,0.15)]"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="w-14 h-14 bg-[#0f172a] rounded-2xl flex items-center justify-center mb-6 text-slate-400 group-hover:text-orange-500 group-hover:bg-orange-500/20 transition-all duration-500 border border-white/5 shadow-inner relative z-10 group-hover:rotate-6 group-hover:scale-110">
+                  <mod.icon size={26} />
+                </div>
+                <h4 className="text-xl font-black text-white uppercase tracking-tight mb-2 group-hover:text-orange-500 transition-colors relative z-10">{mod.name}</h4>
+                <p className="text-[11px] font-bold text-slate-400 leading-relaxed mb-6 uppercase tracking-widest relative z-10">{mod.desc}</p>
+                <div className="flex items-center justify-between relative z-10">
+                   <span className="inline-block text-[9px] font-black text-orange-500 bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20 uppercase tracking-[0.2em] shadow-[0_0_10px_rgba(249,115,22,0.1)]">
+                     {mod.tag}
+                   </span>
+                   <ArrowRight size={16} className="text-slate-500 group-hover:text-orange-500 group-hover:translate-x-2 transition-all duration-300" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left opacity-100 shadow-[0_-5px_20px_rgba(249,115,22,0.5)]" />
+              </motion.div>
             </Link>
           ))}
         </div>
