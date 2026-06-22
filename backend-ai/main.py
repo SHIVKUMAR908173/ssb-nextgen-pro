@@ -15,6 +15,7 @@ _cors_env = os.environ.get("CORS_ORIGINS", "")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://ssb-nextgen-pro.vercel.app",
 ]
 if _cors_env:
     origins.extend([o.strip() for o in _cors_env.split(",") if o.strip()])
