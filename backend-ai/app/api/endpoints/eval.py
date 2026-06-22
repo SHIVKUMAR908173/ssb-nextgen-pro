@@ -8,7 +8,9 @@ from typing import List, Optional
 router = APIRouter()
 
 # Configure Gemini AI for backend evaluation
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY", ""))
+_api_key = os.environ.get("GEMINI_API_KEY", "")
+if _api_key:
+    genai.configure(api_key=_api_key)
 
 class OLQScore(BaseModel):
     olq: str

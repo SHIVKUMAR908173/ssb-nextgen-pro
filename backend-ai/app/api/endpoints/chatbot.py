@@ -7,7 +7,9 @@ from typing import List, Dict
 router = APIRouter()
 
 # Configure Gemini AI for backend chatbot
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY", ""))
+_api_key = os.environ.get("GEMINI_API_KEY", "")
+if _api_key:
+    genai.configure(api_key=_api_key)
 
 class ChatMessage(BaseModel):
     role: str # 'user' or 'model'
