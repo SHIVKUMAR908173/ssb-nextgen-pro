@@ -1,6 +1,5 @@
 import io
 import asyncio
-from concurrent.futures import ProcessPoolExecutor
 try:
     import numpy as np
     import librosa
@@ -8,12 +7,10 @@ except ImportError:
     np = None
     librosa = None
 
-# Use ProcessPoolExecutor for true CPU parallelism
-_executor = ProcessPoolExecutor(max_workers=2)
 MAX_AUDIO_BYTES = 5 * 1024 * 1024  # 5MB max
 
 def _analyze_sync(audio_bytes: bytes) -> dict:
-    """Synchronous analysis function to run in process pool"""
+    """Synchronous analysis function"""
     if librosa is None:
         return {"error": "librosa not installed, mock data returned", "pitch_stability": 0.8, "confidence_score": 0.85}
 
@@ -56,5 +53,4 @@ class AcousticAnalyzer:
         if len(audio_bytes) < 100:
             return {"error": "Audio too small to analyze"}
             
-        loop = asyncio.get_event_loop()
-        return await loop.run_in_executor(_executor, _analyze_sync, audio_bytes)
+        return await asyncio.to_thread(_analyze_sync, audio_bytes)
