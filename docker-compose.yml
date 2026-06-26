@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  backend-ai:
+    build: 
+      context: ./backend-ai
+      dockerfile: Dockerfile
+    container_name: ssb_backend_ai
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - ./backend-ai/.env
+    restart: unless-stopped
+    volumes:
+      - ./backend-ai:/app
+      - /app/venv # Prevent overwriting container dependencies with local venv
+
+  backend-core:
+    build:
+      context: ./backend-core
+      dockerfile: Dockerfile
+    container_name: ssb_backend_core
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - ./backend-core/.env
+    restart: unless-stopped
+    volumes:
+      - ./backend-core:/app
+      - /app/node_modules # Prevent overwriting container node_modules with local ones
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ssb_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - ./frontend/.env.local
+    restart: unless-stopped
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules # Prevent overwriting container node_modules with local ones

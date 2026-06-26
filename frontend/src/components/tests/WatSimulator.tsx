@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, CheckCircle, Zap, ShieldAlert, Loader2, Send, UploadCloud, PenTool, Keyboard } from 'lucide-react';
 import { useAntiCheat } from '@/hooks/useAntiCheat';
@@ -17,6 +17,15 @@ interface WatResponse {
     scenario_id?: string;
     word: string;
     response: string;
+}
+
+export interface WatEvaluation {
+    overall_score: number;
+    mindset_summary: string;
+    strengths: string[];
+    weaknesses: string[];
+    recommendations: string[];
+    responses: WatResponse[];
 }
 
 export interface WatSimulatorProps {
@@ -40,7 +49,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   const [timeLeft, setTimeLeft] = useState(0);
   const [response, setResponse] = useState('');
   const [allResponses, setAllResponses] = useState<WatResponse[]>([]);
-  const [evaluation, setEvaluation] = useState<any>(null);
+  const [evaluation, setEvaluation] = useState<WatEvaluation | null>(null);
   
   const [isUploading, setIsUploading] = useState(false);
   const [ocrStatus, setOcrStatus] = useState('');
@@ -64,14 +73,18 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   };
 
   useEffect(() => {
-    fetchScenarios();
+    // Run in next tick to avoid synchronous setState inside effect warning
+    Promise.resolve().then(() => {
+      fetchScenarios();
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [setIndex]);
 
   useEffect(() => {
     if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
     if (phase !== 'TEST') return;
 
-    setTimeLeft(WORD_TIME);
+    if (phase !== 'TEST') return;
 
     timerRef.current = setInterval(() => {
       setTimeLeft(prev => {

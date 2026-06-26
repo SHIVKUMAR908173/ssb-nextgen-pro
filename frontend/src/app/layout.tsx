@@ -9,6 +9,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "SSB PREP by SSB NEXTGEN – AI Virtual Interview & Psychology Tests",
   description: "Professional SSB preparation platform with AI Virtual Interview, Psychology Tests, and more.",
+  openGraph: {
+    title: "SSB PREP by SSB NEXTGEN",
+    description: "Professional SSB preparation platform with AI Virtual Interview, Psychology Tests, and more.",
+    type: "website",
+    locale: "en_IN",
+    siteName: "SSB NEXTGEN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SSB PREP by SSB NEXTGEN",
+    description: "Professional SSB preparation platform with AI Virtual Interview, Psychology Tests, and more.",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",

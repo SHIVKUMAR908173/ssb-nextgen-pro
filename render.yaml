@@ -4,11 +4,9 @@ services:
   # ========================================
   - type: web
     name: ssb-nextgen-backend-core
-    env: node
+    env: docker
     plan: free
     rootDir: backend-core
-    buildCommand: npm install && npm run build
-    startCommand: node dist/server.js
     envVars:
       - key: NODE_VERSION
         value: "22.11.0"
@@ -31,11 +29,9 @@ services:
   # ========================================
   - type: web
     name: ssb-nextgen-backend-ai
-    env: python
+    env: docker
     plan: free
     rootDir: backend-ai
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
     envVars:
       - key: PYTHON_VERSION
         value: "3.12"

@@ -210,7 +210,7 @@ RETURNS uuid AS $$
 BEGIN
     RETURN auth.uid();
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = '';
 
 -- Helper function: check if current user is admin
 CREATE OR REPLACE FUNCTION is_admin()
@@ -222,7 +222,7 @@ BEGIN
         AND auth.users.role = 'admin'
     );
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = '';
 
 -- Timestamp trigger
 CREATE OR REPLACE FUNCTION update_updated_at_column()
@@ -231,7 +231,8 @@ BEGIN
     NEW.updated_at = NOW();
     RETURN NEW;
 END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql SET search_path = '';
+
 
 
 -- ███████████████████████████████████████████

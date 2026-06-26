@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import Parser from 'rss-parser'
 
 interface NewsItem {
   id?: string;
@@ -11,11 +12,10 @@ interface NewsItem {
   published?: string;
   author?: string;
   source?: { name: string } | string;
+  category?: string;
 }
 
 export const revalidate = 3600
-
-const DEFENCE_KEYWORDS = 'India defence military army navy airforce DRDO armed forces'
 
 function categorizeArticle(text: string): string {
   const lower = text.toLowerCase()
@@ -34,67 +34,71 @@ const STATIC_FALLBACK = [
   { id: 's3', title: 'DRDO Astra Mk2 BVR Missile Test Successful', description: 'India\'s beyond-visual-range air-to-air missile Astra Mk2 completes successful test firing.', url: 'https://indiandefensenews.in', image: null, publishedAt: '2026-05-18T00:00:00Z', source: 'DRDO', category: 'Defence Tech' },
   { id: 's4', title: 'Indian Navy INS Vikrant Completes Deployment', description: 'India\'s first indigenously built aircraft carrier completes extended operational deployment.', url: 'https://indiandefensenews.in', image: null, publishedAt: '2026-05-15T00:00:00Z', source: 'Indian Navy', category: 'Indian Navy' },
   { id: 's5', title: 'SSB Selection Process Updates for 2026 Batch', description: 'Services Selection Board announces calendar and procedure updates for 2026 selection batch.', url: 'https://joinindianarmy.nic.in', image: null, publishedAt: '2026-05-10T00:00:00Z', source: 'Join Indian Army', category: 'SSB/Recruitment' },
-  { id: 's6', title: 'BrahMos Supersonic Cruise Missile Order from Philippines', description: 'BrahMos Aerospace secures additional export order for coastal defense variant from the Philippines.', url: 'https://indiandefensenews.in', image: null, publishedAt: '2026-05-08T00:00:00Z', source: 'Defence News', category: 'Defence Tech' },
-  { id: 's7', title: 'LAC Infrastructure Development Accelerated', description: 'Border Roads Organisation completes strategic road and tunnel projects along Line of Actual Control.', url: 'https://indiandefensenews.in', image: null, publishedAt: '2026-05-05T00:00:00Z', source: 'Border Roads', category: 'Border Security' },
-  { id: 's8', title: 'NDA Entrance Exam 2026 Registration Opens', description: 'UPSC opens registration for National Defence Academy entrance examination for 2026 batch admissions.', url: 'https://upsc.gov.in', image: null, publishedAt: '2026-05-01T00:00:00Z', source: 'UPSC', category: 'SSB/Recruitment' },
 ]
 
-export async function GET() {
-  const apiKey = process.env.NEWS_API_KEY || process.env.CURRENTS_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json({ articles: STATIC_FALLBACK, source: 'static', total: STATIC_FALLBACK.length })
+function extractImage(item: any): string | undefined {
+  const htmlContent = item['content:encoded'] || item.content || '';
+  const match = htmlContent.match(/<img[^>]+src="([^">]+)"/i);
+  if (match && match[1]) {
+    return match[1];
   }
+  return undefined;
+}
 
+export async function GET() {
   try {
-    // Determine which API to use based on key format or presence
-    // NewsAPI keys are exactly 32 character hex strings, but we'll just try NewsAPI first
-    const url = new URL('https://newsapi.org/v2/everything')
-    url.searchParams.set('q', 'Indian Defence OR Indian Army OR DRDO OR Indian Navy OR IAF')
-    url.searchParams.set('language', 'en')
-    url.searchParams.set('sortBy', 'publishedAt')
-    url.searchParams.set('apiKey', apiKey)
-
-    const res = await fetch(url.toString(), { next: { revalidate: 3600 } })
-    
-    // If NewsAPI fails (e.g. 401), we can fallback to Currents or just throw
-    if (!res.ok) {
-      if (res.status === 401) {
-         // Let's try Currents API as a fallback if the key was actually a Currents key
-         const currentsUrl = new URL('https://api.currentsapi.services/v1/search')
-         currentsUrl.searchParams.set('apiKey', apiKey)
-         currentsUrl.searchParams.set('keywords', DEFENCE_KEYWORDS)
-         currentsUrl.searchParams.set('language', 'en')
-         currentsUrl.searchParams.set('country', 'IN')
-         
-         const curRes = await fetch(currentsUrl.toString(), { next: { revalidate: 3600 } })
-         if (!curRes.ok) throw new Error(`Currents API error: ${curRes.status}`)
-         const curData = await curRes.json()
-         const articles = (curData.news ?? []).map((item: NewsItem) => ({
-            id: item.id,
-            title: item.title,
-            description: item.description,
-            url: item.url,
-            image: item.image !== 'None' ? item.image : null,
-            publishedAt: item.published,
-            source: item.author ?? 'Defence News',
-            category: categorizeArticle(item.title + ' ' + (item.description || '')),
-         }))
-         return NextResponse.json({ articles, source: 'live', total: articles.length, fetchedAt: new Date().toISOString() })
+    const parser = new Parser({
+      customFields: {
+        item: ['content:encoded', 'media:content']
       }
-      throw new Error(`NewsAPI error: ${res.status}`)
+    });
+
+    // We fetch from multiple reliable RSS feeds to guarantee it loads, provides images, and direct links without API keys.
+    const [ssbCrackFeed, googleNewsFeed] = await Promise.allSettled([
+      parser.parseURL('https://ssbcrackexams.com/feed/'),
+      parser.parseURL('https://news.google.com/rss/search?q=Indian+Defence+OR+Indian+Army+OR+Indian+Navy+OR+IAF&hl=en-IN&gl=IN&ceid=IN:en')
+    ]);
+
+    let rawArticles: any[] = [];
+
+    if (ssbCrackFeed.status === 'fulfilled' && ssbCrackFeed.value) {
+      rawArticles = [...rawArticles, ...(ssbCrackFeed.value.items || []).map(item => ({...item, _sourceId: 'SSBCrack'}))];
+    }
+    
+    if (googleNewsFeed.status === 'fulfilled' && googleNewsFeed.value) {
+      rawArticles = [...rawArticles, ...(googleNewsFeed.value.items || []).map(item => ({...item, _sourceId: 'Google News'}))];
     }
 
-    const data = await res.json()
-    const articles = (data.articles ?? []).filter((item: NewsItem) => item.title !== '[Removed]').map((item: NewsItem) => ({
-      id: item.url,
-      title: item.title,
-      description: item.description,
-      url: item.url,
-      image: item.urlToImage || null,
-      publishedAt: item.publishedAt,
-      source: (typeof item.source === 'object' ? item.source?.name : item.source) ?? 'Defence News',
-      category: categorizeArticle(item.title + ' ' + (item.description || '')),
-    }))
+    // Sort by date descending
+    rawArticles.sort((a, b) => {
+      const dateA = a.isoDate ? new Date(a.isoDate).getTime() : 0;
+      const dateB = b.isoDate ? new Date(b.isoDate).getTime() : 0;
+      return dateB - dateA;
+    });
+
+    const articles: NewsItem[] = rawArticles.slice(0, 30).map((item) => {
+      // Decode HTML entities in title
+      let title = item.title || '';
+      title = title.replace(/&#8211;/g, '-').replace(/&#8217;/g, "'").replace(/&#38;/g, '&');
+      
+      let description = item.contentSnippet || item.content || '';
+      if (description.length > 250) {
+        description = description.substring(0, 247) + '...';
+      }
+
+      const category = categorizeArticle(title + ' ' + description);
+      
+      return {
+        id: item.guid || item.link,
+        title: title,
+        description: description,
+        url: item.link || '',
+        image: extractImage(item),
+        publishedAt: item.isoDate || new Date().toISOString(),
+        source: item.creator || item._sourceId || 'Defence News',
+        category: category,
+      };
+    });
 
     if (articles.length === 0) {
       return NextResponse.json({ articles: STATIC_FALLBACK, source: 'static', total: STATIC_FALLBACK.length })
@@ -106,3 +110,4 @@ export async function GET() {
     return NextResponse.json({ articles: STATIC_FALLBACK, source: 'static', total: STATIC_FALLBACK.length })
   }
 }
+

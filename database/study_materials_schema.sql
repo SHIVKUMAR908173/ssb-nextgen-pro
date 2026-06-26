@@ -40,7 +40,7 @@ BEGIN
     NEW.updated_at = now();
     RETURN NEW;
 END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql SET search_path = '';
 
 CREATE TRIGGER on_study_materials_updated
     BEFORE UPDATE ON public.study_materials

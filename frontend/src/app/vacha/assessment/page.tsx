@@ -139,8 +139,21 @@ export default function AssessmentCenterPage() {
       const pdf = new jsPDF('p', 'mm', 'a4');
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+      const pageHeight = pdf.internal.pageSize.getHeight();
       
-      pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+      let heightLeft = pdfHeight;
+      let position = 0;
+
+      pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, pdfHeight);
+      heightLeft -= pageHeight;
+
+      while (heightLeft > 0) {
+        position = heightLeft - pdfHeight; // Negative position to shift image up
+        pdf.addPage();
+        pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, pdfHeight);
+        heightLeft -= pageHeight;
+      }
+      
       pdf.save(`SSB_Performance_Report_${new Date().toISOString().split('T')[0]}.pdf`);
     } catch (err) {
       console.error('Failed to generate PDF', err);
@@ -220,11 +233,12 @@ export default function AssessmentCenterPage() {
         </button>
       </div>
 
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="bg-[#0f172a] rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl"
-      >
+      <div ref={reportRef} className="space-y-12 pb-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-[#0f172a] rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl"
+        >
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
            <div className="space-y-6">
@@ -242,8 +256,8 @@ export default function AssessmentCenterPage() {
         </div>
       </motion.div>
 
-      {/* AI Assessment Profile (PDF Exportable Area) */}
-      <div className="space-y-8" ref={reportRef}>
+      {/* AI Assessment Profile */}
+      <div className="space-y-8">
         <div className="flex items-center gap-6">
           <h2 className="text-2xl font-black text-white uppercase tracking-tight">AI Assessment Profile</h2>
           <div className="h-px flex-1 bg-white/5"></div>
@@ -405,6 +419,7 @@ export default function AssessmentCenterPage() {
         ))}
       </div>
 
+      </div>
     </div>
   )
 }

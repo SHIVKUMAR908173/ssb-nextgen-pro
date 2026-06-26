@@ -221,47 +221,8 @@ export default function TacticalChat() {
     }
   };
 
-  // Local Tactical Manual — serves answers when AI is offline
   const getLocalFallback = (query: string): string => {
-    const q = query.toLowerCase();
-    const TACTICAL_MANUAL: { keywords: string[]; answer: string }[] = [
-      {
-        keywords: ['olq', '15 olq', 'officer like qualities', 'qualities'],
-        answer: "**The 15 Officer Like Qualities (OLQs)** assessed at every SSB:\n\n- **Effective Intelligence** — Ability to find practical solutions\n- **Reasoning Ability** — Logical and analytical thinking\n- **Organizing Ability** — Planning and resource management\n- **Power of Expression** — Clear communication (verbal + written)\n- **Social Adaptability** — Fitting into diverse groups\n- **Cooperation** — Teamwork under pressure\n- **Sense of Responsibility** — Owning your actions\n- **Initiative** — Acting without being told\n- **Self Confidence** — Believing in your abilities\n- **Speed of Decision** — Quick, calculated judgment\n- **Ability to Influence the Group** — Natural leadership\n- **Liveliness** — Energy and enthusiasm\n- **Determination** — Persistence against odds\n- **Courage** — Physical and moral bravery\n- **Stamina** — Physical and mental endurance\n\nThese are NOT 15 separate checkboxes. The Board looks for a **consistent pattern** across Psychology, GTO, and Interview. Show 5-6 OLQs strongly, and you're in the recommended zone."
-      },
-      {
-        keywords: ['tat', 'thematic apperception', 'story writing', 'picture story'],
-        answer: "**TAT (Thematic Apperception Test) — Board President's Guide:**\n\n- **Format**: 12 pictures shown for 30 seconds each. You write a story for 4 minutes per picture.\n- **What they assess**: Your subconscious projection. The hero of your story IS you.\n\n**Golden Rules:**\n- Always have a **single hero** (your age, your gender)\n- Hero must **identify a problem → take initiative → lead a team → solve it**\n- Show **positive emotions** — determination, compassion, responsibility\n- End every story on a **successful, forward-looking note**\n- AVOID: Death, violence, depression, pessimism, supernatural elements\n\n**Pro Tip**: The 12th picture is a **blank card** — this reveals your DEEPEST aspiration. Write about your most genuine life goal."
-      },
-      {
-        keywords: ['wat', 'word association'],
-        answer: "**WAT (Word Association Test) — Board President's Guide:**\n\n- **Format**: 60 words shown for 15 seconds each\n- **Task**: Write a sentence using that word\n\n**What the psychologist reads:**\n- Your sentence reveals your **dominant thought patterns**\n- Positive, action-oriented sentences = Officer mindset\n- Passive, negative, or violent sentences = Red flag\n\n**Example:**\n- Word: **FAILURE**\n- ❌ Weak: \"Failure is painful\"\n- ✅ Strong: \"He treated every failure as a stepping stone to success\"\n\n**Practice**: Write 60 sentences daily. Timer: 15 seconds per word. Your speed and consistency matter."
-      },
-      {
-        keywords: ['srt', 'situation reaction'],
-        answer: "**SRT (Situation Reaction Test) — Board President's Guide:**\n\n- **Format**: 60 situations in 30 minutes (30 seconds each)\n- **Task**: Write what YOU would do\n\n**The 4-Step Formula:**\n1. **Assess** the situation calmly\n2. **Take initiative** — don't wait for others\n3. **Lead and coordinate** with available people\n4. **Follow through** to completion\n\n**Never write:**\n- \"I would call the police\" (passive, avoidant)\n- \"I would panic\" (emotional instability)\n- \"I would fight\" (aggression)\n\n**Always write:**\n- Specific, practical, immediate action\n- Show leadership, courage, and social responsibility"
-      },
-      {
-        keywords: ['interview', 'personal interview', 'io', 'piq'],
-        answer: "**Personal Interview — Board President's Intelligence:**\n\n- **Duration**: 30-45 minutes, one-on-one with the Interviewing Officer (IO)\n- **Based on**: Your PIQ (Personal Information Questionnaire)\n\n**The IO is checking:**\n- Can you handle pressure while staying composed?\n- Are your answers CONSISTENT with your PIQ?\n- Do you show genuine passion or rehearsed responses?\n\n**5 Killer Tips:**\n1. Know your PIQ by heart — every word you wrote will be questioned\n2. Be SPECIFIC — \"I organized a blood donation camp for 200 students\" beats \"I help society\"\n3. Admit weaknesses honestly, then show how you're working on them\n4. Know your service (Army/Navy/Air Force) deeply — regiments, equipment, recent operations\n5. Current affairs from the last 6 months — focus on defense, geopolitics, technology"
-      },
-      {
-        keywords: ['gto', 'group testing', 'outdoor', 'command task'],
-        answer: "**GTO Tasks — Complete Tactical Breakdown:**\n\n**Day 3 (GTO-1):**\n- Group Discussion (2 topics)\n- Group Planning Exercise (GPE)\n- Progressive Group Task (PGT)\n- Half Group Task (HGT)\n\n**Day 4 (GTO-2):**\n- Lecturette (3 minutes, 4 topics to choose from)\n- Individual Obstacles (10 obstacles, 3 min timer)\n- Command Task (YOU lead 2-3 subordinates)\n- Final Group Task\n\n**What the GTO watches:**\n- Who initiates ideas first?\n- Who organizes the group naturally?\n- Who stays calm when the plan fails?\n- Who helps others without being asked?"
-      },
-      {
-        keywords: ['tips', 'strategy', 'crack', 'prepare', 'help', 'how to'],
-        answer: "**Major Yashkumar's Top 5 Rules for SSB:**\n\n1. **Be Yourself** — The board has seen 10,000 coached candidates. They detect acting in 10 seconds.\n2. **Show initiative, not dominance** — Speak first, but listen actively. Lead when needed, follow gracefully when someone else leads.\n3. **Consistency is EVERYTHING** — Your psychology responses, GTO behavior, and interview answers must tell the SAME story about who you are.\n4. **Physical fitness is non-negotiable** — It shows discipline, stamina, and determination. Run 2.4km under 11 minutes.\n5. **Read newspapers daily** — Not just headlines. Understand WHY events happen. Form opinions. The IO will ask \"What do you think about...?\"\n\n*\"An officer is not someone who knows all the answers. An officer is someone who stays calm when there ARE no answers.\"* — Major Yashkumar Yadav"
-      }
-    ];
-
-    for (const entry of TACTICAL_MANUAL) {
-      if (entry.keywords.some(kw => q.includes(kw))) {
-        return `📡 *[Offline Mode — Local Tactical Manual]*\n\n${entry.answer}`;
-      }
-    }
-
-    return "📡 *[Offline Mode]* — Major Yashkumar's AI uplink is temporarily at capacity. I'm operating on local intel.\n\nI can still help with:\n- **15 OLQs** — Ask me \"What are the 15 OLQs?\"\n- **TAT/WAT/SRT** — Ask me about any psychology test\n- **Personal Interview** — Ask me for interview tips\n- **GTO Tasks** — Ask me about Group Testing\n- **General Strategy** — Ask me \"How to crack SSB?\"\n\nType one of these topics and I'll brief you from my tactical manual.";
+    return "📡 *[Connection Error]* — Unable to establish uplink to Major Yashkumar's AI Brain. Please check your internet connection or try again later.";
   };
 
   const resetChat = () => {

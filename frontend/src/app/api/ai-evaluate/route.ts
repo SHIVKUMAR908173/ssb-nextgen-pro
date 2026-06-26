@@ -40,31 +40,58 @@ export async function POST(req: Request) {
     let systemPrompt = customSystemPrompt || 'You are an expert military psychologist and SSB assessor.'
     let userMessage = customUserContent || ''
 
+    // If TAT, proxy to Python backend
+    if (!customSystemPrompt && type === 'tat') {
+      const pythonBackendUrl = process.env.NEXT_PUBLIC_AI_BACKEND_URL || 'http://localhost:8000/api/v1'
+      const pythonRes = await fetch(`${pythonBackendUrl}/psychologist`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          test_type: 'TAT',
+          test_stimulus: context?.imageDesc || 'TAT Picture',
+          candidate_response: content
+        })
+      })
+      
+      if (!pythonRes.ok) {
+        return NextResponse.json({ error: 'Python backend failed' }, { status: 502 })
+      }
+      
+      const pythonData = await pythonRes.json()
+      const evalData = pythonData.evaluation
+      
+      // Map Python response back to legacy TAT UI format so we don't break everything,
+      // but inject the new fields!
+      const mappedResult = {
+        scores: { heroQuality: evalData.recommendation_score * 2, themePositivity: evalData.recommendation_score * 2, olqsReflected: 0, structure: 0, expression: 0 },
+        olqsIdentified: evalData.subconscious_traits,
+        redFlags: [],
+        overallScore: evalData.recommendation_score * 20, // 1-5 to 0-100
+        grade: evalData.recommendation_score >= 4 ? 'RECOMMENDED' : evalData.recommendation_score >= 3 ? 'BORDERLINE' : 'NEEDS_WORK',
+        feedback: evalData.psychologist_thoughts,
+        modelStoryTheme: evalData.projection_analysis
+      }
+      
+      // Save result to assessment_sessions table
+      const { error: dbError } = await supabase
+        .from('assessment_sessions')
+        .insert({
+          user_id: user.id,
+          module: 'tat',
+          session_data: { content, context },
+          ai_feedback: mappedResult,
+          score: mappedResult.overallScore,
+          olq_scores: mappedResult.scores,
+          duration_seconds: context?.seconds || 0
+        })
+
+      if (dbError) console.error('Database error saving session:', dbError)
+      return NextResponse.json(mappedResult)
+    }
+
     // Build prompts based on type if not using custom prompts
     if (!customSystemPrompt && type) {
-      if (type === 'tat') {
-        systemPrompt = `You are an SSB Psychologist evaluating a TAT story.
-Evaluate based on:
-1. Hero identification (officer-like hero? clear protagonist?)
-2. Theme positivity (constructive outcome vs negative)
-3. OLQs reflected (list which OLQs visible in story)
-4. Story structure (beginning, problem, action, resolution)
-5. Language and expression quality
-6. Red flags (aggression, helplessness, anti-social themes)
-
-Return ONLY a raw JSON object with this exact structure:
-{
-  "scores": { "heroQuality": 0, "themePositivity": 0, "olqsReflected": 0, "structure": 0, "expression": 0 },
-  "olqsIdentified": ["olq1", "olq2"],
-  "redFlags": [],
-  "overallScore": 0,
-  "grade": "RECOMMENDED"|"BORDERLINE"|"NEEDS_WORK",
-  "feedback": "2-3 sentences",
-  "modelStoryTheme": "ideal approach"
-}
-All scores 1-10, overallScore 0-100.`
-        userMessage = `Image description: ${context?.imageDesc || 'Unknown hazy image'}\nCandidate's story: ${content}`
-      } else if (type === 'interview') {
+      if (type === 'interview') {
         systemPrompt = `You are evaluating an SSB interview answer.
 Return ONLY a raw JSON object with this exact structure:
 { "scores": { "content": 0, "confidence": 0, "structure": 0, "olqs": 0, "authenticity": 0 }, "microFeedback": "one line", "redFlags": [], "overallScore": 0 }`

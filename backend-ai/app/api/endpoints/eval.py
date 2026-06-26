@@ -5,6 +5,9 @@ import google.generativeai as genai
 from pydantic import BaseModel
 from typing import List, Optional
 
+from app.agents.gto_assessor import GTOAssessor
+from app.agents.psychologist_assessor import PsychologistAssessor
+
 router = APIRouter()
 
 # Configure Gemini AI for backend evaluation
@@ -145,5 +148,41 @@ OUTPUT SCHEMA:
             generation_config=genai.GenerationConfig(temperature=0.2, response_mime_type="application/json")
         )
         return {"status": "success", "evaluation": json.loads(response.text)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+class GTOEvalRequest(BaseModel):
+    scenario: str
+    candidate_response: str
+    exercise_type: str = "Group Discussion"
+
+@router.post("/gto", summary="Evaluate Candidate via GTO Assessor")
+async def evaluate_gto(request: GTOEvalRequest):
+    try:
+        assessor = GTOAssessor()
+        evaluation = assessor.evaluate(
+            exercise_type=request.exercise_type,
+            scenario=request.scenario,
+            candidate_response=request.candidate_response
+        )
+        return {"status": "success", "evaluation": evaluation}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+class PsychologistEvalRequest(BaseModel):
+    test_type: str
+    test_stimulus: str
+    candidate_response: str
+
+@router.post("/psychologist", summary="Evaluate Candidate via Psychologist Assessor")
+async def evaluate_psychologist(request: PsychologistEvalRequest):
+    try:
+        assessor = PsychologistAssessor()
+        evaluation = assessor.evaluate(
+            test_type=request.test_type,
+            test_stimulus=request.test_stimulus,
+            candidate_response=request.candidate_response
+        )
+        return {"status": "success", "evaluation": evaluation}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

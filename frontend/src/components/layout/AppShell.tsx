@@ -59,10 +59,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <h2 className="text-[10px] font-black tracking-[0.2em] text-white/40 uppercase hidden sm:block">Command Center</h2>
             </div>
             <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
-                <span className={`w-2 h-2 rounded-full ${statusColor} ${serverStatus === 'online' ? 'animate-pulse' : ''}`} />
-                <span className="text-[10px] font-black text-white tracking-tighter">{statusText}</span>
-              </div>
               <HeaderAuth />
             </div>
           </header>

@@ -41,6 +41,12 @@ export default function GDPage() {
   const [timeLeft, setTimeLeft] = useState(GD_DURATION)
   const [isRunning, setIsRunning] = useState(false)
   
+  // AI GTO Assessor states
+  const [transcript, setTranscript] = useState('')
+  const [isEvaluating, setIsEvaluating] = useState(false)
+  const [gtoResult, setGtoResult] = useState<any>(null)
+  const recognitionRef = useRef<any>(null)
+  
   // Socket & WebRTC states
   const [socket, setSocket] = useState<Socket | null>(null)
   const [roomId] = useState('gd-room-1')
@@ -59,6 +65,7 @@ export default function GDPage() {
   useEffect(() => {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current)
+      if (recognitionRef.current) recognitionRef.current.stop()
       cleanupWebRTC()
     }
   }, [])
@@ -218,6 +225,28 @@ export default function GDPage() {
     socket.emit('start_gd_topic', { roomId, topic: randomTopic })
   }
 
+  // --- AI Assessor API ---
+  const evaluateGTO = async (scenario: string, response_text: string) => {
+    if (!response_text.trim()) return
+    setIsEvaluating(true)
+    try {
+      const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
+      const res = await fetch(`${backendUrl}/gto`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ scenario, candidate_response: response_text })
+      })
+      const data = await res.json()
+      if (data.status === 'success') {
+        setGtoResult(data.evaluation)
+      }
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setIsEvaluating(false)
+    }
+  }
+
   // --- Solo Practice Logic ---
   const startPractice = (topicObj?: GDTopic) => {
     cleanupWebRTC()
@@ -228,12 +257,33 @@ export default function GDPage() {
     setLiveMode(false)
     setIsRunning(true)
     
+    setTranscript('')
+    setGtoResult(null)
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+    if (SpeechRecognition) {
+      recognitionRef.current = new SpeechRecognition()
+      recognitionRef.current.continuous = true
+      recognitionRef.current.interimResults = true
+      recognitionRef.current.onresult = (event: any) => {
+        let current = ''
+        for (let i = 0; i < event.results.length; i++) {
+          current += event.results[i][0].transcript + ' '
+        }
+        setTranscript(current)
+      }
+      try {
+        recognitionRef.current.start()
+      } catch (e) { console.error("Mic error:", e) }
+    }
+    
     if (timerRef.current) clearInterval(timerRef.current)
     timerRef.current = setInterval(() => {
       setTimeLeft(prev => {
         if (prev <= 1) {
           if (timerRef.current) clearInterval(timerRef.current)
           setIsRunning(false)
+          if (recognitionRef.current) recognitionRef.current.stop()
+          evaluateGTO(selected.topic, transcript)
           return 0
         }
         return prev - 1
@@ -244,15 +294,24 @@ export default function GDPage() {
   const stopPractice = () => {
     if (timerRef.current) clearInterval(timerRef.current)
     setIsRunning(false)
+    if (recognitionRef.current) {
+      recognitionRef.current.stop()
+    }
+    if (currentTopic && transcript) {
+      evaluateGTO(currentTopic.topic, transcript)
+    }
   }
 
   const resetPractice = () => {
     if (timerRef.current) clearInterval(timerRef.current)
+    if (recognitionRef.current) recognitionRef.current.stop()
     cleanupWebRTC()
     setPracticeMode(false)
     setLiveMode(false)
     setIsRunning(false)
     setTimeLeft(GD_DURATION)
+    setTranscript('')
+    setGtoResult(null)
   }
 
   const timerPercent = (timeLeft / GD_DURATION) * 100
@@ -457,7 +516,7 @@ export default function GDPage() {
               <RotateCcw className="w-4 h-4" /> End Practice
             </button>
           </div>
-          {timeLeft === 0 && (
+          {timeLeft === 0 && !isRunning && (
             <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-2xl p-6 text-center">
               <p className="text-emerald-400 font-black text-sm uppercase tracking-widest">Self-Assessment Checkpoint</p>
               <div className="grid grid-cols-3 gap-4 mt-4">
@@ -466,6 +525,53 @@ export default function GDPage() {
                 ))}
               </div>
             </div>
+          )}
+
+          {/* AI Live Transcript */}
+          {practiceMode && transcript && !gtoResult && (
+             <div className="bg-[#0f172a] border border-white/5 rounded-2xl p-6">
+               <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 flex items-center gap-2">
+                 <Mic className="w-3 h-3 text-red-500 animate-pulse" /> Live Speech Transcription
+               </p>
+               <p className="text-slate-300 italic text-sm">{transcript}</p>
+             </div>
+          )}
+
+          {/* AI GTO Assessor Result */}
+          {isEvaluating && (
+             <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8 text-center animate-pulse">
+               <Radio className="w-8 h-8 text-emerald-400 mx-auto mb-3 animate-bounce" />
+               <h3 className="text-emerald-400 font-black uppercase tracking-widest">Brigadier GTO Analyzing Speech...</h3>
+               <p className="text-slate-400 text-xs mt-2">Evaluating Practical Intelligence & Group Dynamics</p>
+             </div>
+          )}
+
+          {gtoResult && (
+             <div className="bg-[#064e3b] border border-emerald-500/50 rounded-2xl p-8 shadow-2xl shadow-emerald-500/20">
+               <div className="flex items-center gap-3 border-b border-emerald-500/20 pb-4 mb-4">
+                 <div className="bg-emerald-500 text-black px-3 py-1 rounded-full font-black text-sm uppercase tracking-widest">
+                   Score: {gtoResult.recommendation_score}/5
+                 </div>
+                 <h3 className="text-emerald-300 font-black uppercase tracking-widest">AI GTO Feedback</h3>
+               </div>
+               
+               <div className="space-y-4">
+                 <div className="bg-black/20 rounded-xl p-4 border border-emerald-500/10">
+                    <p className="text-[10px] font-black text-emerald-500 uppercase tracking-widest mb-1">Practical Intelligence</p>
+                    <p className="text-emerald-100/90 text-sm">{gtoResult.practical_intelligence}</p>
+                 </div>
+                 
+                 <div className="bg-black/20 rounded-xl p-4 border border-emerald-500/10">
+                    <p className="text-[10px] font-black text-emerald-500 uppercase tracking-widest mb-1">Group Dynamics Analysis</p>
+                    <p className="text-emerald-100/90 text-sm">{gtoResult.group_dynamics}</p>
+                 </div>
+
+                 <div className="bg-black/20 rounded-xl p-4 border border-emerald-500/10">
+                    <p className="text-[10px] font-black text-emerald-500 uppercase tracking-widest mb-1">GTO Internal Thoughts</p>
+                    <p className="text-slate-300 italic text-sm">"{gtoResult.gto_thoughts}"</p>
+                 </div>
+               </div>
+             </div>
           )}
         </motion.div>
       )}

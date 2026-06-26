@@ -32,8 +32,7 @@ function LoginForm() {
       setLoading(false); 
       return; 
     }
-    router.push(redirectTo);
-    router.refresh();
+    window.location.href = redirectTo;
   };
 
   const handleGoogleLogin = async () => {

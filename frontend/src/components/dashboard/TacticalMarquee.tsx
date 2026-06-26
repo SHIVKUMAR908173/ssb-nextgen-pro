@@ -11,7 +11,13 @@ const ARMY_QUOTES = [
   { text: "We fight to win and win with a knock out, because there are no runners up in war.", author: "Gen J.J. Singh" },
   { text: "I shall not withdraw an inch but will fight to our last man and our last round.", author: "Major Somnath Sharma" },
   { text: "Quartered in many a land, they found a soldier's grave; for they knew that to die for their country was the best use of the life they gave.", author: "Unknown Soldier" },
-  { text: "To find us, you must be good. To catch us, you must be fast. To beat us, you must be joking.", author: "Special Forces Motto" }
+  { text: "To find us, you must be good. To catch us, you must be fast. To beat us, you must be joking.", author: "Special Forces Motto" },
+  { text: "We live by chance, we love by choice, we kill by profession.", author: "Officers Training Academy" },
+  { text: "Sleep peacefully at your homes. Indian Army is guarding the frontiers.", author: "Indian Army" },
+  { text: "A soldier is never off duty.", author: "Indian Army" },
+  { text: "There will be no withdrawal without written orders and these orders shall never be issued.", author: "Field Marshal Sam Manekshaw" },
+  { text: "If a man says he is not afraid of dying, he is either lying or is a Gurkha.", author: "Field Marshal Sam Manekshaw" },
+  { text: "Ye Dil Maange More!", author: "Capt Vikram Batra" }
 ];
 
 export default function TacticalMarquee() {

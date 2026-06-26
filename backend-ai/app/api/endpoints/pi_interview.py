@@ -12,6 +12,8 @@ from datetime import datetime
 import uuid
 
 from app.agents.pi_interviewer import PIInterviewer, get_pi_interviewer, InterviewMode
+from app.audio.acoustic_analysis import AcousticAnalyzer
+from fastapi import File, UploadFile, Form
 
 # Router setup
 router = APIRouter(prefix="/pi-interview", tags=["Personal Interview"])
@@ -200,12 +202,14 @@ async def start_interview(request: StartInterviewRequest, current_user_id: str =
 
 
 @router.post("/submit-response/{session_id}")
-async def submit_response(session_id: str, request: SubmitResponseRequest, current_user_id: str = Depends(get_current_user_id)):
+async def submit_response(
+    session_id: str, 
+    response: str = Form(...),
+    audio: UploadFile = File(None),
+    current_user_id: str = Depends(get_current_user_id)
+):
     """
-    Submit a response to the current interview question
-    
-    Processes the response, provides analysis and feedback,
-    and returns the next question.
+    Submit a response to the current interview question with optional audio for acoustic analysis.
     """
     if session_id not in pi_sessions:
         raise HTTPException(
@@ -217,8 +221,26 @@ async def submit_response(session_id: str, request: SubmitResponseRequest, curre
         session = pi_sessions[session_id]
         interviewer = session["interviewer"]
         
+        # Process acoustic analysis if audio provided
+        acoustic_metrics = None
+        if audio:
+            audio_bytes = await audio.read()
+            analyzer = AcousticAnalyzer()
+            acoustic_metrics = await analyzer.analyze_audio_chunk(audio_bytes)
+        
         # Process response
-        result = interviewer.process_response(request.response)
+        result = interviewer.process_response(response)
+        
+        # Inject acoustic metrics into analysis if available
+        if acoustic_metrics and "error" not in acoustic_metrics and "analysis" in result:
+            result["analysis"]["voice_confidence"] = acoustic_metrics.get("confidence_score", 0.0)
+            result["analysis"]["pitch_stability"] = acoustic_metrics.get("pitch_stability", 0.0)
+            
+            # If high micro-tremors or low pitch stability, flag it
+            if acoustic_metrics.get("pitch_stability", 1.0) < 0.6:
+                if "red_flags_detected" not in result["analysis"]:
+                    result["analysis"]["red_flags_detected"] = []
+                result["analysis"]["red_flags_detected"].append("Acoustic analysis detected significant voice tremors/nervousness")
         
         # Update session
         session["response_count"] = session.get("response_count", 0) + 1
