@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-import { createServerClient } from '@supabase/ssr'
-import { cookies } from 'next/headers'
+import { createClient } from '@/lib/supabase/server'
 
 // Fallback bank just in case the database is empty
 import watBank from '@/data/wat_word_bank.json'
@@ -17,22 +16,7 @@ export async function GET(req: Request) {
         const type = searchParams.get('type') || 'WAT'
         const limit = parseInt(searchParams.get('limit') || '60', 10)
 
-        const cookieStore = await cookies()
-        const supabase = createServerClient(
-            process.env.NEXT_PUBLIC_SUPABASE_URL!,
-            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-            {
-                cookies: {
-                    getAll() { return cookieStore.getAll() },
-                    setAll(cookiesToSet) {
-                        cookiesToSet.forEach(({ name, value, options }) =>
-                            cookieStore.set(name, value, options)
-                        )
-                    },
-                },
-            }
-        )
-
+        const supabase = await createClient()
         // Try to fetch from database
         const { data: dbScenarios, error } = await supabase
             .from('mansa_scenarios')
