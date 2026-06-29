@@ -44,39 +44,56 @@ export default function SignupPage() {
       return;
     }
 
-    const supabase = createClient();
-    const { error: signUpError } = await supabase.auth.signUp({
-      email,
-      password,
-      options: {
-        data: { full_name: fullName },
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
-      },
-    });
+    try {
+      const supabase = createClient();
+      const { error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: { full_name: fullName },
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
+        },
+      });
 
-    if (signUpError) { setError(signUpError.message); setLoading(false); return; }
-    setSuccess(true);
-    setLoading(false);
+      if (signUpError) { setError(signUpError.message); setLoading(false); return; }
+      setSuccess(true);
+      setLoading(false);
+    } catch (err: any) {
+      setError(err?.message || 'An unexpected error occurred during sign up.');
+      setLoading(false);
+    }
   };
 
   const handleGoogleSignup = async () => {
     setLoading(true);
-    const supabase = createClient();
-    const { error: oauthError } = await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: { redirectTo: `${window.location.origin}/auth/callback` },
-    });
-    if (oauthError) { setError(oauthError.message); setLoading(false); }
+    setError(null);
+    try {
+      const supabase = createClient();
+      const { error: oauthError } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: { redirectTo: `${window.location.origin}/auth/callback` },
+      });
+      if (oauthError) { setError(oauthError.message); setLoading(false); }
+    } catch (err: any) {
+      setError(err?.message || 'An unexpected error occurred.');
+      setLoading(false);
+    }
   };
 
   const handleGithubSignup = async () => {
     setLoading(true);
-    const supabase = createClient();
-    const { error: oauthError } = await supabase.auth.signInWithOAuth({
-      provider: 'github',
-      options: { redirectTo: `${window.location.origin}/auth/callback` },
-    });
-    if (oauthError) { setError(oauthError.message); setLoading(false); }
+    setError(null);
+    try {
+      const supabase = createClient();
+      const { error: oauthError } = await supabase.auth.signInWithOAuth({
+        provider: 'github',
+        options: { redirectTo: `${window.location.origin}/auth/callback` },
+      });
+      if (oauthError) { setError(oauthError.message); setLoading(false); }
+    } catch (err: any) {
+      setError(err?.message || 'An unexpected error occurred.');
+      setLoading(false);
+    }
   };
 
   if (success) {
