@@ -14,6 +14,7 @@ const cspHeader = `
   upgrade-insecure-requests;
 `
 
+// @ts-expect-error - NextConfig types might not include eslint/typescript in this version
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
