@@ -268,5 +268,38 @@
         "desc": "Subjectivity in modern art and culture."
       }
     ]
+  },
+  {
+    "category": "Recent & Current Affairs",
+    "topics": [
+      {
+        "title": "Role of AI in shaping future economies",
+        "desc": "Will Artificial Intelligence create jobs or cause massive unemployment?"
+      },
+      {
+        "title": "G20 Presidency of India",
+        "desc": "Impact and outcomes for India's global standing."
+      },
+      {
+        "title": "Space Exploration vs Poverty Alleviation",
+        "desc": "Should developing nations invest heavily in space programs like Chandrayaan and Gaganyaan?"
+      },
+      {
+        "title": "E-Rupee (CBDC)",
+        "desc": "The future of digital currency and financial inclusion in India."
+      },
+      {
+        "title": "Deep Ocean Mission",
+        "desc": "Unlocking India's Blue Economy potential vs environmental concerns."
+      },
+      {
+        "title": "NEP 2020",
+        "desc": "National Education Policy: A paradigm shift or an implementation challenge?"
+      },
+      {
+        "title": "Remote Working",
+        "desc": "Is the work-from-home culture affecting the productivity and social skills of the youth?"
+      }
+    ]
   }
 ]

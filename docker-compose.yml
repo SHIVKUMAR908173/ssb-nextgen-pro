@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: ssb_backend_ai
     ports:
-      - "8000:8000"
+      - "8002:8000"
     environment:
       - NODE_ENV=development
     env_file:
@@ -39,7 +39,7 @@ services:
       dockerfile: Dockerfile
     container_name: ssb_frontend
     ports:
-      - "3000:3000"
+      - "3002:3000"
     environment:
       - NODE_ENV=development
     env_file:

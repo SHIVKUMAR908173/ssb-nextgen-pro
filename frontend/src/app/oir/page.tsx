@@ -5,6 +5,7 @@ import { Brain, Clock, ChevronRight, CheckCircle2, AlertCircle, Play, ShieldAler
 import Link from 'next/link';
 import DOMPurify from 'dompurify';
 import { useAntiCheat } from '@/hooks/useAntiCheat';
+import { OIR_VERBAL_SETS, OIR_VISUAL_SETS } from '@/lib/oir-manifest';
 
 interface OIRQuestion {
     id?: number;
@@ -26,15 +27,26 @@ export default function OIRPage() {
     const [phase, setPhase] = useState<'IDLE' | 'LOADING' | 'TESTING' | 'DONE' | 'DISQUALIFIED'>('IDLE');
     const [timeLeft, setTimeLeft] = useState(1020); // 17 minutes = 1020 seconds
 
+    const [selectedMode, setSelectedMode] = useState<'mixed' | 'verbal' | 'visual'>('mixed');
+    const [selectedSet, setSelectedSet] = useState<string>('random');
+
     useAntiCheat({
         enabled: phase === 'TESTING',
         onInfraction: () => setPhase('DISQUALIFIED')
     });
 
-    const fetchMixedBattery = async () => {
+    const fetchBattery = async () => {
         setPhase('LOADING');
         try {
-            const res = await fetch('/api/oir?type=mixed');
+            let url = '/api/oir?type=mixed';
+            if (selectedMode !== 'mixed') {
+                url = `/api/oir?type=${selectedMode}`;
+                if (selectedSet !== 'random') {
+                    url += `&set=${selectedSet}`;
+                }
+            }
+
+            const res = await fetch(url);
             const data = await res.json();
             if (data && data.data) {
                 setQuestions(data.data);
@@ -75,7 +87,10 @@ export default function OIRPage() {
         // Checking correctness based on different datasets formats
         let isCorrect = false;
         
-        if (typeof q.correct_option === 'number') {
+        if (optionIndex === -1) {
+             // Free text input
+             isCorrect = optionValue.trim().toLowerCase() === String(q.correct_option).trim().toLowerCase();
+        } else if (typeof q.correct_option === 'number') {
            // 1-indexed number
            isCorrect = (optionIndex + 1) === q.correct_option;
         } else if (typeof q.correct_option === 'string') {
@@ -168,8 +183,44 @@ export default function OIRPage() {
                             </ul>
                         </div>
 
+                        <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8 max-w-3xl mx-auto">
+                             <div className="flex flex-col text-left w-full md:w-auto">
+                                 <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 pl-1">Test Mode</label>
+                                 <select 
+                                     value={selectedMode} 
+                                     onChange={(e) => {
+                                         setSelectedMode(e.target.value as any);
+                                         setSelectedSet('random');
+                                     }}
+                                     className="bg-[#162840] border border-white/10 rounded-xl px-4 py-3 text-white font-bold min-w-[200px] outline-none focus:border-blue-500 transition-colors"
+                                 >
+                                     <option value="mixed">Mixed Battery</option>
+                                     <option value="verbal">Verbal Only</option>
+                                     <option value="visual">Non-Verbal (Visual) Only</option>
+                                 </select>
+                             </div>
+
+                             {selectedMode !== 'mixed' && (
+                                 <div className="flex flex-col text-left w-full md:w-auto">
+                                     <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 pl-1">Select Set (1-96)</label>
+                                     <select 
+                                         value={selectedSet} 
+                                         onChange={(e) => setSelectedSet(e.target.value)}
+                                         className="bg-[#162840] border border-white/10 rounded-xl px-4 py-3 text-white font-bold min-w-[200px] outline-none focus:border-blue-500 transition-colors max-h-48 overflow-y-auto"
+                                     >
+                                         <option value="random">Random Set</option>
+                                         {(selectedMode === 'verbal' ? OIR_VERBAL_SETS : OIR_VISUAL_SETS).map((setKey, idx) => (
+                                             <option key={setKey} value={setKey}>
+                                                 {selectedMode === 'verbal' ? 'Verbal' : 'Visual'} Set {idx + 1}
+                                             </option>
+                                         ))}
+                                     </select>
+                                 </div>
+                             )}
+                        </div>
+
                         <button
-                            onClick={fetchMixedBattery}
+                            onClick={fetchBattery}
                             className="bg-blue-600 hover:bg-blue-500 active:scale-95 text-white font-black py-5 px-12 rounded-2xl transition-all shadow-[0_0_40px_rgba(37,99,235,0.4)] hover:shadow-[0_0_60px_rgba(37,99,235,0.6)] uppercase tracking-widest text-lg inline-flex items-center gap-3"
                         >
                             <Play className="w-6 h-6 fill-current" /> Start Real OIR Exam
@@ -317,7 +368,7 @@ export default function OIRPage() {
                         <div className="flex flex-wrap justify-center gap-6 mb-10 bg-white/5 p-6 rounded-2xl">
                             {q.reference_figures.map((fig, idx) => (
                                 <div key={idx} className="flex flex-col items-center">
-                                    <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-xl shadow-lg border-2 border-slate-700 p-2 flex items-center justify-center" dangerouslySetInnerHTML={renderSVG(fig.svg)} />
+                                    <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-xl shadow-lg border-2 border-slate-700 p-2 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full" dangerouslySetInnerHTML={renderSVG(fig.svg)} />
                                     <span className="text-xs font-bold text-slate-400 uppercase mt-3">{fig.label}</span>
                                 </div>
                             ))}
@@ -325,43 +376,71 @@ export default function OIRPage() {
                     )}
 
                     {/* Options Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-auto">
-                        {q.options.map((opt, idx) => {
-                            const isSelected = answers[currentIdx] === opt;
-                            const isString = typeof opt === 'string';
-                            const letter = String.fromCharCode(65 + idx); // A, B, C, D
-                            
-                            return (
-                                <button
-                                    key={idx}
-                                    onClick={() => handleOptionSelect(isString ? opt : opt.label, idx)}
-                                    className={`relative flex items-center gap-4 p-6 rounded-2xl border-2 transition-all active:scale-95 group overflow-hidden text-left
-                                        ${isSelected 
-                                            ? 'bg-blue-600 border-blue-500 shadow-[0_0_20px_rgba(37,99,235,0.5)]' 
-                                            : 'bg-[#162840] border-white/10 hover:border-blue-500/50 hover:bg-[#1a2f4c]'
-                                        }
-                                    `}
-                                >
-                                    <div className={`w-8 h-8 shrink-0 rounded-lg flex items-center justify-center text-sm font-black transition-colors
-                                        ${isSelected ? 'bg-white text-blue-600' : 'bg-white/10 text-slate-400 group-hover:bg-blue-500/20 group-hover:text-blue-400'}
-                                    `}>
-                                        {letter}
-                                    </div>
-                                    
-                                    {isString ? (
-                                        <span className={`text-lg font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>
-                                            {opt}
-                                        </span>
-                                    ) : (
-                                        <div className="flex items-center gap-4">
-                                            {opt.svg && <div className="w-16 h-16 bg-white rounded-lg p-1 shrink-0" dangerouslySetInnerHTML={renderSVG(opt.svg)} />}
-                                            {opt.text && <span className={`text-lg font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>{opt.text}</span>}
+                    {q.options && q.options.length > 0 ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-auto">
+                            {q.options.map((opt, idx) => {
+                                const isSelected = answers[currentIdx] === opt;
+                                const isString = typeof opt === 'string';
+                                const letter = String.fromCharCode(65 + idx); // A, B, C, D
+                                
+                                return (
+                                    <button
+                                        key={idx}
+                                        onClick={() => handleOptionSelect(isString ? opt : opt.label, idx)}
+                                        className={`relative flex items-center gap-4 p-6 rounded-2xl border-2 transition-all active:scale-95 group overflow-hidden text-left
+                                            ${isSelected 
+                                                ? 'bg-blue-600 border-blue-500 shadow-[0_0_20px_rgba(37,99,235,0.5)]' 
+                                                : 'bg-[#162840] border-white/10 hover:border-blue-500/50 hover:bg-[#1a2f4c]'
+                                            }
+                                        `}
+                                    >
+                                        <div className={`w-8 h-8 shrink-0 rounded-lg flex items-center justify-center text-sm font-black transition-colors
+                                            ${isSelected ? 'bg-white text-blue-600' : 'bg-white/10 text-slate-400 group-hover:bg-blue-500/20 group-hover:text-blue-400'}
+                                        `}>
+                                            {letter}
                                         </div>
-                                    )}
-                                </button>
-                            );
-                        })}
-                    </div>
+                                        
+                                        {isString ? (
+                                            <span className={`text-lg font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>
+                                                {opt}
+                                            </span>
+                                        ) : (
+                                            <div className="flex items-center gap-4">
+                                                {opt.svg && <div className="w-16 h-16 bg-white rounded-lg p-1 shrink-0 [&>svg]:w-full [&>svg]:h-full" dangerouslySetInnerHTML={renderSVG(opt.svg)} />}
+                                                {opt.text && <span className={`text-lg font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>{opt.text}</span>}
+                                            </div>
+                                        )}
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    ) : (
+                        <div className="flex flex-col gap-4 mt-auto max-w-lg w-full mx-auto">
+                            <input 
+                                type="text" 
+                                id="free-text-answer"
+                                className="w-full bg-[#162840] border-2 border-white/10 focus:border-blue-500 rounded-2xl p-6 text-white text-2xl font-bold outline-none transition-colors text-center shadow-inner" 
+                                placeholder="Type your answer here..."
+                                autoComplete="off"
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter') {
+                                        const val = e.currentTarget.value;
+                                        if (val.trim()) handleOptionSelect(val, -1);
+                                    }
+                                }}
+                                autoFocus
+                            />
+                            <button 
+                               onClick={() => {
+                                  const val = (document.getElementById('free-text-answer') as HTMLInputElement).value;
+                                  if (val.trim()) handleOptionSelect(val, -1);
+                               }}
+                               className="bg-blue-600 hover:bg-blue-500 active:scale-95 text-white font-black py-4 px-8 rounded-2xl transition-all shadow-[0_0_30px_rgba(37,99,235,0.4)] uppercase tracking-widest text-lg w-full"
+                            >
+                                Submit Answer
+                            </button>
+                        </div>
+                    )}
                 </motion.div>
             </AnimatePresence>
             

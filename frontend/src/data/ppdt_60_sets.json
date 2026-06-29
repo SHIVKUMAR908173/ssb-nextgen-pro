@@ -4,12 +4,12 @@
     "sets": 60,
     "time_per_story_seconds": 270,
     "narration_time_seconds": 60,
-    "source": "SSB Standard PPDT Bank â€” Curated 60 Sets"
+    "source": "SSB Standard PPDT Bank \u00e2\u20ac\u201d Curated 60 Sets"
   },
   "sets": [
     {
       "set_id": 1,
-      "name": "Set 01 â€” Curated PPDT",
+      "name": "Set 01 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -23,7 +23,7 @@
     },
     {
       "set_id": 2,
-      "name": "Set 02 â€” Curated PPDT",
+      "name": "Set 02 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -37,7 +37,7 @@
     },
     {
       "set_id": 3,
-      "name": "Set 03 â€” Curated PPDT",
+      "name": "Set 03 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -51,7 +51,7 @@
     },
     {
       "set_id": 4,
-      "name": "Set 04 â€” Curated PPDT",
+      "name": "Set 04 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -59,13 +59,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-41-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-41-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-41-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-41-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"395\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 370 420 L 420 420 L 405 550 L 385 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"311\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0004.png"
         }
       ]
     },
     {
       "set_id": 5,
-      "name": "Set 05 â€” Curated PPDT",
+      "name": "Set 05 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -73,13 +73,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-42-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-42-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-42-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-42-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"390\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 365 420 L 415 420 L 400 550 L 380 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"430\" cy=\"414\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0005.png"
         }
       ]
     },
     {
       "set_id": 6,
-      "name": "Set 06 â€” Curated PPDT",
+      "name": "Set 06 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -87,13 +87,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0006.png"
         }
       ]
     },
     {
       "set_id": 7,
-      "name": "Set 07 â€” Curated PPDT",
+      "name": "Set 07 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -101,13 +101,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-44-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-44-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-44-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-44-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"380\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 355 420 L 405 420 L 390 550 L 370 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0007.png"
         }
       ]
     },
     {
       "set_id": 8,
-      "name": "Set 08 â€” Curated PPDT",
+      "name": "Set 08 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -115,13 +115,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-45-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-45-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-45-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-45-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"375\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 350 420 L 400 420 L 385 550 L 365 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"175\" cy=\"395\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0008.png"
         }
       ]
     },
     {
       "set_id": 9,
-      "name": "Set 09 â€” Curated PPDT",
+      "name": "Set 09 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -129,13 +129,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-46-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-46-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-46-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-46-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"370\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 345 420 L 395 420 L 380 550 L 360 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"290\" cy=\"382\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0009.png"
         }
       ]
     },
     {
       "set_id": 10,
-      "name": "Set 10 â€” Curated PPDT",
+      "name": "Set 10 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -143,13 +143,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-38-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-38-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-38-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-38-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"410\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 385 420 L 435 420 L 420 550 L 400 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"570\" cy=\"446\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0010.png"
         }
       ]
     },
     {
       "set_id": 11,
-      "name": "Set 11 â€” Curated PPDT",
+      "name": "Set 11 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -157,13 +157,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-39-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-39-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-39-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-39-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"405\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 380 420 L 430 420 L 415 550 L 395 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"415\" cy=\"307\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0011.png"
         }
       ]
     },
     {
       "set_id": 12,
-      "name": "Set 12 â€” Curated PPDT",
+      "name": "Set 12 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -171,13 +171,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-40-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-40-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-40-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-40-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"400\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 375 420 L 425 420 L 410 550 L 390 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0012.png"
         }
       ]
     },
     {
       "set_id": 13,
-      "name": "Set 13 â€” Curated PPDT",
+      "name": "Set 13 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -185,13 +185,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-41-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-41-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-41-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-41-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"395\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 370 420 L 420 420 L 405 550 L 385 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"311\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0013.png"
         }
       ]
     },
     {
       "set_id": 14,
-      "name": "Set 14 â€” Curated PPDT",
+      "name": "Set 14 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -199,13 +199,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-42-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-42-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-42-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-42-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"390\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 365 420 L 415 420 L 400 550 L 380 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"430\" cy=\"414\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0014.png"
         }
       ]
     },
     {
       "set_id": 15,
-      "name": "Set 15 â€” Curated PPDT",
+      "name": "Set 15 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -213,13 +213,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0015.png"
         }
       ]
     },
     {
       "set_id": 16,
-      "name": "Set 16 â€” Curated PPDT",
+      "name": "Set 16 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -227,13 +227,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-44-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-44-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-44-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-44-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"380\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 355 420 L 405 420 L 390 550 L 370 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0016.png"
         }
       ]
     },
     {
       "set_id": 17,
-      "name": "Set 17 â€” Curated PPDT",
+      "name": "Set 17 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -241,13 +241,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-45-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-45-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-45-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-45-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"375\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 350 420 L 400 420 L 385 550 L 365 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"175\" cy=\"395\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0017.png"
         }
       ]
     },
     {
       "set_id": 18,
-      "name": "Set 18 â€” Curated PPDT",
+      "name": "Set 18 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -255,13 +255,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-46-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-46-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-46-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-46-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"370\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 345 420 L 395 420 L 380 550 L 360 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"290\" cy=\"382\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0018.png"
         }
       ]
     },
     {
       "set_id": 19,
-      "name": "Set 19 â€” Curated PPDT",
+      "name": "Set 19 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -269,13 +269,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-47-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-47-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-47-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-47-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"365\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 340 420 L 390 420 L 375 550 L 355 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"411\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0019.png"
         }
       ]
     },
     {
       "set_id": 20,
-      "name": "Set 20 â€” Curated PPDT",
+      "name": "Set 20 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -283,13 +283,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-39-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-39-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-39-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-39-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"405\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 380 420 L 430 420 L 415 550 L 395 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"415\" cy=\"307\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0020.png"
         }
       ]
     },
     {
       "set_id": 21,
-      "name": "Set 21 â€” Curated PPDT",
+      "name": "Set 21 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -297,13 +297,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-40-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-40-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-40-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-40-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"400\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 375 420 L 425 420 L 410 550 L 390 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0021.png"
         }
       ]
     },
     {
       "set_id": 22,
-      "name": "Set 22 â€” Curated PPDT",
+      "name": "Set 22 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -311,13 +311,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-41-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-41-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-41-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-41-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"395\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 370 420 L 420 420 L 405 550 L 385 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"311\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0022.png"
         }
       ]
     },
     {
       "set_id": 23,
-      "name": "Set 23 â€” Curated PPDT",
+      "name": "Set 23 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -325,13 +325,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-42-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-42-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-42-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-42-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"390\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 365 420 L 415 420 L 400 550 L 380 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"430\" cy=\"414\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0023.png"
         }
       ]
     },
     {
       "set_id": 24,
-      "name": "Set 24 â€” Curated PPDT",
+      "name": "Set 24 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -339,13 +339,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0024.png"
         }
       ]
     },
     {
       "set_id": 25,
-      "name": "Set 25 â€” Curated PPDT",
+      "name": "Set 25 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -353,13 +353,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-44-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-44-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-44-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-44-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"380\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 355 420 L 405 420 L 390 550 L 370 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0025.png"
         }
       ]
     },
     {
       "set_id": 26,
-      "name": "Set 26 â€” Curated PPDT",
+      "name": "Set 26 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -367,13 +367,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-45-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-45-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-45-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-45-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"375\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 350 420 L 400 420 L 385 550 L 365 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"175\" cy=\"395\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0026.png"
         }
       ]
     },
     {
       "set_id": 27,
-      "name": "Set 27 â€” Curated PPDT",
+      "name": "Set 27 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -381,13 +381,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-46-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-46-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-46-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-46-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"370\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 345 420 L 395 420 L 380 550 L 360 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"290\" cy=\"382\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0027.png"
         }
       ]
     },
     {
       "set_id": 28,
-      "name": "Set 28 â€” Curated PPDT",
+      "name": "Set 28 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -395,13 +395,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-47-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-47-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-47-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-47-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"365\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 340 420 L 390 420 L 375 550 L 355 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"411\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0028.png"
         }
       ]
     },
     {
       "set_id": 29,
-      "name": "Set 29 â€” Curated PPDT",
+      "name": "Set 29 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -409,13 +409,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-48-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-48-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-48-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-48-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"360\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 335 420 L 385 420 L 370 550 L 350 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0029.png"
         }
       ]
     },
     {
       "set_id": 30,
-      "name": "Set 30 â€” Curated PPDT",
+      "name": "Set 30 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -423,13 +423,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-40-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-40-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-40-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-40-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"400\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 375 420 L 425 420 L 410 550 L 390 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0030.png"
         }
       ]
     },
     {
       "set_id": 31,
-      "name": "Set 31 â€” Curated PPDT",
+      "name": "Set 31 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -437,13 +437,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-41-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-41-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-41-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-41-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"395\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 370 420 L 420 420 L 405 550 L 385 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"311\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0031.png"
         }
       ]
     },
     {
       "set_id": 32,
-      "name": "Set 32 â€” Curated PPDT",
+      "name": "Set 32 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -451,13 +451,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-42-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-42-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-42-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-42-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"390\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 365 420 L 415 420 L 400 550 L 380 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"430\" cy=\"414\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0032.png"
         }
       ]
     },
     {
       "set_id": 33,
-      "name": "Set 33 â€” Curated PPDT",
+      "name": "Set 33 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -465,13 +465,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0033.png"
         }
       ]
     },
     {
       "set_id": 34,
-      "name": "Set 34 â€” Curated PPDT",
+      "name": "Set 34 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -479,13 +479,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-44-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-44-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-44-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-44-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"380\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 355 420 L 405 420 L 390 550 L 370 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0034.png"
         }
       ]
     },
     {
       "set_id": 35,
-      "name": "Set 35 â€” Curated PPDT",
+      "name": "Set 35 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -493,13 +493,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-45-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-45-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-45-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-45-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"375\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 350 420 L 400 420 L 385 550 L 365 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"175\" cy=\"395\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0035.png"
         }
       ]
     },
     {
       "set_id": 36,
-      "name": "Set 36 â€” Curated PPDT",
+      "name": "Set 36 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -507,13 +507,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-46-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-46-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-46-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-46-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"370\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 345 420 L 395 420 L 380 550 L 360 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"290\" cy=\"382\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0036.png"
         }
       ]
     },
     {
       "set_id": 37,
-      "name": "Set 37 â€” Curated PPDT",
+      "name": "Set 37 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -521,13 +521,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-47-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-47-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-47-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-47-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"365\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 340 420 L 390 420 L 375 550 L 355 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"411\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0037.png"
         }
       ]
     },
     {
       "set_id": 38,
-      "name": "Set 38 â€” Curated PPDT",
+      "name": "Set 38 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -535,13 +535,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-48-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-48-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-48-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-48-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"360\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 335 420 L 385 420 L 370 550 L 350 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0038.png"
         }
       ]
     },
     {
       "set_id": 39,
-      "name": "Set 39 â€” Curated PPDT",
+      "name": "Set 39 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -549,13 +549,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-49-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-49-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-49-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-49-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"355\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 330 420 L 380 420 L 365 550 L 345 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"355\" cy=\"279\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0039.png"
         }
       ]
     },
     {
       "set_id": 40,
-      "name": "Set 40 â€” Curated PPDT",
+      "name": "Set 40 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -563,13 +563,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-41-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-41-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-41-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-41-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"395\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 370 420 L 420 420 L 405 550 L 385 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"311\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0040.png"
         }
       ]
     },
     {
       "set_id": 41,
-      "name": "Set 41 â€” Curated PPDT",
+      "name": "Set 41 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -577,13 +577,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-42-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-42-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-42-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-42-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"390\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 365 420 L 415 420 L 400 550 L 380 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"430\" cy=\"414\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0041.png"
         }
       ]
     },
     {
       "set_id": 42,
-      "name": "Set 42 â€” Curated PPDT",
+      "name": "Set 42 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -591,13 +591,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0042.png"
         }
       ]
     },
     {
       "set_id": 43,
-      "name": "Set 43 â€” Curated PPDT",
+      "name": "Set 43 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -605,13 +605,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-44-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-44-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-44-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-44-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"380\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 355 420 L 405 420 L 390 550 L 370 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0043.png"
         }
       ]
     },
     {
       "set_id": 44,
-      "name": "Set 44 â€” Curated PPDT",
+      "name": "Set 44 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -619,13 +619,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-45-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-45-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-45-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-45-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"375\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 350 420 L 400 420 L 385 550 L 365 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"175\" cy=\"395\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0044.png"
         }
       ]
     },
     {
       "set_id": 45,
-      "name": "Set 45 â€” Curated PPDT",
+      "name": "Set 45 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -633,13 +633,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-46-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-46-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-46-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-46-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"370\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 345 420 L 395 420 L 380 550 L 360 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"290\" cy=\"382\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0045.png"
         }
       ]
     },
     {
       "set_id": 46,
-      "name": "Set 46 â€” Curated PPDT",
+      "name": "Set 46 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -647,13 +647,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-47-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-47-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-47-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-47-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"365\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 340 420 L 390 420 L 375 550 L 355 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"411\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0046.png"
         }
       ]
     },
     {
       "set_id": 47,
-      "name": "Set 47 â€” Curated PPDT",
+      "name": "Set 47 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -661,13 +661,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-48-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-48-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-48-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-48-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"360\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 335 420 L 385 420 L 370 550 L 350 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0047.png"
         }
       ]
     },
     {
       "set_id": 48,
-      "name": "Set 48 â€” Curated PPDT",
+      "name": "Set 48 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -675,13 +675,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-49-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-49-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-49-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-49-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"355\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 330 420 L 380 420 L 365 550 L 345 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"355\" cy=\"279\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0048.png"
         }
       ]
     },
     {
       "set_id": 49,
-      "name": "Set 49 â€” Curated PPDT",
+      "name": "Set 49 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -689,13 +689,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-50-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-50-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-50-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-50-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"350\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 325 420 L 375 420 L 360 550 L 340 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"350\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0049.png"
         }
       ]
     },
     {
       "set_id": 50,
-      "name": "Set 50 â€” Curated PPDT",
+      "name": "Set 50 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -703,13 +703,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-42-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-42-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-42-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-42-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"390\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 365 420 L 415 420 L 400 550 L 380 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"430\" cy=\"414\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0050.png"
         }
       ]
     },
     {
       "set_id": 51,
-      "name": "Set 51 â€” Curated PPDT",
+      "name": "Set 51 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -717,13 +717,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0051.png"
         }
       ]
     },
     {
       "set_id": 52,
-      "name": "Set 52 â€” Curated PPDT",
+      "name": "Set 52 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -731,13 +731,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-44-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-44-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-44-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-44-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"380\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 355 420 L 405 420 L 390 550 L 370 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0052.png"
         }
       ]
     },
     {
       "set_id": 53,
-      "name": "Set 53 â€” Curated PPDT",
+      "name": "Set 53 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -745,13 +745,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-45-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-45-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-45-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-45-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"375\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 350 420 L 400 420 L 385 550 L 365 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"175\" cy=\"395\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0053.png"
         }
       ]
     },
     {
       "set_id": 54,
-      "name": "Set 54 â€” Curated PPDT",
+      "name": "Set 54 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -759,13 +759,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-46-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-46-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-46-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-46-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"370\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 345 420 L 395 420 L 380 550 L 360 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"290\" cy=\"382\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0054.png"
         }
       ]
     },
     {
       "set_id": 55,
-      "name": "Set 55 â€” Curated PPDT",
+      "name": "Set 55 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -773,13 +773,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-47-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-47-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-47-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-47-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"365\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 340 420 L 390 420 L 375 550 L 355 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"495\" cy=\"411\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0055.png"
         }
       ]
     },
     {
       "set_id": 56,
-      "name": "Set 56 â€” Curated PPDT",
+      "name": "Set 56 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -787,13 +787,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-48-0\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-48-0\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-48-0)\" />\n      \n      <g filter=\"url(#ppdt-haze-48-0)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"300\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"280\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"360\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 335 420 L 385 420 L 370 550 L 350 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"250\" r=\"20\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0056.png"
         }
       ]
     },
     {
       "set_id": 57,
-      "name": "Set 57 â€” Curated PPDT",
+      "name": "Set 57 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -801,13 +801,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-49-3\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-49-3\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-49-3)\" />\n      \n      <g filter=\"url(#ppdt-haze-49-3)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"330\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"310\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"355\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 330 420 L 380 420 L 365 550 L 345 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"355\" cy=\"279\" r=\"35\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0057.png"
         }
       ]
     },
     {
       "set_id": 58,
-      "name": "Set 58 â€” Curated PPDT",
+      "name": "Set 58 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -815,13 +815,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-50-6\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-50-6\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-50-6)\" />\n      \n      <g filter=\"url(#ppdt-haze-50-6)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"360\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"340\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"350\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 325 420 L 375 420 L 360 550 L 340 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"150\" cy=\"350\" r=\"50\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0058.png"
         }
       ]
     },
     {
       "set_id": 59,
-      "name": "Set 59 â€” Curated PPDT",
+      "name": "Set 59 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -829,13 +829,13 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-51-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-51-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-51-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-51-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"345\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 320 420 L 370 420 L 355 550 L 335 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"535\" cy=\"263\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0059.png"
         }
       ]
     },
     {
       "set_id": 60,
-      "name": "Set 60 â€” Curated PPDT",
+      "name": "Set 60 \u00e2\u20ac\u201d Curated PPDT",
       "images": [
         {
           "description": "Hazy picture of 2-3 characters in an ambiguous setting.",
@@ -843,7 +843,7 @@
           "num_characters": 2,
           "action_visible": true,
           "gender_distribution": "Mixed",
-          "image_url": "<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\">\n      <defs>\n        <filter id=\"ppdt-haze-43-9\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"12\" result=\"blur\" />\n          <feColorMatrix type=\"matrix\" values=\"0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0\" result=\"grayscale\" />\n          <feComponentTransfer>\n             <feFuncA type=\"linear\" slope=\"0.9\"/>\n          </feComponentTransfer>\n        </filter>\n        <linearGradient id=\"ppdt-bg-43-9\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n          <stop offset=\"0%\" stop-color=\"#4a4a4a\"/>\n          <stop offset=\"100%\" stop-color=\"#2a2a2a\"/>\n        </linearGradient>\n      </defs>\n      <rect width=\"800\" height=\"600\" fill=\"url(#ppdt-bg-43-9)\" />\n      \n      <g filter=\"url(#ppdt-haze-43-9)\">\n        <!-- Background elements (trees/buildings) -->\n        <rect x=\"100\" y=\"200\" width=\"150\" height=\"300\" fill=\"#2d2d2d\" opacity=\"0.6\" />\n        <rect x=\"500\" y=\"150\" width=\"200\" height=\"400\" fill=\"#222\" opacity=\"0.7\" />\n        <path d=\"M 0 450 Q 400 350 800 500 L 800 600 L 0 600 Z\" fill=\"#111\" />\n        \n        <!-- Foreground figures (ambiguous) -->\n        <!-- Figure 1 -->\n        <ellipse cx=\"390\" cy=\"380\" rx=\"30\" ry=\"40\" fill=\"#000\" />\n        <rect x=\"370\" y=\"400\" width=\"40\" height=\"120\" fill=\"#000\" />\n        \n        <!-- Figure 2 -->\n        <ellipse cx=\"385\" cy=\"400\" rx=\"25\" ry=\"35\" fill=\"#000\" />\n        <path d=\"M 360 420 L 410 420 L 395 550 L 375 550 Z\" fill=\"#000\" />\n        \n        <!-- Dynamic object based on index -->\n        <circle cx=\"455\" cy=\"359\" r=\"25\" fill=\"#333\" opacity=\"0.8\" />\n      </g>\n      \n      <!-- Grain overlay for psychological texture -->\n      <filter id=\"noise\">\n        <feTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/>\n        <feColorMatrix type=\"matrix\" values=\"1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.1 0\" />\n      </filter>\n      <rect width=\"800\" height=\"600\" style=\"pointer-events:none;\" filter=\"url(#noise)\" opacity=\"0.4\" />\n    </svg>"
+          "image_url": "/assets/ppdt/ppdt-0060.png"
         }
       ]
     }

@@ -6,7 +6,7 @@ import { Clock, CheckCircle, ShieldAlert, Image as ImageIcon, Loader2, Upload } 
 import { TAT_SETS } from '@/lib/tat-dataset';
 
 const TOTAL_SETS = 60;
-const TOTAL_SLIDES = 12;
+const TOTAL_SLIDES = 13;
 const PICTURE_TIME = 30;
 const WRITING_TIME = 240;
 
@@ -86,7 +86,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
   };
 
   const saveAndAdvance = () => {
-    const isBlank = currentSlide === 11;
+    const isBlank = currentSlide === 12;
     const payload = {
         trigger: isBlank ? 'Blank Slide' : `TAT Picture ${currentSlide + 1}`,
         response: story.trim() || '[NO STORY WRITTEN]'
@@ -234,7 +234,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
       </div>
       <div>
         <h2 className="text-4xl font-black text-white uppercase tracking-tight mb-4">Thematic Apperception Test</h2>
-        <p className="text-slate-400 font-medium">11 Pictures • 1 Blank Slide • 30s View • 4m Write</p>
+        <p className="text-slate-400 font-medium">12 Pictures • 1 Blank Slide • 30s View • 4m Write</p>
       </div>
 
       {!isFullBattery && (
@@ -264,7 +264,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
           <li>• You will be shown a picture for 30 seconds.</li>
           <li>• After that, you have 4 minutes to write a story.</li>
           <li>• Story should have: What led to the situation, what is happening now, and what will be the outcome.</li>
-          <li>• The last (12th) slide will be blank. Write a story from your own imagination.</li>
+          <li>• The last (13th) slide will be blank. Write a story from your own imagination.</li>
         </ul>
       </div>
 
@@ -298,7 +298,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
             <ImageIcon className="w-5 h-5 text-olive-light" />
             Thematic Apperception Test
           </h2>
-          <p className="text-[10px] text-slate-400 font-mono mt-1 tracking-widest uppercase">30s View // 4m Write // 12 Slides // Board President AI</p>
+          <p className="text-[10px] text-slate-400 font-mono mt-1 tracking-widest uppercase">30s View // 4m Write // 13 Slides // Board President AI</p>
         </div>
       </div>
 
@@ -308,7 +308,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                 <ShieldAlert className="w-16 h-16 text-olive-light opacity-80" />
                 <h3 className="text-3xl font-black tracking-[0.2em] text-white uppercase">TAT Instructions</h3>
                 <p className="text-slate-400 max-w-2xl leading-relaxed text-lg">
-                    You will be shown 11 pictures, each for 30 seconds. Write a complete story: what led to the situation, what is happening, and what will be the outcome. The 12th slide is blank.
+                    You will be shown 12 pictures, each for 30 seconds. Write a complete story: what led to the situation, what is happening, and what will be the outcome. The 13th slide is blank.
                 </p>
                 <div className="bg-olive/10 border border-olive/30 rounded-xl p-4 max-w-lg text-left">
                     <p className="text-olive-light text-[9px] font-black uppercase tracking-widest mb-2">SSB TAT Formula</p>
@@ -470,7 +470,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
 
                 <div className="absolute top-4 left-6 z-20 bg-black/60 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
                      <span className="text-slate-400 text-xs uppercase font-bold tracking-widest mr-2">Slide</span>
-                     <span className="text-white font-mono font-bold text-lg">{currentSlide + 1}/12</span>
+                     <span className="text-white font-mono font-bold text-lg">{currentSlide + 1}/13</span>
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -483,7 +483,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                             transition={{ duration: 0.5 }}
                             className="absolute inset-0 flex items-center justify-center p-8 z-10"
                         >
-                            {currentSlide === 11 ? (
+                            {currentSlide === 12 ? (
                                 <div className="w-full max-w-2xl h-96 bg-white rounded-xl shadow-[0_0_50px_rgba(255,255,255,0.2)] flex items-center justify-center">
                                     <h2 className="text-black/20 text-4xl font-black uppercase tracking-widest">Blank Slide</h2>
                                 </div>
