@@ -34,7 +34,7 @@ def generate_nda_math_questions(count: int = 10) -> list[dict]:
     prompt = f"Generate {count} completely original, high-quality mathematics questions suitable for the UPSC NDA (National Defence Academy) entrance exam. Cover topics like Algebra, Calculus, Trigonometry, and Probability. Ensure the questions vary in difficulty. Provide detailed explanations."
     
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-flash-latest',
         contents=prompt,
         config={
             'response_mime_type': 'application/json',

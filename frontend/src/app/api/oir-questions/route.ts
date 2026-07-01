@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@/lib/supabase/server';
 
 interface DbOirQuestion {
   id: string | number;
@@ -17,24 +17,17 @@ interface DbOirQuestion {
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: Request) {
-  // Lazy-init: create the Supabase client inside the handler so env vars
-  // are guaranteed to exist at runtime (they may be absent at build time).
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
-  if (!supabaseUrl) {
-    return NextResponse.json({ error: 'Supabase URL not configured' }, { status: 500 });
-  }
-  const supabase = createClient(supabaseUrl, supabaseKey);
+  const supabase = await createClient();
   try {
     const { searchParams } = new URL(req.url);
     const count = parseInt(searchParams.get('count') || '50');
-    // const type = searchParams.get('type') || 'MIXED'; // Can filter by category if needed
+    const setNo = parseInt(searchParams.get('set') || '1');
 
     // Fetch random questions from the authentic OIR Engine table
-    // Using order by random() limits the performance on huge datasets, but is fine for 3,840 rows
     const { data: questions, error } = await supabase
-      .from('oir_questions')
+      .from('oir_tests')
       .select('*')
+      .eq('booklet_id', setNo)
       .limit(count);
 
     if (error) {
@@ -60,7 +53,7 @@ export async function GET(req: Request) {
       status: 'success',
       totalBankSize: 3840,
       returnedCount: formattedQuestions.length,
-      questions: formattedQuestions.length > 0 ? formattedQuestions : getFallbackMockQuestions(count)
+      questions: formattedQuestions.length > 0 ? formattedQuestions : getFallbackMockQuestions(count, setNo)
     });
 
   } catch (err) {
@@ -70,16 +63,23 @@ export async function GET(req: Request) {
 }
 
 // Fallback just in case the database hasn't been seeded yet during development
-function getFallbackMockQuestions(count: number) {
-  return Array.from({ length: count }).map((_, i) => ({
-    id: `OIR-FALLBACK-${i}`,
-    bookletNo: 101,
-    type: 'VERBAL',
-    category: 'ANALOGY',
-    difficulty: 3,
-    questionText: `If this is a fallback question, what should you do?`,
-    options: ['Wait', 'Seed Database', 'Panic', 'Skip'],
-    correctOptionIndex: 1,
-    explanation: "The database table 'oir_questions' is currently empty. Run the seed script to populate authentic questions."
-  }));
+function getFallbackMockQuestions(count: number, setNo: number) {
+  return Array.from({ length: count }).map((_, i) => {
+    // Make every even question NON_VERBAL with an image
+    const isNonVerbal = i % 2 !== 0;
+    return {
+      id: `OIR-FALLBACK-${setNo}-${i}`,
+      bookletNo: setNo,
+      type: isNonVerbal ? 'NON_VERBAL' : 'VERBAL',
+      category: isNonVerbal ? 'SPATIAL_REASONING' : 'ANALOGY',
+      difficulty: 3,
+      questionText: isNonVerbal 
+          ? `OIR Set ${setNo} - Q${i+1}: Identify the figure that completes the pattern.` 
+          : `OIR Set ${setNo} - Q${i+1}: If this is a fallback question, what should you do?`,
+      options: ['Option A', 'Option B', 'Option C', 'Option D'],
+      correctOptionIndex: 1,
+      explanation: "The database table 'oir_tests' is currently empty. Run the seed script to populate authentic questions.",
+      imageUrl: isNonVerbal ? `https://via.placeholder.com/600x400.png?text=OIR+Set+${setNo}+Figure+${i+1}` : undefined
+    };
+  });
 }

@@ -105,71 +105,27 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
     }
     setPhase('EVALUATING');
     try {
-        // Evaluate each story individually and aggregate results
-        const evaluations = [];
-        for (const resp of finalResponses) {
-            const res = await fetch('/api/ai-evaluate', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    type: 'tat',
-                    content: resp.response,
-                    context: { imageDesc: resp.trigger }
-                })
-            });
-            if (res.ok) {
-                const data = await res.json();
-                evaluations.push({
-                    story_number: resp.trigger,
-                    board_score: Math.round(data.overallScore || 5),
-                    formula_compliance: (data.overallScore || 50) >= 70 ? 'FULL' : (data.overallScore || 50) >= 40 ? 'PARTIAL' : 'NONE',
-                    psychological_insight: data.feedback || 'Story evaluated.',
-                    red_flags: data.redFlags?.length > 0 ? data.redFlags : [],
-                    ideal_story_rewrite: data.modelStoryTheme || null,
-                    olqs: data.olqsIdentified || []
-                });
-            }
+        // Send ALL stories in a single batch to the native Next.js Gemini endpoint
+        const res = await fetch('/api/evaluate-tat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ stories: finalResponses })
+        });
+
+        if (!res.ok) {
+            throw new Error(`API Error: ${res.statusText}`);
         }
 
-        // Calculate overall score
-        const avgScore = evaluations.length > 0 
-            ? Math.round(evaluations.reduce((sum, e) => sum + e.board_score, 0) / evaluations.length * 10) 
-            : 0;
-
-        // Extract OLQ projections from evaluations
-        interface OlqProjection {
-            olq: string;
-            score: number;
-        }
-        const olqProjection: OlqProjection[] = [];
-        const olqSet = new Set<string>();
-        // Add OLQs identified in stories
-        evaluations.forEach((ev) => {
-            if (ev.olqs) {
-                ev.olqs.forEach((olq: string) => olqSet.add(olq));
-            }
-        });
-        if (olqSet.size === 0) {
-            olqSet.add('Effective Intelligence');
-            olqSet.add('Social Adaptability');
-            olqSet.add('Cooperation');
-        }
-        olqSet.forEach(olq => {
-            olqProjection.push({
-                olq,
-                score: Math.min(10, Math.round(avgScore / 10))
-            });
-        });
+        const data = await res.json();
+        const evalData = data.evaluation;
 
         setEvaluation({
-            chief_psychologist_verdict: avgScore >= 70 ? 'Recommended for conference. Strong narrative ability and theme development observed.' : avgScore >= 50 ? 'Borderline. Needs improvement in story structure and OLQ projection.' : 'Not recommended. Significant improvement needed in perception and expression.',
-            dominant_psychological_theme: 'Achievement and Social Responsibility',
-            overall_tat_score: avgScore,
-            olq_projection: olqProjection,
-            story_evaluations: evaluations,
-            tat_mastery_plan: avgScore >= 70 
-                ? 'Continue practicing with complex scenarios. Focus on maintaining consistency across all 12 stories.' 
-                : 'Practice identifying key themes quickly. Work on developing a consistent hero character with strong OLQ traits. Focus on situation-thought-action-outcome structure.'
+            chief_psychologist_verdict: evalData.chief_psychologist_verdict || 'Evaluation completed.',
+            dominant_psychological_theme: evalData.dominant_psychological_theme || 'N/A',
+            overall_tat_score: evalData.overall_tat_score || 50,
+            olq_projection: evalData.olq_projection || [],
+            story_evaluations: evalData.story_evaluations || [],
+            tat_mastery_plan: evalData.tat_mastery_plan || 'Keep practicing.'
         });
 
         // Save to localStorage for Assessment Hub
@@ -178,13 +134,11 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
             history.push({
                 id: `TAT-${Date.now()}`,
                 test: 'Thematic Apperception Test',
-                score: avgScore,
-                total: 100, // percentage score
+                score: evalData.overall_tat_score || 50,
+                total: 100,
                 date: new Date().toISOString(),
                 status: 'completed',
-                improvements: avgScore >= 70 
-                    ? ['Maintain consistency across stories', 'Add slightly more detail to outcomes']
-                    : ['Work on Situation-Thought-Action-Outcome framework', 'Develop more active heroes']
+                improvements: ['Review Chief Psychologist Feedback', 'Practice with model rewrites']
             });
             localStorage.setItem('testHistory', JSON.stringify(history));
         } catch (err) {
@@ -193,7 +147,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
 
         setPhase('DONE');
     } catch (e) {
-        console.error(e);
+        console.error('Evaluation failed:', e);
         // Provide fallback evaluation on error
         setEvaluation({
             chief_psychologist_verdict: 'Evaluation service temporarily unavailable. Please try again.',

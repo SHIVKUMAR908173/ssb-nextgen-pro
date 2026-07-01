@@ -159,23 +159,23 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
     }
     setPhase('EVALUATING');
     try {
-        const res = await fetch('/api/ai-evaluate', {
+        const res = await fetch('/api/evaluate-srt', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-                type: 'srt',
-                content: JSON.stringify(finalResponses),
-                context: { test: 'Situation Reaction Test', situationCount: finalResponses.length }
-            })
+            body: JSON.stringify({ responses: finalResponses })
         });
 
+        if (!res.ok) throw new Error(`API Error: ${res.statusText}`);
+
         const data = await res.json();
-        if (data) {
+        const evalData = data.evaluation;
+        
+        if (evalData) {
             setEvaluation({
-                overall_score: data.overallScore || 75,
-                action_summary: data.feedback || 'Reaction analyzed successfully.',
-                vulnerabilities: data.redFlags?.join(', ') || 'No critical vulnerabilities.',
-                situation_breakdown: [] // Can add detailed breakdown if the API starts returning it
+                overall_score: evalData.overallScore || evalData.overall_score || 75,
+                action_summary: evalData.feedback || evalData.action_summary || 'Reaction analyzed successfully.',
+                vulnerabilities: evalData.redFlags?.join(', ') || evalData.vulnerabilities || 'No critical vulnerabilities.',
+                situation_breakdown: evalData.situation_breakdown || []
             });
             
             // Save to localStorage for Assessment Hub
@@ -184,11 +184,11 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
                 history.push({
                     id: `SRT-${Date.now()}`,
                     test: 'Situation Reaction Test',
-                    score: data.overallScore || 75,
+                    score: evalData.overallScore || evalData.overall_score || 75,
                     total: 100,
                     date: new Date().toISOString(),
                     status: 'completed',
-                    improvements: (data.overallScore || 75) >= 70 
+                    improvements: (evalData.overallScore || 75) >= 70 
                         ? ['Maintain quick reaction times', 'Keep responses practical']
                         : ['Respond faster to situations', 'Ensure responses show initiative']
                 });
@@ -199,9 +199,17 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
 
             setPhase('DONE');
         } else {
-            setPhase('DONE');
+            throw new Error('No evaluation data received');
         }
     } catch (e) {
+        console.error('Evaluation failed:', e);
+        // Fallback Evaluation
+        setEvaluation({
+            overall_score: 50,
+            action_summary: 'Evaluation service temporarily unavailable.',
+            vulnerabilities: 'N/A',
+            situation_breakdown: []
+        });
         setPhase('DONE');
     }
   };

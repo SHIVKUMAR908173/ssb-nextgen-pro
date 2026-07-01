@@ -146,7 +146,7 @@ Response: "OIR practice ke liye seedha jao /oir par — wahan 96 complete sets h
 `;
 
         const model = genAI.getGenerativeModel({ 
-            model: 'gemini-2.0-flash',
+            model: 'gemini-flash-latest',
             systemInstruction: systemInstruction
         });
         

@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Brain, Timer, BookOpen, CheckCircle2, Play, Target, ShieldAlert, Sparkles, ArrowLeft, ArrowRight, Zap } from 'lucide-react'
+import { Brain, Timer, BookOpen, Play, Target, ShieldAlert, ArrowLeft, Zap, Loader2 } from 'lucide-react'
 import Link from 'next/link'
 
 const TOTAL_SETS = 96
@@ -12,6 +12,59 @@ export default function OirHub() {
   const [selectedSet, setSelectedSet] = useState<number | null>(null)
   const [mode, setMode] = useState<'practice' | 'test' | null>(null)
   const [started, setStarted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  
+  const [questions, setQuestions] = useState<any[]>([])
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [timeLeft, setTimeLeft] = useState(30)
+  const timerRef = useRef<NodeJS.Timeout | null>(null)
+
+  const handleStart = async () => {
+    setLoading(true)
+    try {
+      const res = await fetch(`/api/oir-questions?count=${QUESTIONS_PER_SET}&set=${selectedSet || 1}`)
+      const data = await res.json()
+      if (data.questions && data.questions.length > 0) {
+        setQuestions(data.questions)
+        setCurrentQuestionIndex(0)
+        setStarted(true)
+        if (mode === 'test') {
+            setTimeLeft(30)
+        }
+      } else {
+          alert('Failed to load questions.')
+      }
+    } catch (err) {
+      console.error(err)
+      alert('Error fetching questions.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+      if (started && mode === 'test' && timeLeft > 0) {
+          timerRef.current = setTimeout(() => setTimeLeft(prev => prev - 1), 1000)
+      } else if (timeLeft === 0 && started && mode === 'test') {
+          handleNextQuestion()
+      }
+      return () => {
+          if (timerRef.current) clearTimeout(timerRef.current)
+      }
+  }, [timeLeft, started, mode])
+
+  const handleNextQuestion = () => {
+      if (currentQuestionIndex < questions.length - 1) {
+          setCurrentQuestionIndex(prev => prev + 1)
+          if (mode === 'test') setTimeLeft(30)
+      } else {
+          // Finished
+          alert('OIR Set Completed!')
+          setStarted(false)
+      }
+  }
+
+  const currentQ = questions[currentQuestionIndex]
 
   return (
     <div className="max-w-7xl mx-auto space-y-12 pb-20">
@@ -71,17 +124,18 @@ export default function OirHub() {
                   return (
                     <button
                       key={id}
-                      onClick={() => setSelectedSet(id)}
+                      onClick={() => !started && setSelectedSet(id)}
+                      disabled={started}
                       className={`w-full p-6 rounded-3xl border transition-all text-left flex flex-col gap-2 ${
                         isActive ? 'bg-red-600 border-red-500 shadow-xl shadow-red-600/20' : 'bg-[#0f172a] border-white/5 hover:border-white/10'
-                      }`}
+                      } ${started ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
                       <div className="flex items-center justify-between">
                          <span className={`text-sm font-black uppercase tracking-tight ${isActive ? 'text-white' : 'text-white/70'}`}>SET #{String(id).padStart(2, '0')}</span>
                          {isActive && <div className="w-2 h-2 rounded-full bg-white animate-pulse" />}
                       </div>
                       <p className={`text-[9px] font-bold uppercase tracking-widest ${isActive ? 'text-white/60' : 'text-slate-500'}`}>
-                        40 Questions • Logic Engine {id % 2 === 0 ? 'V' : 'NV'}
+                        {QUESTIONS_PER_SET} Questions • Logic Engine {id % 2 === 0 ? 'V' : 'NV'}
                       </p>
                     </button>
                   )
@@ -152,12 +206,12 @@ export default function OirHub() {
                         </div>
 
                         <button 
-                           disabled={!mode}
-                           onClick={() => setStarted(true)}
+                           disabled={!mode || loading}
+                           onClick={handleStart}
                            className="w-full bg-red-600 hover:bg-red-500 text-white py-6 rounded-3xl font-black uppercase tracking-[0.3em] text-xs flex items-center justify-center gap-4 shadow-2xl shadow-red-600/20 transition-all disabled:opacity-20 active:scale-95"
                         >
-                           <Play className="w-4 h-4 fill-current" />
-                           Execute Session
+                           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Play className="w-4 h-4 fill-current" />}
+                           {loading ? 'Initializing...' : 'Execute Session'}
                         </button>
                       </div>
                     )}
@@ -172,32 +226,38 @@ export default function OirHub() {
                     <div className="flex items-center justify-between mb-12">
                        <div className="flex items-center gap-4">
                           <div className="bg-[#0f172a] px-5 py-3 rounded-2xl border border-white/5">
-                             <span className="text-xl font-black text-white tabular-nums">1/40</span>
+                             <span className="text-xl font-black text-white tabular-nums">{currentQuestionIndex + 1}/{questions.length}</span>
                           </div>
                           <div className="h-1.5 w-48 bg-[#0f172a] rounded-full overflow-hidden">
-                             <div className="h-full bg-red-600" style={{ width: '2.5%' }}></div>
+                             <div className="h-full bg-red-600 transition-all" style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}></div>
                           </div>
                        </div>
                        {mode === 'test' && (
-                          <div className="flex items-center gap-3 px-6 py-3 bg-red-600/10 text-red-500 rounded-2xl font-black text-xl border border-red-600/20 shadow-xl">
-                             <Timer className="w-6 h-6 animate-pulse" />
-                             <span>00:30</span>
+                          <div className={`flex items-center gap-3 px-6 py-3 rounded-2xl font-black text-xl border shadow-xl ${timeLeft <= 5 ? 'bg-red-600/20 text-red-500 border-red-500/50 animate-pulse' : 'bg-red-600/10 text-red-500 border-red-600/20'}`}>
+                             <Timer className="w-6 h-6" />
+                             <span className="tabular-nums">00:{String(timeLeft).padStart(2, '0')}</span>
                           </div>
                        )}
                     </div>
 
                     <div className="flex-1 flex flex-col justify-center space-y-12">
                        <div className="space-y-4">
-                          <span className="text-[10px] font-black text-red-500 uppercase tracking-widest">Logic Scenario 01</span>
+                          <span className="text-[10px] font-black text-red-500 uppercase tracking-widest">Logic Scenario {String(currentQuestionIndex + 1).padStart(2, '0')}</span>
                           <h2 className="text-3xl md:text-4xl font-black text-white leading-tight uppercase tracking-tight">
-                             If COMBAT is coded as 41, what is the code for MISSION?
+                             {currentQ?.questionText}
                           </h2>
+                          {currentQ?.imageUrl && (
+                              <div className="mt-4 p-4 bg-white/5 rounded-xl border border-white/10 flex justify-center">
+                                  <img src={currentQ.imageUrl} alt="OIR Figure" className="max-h-64 object-contain" />
+                              </div>
+                          )}
                        </div>
 
                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {['42', '55', '61', '68'].map((opt, i) => (
+                          {currentQ?.options?.map((opt: string, i: number) => (
                              <button 
-                                key={opt}
+                                key={i}
+                                onClick={handleNextQuestion}
                                 className="p-8 bg-[#0f172a] hover:bg-red-600/10 border border-white/5 hover:border-red-600/30 rounded-[32px] text-left group transition-all shadow-xl"
                              >
                                 <span className="text-red-600 mr-4 font-mono font-black group-hover:text-red-500 transition-colors">{String.fromCharCode(65 + i)}/</span>
@@ -213,7 +273,7 @@ export default function OirHub() {
                        </button>
                        <div className="flex items-center gap-2">
                           <Zap className="w-4 h-4 text-red-500" />
-                          <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Logic Synapse: NV-Core</span>
+                          <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Logic Synapse: {currentQ?.category || 'MIXED'}</span>
                        </div>
                     </div>
                  </motion.div>

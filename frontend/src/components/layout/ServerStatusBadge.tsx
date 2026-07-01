@@ -8,9 +8,7 @@ export default function ServerStatusBadge() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
-        const baseUrl = apiUrl.replace(/\/api\/v1$/, '');
-        const res = await fetch(`${baseUrl}/health`, { 
+        const res = await fetch(`/api/health`, { 
           signal: AbortSignal.timeout(3000) 
         });
         const data = await res.json();

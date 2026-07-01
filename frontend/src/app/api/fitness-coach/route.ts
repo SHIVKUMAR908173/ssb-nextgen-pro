@@ -64,7 +64,7 @@ DO NOT wrap the response in markdown blocks (like \`\`\`json). Output raw, parse
 `;
 
         // Strictly mandate the latest Gemini 3.1 Pro architecture for high-level athletic profiling
-        const model = genAI.getGenerativeModel({ model: 'gemini-3.1-pro' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
 
         const result = await model.generateContent({
             contents: [{ role: 'user', parts: [{ text: systemInstruction }] }],

@@ -492,7 +492,7 @@ class BrigadierAssessor:
         
         try:
             response_obj = self.client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-flash-latest',
                 contents=prompt,
             )
             result_text = response_obj.text

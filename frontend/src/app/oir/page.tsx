@@ -134,7 +134,11 @@ export default function OIRPage() {
     };
 
     const renderSVG = (svgString: string) => {
-        return { __html: DOMPurify.sanitize(svgString, { ADD_TAGS: ['svg', 'path', 'rect', 'circle', 'line', 'polygon', 'polyline', 'text', 'g'], ADD_ATTR: ['viewBox', 'd', 'points', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'r', 'x', 'y', 'width', 'height', 'fill', 'stroke', 'stroke-width', 'stroke-linecap', 'transform', 'text-anchor', 'font-size'] }) };
+        return { __html: DOMPurify.sanitize(svgString, { 
+            USE_PROFILES: { html: true, svg: true },
+            ADD_TAGS: ['svg', 'path', 'rect', 'circle', 'line', 'polygon', 'polyline', 'text', 'g'], 
+            ADD_ATTR: ['viewBox', 'd', 'points', 'x1', 'y1', 'x2', 'y2', 'cx', 'cy', 'r', 'x', 'y', 'width', 'height', 'fill', 'stroke', 'stroke-width', 'stroke-linecap', 'transform', 'text-anchor', 'font-size'] 
+        }) };
     };
 
     if (phase === 'IDLE') {
@@ -407,7 +411,7 @@ export default function OIRPage() {
                                         ) : (
                                             <div className="flex items-center gap-4">
                                                 {opt.svg && <div className="w-16 h-16 bg-white rounded-lg p-1 shrink-0 [&>svg]:w-full [&>svg]:h-full" dangerouslySetInnerHTML={renderSVG(opt.svg)} />}
-                                                {opt.text && <span className={`text-lg font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>{opt.text}</span>}
+                                                {(opt.text || opt.label) && <span className={`text-lg font-semibold ${isSelected ? 'text-white' : 'text-slate-200'}`}>{opt.text || opt.label}</span>}
                                             </div>
                                         )}
                                     </button>

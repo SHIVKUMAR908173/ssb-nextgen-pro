@@ -230,15 +230,20 @@ export default function GDPage() {
     if (!response_text.trim()) return
     setIsEvaluating(true)
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
-      const res = await fetch(`${backendUrl}/gto`, {
+      const res = await fetch(`/api/evaluate-gpe`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ scenario, candidate_response: response_text })
+        body: JSON.stringify({ 
+          solution: response_text,
+          timeUsed: 300, // Approximate 5 mins for GD points
+          scenarioType: scenario 
+        })
       })
       const data = await res.json()
-      if (data.status === 'success') {
-        setGtoResult(data.evaluation)
+      if (data && data.gto_board_verdict) {
+        setGtoResult(data)
+      } else {
+        setGtoResult(data.evaluation || data)
       }
     } catch (e) {
       console.error(e)

@@ -257,7 +257,7 @@ class PIInterviewer:
             "candidate_profile": self.candidate_profile
         }
         
-        # This calls the AI model (gemini-2.5-flash) via structured output
+        # This calls the AI model (gemini-flash-latest) via structured output
         detailed_analysis = self.assessor.analyze_response(response, analysis_context)
         
         # Standardize basic analysis metrics for compatibility with existing flow

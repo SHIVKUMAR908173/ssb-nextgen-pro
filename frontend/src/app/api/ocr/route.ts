@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     const mimeType = match[1];
     const base64Data = match[2];
 
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
     
     const prompt = `You are an expert handwriting transcriber. 
 I have uploaded an image of a candidate's answer sheet for a Word Association Test.

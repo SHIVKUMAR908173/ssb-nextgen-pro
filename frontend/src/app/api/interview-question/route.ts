@@ -38,7 +38,7 @@ Return only the question text, nothing else. Do not include quotes or prefixes l
 `
 
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-flash-latest',
       systemInstruction: IO_SYSTEM_PROMPT,
     })
 

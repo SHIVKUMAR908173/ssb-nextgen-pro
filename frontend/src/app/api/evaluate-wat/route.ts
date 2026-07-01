@@ -53,7 +53,7 @@ OUTPUT (Return ONLY valid JSON, NO markdown):
 }
 `;
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
         const result = await model.generateContent({
             contents: [{ role: 'user', parts: [{ text: systemInstruction }] }],
             generationConfig: { temperature: 0.4, responseMimeType: "application/json" }

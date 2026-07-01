@@ -10,7 +10,7 @@
  * - PPDT (Picture Perception and Description Test)
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_BASE_URL = '/api';
 
 // ==================== Types ====================
 
@@ -149,7 +149,7 @@ export interface OLQFramework {
  * Evaluate Word Association Test response
  */
 export async function evaluateWAT(request: WATEvaluationRequest): Promise<WATEvaluationResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/evaluate-wat`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-wat`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -168,7 +168,7 @@ export async function evaluateWAT(request: WATEvaluationRequest): Promise<WATEva
  * Evaluate Thematic Apperception Test story
  */
 export async function evaluateTAT(request: TATEvaluationRequest): Promise<TATEvaluationResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/evaluate-tat`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-tat`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -187,7 +187,7 @@ export async function evaluateTAT(request: TATEvaluationRequest): Promise<TATEva
  * Evaluate Situation Reaction Test response
  */
 export async function evaluateSRT(request: SRTEvaluationRequest): Promise<SRTEvaluationResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/evaluate-srt`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-srt`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -206,7 +206,7 @@ export async function evaluateSRT(request: SRTEvaluationRequest): Promise<SRTEva
  * Evaluate Self Description
  */
 export async function evaluateSD(request: SDEvaluationRequest): Promise<SDEvaluationResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/evaluate-sd`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-sd`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -225,7 +225,7 @@ export async function evaluateSD(request: SDEvaluationRequest): Promise<SDEvalua
  * Evaluate Group Planning Exercise
  */
 export async function evaluateGPE(request: GPEEvaluationRequest): Promise<GPEEvaluationResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/evaluate-gpe`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-gpe`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -244,7 +244,7 @@ export async function evaluateGPE(request: GPEEvaluationRequest): Promise<GPEEva
  * Evaluate Picture Perception and Description Test
  */
 export async function evaluatePPDT(request: PPDTEvaluationRequest): Promise<PPDTEvaluationResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/evaluate-ppdt`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-ppdt`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -265,7 +265,7 @@ export async function evaluatePPDT(request: PPDTEvaluationRequest): Promise<PPDT
 export async function getComprehensiveAssessment(
   request: ComprehensiveAssessmentRequest
 ): Promise<ComprehensiveAssessmentResponse> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/comprehensive-assessment`, {
+  const response = await fetch(`${API_BASE_URL}/evaluate-comprehensive-psych`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -287,7 +287,7 @@ export async function getOLQSummary(): Promise<{
   olq_framework: OLQFramework;
   categories: string[];
 }> {
-  const response = await fetch(`${API_BASE_URL}/evaluate/analytics/olq-summary`, {
+  const response = await fetch(`${API_BASE_URL}/olq-summary`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

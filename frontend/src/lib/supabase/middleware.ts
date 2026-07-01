@@ -38,13 +38,8 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
-  // IMPORTANT: Do not run any code between createServerClient and
-  // supabase.auth.getUser(). A simple mistake could make it very hard to
-  // debug issues with users being randomly logged out.
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+  const { data: { user } } = await supabase.auth.getUser();
+  console.log("Middleware checking user:", user?.id || "null");
 
   // Define protected and public routes
   const PUBLIC_ROUTES = [

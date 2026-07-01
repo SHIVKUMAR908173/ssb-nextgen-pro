@@ -209,25 +209,22 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   const generateEvaluation = async (finalResponses: WatResponse[]) => {
     setPhase('EVALUATING');
     try {
-        const res = await fetch('/api/psych-evaluate', {
+        const res = await fetch('/api/evaluate-wat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-                type: 'wat',
-                content: finalResponses,
-                context: { test: 'Word Association Test', wordCount: finalResponses.length }
-            })
+            body: JSON.stringify({ responses: finalResponses })
         });
 
-        const evaluationResult = await res.json();
+        const data = await res.json();
         
-        if (evaluationResult) {
+        if (data.status === 'success' || data.evaluation) {
+            const evaluationResult = data.evaluation || data;
             setEvaluation({
-                overall_score: evaluationResult.confidenceScore || evaluationResult.overallScore || 50,
-                mindset_summary: evaluationResult.advice || evaluationResult.feedback || 'Response analyzed successfully.',
+                overall_score: evaluationResult.board_score || evaluationResult.overallScore || 50,
+                mindset_summary: evaluationResult.board_president_verdict || evaluationResult.mindset_summary || 'Response analyzed successfully.',
                 strengths: evaluationResult.strengths || ['Identified positive projections'],
-                weaknesses: evaluationResult.redFlags || ['No critical red flags'],
-                recommendations: evaluationResult.advice || 'Practice improving reaction time and generating constructive sentences under stress.',
+                weaknesses: evaluationResult.critical_weaknesses ? evaluationResult.critical_weaknesses.map((w: any) => `${w.word}: ${w.why_it_fails}`) : (evaluationResult.weaknesses || ['No critical red flags']),
+                recommendations: evaluationResult.reform_protocol || evaluationResult.recommendations || 'Practice improving reaction time and generating constructive sentences under stress.',
                 responses: finalResponses
             });
             setPhase('DONE');

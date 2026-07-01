@@ -133,41 +133,25 @@ export default function PPDTEvaluator() {
                 return parts.join(' ');
             }).filter(Boolean);
 
-            const res = await fetch('/api/ai-evaluate', {
+            const res = await fetch('/api/psych-evaluate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    type: 'ppdt',
-                    content: JSON.stringify({
-                        image_description: characterDescriptions.join('; ') || 'Group of people in a situation',
-                        story: story,
-                        narration: narration,
-                        oir_rating: oirRating,
-                        characters_identified: characterDescriptions,
-                    }),
-                    systemPrompt: `You are an SSB Assessor evaluating a PPDT (Picture Perception and Discussion Test).
-Return ONLY a raw JSON object with this exact structure:
-{
-  "feedback": "Detailed feedback on the story and narration",
-  "olq_analysis": { "reasoning": 0, "effective_intelligence": 0, "organising_ability": 0, "power_of_expression": 0 },
-  "screening_probability": "75%",
-  "overallScore": 75
-}`,
-                    context: { seconds: 240 }
+                    testType: 'PPDT',
+                    stimulus: characterDescriptions.join('; ') || 'Group of people in a situation',
+                    content: { story, narration, oirRating, charactersIdentified: characterDescriptions },
+                    isSpoken: true // Narration is spoken
                 })
             });
             
             if (res.ok) {
                 const data = await res.json();
+                const evalFeedback = data.feedback || {};
+                
                 setEvaluation({
-                    olq_summary: data.feedback || 'Story evaluated successfully.',
-                    required_improvements: data.olq_analysis 
-                        ? Object.entries(data.olq_analysis)
-                            .filter(([_, score]: [string, any]) => score < 3.5)
-                            .map(([olq, _]: [string, any]) => `Improve ${olq} demonstration`)
-                            .join('; ') || 'No major improvements needed.'
-                        : 'Focus on developing clearer themes and character motivations.',
-                    screening_probability: data.screening_probability || "Evaluation Complete"
+                    olq_summary: evalFeedback.verdict || evalFeedback.advice || 'Story evaluated successfully.',
+                    required_improvements: evalFeedback.redFlags?.join('; ') || 'Focus on developing clearer themes and character motivations.',
+                    screening_probability: evalFeedback.confidenceScore ? `${evalFeedback.confidenceScore}%` : "75%"
                 });
 
                 // Save to localStorage for Assessment Hub

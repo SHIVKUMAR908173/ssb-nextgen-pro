@@ -42,7 +42,7 @@ async def chat_with_brigadier(request: ChatRequest):
     The AI acts strictly as a Brigadier / SSB President.
     """
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-flash-latest')
         
         # Convert frontend messages to Gemini format
         formatted_history = []

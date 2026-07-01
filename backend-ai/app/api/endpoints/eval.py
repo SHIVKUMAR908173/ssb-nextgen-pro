@@ -96,7 +96,7 @@ async def evaluate_srt(responses: list = Body(..., embed=True)):
     and enforces a strict JSON output structure using elite psychological frameworks.
     """
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-flash-latest')
         system_instruction = get_srt_elite_prompt(responses)
         
         response = model.generate_content(
@@ -142,7 +142,7 @@ OUTPUT SCHEMA:
   "score": 80
 }}
 """
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-flash-latest')
         response = model.generate_content(
             contents=[{"role": "user", "parts": [prompt]}],
             generation_config=genai.GenerationConfig(temperature=0.2, response_mime_type="application/json")

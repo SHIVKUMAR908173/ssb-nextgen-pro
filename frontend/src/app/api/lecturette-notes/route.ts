@@ -49,7 +49,7 @@ Format the output strictly as a JSON object with this schema:
 DO NOT wrap the response in markdown blocks. Return ONLY the raw JSON string.
 `;
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-3.1-pro' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
         
         const result = await model.generateContent({
             contents: [{ role: 'user', parts: [{ text: systemInstruction }] }],

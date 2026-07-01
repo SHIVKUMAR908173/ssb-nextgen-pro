@@ -13,7 +13,7 @@ class GTOAssessmentOutput(BaseModel):
 class GTOAssessor:
     def __init__(self, client=None):
         self.client = client if client else genai.Client()
-        self.model_name = "gemini-2.5-flash"
+        self.model_name = "gemini-flash-latest"
 
     def evaluate(self, exercise_type: str, scenario: str, candidate_response: str) -> Dict[str, Any]:
         prompt = f"""

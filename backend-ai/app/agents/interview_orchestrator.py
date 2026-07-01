@@ -16,7 +16,7 @@ class EvaluatedTraits(BaseModel):
 class InterviewOrchestrator:
     def __init__(self, api_key: str):
         self.client = genai.Client(api_key=api_key)
-        self.model_name = "gemini-2.5-flash"
+        self.model_name = "gemini-flash-latest"
     
     async def process_turn(self, candidate_transcript: str, history: List[Dict[str, str]], candidate_profile: dict) -> dict:
         """

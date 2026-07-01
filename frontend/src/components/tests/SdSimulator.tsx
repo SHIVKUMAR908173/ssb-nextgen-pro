@@ -87,17 +87,17 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
         section: s.label,
         response: responses[s.id] || '[NOT ATTEMPTED]'
       }))
-      const res = await fetch('/api/ai-evaluate', {
+      const res = await fetch('/api/evaluate-sd', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
-            type: 'sd',
-            content: JSON.stringify(sections)
+            sections: sections
         })
       })
       const data = await res.json()
-      if (data.status === 'success') {
-        setEvaluation(data.evaluation)
+      if (data.status === 'success' || data.evaluation) {
+        const evalData = data.evaluation || data
+        setEvaluation(evalData)
         
         // Save to localStorage for Assessment Hub
         try {
@@ -105,11 +105,11 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
             history.push({
                 id: `SD-${Date.now()}`,
                 test: 'Self Description',
-                score: data.evaluation.overall_sd_score || 80,
+                score: evalData.overall_sd_score || 80,
                 total: 100,
                 date: new Date().toISOString(),
                 status: 'completed',
-                improvements: (data.evaluation.overall_sd_score || 80) >= 70 
+                improvements: (evalData.overall_sd_score || 80) >= 70 
                     ? ['Maintain authenticity', 'Ensure consistent reflection']
                     : ['Re-evaluate self awareness', 'Work on specific weaknesses']
             });

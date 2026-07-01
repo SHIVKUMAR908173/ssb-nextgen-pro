@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerUser } from '@/lib/supabase/auth';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export async function POST(req: NextRequest) {
     try {
@@ -17,46 +18,50 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: 'Invalid chat payload.' }, { status: 400 });
         }
 
-        // 3. API Gateway -> Forward to Python FastAPI Chatbot Engine
-        const pythonApiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-        
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 25000); // 25 seconds for chat
+        // 3. Native Gemini Chatbot Engine
+        const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
 
-        try {
-            const pythonResponse = await fetch(`${pythonApiUrl}/api/v1/chatbot/ask`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
+        const systemPrompt = `You are Brigadier 'Alpha', a seasoned veteran and SSB President. You mentor cadets preparing for the SSB interview.
+You are strict, highly disciplined, but deeply caring about their success.
+Keep your answers relatively brief, authoritative, and practical. Always relate things back to Officer Like Qualities (OLQs).`;
+
+        const chat = model.startChat({
+            history: [
+                {
+                    role: "user",
+                    parts: [{ text: "System instructions: " + systemPrompt }],
                 },
-                body: JSON.stringify({ messages }),
-                signal: controller.signal
-            });
-            
-            clearTimeout(timeoutId);
+                {
+                    role: "model",
+                    parts: [{ text: "Understood. I am Brigadier Alpha. I am ready to mentor the cadets." }],
+                }
+            ],
+            generationConfig: {
+                temperature: 0.7,
+            },
+        });
 
-            if (!pythonResponse.ok) {
-                const errorText = await pythonResponse.text();
-                throw new Error(`Python AI Engine Error: ${errorText}`);
-            }
-
-            const data = await pythonResponse.json();
+        // Convert the incoming messages format to Gemini format if necessary,
+        // but here we just take the last message for the current prompt.
+        // Assuming messages is an array of { role: 'user'|'assistant', content: string }
+        const lastMessage = messages[messages.length - 1].content;
+        
+        try {
+            const result = await chat.sendMessage(lastMessage);
+            const responseText = result.response.text();
             
             return NextResponse.json({ 
                 status: 'success', 
-                reply: data.reply 
+                reply: responseText 
             });
 
-        } catch (fetchError: unknown) {
-            clearTimeout(timeoutId);
-            if ((fetchError as Error).name === 'AbortError') {
-                throw new Error('The Brigadier is currently busy. Please try again later.');
-            }
-            throw fetchError;
+        } catch (genError: unknown) {
+            throw new Error('The Brigadier is currently busy. Please try again later.');
         }
 
     } catch (error: unknown) {
-        console.error("[CHATBOT_GATEWAY_ERROR]", error);
+        console.error("[CHATBOT_ERROR]", error);
         return NextResponse.json(
             { 
                 error: (error as Error).message || 'An unexpected error occurred.',

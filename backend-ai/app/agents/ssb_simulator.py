@@ -626,7 +626,7 @@ class SSBInterviewSimulator:
         
         try:
             response = self.assessor.client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-flash-latest',
                 contents=prompt
             )
             return response.text

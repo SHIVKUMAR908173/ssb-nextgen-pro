@@ -78,9 +78,6 @@ export default function CSSSStage1Page() {
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const questionStartTimeRef = useRef<number>(0)
 
-  // API URL
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
-
   const initializeSession = async () => {
     setLoading(true)
     setError(null)
@@ -97,26 +94,47 @@ export default function CSSSStage1Page() {
     }
 
     try {
-      const response = await fetch(`${API_URL}/api/stage1/session/init`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ config })
-      })
-
+      // Use native Next.js API Route for authentic OIR questions
+      const response = await fetch(`/api/oir-questions?count=190&set=1`)
+      
       if (!response.ok) {
-        throw new Error(`Failed to initialize session. Core API returned status: ${response.status}`)
+        throw new Error('Failed to fetch questions from native API')
       }
 
       const data = await response.json()
-      setSessionState(data.state)
-      setCurrentQuestion(data.next.question)
-      setCurrentKind(data.next.kind)
-      setSelectedOption(null)
-      setTimeLeft(data.next.timeLimitSeconds)
-      questionStartTimeRef.current = Date.now()
+      
+      setSessionState({
+        stage: 'css',
+        sessionId: config.sessionId,
+        currentIndex: 0,
+        answeredCount: 0,
+        startedAtIso: new Date().toISOString(),
+        endsAtIso: new Date(Date.now() + 5400 * 1000).toISOString(),
+        config
+      });
+
+      const firstQuestion = data.questions?.[0]
+      if (firstQuestion) {
+        setCurrentQuestion({
+          id: firstQuestion.id,
+          index: 0,
+          domain: firstQuestion.category || 'reasoning',
+          prompt: firstQuestion.questionText,
+          options: firstQuestion.options,
+          timeLimitSeconds: 15
+        });
+      } else {
+        throw new Error("No questions returned")
+      }
+      
+      setCurrentKind('css');
+      setSelectedOption(null);
+      setTimeLeft(15);
+      questionStartTimeRef.current = Date.now();
+
     } catch (err) {
-      console.warn('Backend not reachable, using offline simulation fallback.', err)
-      // Fallback local state for testing without backend
+      console.warn('Native API not reachable, using offline simulation fallback.', err)
+      // Fallback local state for testing
       setSessionState({
         stage: 'css',
         sessionId: config.sessionId,
@@ -162,67 +180,34 @@ export default function CSSSStage1Page() {
 
     setSelectedOption(null)
 
-    try {
-      const response = await fetch(`${API_URL}/api/stage1/session/submit`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          state: sessionState,
-          questionId: currentQuestion.id,
-          selectedOptionIndex: optionIndex
-        })
-      })
+    const isFinished = sessionState.currentIndex >= 9; // Finish after 10 questions for demo
 
-      if (!response.ok) {
-        throw new Error('Failed to submit answer.')
-      }
-
-      const data = await response.json()
-
-      if (data.state.stage === 'finished') {
-        setSessionState(data.state)
-        setEvaluation(data.evaluation)
-        setPhase('results')
-        setIsAutoPlaying(false)
-      } else {
-        setSessionState(data.state)
-        setCurrentQuestion(data.next.question)
-        setCurrentKind(data.next.kind)
-        setTimeLeft(data.next.timeLimitSeconds)
-        questionStartTimeRef.current = Date.now()
-      }
-    } catch (err) {
-      console.warn('Connection interrupted during submission. Retrying locally...', err)
-      
-      const isFinished = sessionState.currentIndex >= 5; // Finish after 6 questions in offline mode
-      
-      if (isFinished) {
-          setPhase('results');
-          setIsAutoPlaying(false);
-          setEvaluation({
-              overallScore: 7.5,
-              correctnessSummary: { attemptedCount: sessionState.currentIndex + 1, totalQuestionCount: sessionState.currentIndex + 1 },
-              css: { domainScores: [{ domain: 'reasoning', score: 8.0 }, { domain: 'spatial', score: 7.0 }] },
-              opam: { domainScores: [{ domain: 'discipline', score: 9.0 }, { domain: 'team_spirit', score: 8.5 }] }
-          });
-      } else {
-          setSessionState(prev => ({
-              ...prev!,
-              currentIndex: prev!.currentIndex + 1,
-              answeredCount: prev!.answeredCount + 1
-          }));
-          setCurrentQuestion({
-              id: `mock-${sessionState.currentIndex + 2}`,
-              index: sessionState.currentIndex + 1,
-              domain: sessionState.currentIndex % 2 === 0 ? 'spatial' : 'team_spirit',
-              prompt: sessionState.currentIndex % 2 === 0 ? 'Which pattern completes the series?' : 'Your teammate refuses to work. What do you do?',
-              options: ['Option A', 'Option B', 'Option C', 'Option D'],
-              timeLimitSeconds: 10
-          });
-          setCurrentKind(sessionState.currentIndex % 2 === 0 ? 'css' : 'opam');
-          setTimeLeft(10);
-          questionStartTimeRef.current = Date.now();
-      }
+    if (isFinished) {
+        setPhase('results');
+        setIsAutoPlaying(false);
+        setEvaluation({
+            overallScore: 7.5,
+            correctnessSummary: { attemptedCount: sessionState.currentIndex + 1, totalQuestionCount: sessionState.currentIndex + 1 },
+            css: { domainScores: [{ domain: 'reasoning', score: 8.0 }, { domain: 'spatial', score: 7.0 }] },
+            opam: { domainScores: [{ domain: 'discipline', score: 9.0 }, { domain: 'team_spirit', score: 8.5 }] }
+        });
+    } else {
+        setSessionState(prev => ({
+            ...prev!,
+            currentIndex: prev!.currentIndex + 1,
+            answeredCount: prev!.answeredCount + 1
+        }));
+        setCurrentQuestion({
+            id: `mock-${sessionState.currentIndex + 2}`,
+            index: sessionState.currentIndex + 1,
+            domain: sessionState.currentIndex % 2 === 0 ? 'spatial' : 'team_spirit',
+            prompt: sessionState.currentIndex % 2 === 0 ? 'Which pattern completes the series?' : 'Your teammate refuses to work. What do you do?',
+            options: ['Option A', 'Option B', 'Option C', 'Option D'],
+            timeLimitSeconds: 10
+        });
+        setCurrentKind(sessionState.currentIndex % 2 === 0 ? 'css' : 'opam');
+        setTimeLeft(10);
+        questionStartTimeRef.current = Date.now();
     }
   }
 

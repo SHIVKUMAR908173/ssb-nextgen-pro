@@ -112,18 +112,26 @@ export default function LecturettePage() {
         const seconds = Math.floor((Date.now() - startTimeRef.current) / 1000)
         
         try {
-            const res = await fetch('/api/ai-evaluate', {
+            const res = await fetch('/api/evaluate-lecturette', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    type: 'lecturette',
-                    content: transcript.trim(),
-                    context: { topic: selectedTopic, seconds }
+                    topic: selectedTopic,
+                    transcript: transcript.trim(),
+                    duration: seconds
                 })
             })
-            const fb = await res.json()
-            setFeedback(fb)
-            markComplete()
+            const data = await res.json()
+            if (data.status === 'success' || data.evaluation) {
+                const evalData = data.evaluation || data;
+                setFeedback({
+                    feedback: evalData.board_president_verdict || evalData.performance_improvement_plan || 'Speech analyzed successfully.',
+                    overallScore: evalData.overall_lecturette_score || 50
+                })
+                markComplete()
+            } else {
+                setFeedback({ feedback: 'Evaluation failed.', overallScore: 0 })
+            }
         } catch (e) {
             setFeedback({ feedback: 'Failed to connect to AI evaluator.', overallScore: 0 })
         }
