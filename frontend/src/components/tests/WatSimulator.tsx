@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, CheckCircle, Zap, ShieldAlert, Loader2, Send, UploadCloud, PenTool, Keyboard } from 'lucide-react';
 import { useAntiCheat } from '@/hooks/useAntiCheat';
+import { useTimer } from '@/hooks/useTimer';
 
 const TOTAL_WORDS = 60;
 const WORD_TIME = 15; // 15 seconds per word
@@ -46,7 +47,6 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     onInfraction: () => setPhase('DISQUALIFIED')
   });
   const [testMode, setTestMode] = useState<'TYPING' | 'AUTHENTIC'>('AUTHENTIC');
-  const [timeLeft, setTimeLeft] = useState(0);
   const [response, setResponse] = useState('');
   const [allResponses, setAllResponses] = useState<WatResponse[]>([]);
   const [evaluation, setEvaluation] = useState<WatEvaluation | null>(null);
@@ -55,7 +55,6 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   const [ocrStatus, setOcrStatus] = useState('');
 
   const inputRef = useRef<HTMLInputElement>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const fetchScenarios = async () => {
     setIsLoadingScenarios(true);
@@ -80,32 +79,17 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [setIndex]);
 
-  useEffect(() => {
-    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
-    if (phase !== 'TEST') return;
+  const handleTimerExpireRef = useRef<() => void>(() => {});
+  const timer = useTimer({
+    initialTime: WORD_TIME,
+    onExpire: () => handleTimerExpireRef.current?.(),
+  });
 
-    if (phase !== 'TEST') return;
-
-    timerRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          return 0; // Handled by next effect
-        }
-        return prev - 1;
-      });
-    }, 1000);
-
-    return () => { if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; } };
-  }, [currentIdx, phase]);
-
-  useEffect(() => {
-    if (phase === 'TEST' && timeLeft <= 0 && timerRef.current) {
-      clearInterval(timerRef.current);
-      timerRef.current = null;
+  handleTimerExpireRef.current = () => {
+    if (phase === 'TEST') {
       saveAndNext();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [timeLeft]);
+  };
 
   useEffect(() => {
     if (phase === 'TEST' && testMode === 'TYPING' && inputRef.current) {
@@ -120,7 +104,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     setResponse('');
     setEvaluation(null);
     setPhase('TEST');
-    setTimeLeft(WORD_TIME);
+    timer.setTimeAndStart(WORD_TIME);
   };
 
   const nextSet = () => {
@@ -152,7 +136,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
         }
     } else {
         setCurrentIdx((prev) => prev + 1);
-        setTimeLeft(WORD_TIME);
+        timer.setTimeAndStart(WORD_TIME);
     }
   };
 
@@ -234,10 +218,6 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     } catch {
         setPhase('DONE');
     }
-  };
-
-  const formatTime = (seconds: number) => {
-    return seconds.toString().padStart(2, '0');
   };
 
   return (
@@ -437,7 +417,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
                 <div className="absolute top-6 right-8 flex items-center gap-2 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
                     <Clock className="w-4 h-4 text-slate-500" />
                     <span className="font-mono font-black text-xl text-white tabular-nums">
-                        {formatTime(timeLeft)}
+                        {timer.formattedTime}
                     </span>
                 </div>
 

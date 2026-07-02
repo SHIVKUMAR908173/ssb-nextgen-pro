@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, CheckCircle, ShieldAlert, Loader2, Send, AlertTriangle, Upload } from 'lucide-react';
 import srtBank from '@/data/srt_situation_bank.json';
+import { useTimer } from '@/hooks/useTimer';
 
 const TOTAL_SRTS = 60;
 const SRT_TIME = 30; // 30 seconds per situation
@@ -31,7 +32,6 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
   const SRT_SITUATIONS = useMemo(() => getSituations(setIndex), [setIndex]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [phase, setPhase] = useState<'IDLE' | 'TEST' | 'EVALUATING' | 'DONE'>('IDLE');
-  const [timeLeft, setTimeLeft] = useState(0);
   const [response, setResponse] = useState('');
   const [allResponses, setAllResponses] = useState<SrtResponse[]>([]);
   const [evaluation, setEvaluation] = useState<any>(null);
@@ -42,7 +42,6 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Dynamic Dataset Repair
   useEffect(() => {
@@ -63,32 +62,17 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
     }
   }, [SRT_SITUATIONS]);
 
-  useEffect(() => {
-    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
-    if (phase !== 'TEST') return;
+  const handleTimerExpireRef = useRef<() => void>(() => {});
+  const timer = useTimer({
+    initialTime: SRT_TIME,
+    onExpire: () => handleTimerExpireRef.current?.(),
+  });
 
-    setTimeLeft(SRT_TIME);
-
-    timerRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-
-    return () => { if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; } };
-  }, [currentIdx, phase]);
-
-  // Auto-advance when timer hits zero
-  useEffect(() => {
-    if (phase === 'TEST' && timeLeft <= 0 && timerRef.current) {
-      clearInterval(timerRef.current);
-      timerRef.current = null;
+  handleTimerExpireRef.current = () => {
+    if (phase === 'TEST') {
       saveAndNext();
     }
-  }, [timeLeft]);
+  };
 
   useEffect(() => {
     if (phase === 'TEST' && textareaRef.current) {
@@ -102,7 +86,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
     setResponse('');
     setEvaluation(null);
     setPhase('TEST');
-    setTimeLeft(SRT_TIME);
+    timer.setTimeAndStart(SRT_TIME);
   };
 
   const nextSet = () => {
@@ -148,7 +132,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
         finishTest(newResponses);
     } else {
         setCurrentIdx((prev) => prev + 1);
-        setTimeLeft(SRT_TIME);
+        timer.setTimeAndStart(SRT_TIME);
     }
   };
 
@@ -212,10 +196,6 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
         });
         setPhase('DONE');
     }
-  };
-
-  const formatTime = (seconds: number) => {
-    return seconds.toString().padStart(2, '0');
   };
 
   return (
@@ -369,9 +349,9 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
                 </div>
 
                 <div className="absolute top-6 right-8 flex items-center gap-2 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
-                    <Clock className={`w-4 h-4 ${timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-slate-500'}`} />
-                    <span className={`font-mono font-black text-xl tabular-nums ${timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
-                        {formatTime(timeLeft)}
+                    <Clock className={`w-4 h-4 ${timer.timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-slate-500'}`} />
+                    <span className={`font-mono font-black text-xl tabular-nums ${timer.timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
+                        {timer.formattedTime}
                     </span>
                 </div>
 

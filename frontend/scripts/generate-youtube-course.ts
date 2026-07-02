@@ -88,7 +88,7 @@ async function main() {
 
     console.log(`\n[2] Processing transcript with Gemini AI...`);
     const model = genAI.getGenerativeModel({
-        model: 'gemini-2.5-pro',
+        model: 'gemini-flash-latest',
         generationConfig: {
             responseMimeType: "application/json",
             responseSchema: topicSchema as any,

@@ -28,9 +28,9 @@
 }
 
 body {
-  background-color: var(--bg-primary) !important;
-  color: var(--text-primary) !important;
-  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  /* font-family: 'Inter', sans-serif; -- Removed to let next/font handle it via classes */
   -webkit-font-smoothing: antialiased;
   /* iOS momentum scrolling */
   -webkit-overflow-scrolling: touch;
@@ -49,55 +49,56 @@ select,
   touch-action: manipulation; /* Prevent double-tap zoom */
 }
 
-/* Fluid typography scale using clamp */
+/* Fluid typography scale using clamp - Removed to allow Tailwind utilities to work properly
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+  font-size: clamp(2rem, 5vw, 3.5rem);
 }
 h2 {
-  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 h3 {
-  font-size: clamp(1.25rem, 3vw, 1.75rem) !important;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
 }
+*/
 
 /* Sidebar Styling - Dark Mode */
 aside {
-  background-color: #0f172a !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background-color: #0f172a;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 aside h1, aside h2, aside h3, aside span:not(.bg-red-500):not(.bg-emerald-500) {
-  color: #f8fafc !important;
+  color: #f8fafc;
 }
 
 aside a {
-  color: #94a3b8 !important;
+  color: #94a3b8;
 }
 
 aside a:hover {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
 }
 
 /* Sidebar active links - Military Olive accent */
 aside a.bg-white\/10 {
-  background-color: rgba(59, 83, 62, 0.3) !important;
-  color: #527256 !important;
+  background-color: rgba(59, 83, 62, 0.3);
+  color: #527256;
 }
 
 aside a svg {
-  color: inherit !important;
+  color: inherit;
 }
 
 /* Sidebar active line highlight in military olive */
 aside div.bg-yellow-400 {
-  background-color: #3b533e !important;
-  box-shadow: 0 0 10px rgba(59, 83, 62, 0.5) !important;
+  background-color: #3b533e;
+  box-shadow: 0 0 10px rgba(59, 83, 62, 0.5);
 }
 
 /* Header Styling - Dark Mode */
 header {
-  background-color: rgba(15, 23, 42, 0.8) !important;
+  background-color: rgba(15, 23, 42, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(12px);
 }

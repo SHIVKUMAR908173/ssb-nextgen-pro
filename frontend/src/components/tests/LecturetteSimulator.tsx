@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Mic, MicOff, CheckCircle, Loader2, Play, AlertCircle } from 'lucide-react';
+import { useTimer } from '@/hooks/useTimer';
 
 interface LecturetteSimulatorProps {
     topic: string;
@@ -11,31 +12,28 @@ interface LecturetteSimulatorProps {
 
 export default function LecturetteSimulator({ topic, onClose }: LecturetteSimulatorProps) {
     const [phase, setPhase] = useState<'PREP' | 'SPEAKING' | 'EVALUATING' | 'DONE'>('PREP');
-    const [timeLeft, setTimeLeft] = useState(180); // 3 minutes prep
     const [transcript, setTranscript] = useState('');
     const [isRecording, setIsRecording] = useState(false);
     const [evaluation, setEvaluation] = useState<any>(null);
     const recognitionRef = useRef<any>(null);
 
-    useEffect(() => {
-        if (phase === 'DONE' || phase === 'EVALUATING') return;
+    const handleTimerExpireRef = useRef<() => void>(() => {});
+    const timer = useTimer({
+        initialTime: 180,
+        onExpire: () => handleTimerExpireRef.current?.(),
+    });
 
-        if (timeLeft <= 0) {
-            if (phase === 'PREP') {
-                startSpeaking();
-            } else {
-                stopRecordingAndEvaluate();
-            }
-            return;
+    handleTimerExpireRef.current = () => {
+        if (phase === 'PREP') {
+            startSpeaking();
+        } else if (phase === 'SPEAKING') {
+            stopRecordingAndEvaluate();
         }
-
-        const timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
-        return () => clearInterval(timer);
-    }, [timeLeft, phase]);
+    };
 
     const startSpeaking = () => {
         setPhase('SPEAKING');
-        setTimeLeft(180); // 3 minutes speaking
+        timer.setTimeAndStart(180); // 3 minutes speaking
         startRecording();
     };
 
@@ -75,7 +73,7 @@ export default function LecturetteSimulator({ topic, onClose }: LecturetteSimula
                 body: JSON.stringify({ 
                     topic, 
                     transcript, 
-                    duration: 180 - timeLeft 
+                    duration: 180 - timer.timeLeft 
                 })
             });
             const data = await res.json();
@@ -89,11 +87,7 @@ export default function LecturetteSimulator({ topic, onClose }: LecturetteSimula
         }
     };
 
-    const formatTime = (seconds: number) => {
-        const m = Math.floor(seconds / 60);
-        const s = seconds % 60;
-        return `${m}:${s.toString().padStart(2, '0')}`;
-    };
+
 
     return (
         <motion.div 
@@ -113,9 +107,9 @@ export default function LecturetteSimulator({ topic, onClose }: LecturetteSimula
 
                 <div className="flex-1 flex flex-col p-8 relative">
                     <div className="absolute top-8 right-8 flex items-center gap-3 bg-black/40 px-6 py-3 rounded-full border border-white/10">
-                        <Clock className={`w-5 h-5 ${timeLeft < 30 ? 'text-red-500 animate-pulse' : 'text-emerald-500'}`} />
-                        <span className={`text-2xl font-mono font-black ${timeLeft < 30 ? 'text-red-500' : 'text-white'}`}>
-                            {formatTime(timeLeft)}
+                        <Clock className={`w-5 h-5 ${timer.timeLeft < 30 ? 'text-red-500 animate-pulse' : 'text-emerald-500'}`} />
+                        <span className={`text-2xl font-mono font-black ${timer.timeLeft < 30 ? 'text-red-500' : 'text-white'}`}>
+                            {timer.formattedTime}
                         </span>
                     </div>
 

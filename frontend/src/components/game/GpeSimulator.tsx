@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Map, Navigation, PenTool, CheckCircle, ShieldAlert, Target } from 'lucide-react';
 import gpeData from '@/data/gpe_60_sets.json';
+import { useTimer } from '@/hooks/useTimer';
 import { GPEScenarioMap } from './GPEScenarioMap';
 
 const READING_TIME = 300; // 5 minutes (300 seconds)
@@ -49,7 +50,6 @@ interface GPESet {
 
 export default function GpeSimulator() {
   const [phase, setPhase] = useState<'IDLE' | 'READING' | 'WRITING' | 'DONE'>('IDLE');
-  const [timeLeft, setTimeLeft] = useState(0);
   const [plan, setPlan] = useState('');
   const [selectedSet, setSelectedSet] = useState(0); // Track selected GPE set (0-59)
   
@@ -70,22 +70,20 @@ export default function GpeSimulator() {
 
   const currentScenario = getScenarioForSet(selectedSet);
 
-  useEffect(() => {
-    if (phase === 'IDLE' || phase === 'DONE') return;
+  const handleTimerExpireRef = useRef<() => void>(() => {});
+  const timer = useTimer({
+    initialTime: READING_TIME,
+    onExpire: () => handleTimerExpireRef.current?.(),
+  });
 
-    if (timeLeft <= 0) {
-      if (phase === 'READING') {
-        setPhase('WRITING');
-        setTimeLeft(WRITING_TIME);
-      } else if (phase === 'WRITING') {
-        submitPlan();
-      }
-      return;
+  handleTimerExpireRef.current = () => {
+    if (phase === 'READING') {
+      setPhase('WRITING');
+      timer.setTimeAndStart(WRITING_TIME);
+    } else if (phase === 'WRITING') {
+      submitPlan();
     }
-
-    const timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
-    return () => clearInterval(timer);
-  }, [phase, timeLeft]);
+  };
 
   useEffect(() => {
     if (phase === 'WRITING' && textareaRef.current) {
@@ -95,7 +93,7 @@ export default function GpeSimulator() {
 
   const startExercise = () => {
     setPhase('READING');
-    setTimeLeft(READING_TIME);
+    timer.setTimeAndStart(READING_TIME);
     setPlan('');
   };
 
@@ -103,11 +101,7 @@ export default function GpeSimulator() {
     setPhase('DONE');
   };
 
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m}:${s.toString().padStart(2, '0')}`;
-  };
+
 
   return (
     <div className="w-full max-w-7xl mx-auto bg-charcoal border border-white/10 rounded-3xl shadow-glass overflow-hidden font-sans text-slate-200 min-h-[700px] flex flex-col relative">
@@ -124,14 +118,14 @@ export default function GpeSimulator() {
         </div>
         
         <div className="flex items-center gap-4">
-             {phase !== 'IDLE' && phase !== 'DONE' && (
-                 <div className="bg-black/60 px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 backdrop-blur-md transition-all shadow-glass">
-                     <Clock className={`w-4 h-4 ${timeLeft <= 30 ? 'text-red-500 animate-pulse' : 'text-slate-400'}`} />
-                     <span className={`font-mono font-black text-xl tracking-widest ${timeLeft <= 30 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
-                         {formatTime(timeLeft)}
-                     </span>
-                 </div>
-             )}
+              {phase !== 'IDLE' && phase !== 'DONE' && (
+                  <div className="bg-black/60 px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 backdrop-blur-md transition-all shadow-glass">
+                      <Clock className={`w-4 h-4 ${timer.timeLeft <= 30 ? 'text-red-500 animate-pulse' : 'text-slate-400'}`} />
+                      <span className={`font-mono font-black text-xl tracking-widest ${timer.timeLeft <= 30 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
+                          {timer.formattedTime}
+                      </span>
+                  </div>
+              )}
              {phase === 'IDLE' && (
                  <button onClick={startExercise} className="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-widest shadow-lg transition-all">Begin GPE</button>
              )}

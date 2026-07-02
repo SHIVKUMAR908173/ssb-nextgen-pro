@@ -10,7 +10,7 @@ const AUTOGEN_DIR = path.join(__dirname, '../src/lib/study-content/autogen');
 const PROGRESS_FILE = path.join(__dirname, 'generation-progress.json');
 
 async function callGemini(prompt) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
   
   const payload = {
     contents: [{ parts: [{ text: prompt }] }],

@@ -1,7 +1,32 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { streamObject } from 'ai';
+import { google } from '@ai-sdk/google';
+import { z } from 'zod';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+export const maxDuration = 60; // Allow longer execution if on Vercel Pro
+
+const tatEvaluationSchema = z.object({
+  chief_psychologist_verdict: z.string(),
+  dominant_psychological_theme: z.string(),
+  hero_pattern_analysis: z.string(),
+  olq_projection: z.array(z.object({
+    olq: z.string(),
+    score: z.number(),
+    story_evidence: z.string()
+  })),
+  story_evaluations: z.array(z.object({
+    story_number: z.number(),
+    candidate_story: z.string(),
+    formula_compliance: z.string(),
+    red_flags: z.array(z.string()),
+    psychological_insight: z.string(),
+    board_score: z.number(),
+    ideal_story_rewrite: z.string()
+  })),
+  recurring_vulnerabilities: z.string(),
+  tat_mastery_plan: z.string(),
+  overall_tat_score: z.number()
+});
 
 export async function POST(req: NextRequest) {
     try {
@@ -14,9 +39,6 @@ export async function POST(req: NextRequest) {
 
         const systemInstruction = `
 You are the CHIEF PSYCHOLOGIST at the Services Selection Board (SSB), specializing in projective psychology and Thematic Apperception Test analysis. You have a deep command of Murray's TAT theory and its application in officer selection. You have personally scored thousands of TAT stories and know EXACTLY what separates a recommended narrative from a returned one.
-
-Candidate's TAT Stories:
-${JSON.stringify(stories, null, 2)}
 
 YOUR TAT EVALUATION FRAMEWORK:
 
@@ -45,40 +67,18 @@ Map: Courage (does hero face danger?), Initiative (does hero start the action?),
 For EVERY story that fails the formula or shows red flags, you MUST provide:
 1. Deep psychological interpretation of what it reveals.
 2. A complete IDEAL story rewrite for the same described picture.
-
-OUTPUT (Return ONLY valid JSON, NO markdown):
-{
-  "chief_psychologist_verdict": "Your authoritative 3-4 sentence assessment of this candidate's TAT psychological profile. Be specific, cite actual story themes.",
-  "dominant_psychological_theme": "The single most prominent theme running through the majority of their stories (e.g., 'Persistent Social Leadership', 'Passive Dependency', 'Isolated Achievement')",
-  "hero_pattern_analysis": "How does their 'hero' behave across all stories? Active/passive? Leader/follower? Social/isolated? What does this reveal about the candidate's self-concept?",
-  "olq_projection": [
-    { "olq": "OLQ Name", "score": 0-10, "story_evidence": "Which story/stories support this rating" }
-  ],
-  "story_evaluations": [
-    {
-      "story_number": 1,
-      "candidate_story": "Their written story",
-      "formula_compliance": "FULL | PARTIAL | FAILED",
-      "red_flags": ["Any red flags detected"],
-      "psychological_insight": "What does this specific story reveal about the candidate's subconscious?",
-      "board_score": 0-10,
-      "ideal_story_rewrite": "A complete model TAT story for this picture that demonstrates strong OLQs — with situation, character thought, proactive action, and positive outcome."
-    }
-  ],
-  "recurring_vulnerabilities": "What dangerous patterns appear across 3+ stories?",
-  "tat_mastery_plan": "5 specific rules and daily writing exercises to transform this candidate's TAT approach. Include the SSB TAT formula checklist.",
-  "overall_tat_score": 0-100
-}
 `;
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
-        const result = await model.generateContent({
-            contents: [{ role: 'user', parts: [{ text: systemInstruction }] }],
-            generationConfig: { temperature: 0.4, responseMimeType: "application/json" }
+        const result = streamObject({
+            model: google('gemini-flash-latest'),
+            system: systemInstruction,
+            prompt: `Candidate's TAT Stories to evaluate:\n${JSON.stringify(stories, null, 2)}`,
+            schema: tatEvaluationSchema,
+            temperature: 0.4,
         });
 
-        return NextResponse.json({ status: 'success', evaluation: JSON.parse(result.response.text()) });
-    } catch (error: unknown) {
-        return NextResponse.json({ error: (error as Error).message }, { status: 500 });
+        return result.toTextStreamResponse();
+    } catch (error: any) {
+        return NextResponse.json({ error: error.message }, { status: 500 });
     }
 }

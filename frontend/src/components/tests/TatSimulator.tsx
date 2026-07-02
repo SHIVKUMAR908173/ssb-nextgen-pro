@@ -4,6 +4,32 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, CheckCircle, ShieldAlert, Image as ImageIcon, Loader2, Upload } from 'lucide-react';
 import { TAT_SETS } from '@/lib/tat-dataset';
+import { useTimer } from '@/hooks/useTimer';
+import { experimental_useObject } from '@ai-sdk/react';
+import { z } from 'zod';
+
+const tatEvaluationSchema = z.object({
+  chief_psychologist_verdict: z.string(),
+  dominant_psychological_theme: z.string(),
+  hero_pattern_analysis: z.string(),
+  olq_projection: z.array(z.object({
+    olq: z.string(),
+    score: z.number(),
+    story_evidence: z.string()
+  })),
+  story_evaluations: z.array(z.object({
+    story_number: z.number(),
+    candidate_story: z.string(),
+    formula_compliance: z.string(),
+    red_flags: z.array(z.string()),
+    psychological_insight: z.string(),
+    board_score: z.number(),
+    ideal_story_rewrite: z.string()
+  })),
+  recurring_vulnerabilities: z.string(),
+  tat_mastery_plan: z.string(),
+  overall_tat_score: z.number()
+});
 
 const TOTAL_SETS = 60;
 const TOTAL_SLIDES = 13;
@@ -24,37 +50,105 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
   const [setIndex, setSetIndex] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [phase, setPhase] = useState<'IDLE' | 'VIEWING' | 'WRITING' | 'EVALUATING' | 'DONE'>('IDLE');
-  const [timeLeft, setTimeLeft] = useState(0);
   const [story, setStory] = useState('');
   const [allStories, setAllStories] = useState<TatResponse[]>([]);
-  const [evaluation, setEvaluation] = useState<any>(null);
-  const [repairedScenarios, setRepairedScenarios] = useState<any[]>([]);
   const [customSet, setCustomSet] = useState<any[] | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const [fallbackEval, setFallbackEval] = useState<any>(null);
 
-  // Removed auto-repair logic as we are using internal SVG datasets now
+  const handleTimerExpireRef = useRef<() => void>(() => {});
 
-  useEffect(() => {
-    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
-    if (phase === 'IDLE' || phase === 'DONE' || phase === 'EVALUATING') return;
-    if (timeLeft <= 0) {
-      if (phase === 'VIEWING') { setPhase('WRITING'); setTimeLeft(WRITING_TIME); }
-      else if (phase === 'WRITING') { saveAndAdvance(); }
-      return;
+  const timer = useTimer({
+    initialTime: PICTURE_TIME,
+    onExpire: () => handleTimerExpireRef.current?.(),
+  });
+
+  const { object: streamedEval, submit, isLoading } = experimental_useObject({
+    api: '/api/evaluate-tat',
+    schema: tatEvaluationSchema,
+    onError: (error: any) => {
+        console.error("Stream error", error);
+        setFallbackEval({
+            chief_psychologist_verdict: 'Evaluation service temporarily unavailable. Please try again.',
+            dominant_psychological_theme: 'N/A',
+            overall_tat_score: 0,
+            olq_projection: [],
+            story_evaluations: allStories.map((r, i) => ({
+                story_number: r.trigger,
+                board_score: 5,
+                formula_compliance: 'NONE',
+                psychological_insight: 'Story submitted but could not be evaluated.',
+                red_flags: [],
+                ideal_story_rewrite: null
+            })),
+            tat_mastery_plan: 'Please try again when the evaluation service is available.'
+        });
+        setPhase('DONE');
+    },
+    onFinish: (event: any) => {
+        try {
+            const history = JSON.parse(localStorage.getItem('testHistory') || '[]');
+            history.push({
+                id: `TAT-${Date.now()}`,
+                test: 'Thematic Apperception Test',
+                score: event.object?.overall_tat_score || 50,
+                total: 100,
+                date: new Date().toISOString(),
+                status: 'completed',
+                improvements: ['Review Chief Psychologist Feedback', 'Practice with model rewrites']
+            });
+            localStorage.setItem('testHistory', JSON.stringify(history));
+        } catch (err) {}
+        setPhase('DONE');
     }
-    timerRef.current = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
-    return () => { if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; } };
-  }, [timeLeft, phase, currentSlide]);
+  });
+
+  const evaluation = fallbackEval || streamedEval;
+
+  const generateEvaluation = (finalResponses: TatResponse[]) => {
+    if (isFullBattery && onComplete) {
+        onComplete(finalResponses);
+        return;
+    }
+    setPhase('EVALUATING');
+    submit({ stories: finalResponses });
+  };
+
+  const saveAndAdvance = useCallback(() => {
+    const isBlank = currentSlide === 12;
+    const payload = {
+        trigger: isBlank ? 'Blank Slide' : `TAT Picture ${currentSlide + 1}`,
+        response: story.trim() || '[NO STORY WRITTEN]'
+    };
+    const newStories = [...allStories, payload];
+    setAllStories(newStories);
+    setStory('');
+    if (currentSlide + 1 === TOTAL_SLIDES) { generateEvaluation(newStories); }
+    else { 
+      setCurrentSlide((prev) => prev + 1); 
+      setPhase('VIEWING'); 
+      timer.setTimeAndStart(PICTURE_TIME); 
+    }
+  }, [currentSlide, story, allStories, timer, isFullBattery, onComplete]);
+
+  handleTimerExpireRef.current = () => {
+    if (phase === 'VIEWING') {
+      setPhase('WRITING');
+      timer.setTimeAndStart(WRITING_TIME);
+    } else if (phase === 'WRITING') {
+      saveAndAdvance();
+    }
+  };
 
   useEffect(() => {
     if (phase === 'WRITING' && textareaRef.current) textareaRef.current.focus();
   }, [phase]);
 
   const startTest = () => {
-    setCurrentSlide(0); setAllStories([]); setStory(''); setEvaluation(null);
-    setPhase('VIEWING'); setTimeLeft(PICTURE_TIME);
+    setCurrentSlide(0); setAllStories([]); setStory(''); setFallbackEval(null);
+    setPhase('VIEWING'); 
+    timer.setTimeAndStart(PICTURE_TIME);
   };
 
   const nextSet = () => {
@@ -85,94 +179,9 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
     reader.readAsText(file);
   };
 
-  const saveAndAdvance = () => {
-    const isBlank = currentSlide === 12;
-    const payload = {
-        trigger: isBlank ? 'Blank Slide' : `TAT Picture ${currentSlide + 1}`,
-        response: story.trim() || '[NO STORY WRITTEN]'
-    };
-    const newStories = [...allStories, payload];
-    setAllStories(newStories);
-    setStory('');
-    if (currentSlide + 1 === TOTAL_SLIDES) { generateEvaluation(newStories); }
-    else { setCurrentSlide((prev) => prev + 1); setPhase('VIEWING'); setTimeLeft(PICTURE_TIME); }
-  };
 
-  const generateEvaluation = async (finalResponses: TatResponse[]) => {
-    if (isFullBattery && onComplete) {
-        onComplete(finalResponses);
-        return;
-    }
-    setPhase('EVALUATING');
-    try {
-        // Send ALL stories in a single batch to the native Next.js Gemini endpoint
-        const res = await fetch('/api/evaluate-tat', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ stories: finalResponses })
-        });
 
-        if (!res.ok) {
-            throw new Error(`API Error: ${res.statusText}`);
-        }
 
-        const data = await res.json();
-        const evalData = data.evaluation;
-
-        setEvaluation({
-            chief_psychologist_verdict: evalData.chief_psychologist_verdict || 'Evaluation completed.',
-            dominant_psychological_theme: evalData.dominant_psychological_theme || 'N/A',
-            overall_tat_score: evalData.overall_tat_score || 50,
-            olq_projection: evalData.olq_projection || [],
-            story_evaluations: evalData.story_evaluations || [],
-            tat_mastery_plan: evalData.tat_mastery_plan || 'Keep practicing.'
-        });
-
-        // Save to localStorage for Assessment Hub
-        try {
-            const history = JSON.parse(localStorage.getItem('testHistory') || '[]');
-            history.push({
-                id: `TAT-${Date.now()}`,
-                test: 'Thematic Apperception Test',
-                score: evalData.overall_tat_score || 50,
-                total: 100,
-                date: new Date().toISOString(),
-                status: 'completed',
-                improvements: ['Review Chief Psychologist Feedback', 'Practice with model rewrites']
-            });
-            localStorage.setItem('testHistory', JSON.stringify(history));
-        } catch (err) {
-            console.error('Failed to save test history', err);
-        }
-
-        setPhase('DONE');
-    } catch (e) {
-        console.error('Evaluation failed:', e);
-        // Provide fallback evaluation on error
-        setEvaluation({
-            chief_psychologist_verdict: 'Evaluation service temporarily unavailable. Please try again.',
-            dominant_psychological_theme: 'N/A',
-            overall_tat_score: 0,
-            olq_projection: [],
-            story_evaluations: finalResponses.map((r, i) => ({
-                story_number: r.trigger,
-                board_score: 5,
-                formula_compliance: 'NONE',
-                psychological_insight: 'Story submitted but could not be evaluated.',
-                red_flags: [],
-                ideal_story_rewrite: null
-            })),
-            tat_mastery_plan: 'Please try again when the evaluation service is available.'
-        });
-        setPhase('DONE');
-    }
-  };
-
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m}:${s.toString().padStart(2, '0')}`;
-  };
 
   const getCurrentTatSvg = useCallback(() => {
     if (customSet && customSet[currentSlide]) return customSet[currentSlide].url;
@@ -304,25 +313,27 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                     </div>
                 </div>
            </div>
-        ) : phase === 'EVALUATING' ? (
+        ) : phase === 'EVALUATING' && !evaluation ? (
            <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5">
                 <Loader2 className="w-16 h-16 text-neon animate-spin drop-shadow-[0_0_10px_rgba(57,255,20,0.5)]" />
-                <h3 className="text-2xl font-black uppercase tracking-[0.2em] text-white">Chief Psychologist Analyzing...</h3>
+                <h3 className="text-2xl font-black uppercase tracking-[0.2em] text-white">Connecting to AI...</h3>
                 <p className="text-slate-400 font-mono text-xs max-w-md text-center">
-                   Board President is mapping hero patterns, OLQ projections, and generating ideal story rewrites for each slide...
+                   Initiating stream...
                 </p>
            </div>
-        ) : phase === 'DONE' && evaluation ? (
+        ) : (phase === 'EVALUATING' || phase === 'DONE') && evaluation ? (
            <motion.div 
                initial={{ opacity: 0, y: 20 }}
                animate={{ opacity: 1, y: 0 }}
                className="flex-1 p-8 overflow-y-auto custom-scrollbar h-[600px] space-y-8"
            >
                {/* Board Verdict */}
-               <div className="bg-slate-900/80 border border-olive/30 rounded-2xl p-6">
-                   <p className="text-[9px] font-black text-olive-light uppercase tracking-[0.3em] mb-2">Chief Psychologist — Board President Verdict</p>
-                   <p className="text-slate-200 font-bold leading-relaxed italic">"{evaluation.chief_psychologist_verdict}"</p>
-               </div>
+               {evaluation.chief_psychologist_verdict && (
+                   <div className="bg-slate-900/80 border border-olive/30 rounded-2xl p-6">
+                       <p className="text-[9px] font-black text-olive-light uppercase tracking-[0.3em] mb-2">Chief Psychologist — Board President Verdict</p>
+                       <p className="text-slate-200 font-bold leading-relaxed italic">"{evaluation.chief_psychologist_verdict}"</p>
+                   </div>
+               )}
 
                {/* Score + Theme */}
                <div className="grid grid-cols-2 gap-4">
@@ -395,15 +406,17 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                    </div>
                )}
 
-                <div className="flex gap-4">
-                    <button onClick={nextSet} className="flex-1 py-4 bg-slate-700 hover:bg-slate-600 text-white font-black uppercase tracking-widest text-sm rounded-xl transition-colors">
-                        Next Set
-                    </button>
-                    <button onClick={startTest} className="flex-1 py-4 bg-olive hover:bg-olive-light text-white font-black uppercase tracking-widest text-sm rounded-xl transition-colors">
-                        Retake Set {setIndex + 1}
-                    </button>
-                </div>
-           </motion.div>
+                    {phase === 'DONE' && (
+                        <div className="flex gap-4">
+                            <button onClick={nextSet} className="flex-1 py-4 bg-slate-700 hover:bg-slate-600 text-white font-black uppercase tracking-widest text-sm rounded-xl transition-colors">
+                                Next Set
+                            </button>
+                            <button onClick={startTest} className="flex-1 py-4 bg-olive hover:bg-olive-light text-white font-black uppercase tracking-widest text-sm rounded-xl transition-colors">
+                                Retake Set {setIndex + 1}
+                            </button>
+                        </div>
+                    )}
+               </motion.div>
         ) : (
            // Active Test
            <div className="flex-1 flex flex-col relative h-[600px]">
@@ -411,15 +424,15 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                 <div className="absolute top-0 left-0 w-full h-1 bg-slate-800 z-20">
                     <div 
                          className={`h-full transition-all duration-1000 ease-linear ${phase === 'VIEWING' ? 'bg-blue-500' : 'bg-red-500'}`}
-                         style={{ width: `${(timeLeft / (phase === 'VIEWING' ? PICTURE_TIME : WRITING_TIME)) * 100}%` }}
+                         style={{ width: `${(timer.timeLeft / (phase === 'VIEWING' ? PICTURE_TIME : WRITING_TIME)) * 100}%` }}
                     />
                 </div>
 
-                <div className="absolute top-4 right-6 flex items-center gap-2 z-20 bg-black/60 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
-                    <Clock className={`w-4 h-4 ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-slate-400'}`} />
-                    <span className={`font-mono font-black text-xl ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
-                        {formatTime(timeLeft)}
-                    </span>
+                <div className="absolute top-6 right-8 bg-black/40 px-6 py-3 rounded-2xl backdrop-blur-md border border-white/10 flex items-center gap-3">
+                  <Clock className={`w-5 h-5 ${timer.timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-slate-300'}`} />
+                  <span className={`text-2xl font-black font-mono tracking-wider ${timer.timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
+                    {timer.formattedTime}
+                  </span>
                 </div>
 
                 <div className="absolute top-4 left-6 z-20 bg-black/60 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
