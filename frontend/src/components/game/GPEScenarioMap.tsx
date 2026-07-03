@@ -7,10 +7,8 @@ interface GPEScenarioMapProps {
 }
 
 export function GPEScenarioMap({ phase, scenario }: GPEScenarioMapProps) {
-    const locations = scenario?.locations;
-    const basePoint = locations?.base ? [locations.base] : [];
-    const otherPoints = locations?.points || [];
-    const allPoints = [...basePoint, ...otherPoints];
+    // Backend returns `scenario.map.locations`
+    const locations = scenario?.map?.locations || [];
 
     return (
         <div className={`w-full md:w-1/2 bg-slate-800 border-r border-white/10 relative transition-all duration-1000 ease-in-out overflow-hidden ${phase === 'WRITING' ? 'filter blur-[10px] grayscale brightness-50 pointer-events-none' : ''}`}>
@@ -37,7 +35,7 @@ export function GPEScenarioMap({ phase, scenario }: GPEScenarioMapProps) {
             <div className="absolute bottom-4 left-4 bg-black/80 px-4 py-2 rounded shadow-glass font-mono tracking-widest text-[10px] uppercase text-emerald-400 border border-emerald-500/30 z-20 backdrop-blur-sm">
                 <div className="flex items-center gap-2">
                     <div className="w-16 h-2 bg-gradient-to-r from-emerald-500 to-transparent rounded-full"></div>
-                    <span>1 cm = 1 KM</span>
+                    <span>1 Unit = {scenario?.map?.mapScale?.metersPerUnit || 1000} Meters</span>
                 </div>
             </div>
             <div className="absolute top-4 right-4 bg-black/80 w-14 h-14 rounded-full border border-white/10 flex flex-col items-center justify-center shadow-glass z-20 backdrop-blur-sm">
@@ -50,7 +48,7 @@ export function GPEScenarioMap({ phase, scenario }: GPEScenarioMapProps) {
             {phase === 'READING' && (
                 <div className="absolute bottom-16 left-4 bg-black/80 px-3 py-1 rounded text-[8px] font-mono text-slate-400 z-20">
                     <div>Dynamic Map Mode</div>
-                    <div>Scale: Approximate</div>
+                    <div>Scale: Exact</div>
                 </div>
             )}
             
@@ -74,13 +72,17 @@ export function GPEScenarioMap({ phase, scenario }: GPEScenarioMapProps) {
                     </svg>
 
                     {/* Dynamic Location Markers */}
-                    {allPoints.map((point: any, i: number) => {
-                        const pos = { x: point.x, y: point.y };
-                        const label = point.name;
-                        // Assign some basic coloring based on the first word or random
+                    {locations.map((loc: any, i: number) => {
+                        const pos = loc.point;
+                        const label = loc.id;
+                        
                         let colorClass = "bg-blue-600 border-blue-400 text-blue-500";
-                        if (i === 0) colorClass = "bg-emerald-500/30 border-emerald-500 text-emerald-500";
-                        if (i === allPoints.length - 1) colorClass = "bg-red-500/30 border-red-500 text-red-500";
+                        if (loc.kind === 'hospital' || loc.kind === 'police_station') {
+                           colorClass = "bg-emerald-500/30 border-emerald-500 text-emerald-500";
+                        }
+                        if (loc.kind === 'village') {
+                           colorClass = "bg-orange-500/30 border-orange-500 text-orange-500";
+                        }
 
                         return (
                             <div 
@@ -93,7 +95,7 @@ export function GPEScenarioMap({ phase, scenario }: GPEScenarioMapProps) {
                                         <div className="w-2 h-2 rounded-full bg-white opacity-80"></div>
                                     </div>
                                     <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/80 px-2 py-1 rounded text-[8px] font-black uppercase tracking-wider ${colorClass.split(' ')[2]}`}>
-                                        {label}
+                                        {label.replace(/_/g, ' ')}
                                     </div>
                                 </div>
                             </div>
@@ -108,16 +110,16 @@ export function GPEScenarioMap({ phase, scenario }: GPEScenarioMapProps) {
                     <div className="text-[7px] font-black uppercase tracking-widest text-slate-400 mb-2">Legend</div>
                     <div className="space-y-1">
                         <div className="flex items-center gap-2">
-                            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                            <span className="text-[7px] text-slate-300">Critical</span>
+                            <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
+                            <span className="text-[7px] text-slate-300">Hospital / Police</span>
                         </div>
                         <div className="flex items-center gap-2">
-                            <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
-                            <span className="text-[7px] text-slate-300">Start</span>
+                            <div className="w-3 h-3 rounded-full bg-orange-500"></div>
+                            <span className="text-[7px] text-slate-300">Village</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-3 h-3 rounded bg-blue-600"></div>
-                            <span className="text-[7px] text-slate-300">Location</span>
+                            <span className="text-[7px] text-slate-300">Path / Node</span>
                         </div>
                     </div>
                 </div>

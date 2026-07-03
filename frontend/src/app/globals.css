@@ -185,34 +185,20 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 1px rgba(59, 83, 62, 0.5) !important;
 }
 
-/* Make accent text stand out in dark mode - convert all accent colors to military olive */
-.text-yellow-500,
-.text-yellow-400,
-.text-orange-500,
-.text-orange-400,
-.text-blue-500,
-.text-blue-400,
-.text-green-500,
-.text-green-400,
-.text-purple-500,
-.text-purple-400,
-.text-cyan-500,
-.text-cyan-400,
-.text-emerald-500,
-.text-emerald-400 {
-  color: #527256 !important;
+/* ── Focus-Visible Styles for Keyboard Navigation ── */
+*:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Primary Action Buttons - Military Olive */
-.bg-yellow-500,
-.bg-accent,
 .btn-primary {
   background-color: #3b533e !important;
   color: #ffffff !important;
   border: none !important;
 }
 
-.bg-yellow-500:hover,
 .btn-primary:hover {
   background-color: #273729 !important;
   color: #ffffff !important;
@@ -229,61 +215,12 @@ button.border-yellow-500:hover {
   color: #527256 !important;
 }
 
-/* Accent lines and backgrounds - convert all to military olive theme */
-.bg-yellow-500\/10,
-.bg-yellow-500\/15,
-.bg-emerald-500\/10,
-.bg-emerald-500\/15,
-.bg-orange-500\/10,
-.bg-orange-500\/15,
-.bg-blue-500\/10,
-.bg-blue-500\/15,
-.bg-green-500\/10,
-.bg-green-500\/15,
-.bg-purple-500\/10,
-.bg-purple-500\/15,
-.bg-cyan-500\/10,
-.bg-cyan-500\/15,
-.bg-red-500\/10,
-.bg-red-500\/15 {
-  background-color: rgba(59, 83, 62, 0.15) !important;
-  border-color: rgba(59, 83, 62, 0.3) !important;
+/* Sidebar active indicator — keep olive accent */
+aside div.bg-yellow-400 {
+  background-color: #3b533e;
+  box-shadow: 0 0 10px rgba(59, 83, 62, 0.5);
 }
 
-/* Custom badges - convert all badge colors to military olive theme */
-span.bg-emerald-500,
-span.bg-yellow-500,
-span.bg-orange-500,
-span.bg-blue-500,
-span.bg-green-500,
-span.bg-purple-500,
-span.bg-cyan-500,
-span.bg-red-500 {
-  background-color: #3b533e !important;
-  color: #ffffff !important;
-}
-
-/* Adjust gradients to military olive hues */
-.from-yellow-400\/5,
-.from-orange-500\/5 {
-  background-image: linear-gradient(to bottom, rgba(59, 83, 62, 0.1), transparent) !important;
-}
-
-.bg-yellow-400\/5,
-.bg-orange-500\/5 {
-  background-color: rgba(59, 83, 62, 0.1) !important;
-}
-
-/* Gradient backgrounds - convert to olive theme */
-.from-\[\#0f2d4a\],
-.from-\[\#162840\] {
-  background-image: linear-gradient(to bottom right, #0f172a, #1e293b) !important;
-}
-
-.to-\[\#1a3d6e\],
-.to-\[\#0f172a\] {
-  background-image: linear-gradient(to bottom right, #1e293b, #0f172a) !important;
-}
 
 @layer components {
   .btn-primary {

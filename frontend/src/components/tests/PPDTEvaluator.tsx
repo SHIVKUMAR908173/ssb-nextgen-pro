@@ -133,7 +133,7 @@ export default function PPDTEvaluator() {
                 return parts.join(' ');
             }).filter(Boolean);
 
-            const res = await fetch('/api/psych-evaluate', {
+            const res = await fetch('/api/stage1/ppdt/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -347,7 +347,19 @@ export default function PPDTEvaluator() {
                     </div>
 
                     <button
-                        onClick={startTest}
+                        onClick={async () => {
+                            try {
+                                const res = await fetch('/api/stage1/ppdt/init', { method: 'POST' });
+                                if (res.ok) {
+                                    const data = await res.json();
+                                    setRandomImage(data.config.imageId);
+                                    // Normally we would also set timers here based on data.config, but we'll stick to frontend defaults for this mock integration
+                                }
+                            } catch (e) {
+                                console.error('Failed to init from backend, falling back to local');
+                            }
+                            startTest();
+                        }}
                         className="bg-indigo-600 hover:bg-indigo-500 active:scale-98 text-white font-black py-5 px-10 rounded-[24px] transition-all shadow-xl shadow-indigo-600/25 uppercase tracking-widest text-sm flex items-center justify-center gap-3 group whitespace-nowrap"
                     >
                         <span className="text-2xl group-hover:scale-110 transition-transform">🎯</span>

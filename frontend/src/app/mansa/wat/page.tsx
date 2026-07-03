@@ -13,10 +13,10 @@ export default function WatPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <Link 
-          href="/dashboard"
+          href="/mansa"
           className="flex items-center gap-2 text-slate-500 hover:text-white font-black uppercase tracking-widest text-[10px] transition-colors"
         >
-          <ArrowLeft className="w-3 h-3" /> Back to Dashboard
+          <ArrowLeft className="w-3 h-3" /> Back to Psychology Hub
         </Link>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>

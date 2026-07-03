@@ -1,0 +1,211 @@
+[
+  {
+    "id": "TAT1",
+    "image_description": "A house on fire and a man walking by",
+    "image_url": "/images/tat_house_fire.png",
+    "sample_story": "Vivek was heading to his college when he heard screams of a lady from a house on fire. He rushed to the house and found that because of the strong wind it was difficult to douse the fire. He escorted the sole old lady occupant out of the house safely and informed the fire brigade. He took the help of some people who had gathered and neighbours to get buckets full of water and a water pipe to douse the fire. Some people brought some sticks and sand to beat the fire. On advice from the lady he retrieved the valuables from the house. By the time the fire brigade arrived the fire had already been controlled and could be quickly put off.",
+    "themes": ["Social Service", "Quick Thinking", "Leadership", "Courage"],
+    "protagonist": {
+      "name": "Vivek",
+      "age": 22,
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "olq_mapping": ["Courage", "Initiative", "Sense of Responsibility", "Speed of Decision", "Cooperation"],
+    "story_structure": {
+      "past": "Vivek was going to college normally",
+      "present": "Noticed fire, heard screams, took immediate action",
+      "future": "Fire controlled, lady safe, valuables retrieved"
+    }
+  },
+  {
+    "id": "TAT2",
+    "image_description": "A lady and a man working in laboratory",
+    "image_url": "/images/tat_lab.png",
+    "sample_story": "Pia was pursuing her PhD on curing diseases in young children. As she researched the subject she realised that the children who had been kept in very hygienic environment were more susceptible to serious ailments because they had low immunity compared to the children who had been exposed to dirt and filth since birth. Her research work was greatly appreciated and it made the society aware that bringing up children in overly hygienic environment can be dangerous for their later lives because of lowered immunity.",
+    "themes": ["Research", "Social Awareness", "Dedication", "Contribution to Society"],
+    "protagonist": {
+      "name": "Pia",
+      "age": 26,
+      "gender": "Female",
+      "occupation": "Research Scholar"
+    },
+    "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Determination", "Initiative"],
+    "story_structure": {
+      "past": "Started research on children's diseases",
+      "present": "Made important discovery about immunity",
+      "future": "Research appreciated, society benefited"
+    }
+  },
+  {
+    "id": "TAT3",
+    "image_description": "A lady standing at a crowded counter",
+    "image_url": "/images/tat_counter.png",
+    "sample_story": "Rakhi went to an employment exchange centre and noticed that many people were crowding up the counter for various works. She met the exchange center head to allow her to develop an app which allowed people to register online for vacancies. She developed the app and added multiple facilities to manage data, send message alerts to the registered people and facilitated companies to book slots to meet the people. This helped improve the efficiency of the employment exchange.",
+    "themes": ["Problem Solving", "Technology", "Social Service", "Initiative"],
+    "protagonist": {
+      "name": "Rakhi",
+      "age": 24,
+      "gender": "Female",
+      "occupation": "Software Developer"
+    },
+    "olq_mapping": ["Effective Intelligence", "Initiative", "Reasoning Ability", "Sense of Responsibility"],
+    "story_structure": {
+      "past": "Visited employment exchange, observed problems",
+      "present": "Developed solution through technology",
+      "future": "System improved, people benefited"
+    }
+  },
+  {
+    "id": "TAT4",
+    "image_description": "A man lying on bed and a woman crying at the door",
+    "image_url": "/images/tat_hospital.png",
+    "sample_story": "Maya's husband was ill. He had been diagnosed with dengue. She became sad and consulted the doctor. The doctor prescribed some medicines, healthy diet and nutritional supplements. Maya took care of her husband and gave him medicines and healthy food as prescribed. After one and a half months her husband began to recover and in a span of 3 months became well. He was really happy after getting well and Maya was glad that her effort brought a positive impact on her husband.",
+    "themes": ["Care and Dedication", "Perseverance", "Family Values", "Health Management"],
+    "protagonist": {
+      "name": "Maya",
+      "age": 28,
+      "gender": "Female",
+      "occupation": "Homemaker"
+    },
+    "olq_mapping": ["Determination", "Sense of Responsibility", "Cooperation", "Stamina"],
+    "story_structure": {
+      "past": "Husband fell ill with dengue",
+      "present": "Took care systematically as per medical advice",
+      "future": "Husband recovered fully, family happy"
+    }
+  },
+  {
+    "id": "TAT5",
+    "image_description": "5-6 soldiers lying huddled together",
+    "image_url": "/images/tat_soldiers.png",
+    "sample_story": "Lt Ranjeet had had a tiring day with his soldiers in a successful counter insurgency operation. They had not slept for 2 days. So after finishing the operation they reported the successful completion of the operation to their senior and decided to relax. After relaxing for some time they returned to their location. They were felicitated for their bravery. The soldiers were really happy and were ready for future operations.",
+    "themes": ["Military Life", "Teamwork", "Duty", "Achievement"],
+    "protagonist": {
+      "name": "Lt Ranjeet",
+      "age": 25,
+      "gender": "Male",
+      "occupation": "Army Officer"
+    },
+    "olq_mapping": ["Leadership", "Determination", "Stamina", "Cooperation", "Sense of Responsibility"],
+    "story_structure": {
+      "past": "Led successful counter insurgency operation",
+      "present": "Resting after exhausting operation",
+      "future": "Felicitated, ready for future missions"
+    }
+  },
+  {
+    "id": "TAT6",
+    "image_description": "A man and woman appearing agitated and one young lady shown separately in background",
+    "image_url": "/images/tat_family_dispute.png",
+    "sample_story": "Vijay was very fond of his younger sister, Rama, who was a very bright girl and had been a topper in the village school. In the rural culture of Haryana, girl education was not encouraged. Vijay's mother wanted her daughter to stop studying and learn household duties well and get married at an early age. Vijay wanted her sister to study and pursue her dream of becoming a doctor. After a heated discussion, Vijay convinced his mother to allow Rama to pursue higher studies. Rama became the first doctor from her village.",
+    "themes": ["Social Change", "Education", "Family Dynamics", "Women Empowerment"],
+    "protagonist": {
+      "name": "Vijay",
+      "age": 23,
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "olq_mapping": ["Social Adaptability", "Reasoning Ability", "Determination", "Initiative"],
+    "story_structure": {
+      "past": "Sister was bright but family opposed education",
+      "present": "Vijay convinced family to support sister",
+      "future": "Sister became doctor, changed village mindset"
+    }
+  },
+  {
+    "id": "TAT7",
+    "image_description": "Faces of an elder and a younger man wearing jackets and ties",
+    "image_url": "/images/tat_mentor.png",
+    "sample_story": "Mohan worked at a factory where Mr Verma was his boss. He had been working there for 9 years. He had joined the factory as a trainee and due to his hard work, sincerity and commitment he had become the Manager. Mr. Verma trusted and supported him. They decided to start manufacturing biodegradable packing bags for big items. Their product was good and found many buyers and got support from the government as well.",
+    "themes": ["Career Growth", "Mentorship", "Innovation", "Environmental Consciousness"],
+    "protagonist": {
+      "name": "Mohan",
+      "age": 30,
+      "gender": "Male",
+      "occupation": "Manager"
+    },
+    "olq_mapping": ["Determination", "Effective Intelligence", "Organising Ability", "Initiative"],
+    "story_structure": {
+      "past": "Started as trainee, worked hard to become manager",
+      "present": "Started new eco-friendly product line",
+      "future": "Product successful, government support received"
+    }
+  },
+  {
+    "id": "TAT8",
+    "image_description": "A man at a graveyard",
+    "image_url": "/images/tat_graveyard.png",
+    "sample_story": "Joseph had gone to the graveyard to pay homage to his departed grandfather. He had always been a source of inspiration and inculcated in him good ethical values and taught him to be modest and down to earth. He cleaned the grave, put flowers and remembered the good times they had had. He resolved to continue working in accordance with the good values inculcated in him by the departed soul. Joseph became an Air Force pilot.",
+    "themes": ["Values", "Inspiration", "Remembrance", "Career Achievement"],
+    "protagonist": {
+      "name": "Joseph",
+      "age": 24,
+      "gender": "Male",
+      "occupation": "Air Force Pilot"
+    },
+    "olq_mapping": ["Sense of Responsibility", "Determination", "Social Adaptability", "Courage"],
+    "story_structure": {
+      "past": "Grandfather instilled good values",
+      "present": "Paying respects, remembering teachings",
+      "future": "Living by those values, achieved dream career"
+    }
+  },
+  {
+    "id": "TAT9",
+    "image_description": "Accident of cart and car in middle of the road and a youth passing by",
+    "image_url": "/images/tat_accident.png",
+    "sample_story": "Rajat was going to the market when he saw an accident of a car and a cart on the road. He immediately ran to the spot of accident and saw that the driver of the cart was badly injured and the driver of the car was unhurt. He called the police using his mobile. The car was functional. The police reached the spot in 10 min. He took the cart driver in the car to the nearest hospital and informed his relatives. Once the relatives arrived and took over the patient he went home.",
+    "themes": ["Emergency Response", "Social Responsibility", "Quick Action", "Helping Others"],
+    "protagonist": {
+      "name": "Rajat",
+      "age": 22,
+      "gender": "Male",
+      "occupation": "Student"
+    },
+    "olq_mapping": ["Sense of Responsibility", "Speed of Decision", "Courage", "Cooperation"],
+    "story_structure": {
+      "past": "Was going to market, witnessed accident",
+      "present": "Took immediate action, called police, helped injured",
+      "future": "Patient reached hospital safely, relatives informed"
+    }
+  },
+  {
+    "id": "TAT10",
+    "image_description": "A lady in European dress with a book standing in the foreground, while farming activity is on in the background",
+    "image_url": "/images/tat_farming.png",
+    "sample_story": "Mary was the daughter of a farmer. She was a bright girl and wanted to raise the economic status of her family. She studied agricultural science and returned to her village. She took a small plot of her farm and used modern seeds and methods of cultivation to demonstrate the efficacy of her knowledge. The excellent results converted her parents into believing in her methods which were used on their entire farm next year. Their farm income trebled and they were very happy. Soon the entire village adopted the modern methods of farming and prospered.",
+    "themes": ["Education", "Agricultural Development", "Rural Progress", "Knowledge Application"],
+    "protagonist": {
+      "name": "Mary",
+      "age": 25,
+      "gender": "Female",
+      "occupation": "Agricultural Scientist"
+    },
+    "olq_mapping": ["Effective Intelligence", "Reasoning Ability", "Initiative", "Sense of Responsibility"],
+    "story_structure": {
+      "past": "Studied agricultural science to help family",
+      "present": "Demonstrated modern farming methods",
+      "future": "Village prospered through adoption of new methods"
+    }
+  },
+  {
+    "id": "TAT11",
+    "image_description": "Blank slide",
+    "image_url": "/images/tat_blank.png",
+    "sample_story": "Sita was a young civil engineer who was hired to look into the failure of a flyover bridge. She reviewed all the files, drawings, data-sheets of material purchased, quality reports of material used in the construction and the load calculations. She came to a conclusion that there was sub-standard construction material used. She decided to bring this out. She had to put up a brave fight against corrupt officers at every level. Sheer determination, courage and will to bring about justice to the affected families motivated her to keep fighting. In the end she won the case and was able to claim handsome compensation for the affected families.",
+    "themes": ["Integrity", "Fighting Corruption", "Justice", "Professional Ethics"],
+    "protagonist": {
+      "name": "Sita",
+      "age": 27,
+      "gender": "Female",
+      "occupation": "Civil Engineer"
+    },
+    "olq_mapping": ["Courage", "Determination", "Sense of Responsibility", "Effective Intelligence", "Reasoning Ability"],
+    "story_structure": {
+      "past": "Investigated bridge failure",
+      "present": "Found corruption, fought against it",
+      "future": "Won case, justice served, compensation received"
+    }
+  }
+]

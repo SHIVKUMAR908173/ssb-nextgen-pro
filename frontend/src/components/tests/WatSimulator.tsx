@@ -2,11 +2,12 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, CheckCircle, Zap, ShieldAlert, Loader2, Send, UploadCloud, PenTool, Keyboard } from 'lucide-react';
+import { Clock, CheckCircle, Zap, ShieldAlert, Loader2, Send, UploadCloud, PenTool, Keyboard, X } from 'lucide-react';
 import { useAntiCheat } from '@/hooks/useAntiCheat';
 import { useTimer } from '@/hooks/useTimer';
+import enrichedWatBank from '@/data/wat_repository_enriched.json';
 
-const TOTAL_WORDS = 60;
+const TOTAL_WORDS = 25;
 const WORD_TIME = 15; // 15 seconds per word
 
 interface WatScenario {
@@ -36,7 +37,8 @@ export interface WatSimulatorProps {
 
 export default function WatSimulator({ isFullBattery, onComplete }: WatSimulatorProps) {
   const [setIndex, setSetIndex] = useState(0);
-  const [scenarios, setScenarios] = useState<WatScenario[]>([]);
+  const [sessionState, setSessionState] = useState<any>(null);
+  const [currentWord, setCurrentWord] = useState<any>(null);
   const [isLoadingScenarios, setIsLoadingScenarios] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [phase, setPhase] = useState<'IDLE' | 'TEST' | 'UPLOAD_SHEET' | 'EVALUATING' | 'DONE' | 'DISQUALIFIED'>('IDLE');
@@ -53,30 +55,18 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   
   const [isUploading, setIsUploading] = useState(false);
   const [ocrStatus, setOcrStatus] = useState('');
+  const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
   const fetchScenarios = async () => {
+    // Just a stub for UI loading indication
     setIsLoadingScenarios(true);
-    try {
-      const res = await fetch(`/api/scenarios?type=WAT&limit=${TOTAL_WORDS}`);
-      const data = await res.json();
-      if (data.scenarios) {
-        setScenarios(data.scenarios);
-      }
-    } catch (e) {
-      console.error('Failed to fetch scenarios', e);
-    } finally {
-      setIsLoadingScenarios(false);
-    }
+    setTimeout(() => setIsLoadingScenarios(false), 500);
   };
 
   useEffect(() => {
-    // Run in next tick to avoid synchronous setState inside effect warning
-    Promise.resolve().then(() => {
-      fetchScenarios();
-    });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    fetchScenarios();
   }, [setIndex]);
 
   const handleTimerExpireRef = useRef<() => void>(() => {});
@@ -97,14 +87,38 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     }
   }, [phase, currentIdx, testMode]);
 
-  const startTest = () => {
-    if (scenarios.length === 0) return;
-    setCurrentIdx(0);
-    setAllResponses([]);
-    setResponse('');
-    setEvaluation(null);
-    setPhase('TEST');
-    timer.setTimeAndStart(WORD_TIME);
+  const startTest = async () => {
+    setIsLoadingScenarios(true);
+    try {
+      const res = await fetch('http://localhost:3001/api/wat/session/init', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          config: {
+            sessionId: `wat-session-${Date.now()}`,
+            wordCount: TOTAL_WORDS,
+            flashDurationSeconds: WORD_TIME,
+            seed: Date.now()
+          }
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to init session');
+
+      setSessionState(data.state);
+      setCurrentWord(data.next);
+      setCurrentIdx(0);
+      setAllResponses([]);
+      setResponse('');
+      setEvaluation(null);
+      setPhase('TEST');
+      timer.setTimeAndStart(data.next.flashDurationSeconds);
+    } catch (err) {
+      console.error(err);
+      setToast({ message: 'Failed to start test on backend', type: 'error' });
+    } finally {
+      setIsLoadingScenarios(false);
+    }
   };
 
   const nextSet = () => {
@@ -112,31 +126,53 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     setPhase('IDLE');
   };
 
-  function saveAndNext() {
-    const currentScenario = scenarios[currentIdx];
+  const saveAndNext = async () => {
+    if (!currentWord || !sessionState) return;
+
+    const currentResponseText = testMode === 'AUTHENTIC' ? "[HANDWRITTEN]" : (response.trim() || "[SKIPPED]");
+    
     const payload: WatResponse = {
-        scenario_id: currentScenario.id,
-        word: currentScenario.word,
-        response: testMode === 'AUTHENTIC' ? "[HANDWRITTEN]" : (response.trim() || "[SKIPPED]")
+        scenario_id: currentWord.wordId,
+        word: currentWord.word,
+        response: currentResponseText
     };
 
     const newResponses = [...allResponses, payload];
     setAllResponses(newResponses);
     setResponse('');
 
-    if (currentIdx + 1 === TOTAL_WORDS || currentIdx + 1 === scenarios.length) {
-        if (testMode === 'AUTHENTIC') {
-            setPhase('UPLOAD_SHEET');
-        } else {
-            if (isFullBattery && onComplete) {
-                onComplete(newResponses);
-            } else {
-                generateEvaluation(newResponses);
-            }
-        }
-    } else {
-        setCurrentIdx((prev) => prev + 1);
-        timer.setTimeAndStart(WORD_TIME);
+    try {
+      const res = await fetch('http://localhost:3001/api/wat/session/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          state: sessionState,
+          responseText: currentResponseText
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to submit response');
+
+      setSessionState(data.state);
+
+      if (data.state.stage === 'finished' || !data.next) {
+          if (testMode === 'AUTHENTIC') {
+              setPhase('UPLOAD_SHEET');
+          } else {
+              if (isFullBattery && onComplete) {
+                  onComplete(newResponses);
+              } else {
+                  generateEvaluation(newResponses);
+              }
+          }
+      } else {
+          setCurrentWord(data.next);
+          setCurrentIdx(data.state.currentIndex);
+          timer.setTimeAndStart(data.next.flashDurationSeconds);
+      }
+    } catch (err) {
+      console.error(err);
+      setToast({ message: 'Failed to submit answer to backend', type: 'error' });
     }
   };
 
@@ -153,7 +189,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
         const base64data = reader.result as string;
         
         setOcrStatus('Extracting handwriting via AI...');
-        const wordList = scenarios.map(s => s.word);
+        const wordList = allResponses.map(r => r.word);
         
         const res = await fetch('/api/ocr', {
           method: 'POST',
@@ -167,7 +203,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             setOcrStatus('Merging data...');
             // Merge scenario IDs with parsed responses
             const finalResponses: WatResponse[] = data.parsed.map((p: { word: string; response: string }, idx: number) => ({
-                scenario_id: scenarios[idx]?.id,
+                scenario_id: allResponses[idx]?.scenario_id || `word-${idx}`,
                 word: p.word,
                 response: p.response
             }));
@@ -178,14 +214,16 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
                 await generateEvaluation(finalResponses);
             }
         } else {
-            alert('Failed to parse handwriting: ' + (data.error || 'Unknown error'));
+            setToast({ message: 'Failed to parse handwriting: ' + (data.error || 'Unknown error'), type: 'error' });
+            setTimeout(() => setToast(null), 4000);
             setIsUploading(false);
         }
       };
       reader.readAsDataURL(file);
     } catch (err) {
       console.error(err);
-      alert('Upload failed.');
+      setToast({ message: 'Upload failed. Please try again.', type: 'error' });
+      setTimeout(() => setToast(null), 4000);
       setIsUploading(false);
     }
   };
@@ -221,7 +259,21 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-[#0f172a] border border-white/5 rounded-[32px] overflow-hidden shadow-2xl text-slate-200">
+    <div className="w-full max-w-4xl mx-auto bg-[#0f172a] border border-white/5 rounded-[32px] overflow-hidden shadow-2xl text-slate-200 relative">
+      
+      {/* Inline Toast Notification */}
+      {toast && (
+        <div className={`absolute top-4 left-4 right-4 z-30 flex items-center justify-between gap-3 p-4 rounded-2xl border ${
+          toast.type === 'success' 
+            ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' 
+            : 'bg-red-500/10 border-red-500/20 text-red-400'
+        }`}>
+          <p className="text-sm font-bold">{toast.message}</p>
+          <button onClick={() => setToast(null)} className="shrink-0 p-1 hover:opacity-70" aria-label="Dismiss notification">
+            <X size={16} />
+          </button>
+        </div>
+      )}
       
       {/* Header */}
       <div className="bg-[#162840] border-b border-white/5 p-6 flex justify-between items-center relative z-10">
@@ -231,7 +283,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             Word Association Test (Set {setIndex + 1})
           </h2>
           <p className="text-[10px] text-slate-500 font-black mt-1 tracking-widest uppercase">
-            15s Per Word // {scenarios.length} Words // Rapid Fire
+            15s Per Word // {TOTAL_WORDS} Words // Rapid Fire
           </p>
         </div>
         {phase === 'IDLE' && (
@@ -253,7 +305,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             
             <button 
                  onClick={startTest}
-                 disabled={isLoadingScenarios || scenarios.length === 0}
+                 disabled={isLoadingScenarios}
                  className="px-8 py-3 bg-yellow-500 hover:bg-yellow-400 disabled:bg-slate-700 disabled:text-slate-400 text-black font-black tracking-widest text-xs uppercase rounded-xl transition-all shadow-xl shadow-yellow-500/20 flex justify-center items-center gap-2"
             >
                  {isLoadingScenarios ? (
@@ -317,7 +369,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
         ) : phase === 'DISQUALIFIED' ? (
            <div className="flex-1 flex flex-col items-center justify-center p-12 gap-6 text-center">
                 <ShieldAlert className="w-24 h-24 text-red-500 animate-pulse" />
-                <h3 className="text-4xl font-black uppercase tracking-[0.2em] text-red-500">OIR-5 (Disqualified)</h3>
+                <h3 className="text-4xl font-black uppercase tracking-[0.2em] text-red-500">WAT (Disqualified)</h3>
                 <p className="text-slate-400 font-bold max-w-md">
                    You have committed a security infraction by switching tabs or losing focus during an active test. 
                    SSB testing requires strict discipline. This infraction has been logged.
@@ -423,7 +475,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
 
                 <div className="absolute top-6 left-8 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
                      <span className="text-slate-500 text-[10px] uppercase font-black tracking-widest mr-2">Word</span>
-                     <span className="text-white font-mono font-black text-lg">{currentIdx + 1}/{scenarios.length}</span>
+                     <span className="text-white font-mono font-black text-lg">{currentIdx + 1}/{TOTAL_WORDS}</span>
                 </div>
 
                 <div className="flex-1 flex flex-col items-center justify-center p-12 pt-24">
@@ -435,7 +487,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
                             exit={{ opacity: 0, scale: 1.2, filter: 'blur(10px)' }}
                             className="text-7xl md:text-9xl font-black text-white tracking-tighter drop-shadow-2xl mb-16 uppercase italic"
                         >
-                            {scenarios[currentIdx]?.word}
+                            {currentWord?.word}
                         </motion.div>
                     </AnimatePresence>
 

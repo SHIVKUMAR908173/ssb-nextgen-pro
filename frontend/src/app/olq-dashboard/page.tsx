@@ -122,7 +122,7 @@ export default function OLQDashboardPage() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link 
-            href="/dashboard"
+            href="/"
             className="flex items-center gap-2 text-slate-500 hover:text-white font-black uppercase tracking-widest text-[10px] transition-colors"
           >
             <ArrowLeft className="w-3 h-3" /> Back to Dashboard
@@ -359,7 +359,7 @@ export default function OLQDashboardPage() {
         </Link>
 
         <Link 
-          href="/dashboard"
+          href="/"
           className="bg-[#162840] rounded-[32px] p-8 border border-[#1E3A5F] hover:border-orange-500/30 transition-all group"
         >
           <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">

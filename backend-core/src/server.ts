@@ -10,8 +10,16 @@ import { join, normalize } from "node:path";
 import { runDeterministicMockInterviewSession } from "./ai/runSession.js";
 import { CandidateInput, InterviewRunConfig } from "./ai/types.js";
 import { buildWATDatasetStub } from "./lib/datasets/wat.js";
-import { createInitialStateAndNext, submitAnswer } from "./wat/sessionStateMachine.js";
+import { createInitialStateAndNext as createWATSessionInitAndNext, submitAnswer as submitWATAnswer } from "./wat/sessionStateMachine.js";
 import type { WATSessionConfig, WATSessionState, WATSessionInitResult, WATSessionSubmitResult } from "./wat/types.js";
+
+import { buildTATDatasetStub } from "./lib/datasets/tat.js";
+import { createInitialStateAndNext as createTATSessionInitAndNext, submitAnswer as submitTATAnswer } from "./tat/sessionStateMachine.js";
+import type { TATSessionConfig, TATSessionState, TATSessionInitResult, TATSessionSubmitResult } from "./tat/types.js";
+
+import { buildSRTDatasetStub } from "./lib/datasets/srt.js";
+import { createInitialStateAndNext as createSRTSessionInitAndNext, submitAnswer as submitSRTAnswer } from "./srt/sessionStateMachine.js";
+import type { SRTSessionConfig, SRTSessionState, SRTSessionInitResult, SRTSessionSubmitResult } from "./srt/types.js";
 
 import { createInitialStateAndNext as createGPESessionInitAndNext, submitPlan } from "./gpe/sessionStateMachine.js";
 import type { GPESessionConfig, GPESessionState, GPESessionInitResult, GPESessionSubmitResult } from "./gpe/types.js";
@@ -59,6 +67,35 @@ function getWATWordProvider() {
 
   return {
     getWords: () => words
+  };
+}
+
+function getTATScenarioProvider() {
+  const scenarios = buildTATDatasetStub().map((s) => ({
+    id: s.id,
+    imageUrl: s.imagePath,
+    isBlank: false
+  }));
+
+  scenarios.push({
+    id: "tat-blank",
+    imageUrl: "",
+    isBlank: true
+  });
+
+  return {
+    getScenarios: () => scenarios
+  };
+}
+
+function getSRTScenarioProvider() {
+  const scenarios = buildSRTDatasetStub().map((s) => ({
+    id: s.id,
+    situation: s.situation
+  }));
+
+  return {
+    getScenarios: () => scenarios
   };
 }
 
@@ -549,33 +586,58 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
         return;
       }
 
-      // For now we return the deterministic state only; transcript/answers are supplied on submit.
-      const state = {
-        stage: "introduction",
-        turnIndex: 0,
-        turnHistory: [],
-        askedQuestionIds: [],
-        finished: false
-      };
+      const { createStaticQuestionProvider } = await import("./ai/questionProviderStatic.js");
+      const { runInterviewStateMachine } = await import("./ai/interviewStateMachine.js");
+      
+      const deps = { questionProvider: createStaticQuestionProvider() };
+      const candidate: CandidateInput = { answersByQuestionId: {} };
 
-      res.status(200).json({ state, askedQuestions: [], stage: state.stage });
+      // Running without state initializes the state and gets the first turn
+      const out = runInterviewStateMachine({ deps, config: body.config, candidate });
+
+      res.status(200).json(out);
     } catch (e) {
       res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
     }
-    });
+  });
+
+  // PI SESSION TURN (interactive streaming)
+  app.post("/api/pi/session/turn", async (req: Request, res: Response) => {
+    try {
+      const body = (req.body) as {
+        config: InterviewRunConfig;
+        state: any;
+        candidate: CandidateInput;
+      };
+
+      if (!body?.config || !body?.state || !body?.candidate?.answersByQuestionId) {
+        res.status(400).json({ error: "Expected { config, state, candidate }" });
+        return;
+      }
+
+      const { createStaticQuestionProvider } = await import("./ai/questionProviderStatic.js");
+      const { runInterviewStateMachine } = await import("./ai/interviewStateMachine.js");
+
+      const deps = { questionProvider: createStaticQuestionProvider() };
+      const out = runInterviewStateMachine({
+        deps,
+        config: body.config,
+        candidate: body.candidate,
+        state: body.state
+      });
+
+      res.status(200).json(out);
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
 
   // PI SESSION SUBMIT (advance + final evaluation)
   app.post("/api/pi/session/submit", async (req: Request, res: Response) => {
     try {
       const body = (req.body) as {
         config: InterviewRunConfig;
-        state: {
-          stage: string;
-          turnIndex: number;
-          turnHistory: unknown[];
-          askedQuestionIds: string[];
-          finished: boolean;
-        };
+        state: any;
         candidate: CandidateInput;
       };
 
@@ -584,8 +646,9 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
         return;
       }
 
-      // For MVP: we don't yet stream/turn-submit per question.
-      // We treat the submit as "complete interview" and return deterministic evaluation.
+      // If we are submitting, we want the final evaluation. 
+      // The frontend should have processed turns until finished, but if they just submit,
+      // we can run the deterministic mock to the end.
       const out = runDeterministicMockInterviewSession({
         config: body.config,
         candidate: body.candidate
@@ -598,7 +661,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
     } catch (e) {
       res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
     }
-    });
+  });
 
   // CSS SESSION INIT
   app.post("/api/css/session/init", async (req: Request, res: Response) => {
@@ -762,7 +825,61 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
     } catch (e) {
       res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
     }
-    });
+  });
+
+  // STAGE 1 PPDT SESSION INIT (Mock)
+  app.post("/api/stage1/ppdt/init", async (req: Request, res: Response) => {
+    try {
+      res.status(200).json({
+        config: {
+          imageId: Math.floor(Math.random() * 60) + 1,
+          pictureTimeSeconds: 30,
+          writingTimeSeconds: 240,
+          narrationTimeSeconds: 60
+        }
+      });
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
+
+  // STAGE 1 PPDT SESSION SUBMIT (Mock)
+  app.post("/api/stage1/ppdt/submit", async (req: Request, res: Response) => {
+    try {
+      const body = req.body;
+      if (!body.content || !body.content.story) {
+        res.status(400).json({ error: "Expected { content: { story, narration, charactersIdentified } }" });
+        return;
+      }
+
+      const evaluation = {
+        olq_summary: "Mock Evaluation: The narrative demonstrates an average level of logical reasoning and some initiative. However, character motivations remain somewhat superficial and the problem-solving approach lacks depth.",
+        required_improvements: "Mock Feedback: Focus on explicit action steps. The main character should demonstrate clear leadership and social effectiveness rather than just reacting.",
+        screening_probability: "65%",
+        olq_analysis: {
+          "Effective Intelligence": 2.5,
+          "Reasoning Ability": 3.0,
+          "Organizing Ability": 2.5,
+          "Power of Expression": 3.5,
+          "Social Adaptability": 3.0,
+          "Cooperation": 3.0,
+          "Sense of Responsibility": 2.5,
+          "Initiative": 3.5,
+          "Self Confidence": 3.0,
+          "Speed of Decision": 2.5,
+          "Ability to Influence": 2.0,
+          "Liveliness": 3.0,
+          "Determination": 3.0,
+          "Courage": 2.5,
+          "Stamina": 3.0
+        }
+      };
+
+      res.status(200).json(evaluation);
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
 
   // WAT SESSION INIT
   app.post("/api/wat/session/init", async (req: Request, res: Response) => {
@@ -784,7 +901,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
 
       const deps = { wordProvider: getWATWordProvider() };
 
-      const out: WATSessionInitResult = createInitialStateAndNext({ deps, config });
+      const out: WATSessionInitResult = createWATSessionInitAndNext({ deps, config });
 
       res.status(200).json(out);
     } catch (e) {
@@ -807,7 +924,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
 
       const deps = { wordProvider: getWATWordProvider() };
 
-      const out: WATSessionSubmitResult = submitAnswer({
+      const out: WATSessionSubmitResult = submitWATAnswer({
         deps,
         state: body.state,
         responseText: body.responseText
@@ -818,6 +935,108 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
       res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
     }
     });
+
+  // TAT SESSION INIT
+  app.post("/api/tat/session/init", async (req: Request, res: Response) => {
+    try {
+      const body = (req.body) as { config: TATSessionConfig };
+
+      if (!body?.config?.sessionId || !body?.config) {
+        res.status(400).json({ error: "Expected { config: { sessionId, scenarioCount, pictureTimeSeconds, writingTimeSeconds, seed } }" });
+        return;
+      }
+
+      const availableScenarios = buildTATDatasetStub().length;
+      const adjustedCount = Math.min(body.config.scenarioCount, availableScenarios);
+
+      const config: TATSessionConfig = { ...body.config, scenarioCount: adjustedCount };
+      const deps = { scenarioProvider: getTATScenarioProvider() };
+
+      const out: TATSessionInitResult = createTATSessionInitAndNext({ deps, config });
+
+      res.status(200).json(out);
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
+
+  // TAT SESSION SUBMIT
+  app.post("/api/tat/session/submit", async (req: Request, res: Response) => {
+    try {
+      const body = (req.body) as {
+        state: TATSessionState;
+        responseText: string;
+      };
+
+      if (!body?.state || typeof body?.responseText !== "string") {
+        res.status(400).json({ error: "Expected { state: TATSessionState, responseText: string }" });
+        return;
+      }
+
+      const deps = { scenarioProvider: getTATScenarioProvider() };
+
+      const out: TATSessionSubmitResult = submitTATAnswer({
+        deps,
+        state: body.state,
+        responseText: body.responseText
+      });
+
+      res.status(200).json(out);
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
+
+  // SRT SESSION INIT
+  app.post("/api/srt/session/init", async (req: Request, res: Response) => {
+    try {
+      const body = (req.body) as { config: SRTSessionConfig };
+
+      if (!body?.config?.sessionId || !body?.config) {
+        res.status(400).json({ error: "Expected { config: { sessionId, scenarioCount, flashDurationSeconds, seed } }" });
+        return;
+      }
+
+      const availableScenarios = buildSRTDatasetStub().length;
+      const adjustedCount = Math.min(body.config.scenarioCount, availableScenarios);
+
+      const config: SRTSessionConfig = { ...body.config, scenarioCount: adjustedCount };
+      const deps = { scenarioProvider: getSRTScenarioProvider() };
+
+      const out: SRTSessionInitResult = createSRTSessionInitAndNext({ deps, config });
+
+      res.status(200).json(out);
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
+
+  // SRT SESSION SUBMIT
+  app.post("/api/srt/session/submit", async (req: Request, res: Response) => {
+    try {
+      const body = (req.body) as {
+        state: SRTSessionState;
+        responseText: string;
+      };
+
+      if (!body?.state || typeof body?.responseText !== "string") {
+        res.status(400).json({ error: "Expected { state: SRTSessionState, responseText: string }" });
+        return;
+      }
+
+      const deps = { scenarioProvider: getSRTScenarioProvider() };
+
+      const out: SRTSessionSubmitResult = submitSRTAnswer({
+        deps,
+        state: body.state,
+        responseText: body.responseText
+      });
+
+      res.status(200).json(out);
+    } catch (e) {
+      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
+    }
+  });
 
   // GPE SESSION INIT
   app.post("/api/gpe/session/init", async (req: Request, res: Response) => {
@@ -1502,6 +1721,17 @@ server.listen(port, "0.0.0.0", () => {
   console.log(`WAT Init: POST http://localhost:${port}/api/wat/session/init`);
   // eslint-disable-next-line no-console
   console.log(`WAT Submit: POST http://localhost:${port}/api/wat/session/submit`);
+
+  // eslint-disable-next-line no-console
+  console.log(`TAT Init: POST http://localhost:${port}/api/tat/session/init`);
+  // eslint-disable-next-line no-console
+  console.log(`TAT Submit: POST http://localhost:${port}/api/tat/session/submit`);
+
+  // eslint-disable-next-line no-console
+  console.log(`SRT Init: POST http://localhost:${port}/api/srt/session/init`);
+  // eslint-disable-next-line no-console
+  console.log(`SRT Submit: POST http://localhost:${port}/api/srt/session/submit`);
+
 
   // eslint-disable-next-line no-console
   console.log(`SSB Lecturettee Mock: POST http://localhost:${port}/api/ssb/lecturette/mock-evaluate`);

@@ -158,6 +158,74 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
     };
   }, [user?.id]);
 
+  // Show sign-in prompt for unauthenticated visitors
+  if (!user && !loading) {
+    return (
+      <div className="space-y-12 pb-20">
+        <motion.section 
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="relative overflow-hidden rounded-3xl bg-[#0f2d4a]/40 backdrop-blur-xl p-8 md:p-16 border border-white/10 shadow-[0_0_50px_rgba(30,58,95,0.5)]"
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f2d4a]/80 via-[#1a3d6e]/50 to-[#020617]/90" />
+          <div className="relative z-10 max-w-2xl space-y-6 mx-auto text-center md:text-left">
+            <h1 className="text-4xl md:text-7xl font-black text-white leading-none uppercase tracking-tighter">
+              SSB <span className="text-emerald-500">PREP</span>
+            </h1>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.4em]">by SSB NEXTGEN</p>
+            <p className="text-[#8BA0B8] text-lg font-bold leading-relaxed italic">
+              &quot;AI-powered SSB preparation with virtual interviews, psychology tests, GTO simulations, and officer-grade tactical mentoring.&quot;
+            </p>
+            <div className="flex flex-wrap items-center gap-4 pt-4 justify-center md:justify-start">
+              <Link href="/login" className="bg-orange-500 hover:bg-orange-400 text-black px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] shadow-2xl transition-all active:scale-95">
+                Sign In to Start
+              </Link>
+              <Link href="/signup" className="bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all">
+                Create Account
+              </Link>
+            </div>
+          </div>
+          <motion.div 
+            animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-[120px]" 
+          />
+        </motion.section>
+
+        {/* Show modules grid for discovery */}
+        <section className="space-y-8">
+          <div className="flex items-center gap-4">
+            <Target className="w-8 h-8 text-orange-500" />
+            <h3 className="font-black text-2xl tracking-tight uppercase text-white">Training Modules</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {modules.map((mod, index) => (
+              <Link key={mod.name} href={mod.path}>
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  className="group bg-[#162840]/80 backdrop-blur-md border border-white/10 rounded-3xl p-10 hover:bg-[#1a3050] hover:border-orange-500/50 transition-all cursor-pointer relative overflow-hidden block shadow-xl hover:shadow-[0_0_40px_rgba(249,115,22,0.15)]"
+                >
+                  <div className="w-14 h-14 bg-[#0f172a] rounded-2xl flex items-center justify-center mb-6 text-slate-400 group-hover:text-orange-500 group-hover:bg-orange-500/20 transition-all duration-500 border border-white/5 shadow-inner relative z-10">
+                    <mod.icon size={26} />
+                  </div>
+                  <h4 className="text-xl font-black text-white uppercase tracking-tight mb-2 group-hover:text-orange-500 transition-colors relative z-10">{mod.name}</h4>
+                  <p className="text-[11px] font-bold text-slate-400 leading-relaxed mb-6 uppercase tracking-widest relative z-10">{mod.desc}</p>
+                  <span className="inline-block text-[9px] font-black text-orange-500 bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/20 uppercase tracking-[0.2em] relative z-10">
+                    {mod.tag}
+                  </span>
+                </motion.div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-12 pb-20">
       {/* Tactical Marquee */}
@@ -165,7 +233,7 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="-mx-8"
+        className="-mx-4 lg:-mx-8 overflow-hidden"
       >
         <TacticalMarquee />
       </motion.div>
@@ -175,9 +243,10 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-        className="relative overflow-hidden rounded-[48px] bg-[#0f2d4a]/40 backdrop-blur-xl p-16 border border-white/10 shadow-[0_0_50px_rgba(30,58,95,0.5)]"
+        className="relative overflow-hidden rounded-3xl md:rounded-[48px] bg-[#0f2d4a]/40 backdrop-blur-xl p-8 md:p-16 border border-white/10 shadow-[0_0_50px_rgba(30,58,95,0.5)]"
       >
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+        {/* Subtle pattern overlay (CSS-only, no external dependency) */}
+        <div className="absolute inset-0 opacity-5 mix-blend-overlay" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
         <div className="absolute inset-0 bg-gradient-to-br from-[#0f2d4a]/80 via-[#1a3d6e]/50 to-[#020617]/90"></div>
         <div className="relative z-10 max-w-2xl space-y-6">
           <div className="bg-orange-500/10 border border-orange-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
@@ -192,15 +261,15 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
             &quot;Your SSB preparation journey continues. Track your reflexes, practice psych batteries, 
             and receive officer-grade feedback in real-time.&quot;
           </p>
-          <div className="flex items-center gap-4 pt-4">
-             <Link href="/vacha/assessment" className="bg-orange-500 hover:bg-orange-400 text-black px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] shadow-2xl transition-all active:scale-95">
+          <div className="flex flex-wrap items-center gap-3 md:gap-4 pt-4">
+             <Link href="/vacha/assessment" className="bg-orange-500 hover:bg-orange-400 text-black px-6 md:px-8 py-3 md:py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] shadow-2xl transition-all active:scale-95">
                 Initialize Mission
              </Link>
-             <Link href="/guide" className="bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all">
+             <Link href="/guide" className="bg-white/5 border border-white/10 hover:bg-white/10 text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all">
                 Read SOP
              </Link>
-             <Link href="/profile" className="bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all flex items-center gap-2">
-                <Trophy size={14} /> View Service Profile
+             <Link href="/profile" className="bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400 px-6 md:px-8 py-3 md:py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all flex items-center gap-2">
+                <Trophy size={14} /> Service Profile
              </Link>
           </div>
         </div>
@@ -225,7 +294,7 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
             whileHover={{ y: -5, scale: 1.02 }}
-            className="bg-[#162840]/60 backdrop-blur-md border border-white/5 rounded-[32px] p-8 flex items-center gap-6 hover:border-orange-500/50 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] group relative overflow-hidden"
+            className="bg-[#162840]/60 backdrop-blur-md border border-white/5 rounded-3xl p-6 md:p-8 flex items-center gap-6 hover:border-orange-500/50 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] group relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
             <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${stat.bg} ${stat.color} transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-inner`}>
@@ -337,7 +406,7 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.3 + (index * 0.1) }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group bg-[#162840]/80 backdrop-blur-md border border-white/10 rounded-[40px] p-10 hover:bg-[#1a3050] hover:border-orange-500/50 transition-all cursor-pointer relative overflow-hidden block shadow-xl hover:shadow-[0_0_40px_rgba(249,115,22,0.15)]"
+                className="group bg-[#162840]/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:bg-[#1a3050] hover:border-orange-500/50 transition-all cursor-pointer relative overflow-hidden block shadow-xl hover:shadow-[0_0_40px_rgba(249,115,22,0.15)]"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="w-14 h-14 bg-[#0f172a] rounded-2xl flex items-center justify-center mb-6 text-slate-400 group-hover:text-orange-500 group-hover:bg-orange-500/20 transition-all duration-500 border border-white/5 shadow-inner relative z-10 group-hover:rotate-6 group-hover:scale-110">

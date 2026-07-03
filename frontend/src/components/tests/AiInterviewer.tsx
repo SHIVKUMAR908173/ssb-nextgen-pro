@@ -70,13 +70,13 @@ export default function AiInterviewer() {
   // States: 'IDLE' | 'LISTENING' | 'ANALYZING' | 'DONE' | 'MISSING_PIQ' | 'FETCHING_Q'
   const [phase, setPhase] = useState<'IDLE' | 'LISTENING' | 'ANALYZING' | 'DONE' | 'MISSING_PIQ' | 'FETCHING_Q'>('IDLE');
   
-  const [currentQuestion, setCurrentQuestion] = useState<string>('');
-  const [questionCount, setQuestionCount] = useState(0);
-  const MAX_QUESTIONS = 6;
+  const [currentQuestions, setCurrentQuestions] = useState<{id: string, question: string}[]>([]);
+  const [sessionState, setSessionState] = useState<any>(null);
   
   const [transcript, setTranscript] = useState('');
   const [recordingStartTime, setRecordingStartTime] = useState<number | null>(null);
   const [interviewHistory, setInterviewHistory] = useState<InterviewHistoryItem[]>([]);
+  const [finalEvaluation, setFinalEvaluation] = useState<any>(null);
   
   const recognitionRef = useRef<ISpeechRecognition | null>(null);
 
@@ -156,21 +156,51 @@ export default function AiInterviewer() {
     }
   };
 
-  const fetchNextQuestion = async (history: InterviewHistoryItem[]) => {
+  const fetchNextQuestion = async (state: any = null) => {
     setPhase('FETCHING_Q');
     try {
-      const previousAnswers = history.map(h => `Q: ${h.question} | A: ${h.answer}`);
-      const data = await ApiClient.post<{ question: string }>('/api/interview-question', { 
-        sessionId: 'session-1', 
-        previousAnswers, 
-        piqData,
-        questionType: 'PIQ-Driven CIQ',
-        questionNumber: history.length + 1
-      });
-      if (data.question) {
-        setCurrentQuestion(data.question);
+      let data: any;
+      if (!state) {
+        data = await ApiClient.post<any>('/api/pi/session/init', { 
+          config: {
+            sessionId: `pi-${Date.now()}`,
+            rapidFireBundleSize: 4,
+            maxTurns: 5,
+            seed: Date.now()
+          }
+        });
+      } else {
+        // we map the single transcript to all asked questions in the turn
+        const answersByQuestionId: Record<string, string> = {};
+        if (currentQuestions.length > 0) {
+            currentQuestions.forEach(q => {
+                answersByQuestionId[q.id] = transcript || "[NO RESPONSE]";
+            });
+        }
+        data = await ApiClient.post<any>('/api/pi/session/turn', {
+          config: {
+            sessionId: `pi-${Date.now()}`,
+            rapidFireBundleSize: 4,
+            maxTurns: 5,
+            seed: Date.now() // doesn't matter for turn if state exists
+          },
+          state: state,
+          candidate: { answersByQuestionId }
+        });
+      }
+
+      setSessionState(data.state);
+      
+      if (data.next?.evaluation) {
+         setFinalEvaluation(data.next.evaluation);
+         setPhase('DONE');
+      } else if (data.next?.askedQuestions?.length > 0) {
+        setCurrentQuestions(data.next.askedQuestions);
         setPhase('IDLE');
-        speakQuestion(data.question);
+        const textToSpeak = data.next.askedQuestions.map((q: any) => q.question).join(' ');
+        speakQuestion(textToSpeak);
+      } else {
+        setPhase('DONE');
       }
     } catch (e) {
       console.error(e);
@@ -180,8 +210,7 @@ export default function AiInterviewer() {
 
   const startInterview = () => {
     setInterviewHistory([]);
-    setQuestionCount(0);
-    fetchNextQuestion([]);
+    fetchNextQuestion(null);
   };
 
   const startListening = () => {
@@ -212,30 +241,12 @@ export default function AiInterviewer() {
     const metrics: VoiceMetrics = { wpm, fillerCount, confidenceScore: Math.round(score) };
     const currentAns = transcript.trim() || "[NO RESPONSE DETECTED]";
 
-    // Evaluate answer with AI
-    let feedback: Record<string, unknown> | undefined = undefined;
-    try {
-       const previousContext = interviewHistory.map(h => `Q: ${h.question}\nA: ${h.answer}`).join("\n\n");
-       feedback = await ApiClient.post<Record<string, unknown>>('/api/evaluate-interview', {
-           transcript: currentAns,
-           currentCiqStage: questionCount + 1,
-           piqData,
-           previousContext,
-           speechMetrics: metrics
-       });
-    } catch(e) {
-       console.error("Evaluation failed", e);
-    }
-
-    const newHistory = [...interviewHistory, { question: currentQuestion, answer: currentAns, metrics, feedback }];
+    const combinedQuestionText = currentQuestions.map(q => q.question).join(' | ');
+    const newHistory = [...interviewHistory, { question: combinedQuestionText, answer: currentAns, metrics }];
     setInterviewHistory(newHistory);
-    setQuestionCount(prev => prev + 1);
 
-    if (questionCount + 1 >= MAX_QUESTIONS) {
-        setPhase('DONE');
-    } else {
-        fetchNextQuestion(newHistory);
-    }
+    // Continue state machine
+    fetchNextQuestion(sessionState);
   };
 
   if (!mounted || isPiqLoading) {
@@ -307,7 +318,7 @@ export default function AiInterviewer() {
           </p>
         </div>
         <div className="flex items-center gap-3">
-          {phase === 'IDLE' && questionCount === 0 && (
+          {phase === 'IDLE' && !sessionState && (
             <button onClick={startInterview} className="px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded font-bold uppercase tracking-widest text-xs">
               Start Interview
             </button>
@@ -323,31 +334,30 @@ export default function AiInterviewer() {
                    <CheckCircle className="w-16 h-16 text-emerald-400 mb-4 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)]" />
                    <h3 className="text-3xl font-black uppercase text-white tracking-widest mb-8">Interview Complete</h3>
                    
+                   {finalEvaluation && (
+                       <div className="bg-slate-900/80 border border-emerald-500/20 rounded-xl p-6 space-y-4 mb-8 w-full max-w-2xl text-left">
+                          <h4 className="text-emerald-400 font-black uppercase tracking-widest text-sm border-b border-white/10 pb-2">Final Mock Evaluation</h4>
+                          <p className="text-white text-sm"><strong>Recommendation:</strong> {finalEvaluation.recommendation}</p>
+                          <p className="text-white text-sm"><strong>Overall Justification:</strong> {finalEvaluation.overallJustification}</p>
+                          
+                          <div className="mt-4">
+                             <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest mb-2">Factor Aggregation</p>
+                             <div className="grid grid-cols-2 gap-2 text-xs text-slate-300">
+                                <span>Planning & Org: {finalEvaluation.factorAggregation?.planningOrganizing}/10</span>
+                                <span>Social Adj: {finalEvaluation.factorAggregation?.socialAdjustment}/10</span>
+                                <span>Social Effect: {finalEvaluation.factorAggregation?.socialEffectiveness}/10</span>
+                                <span>Dynamic: {finalEvaluation.factorAggregation?.dynamicQualities}/10</span>
+                             </div>
+                          </div>
+                       </div>
+                   )}
+                   
                    <div className="w-full space-y-6">
                       {interviewHistory.map((h, i) => (
                          <div key={i} className="bg-black/40 border border-white/10 rounded-2xl p-6">
-                            <h4 className="text-sm font-black text-blue-400 uppercase tracking-widest mb-2 flex items-center gap-2"><Volume2 className="w-4 h-4" /> Q{i+1}: {h.question}</h4>
-                            <p className="text-slate-300 italic mb-4">"{h.answer}"</p>
-                            
-                            {h.feedback && (
-                               <div className="bg-slate-900/80 border border-blue-500/20 rounded-xl p-4 space-y-4">
-                                  <div className="flex justify-between items-start">
-                                     <div>
-                                        <p className="text-[10px] text-blue-400 font-black uppercase tracking-widest mb-1">Authenticity & Consistency</p>
-                                        <p className="text-xs text-white font-bold">{String(h.feedback.authenticity_verdict || '')}</p>
-                                        <p className="text-xs text-slate-400">{String(h.feedback.piq_consistency || '')}</p>
-                                     </div>
-                                     <div className="text-right">
-                                        <p className="text-[10px] text-emerald-400 font-black uppercase tracking-widest mb-1">Score</p>
-                                        <p className="text-lg text-white font-black">{String(h.feedback.confidenceScore || 0)}/100</p>
-                                     </div>
-                                  </div>
-                                  <div>
-                                     <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest mb-1">IO Analysis</p>
-                                     <p className="text-xs text-slate-300">{String(h.feedback.board_president_analysis || '')}</p>
-                                  </div>
-                               </div>
-                            )}
+                            <h4 className="text-sm font-black text-blue-400 uppercase tracking-widest mb-2 flex items-center gap-2"><Volume2 className="w-4 h-4" /> Turn {i+1}</h4>
+                            <p className="text-slate-400 text-sm mb-4 whitespace-pre-wrap">{h.question.split(' | ').join('\n')}</p>
+                            <p className="text-slate-300 italic mb-4 border-t border-white/10 pt-4">"{h.answer}"</p>
                          </div>
                       ))}
                    </div>
@@ -379,15 +389,19 @@ export default function AiInterviewer() {
                      <p className="text-blue-400 text-sm font-black uppercase tracking-widest animate-pulse">Reviewing PIQ & Generating Question...</p>
                   )}
 
-                  {phase !== 'FETCHING_Q' && currentQuestion && (
+                  {phase !== 'FETCHING_Q' && currentQuestions.length > 0 && (
                       <div className="text-center max-w-2xl z-20 mb-8">
-                          <h4 className="text-blue-400 text-sm font-black uppercase tracking-[0.2em] mb-2">Question {questionCount + 1}</h4>
-                          <p className="text-white text-xl font-bold">{currentQuestion}</p>
+                          <h4 className="text-blue-400 text-sm font-black uppercase tracking-[0.2em] mb-2">Stage: {sessionState?.stage || 'Interview'}</h4>
+                          <ul className="text-white text-lg font-bold space-y-2">
+                             {currentQuestions.map(q => (
+                                <li key={q.id}>{q.question}</li>
+                             ))}
+                          </ul>
                       </div>
                   )}
 
                   <div className="flex flex-col items-center gap-6 z-20 mt-4">
-                      {phase === 'IDLE' && questionCount > 0 && (
+                      {phase === 'IDLE' && sessionState && (
                           <button onClick={startListening} className="w-24 h-24 rounded-full bg-charcoal border-2 border-white/20 flex flex-col items-center justify-center text-slate-400 hover:text-white hover:border-blue-400 transition-all group">
                               <Mic className="w-8 h-8 mb-1 group-hover:scale-110" />
                               <span className="text-[10px] font-bold uppercase tracking-widest">Ans</span>

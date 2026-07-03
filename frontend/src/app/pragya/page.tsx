@@ -36,7 +36,7 @@ export default function PragyaDashboard() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <Link 
-          href="/dashboard"
+          href="/"
           className="flex items-center gap-2 text-slate-500 hover:text-white font-black uppercase tracking-widest text-[10px] transition-colors"
         >
           <ArrowLeft className="w-3 h-3" /> Back to Base

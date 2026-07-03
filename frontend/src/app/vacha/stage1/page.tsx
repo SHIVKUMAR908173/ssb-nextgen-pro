@@ -57,6 +57,7 @@ export default function CSSSStage1Page() {
   // Test session state
   const [sessionState, setSessionState] = useState<StateMachineState | null>(null)
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null)
+  const [allQuestions, setAllQuestions] = useState<any[]>([])
   const [currentKind, setCurrentKind] = useState<'css' | 'opam'>('css')
   const [selectedOption, setSelectedOption] = useState<number | null>(null)
   const [evaluation, setEvaluation] = useState<EvaluationResult | null>(null)
@@ -113,7 +114,10 @@ export default function CSSSStage1Page() {
         config
       });
 
-      const firstQuestion = data.questions?.[0]
+      const questionsArray = data.questions || []
+      setAllQuestions(questionsArray)
+
+      const firstQuestion = questionsArray[0]
       if (firstQuestion) {
         setCurrentQuestion({
           id: firstQuestion.id,
@@ -192,20 +196,33 @@ export default function CSSSStage1Page() {
             opam: { domainScores: [{ domain: 'discipline', score: 9.0 }, { domain: 'team_spirit', score: 8.5 }] }
         });
     } else {
+        const nextIndex = sessionState.currentIndex + 1;
         setSessionState(prev => ({
             ...prev!,
-            currentIndex: prev!.currentIndex + 1,
+            currentIndex: nextIndex,
             answeredCount: prev!.answeredCount + 1
         }));
-        setCurrentQuestion({
-            id: `mock-${sessionState.currentIndex + 2}`,
-            index: sessionState.currentIndex + 1,
-            domain: sessionState.currentIndex % 2 === 0 ? 'spatial' : 'team_spirit',
-            prompt: sessionState.currentIndex % 2 === 0 ? 'Which pattern completes the series?' : 'Your teammate refuses to work. What do you do?',
-            options: ['Option A', 'Option B', 'Option C', 'Option D'],
-            timeLimitSeconds: 10
-        });
-        setCurrentKind(sessionState.currentIndex % 2 === 0 ? 'css' : 'opam');
+        const nextQ = allQuestions[nextIndex];
+        if (nextQ) {
+            setCurrentQuestion({
+                id: nextQ.id || `q-${nextIndex}`,
+                index: nextIndex,
+                domain: nextQ.category || (nextIndex % 2 === 0 ? 'spatial' : 'team_spirit'),
+                prompt: nextQ.questionText || 'Which pattern completes the series?',
+                options: nextQ.options || ['Option A', 'Option B', 'Option C', 'Option D'],
+                timeLimitSeconds: 15
+            });
+        } else {
+            setCurrentQuestion({
+                id: `mock-${nextIndex + 1}`,
+                index: nextIndex,
+                domain: nextIndex % 2 === 0 ? 'spatial' : 'team_spirit',
+                prompt: nextIndex % 2 === 0 ? 'Which pattern completes the series?' : 'Your teammate refuses to work. What do you do?',
+                options: ['Option A', 'Option B', 'Option C', 'Option D'],
+                timeLimitSeconds: 10
+            });
+        }
+        setCurrentKind(nextIndex % 2 === 0 ? 'css' : 'opam');
         setTimeLeft(10);
         questionStartTimeRef.current = Date.now();
     }

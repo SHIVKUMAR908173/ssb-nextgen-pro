@@ -16,8 +16,19 @@ export default function HeaderAuth() {
         setMenuOpen(false);
       }
     }
+    
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+      }
+    }
+    
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
   if (loading) {
@@ -46,7 +57,10 @@ export default function HeaderAuth() {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="flex items-center gap-2 hover:bg-white/5 rounded-xl px-2 py-1 transition-all"
+        className="flex items-center gap-2 hover:bg-white/5 rounded-xl px-2 py-1 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+        aria-expanded={menuOpen}
+        aria-haspopup="true"
+        aria-label="User menu"
       >
         <div className="w-9 h-9 rounded-full bg-gradient-to-br from-orange-500 to-amber-600 text-black flex items-center justify-center font-black text-sm shadow-lg shadow-orange-500/20">
           {initials}

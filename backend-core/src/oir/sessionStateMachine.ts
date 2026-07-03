@@ -55,6 +55,7 @@ export type OIRSessionInitResult = {
     prompt: string;
     options: string[];
   };
+  questions: OIRSelectedQuestion[];
 };
 
 export type OIRSessionSubmitResult = {
@@ -212,7 +213,8 @@ export function createInitialStateAndNext(params: {
       questionId: first.id,
       prompt: first.prompt,
       options: first.options
-    }
+    },
+    questions: selected
   };
 }
 

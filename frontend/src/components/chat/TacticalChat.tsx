@@ -25,9 +25,19 @@ function formatTime(date: Date): string {
   return date.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true });
 }
 
+function escapeHtml(unsafe: string) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 // Simple markdown-like renderer for bold and bullets
 function renderContent(text: string) {
-  const lines = text.split('\n');
+  const safeText = escapeHtml(text);
+  const lines = safeText.split('\n');
   return lines.map((line, i) => {
     // Bold text
     let processed = line.replace(/\*\*(.*?)\*\*/g, '<strong class="text-yellow-400 font-black">$1</strong>');

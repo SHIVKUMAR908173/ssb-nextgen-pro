@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, CheckCircle, ShieldAlert, Image as ImageIcon, Loader2, Upload } from 'lucide-react';
-import { TAT_SETS } from '@/lib/tat-dataset';
+import tatSampleStories from '@/data/tat_sample_stories.json';
 import { useTimer } from '@/hooks/useTimer';
 import { experimental_useObject } from '@ai-sdk/react';
 import { z } from 'zod';
@@ -31,8 +31,8 @@ const tatEvaluationSchema = z.object({
   overall_tat_score: z.number()
 });
 
-const TOTAL_SETS = 60;
-const TOTAL_SLIDES = 13;
+const TOTAL_SETS = 1;
+const TOTAL_SLIDES = 12;
 const PICTURE_TIME = 30;
 const WRITING_TIME = 240;
 
@@ -48,6 +48,8 @@ export interface TatSimulatorProps {
 
 export default function TatSimulator({ isFullBattery, onComplete }: TatSimulatorProps) {
   const [setIndex, setSetIndex] = useState(0);
+  const [sessionState, setSessionState] = useState<any>(null);
+  const [currentSlideObj, setCurrentSlideObj] = useState<any>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [phase, setPhase] = useState<'IDLE' | 'VIEWING' | 'WRITING' | 'EVALUATING' | 'DONE'>('IDLE');
   const [story, setStory] = useState('');
@@ -56,6 +58,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [fallbackEval, setFallbackEval] = useState<any>(null);
+  const [isLoadingScenarios, setIsLoadingScenarios] = useState(false);
 
   const handleTimerExpireRef = useRef<() => void>(() => {});
 
@@ -115,22 +118,47 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
     submit({ stories: finalResponses });
   };
 
-  const saveAndAdvance = useCallback(() => {
-    const isBlank = currentSlide === 12;
+  const saveAndAdvance = useCallback(async () => {
+    if (!currentSlideObj || !sessionState) return;
+
+    const isBlank = currentSlideObj.isBlank;
+    const currentResponseText = story.trim() || '[NO STORY WRITTEN]';
+    
     const payload = {
         trigger: isBlank ? 'Blank Slide' : `TAT Picture ${currentSlide + 1}`,
-        response: story.trim() || '[NO STORY WRITTEN]'
+        response: currentResponseText
     };
     const newStories = [...allStories, payload];
     setAllStories(newStories);
     setStory('');
-    if (currentSlide + 1 === TOTAL_SLIDES) { generateEvaluation(newStories); }
-    else { 
-      setCurrentSlide((prev) => prev + 1); 
-      setPhase('VIEWING'); 
-      timer.setTimeAndStart(PICTURE_TIME); 
+
+    try {
+      const res = await fetch('http://localhost:3001/api/tat/session/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          state: sessionState,
+          responseText: currentResponseText
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to submit answer');
+
+      setSessionState(data.state);
+
+      if (data.state.stage === 'finished' || !data.next) {
+        generateEvaluation(newStories);
+      } else {
+        setCurrentSlideObj(data.next);
+        setCurrentSlide(data.state.currentIndex);
+        setPhase('VIEWING');
+        timer.setTimeAndStart(data.next.pictureTimeSeconds);
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Failed to submit story to backend.');
     }
-  }, [currentSlide, story, allStories, timer, isFullBattery, onComplete]);
+  }, [currentSlideObj, sessionState, story, currentSlide, allStories, timer, isFullBattery, onComplete]);
 
   handleTimerExpireRef.current = () => {
     if (phase === 'VIEWING') {
@@ -145,10 +173,39 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
     if (phase === 'WRITING' && textareaRef.current) textareaRef.current.focus();
   }, [phase]);
 
-  const startTest = () => {
-    setCurrentSlide(0); setAllStories([]); setStory(''); setFallbackEval(null);
-    setPhase('VIEWING'); 
-    timer.setTimeAndStart(PICTURE_TIME);
+  const startTest = async () => {
+    setIsLoadingScenarios(true);
+    try {
+      const res = await fetch('http://localhost:3001/api/tat/session/init', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          config: {
+            sessionId: `tat-session-${Date.now()}`,
+            scenarioCount: TOTAL_SLIDES,
+            pictureTimeSeconds: PICTURE_TIME,
+            writingTimeSeconds: WRITING_TIME,
+            seed: Date.now()
+          }
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to init session');
+
+      setSessionState(data.state);
+      setCurrentSlideObj(data.next);
+      setCurrentSlide(0); 
+      setAllStories([]); 
+      setStory(''); 
+      setFallbackEval(null);
+      setPhase('VIEWING'); 
+      timer.setTimeAndStart(data.next.pictureTimeSeconds);
+    } catch (err) {
+      console.error(err);
+      alert('Failed to start TAT session on backend.');
+    } finally {
+      setIsLoadingScenarios(false);
+    }
   };
 
   const nextSet = () => {
@@ -185,10 +242,9 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
 
   const getCurrentTatSvg = useCallback(() => {
     if (customSet && customSet[currentSlide]) return customSet[currentSlide].url;
-    const baseSet = TAT_SETS[setIndex];
-    if (!baseSet) return '';
-    return baseSet.images[currentSlide]?.url || '';
-  }, [setIndex, currentSlide, customSet]);
+    if (currentSlideObj?.isBlank) return '';
+    return currentSlideObj?.imageUrl || '';
+  }, [currentSlideObj, customSet]);
 
   const renderIdle = () => (
     <div className="flex flex-col items-center justify-center min-h-[60vh] space-y-8 text-center max-w-2xl mx-auto">
@@ -227,13 +283,13 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
           <li>• You will be shown a picture for 30 seconds.</li>
           <li>• After that, you have 4 minutes to write a story.</li>
           <li>• Story should have: What led to the situation, what is happening now, and what will be the outcome.</li>
-          <li>• The last (13th) slide will be blank. Write a story from your own imagination.</li>
+          <li>• The last (12th) slide will be blank. Write a story from your own imagination.</li>
         </ul>
       </div>
 
       <div className="flex gap-4">
-          <button onClick={startTest} className="bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-black py-4 px-10 rounded-[24px] transition-all shadow-xl shadow-indigo-600/20 uppercase tracking-widest text-sm w-full md:w-auto flex items-center justify-center gap-2">
-            Start Set {customSet ? '(Custom)' : setIndex + 1}
+          <button onClick={startTest} disabled={isLoadingScenarios} className="bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-black py-4 px-10 rounded-[24px] transition-all shadow-xl shadow-indigo-600/20 uppercase tracking-widest text-sm w-full md:w-auto flex items-center justify-center gap-2">
+            {isLoadingScenarios ? <Loader2 className="w-5 h-5 animate-spin" /> : `Start Set ${customSet ? '(Custom)' : setIndex + 1}`}
           </button>
           
           {!isFullBattery && (
@@ -271,7 +327,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                 <ShieldAlert className="w-16 h-16 text-olive-light opacity-80" />
                 <h3 className="text-3xl font-black tracking-[0.2em] text-white uppercase">TAT Instructions</h3>
                 <p className="text-slate-400 max-w-2xl leading-relaxed text-lg">
-                    You will be shown 12 pictures, each for 30 seconds. Write a complete story: what led to the situation, what is happening, and what will be the outcome. The 13th slide is blank.
+                    You will be shown 11 pictures, each for 30 seconds. Write a complete story: what led to the situation, what is happening, and what will be the outcome. The 12th slide is blank.
                 </p>
                 <div className="bg-olive/10 border border-olive/30 rounded-xl p-4 max-w-lg text-left">
                     <p className="text-olive-light text-[9px] font-black uppercase tracking-widest mb-2">SSB TAT Formula</p>
@@ -437,7 +493,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
 
                 <div className="absolute top-4 left-6 z-20 bg-black/60 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
                      <span className="text-slate-400 text-xs uppercase font-bold tracking-widest mr-2">Slide</span>
-                     <span className="text-white font-mono font-bold text-lg">{currentSlide + 1}/13</span>
+                     <span className="text-white font-mono font-bold text-lg">{currentSlide + 1}/12</span>
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -450,7 +506,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
                             transition={{ duration: 0.5 }}
                             className="absolute inset-0 flex items-center justify-center p-8 z-10"
                         >
-                            {currentSlide === 12 ? (
+                            {currentSlideObj?.isBlank ? (
                                 <div className="w-full max-w-2xl h-96 bg-white rounded-xl shadow-[0_0_50px_rgba(255,255,255,0.2)] flex items-center justify-center">
                                     <h2 className="text-black/20 text-4xl font-black uppercase tracking-widest">Blank Slide</h2>
                                 </div>

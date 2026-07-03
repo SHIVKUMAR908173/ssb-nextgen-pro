@@ -1,40 +1,63 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Brain, Clock, ChevronRight, ChevronLeft, CheckCircle2, Upload, AlertCircle } from 'lucide-react';
-import defaultVerbalSet from '@/data/oir_set1_verbal.json';
+import { Brain, Clock, ChevronRight, ChevronLeft, CheckCircle2, AlertCircle } from 'lucide-react';
 
-interface OIRQuestion {
-    question_number: number;
-    category: string;
-    question_text: string;
-    options: string[];
-    correct_option: string;
-    explanation: string;
+interface VisualQuestion {
+  id: string;
+  category: string;
+  prompt: string;
+  options: string[];
+  explanation?: string;
 }
 
 export default function OIREvaluator() {
-    const [questions, setQuestions] = useState<OIRQuestion[]>([]);
+    const [questions, setQuestions] = useState<VisualQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
-    const [answers, setAnswers] = useState<Record<number, string>>({}); // Locks answer per question index
-    const [score, setScore] = useState(0);
+    const [answers, setAnswers] = useState<(number | null)[]>([]); // Locks answer per question index
     const [isFinished, setIsFinished] = useState(false);
-    const [timeLeft, setTimeLeft] = useState(1200); // 20 minutes for 40/50 questions
+    const [timeLeft, setTimeLeft] = useState(1200); 
     const [isStarted, setIsStarted] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [setId, setSetId] = useState<string>('');
-    const fileInputRef = useRef<HTMLInputElement>(null);
+    
+    // Backend State Machine
+    const sessionId = useRef(`oir-verbal-${Date.now()}`);
+    const [sessionState, setSessionState] = useState<any>(null);
+    const [evaluation, setEvaluation] = useState<any>(null);
 
-    const fetchRandomSet = async () => {
+    const startTestSession = async () => {
         setIsLoading(true);
         try {
-            const res = await fetch('/api/oir?type=verbal');
+            const res = await fetch('http://localhost:3001/api/oir/session/init', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    config: {
+                        sessionId: sessionId.current,
+                        totalTimeSeconds: 1200,
+                        questionCount: 40,
+                        balanceCategories: false, // For verbal-only, ideally we would filter this on backend, but since backend provides both, let's just use it
+                        seed: Date.now()
+                    }
+                })
+            });
             const data = await res.json();
-            if (data && data.data) {
-                setQuestions(data.data);
-                setSetId(data.setId);
+            if (res.ok && data.state && data.questions) {
+                setSessionState(data.state);
+                // Filter verbal if possible, though backend doesn't support category-only filtering yet via config.
+                // We will just render the questions returned.
+                setQuestions(data.questions.map((q: any) => ({
+                    id: q.id,
+                    category: q.category,
+                    prompt: q.prompt,
+                    options: q.options,
+                    explanation: q.explanation
+                })));
+                setAnswers(Array(data.questions.length).fill(null));
+                setTimeLeft(data.state.config.totalTimeSeconds);
+                setIsStarted(true);
             } else {
-                alert('Failed to load questions from server');
+                alert('Failed to initialize OIR session from backend');
             }
         } catch (e) {
             console.error(e);
@@ -43,12 +66,6 @@ export default function OIREvaluator() {
             setIsLoading(false);
         }
     };
-
-    useEffect(() => {
-        if (isStarted && questions.length === 0 && !isLoading) {
-             fetchRandomSet();
-        }
-    }, [isStarted]);
 
     useEffect(() => {
         if (isStarted && timeLeft > 0 && !isFinished && questions.length > 0) {
@@ -65,13 +82,12 @@ export default function OIREvaluator() {
         return `${m}:${s < 10 ? '0' : ''}${s}`;
     };
 
-    const handleOptionSelect = (option: string) => {
-        if (answers[currentIdx] !== undefined) return; // Answer locked
+    const handleOptionSelect = (idx: number) => {
+        if (answers[currentIdx] !== null) return; // Answer locked
         
-        const isCorrect = option === questions[currentIdx].correct_option || option.startsWith(`(${questions[currentIdx].correct_option})`);
-        
-        setAnswers(prev => ({ ...prev, [currentIdx]: option }));
-        if (isCorrect) setScore(s => s + 1);
+        const newAnswers = [...answers];
+        newAnswers[currentIdx] = idx;
+        setAnswers(newAnswers);
 
         // Auto next after 1 second if not last question
         if (currentIdx < questions.length - 1) {
@@ -85,49 +101,32 @@ export default function OIREvaluator() {
         }
     };
 
-    const finishTest = () => {
+    const finishTest = useCallback(async () => {
         setIsFinished(true);
-        // Save to localStorage for Assessment Hub
+
+        const answersByQuestionId: Record<string, number | null> = {};
+        questions.forEach((q, idx) => {
+            answersByQuestionId[q.id] = answers[idx];
+        });
+
         try {
-            const testHistory = JSON.parse(localStorage.getItem('testHistory') || '[]');
-            testHistory.push({
-                test: 'OIR Verbal',
-                score: score,
-                total: questions.length,
-                date: new Date().toISOString()
+            const res = await fetch('http://localhost:3001/api/oir/session/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    state: sessionState,
+                    answersByQuestionId
+                })
             });
-            localStorage.setItem('testHistory', JSON.stringify(testHistory));
-        } catch (e) {
-            console.error('Failed to save score', e);
-        }
-    };
-
-    const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (!file) return;
-
-        const reader = new FileReader();
-        reader.onload = (event) => {
-            try {
-                const parsed = JSON.parse(event.target?.result as string);
-                if (Array.isArray(parsed) && parsed.length > 0 && parsed[0].question_text) {
-                    setQuestions(parsed);
-                    setCurrentIdx(0);
-                    setAnswers({});
-                    setScore(0);
-                    setTimeLeft(1200);
-                    setIsStarted(false);
-                    setIsFinished(false);
-                    alert(`Loaded ${parsed.length} questions successfully!`);
-                } else {
-                    alert('Invalid JSON format. Must be an array of OIR questions.');
-                }
-            } catch (err) {
-                alert('Error parsing JSON file.');
+            const data = await res.json();
+            if (res.ok && data.evaluation) {
+                setEvaluation(data.evaluation);
+                setSessionState(data.state);
             }
-        };
-        reader.readAsText(file);
-    };
+        } catch (e) {
+            console.error(e);
+        }
+    }, [answers, questions, sessionState]);
 
     if (!isStarted && !isFinished) {
         return (
@@ -143,7 +142,7 @@ export default function OIREvaluator() {
                             OIR Verbal Test
                         </h1>
                         <p className="text-indigo-300 font-bold text-lg mb-6 max-w-lg mx-auto">
-                            Officer Intelligence Rating — Verbal & Logical Reasoning
+                            Officer Intelligence Rating — Verbal & Logical Reasoning Evaluated by Backend
                         </p>
                         
                         <div className="flex items-center justify-center gap-6 mb-10">
@@ -158,7 +157,7 @@ export default function OIREvaluator() {
                                 <AlertCircle className="w-8 h-8 text-rose-400" />
                                 <div className="text-left">
                                     <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Questions</p>
-                                    <p className="text-2xl font-black text-white">{questions.length}</p>
+                                    <p className="text-2xl font-black text-white">40</p>
                                 </div>
                             </div>
                         </div>
@@ -169,18 +168,12 @@ export default function OIREvaluator() {
 
                         <div className="flex items-center justify-center gap-4">
                             <button
-                                onClick={() => setIsStarted(true)}
-                                className="bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl shadow-indigo-600/25 uppercase tracking-widest text-sm flex items-center gap-3"
+                                onClick={startTestSession}
+                                disabled={isLoading}
+                                className={`bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white font-black py-4 px-10 rounded-2xl transition-all shadow-xl shadow-indigo-600/25 uppercase tracking-widest text-sm flex items-center gap-3 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
-                                Start Test
+                                {isLoading ? 'INITIALIZING...' : 'START TEST'}
                             </button>
-                            <button
-                                onClick={() => fileInputRef.current?.click()}
-                                className="bg-white/5 hover:bg-white/10 active:scale-95 text-white font-bold py-4 px-6 rounded-2xl transition-all border border-white/10 text-sm flex items-center gap-2"
-                            >
-                                <Upload className="w-4 h-4" /> Custom Set
-                            </button>
-                            <input type="file" ref={fileInputRef} className="hidden" accept=".json" onChange={handleFileUpload} />
                         </div>
                     </div>
                 </div>
@@ -189,6 +182,7 @@ export default function OIREvaluator() {
     }
 
     if (isFinished) {
+        const score = evaluation?.totalScore || 0;
         const percentage = Math.round((score / questions.length) * 100);
         let oirRating = 5;
         if (percentage >= 90) oirRating = 1;
@@ -203,7 +197,7 @@ export default function OIREvaluator() {
                     <div className="relative z-10">
                         <CheckCircle2 className="w-20 h-20 text-emerald-500 mx-auto mb-6" />
                         <h2 className="text-4xl font-black text-white uppercase tracking-tighter mb-2">Test Completed</h2>
-                        <p className="text-emerald-400 font-bold mb-10">Performance Analysis Saved</p>
+                        <p className="text-emerald-400 font-bold mb-10">Performance Analysis Saved to Backend</p>
 
                         <div className="grid grid-cols-2 gap-6 mb-10">
                             <div className="bg-[#162840] rounded-3xl p-8 border border-white/5">
@@ -221,8 +215,7 @@ export default function OIREvaluator() {
                                 setIsFinished(false);
                                 setIsStarted(false);
                                 setCurrentIdx(0);
-                                setScore(0);
-                                setAnswers({});
+                                setAnswers([]);
                                 setTimeLeft(1200);
                             }}
                             className="bg-white/5 hover:bg-white/10 text-white font-bold py-4 px-10 rounded-2xl transition-all border border-white/10 text-sm uppercase tracking-widest"
@@ -236,7 +229,8 @@ export default function OIREvaluator() {
     }
 
     const currentQ = questions[currentIdx];
-    const hasAnsweredCurrent = answers[currentIdx] !== undefined;
+    const userAnsIdx = answers[currentIdx];
+    const hasAnsweredCurrent = userAnsIdx !== null;
 
     return (
         <div className="max-w-4xl mx-auto h-[calc(100vh-150px)] flex flex-col">
@@ -247,7 +241,7 @@ export default function OIREvaluator() {
                         <Brain className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                        <h2 className="text-xl font-black text-white uppercase tracking-tight">OIR Verbal</h2>
+                        <h2 className="text-xl font-black text-white uppercase tracking-tight">OIR Battery</h2>
                         <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Question {currentIdx + 1} of {questions.length}</p>
                     </div>
                 </div>
@@ -270,26 +264,23 @@ export default function OIREvaluator() {
                     
                     <div className="relative z-10 flex-1 flex flex-col">
                         <span className="text-[10px] font-black text-indigo-400 uppercase tracking-[0.3em] mb-4 bg-indigo-500/10 w-fit px-3 py-1 rounded-full border border-indigo-500/20">
-                            {currentQ.category || 'Verbal Reasoning'}
+                            {currentQ.category.replace('_', ' ') || 'Reasoning'}
                         </span>
                         
                         <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-10">
-                            {currentQ.question_text}
+                            {currentQ.prompt}
                         </h3>
 
                         <div className="space-y-4 mt-auto">
                             {currentQ.options && currentQ.options.length > 0 ? (
-                                currentQ.options.map((opt, i) => {
-                                    const isSelected = answers[currentIdx] === opt;
-                                    const isCorrectOpt = opt.startsWith(`(${currentQ.correct_option})`) || opt === currentQ.correct_option;
+                                currentQ.options.map((opt, idx) => {
+                                    const isSelected = userAnsIdx === idx;
                                     
                                     let btnStyle = "bg-[#0d1424] border-white/10 text-slate-300 hover:border-indigo-500/50 hover:bg-indigo-500/5";
                                     
                                     if (hasAnsweredCurrent) {
-                                        if (isCorrectOpt) {
-                                            btnStyle = "bg-emerald-500/20 border-emerald-500 text-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.2)]";
-                                        } else if (isSelected) {
-                                            btnStyle = "bg-rose-500/20 border-rose-500 text-rose-400";
+                                        if (isSelected) {
+                                            btnStyle = "bg-indigo-500/20 border-indigo-500 text-indigo-400 shadow-[0_0_20px_rgba(99,102,241,0.2)]";
                                         } else {
                                             btnStyle = "bg-[#0d1424] border-white/5 text-slate-600 opacity-50";
                                         }
@@ -297,38 +288,17 @@ export default function OIREvaluator() {
 
                                     return (
                                         <button
-                                            key={i}
-                                            onClick={() => handleOptionSelect(opt)}
+                                            key={idx}
+                                            onClick={() => handleOptionSelect(idx)}
                                             disabled={hasAnsweredCurrent}
                                             className={`w-full text-left p-6 rounded-2xl border-2 transition-all font-bold text-lg flex items-center justify-between ${btnStyle}`}
                                         >
                                             {opt}
-                                            {hasAnsweredCurrent && isCorrectOpt && <CheckCircle2 className="w-6 h-6 text-emerald-500" />}
+                                            {hasAnsweredCurrent && isSelected && <CheckCircle2 className="w-6 h-6 text-indigo-500" />}
                                         </button>
                                     );
                                 })
-                            ) : (
-                                <div className="bg-[#0d1424] p-6 rounded-2xl border border-white/10">
-                                    <p className="text-slate-400 mb-4 text-sm font-bold uppercase tracking-widest">Type your answer</p>
-                                    <div className="flex gap-4">
-                                        <input 
-                                            type="text" 
-                                            placeholder="Your answer..."
-                                            disabled={hasAnsweredCurrent}
-                                            className="flex-1 bg-[#162840] border border-white/10 rounded-xl px-4 py-3 text-white font-bold focus:outline-none focus:border-indigo-500"
-                                            onKeyDown={(e) => {
-                                                if (e.key === 'Enter') handleOptionSelect(e.currentTarget.value);
-                                            }}
-                                        />
-                                        <button className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold">Submit</button>
-                                    </div>
-                                    {hasAnsweredCurrent && (
-                                        <div className="mt-4 p-4 bg-indigo-500/10 border border-indigo-500/30 rounded-xl">
-                                            <p className="text-indigo-400 font-bold text-sm">Correct Answer: {currentQ.correct_option}</p>
-                                        </div>
-                                    )}
-                                </div>
-                            )}
+                            ) : null}
                         </div>
                     </div>
                 </motion.div>
@@ -344,13 +314,13 @@ export default function OIREvaluator() {
                     <ChevronLeft className="w-6 h-6" />
                 </button>
                 
-                <div className="flex gap-1.5">
+                <div className="flex gap-1.5 overflow-x-auto max-w-[60%] scrollbar-hide py-2">
                     {questions.map((_, i) => (
                         <div 
                             key={i} 
-                            className={`w-2 h-2 rounded-full transition-all ${
+                            className={`flex-shrink-0 w-2 h-2 rounded-full transition-all ${
                                 i === currentIdx ? 'bg-indigo-500 w-6' : 
-                                answers[i] !== undefined ? 'bg-slate-500' : 'bg-slate-700'
+                                answers[i] !== null ? 'bg-slate-500' : 'bg-slate-700'
                             }`}
                         />
                     ))}

@@ -23,7 +23,7 @@ export default function MansaPsychPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <Link 
-          href="/dashboard"
+          href="/"
           className="flex items-center gap-2 text-slate-500 hover:text-white font-black uppercase tracking-widest text-[10px] transition-colors"
         >
           <ArrowLeft className="w-3 h-3" /> Back to Dashboard
@@ -114,9 +114,6 @@ export default function MansaPsychPage() {
                          </div>
                       </div>
                    </div>
-                   <button className="p-4 bg-[#0f172a] rounded-2xl border border-white/5 text-slate-500 hover:text-white transition-colors shadow-xl">
-                      <Info className="w-6 h-6" />
-                   </button>
                 </div>
 
                 <div className="flex-1 space-y-10 relative z-10">
