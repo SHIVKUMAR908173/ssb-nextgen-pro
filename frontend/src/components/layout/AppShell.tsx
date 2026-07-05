@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Sidebar from '@/components/layout/Sidebar';
-import TacticalChat from '@/components/chat/TacticalChat';
 import HeaderAuth from '@/components/auth/HeaderAuth';
 import Link from 'next/link';
 import { Menu, LayoutDashboard, Brain, Map, BookOpen, User } from 'lucide-react';
@@ -143,7 +142,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       </nav>
 
-      <TacticalChat />
+      {/* Removed TacticalChat as requested */}
     </>
   );
 }

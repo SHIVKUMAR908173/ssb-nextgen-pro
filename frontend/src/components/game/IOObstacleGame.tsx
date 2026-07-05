@@ -38,7 +38,11 @@ export default function IOObstacleGame() {
   const [phase, setPhase] = useState<'approach' | 'execute' | 'finish'>('approach');
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  const obstacle = OBSTACLES[currentObstacle];
+  // Backend state
+  const [backendObstacles, setBackendObstacles] = useState<any[]>(OBSTACLES);
+  const [backendSummary, setBackendSummary] = useState<any>(null);
+
+  const obstacle = backendObstacles[currentObstacle];
 
   // Timer logic
   useEffect(() => {
@@ -58,9 +62,24 @@ export default function IOObstacleGame() {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [isTimerRunning, obstacle?.timeLimit]);
 
-  const startGame = () => {
+  const startGame = async () => {
     setCurrentObstacle(0);
     setResults([]);
+    
+    try {
+      const res = await fetch('/api/gto/io/init', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId: `session_${Date.now()}` })
+      });
+      const data = await res.json();
+      if (data.obstacles) {
+        setBackendObstacles(data.obstacles);
+      }
+    } catch (err) {
+      console.error("Backend IO init failed", err);
+    }
+    
     setGameState('briefing');
   };
 
@@ -112,22 +131,50 @@ export default function IOObstacleGame() {
     setGameState('result');
   }, [timer, obstacle]);
 
-  const nextObstacle = () => {
+  const nextObstacle = async () => {
     if (currentObstacle < 9) {
       setCurrentObstacle(prev => prev + 1);
       setGameState('briefing');
     } else {
+      // Submit to backend
+      const finalResults = [...results]; // We might need to ensure the last one is in
+      try {
+        const res = await fetch('/api/gto/io/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sessionId: `session_${Date.now()}`,
+            results: finalResults
+          })
+        });
+        const data = await res.json();
+        setBackendSummary(data);
+      } catch (err) {
+        console.error("Backend IO submit failed", err);
+      }
       setGameState('summary');
     }
   };
 
-  const totalScore = results.reduce((sum, r) => sum + r.score, 0);
-  const maxScore = OBSTACLES.reduce((sum, o) => sum + o.marks, 0);
+  const totalScore = backendSummary ? backendSummary.totalScore : results.reduce((sum, r) => sum + r.score, 0);
+  const maxScore = backendSummary ? backendSummary.maxScore : backendObstacles.reduce((sum, o) => sum + o.marks, 0);
   const progressPct = obstacle ? (clickCount / requiredClicks) * 100 : 0;
   const timerPct = obstacle ? (timer / obstacle.timeLimit) * 100 : 0;
 
   // Rating based on total score
   const getRating = () => {
+    if (backendSummary) {
+      let color = 'text-blue-400';
+      if (backendSummary.ratingLabel === 'OUTSTANDING') color = 'text-yellow-400';
+      if (backendSummary.ratingLabel === 'ABOVE AVERAGE') color = 'text-emerald-400';
+      if (backendSummary.ratingLabel === 'BELOW AVERAGE') color = 'text-red-400';
+      
+      return { 
+        label: backendSummary.ratingLabel, 
+        color, 
+        desc: backendSummary.ratingDesc 
+      };
+    }
     const pct = (totalScore / maxScore) * 100;
     if (pct >= 85) return { label: 'OUTSTANDING', color: 'text-yellow-400', desc: 'Board-recommended performance. You demonstrated exceptional physical courage and determination.' };
     if (pct >= 65) return { label: 'ABOVE AVERAGE', color: 'text-emerald-400', desc: 'Strong showing. Your stamina and speed of decision are commendable.' };

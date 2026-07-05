@@ -46,6 +46,8 @@ export default function GDPage() {
   const [isEvaluating, setIsEvaluating] = useState(false)
   const [gtoResult, setGtoResult] = useState<any>(null)
   const recognitionRef = useRef<any>(null)
+  const [aiSessionState, setAiSessionState] = useState<any>(null)
+  const [isAiThinking, setIsAiThinking] = useState(false)
   
   // Socket & WebRTC states
   const [socket, setSocket] = useState<Socket | null>(null)
@@ -252,8 +254,8 @@ export default function GDPage() {
     }
   }
 
-  // --- Solo Practice Logic ---
-  const startPractice = (topicObj?: GDTopic) => {
+  // --- AI Simulator Practice Logic ---
+  const startPractice = async (topicObj?: GDTopic) => {
     cleanupWebRTC()
     const selected = topicObj || GD_TOPICS[Math.floor(Math.random() * GD_TOPICS.length)]
     setCurrentTopic(selected)
@@ -264,6 +266,21 @@ export default function GDPage() {
     
     setTranscript('')
     setGtoResult(null)
+    setAiSessionState(null)
+    
+    try {
+      const res = await fetch('/api/gto/gd/init', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId: `session_${Date.now()}` })
+      })
+      const data = await res.json()
+      // Override the random backend topic with our selected frontend topic for UI consistency
+      data.state.topic = selected.topic; 
+      setAiSessionState(data.state)
+    } catch (e) {
+      console.error("GD Init Error:", e)
+    }
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
     if (SpeechRecognition) {
       recognitionRef.current = new SpeechRecognition()
@@ -302,8 +319,52 @@ export default function GDPage() {
     if (recognitionRef.current) {
       recognitionRef.current.stop()
     }
-    if (currentTopic && transcript) {
-      evaluateGTO(currentTopic.topic, transcript)
+  }
+
+  const submitTurnToAI = async () => {
+    if (!transcript.trim() || !aiSessionState) return;
+    
+    setIsAiThinking(true);
+    const userMessage = transcript;
+    
+    // Clear transcript for next turn
+    setTranscript('');
+    if (recognitionRef.current) {
+      recognitionRef.current.stop();
+      setTimeout(() => {
+        try { recognitionRef.current.start() } catch (e) {}
+      }, 500);
+    }
+
+    try {
+      const res = await fetch('/api/gto/gd/turn', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          state: aiSessionState,
+          userMessage
+        })
+      });
+      const data = await res.json();
+      setAiSessionState(data.state);
+
+      // Speak AI responses
+      if ('speechSynthesis' in window) {
+        data.aiResponses.forEach((resp: any) => {
+          const utterance = new SpeechSynthesisUtterance(`${resp.speakerName} says: ${resp.content}`);
+          window.speechSynthesis.speak(utterance);
+        });
+      }
+
+      if (data.state.completed) {
+        setIsRunning(false);
+        if (recognitionRef.current) recognitionRef.current.stop();
+        evaluateGTO(currentTopic!.topic, data.state.history.map((h:any) => h.content).join(" "));
+      }
+    } catch (e) {
+      console.error("GD Turn Error:", e);
+    } finally {
+      setIsAiThinking(false);
     }
   }
 
@@ -533,12 +594,37 @@ export default function GDPage() {
           )}
 
           {/* AI Live Transcript */}
-          {practiceMode && transcript && !gtoResult && (
+          {practiceMode && aiSessionState && !gtoResult && (
              <div className="bg-[#0f172a] border border-white/5 rounded-2xl p-6">
-               <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 flex items-center gap-2">
-                 <Mic className="w-3 h-3 text-red-500 animate-pulse" /> Live Speech Transcription
-               </p>
-               <p className="text-slate-300 italic text-sm">{transcript}</p>
+               <div className="mb-6 space-y-4 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
+                 {aiSessionState.history.slice(1).map((h: any, i: number) => (
+                   <div key={i} className={`p-3 rounded-xl max-w-[80%] ${h.role === 'user' ? 'bg-emerald-500/20 border-emerald-500/30 ml-auto border' : 'bg-[#1e293b] border-white/5 border'}`}>
+                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">{h.speakerName}</p>
+                     <p className="text-white text-sm">{h.content}</p>
+                   </div>
+                 ))}
+                 {isAiThinking && (
+                   <div className="p-3 rounded-xl max-w-[80%] bg-[#1e293b] border-white/5 border">
+                     <p className="text-slate-400 text-sm animate-pulse">...</p>
+                   </div>
+                 )}
+               </div>
+
+               <div className="flex gap-4 items-end">
+                 <div className="flex-1 bg-[#1e293b] rounded-xl p-4 border border-white/5">
+                   <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-3 flex items-center gap-2">
+                     <Mic className="w-3 h-3 text-red-500 animate-pulse" /> Live Speech (Speak now)
+                   </p>
+                   <p className="text-slate-300 italic text-sm min-h-[40px]">{transcript || "Waiting for speech..."}</p>
+                 </div>
+                 <button 
+                   onClick={submitTurnToAI}
+                   disabled={isAiThinking || !transcript.trim()}
+                   className="px-6 py-4 bg-emerald-500 text-black font-black uppercase tracking-widest rounded-xl hover:bg-emerald-400 disabled:opacity-50 transition-colors shrink-0"
+                 >
+                   Send Turn
+                 </button>
+               </div>
              </div>
           )}
 

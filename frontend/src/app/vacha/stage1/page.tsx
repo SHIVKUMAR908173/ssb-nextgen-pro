@@ -96,7 +96,7 @@ export default function CSSSStage1Page() {
 
     try {
       // Use native Next.js API Route for authentic OIR questions
-      const response = await fetch(`/api/oir-questions?count=190&set=1`)
+      const response = await fetch(`/api/csss-questions?count=190`)
       
       if (!response.ok) {
         throw new Error('Failed to fetch questions from native API')

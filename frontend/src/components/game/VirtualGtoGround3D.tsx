@@ -501,6 +501,10 @@ export default function VirtualGtoGround3D() {
   const [stars, setStars] = useState(0);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [cameraMode, setCameraMode] = useState<'orbit' | 'firstPerson'>('orbit');
+  
+  // Backend State integration
+  const [sessionState, setSessionState] = useState<any>(null);
+  const [backendPlatforms, setBackendPlatforms] = useState<Platform3D[]>([]);
 
   // Load progress
   useEffect(() => {
@@ -564,7 +568,7 @@ export default function VirtualGtoGround3D() {
     }
   };
 
-  const resetGame = (level?: GTOChallenge) => {
+  const resetGame = async (level?: GTOChallenge) => {
     setHeldTool('NONE');
     setPlacedTools([]);
     setSelectedPlatform(null);
@@ -573,9 +577,25 @@ export default function VirtualGtoGround3D() {
     setScore(0);
     setStars(0);
     if (level) setTimeRemaining(level.timeLimit);
+    
+    // Init backend session
+    if (level) {
+      try {
+        const res = await fetch('/api/gto/outdoor/init', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId: `session_${Date.now()}`, taskType: level.type, levelId: level.id })
+        });
+        const data = await res.json();
+        setSessionState(data.state);
+        setBackendPlatforms(data.level.platforms as Platform3D[]);
+      } catch (err) {
+        console.error("Backend init failed", err);
+      }
+    }
   };
 
-  const handlePlatformClick = useCallback((platform: Platform3D) => {
+  const handlePlatformClick = useCallback(async (platform: Platform3D) => {
     if (heldTool === 'NONE') {
       if (platform.color === 'RED') {
         logMsg("Rule Violation: Cannot step on RED zone!", 'error');
@@ -596,7 +616,8 @@ export default function VirtualGtoGround3D() {
         return;
       }
 
-      const fromPlatform = selectedLevel?.platforms.find(p => p.id === selectedPlatform);
+      const activePlatforms = backendPlatforms.length > 0 ? backendPlatforms : selectedLevel?.platforms;
+      const fromPlatform = activePlatforms?.find(p => p.id === selectedPlatform);
       if (!fromPlatform) return;
 
       // Color rules
@@ -613,31 +634,75 @@ export default function VirtualGtoGround3D() {
         Math.pow(platform.z - fromPlatform.z, 2)
       );
 
-      const toolLengths: Record<Tool, number> = {
-        FATTA: 5, BALLI: 8, ROPE: 12, PLANK: 6, DRUM: 2, NONE: 0
-      };
+      // --- BACKEND VALIDATION ---
+      if (sessionState) {
+        try {
+          const res = await fetch('/api/gto/outdoor/move', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              state: sessionState,
+              move: {
+                tool: heldTool,
+                fromPlatformId: fromPlatform.id,
+                toPlatformId: platform.id,
+                distanceFt: distance,
+                touchedColor: platform.color
+              }
+            })
+          });
+          const data = await res.json();
+          setSessionState(data.state);
+          
+          if (!data.valid) {
+            logMsg(data.message, 'error');
+            setScore(data.state.score);
+          } else {
+            setPlacedTools(prev => [...prev, {
+              id: Math.random().toString(36).substr(2, 9),
+              tool: heldTool,
+              fromPlatformId: fromPlatform.id,
+              toPlatformId: platform.id
+            }]);
+            logMsg(`${heldTool} placed! ${data.message}`, 'success');
+            setScore(data.state.score);
 
-      if (distance > toolLengths[heldTool]) {
-        logMsg(`Too far! ${heldTool} max: ${toolLengths[heldTool]} units`, 'error');
-        setScore(prev => Math.max(0, prev - 5));
+            if (data.state.completed) {
+              completeLevel();
+            }
+          }
+        } catch (err) {
+          console.error("Move validation failed", err);
+        }
       } else {
-        setPlacedTools(prev => [...prev, {
-          id: Math.random().toString(36).substr(2, 9),
-          tool: heldTool,
-          fromPlatformId: fromPlatform.id,
-          toPlatformId: platform.id
-        }]);
-        logMsg(`${heldTool} placed successfully!`, 'success');
-        setScore(prev => prev + 25);
+        // Fallback local logic if backend failed
+        const toolLengths: Record<Tool, number> = {
+          FATTA: 5, BALLI: 8, ROPE: 12, PLANK: 6, DRUM: 2, NONE: 0
+        };
 
-        if (platform.id === 'finish' || fromPlatform.id === 'finish') {
-          completeLevel();
+        if (distance > toolLengths[heldTool]) {
+          logMsg(`Too far! ${heldTool} max: ${toolLengths[heldTool]} units`, 'error');
+          setScore(prev => Math.max(0, prev - 5));
+        } else {
+          setPlacedTools(prev => [...prev, {
+            id: Math.random().toString(36).substr(2, 9),
+            tool: heldTool,
+            fromPlatformId: fromPlatform.id,
+            toPlatformId: platform.id
+          }]);
+          logMsg(`${heldTool} placed successfully!`, 'success');
+          setScore(prev => prev + 25);
+
+          if (platform.id === 'finish' || fromPlatform.id === 'finish') {
+            completeLevel();
+          }
         }
       }
+      
       setSelectedPlatform(null);
       setHeldTool('NONE');
     }
-  }, [heldTool, selectedPlatform, selectedLevel]);
+  }, [heldTool, selectedPlatform, selectedLevel, backendPlatforms, sessionState]);
 
   const completeLevel = () => {
     const timeBonus = Math.floor(timeRemaining / 10);
@@ -790,14 +855,16 @@ export default function VirtualGtoGround3D() {
             </div>
 
             {/* 3D Scene */}
-            <div className="flex-1 relative">
-              <GTO3DScene
-                platforms={selectedLevel?.platforms || []}
+            <div className="flex-1 min-h-[400px] bg-slate-950/50 rounded-2xl border border-white/5 relative overflow-hidden">
+            {selectedLevel ? (
+              <GTO3DScene 
+                platforms={backendPlatforms.length > 0 ? backendPlatforms : selectedLevel.platforms}
                 placedTools={placedTools}
                 selectedPlatform={selectedPlatform}
                 onPlatformClick={handlePlatformClick}
                 cameraMode={cameraMode}
               />
+            ) : null}
 
               {/* Hint Overlay */}
               <AnimatePresence>

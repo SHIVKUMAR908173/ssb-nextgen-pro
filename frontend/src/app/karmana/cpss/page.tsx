@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { ArrowLeft, Target, ShieldAlert, Crosshair, Navigation, Search, Play, Square, RotateCcw } from 'lucide-react'
 import Link from 'next/link'
-import cpssData from '@/data/cpss_60_sets.json'
+import cpssData from '@/data/cpss_synthetic.json'
 
 interface CpssScenario {
   scenario: string;

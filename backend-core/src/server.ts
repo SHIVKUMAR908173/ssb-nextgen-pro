@@ -24,6 +24,16 @@ import type { SRTSessionConfig, SRTSessionState, SRTSessionInitResult, SRTSessio
 import { createInitialStateAndNext as createGPESessionInitAndNext, submitPlan } from "./gpe/sessionStateMachine.js";
 import type { GPESessionConfig, GPESessionState, GPESessionInitResult, GPESessionSubmitResult } from "./gpe/types.js";
 
+// --- GTO Modules ---
+import { initOutdoorSession, submitOutdoorMove } from "./gto/outdoorStateMachine.js";
+import type { OutdoorSessionConfig, OutdoorSessionMoveInput } from "./gto/outdoorStateMachine.js";
+import { initIOSession, submitIOSession } from "./gto/ioStateMachine.js";
+import type { IOSessionConfig, IOSessionSubmitInput } from "./gto/ioStateMachine.js";
+import { initGDSession, submitGDTurn } from "./gto/gdStateMachine.js";
+import type { GDSessionConfig, GDSessionTurnInput } from "./gto/gdStateMachine.js";
+import { getDistanceRuleParams } from "./lib/datasets/gto.js";
+// -------------------
+
 import { scoreLecturetteMock } from "./ssb/lecturette/scoring.js";
 import type { SSBLecturetteAssessmentResult } from "./ssb/lecturette/types.js";
 import { SSBLecturetteAssessmentResultSchema } from "./ssb/lecturette/types.js";
@@ -378,6 +388,88 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
       }
       
       let data: unknown;
+      // ==========================================
+  // GTO (Group Testing Officer) ROUTES
+  // ==========================================
+
+  // PGT/HGT/CT Outdoor Routes
+  app.post("/api/gto/outdoor/init", async (req: Request, res: Response) => {
+    try {
+      const config = req.body as OutdoorSessionConfig;
+      if (!config.sessionId || typeof config.levelId !== "number") {
+        return res.status(400).json({ error: "Invalid payload" });
+      }
+      const result = initOutdoorSession(config);
+      return res.json(result);
+    } catch (e) {
+      console.error(e);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+  });
+
+  app.post("/api/gto/outdoor/move", async (req: Request, res: Response) => {
+    try {
+      const input = req.body as OutdoorSessionMoveInput;
+      // In a real app we would load distanceRules and colorRules from DB, mock here for now:
+      const deps = {
+        distanceRules: { datasetId: "gto_distance_rules" as const, version: "0.1.0" as const, rules: [{ id: "distance_4ft_bridge_required" as const, minGapFtToRequireBridge: 4, epsilonFt: 0.1 }] },
+        colorRules: { datasetId: "gto_color_rule" as const, version: "0.1.0" as const, mappings: [] }
+      };
+      const result = submitOutdoorMove(deps, input);
+      return res.json(result);
+    } catch (e) {
+      console.error(e);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+  });
+
+  // Individual Obstacles Routes
+  app.post("/api/gto/io/init", async (req: Request, res: Response) => {
+    try {
+      const config = req.body as IOSessionConfig;
+      const result = initIOSession(config);
+      return res.json(result);
+    } catch (e) {
+      console.error(e);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+  });
+
+  app.post("/api/gto/io/submit", async (req: Request, res: Response) => {
+    try {
+      const input = req.body as IOSessionSubmitInput;
+      const result = submitIOSession(input);
+      return res.json(result);
+    } catch (e) {
+      console.error(e);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+  });
+
+  // Group Discussion Routes
+  app.post("/api/gto/gd/init", async (req: Request, res: Response) => {
+    try {
+      const config = req.body as GDSessionConfig;
+      const result = initGDSession(config);
+      return res.json(result);
+    } catch (e) {
+      console.error(e);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+  });
+
+  app.post("/api/gto/gd/turn", async (req: Request, res: Response) => {
+    try {
+      const input = req.body as GDSessionTurnInput;
+      const result = submitGDTurn(input);
+      return res.json(result);
+    } catch (e) {
+      console.error(e);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+  });
+
+  // ========================================== 
       if (testType === 'TAT') {
         data = datasetGenerator.generateMissingTat(count, startIndex);
       } else if (testType === 'WAT') {
@@ -880,6 +972,8 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
       res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
     }
   });
+
+  // ==========================================
 
   // WAT SESSION INIT
   app.post("/api/wat/session/init", async (req: Request, res: Response) => {

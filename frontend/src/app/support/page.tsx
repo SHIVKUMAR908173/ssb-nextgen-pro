@@ -5,21 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { LifeBuoy, Mail, Star, Send, MessageSquare, CheckCircle2, User, Clock, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
-interface FeedbackEntry {
-  name: string
-  rating: number
-  message: string
-  date: string
-}
-
-const SAMPLE_FEEDBACK: FeedbackEntry[] = [
-  { name: 'Cadet Arjun S.', rating: 5, message: 'The AI Interview practice is incredible. I felt like I was sitting in front of a real IO. Got recommended in my 2nd attempt thanks to this platform!', date: '2 hours ago' },
-  { name: 'Cadet Priya M.', rating: 5, message: 'OIR test sets are very close to the actual SSB standard. The non-verbal section needs more picture-based questions though.', date: '5 hours ago' },
-  { name: 'Cadet Rahul K.', rating: 4, message: 'PPDT evaluator gave me actionable feedback on my story structure. The narration feature is a game-changer. Need more TAT sets though.', date: '1 day ago' },
-  { name: 'Cadet Sneha T.', rating: 5, message: 'Lecturette practice with AI assessment helped me improve my speaking time from 1.5 min to 3 min consistently. Best platform for SSB prep!', date: '2 days ago' },
-  { name: 'Cadet Vikram R.', rating: 4, message: 'The daily practice questions keep me engaged. Would love to see more SRT scenarios. Overall a 10/10 product.', date: '3 days ago' },
-  { name: 'Cadet Ananya P.', rating: 5, message: 'Self Description evaluator accurately identified my weaknesses. The ideal model answers helped me understand what the board expects.', date: '4 days ago' },
-]
+// Removed SAMPLE_FEEDBACK to make it a raw support form
 
 export default function SupportPage() {
   const [feedbackForm, setFeedbackForm] = useState({ name: '', email: '', rating: 0, message: '' })
@@ -180,51 +166,7 @@ export default function SupportPage() {
         </div>
       </motion.div>
 
-      {/* Real-time Feedback Display */}
-      <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-black text-white uppercase tracking-tight flex items-center gap-3">
-            <MessageSquare className="w-6 h-6 text-yellow-500" /> Cadet Feedback Wall
-          </h2>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest">Live Feed</span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {SAMPLE_FEEDBACK.map((fb, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-[#162840] rounded-[32px] p-8 border border-[#1E3A5F] shadow-xl hover:border-yellow-500/20 transition-all"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-                    <User className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-black text-white">{fb.name}</p>
-                    <div className="flex items-center gap-1">
-                      {Array.from({ length: fb.rating }).map((_, si) => (
-                        <Star key={si} className="w-3 h-3 text-yellow-400 fill-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-1.5 text-slate-600">
-                  <Clock className="w-3 h-3" />
-                  <span className="text-[10px] font-bold">{fb.date}</span>
-                </div>
-              </div>
-              <p className="text-slate-400 text-sm font-medium leading-relaxed">"{fb.message}"</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+      {/* Removed Cadet Feedback Wall to focus on real cadet messaging */}
     </div>
   )
 }

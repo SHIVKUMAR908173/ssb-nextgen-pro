@@ -55,7 +55,7 @@ export default function GpeSimulator() {
     setEvaluation(null);
     try {
       const scenarioId = selectedSet === 0 ? "indoor_map_v1" : "indoor_map_v2";
-      const res = await fetch('http://localhost:3001/api/gpe/session/init', {
+      const res = await fetch('/api/gpe/session/init', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -85,7 +85,7 @@ export default function GpeSimulator() {
   const submitPlan = async () => {
     setPhase('DONE');
     try {
-      const res = await fetch('http://localhost:3001/api/gpe/session/submit', {
+      const res = await fetch('/api/gpe/session/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

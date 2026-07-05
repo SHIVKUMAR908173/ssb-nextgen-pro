@@ -36,6 +36,39 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
+    return [
+      {
+        source: '/api/gto/:path*',
+        destination: `${backendUrl}/api/gto/:path*`
+      },
+      {
+        source: '/api/gpe/:path*',
+        destination: `${backendUrl}/api/gpe/:path*`
+      },
+      {
+        source: '/api/wat/:path*',
+        destination: `${backendUrl}/api/wat/:path*`
+      },
+      {
+        source: '/api/tat/:path*',
+        destination: `${backendUrl}/api/tat/:path*`
+      },
+      {
+        source: '/api/srt/:path*',
+        destination: `${backendUrl}/api/srt/:path*`
+      },
+      {
+        source: '/api/pi/:path*',
+        destination: `${backendUrl}/api/pi/:path*`
+      },
+      {
+        source: '/api/ssb/:path*',
+        destination: `${backendUrl}/api/ssb/:path*`
+      }
+    ];
+  },
 };
 
 export default nextConfig;

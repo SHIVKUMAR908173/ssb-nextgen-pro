@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "total_questions": 190,
+    "css_questions": 70,
+    "opam_questions": 120,
+    "version": "1.0",
+    "description": "Synthetic CSSS Stage-1 (CSS + OPAM) dataset generated for practice"
+  },
+  "questions": [
+    {
+      "id": "CSS-001",
+      "type": "css",
+      "domain": "Spatial Reasoning",
+      "prompt": "If a cube is rotated 90° clockwise about its vertical axis, which face will be opposite the original front?",
+      "options": ["Left", "Right", "Top", "Bottom"],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 20
+    },
+    {
+      "id": "CSS-002",
+      "type": "css",
+      "domain": "Pattern Recognition",
+      "prompt": "What comes next in the series: 2, 6, 12, 20, ?",
+      "options": ["30", "28", "32", "34"],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 15
+    },
+    {
+      "id": "OPAM-001",
+      "type": "opam",
+      "domain": "Initiative",
+      "prompt": "A teammate is struggling with a task. What would you do?",
+      "options": ["Take over the task yourself", "Offer help while encouraging them", "Ignore and focus on your own work", "Criticize their performance"],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 30
+    },
+    {
+      "id": "OPAM-002",
+      "type": "opam",
+      "domain": "Leadership",
+      "prompt": "During a group activity, a conflict arises. How should you respond?",
+      "options": ["Arbitrarily decide the outcome", "Listen to both sides and mediate a solution", "Let the conflict resolve itself", "Side with the majority"],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 30
+    }
+  ]
+}

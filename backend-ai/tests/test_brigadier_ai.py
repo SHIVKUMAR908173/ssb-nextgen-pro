@@ -11,6 +11,9 @@ This script tests the Brigadier-level AI assessment system by:
 import json
 import sys
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Add parent directory to path
 sys.path.insert(0, '.')

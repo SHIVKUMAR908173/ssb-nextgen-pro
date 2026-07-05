@@ -324,6 +324,8 @@ class SSBInterviewSimulator:
             stage = self.current_stage
         
         # Store response
+        if stage.value not in self.stage_responses:
+            self.stage_responses[stage.value] = []
         self.stage_responses[stage.value].append(response)
         self.conversation_history.append({
             "stage": stage.value,

@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "total_scenarios": 20,
+    "total_sets": 2,
+    "time_per_scenario_minutes": 15,
+    "version": "synthetic-1.0",
+    "description": "Synthetic CPSS practice scenarios generated for demo purposes"
+  },
+  "sets": [
+    {
+      "set_id": 1,
+      "name": "Synthetic Set 1",
+      "scenarios": [
+        {
+          "scenario": "Your attitude indicator shows a 10° right bank while the turn coordinator shows level wings. Identify the faulty instrument and correct the attitude.",
+          "context": "Day VFR flight at 3000 ft, clear skies.",
+          "objectives": [
+            "Detect instrument discrepancy",
+            "Cross‑check with backup instruments",
+            "Restore correct attitude",
+            "Log the failure"
+          ],
+          "constraints": [
+            "No autopilot",
+            "Nearby terrain at 500 ft AGL"
+          ],
+          "category": "Psychomotor"
+        },
+        {
+          "scenario": "During a night navigation exercise, you must plot a course using only magnetic heading and dead‑reckoning to a waypoint 45 NM away.",
+          "context": "Night VFR, limited external lighting.",
+          "objectives": [
+            "Calculate heading",
+            "Maintain altitude",
+            "Reach waypoint safely"
+          ],
+          "constraints": [
+            "No GPS available",
+            "Wind 10 kt from 030°"
+          ],
+          "category": "Cognitive"
+        }
+      ]
+    },
+    {
+      "set_id": 2,
+      "name": "Synthetic Set 2",
+      "scenarios": [
+        {
+          "scenario": "A hostile surface‑to‑air missile is launched at your formation. Execute defensive maneuvers and deploy countermeasures.",
+          "context": "Low‑level ingress over contested airspace.",
+          "objectives": [
+            "Break radar lock",
+            "Deploy chaff and flare",
+            "Maintain formation cohesion",
+            "Report missile location"
+          ],
+          "constraints": [
+            "Limited terrain clearance",
+            "Only one countermeasure pod per aircraft"
+          ],
+          "category": "Tactical"
+        }
+      ]
+    }
+  ]
+}
