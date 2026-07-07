@@ -1,13 +1,50 @@
+import os
+import asyncpg
 from dotenv import load_dotenv
 load_dotenv()
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+from redis.asyncio import Redis
+
+# Set up Rate Limiter
+limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    redis_url = os.environ.get("REDIS_URL", "redis://localhost:6379")
+    app.state.redis = Redis.from_url(redis_url, encoding="utf-8", decode_responses=True)
+    
+    db_url = os.environ.get("DATABASE_URL")
+    if db_url:
+        app.state.db_pool = await asyncpg.create_pool(
+            db_url,
+            min_size=20,
+            max_size=100,
+            max_queries=50000,
+            max_inactive_connection_lifetime=300
+        )
+    else:
+        app.state.db_pool = None
+        
+    yield
+    # Shutdown
+    if app.state.db_pool:
+        await app.state.db_pool.close()
+    await app.state.redis.close()
 
 app = FastAPI(
     title="SSB NextGen API",
     description="Professional backend for SSB Preparation Platform",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan
 )
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 # Configure CORS for Frontend interaction
 import os

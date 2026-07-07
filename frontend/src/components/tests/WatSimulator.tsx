@@ -90,7 +90,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   const startTest = async () => {
     setIsLoadingScenarios(true);
     try {
-      const res = await fetch('http://localhost:3001/api/wat/session/init', {
+      const res = await fetch('/api/wat/session/init', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -142,7 +142,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     setResponse('');
 
     try {
-      const res = await fetch('http://localhost:3001/api/wat/session/submit', {
+      const res = await fetch('/api/wat/session/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

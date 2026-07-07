@@ -200,6 +200,25 @@ export default function PragyaDashboard() {
               })}
             </div>
           </div>
+
+          {/* Coming Soon Banner */}
+          <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/40 rounded-[32px] p-8 border border-indigo-500/20 shadow-2xl relative overflow-hidden flex items-center justify-between">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/20 rounded-full blur-[50px]"></div>
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-2">
+                <Sparkles className="w-5 h-5 text-indigo-400" />
+                <h3 className="text-xl font-black text-white uppercase tracking-widest">More Intel Coming Soon</h3>
+              </div>
+              <p className="text-slate-400 font-bold text-sm max-w-md">
+                We are constantly declassifying new study modules. Expect updates on Advanced GTO Tactics, Service Profiles, and CPSS Phase-2 synthetic testing shortly.
+              </p>
+            </div>
+            <div className="relative z-10 hidden md:block">
+              <div className="px-6 py-3 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 font-black text-[10px] uppercase tracking-[0.2em] animate-pulse">
+                Deployment Pending
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -144,7 +144,9 @@ async def save_gto_progress(
             )
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 @router.get("/progress/{level_id}", response_model=GTOProgressResponse)

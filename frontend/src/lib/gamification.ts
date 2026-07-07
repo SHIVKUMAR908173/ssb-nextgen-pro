@@ -55,7 +55,7 @@ export function getRankInfo(xp: number) {
   };
 }
 
-const API_BASE = "http://localhost:3001/api/gamification";
+const API_BASE = "/api/gamification";
 
 export async function fetchProfile(userId: string): Promise<GamificationProfile> {
   const res = await fetch(`${API_BASE}/profile?userId=${userId}`);

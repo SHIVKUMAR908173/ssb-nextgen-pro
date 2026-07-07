@@ -112,7 +112,9 @@ async def evaluate_srt(responses: list = Body(..., embed=True)):
         return {"status": "success", "evaluation": evaluation_result}
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.post("/wat", summary="Evaluate WAT responses using Elite-Trained Gemini AI")
 async def evaluate_wat(words: list = Body(..., embed=True)):
@@ -149,7 +151,9 @@ OUTPUT SCHEMA:
         )
         return {"status": "success", "evaluation": json.loads(response.text)}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 class GTOEvalRequest(BaseModel):
     scenario: str
@@ -167,7 +171,9 @@ async def evaluate_gto(request: GTOEvalRequest):
         )
         return {"status": "success", "evaluation": evaluation}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 class PsychologistEvalRequest(BaseModel):
     test_type: str
@@ -185,4 +191,6 @@ async def evaluate_psychologist(request: PsychologistEvalRequest):
         )
         return {"status": "success", "evaluation": evaluation}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")

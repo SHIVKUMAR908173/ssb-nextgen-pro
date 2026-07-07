@@ -63,7 +63,7 @@ export default function OIRVisualTest() {
   const startTestSession = async () => {
     setIsLoading(true);
     try {
-        const res = await fetch('http://localhost:3001/api/oir/session/init', {
+        const res = await fetch('/api/oir/session/init', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -124,7 +124,7 @@ export default function OIRVisualTest() {
     });
 
     try {
-        const res = await fetch('http://localhost:3001/api/oir/session/submit', {
+        const res = await fetch('/api/oir/session/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

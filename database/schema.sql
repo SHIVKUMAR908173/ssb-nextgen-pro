@@ -159,3 +159,10 @@ CREATE TABLE users
                                     CREATE INDEX idx_gto_progress_completed ON gto_progress(completed);
                                     CREATE INDEX idx_gto_sessions_user_id ON gto_sessions(user_id);
                                     CREATE INDEX idx_gto_sessions_created_at ON gto_sessions(created_at);
+
+                                    -- Additional Enterprise Performance Indexes
+                                    CREATE INDEX idx_test_results_user_id ON test_results(user_id);
+                                    CREATE INDEX idx_test_results_test_id ON test_results(test_id);
+                                    CREATE INDEX idx_psych_submissions_user_id ON psych_submissions(user_id);
+                                    CREATE INDEX idx_psych_submissions_created_at ON psych_submissions(created_at DESC);
+                                    CREATE INDEX idx_psych_submissions_content_gin ON psych_submissions USING GIN (content);

@@ -73,4 +73,6 @@ async def chat_with_brigadier(request: ChatRequest):
         return {"status": "success", "reply": response.text}
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")

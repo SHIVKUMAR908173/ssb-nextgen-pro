@@ -14,11 +14,9 @@ router = APIRouter(prefix="/api/olq", tags=["OLQ Tracking"])
 database_url = os.getenv("DATABASE_URL")
 pool = None
 
-async def get_db():
-    global pool
-    if pool is None:
-        pool = await asyncpg.create_pool(database_url)
-    return pool
+from fastapi import Request
+async def get_db(request: Request):
+    return request.app.state.db_pool
 
 # OLQ names mapping
 OLQ_NAMES = [
@@ -76,6 +74,7 @@ from app.middleware.auth import get_current_user_id
 
 @router.post("/assessments", response_model=dict)
 async def create_olq_assessment(
+    request: Request,
     assessment: OLQAssessmentCreate,
     current_user_id: str = Depends(get_current_user_id)
 ):
@@ -85,7 +84,7 @@ async def create_olq_assessment(
         raise HTTPException(status_code=403, detail="Cannot write scores for another user")
         
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             # Insert assessment
             result = await conn.fetchrow("""
@@ -130,10 +129,13 @@ async def create_olq_assessment(
             }
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.get("/assessments/{user_id}", response_model=List[dict])
 async def get_user_assessments(
+    request: Request,
     user_id: str,
     current_user_id: str = Depends(get_current_user_id),
     days: int = Query(default=30, ge=1, le=365),
@@ -143,7 +145,7 @@ async def get_user_assessments(
     if user_id != current_user_id:
         raise HTTPException(status_code=403, detail="Cannot read scores for another user")
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             if test_type:
                 rows = await conn.fetch("""
@@ -194,10 +196,13 @@ async def get_user_assessments(
             return assessments
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.get("/current-scores/{user_id}")
 async def get_current_olq_scores(
+    request: Request,
     user_id: str,
     current_user_id: str = Depends(get_current_user_id)
 ):
@@ -205,7 +210,7 @@ async def get_current_olq_scores(
     if user_id != current_user_id:
         raise HTTPException(status_code=403, detail="Cannot read scores for another user")
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             # Get weighted average from last 30 days, or all time if not enough data
             row = await conn.fetchrow("""
@@ -259,10 +264,13 @@ async def get_current_olq_scores(
             }
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.get("/daily-summary/{user_id}", response_model=List[OLQDailySummary])
 async def get_daily_summary(
+    request: Request,
     user_id: str,
     current_user_id: str = Depends(get_current_user_id),
     days: int = Query(default=7, ge=1, le=90)
@@ -271,7 +279,7 @@ async def get_daily_summary(
     if user_id != current_user_id:
         raise HTTPException(status_code=403, detail="Cannot read scores for another user")
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             rows = await conn.fetch("""
                 SELECT * FROM olq_daily_summary
@@ -308,10 +316,13 @@ async def get_daily_summary(
             return summaries
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.get("/configuration/{user_id}")
 async def get_olq_configuration(
+    request: Request,
     user_id: str,
     current_user_id: str = Depends(get_current_user_id)
 ):
@@ -319,7 +330,7 @@ async def get_olq_configuration(
     if user_id != current_user_id:
         raise HTTPException(status_code=403, detail="Cannot read config for another user")
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             row = await conn.fetchrow("""
                 SELECT * FROM olq_configuration
@@ -377,10 +388,13 @@ async def get_olq_configuration(
                 }
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.post("/configuration")
 async def update_olq_configuration(
+    request: Request,
     config: OLQConfiguration, 
     user_id: str,
     current_user_id: str = Depends(get_current_user_id)
@@ -389,7 +403,7 @@ async def update_olq_configuration(
     if user_id != current_user_id:
         raise HTTPException(status_code=403, detail="Cannot write config for another user")
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             # Deactivate existing configurations
             await conn.execute("""
@@ -452,10 +466,13 @@ async def update_olq_configuration(
             return {"success": True, "configuration_id": str(result["id"])}
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @router.get("/trends/{user_id}")
 async def get_olq_trends(
+    request: Request,
     user_id: str,
     current_user_id: str = Depends(get_current_user_id),
     days: int = Query(default=30, ge=7, le=90)
@@ -464,7 +481,7 @@ async def get_olq_trends(
     if user_id != current_user_id:
         raise HTTPException(status_code=403, detail="Cannot read trends for another user")
     try:
-        db = await get_db()
+        db = request.app.state.db_pool
         async with db.acquire() as conn:
             rows = await conn.fetch("""
                 SELECT 
@@ -518,4 +535,6 @@ async def get_olq_trends(
             return trends
             
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")

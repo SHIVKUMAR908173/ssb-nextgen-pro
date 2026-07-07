@@ -52,7 +52,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
 
   const startTest = async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/srt/session/init', {
+      const res = await fetch('/api/srt/session/init', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -100,7 +100,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
     setResponse('');
 
     try {
-      const res = await fetch('http://localhost:3001/api/srt/session/submit', {
+      const res = await fetch('/api/srt/session/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

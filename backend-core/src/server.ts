@@ -205,7 +205,20 @@ if (enableRedisMatchmaking) {
   })();
 }
 
+import rateLimit from "express-rate-limit";
+
 const app = express();
+app.set("trust proxy", 1);
+
+const apiLimiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later." }
+});
+app.use(apiLimiter);
+
 export const gamificationService = createGamificationService();
 
 const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:3000').split(',').map(s => s.trim());

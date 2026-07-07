@@ -194,7 +194,9 @@ async def evaluate_wat(request: WATRequest):
             is_positive=is_positive
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== TAT Evaluation ====================
@@ -250,7 +252,9 @@ async def evaluate_tat(request: TATRequest):
             story_structure_score=round(structure_score, 2)
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== SRT Evaluation ====================
@@ -304,7 +308,9 @@ async def evaluate_srt(request: SRTRequest):
             green_flags=green_flags
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== SD Evaluation ====================
@@ -367,7 +373,9 @@ async def evaluate_sd(request: SDRequest):
             suggestions=suggestions
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== GPE Evaluation ====================
@@ -453,7 +461,9 @@ async def evaluate_gpe(request: GPERequest):
             ideal_approach=ideal_approach
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== PPDT Evaluation ====================
@@ -551,7 +561,9 @@ async def evaluate_ppdt(request: PPDTRequest):
             theme_analysis=theme_analysis
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== Comprehensive Assessment ====================
@@ -632,7 +644,9 @@ async def comprehensive_assessment(
             "timestamp": datetime.now().isoformat()
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 # ==================== Analytics Endpoint ====================
@@ -711,4 +725,6 @@ async def evaluate_comprehensive_psych(request: ComprehensivePsychRequest):
         
     except Exception as e:
         print(f"Error in comprehensive psych evaluation: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.error(f"Internal Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")

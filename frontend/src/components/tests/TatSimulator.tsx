@@ -133,7 +133,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
     setStory('');
 
     try {
-      const res = await fetch('http://localhost:3001/api/tat/session/submit', {
+      const res = await fetch('/api/tat/session/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -176,7 +176,7 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
   const startTest = async () => {
     setIsLoadingScenarios(true);
     try {
-      const res = await fetch('http://localhost:3001/api/tat/session/init', {
+      const res = await fetch('/api/tat/session/init', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
