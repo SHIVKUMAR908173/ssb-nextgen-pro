@@ -2,11 +2,16 @@ import { NextResponse } from 'next/server';
 import { OIR_VERBAL_SETS, OIR_VISUAL_SETS } from '@/lib/oir-manifest';
 import fs from 'fs';
 import path from 'path';
+import { getServerUser } from '@/lib/supabase/auth';
 
 export async function GET(request: Request) {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
   const { searchParams } = new URL(request.url);
   const type = searchParams.get('type') || 'verbal';
-  let setId = searchParams.get('set');
+  let rawSetId = searchParams.get('set');
+  let setId = rawSetId ? rawSetId.replace(/[^a-zA-Z0-9_-]/g, '') : null;
 
   try {
     if (type === 'mixed') {
@@ -20,8 +25,8 @@ export async function GET(request: Request) {
       let verbalData = [];
       let visualData = [];
 
-      try { verbalData = JSON.parse(fs.readFileSync(verbalPath, 'utf8')); } catch (e) { console.error("Error reading verbal set", e); }
-      try { visualData = JSON.parse(fs.readFileSync(visualPath, 'utf8')); } catch (e) { console.error("Error reading visual set", e); }
+      try { verbalData = JSON.parse(await fs.promises.readFile(verbalPath, 'utf8')); } catch (e) { console.error("Error reading verbal set", e); }
+      try { visualData = JSON.parse(await fs.promises.readFile(visualPath, 'utf8')); } catch (e) { console.error("Error reading visual set", e); }
 
       // Get 25 verbal and 25 visual (or whatever is available up to 25)
       const verbalSelected = verbalData.slice(0, 25);
@@ -48,7 +53,7 @@ export async function GET(request: Request) {
     }
     
     const filePath = path.join(process.cwd(), 'src', 'data', `${setId}.json`);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const fileContents = await fs.promises.readFile(filePath, 'utf8');
     const data = JSON.parse(fileContents);
     
     return NextResponse.json({

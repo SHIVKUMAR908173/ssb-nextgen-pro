@@ -36,7 +36,7 @@ export default function SsbJourneyPage() {
       <motion.div 
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-[#0f172a] rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl"
+        className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl"
       >
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-500/10 rounded-full blur-[140px]"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -94,7 +94,7 @@ export default function SsbJourneyPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="bg-[#162840] rounded-[48px] p-16 shadow-2xl border border-[#1E3A5F] min-h-[500px] relative overflow-hidden"
+          className="bg-[#162840] rounded-3xl md:rounded-[48px] p-16 shadow-2xl border border-[#1E3A5F] min-h-[500px] relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[100px]"></div>
           
@@ -126,7 +126,7 @@ export default function SsbJourneyPage() {
                    </div>
                 </div>
                 
-                <div className="bg-[#0f172a] rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-10 border border-white/5 shadow-inner">
+                <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-10 border border-white/5 shadow-inner">
                    <Target className="w-24 h-24 text-yellow-500 opacity-20 animate-pulse" />
                    <div className="space-y-4">
                       <p className="text-xs font-black text-slate-500 uppercase tracking-[0.2em]">Ready for Simulation?</p>
@@ -168,7 +168,7 @@ export default function SsbJourneyPage() {
                    </div>
                 </div>
                 
-                <div className="bg-[#0f172a] rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-10 border border-white/5">
+                <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-10 border border-white/5">
                    <Brain className="w-24 h-24 text-yellow-500 opacity-20" />
                    <div className="space-y-4">
                       <p className="text-xs font-black text-slate-500 uppercase tracking-[0.2em]">Analyze your mind</p>
@@ -243,7 +243,7 @@ export default function SsbJourneyPage() {
                       </p>
                    </div>
                 </div>
-                <div className="bg-[#0f172a] rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-6 border border-white/5">
+                <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-6 border border-white/5">
                    <Flag className="w-24 h-24 text-yellow-500 opacity-20" />
                    <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Ground Simulation Active</p>
                    <Link href="/karmana/gto" className="inline-block bg-yellow-500 text-black px-12 py-6 rounded-[32px] font-black uppercase tracking-[0.3em] text-[10px] shadow-2xl transition-all">
@@ -280,7 +280,7 @@ export default function SsbJourneyPage() {
                       </p>
                    </div>
                 </div>
-                <div className="bg-yellow-500 rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-8 text-black shadow-2xl shadow-yellow-500/20">
+                <div className="bg-yellow-500 rounded-3xl md:rounded-[48px] p-12 flex flex-col items-center justify-center text-center space-y-8 text-black shadow-2xl shadow-yellow-500/20">
                    <Mic className="w-24 h-24 opacity-30" />
                    <div className="space-y-2">
                       <h4 className="text-2xl font-black uppercase tracking-tight">Final Assessment</h4>

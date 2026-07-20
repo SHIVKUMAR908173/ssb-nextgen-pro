@@ -85,7 +85,7 @@ export default function PlatformGuidePage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#0f172a] rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl text-center"
+        className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl text-center"
       >
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[140px]"></div>
         <div className="relative z-10 space-y-8">
@@ -122,7 +122,7 @@ export default function PlatformGuidePage() {
       </div>
 
       {/* Assessment Workflow */}
-      <div className="bg-[#162840] rounded-[48px] p-16 shadow-2xl border border-[#1E3A5F] space-y-16 relative overflow-hidden">
+      <div className="bg-[#162840] rounded-3xl md:rounded-[48px] p-16 shadow-2xl border border-[#1E3A5F] space-y-16 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-20"></div>
         
         <div className="flex items-center gap-4 relative z-10">

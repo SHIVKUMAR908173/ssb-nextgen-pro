@@ -29,7 +29,22 @@ const GD_DURATION = 600 // 10 minutes in seconds
 const ICE_SERVERS = {
   iceServers: [
     { urls: 'stun:stun.l.google.com:19302' },
-    { urls: 'stun:stun1.l.google.com:19302' }
+    { urls: 'stun:stun1.l.google.com:19302' },
+    {
+      urls: 'turn:openrelay.metered.ca:80',
+      username: 'openrelayproject',
+      credential: 'openrelayproject',
+    },
+    {
+      urls: 'turn:openrelay.metered.ca:443',
+      username: 'openrelayproject',
+      credential: 'openrelayproject',
+    },
+    {
+      urls: 'turn:openrelay.metered.ca:443?transport=tcp',
+      username: 'openrelayproject',
+      credential: 'openrelayproject',
+    }
   ]
 }
 
@@ -401,7 +416,7 @@ export default function GDPage() {
 
       {/* Hero */}
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[48px] bg-gradient-to-br from-[#064e3b] via-[#043b2f] to-[#022c22] p-12 md:p-16 border border-emerald-500/20 shadow-2xl text-center">
+        className="relative overflow-hidden rounded-3xl md:rounded-[48px] bg-gradient-to-br from-[#064e3b] via-[#043b2f] to-[#022c22] p-12 md:p-16 border border-emerald-500/20 shadow-2xl text-center">
         <div className="absolute -right-24 -top-24 w-80 h-80 bg-emerald-500/10 rounded-full blur-[100px]" />
         <div className="relative z-10 space-y-6">
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full">
@@ -727,7 +742,7 @@ export default function GDPage() {
       </div>
 
       {/* 50 Topic Bank */}
-      <div className="bg-[#0f172a] rounded-[48px] p-8 border border-white/5">
+      <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-8 border border-white/5">
         <div className="flex items-center justify-between mb-6">
           <div>
             <h3 className="text-xl font-black text-white uppercase tracking-tight">GD Topic Bank</h3>

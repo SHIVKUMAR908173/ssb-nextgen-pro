@@ -111,7 +111,7 @@ export default function FreeResourcesPage() {
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="relative bg-[#0f172a] rounded-[48px] p-16 overflow-hidden text-center border border-emerald-500/20 shadow-[0_0_50px_rgba(16,185,129,0.1)]"
+        className="relative bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 overflow-hidden text-center border border-emerald-500/20 shadow-[0_0_50px_rgba(16,185,129,0.1)]"
       >
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px]"></div>
@@ -156,7 +156,7 @@ export default function FreeResourcesPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="bg-[#162840] rounded-[48px] p-8 md:p-12 border border-[#1E3A5F] min-h-[500px] shadow-2xl relative overflow-hidden"
+          className="bg-[#162840] rounded-3xl md:rounded-[48px] p-8 md:p-12 border border-[#1E3A5F] min-h-[500px] shadow-2xl relative overflow-hidden"
         >
           {activeTab === 'static-gk' && (
             <div className="space-y-12 relative z-10">

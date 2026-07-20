@@ -76,7 +76,7 @@ export default function FullPsychBatteryPage() {
 
       {/* Intro Stage */}
       {stage === 'intro' && (
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0f172a] rounded-[48px] p-16 relative overflow-hidden border border-purple-500/20 shadow-2xl">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 relative overflow-hidden border border-purple-500/20 shadow-2xl">
            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px]"></div>
            
            <div className="max-w-3xl relative z-10 space-y-8">

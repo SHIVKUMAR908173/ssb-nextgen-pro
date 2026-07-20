@@ -63,7 +63,7 @@ export default function PragyaDashboard() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#0f172a] rounded-[48px] p-12 md:p-16 overflow-hidden border border-white/5 relative shadow-2xl"
+        className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 md:p-16 overflow-hidden border border-white/5 relative shadow-2xl"
       >
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px]"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -131,7 +131,7 @@ export default function PragyaDashboard() {
 
         {/* Content: Modules */}
         <div className="lg:col-span-8 space-y-8">
-          <div className="bg-[#0f172a] rounded-[48px] p-10 border border-white/5 shadow-2xl relative overflow-hidden">
+          <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-10 border border-white/5 shadow-2xl relative overflow-hidden">
             <div className={`absolute top-0 right-0 w-[400px] h-[400px] rounded-full blur-[100px] bg-${activeCatData.color}-500/5`}></div>
             
             <div className="relative z-10 mb-10">

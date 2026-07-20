@@ -19,6 +19,17 @@ export default function GpeSimulator() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (phase === 'READING' || phase === 'WRITING') {
+        e.preventDefault()
+        e.returnValue = ''
+      }
+    }
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [phase])
+
+  useEffect(() => {
     let timerId: NodeJS.Timeout;
     if ((phase === 'READING' || phase === 'WRITING') && timeLeft > 0) {
       timerId = setInterval(() => {

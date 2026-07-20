@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { getServerUser } from '@/lib/supabase/auth';
 
 export const runtime = 'edge';
 
@@ -28,6 +29,9 @@ async function fetchYouTubeContext(topic: string): Promise<string> {
 
 export async function POST(req: Request) {
     try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
         const { topic } = await req.json();
         const youtubeContext = await fetchYouTubeContext(String(topic));
 

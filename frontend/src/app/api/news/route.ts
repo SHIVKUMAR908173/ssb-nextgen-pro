@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import Parser from 'rss-parser'
+import { getServerUser } from '@/lib/supabase/auth';
 
 interface NewsItem {
   id?: string;
@@ -47,6 +48,9 @@ function extractImage(item: any): string | undefined {
 
 export async function GET() {
   try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
     const parser = new Parser({
       customFields: {
         item: ['content:encoded', 'media:content']

@@ -184,7 +184,7 @@ export default function DailyNewsPage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative bg-[#0f172a] rounded-[48px] p-12 overflow-hidden border border-white/5"
+        className="relative bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 overflow-hidden border border-white/5"
       >
         <div className="absolute top-0 right-0 w-80 h-80 bg-yellow-500/10 rounded-full blur-[100px]"></div>
         <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center">
@@ -281,7 +281,7 @@ export default function DailyNewsPage() {
                   key={item.id}
                   onClick={() => setSelectedArticle(item)}
                   whileHover={{ y: -5 }}
-                  className="group bg-[#162840] rounded-[48px] overflow-hidden border border-white/5 flex flex-col h-full shadow-2xl cursor-pointer"
+                  className="group bg-[#162840] rounded-3xl md:rounded-[48px] overflow-hidden border border-white/5 flex flex-col h-full shadow-2xl cursor-pointer"
                 >
                  <div className="h-96 relative overflow-hidden">
                     <img 

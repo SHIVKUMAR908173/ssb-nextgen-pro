@@ -25,7 +25,7 @@ export default function OirVisualPage() {
           <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Visual Matrix Active</span>
         </div>
       </div>
-      <div className="bg-[#0f172a] rounded-[48px] p-4 shadow-2xl border border-white/5 overflow-hidden min-h-[600px]">
+      <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-4 shadow-2xl border border-white/5 overflow-hidden min-h-[600px]">
         <OIRVisualTest />
       </div>
     </div>

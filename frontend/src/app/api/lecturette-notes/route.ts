@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { getServerUser } from '@/lib/supabase/auth';
 
 // Mocking the 84 AFPA GD Topics (Sample of 10 for demonstration)
 export const LECTURETTE_TOPICS = [
@@ -19,6 +20,9 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
 export async function POST(req: NextRequest) {
     try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
         const { topic } = await req.json();
 
         if (!topic) {

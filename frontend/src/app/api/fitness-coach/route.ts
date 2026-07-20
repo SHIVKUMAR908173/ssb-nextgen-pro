@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { getServerUser } from '@/lib/supabase/auth';
 
 // Initialize the Gemini API client using the environment variable
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
 export async function POST(req: NextRequest) {
     try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
         const body = await req.json();
         const { height_cm, weight_kg, bmi, run_2_4km_time, pushups_count, situps_count, pullups_count } = body;
 

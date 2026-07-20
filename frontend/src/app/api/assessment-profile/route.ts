@@ -1,9 +1,13 @@
 import { NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { computeAssessmentProfile } from '@/lib/ml-assessment-engine'
+import { getServerUser } from '@/lib/supabase/auth';
 
 export async function GET(req: Request) {
   try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
     const url = new URL(req.url)
     const userIdQuery = url.searchParams.get('userId')
     
@@ -12,8 +16,7 @@ export async function GET(req: Request) {
     }
 
     const supabase = await createClient()
-    const { data: { user } } = await supabase.auth.getUser()
-    if (!user || user.id !== userIdQuery) {
+    if (user.id !== userIdQuery) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 

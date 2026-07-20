@@ -51,6 +51,19 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
     }
   }, [phase, currentIdx]);
 
+
+  // Prevent accidental refresh
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (phase !== 'IDLE' && phase !== 'DONE') {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [phase]);
+
   const startTest = async () => {
     setIsLoadingScenarios(true);
     try {
@@ -213,7 +226,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
             className="grid grid-cols-1 lg:grid-cols-3 gap-8"
           >
             {/* Main Information Panel */}
-            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-[100px]"></div>
               
               <div className="space-y-4 relative z-10">
@@ -244,7 +257,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
             </div>
 
             {/* Sidebar Guidelines Panel */}
-            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+            <div className="bg-[#162840]/60 border border-white/5 rounded-3xl md:rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <ShieldAlert className="w-6 h-6 text-orange-500" />
@@ -302,7 +315,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
             </div>
 
             {/* Main Interactive Screen */}
-            <div className="bg-[#0f172a] rounded-[48px] p-8 md:p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8 flex flex-col h-[600px]">
+            <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-8 md:p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8 flex flex-col h-[600px]">
               
               {/* Timing Countdown Slider */}
               <div className="absolute top-0 left-0 w-full h-1.5 bg-white/5">
@@ -401,7 +414,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
             {/* Top Score summary widget */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               
-              <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+              <div className="lg:col-span-2 bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
                 <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-orange-500/5 rounded-full blur-[80px]"></div>
                 
                 <div className="space-y-4 relative z-10 text-center md:text-left">
@@ -439,7 +452,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
               </div>
 
               {/* Sidebar Quick Re-run */}
-              <div className="bg-[#162840] border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
+              <div className="bg-[#162840] border border-white/5 rounded-3xl md:rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
                 <div>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight">Detected OLQs</h3>
                   <div className="flex flex-wrap gap-2 mt-4">

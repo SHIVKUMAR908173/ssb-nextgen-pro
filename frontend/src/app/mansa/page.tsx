@@ -37,7 +37,7 @@ export default function MansaPsychPage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#0f172a] rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl"
+        className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl"
       >
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px]"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -97,7 +97,7 @@ export default function MansaPsychPage() {
                initial={{ opacity: 0, x: 20 }}
                animate={{ opacity: 1, x: 0 }}
                exit={{ opacity: 0, x: -20 }}
-               className="bg-[#162840] rounded-[48px] p-12 shadow-2xl border border-[#1E3A5F] h-full flex flex-col relative overflow-hidden"
+               className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 shadow-2xl border border-[#1E3A5F] h-full flex flex-col relative overflow-hidden"
              >
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]"></div>
                 <div className="flex items-center justify-between mb-12 relative z-10">

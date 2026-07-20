@@ -4,6 +4,7 @@ import { google } from '@ai-sdk/google';
 import { z } from 'zod';
 import path from 'path';
 import { promises as fs } from 'fs';
+import { getServerUser } from '@/lib/supabase/auth';
 
 export const maxDuration = 60; // Allow longer execution if on Vercel Pro
 
@@ -37,6 +38,9 @@ interface TatResponsePayload {
 
 export async function POST(req: NextRequest) {
     try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
         const body = await req.json();
         const { stories } = body;
 

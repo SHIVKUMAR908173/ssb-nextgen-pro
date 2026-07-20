@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import path from 'path';
 import { promises as fs } from 'fs';
+import { getServerUser } from '@/lib/supabase/auth';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
@@ -12,6 +13,9 @@ interface WatResponsePayload {
 
 export async function POST(req: NextRequest) {
     try {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
         const body = await req.json();
         const { responses } = body;
 

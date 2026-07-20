@@ -87,6 +87,19 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
     }
   }, [phase, currentIdx, testMode]);
 
+
+  // Prevent accidental refresh
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (phase !== 'IDLE' && phase !== 'DONE') {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [phase]);
+
   const startTest = async () => {
     setIsLoadingScenarios(true);
     try {
@@ -287,7 +300,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             className="grid grid-cols-1 lg:grid-cols-3 gap-8"
           >
             {/* Main Information Panel */}
-            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[100px]"></div>
               
               <div className="space-y-4 relative z-10">
@@ -337,7 +350,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             </div>
 
             {/* Sidebar Guidelines Panel */}
-            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+            <div className="bg-[#162840]/60 border border-white/5 rounded-3xl md:rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <ShieldAlert className="w-6 h-6 text-yellow-500" />
@@ -355,7 +368,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 shrink-0 mt-1.5"></span>
-                    <span>3. Avoid Negativity: Frame even negative words constructively (e.g. Defeat -> "Defeat teaches lessons for success").</span>
+                    <span>3. Avoid Negativity: Frame even negative words constructively (e.g. Defeat → "Defeat teaches lessons for success").</span>
                   </li>
                 </ul>
               </div>
@@ -395,7 +408,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             </div>
 
             {/* Main Interactive Screen */}
-            <div className="bg-[#0f172a] rounded-[48px] p-8 md:p-16 border border-white/5 relative overflow-hidden shadow-2xl space-y-12 flex flex-col items-center justify-center min-h-[500px]">
+            <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-8 md:p-16 border border-white/5 relative overflow-hidden shadow-2xl space-y-12 flex flex-col items-center justify-center min-h-[500px]">
               
               {/* Timing Countdown Slider */}
               <div className="absolute top-0 left-0 w-full h-1.5 bg-white/5">
@@ -460,7 +473,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             exit={{ opacity: 0 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <div className="bg-[#0f172a] rounded-[48px] p-16 border border-white/5 relative overflow-hidden shadow-2xl text-center flex flex-col items-center justify-center gap-8 min-h-[400px]">
+            <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 border border-white/5 relative overflow-hidden shadow-2xl text-center flex flex-col items-center justify-center gap-8 min-h-[400px]">
                <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-yellow-500/5 rounded-full blur-[80px]"></div>
                
                {!isUploading ? (
@@ -529,7 +542,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             exit={{ opacity: 0 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <div className="bg-[#0f172a] rounded-[48px] p-16 border border-red-500/20 relative overflow-hidden shadow-2xl text-center flex flex-col items-center justify-center gap-8">
+            <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 border border-red-500/20 relative overflow-hidden shadow-2xl text-center flex flex-col items-center justify-center gap-8">
                <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-red-500/10 rounded-full blur-[80px]"></div>
                <ShieldAlert className="w-24 h-24 text-red-500 animate-pulse relative z-10" />
                <div className="space-y-4 relative z-10">
@@ -562,7 +575,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
             {/* Top Score summary widget */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               
-              <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+              <div className="lg:col-span-2 bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
                 <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-yellow-500/5 rounded-full blur-[80px]"></div>
                 
                 <div className="space-y-4 relative z-10 text-center md:text-left">
@@ -600,7 +613,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
               </div>
 
               {/* Sidebar Quick Re-run */}
-              <div className="bg-[#162840] border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
+              <div className="bg-[#162840] border border-white/5 rounded-3xl md:rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
                 <div>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight">Next Steps</h3>
                   <p className="mt-4 text-xs font-semibold text-slate-400 leading-relaxed">
@@ -630,7 +643,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
 
             {/* Strengths & Weaknesses */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-[#0f172a] rounded-[48px] p-12 border border-emerald-500/10 shadow-2xl relative overflow-hidden">
+                <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-emerald-500/10 shadow-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl"></div>
                     <h3 className="text-xl font-black text-white uppercase tracking-tight mb-6 flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400">+</div>
@@ -646,7 +659,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
                     </ul>
                 </div>
                 
-                <div className="bg-[#0f172a] rounded-[48px] p-12 border border-red-500/10 shadow-2xl relative overflow-hidden">
+                <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-red-500/10 shadow-2xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl"></div>
                     <h3 className="text-xl font-black text-white uppercase tracking-tight mb-6 flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center text-red-400">-</div>
@@ -665,7 +678,7 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
 
             {/* Submissions Log (If generated) */}
             {evaluation.responses && evaluation.responses.length > 0 && (
-                <div className="bg-[#0f172a] rounded-[48px] p-12 border border-white/5 shadow-2xl space-y-6">
+                <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-white/5 shadow-2xl space-y-6">
                     <h3 className="text-xl font-black text-white uppercase tracking-tight">Submission Log</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[400px] overflow-y-auto custom-scrollbar pr-4">
                        {evaluation.responses.map((r: WatResponse, idx: number) => (

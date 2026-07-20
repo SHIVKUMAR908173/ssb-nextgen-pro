@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { UserCircle, PenTool, Brain, CheckCircle2, ArrowLeft, Radio, Sparkles, Target, Zap, Loader2, AlertTriangle, ChevronRight, ChevronLeft, Star } from 'lucide-react'
-import Link from 'next/link'
+import { UserCircle, PenTool, Brain, CheckCircle2, ArrowLeft, Radio, Sparkles, Target, Zap, Loader2, AlertTriangle, ChevronRight, ChevronLeft, Star, ShieldAlert, Clock } from 'lucide-react'
 
 const SD_SECTIONS = [
   { id: 'parents', label: 'Parents Opinion', placeholder: 'Describe how your parents perceive you — your character, reliability, strengths and weaknesses in their eyes. Be specific and honest. (e.g., "My father believes I am disciplined but sometimes too stubborn when I believe I am right. My mother says I am caring but need to be more organized...")' },
@@ -50,6 +49,17 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
   const [error, setError] = useState<string | null>(null)
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
+
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (phase === 'WRITING' || phase === 'EVALUATING') {
+        e.preventDefault()
+        e.returnValue = ''
+      }
+    }
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [phase])
 
   // Countdown timer for writing phase
   useEffect(() => {
@@ -167,7 +177,7 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
         </div>
 
         {/* Board President Verdict */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl relative overflow-hidden">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]"></div>
           <div className="flex items-center gap-4 mb-8 relative z-10">
             <div className="w-14 h-14 bg-purple-600 rounded-[20px] flex items-center justify-center shadow-2xl">
@@ -280,7 +290,7 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
             className="grid grid-cols-1 lg:grid-cols-3 gap-8"
           >
             {/* Main Information Panel */}
-            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]"></div>
               
               <div className="space-y-4 relative z-10">
@@ -310,7 +320,7 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
             </div>
 
             {/* Sidebar Guidelines Panel */}
-            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+            <div className="bg-[#162840]/60 border border-white/5 rounded-3xl md:rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <ShieldAlert className="w-6 h-6 text-purple-500" />
@@ -392,7 +402,7 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
 
       {/* Writing Area */}
       <AnimatePresence mode="wait">
-        <motion.div key={currentSection} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl relative overflow-hidden">
+        <motion.div key={currentSection} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]"></div>
           
           <div className="relative z-10 space-y-8">
@@ -439,6 +449,8 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
 
             {error && <p className="text-red-400 text-[10px] font-black uppercase tracking-widest">{error}</p>}
           </div>
+        </motion.div>
+        </AnimatePresence>
         </motion.div>
         )}
       </AnimatePresence>

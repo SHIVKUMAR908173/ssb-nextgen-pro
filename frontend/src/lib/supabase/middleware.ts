@@ -39,8 +39,6 @@ export async function updateSession(request: NextRequest) {
   )
 
   const { data: { user } } = await supabase.auth.getUser();
-  console.log("Middleware checking user:", user?.id || "null");
-
   // Define protected and public routes
   const PUBLIC_ROUTES = [
     '/',

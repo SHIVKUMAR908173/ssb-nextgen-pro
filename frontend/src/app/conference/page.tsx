@@ -105,7 +105,7 @@ export default function ConferencePage() {
 
         {phase === 'AGGREGATING' && (
           <motion.div key="aggregating" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="space-y-12">
-             <div className="bg-[#0f172a] rounded-[48px] p-16 text-center border border-red-500/20 shadow-[0_0_50px_rgba(239,68,68,0.1)] relative overflow-hidden">
+             <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 text-center border border-red-500/20 shadow-[0_0_50px_rgba(239,68,68,0.1)] relative overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
                 <Flag className="w-16 h-16 text-red-500 mx-auto mb-6" />
                 <h1 className="text-5xl font-black text-white uppercase tracking-tighter mb-4">The Final Conference</h1>
@@ -136,7 +136,7 @@ export default function ConferencePage() {
 
         {phase === 'RAPID_FIRE' && (
           <motion.div key="rapid_fire" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center justify-center min-h-[60vh]">
-             <div className="w-full max-w-3xl bg-[#0f172a] rounded-[48px] p-16 border border-red-500/30 text-center relative overflow-hidden shadow-2xl">
+             <div className="w-full max-w-3xl bg-[#0f172a] rounded-3xl md:rounded-[48px] p-16 border border-red-500/30 text-center relative overflow-hidden shadow-2xl">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/10 rounded-full blur-[100px]"></div>
                 <div className="relative z-10 space-y-12">
                     <div className="bg-red-500/10 border border-red-500/20 px-6 py-2 rounded-full inline-flex items-center gap-3">

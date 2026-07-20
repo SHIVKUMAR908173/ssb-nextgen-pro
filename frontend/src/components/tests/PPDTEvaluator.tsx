@@ -208,7 +208,7 @@ export default function PPDTEvaluator() {
         return (
             <div className="max-w-4xl mx-auto space-y-8 pb-12">
                 {/* Hero Banner */}
-                <div className="relative bg-gradient-to-br from-[#0d1b4b] to-[#1a0a3d] rounded-[48px] p-12 border border-indigo-500/20 overflow-hidden text-center shadow-2xl">
+                <div className="relative bg-gradient-to-br from-[#0d1b4b] to-[#1a0a3d] rounded-3xl md:rounded-[48px] p-12 border border-indigo-500/20 overflow-hidden text-center shadow-2xl">
                     <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none" />
                     <div className="relative z-10">
                         <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-4 py-1.5 rounded-full mb-6">

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import path from 'path';
 import { readFileSync } from 'fs';
+import { getServerUser } from '@/lib/supabase/auth';
 
 // Load synthetic CSSS dataset generated earlier
 const datasetPath = path.resolve(process.cwd(), 'src/data/csss_stage1_dataset.json');
@@ -16,6 +17,9 @@ try {
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: Request) {
+    const user = await getServerUser();
+    if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
   const { searchParams } = new URL(req.url);
   const count = parseInt(searchParams.get('count') || '190');
   // Shuffle and select requested number of questions

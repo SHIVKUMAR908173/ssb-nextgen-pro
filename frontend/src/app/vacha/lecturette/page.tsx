@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FileText, Cpu, CheckCircle2, Loader2, BarChart2, Sparkles, Mic2, Mic, MicOff, ArrowRight, Zap, Target, ArrowLeft, Video } from 'lucide-react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
+import ReactMarkdown from 'react-markdown'
 
 const INITIAL_TOPICS = [
     'Poverty in India', 'Lok Sabha Polls 2024', 'Cross border terrorism',
@@ -173,7 +174,7 @@ export default function LecturettePage() {
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-[#0f172a] rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
+                className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
             >
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
                 <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -202,7 +203,7 @@ export default function LecturettePage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Topics Archive */}
-                <div className="lg:col-span-4 bg-[#162840] rounded-[48px] p-10 border border-[#1E3A5F] shadow-2xl flex flex-col h-[700px]">
+                <div className="lg:col-span-4 bg-[#162840] rounded-3xl md:rounded-[48px] p-10 border border-[#1E3A5F] shadow-2xl flex flex-col h-[700px]">
                     <div className="flex items-center gap-3 mb-8">
                         <Zap className="w-6 h-6 text-yellow-500" />
                         <h2 className="text-2xl font-black text-white uppercase tracking-tight">Priority Archive</h2>
@@ -244,7 +245,7 @@ export default function LecturettePage() {
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 1.05 }}
-                                className="bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl h-full flex flex-col items-center justify-center text-center space-y-12"
+                                className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl h-full flex flex-col items-center justify-center text-center space-y-12"
                             >
                                 <div className="w-32 h-32 bg-[#0f172a] rounded-full flex items-center justify-center text-slate-700 border border-white/5 shadow-2xl">
                                     <Target className="w-12 h-12" />
@@ -261,7 +262,7 @@ export default function LecturettePage() {
                                 key="content"
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
-                                className="bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl h-full flex flex-col"
+                                className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl h-full flex flex-col"
                             >
                                 <div className="flex items-center justify-between mb-12">
                                     <div className="space-y-2">
@@ -294,7 +295,7 @@ export default function LecturettePage() {
                                         <div className="bg-[#0f172a] rounded-[40px] p-10 border border-white/5 shadow-inner">
                                             <div className="prose prose-invert max-w-none prose-h2:text-blue-500 prose-h2:uppercase prose-h2:tracking-widest prose-h2:text-sm prose-h2:font-black prose-p:text-slate-300 prose-p:text-lg prose-p:font-bold prose-p:leading-relaxed prose-li:text-slate-400 prose-li:font-bold">
                                                 {/* Assuming notes is markdown */}
-                                                <div dangerouslySetInnerHTML={{ __html: notes?.replace(/\n/g, '<br/>') || '' }} />
+                                                <ReactMarkdown>{notes || ''}</ReactMarkdown>
                                             </div>
                                         </div>
                                         

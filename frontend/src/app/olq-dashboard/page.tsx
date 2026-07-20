@@ -155,7 +155,7 @@ export default function OLQDashboardPage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#0f172a] rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
+        className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
       >
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]"></div>
         <div className="relative z-10">
@@ -213,7 +213,7 @@ export default function OLQDashboardPage() {
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Radar Chart */}
-        <div className="lg:col-span-8 bg-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 relative overflow-hidden shadow-2xl">
+        <div className="lg:col-span-8 bg-[#0f172a] border border-[#1E3A5F] rounded-3xl md:rounded-[48px] p-12 relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 p-8">
             <div className="bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -283,7 +283,7 @@ export default function OLQDashboardPage() {
       </div>
 
       {/* Daily Summary */}
-      <div className="bg-[#0f172a] border border-[#1E3A5F] rounded-[48px] p-12 relative overflow-hidden shadow-2xl">
+      <div className="bg-[#0f172a] border border-[#1E3A5F] rounded-3xl md:rounded-[48px] p-12 relative overflow-hidden shadow-2xl">
         <div className="absolute top-0 right-0 p-8">
           <div className="bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full flex items-center gap-2">
             <Calendar className="w-3 h-3 text-blue-500" />

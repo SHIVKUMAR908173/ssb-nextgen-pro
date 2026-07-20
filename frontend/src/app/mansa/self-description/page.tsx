@@ -20,7 +20,7 @@ export default function SelfDescriptionPage() {
         </div>
       </div>
 
-      <div className="bg-[#0f172a] rounded-[48px] p-8 shadow-2xl border border-white/5">
+      <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-8 shadow-2xl border border-white/5">
          <SdSimulator />
       </div>
 

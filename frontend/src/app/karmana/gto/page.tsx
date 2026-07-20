@@ -102,7 +102,7 @@ export default function KarmanaGtoPage() {
 
       {/* Hero */}
       <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[48px] border border-emerald-500/20 bg-gradient-to-br from-[#064e3b] via-[#043b2f] to-[#022c22] p-10 md:p-16 shadow-2xl"
+        className="relative overflow-hidden rounded-3xl md:rounded-[48px] border border-emerald-500/20 bg-gradient-to-br from-[#064e3b] via-[#043b2f] to-[#022c22] p-10 md:p-16 shadow-2xl"
         style={{ backgroundImage: 'linear-gradient(rgba(16,185,129,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(16,185,129,0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-emerald-500/10 blur-[100px]" />
         <div className="absolute -left-16 -bottom-16 h-60 w-60 rounded-full bg-orange-500/10 blur-[80px]" />

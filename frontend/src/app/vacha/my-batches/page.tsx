@@ -33,7 +33,7 @@ export default function MyBatchesPage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#0f172a] rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
+        className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
       >
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px]"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -61,7 +61,7 @@ export default function MyBatchesPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
          {/* Squad Roster */}
-         <div className="lg:col-span-8 bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl space-y-10">
+         <div className="lg:col-span-8 bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl space-y-10">
             <div className="flex items-center justify-between">
                <div className="flex items-center gap-4">
                   <Target className="w-8 h-8 text-indigo-500" />

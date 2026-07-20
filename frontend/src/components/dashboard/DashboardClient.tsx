@@ -314,7 +314,7 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="lg:col-span-8 bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-[48px] p-12 relative overflow-hidden group shadow-[0_0_40px_rgba(0,0,0,0.3)]"
+          className="lg:col-span-8 bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-3xl md:rounded-[48px] p-12 relative overflow-hidden group shadow-[0_0_40px_rgba(0,0,0,0.3)]"
         >
           <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
           <div className="absolute top-0 right-0 p-8">
@@ -336,7 +336,7 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="lg:col-span-4 bg-gradient-to-br from-[#162840]/90 to-[#0f172a]/90 backdrop-blur-xl border border-white/10 rounded-[48px] p-12 flex flex-col justify-center shadow-[0_0_40px_rgba(0,0,0,0.3)] relative overflow-hidden group"
+          className="lg:col-span-4 bg-gradient-to-br from-[#162840]/90 to-[#0f172a]/90 backdrop-blur-xl border border-white/10 rounded-3xl md:rounded-[48px] p-12 flex flex-col justify-center shadow-[0_0_40px_rgba(0,0,0,0.3)] relative overflow-hidden group"
         >
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-20 group-hover:opacity-100 transition-opacity duration-700"></div>
           <div className="absolute -inset-24 bg-orange-500/5 rounded-full blur-[80px] group-hover:bg-orange-500/10 transition-colors duration-1000" />
@@ -365,7 +365,7 @@ export default function DashboardClient({ initialDashData }: { initialDashData: 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-[48px] p-12 relative overflow-hidden group shadow-[0_0_40px_rgba(0,0,0,0.3)]"
+        className="bg-[#0f172a]/80 backdrop-blur-xl border border-white/10 rounded-3xl md:rounded-[48px] p-12 relative overflow-hidden group shadow-[0_0_40px_rgba(0,0,0,0.3)]"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
         <div className="absolute top-0 right-0 p-8">

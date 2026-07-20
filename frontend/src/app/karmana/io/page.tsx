@@ -34,7 +34,7 @@ export default function IOPage() {
       </div>
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[48px] bg-gradient-to-br from-[#064e3b] via-[#043b2f] to-[#022c22] p-12 md:p-16 border border-emerald-500/20 shadow-2xl text-center">
+        className="relative overflow-hidden rounded-3xl md:rounded-[48px] bg-gradient-to-br from-[#064e3b] via-[#043b2f] to-[#022c22] p-12 md:p-16 border border-emerald-500/20 shadow-2xl text-center">
         <div className="absolute -right-24 -top-24 w-80 h-80 bg-emerald-500/10 rounded-full blur-[100px]" />
         <div className="relative z-10 space-y-6">
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full">
@@ -107,7 +107,7 @@ export default function IOPage() {
       </div>
 
       {/* Game */}
-      <div className="bg-[#0f172a] rounded-[48px] p-4 shadow-2xl border border-white/5">
+      <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-4 shadow-2xl border border-white/5">
         <div className="p-6 pb-4">
           <h3 className="text-xl font-black text-white uppercase tracking-tight">🏃 Start Obstacle Course Simulation</h3>
           <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Tap rapidly to clear each obstacle</p>

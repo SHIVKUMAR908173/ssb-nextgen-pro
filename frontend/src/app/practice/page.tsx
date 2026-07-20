@@ -171,7 +171,7 @@ export default function DailyPracticePage() {
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="relative bg-[#0f172a] rounded-[48px] p-10 overflow-hidden text-center border border-white/5 shadow-2xl"
+        className="relative bg-[#0f172a] rounded-3xl md:rounded-[48px] p-10 overflow-hidden text-center border border-white/5 shadow-2xl"
       >
         <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-400/5 rounded-full blur-[80px]"></div>
         <div className="flex flex-col items-center relative z-10">

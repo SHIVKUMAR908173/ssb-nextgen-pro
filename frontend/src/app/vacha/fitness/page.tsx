@@ -163,7 +163,7 @@ export default function PhysicalTrainingPage() {
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-[#0f172a] rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
+                className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl"
             >
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]"></div>
                 <div className="relative z-10 space-y-6">
@@ -271,7 +271,7 @@ export default function PhysicalTrainingPage() {
                 {/* AI Output Column */}
                 <div className="lg:col-span-8">
                     {workoutPlan ? (
-                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl h-full space-y-12 overflow-y-auto custom-scrollbar">
+                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl h-full space-y-12 overflow-y-auto custom-scrollbar">
                             <div className="flex items-center gap-4 border-b border-white/5 pb-8">
                                 <ShieldCheck className="w-10 h-10 text-emerald-500" />
                                 <div>
@@ -312,7 +312,7 @@ export default function PhysicalTrainingPage() {
                             </div>
                         </motion.div>
                     ) : (
-                        <div className="bg-[#162840] rounded-[48px] border-4 border-dashed border-[#1E3A5F] h-full min-h-[600px] flex flex-col items-center justify-center p-12 text-center text-slate-700">
+                        <div className="bg-[#162840] rounded-3xl md:rounded-[48px] border-4 border-dashed border-[#1E3A5F] h-full min-h-[600px] flex flex-col items-center justify-center p-12 text-center text-slate-700">
                             <Map className="w-20 h-20 mb-6 opacity-20" />
                             <h3 className="text-2xl font-black uppercase tracking-widest">Protocol Dormant</h3>
                             <p className="text-slate-600 max-w-sm font-bold text-sm mt-2 uppercase tracking-wider">Input vitals to synchronize with Master Chief's training matrix.</p>
@@ -322,7 +322,7 @@ export default function PhysicalTrainingPage() {
             </div>
 
             {/* Obstacle Matrix */}
-            <div className="bg-[#162840] rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl">
+            <div className="bg-[#162840] rounded-3xl md:rounded-[48px] p-12 border border-[#1E3A5F] shadow-2xl">
                 <div className="flex items-center gap-4 mb-12">
                     <Heart className="w-8 h-8 text-emerald-500" />
                     <div>

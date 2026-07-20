@@ -47,7 +47,7 @@ export default async function HistoryDashboardPage() {
             </div>
 
             {/* Main Title */}
-            <div className="bg-[#0f172a] rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl">
+            <div className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 overflow-hidden border border-white/5 relative shadow-2xl">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
                 <div className="relative z-10">
                     <div className="flex items-center gap-3 mb-4">

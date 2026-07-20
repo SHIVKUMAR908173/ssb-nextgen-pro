@@ -34,7 +34,7 @@ export default function SupportPage() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-[48px] p-16 border border-white/5 overflow-hidden"
+        className="relative bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-3xl md:rounded-[48px] p-16 border border-white/5 overflow-hidden"
       >
         <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-400/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
         <div className="relative z-10 flex flex-col items-center text-center space-y-6">
@@ -73,7 +73,7 @@ export default function SupportPage() {
       </div>
 
       {/* Feedback Form */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0f172a] rounded-[48px] p-12 border border-yellow-500/10 shadow-2xl relative overflow-hidden">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0f172a] rounded-3xl md:rounded-[48px] p-12 border border-yellow-500/10 shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-yellow-500/5 rounded-full blur-[100px]"></div>
         <div className="relative z-10">
           <div className="flex items-center gap-4 mb-10">
