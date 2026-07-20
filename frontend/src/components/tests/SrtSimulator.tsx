@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, CheckCircle, ShieldAlert, Send, AlertTriangle, X } from 'lucide-react';
+import { Clock, CheckCircle, ShieldAlert, Send, AlertTriangle, X, Loader2 } from 'lucide-react';
 import enrichedSrtBank from '@/data/srt_scenarios_enriched.json';
 import { useTimer } from '@/hooks/useTimer';
 
@@ -29,6 +29,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
   const [allResponses, setAllResponses] = useState<SrtResponse[]>([]);
   const [evaluation, setEvaluation] = useState<any>(null);
   const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
+  const [isLoadingScenarios, setIsLoadingScenarios] = useState(false);
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -51,6 +52,7 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
   }, [phase, currentIdx]);
 
   const startTest = async () => {
+    setIsLoadingScenarios(true);
     try {
       const res = await fetch('/api/srt/session/init', {
         method: 'POST',
@@ -78,6 +80,8 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
     } catch (err) {
       console.error(err);
       setToast({ message: 'Failed to start SRT session on backend.', type: 'error' });
+    } finally {
+      setIsLoadingScenarios(false);
     }
   };
 
@@ -181,11 +185,11 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto bg-[#0f172a] border border-white/5 rounded-[32px] overflow-hidden shadow-2xl text-slate-200 relative">
+    <div className="w-full space-y-8">
       
       {/* Inline Toast Notification */}
       {toast && (
-        <div className={`absolute top-4 left-4 right-4 z-30 flex items-center justify-between gap-3 p-4 rounded-2xl border ${
+        <div className={`fixed top-8 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-3 p-4 rounded-2xl border shadow-2xl backdrop-blur-md ${
           toast.type === 'success' 
             ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' 
             : 'bg-red-500/10 border-red-500/20 text-red-400'
@@ -196,197 +200,313 @@ export default function SrtSimulator({ isFullBattery, onComplete }: SrtSimulator
           </button>
         </div>
       )}
-      
-      {/* Header */}
-      <div className="bg-[#162840] border-b border-white/5 p-6 flex justify-between items-center relative z-10">
-        <div>
-          <h2 className="text-xl font-black tracking-widest uppercase text-white flex items-center gap-2">
-            <AlertTriangle className="w-5 h-5 text-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.3)]" />
-            Situation Reaction Test
-          </h2>
-          <p className="text-[10px] text-slate-500 font-black mt-1 tracking-widest uppercase">
-            30s Per Situation // 30 Reactions // Logical Action
-          </p>
-        </div>
+
+      <AnimatePresence mode="wait">
+        
+        {/* PHASE 0: IDLE / BRIEFING */}
         {phase === 'IDLE' && (
-          <button 
-               onClick={startTest}
-               className="px-8 py-3 bg-orange-500 hover:bg-orange-400 text-black font-black tracking-widest text-xs uppercase rounded-xl transition-all shadow-xl shadow-orange-500/20"
+          <motion.div
+            key="briefing"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
           >
-               Launch SRT Series
-          </button>
-        )}
-      </div>
-
-      <div className="min-h-[550px] w-full bg-black/20 relative overflow-hidden flex flex-col">
-        {phase === 'IDLE' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-12 text-center gap-6">
-                <ShieldAlert className="w-16 h-16 text-orange-500/20" />
-                <h3 className="text-3xl font-black tracking-[0.2em] text-white uppercase">Combat Thinking Instructions</h3>
-                <p className="text-slate-500 max-w-2xl leading-relaxed text-lg font-bold">
-                    A real-world situation will be presented for 30 seconds. 
-                    Write a complete, logical, and prompt reaction. 
-                    Do not just plan; describe the ACTION you would take to resolve the situation completely.
+            {/* Main Information Panel */}
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+              <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-[100px]"></div>
+              
+              <div className="space-y-4 relative z-10">
+                <div className="bg-orange-500/10 border border-orange-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
+                  <AlertTriangle className="w-3.5 h-3.5 text-orange-500" />
+                  <span className="text-[10px] font-black text-orange-500 uppercase tracking-widest">Situation Reaction Test</span>
+                </div>
+                <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                  SRT <span className="text-orange-500">Simulator</span>
+                </h1>
+                <p className="text-slate-400 font-bold leading-relaxed max-w-2xl">
+                  {TOTAL_SRTS} situations will be presented for 30 seconds each. Write a complete, logical, and prompt reaction. Do not just plan; describe the ACTION you would take.
                 </p>
+              </div>
 
-                <div className="flex gap-4 mt-4">
-                  <button onClick={startTest} className="px-10 py-4 bg-orange-500 hover:bg-orange-400 text-black font-black uppercase tracking-widest text-sm rounded-2xl transition-all shadow-xl shadow-orange-500/20 w-full md:w-auto">
-                    Start Test (30 Situations)
+              <div className="h-px bg-white/5"></div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10 pt-4">
+                <button
+                  onClick={startTest}
+                  disabled={isLoadingScenarios}
+                  className="w-full sm:w-auto bg-orange-500 hover:bg-orange-400 text-black px-10 py-5 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl shadow-orange-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isLoadingScenarios ? <Loader2 className="w-4 h-4 animate-spin text-black" /> : <AlertTriangle className="w-4 h-4 text-black fill-black" />}
+                  {isLoadingScenarios ? 'Initializing...' : `Start Test (${TOTAL_SRTS} Situations)`}
+                </button>
+              </div>
+            </div>
+
+            {/* Sidebar Guidelines Panel */}
+            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <ShieldAlert className="w-6 h-6 text-orange-500" />
+                  <h2 className="text-xl font-black text-white uppercase tracking-tight">Combat Instructions</h2>
+                </div>
+                
+                <ul className="space-y-4 text-xs font-bold text-slate-400">
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shrink-0 mt-1.5"></span>
+                    <span>1. Take Action: Do not leave the situation hanging. Resolve it completely.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shrink-0 mt-1.5"></span>
+                    <span>2. Be Logical: Use resources available in the situation. No superhero solutions.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shrink-0 mt-1.5"></span>
+                    <span>3. Avoid Delay: "I will call the police and wait" is poor. Take initiative first.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#0f172a] rounded-[32px] p-6 border border-white/5 space-y-3">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-orange-500 animate-pulse" />
+                  <span className="text-[10px] font-black text-orange-500 uppercase tracking-widest">Timing</span>
+                </div>
+                <p className="text-slate-400 text-xs font-semibold leading-relaxed">
+                  Exactly 30 seconds per situation. The test automatically advances. Missing a reaction breaks consistency.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* ACTIVE TEST PHASE */}
+        {phase === 'TEST' && (
+          <motion.div
+            key="testing"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-4xl mx-auto space-y-6"
+          >
+            {/* Top Status Header */}
+            <div className="bg-[#0f172a] border border-white/5 rounded-[24px] p-6 flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest bg-orange-500/10 border border-orange-500/20 text-orange-500">
+                  Active Simulation
+                </div>
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                  Situation {currentIdx + 1} of {TOTAL_SRTS}
+                </span>
+              </div>
+            </div>
+
+            {/* Main Interactive Screen */}
+            <div className="bg-[#0f172a] rounded-[48px] p-8 md:p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8 flex flex-col h-[600px]">
+              
+              {/* Timing Countdown Slider */}
+              <div className="absolute top-0 left-0 w-full h-1.5 bg-white/5">
+                  <motion.div 
+                      key={currentIdx}
+                      initial={{ width: '100%' }}
+                      animate={{ width: '0%' }}
+                      transition={{ duration: SRT_TIME, ease: 'linear' }}
+                      className="h-full bg-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.5)]"
+                  />
+              </div>
+
+              <div className="absolute top-8 right-8 flex items-center gap-3">
+                  <Clock className={`w-5 h-5 ${timer.timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-slate-500'}`} />
+                  <span className={`font-mono font-black text-2xl tabular-nums ${timer.timeLeft <= 5 ? 'text-red-500' : 'text-white'}`}>
+                      {timer.formattedTime}
+                  </span>
+              </div>
+
+              <AnimatePresence mode="wait">
+                  <motion.div
+                      key={currentIdx}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      className="bg-[#162840] border border-white/5 p-10 rounded-[32px] mt-12 flex-1 flex items-center justify-center text-center shadow-inner"
+                  >
+                      <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed italic">
+                          "{currentScenarioObj?.situation}"
+                      </p>
+                  </motion.div>
+              </AnimatePresence>
+
+              <div className="w-full relative shrink-0">
+                  <textarea
+                      ref={textareaRef}
+                      value={response}
+                      onChange={(e) => setResponse(e.target.value)}
+                      onKeyDown={(e) => {
+                          if (e.key === 'Enter' && !e.shiftKey) {
+                              e.preventDefault();
+                              saveAndNext();
+                          }
+                      }}
+                      placeholder="Type your reaction here... (Shift+Enter for new line)"
+                      className="w-full bg-[#162840] border-2 border-white/5 rounded-[32px] p-8 text-lg text-white placeholder-slate-600 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all shadow-2xl resize-none h-32 font-bold"
+                  />
+                  <button 
+                      onClick={saveAndNext}
+                      className="absolute right-6 bottom-6 px-6 py-3 bg-orange-500 hover:bg-orange-400 text-black font-black uppercase tracking-widest text-xs rounded-xl transition-all shadow-xl shadow-orange-500/20 flex items-center gap-2 group active:scale-95"
+                  >
+                      Submit
+                      <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* EVALUATING PHASE */}
+        {phase === 'EVALUATING' && (
+          <motion.div
+            key="evaluating"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-md mx-auto py-24 text-center space-y-6"
+          >
+            <div className="relative w-24 h-24 mx-auto">
+              <div className="absolute inset-0 rounded-full border-4 border-orange-500/10" />
+              <div className="absolute inset-0 rounded-full border-4 border-t-orange-500 animate-spin" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Loader2 className="w-8 h-8 text-orange-500 animate-spin" />
+              </div>
+            </div>
+            
+            <div className="space-y-2">
+              <h2 className="text-xl font-black text-white uppercase tracking-tight">Analyzing Behavioral Consistency</h2>
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                AI Psychologist is cross-referencing your reactions against positive indicators and 15 OLQs...
+              </p>
+            </div>
+          </motion.div>
+        )}
+
+        {/* RESULTS PHASE */}
+        {phase === 'DONE' && evaluation && (
+          <motion.div
+            key="results"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="space-y-8"
+          >
+            
+            {/* Top Score summary widget */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              
+              <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+                <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-orange-500/5 rounded-full blur-[80px]"></div>
+                
+                <div className="space-y-4 relative z-10 text-center md:text-left">
+                  <div className="bg-orange-500/10 border border-orange-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit mx-auto md:mx-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
+                    <span className="text-[10px] font-black text-orange-500 uppercase tracking-widest">SRT Evaluation Complete</span>
+                  </div>
+                  
+                  <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">
+                    Overall Performance <br/>
+                    <span className={evaluation.overall_score >= 7 ? 'text-emerald-400' : 'text-orange-400'}>
+                      {evaluation.overall_score >= 7 ? 'HIGH CONSISTENCY' : 'NEEDS IMPROVEMENT'}
+                    </span>
+                  </h1>
+                  
+                  <p className="text-slate-400 text-sm font-semibold leading-relaxed max-w-xl">
+                    {evaluation.summary}
+                  </p>
+                </div>
+
+                {/* Score Dial */}
+                <div className="bg-[#162840] border border-white/5 rounded-[40px] p-10 text-center min-w-[220px] shadow-2xl relative shrink-0">
+                  <p className={`text-6xl font-black ${evaluation.overall_score >= 7 ? 'text-emerald-500' : evaluation.overall_score >= 5 ? 'text-orange-500' : 'text-red-500'}`}>
+                    {evaluation.overall_score}
+                  </p>
+                  <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-2">Overall Score / 10</p>
+                  <div className="w-full bg-white/5 h-2 rounded-full mt-4 overflow-hidden">
+                    <div 
+                      className={`h-full ${evaluation.overall_score >= 7 ? 'bg-emerald-500' : evaluation.overall_score >= 5 ? 'bg-orange-500' : 'bg-red-500'}`}
+                      style={{ width: `${evaluation.overall_score * 10}%` }}
+                    />
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Sidebar Quick Re-run */}
+              <div className="bg-[#162840] border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
+                <div>
+                  <h3 className="text-lg font-black text-white uppercase tracking-tight">Detected OLQs</h3>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                      {evaluation.detected_olqs?.map((olq: string, i: number) => (
+                          <span key={i} className="px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-[10px] uppercase tracking-widest font-black text-emerald-400">
+                              {olq}
+                          </span>
+                      ))}
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <button
+                    onClick={restartTest}
+                    className="w-full bg-[#0f172a] hover:bg-[#1e3658] border border-white/5 text-white py-4 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-2 transition-all"
+                  >
+                     Retake Test
                   </button>
                 </div>
-           </div>
-        ) : phase === 'EVALUATING' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-12 gap-6 text-center">
-                <div className="w-16 h-16 border-4 border-orange-500 border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(249,115,22,0.3)]"></div>
-                <h3 className="text-2xl font-black uppercase tracking-[0.2em] text-white">Analyzing Behavioral Consistency</h3>
-                <p className="text-slate-500 font-black text-[10px] uppercase tracking-widest max-w-md">
-                   AI Psychologist is cross-referencing your reactions against positive indicators and 15 OLQs...
-                </p>
-           </div>
-        ) : phase === 'DONE' && evaluation ? (
-           <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               animate={{ opacity: 1, y: 0 }}
-               className="flex-1 p-8 overflow-y-auto custom-scrollbar h-[600px] relative"
-           >
-               <div className="flex flex-wrap gap-4 items-center justify-between mb-8 pb-4 border-b border-white/5">
-                   <div className="flex items-center gap-3">
-                       <CheckCircle className="w-8 h-8 text-orange-500" />
-                       <h3 className="text-2xl font-black text-white uppercase tracking-[0.1em]">AI Evaluation Results</h3>
-                   </div>
-                   <button 
-                       onClick={restartTest}
-                       className="px-6 py-2 bg-orange-500 hover:bg-orange-400 text-black font-black uppercase tracking-[0.1em] text-xs rounded-xl transition-all shadow-xl shadow-orange-500/20"
-                   >
-                       Take Test Again
-                   </button>
-               </div>
-               
-               <div className="space-y-8">
-                   <div className="grid md:grid-cols-2 gap-8">
-                       <div className="bg-[#162840] p-8 rounded-3xl border border-white/5 shadow-xl">
-                            <h4 className="text-[10px] uppercase font-black tracking-widest text-orange-500 mb-4">Overall Score</h4>
-                            <div className="flex items-end gap-2">
-                                <span className="text-5xl font-black text-white">{evaluation.overall_score}</span>
-                                <span className="text-slate-500 font-black mb-1">/ 10</span>
-                            </div>
-                            <p className="mt-4 text-slate-300 text-sm leading-relaxed font-bold">{evaluation.summary}</p>
-                       </div>
+              </div>
+            </div>
 
-                       <div className="bg-emerald-500/5 p-8 rounded-3xl border border-emerald-500/20 shadow-xl">
-                            <h4 className="text-[10px] uppercase font-black tracking-widest text-emerald-400 mb-4">Detected Officer-Like Qualities (OLQs)</h4>
-                            <div className="flex flex-wrap gap-2">
-                                {evaluation.detected_olqs?.map((olq: string, i: number) => (
-                                    <span key={i} className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-xs font-bold text-emerald-300">
-                                        {olq}
-                                    </span>
-                                ))}
-                            </div>
-                       </div>
-                   </div>
-
-                   {evaluation.scenarios_feedback?.length > 0 && (
-                        <div className="space-y-6">
-                             <h4 className="text-white text-[10px] font-black uppercase tracking-[0.2em] mb-4">Detailed Situation Feedback</h4>
-                             {evaluation.scenarios_feedback.map((item: any, idx: number) => {
-                                 const scenarioData = allResponses.find(r => r.scenarioId === item.id);
-                                 const isPoor = item.rating?.toLowerCase() === 'poor';
-                                 const isGood = item.rating?.toLowerCase() === 'good';
-                                 
-                                 return (
-                                     <div key={idx} className="bg-[#162840] border border-white/5 rounded-3xl p-6 shadow-xl">
-                                         <div className="mb-4">
-                                             <span className="text-slate-500 text-[10px] uppercase font-black tracking-widest">Situation</span>
-                                             <p className="text-white font-bold text-lg italic mt-1">"{scenarioData?.scenario}"</p>
-                                         </div>
-                                         <div className="grid md:grid-cols-2 gap-4">
-                                             <div className="bg-white/5 border border-white/10 p-4 rounded-2xl">
-                                                 <span className="text-slate-400 text-[10px] font-black uppercase mb-2 block tracking-widest">Your Reaction</span>
-                                                 <p className="text-slate-300 text-sm font-bold italic">"{scenarioData?.response}"</p>
-                                             </div>
-                                             <div className={`p-4 rounded-2xl border ${isGood ? 'bg-emerald-500/5 border-emerald-500/20' : isPoor ? 'bg-red-500/5 border-red-500/20' : 'bg-orange-500/5 border-orange-500/20'}`}>
-                                                 <div className="flex items-center gap-2 mb-2">
-                                                     <span className={`text-[10px] font-black uppercase tracking-widest ${isGood ? 'text-emerald-400' : isPoor ? 'text-red-400' : 'text-orange-400'}`}>
-                                                         {item.rating} Response
-                                                     </span>
-                                                 </div>
-                                                 <p className="text-slate-300 text-sm font-bold">{item.feedback}</p>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 );
-                             })}
-                        </div>
-                   )}
-               </div>
-           </motion.div>
-        ) : (
-           // Active Test
-           <div className="flex-1 flex flex-col relative h-full">
-                {/* Timer Bar */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-white/5 z-20">
-                    <motion.div 
-                         key={currentIdx}
-                         initial={{ width: '100%' }}
-                         animate={{ width: '0%' }}
-                         transition={{ duration: SRT_TIME, ease: 'linear' }}
-                         className="h-full bg-orange-500 shadow-[0_0_15px_rgba(249,115,22,0.5)]"
-                    />
-                </div>
-
-                <div className="absolute top-6 right-8 flex items-center gap-2 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
-                    <Clock className={`w-4 h-4 ${timer.timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-slate-500'}`} />
-                    <span className={`font-mono font-black text-xl tabular-nums ${timer.timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
-                        {timer.formattedTime}
-                    </span>
-                </div>
-
-                <div className="absolute top-6 left-8 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
-                     <span className="text-slate-500 text-[10px] uppercase font-black tracking-widest mr-2">Situation</span>
-                     <span className="text-white font-mono font-black text-lg">{currentIdx + 1}/{TOTAL_SRTS}</span>
-                </div>
-
-                <div className="flex-1 flex flex-col p-8 pt-24">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={currentIdx}
-                            initial={{ opacity: 0, x: 50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -50 }}
-                            className="bg-[#162840] border border-white/5 p-12 rounded-[40px] mb-8 min-h-[180px] flex items-center justify-center text-center shadow-2xl"
-                        >
-                            <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed italic">
-                                "{currentScenarioObj?.situation}"
-                            </p>
-                        </motion.div>
-                    </AnimatePresence>
-
-                    <div className="flex-1 flex flex-col relative">
-                        <textarea
-                            ref={textareaRef}
-                            value={response}
-                            onChange={(e) => setResponse(e.target.value)}
-                            onKeyDown={(e) => {
-                                if (e.key === 'Enter' && !e.shiftKey) {
-                                    e.preventDefault();
-                                    saveAndNext();
-                                }
-                            }}
-                            placeholder="Type your reaction here... (Shift+Enter for new line)"
-                            className="flex-1 bg-black/40 border-2 border-white/5 rounded-[40px] p-10 text-xl text-white placeholder-slate-700 focus:outline-none focus:border-orange-500/50 focus:ring-4 focus:ring-orange-500/10 transition-all shadow-2xl resize-none leading-relaxed font-bold"
-                        />
-                        <button 
-                            onClick={saveAndNext}
-                            className="mt-4 w-full sm:w-auto sm:mt-0 sm:absolute sm:bottom-8 sm:right-10 px-10 py-5 bg-orange-500 hover:bg-orange-400 text-black font-black uppercase tracking-[0.2em] text-xs rounded-2xl transition-all shadow-xl shadow-orange-500/20 flex items-center justify-center gap-3 group active:scale-95"
-                        >
-                            Submit Action
-                            <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </button>
+            {/* Detailed Situation Feedback */}
+            {evaluation.scenarios_feedback?.length > 0 && (
+                <div className="space-y-6">
+                    <h3 className="text-xl font-black text-white uppercase tracking-tight pl-2">Detailed Situation Feedback</h3>
+                    <div className="grid grid-cols-1 gap-6">
+                        {evaluation.scenarios_feedback.map((item: any, idx: number) => {
+                            const scenarioData = allResponses.find(r => r.scenarioId === item.id);
+                            const isPoor = item.rating?.toLowerCase() === 'poor';
+                            const isGood = item.rating?.toLowerCase() === 'good';
+                            
+                            return (
+                                <div key={idx} className="bg-[#0f172a] border border-white/5 rounded-[40px] p-10 shadow-xl overflow-hidden relative">
+                                    <div className={`absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl ${isGood ? 'bg-emerald-500/5' : isPoor ? 'bg-red-500/5' : 'bg-orange-500/5'}`}></div>
+                                    <div className="relative z-10 mb-6">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <span className="text-slate-500 text-[10px] uppercase font-black tracking-widest">Situation {idx + 1}</span>
+                                        </div>
+                                        <p className="text-white font-bold text-xl md:text-2xl leading-relaxed italic">"{scenarioData?.scenario}"</p>
+                                    </div>
+                                    <div className="grid lg:grid-cols-2 gap-6 relative z-10">
+                                        <div className="bg-[#162840] border border-white/5 p-6 rounded-[24px]">
+                                            <span className="text-slate-400 text-[10px] font-black uppercase mb-3 block tracking-widest">Your Reaction</span>
+                                            <p className="text-slate-300 text-base font-bold italic">"{scenarioData?.response}"</p>
+                                        </div>
+                                        <div className={`p-6 rounded-[24px] border ${isGood ? 'bg-emerald-500/10 border-emerald-500/20' : isPoor ? 'bg-red-500/10 border-red-500/20' : 'bg-orange-500/10 border-orange-500/20'}`}>
+                                            <div className="flex items-center gap-2 mb-3">
+                                                <div className={`w-2 h-2 rounded-full ${isGood ? 'bg-emerald-500' : isPoor ? 'bg-red-500' : 'bg-orange-500'}`}></div>
+                                                <span className={`text-[10px] font-black uppercase tracking-widest ${isGood ? 'text-emerald-400' : isPoor ? 'text-red-400' : 'text-orange-400'}`}>
+                                                    {item.rating} Response
+                                                </span>
+                                            </div>
+                                            <p className="text-slate-300 text-sm font-bold leading-relaxed">{item.feedback}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
-           </div>
+            )}
+
+          </motion.div>
         )}
-      </div>
+
+      </AnimatePresence>
     </div>
   );
 }

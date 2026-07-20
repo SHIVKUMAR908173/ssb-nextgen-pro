@@ -13,6 +13,7 @@ export default function SignupPage() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [formErrors, setFormErrors] = useState<{fullName?: string; email?: string; password?: string; confirmPassword?: string}>({});
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -32,14 +33,19 @@ export default function SignupPage() {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setFormErrors({});
 
-    if (password !== confirmPassword) {
-      setError('Passwords do not match');
-      setLoading(false);
-      return;
-    }
-    if (!isPasswordValid(password)) {
-      setError('Password does not meet all security requirements');
+    let hasErrors = false;
+    const newErrors: any = {};
+    
+    if (!fullName.trim()) { newErrors.fullName = 'Please enter your full name'; hasErrors = true; }
+    if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { newErrors.email = 'Please enter a valid email address'; hasErrors = true; }
+    if (!password) { newErrors.password = 'Please enter a password'; hasErrors = true; }
+    else if (!isPasswordValid(password)) { newErrors.password = 'Password does not meet all security requirements'; hasErrors = true; }
+    if (password !== confirmPassword) { newErrors.confirmPassword = 'Passwords do not match'; hasErrors = true; }
+
+    if (hasErrors) {
+      setFormErrors(newErrors);
       setLoading(false);
       return;
     }
@@ -161,38 +167,42 @@ export default function SignupPage() {
             </div>
           )}
 
-          <form onSubmit={handleSignup} className="space-y-4">
+          <form onSubmit={handleSignup} className="space-y-4" noValidate>
             <div className="space-y-1.5">
               <label htmlFor="signup-name" className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Full Name</label>
               <div className="relative">
                 <User size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600" />
-                <input id="signup-name" type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Cadet Name" required className="w-full bg-[#0f172a] border border-[#1E3A5F] rounded-2xl pl-12 pr-4 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all" />
+                <input id="signup-name" type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Cadet Name" className={`w-full bg-[#0f172a] border ${formErrors.fullName ? 'border-red-500' : 'border-[#1E3A5F]'} rounded-2xl pl-12 pr-4 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all`} />
               </div>
+              {formErrors.fullName && <p className="text-red-500 text-[10px] font-bold mt-1 pl-4 uppercase tracking-widest">{formErrors.fullName}</p>}
             </div>
             <div className="space-y-1.5">
               <label htmlFor="signup-email" className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Email</label>
               <div className="relative">
                 <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600" />
-                <input id="signup-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="officer@example.com" required className="w-full bg-[#0f172a] border border-[#1E3A5F] rounded-2xl pl-12 pr-4 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all" />
+                <input id="signup-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="officer@example.com" className={`w-full bg-[#0f172a] border ${formErrors.email ? 'border-red-500' : 'border-[#1E3A5F]'} rounded-2xl pl-12 pr-4 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all`} />
               </div>
+              {formErrors.email && <p className="text-red-500 text-[10px] font-bold mt-1 pl-4 uppercase tracking-widest">{formErrors.email}</p>}
             </div>
             <div className="space-y-1.5">
               <label htmlFor="signup-password" className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Password</label>
               <div className="relative">
                 <Lock size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600" />
-                <input id="signup-password" type={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Min 12 characters" required minLength={12} className="w-full bg-[#0f172a] border border-[#1E3A5F] rounded-2xl pl-12 pr-12 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all" />
+                <input id="signup-password" type={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Min 12 characters" className={`w-full bg-[#0f172a] border ${formErrors.password ? 'border-red-500' : 'border-[#1E3A5F]'} rounded-2xl pl-12 pr-12 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all`} />
                 <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 transition-colors p-1">
                   {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                 </button>
               </div>
+              {formErrors.password && <p className="text-red-500 text-[10px] font-bold mt-1 pl-4 uppercase tracking-widest">{formErrors.password}</p>}
               <PasswordStrengthMeter password={password} />
             </div>
             <div className="space-y-1.5">
               <label htmlFor="signup-confirm" className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Confirm Password</label>
               <div className="relative">
                 <Lock size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600" />
-                <input id="signup-confirm" type={showPassword ? "text" : "password"} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="••••••••" required minLength={12} className="w-full bg-[#0f172a] border border-[#1E3A5F] rounded-2xl pl-12 pr-4 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all" />
+                <input id="signup-confirm" type={showPassword ? "text" : "password"} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="••••••••" className={`w-full bg-[#0f172a] border ${formErrors.confirmPassword ? 'border-red-500' : 'border-[#1E3A5F]'} rounded-2xl pl-12 pr-4 py-3.5 text-white font-bold placeholder:text-slate-700 focus:outline-none focus:border-orange-500/50 transition-all`} />
               </div>
+              {formErrors.confirmPassword && <p className="text-red-500 text-[10px] font-bold mt-1 pl-4 uppercase tracking-widest">{formErrors.confirmPassword}</p>}
             </div>
             <button type="submit" disabled={loading} className="w-full bg-orange-500 hover:bg-orange-400 disabled:bg-orange-500/50 text-black font-black py-4 rounded-2xl uppercase tracking-widest text-[11px] shadow-2xl shadow-orange-500/20 transition-all active:scale-[0.98] flex items-center justify-center gap-3">
               {loading ? <Loader2 size={18} className="animate-spin" /> : <><span>Enlist Now</span><ArrowRight size={16} /></>}

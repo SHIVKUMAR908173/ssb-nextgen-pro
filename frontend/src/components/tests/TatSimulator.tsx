@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, CheckCircle, ShieldAlert, Image as ImageIcon, Loader2, Upload } from 'lucide-react';
+import { Clock, CheckCircle, ShieldAlert, Image as ImageIcon, Loader2, Upload, Play, Brain, RefreshCcw } from 'lucide-react';
 import tatSampleStories from '@/data/tat_sample_stories.json';
 import { useTimer } from '@/hooks/useTimer';
 import { experimental_useObject } from '@ai-sdk/react';
@@ -308,247 +308,422 @@ export default function TatSimulator({ isFullBattery, onComplete }: TatSimulator
   );
 
   return (
-    <div className="w-full max-w-5xl mx-auto bg-charcoal/80 border border-white/10 rounded-3xl shadow-glass overflow-hidden backdrop-blur-xl text-slate-200">
-      
-      {/* Header */}
-      <div className="bg-slate-900/80 border-b border-white/10 p-5 flex justify-between items-center relative z-10">
-        <div>
-          <h2 className="text-xl font-black tracking-widest uppercase text-white flex items-center gap-2">
-            <ImageIcon className="w-5 h-5 text-olive-light" />
-            Thematic Apperception Test
-          </h2>
-          <p className="text-[10px] text-slate-400 font-mono mt-1 tracking-widest uppercase">30s View // 4m Write // 13 Slides // Board President AI</p>
-        </div>
-      </div>
-
-      <div className="min-h-[600px] w-full bg-black/50 relative overflow-hidden flex flex-col">
-        {phase === 'IDLE' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-8 text-center gap-6">
-                <ShieldAlert className="w-16 h-16 text-olive-light opacity-80" />
-                <h3 className="text-3xl font-black tracking-[0.2em] text-white uppercase">TAT Instructions</h3>
-                <p className="text-slate-400 max-w-2xl leading-relaxed text-lg">
-                    You will be shown 11 pictures, each for 30 seconds. Write a complete story: what led to the situation, what is happening, and what will be the outcome. The 12th slide is blank.
+    <div className="w-full space-y-8">
+      <AnimatePresence mode="wait">
+        
+        {/* PHASE 0: IDLE / BRIEFING */}
+        {phase === 'IDLE' && (
+          <motion.div
+            key="briefing"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          >
+            {/* Main Information Panel */}
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+              <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]"></div>
+              
+              <div className="space-y-4 relative z-10">
+                <div className="bg-purple-500/10 border border-purple-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
+                  <ImageIcon className="w-3.5 h-3.5 text-purple-500" />
+                  <span className="text-[10px] font-black text-purple-500 uppercase tracking-widest">Thematic Apperception Test</span>
+                </div>
+                <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                  TAT <span className="text-purple-500">Simulator</span>
+                </h1>
+                <p className="text-slate-400 font-bold leading-relaxed max-w-2xl">
+                  You will be shown 11 pictures, each for 30 seconds. Write a complete story: what led to the situation, what is happening, and what will be the outcome. The 12th slide is blank.
                 </p>
-                <div className="bg-olive/10 border border-olive/30 rounded-xl p-4 max-w-lg text-left">
-                    <p className="text-olive-light text-[9px] font-black uppercase tracking-widest mb-2">SSB TAT Formula</p>
-                    <p className="text-slate-300 text-sm">Situation → Character Thought → Proactive Action → Positive Outcome. Your HERO must solve the problem.</p>
+              </div>
+
+              <div className="h-px bg-white/5"></div>
+
+              {!isFullBattery && (
+                <div className="relative z-10 space-y-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Select TAT Set:</span>
+                    <span className="text-xs font-bold text-purple-400">Set {setIndex + 1} of {TOTAL_SETS}</span>
+                  </div>
+                  <div className="grid grid-cols-12 gap-2 max-h-40 overflow-y-auto custom-scrollbar">
+                      {Array.from({ length: TOTAL_SETS }, (_, i) => {
+                          const isSelected = i === setIndex;
+                          const difficulty = i < 20 ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-500' : 
+                                            i < 40 ? 'bg-yellow-500/10 border-yellow-500/20 text-yellow-500' : 
+                                            'bg-red-500/10 border-red-500/20 text-red-500';
+                          return (
+                              <button
+                                  key={i}
+                                  onClick={() => {
+                                      setSetIndex(i);
+                                      setCustomSet(null);
+                                  }}
+                                  className={`
+                                      aspect-square rounded-xl border text-[10px] font-black transition-all flex items-center justify-center
+                                      ${isSelected ? 'bg-purple-500 text-white border-purple-500 shadow-lg scale-110' : difficulty}
+                                      hover:scale-105
+                                  `}
+                              >
+                                  {i + 1}
+                              </button>
+                          );
+                      })}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10 pt-4">
+                <button
+                  onClick={startTest}
+                  disabled={isLoadingScenarios}
+                  className="w-full sm:w-auto bg-purple-600 hover:bg-purple-500 text-white px-10 py-5 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl shadow-purple-600/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isLoadingScenarios ? <Loader2 className="w-4 h-4 animate-spin" /> : <Play className="w-4 h-4 fill-white" />}
+                  {isLoadingScenarios ? 'Initializing...' : `Start Set ${customSet ? '(Custom)' : setIndex + 1}`}
+                </button>
+                
+                {!isFullBattery && (
+                  <>
+                    <button 
+                      onClick={() => fileInputRef.current?.click()}
+                      className="w-full sm:w-auto bg-[#162840] hover:bg-[#1e3658] border border-white/5 text-white px-8 py-5 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-3 transition-all"
+                    >
+                      <Upload className="w-4 h-4" /> Custom Set
+                    </button>
+                    <input type="file" ref={fileInputRef} className="hidden" accept=".json" onChange={handleFileUpload} />
+                  </>
+                )}
+              </div>
+            </div>
+
+            {/* Sidebar Guidelines Panel */}
+            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <ShieldAlert className="w-6 h-6 text-purple-500" />
+                  <h2 className="text-xl font-black text-white uppercase tracking-tight">SSB TAT Formula</h2>
                 </div>
                 
-                {/* Set Selection Grid */}
-                <div className="w-full max-w-2xl mt-4">
-                    <div className="flex items-center justify-between mb-4">
-                        <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Select TAT Set:</span>
-                        <span className="text-xs font-bold text-olive-light">Set {setIndex + 1} of {TOTAL_SETS}</span>
-                    </div>
-                    <div className="grid grid-cols-12 gap-2 max-h-40 overflow-y-auto custom-scrollbar">
-                        {Array.from({ length: TOTAL_SETS }, (_, i) => {
-                            const isSelected = i === setIndex;
-                            const difficulty = i < 20 ? 'bg-green-500/20 border-green-500/30 text-green-500' : 
-                                              i < 40 ? 'bg-yellow-500/20 border-yellow-500/30 text-yellow-500' : 
-                                              'bg-red-500/20 border-red-500/30 text-red-500';
-                            return (
-                                <button
-                                    key={i}
-                                    onClick={() => setSetIndex(i)}
-                                    className={`
-                                        aspect-square rounded-lg border text-[8px] font-black transition-all
-                                        ${isSelected ? 'bg-olive-light text-white border-olive-light scale-110 shadow-lg' : difficulty}
-                                        hover:scale-105
-                                    `}
-                                >
-                                    {i + 1}
-                                </button>
-                            );
-                        })}
-                    </div>
-                    {/* Difficulty Legend */}
-                    <div className="flex items-center justify-center gap-4 mt-4 text-[8px] font-black uppercase tracking-widest">
-                        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-green-500"></span> Easy (1-20)</span>
-                        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-yellow-500"></span> Medium (21-40)</span>
-                        <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-red-500"></span> Hard (41-60)</span>
-                    </div>
+                <ul className="space-y-4 text-xs font-bold text-slate-400">
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>1. SITUATION: What led to the current scene in the picture?</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>2. THOUGHT: What is the main character (Hero) thinking and feeling?</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>3. ACTION: What proactive steps does the hero take to solve the problem?</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>4. OUTCOME: Provide a logical, positive conclusion.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#0f172a] rounded-[32px] p-6 border border-white/5 space-y-3">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-purple-500 animate-pulse" />
+                  <span className="text-[10px] font-black text-purple-500 uppercase tracking-widest">Timing</span>
                 </div>
-           </div>
-        ) : phase === 'EVALUATING' && !evaluation ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-8 gap-5">
-                <Loader2 className="w-16 h-16 text-neon animate-spin drop-shadow-[0_0_10px_rgba(57,255,20,0.5)]" />
-                <h3 className="text-2xl font-black uppercase tracking-[0.2em] text-white">Connecting to AI...</h3>
-                <p className="text-slate-400 font-mono text-xs max-w-md text-center">
-                   Initiating stream...
+                <p className="text-slate-400 text-xs font-semibold leading-relaxed">
+                  30 seconds to perceive the image. 4 minutes to write. The system will automatically advance to the next slide when time expires.
                 </p>
-           </div>
-        ) : (phase === 'EVALUATING' || phase === 'DONE') && evaluation ? (
-           <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               animate={{ opacity: 1, y: 0 }}
-               className="flex-1 p-8 overflow-y-auto custom-scrollbar h-[600px] space-y-8"
-           >
-               {/* Board Verdict */}
-               {evaluation.chief_psychologist_verdict && (
-                   <div className="bg-slate-900/80 border border-olive/30 rounded-2xl p-6">
-                       <p className="text-[9px] font-black text-olive-light uppercase tracking-[0.3em] mb-2">Chief Psychologist — Board President Verdict</p>
-                       <p className="text-slate-200 font-bold leading-relaxed italic">"{evaluation.chief_psychologist_verdict}"</p>
-                   </div>
-               )}
+              </div>
+            </div>
 
-               {/* Score + Theme */}
-               <div className="grid grid-cols-2 gap-4">
-                   <div className="bg-slate-900/60 rounded-2xl p-5 border border-white/5">
-                       <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-2">Dominant Theme</p>
-                       <p className="text-slate-200 text-sm font-bold">{evaluation.dominant_psychological_theme}</p>
-                   </div>
-                   <div className="bg-slate-900/60 rounded-2xl p-5 border border-white/5 text-center">
-                       <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-2">Overall TAT Score</p>
-                       <p className={`text-4xl font-black tabular-nums ${(evaluation.overall_tat_score >= 70) ? 'text-neon' : (evaluation.overall_tat_score >= 50) ? 'text-amber-400' : 'text-red-400'}`}>
-                           {evaluation.overall_tat_score}<span className="text-slate-600 text-xl">/100</span>
-                       </p>
-                   </div>
-               </div>
+          </motion.div>
+        )}
 
-               {/* OLQ Projection */}
-               {evaluation.olq_projection?.length > 0 && (
-                   <div className="bg-slate-900/60 rounded-2xl p-6 border border-white/5">
-                       <p className="text-[9px] font-black text-olive-light uppercase tracking-[0.3em] mb-4">OLQ Projection Map</p>
-                       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                           {evaluation.olq_projection.map((olq: any, i: number) => (
-                               <div key={i} className="bg-black/40 rounded-xl p-4 border border-white/5">
-                                   <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mb-1">{olq.olq}</p>
-                                   <p className={`text-2xl font-black tabular-nums ${olq.score >= 7 ? 'text-neon' : olq.score >= 5 ? 'text-amber-400' : 'text-red-400'}`}>
-                                       {olq.score}<span className="text-slate-700 text-xs">/10</span>
-                                   </p>
-                               </div>
-                           ))}
-                       </div>
-                   </div>
-               )}
-
-               {/* Story Deep-Dive */}
-               {evaluation.story_evaluations?.length > 0 && (
-                   <div className="space-y-4">
-                       <p className="text-white text-sm font-black uppercase tracking-[0.2em]">Story-by-Story Board Analysis</p>
-                       {evaluation.story_evaluations.map((story: any, idx: number) => (
-                           <div key={idx} className="bg-slate-900 border border-white/10 rounded-xl p-5 space-y-3">
-                               <div className="flex items-center justify-between">
-                                   <p className="text-olive-light font-black uppercase tracking-widest text-xs">Story {story.story_number}</p>
-                                   <div className="flex items-center gap-3">
-                                       <span className={`text-[9px] font-black uppercase px-2 py-1 rounded ${story.formula_compliance === 'FULL' ? 'bg-neon/10 text-neon' : story.formula_compliance === 'PARTIAL' ? 'bg-amber-500/10 text-amber-400' : 'bg-red-500/10 text-red-400'}`}>
-                                           {story.formula_compliance}
-                                       </span>
-                                       <span className="text-lg font-black text-white">{story.board_score}/10</span>
-                                   </div>
-                               </div>
-                               {story.red_flags?.length > 0 && (
-                                   <div className="text-red-300 text-xs bg-red-500/10 rounded-lg p-3 border border-red-500/20">
-                                       Red Flags: {story.red_flags.join(' | ')}
-                                   </div>
-                               )}
-                               <p className="text-slate-400 text-xs leading-relaxed">{story.psychological_insight}</p>
-                               {story.ideal_story_rewrite && (
-                                   <div className="bg-olive/10 border border-olive/20 rounded-lg p-4">
-                                       <p className="text-olive-light text-[9px] font-black uppercase tracking-widest mb-2">Ideal Model Story</p>
-                                       <p className="text-slate-300 text-xs leading-relaxed italic">"{story.ideal_story_rewrite}"</p>
-                                   </div>
-                               )}
-                           </div>
-                       ))}
-                   </div>
-               )}
-
-               {/* Mastery Plan */}
-               {evaluation.tat_mastery_plan && (
-                   <div className="bg-olive/10 border border-olive/30 rounded-2xl p-6">
-                       <p className="text-olive-light font-black uppercase tracking-widest text-[9px] mb-3">Board-Prescribed TAT Mastery Plan</p>
-                       <p className="text-slate-200 text-sm leading-relaxed">{evaluation.tat_mastery_plan}</p>
-                   </div>
-               )}
-
-                    {phase === 'DONE' && (
-                        <div className="flex gap-4">
-                            <button onClick={nextSet} className="flex-1 py-4 bg-slate-700 hover:bg-slate-600 text-white font-black uppercase tracking-widest text-sm rounded-xl transition-colors">
-                                Next Set
-                            </button>
-                            <button onClick={startTest} className="flex-1 py-4 bg-olive hover:bg-olive-light text-white font-black uppercase tracking-widest text-sm rounded-xl transition-colors">
-                                Retake Set {setIndex + 1}
-                            </button>
-                        </div>
-                    )}
-               </motion.div>
-        ) : (
-           // Active Test
-           <div className="flex-1 flex flex-col relative h-[600px]">
-                {/* Timer Bar */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-slate-800 z-20">
-                    <div 
-                         className={`h-full transition-all duration-1000 ease-linear ${phase === 'VIEWING' ? 'bg-blue-500' : 'bg-red-500'}`}
-                         style={{ width: `${(timer.timeLeft / (phase === 'VIEWING' ? PICTURE_TIME : WRITING_TIME)) * 100}%` }}
-                    />
+        {/* ACTIVE TEST PHASE */}
+        {(phase === 'VIEWING' || phase === 'WRITING') && (
+          <motion.div
+            key="testing"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-4xl mx-auto space-y-6"
+          >
+            {/* Top Status Header */}
+            <div className="bg-[#0f172a] border border-white/5 rounded-[24px] p-6 flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className={`px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest bg-purple-500/10 border border-purple-500/20 text-purple-400`}>
+                  {phase === 'VIEWING' ? 'Perception Phase' : 'Writing Phase'}
                 </div>
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                  Slide {currentSlide + 1} of 12
+                </span>
+              </div>
+            </div>
 
-                <div className="absolute top-6 right-8 bg-black/40 px-6 py-3 rounded-2xl backdrop-blur-md border border-white/10 flex items-center gap-3">
-                  <Clock className={`w-5 h-5 ${timer.timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-slate-300'}`} />
-                  <span className={`text-2xl font-black font-mono tracking-wider ${timer.timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
+            {/* Main Interactive Screen */}
+            <div className="bg-[#0f172a] rounded-[48px] p-8 md:p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+              
+              {/* Timing Countdown Slider */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs font-black uppercase tracking-widest text-slate-500">
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="w-4 h-4 text-slate-500" />
+                    {phase === 'VIEWING' ? 'View Window' : 'Write Window'}
+                  </span>
+                  <span className={`${timer.timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-slate-400'}`}>
                     {timer.formattedTime}
                   </span>
                 </div>
+                <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                  <motion.div 
+                    initial={{ width: '100%' }}
+                    animate={{ width: `${(timer.timeLeft / (phase === 'VIEWING' ? PICTURE_TIME : WRITING_TIME)) * 100}%` }}
+                    transition={{ duration: 1, ease: 'linear' }}
+                    className={`h-full ${timer.timeLeft <= 10 ? 'bg-red-500 shadow-[0_0_10px_#ef4444]' : 'bg-purple-500 shadow-[0_0_10px_#a855f7]'}`}
+                  />
+                </div>
+              </div>
 
-                <div className="absolute top-4 left-6 z-20 bg-black/60 px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
-                     <span className="text-slate-400 text-xs uppercase font-bold tracking-widest mr-2">Slide</span>
-                     <span className="text-white font-mono font-bold text-lg">{currentSlide + 1}/12</span>
+              {/* View/Write Area */}
+              <AnimatePresence mode="wait">
+                  {phase === 'VIEWING' && (
+                      <motion.div
+                          key="viewing"
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, filter: 'blur(20px)' }}
+                          transition={{ duration: 0.5 }}
+                          className="w-full h-96 flex items-center justify-center relative"
+                      >
+                          {currentSlideObj?.isBlank ? (
+                              <div className="w-full h-full bg-white rounded-3xl shadow-[0_0_50px_rgba(255,255,255,0.1)] flex items-center justify-center">
+                                  <h2 className="text-black/20 text-4xl font-black uppercase tracking-widest">Blank Slide</h2>
+                              </div>
+                          ) : (
+                              <div className="w-full h-full bg-[#162840] rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative">
+                                  {typeof getCurrentTatSvg() === 'string' && getCurrentTatSvg().trim().startsWith('<svg') ? (
+                                      <div 
+                                          className="w-full h-full [&>svg]:w-full [&>svg]:h-full"
+                                          dangerouslySetInnerHTML={{ __html: getCurrentTatSvg() }}
+                                      />
+                                  ) : (
+                                      <img 
+                                          src={getCurrentTatSvg()} 
+                                          alt="TAT Scenario" 
+                                          className="w-full h-full object-contain"
+                                      />
+                                  )}
+                              </div>
+                          )}
+                      </motion.div>
+                  )}
+
+                  {phase === 'WRITING' && (
+                      <motion.div
+                          key="writing"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          className="w-full h-96 flex flex-col"
+                      >
+                          <textarea
+                              ref={textareaRef}
+                              value={story}
+                              onChange={(e) => setStory(e.target.value)}
+                              placeholder="Write your story here... (Situation → Hero's Thought → Proactive Action → Positive Outcome)"
+                              className="flex-1 bg-[#162840] border border-white/5 rounded-3xl p-8 text-lg text-white placeholder-slate-600 focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/50 transition-all resize-none font-medium leading-relaxed shadow-inner"
+                          />
+                      </motion.div>
+                  )}
+              </AnimatePresence>
+
+            </div>
+          </motion.div>
+        )}
+
+        {/* EVALUATING PHASE */}
+        {phase === 'EVALUATING' && (
+          <motion.div
+            key="evaluating"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-md mx-auto py-24 text-center space-y-6"
+          >
+            <div className="relative w-24 h-24 mx-auto">
+              <div className="absolute inset-0 rounded-full border-4 border-purple-500/10" />
+              <div className="absolute inset-0 rounded-full border-4 border-t-purple-500 animate-spin" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Loader2 className="w-8 h-8 text-purple-500 animate-spin" />
+              </div>
+            </div>
+            
+            <div className="space-y-2">
+              <h2 className="text-xl font-black text-white uppercase tracking-tight">Resolving Psychological Stream</h2>
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                AI Board President analyzing responses
+              </p>
+            </div>
+          </motion.div>
+        )}
+
+        {/* RESULTS PHASE */}
+        {phase === 'DONE' && evaluation && (
+          <motion.div
+            key="results"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="space-y-8"
+          >
+            
+            {/* Top Score summary widget */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              
+              <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+                <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[80px]"></div>
+                
+                <div className="space-y-4 relative z-10 text-center md:text-left">
+                  <div className="bg-purple-500/10 border border-purple-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit mx-auto md:mx-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-purple-500" />
+                    <span className="text-[10px] font-black text-purple-500 uppercase tracking-widest">TAT Evaluation Complete</span>
+                  </div>
+                  
+                  <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">
+                    Dominant Theme: <br/>
+                    <span className="text-purple-400">
+                      {evaluation.dominant_psychological_theme}
+                    </span>
+                  </h1>
+                  
+                  {evaluation.chief_psychologist_verdict && (
+                    <p className="text-slate-300 text-sm font-semibold leading-relaxed max-w-xl italic">
+                      "{evaluation.chief_psychologist_verdict}"
+                    </p>
+                  )}
                 </div>
 
-                <AnimatePresence mode="wait">
-                    {phase === 'VIEWING' && (
-                        <motion.div
-                            key="viewing"
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, filter: 'blur(20px)' }}
-                            transition={{ duration: 0.5 }}
-                            className="absolute inset-0 flex items-center justify-center p-8 z-10"
-                        >
-                            {currentSlideObj?.isBlank ? (
-                                <div className="w-full max-w-2xl h-96 bg-white rounded-xl shadow-[0_0_50px_rgba(255,255,255,0.2)] flex items-center justify-center">
-                                    <h2 className="text-black/20 text-4xl font-black uppercase tracking-widest">Blank Slide</h2>
-                                </div>
-                            ) : (
-                                <div className="w-full max-w-2xl h-96 bg-slate-800 rounded-xl overflow-hidden border border-white/20 shadow-2xl relative">
-                                    {typeof getCurrentTatSvg() === 'string' && getCurrentTatSvg().trim().startsWith('<svg') ? (
-                                        <div 
-                                            className="w-full h-full [&>svg]:w-full [&>svg]:h-full"
-                                            dangerouslySetInnerHTML={{ __html: getCurrentTatSvg() }}
-                                        />
-                                    ) : (
-                                        <img 
-                                            src={getCurrentTatSvg()} 
-                                            alt="TAT Scenario" 
-                                            className="w-full h-full object-contain bg-black/50"
-                                        />
-                                    )}
-                                </div>
-                            )}
-                        </motion.div>
-                    )}
+                {/* Score Dial */}
+                <div className="bg-[#162840] border border-white/5 rounded-[40px] p-10 text-center min-w-[220px] shadow-2xl relative shrink-0">
+                  <p className={`text-6xl font-black ${evaluation.overall_tat_score >= 70 ? 'text-emerald-500' : evaluation.overall_tat_score >= 50 ? 'text-yellow-500' : 'text-red-500'}`}>
+                    {evaluation.overall_tat_score}
+                  </p>
+                  <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-2">Overall Score / 100</p>
+                  <div className="w-full bg-white/5 h-2 rounded-full mt-4 overflow-hidden">
+                    <div 
+                      className={`h-full ${evaluation.overall_tat_score >= 70 ? 'bg-emerald-500' : evaluation.overall_tat_score >= 50 ? 'bg-yellow-500' : 'bg-red-500'}`}
+                      style={{ width: `${evaluation.overall_tat_score}%` }}
+                    />
+                  </div>
+                </div>
 
-                    {phase === 'WRITING' && (
-                        <motion.div
-                            key="writing"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            className="absolute inset-0 flex flex-col p-8 pt-20 z-10"
-                        >
-                            <textarea
-                                ref={textareaRef}
-                                value={story}
-                                onChange={(e) => setStory(e.target.value)}
-                                placeholder="Write your story here... (Situation → Hero's Thought → Proactive Action → Positive Outcome)"
-                                className="flex-1 bg-charcoal border border-white/10 rounded-2xl p-6 text-lg text-white placeholder-slate-600 focus:outline-none focus:border-olive-light focus:ring-1 focus:ring-olive-light transition-all resize-none font-medium leading-relaxed shadow-inner"
-                            />
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-           </div>
+              </div>
+
+              {/* Sidebar Quick Re-run */}
+              <div className="bg-[#162840] border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
+                <div>
+                  <h3 className="text-lg font-black text-white uppercase tracking-tight">Next Steps</h3>
+                  {evaluation.tat_mastery_plan && (
+                    <p className="mt-4 text-xs font-semibold text-slate-400 leading-relaxed">
+                      {evaluation.tat_mastery_plan}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-3">
+                  <button
+                    onClick={nextSet}
+                    className="w-full bg-purple-600 hover:bg-purple-500 text-white py-4 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-2 transition-all"
+                  >
+                    Next Set
+                  </button>
+                  <button
+                    onClick={() => {
+                        setPhase('IDLE');
+                        setAllStories([]);
+                    }}
+                    className="w-full bg-[#0f172a] hover:bg-[#1e3658] border border-white/5 text-white py-4 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-2 transition-all"
+                  >
+                    <RefreshCcw className="w-4 h-4" /> Retake
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            {/* OLQ Projection */}
+            {evaluation.olq_projection?.length > 0 && (
+              <div className="bg-[#0f172a] rounded-[48px] p-12 border border-white/5 shadow-2xl space-y-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                    <Brain className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-black text-white uppercase tracking-tight">OLQ Projection Map</h2>
+                    <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-0.5">Scale 1.0 to 10.0</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {evaluation.olq_projection.map((olq: any, i: number) => (
+                    <div key={i} className="bg-[#162840]/60 border border-white/5 rounded-[24px] p-6 space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                          {olq.olq}
+                        </span>
+                        <span className={`text-sm font-black ${olq.score >= 7 ? 'text-emerald-400' : olq.score >= 5 ? 'text-yellow-400' : 'text-red-400'}`}>{olq.score.toFixed(1)}</span>
+                      </div>
+                      <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div 
+                          className={`h-full ${olq.score >= 7 ? 'bg-emerald-500' : olq.score >= 5 ? 'bg-yellow-500' : 'bg-red-500'}`}
+                          style={{ width: `${olq.score * 10}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Story Deep-Dive */}
+            {evaluation.story_evaluations?.length > 0 && (
+                <div className="space-y-6">
+                    <h2 className="text-xl font-black text-white uppercase tracking-tight px-4">Story-by-Story Board Analysis</h2>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        {evaluation.story_evaluations.map((story: any, idx: number) => (
+                            <div key={idx} className="bg-[#0f172a] border border-white/5 rounded-[32px] p-8 space-y-6 shadow-xl">
+                                <div className="flex items-center justify-between">
+                                    <p className="text-purple-400 font-black uppercase tracking-widest text-sm">Story {story.story_number}</p>
+                                    <div className="flex items-center gap-3">
+                                        <span className={`text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full border ${story.formula_compliance === 'FULL' ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : story.formula_compliance === 'PARTIAL' ? 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20' : 'bg-red-500/10 text-red-400 border-red-500/20'}`}>
+                                            Formula: {story.formula_compliance}
+                                        </span>
+                                        <span className="text-xl font-black text-white">{story.board_score}/10</span>
+                                    </div>
+                                </div>
+                                
+                                {story.red_flags?.length > 0 && (
+                                    <div className="text-red-400 text-xs font-semibold bg-red-500/10 rounded-2xl p-4 border border-red-500/20">
+                                        <span className="font-black">RED FLAGS:</span> {story.red_flags.join(' | ')}
+                                    </div>
+                                )}
+                                
+                                <p className="text-slate-400 text-sm font-medium leading-relaxed">{story.psychological_insight}</p>
+                                
+                                {story.ideal_story_rewrite && (
+                                    <div className="bg-[#162840] border border-white/5 rounded-2xl p-6">
+                                        <p className="text-purple-400 text-[9px] font-black uppercase tracking-widest mb-3">Ideal Model Story</p>
+                                        <p className="text-slate-300 text-sm font-semibold leading-relaxed italic">"{story.ideal_story_rewrite}"</p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+          </motion.div>
         )}
-      </div>
+
+      </AnimatePresence>
     </div>
   );
 }

@@ -12,7 +12,7 @@ export default function ServerStatusBadge() {
           signal: AbortSignal.timeout(3000) 
         });
         const data = await res.json();
-        setStatus(data.status === 'healthy' ? 'online' : 'offline');
+        setStatus(data.status === 'online' ? 'online' : 'offline');
       } catch {
         setStatus('offline');
       }

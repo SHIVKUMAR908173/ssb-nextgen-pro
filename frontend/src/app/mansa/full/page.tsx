@@ -150,7 +150,7 @@ export default function FullPsychBatteryPage() {
       )}
 
       {/* Simulator Mounts */}
-      <div className="bg-[#0f172a] rounded-[48px] p-8 shadow-2xl border border-white/5">
+      <div className="w-full">
         {stage === 'tat' && <TatSimulator isFullBattery onComplete={(data) => { setTatData(data); setStage('wat'); }} />}
         {stage === 'wat' && <WatSimulator isFullBattery onComplete={(data) => { setWatData(data); setStage('srt'); }} />}
         {stage === 'srt' && <SrtSimulator isFullBattery onComplete={(data) => { setSrtData(data); setStage('sdt'); }} />}

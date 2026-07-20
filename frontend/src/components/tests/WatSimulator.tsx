@@ -259,11 +259,11 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-[#0f172a] border border-white/5 rounded-[32px] overflow-hidden shadow-2xl text-slate-200 relative">
+    <div className="w-full space-y-8">
       
       {/* Inline Toast Notification */}
       {toast && (
-        <div className={`absolute top-4 left-4 right-4 z-30 flex items-center justify-between gap-3 p-4 rounded-2xl border ${
+        <div className={`fixed top-8 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-3 p-4 rounded-2xl border shadow-2xl backdrop-blur-md ${
           toast.type === 'success' 
             ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' 
             : 'bg-red-500/10 border-red-500/20 text-red-400'
@@ -274,253 +274,414 @@ export default function WatSimulator({ isFullBattery, onComplete }: WatSimulator
           </button>
         </div>
       )}
-      
-      {/* Header */}
-      <div className="bg-[#162840] border-b border-white/5 p-6 flex justify-between items-center relative z-10">
-        <div>
-          <h2 className="text-xl font-black tracking-widest uppercase text-white flex items-center gap-2">
-            <Zap className="w-5 h-5 text-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.3)]" />
-            Word Association Test (Set {setIndex + 1})
-          </h2>
-          <p className="text-[10px] text-slate-500 font-black mt-1 tracking-widest uppercase">
-            15s Per Word // {TOTAL_WORDS} Words // Rapid Fire
-          </p>
-        </div>
-        {phase === 'IDLE' && (
-          <div className="flex flex-col gap-4 items-end">
-            <div className="flex items-center gap-2 bg-black/20 p-1 rounded-xl">
-               <button 
-                  onClick={() => setTestMode('AUTHENTIC')}
-                  className={`px-4 py-2 text-[10px] font-black tracking-widest uppercase rounded-lg flex items-center gap-2 transition-all ${testMode === 'AUTHENTIC' ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-500/20' : 'text-slate-400 hover:text-white'}`}
-               >
-                  <PenTool className="w-3 h-3" /> Paper Mode
-               </button>
-               <button 
-                  onClick={() => setTestMode('TYPING')}
-                  className={`px-4 py-2 text-[10px] font-black tracking-widest uppercase rounded-lg flex items-center gap-2 transition-all ${testMode === 'TYPING' ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-500/20' : 'text-slate-400 hover:text-white'}`}
-               >
-                  <Keyboard className="w-3 h-3" /> Typing Mode
-               </button>
-            </div>
-            
-            <button 
-                 onClick={startTest}
-                 disabled={isLoadingScenarios}
-                 className="px-8 py-3 bg-yellow-500 hover:bg-yellow-400 disabled:bg-slate-700 disabled:text-slate-400 text-black font-black tracking-widest text-xs uppercase rounded-xl transition-all shadow-xl shadow-yellow-500/20 flex justify-center items-center gap-2"
-            >
-                 {isLoadingScenarios ? (
-                     <><Loader2 className="w-4 h-4 animate-spin" /> Fetching Scenarios...</>
-                 ) : (
-                     `Begin WAT - Set ${setIndex + 1}`
-                 )}
-            </button>
-          </div>
-        )}
-      </div>
 
-      <div className="min-h-[450px] w-full bg-black/20 relative overflow-hidden flex flex-col">
-        {phase === 'IDLE' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-12 text-center gap-6">
-                <ShieldAlert className="w-16 h-16 text-yellow-500/20" />
-                <h3 className="text-3xl font-black tracking-[0.2em] text-white uppercase">Association Rules</h3>
-                {testMode === 'AUTHENTIC' ? (
-                  <p className="text-slate-400 max-w-2xl leading-relaxed text-lg font-bold">
-                    <span className="text-yellow-400 block mb-2">Authentic Paper Mode Active</span>
-                    Grab a pen and a blank sheet of paper. 
-                    A word will flash for exactly 15 seconds and auto-advance. Write your sentence down on paper. 
-                    When all 60 words are complete, take a photo of your sheet and upload it for AI OCR evaluation.
-                  </p>
-                ) : (
-                  <p className="text-slate-500 max-w-2xl leading-relaxed text-lg font-bold">
-                    A word will appear on the screen for 15 seconds. 
-                    Type the first positive, meaningful sentence that comes to your mind before the timer runs out.
-                  </p>
-                )}
-           </div>
-        ) : phase === 'UPLOAD_SHEET' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-12 text-center gap-6">
+      <AnimatePresence mode="wait">
+        
+        {/* PHASE 0: IDLE / BRIEFING */}
+        {phase === 'IDLE' && (
+          <motion.div
+            key="briefing"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          >
+            {/* Main Information Panel */}
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+              <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[100px]"></div>
+              
+              <div className="space-y-4 relative z-10">
+                <div className="bg-yellow-500/10 border border-yellow-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
+                  <Zap className="w-3.5 h-3.5 text-yellow-500" />
+                  <span className="text-[10px] font-black text-yellow-500 uppercase tracking-widest">Word Association Test</span>
+                </div>
+                <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                  WAT <span className="text-yellow-500">Simulator</span>
+                </h1>
+                <p className="text-slate-400 font-bold leading-relaxed max-w-2xl">
+                  {TOTAL_WORDS} words will be flashed for 15 seconds each. Write the very first constructive thought or sentence that comes to your mind. Do not skip any word.
+                </p>
+              </div>
+
+              <div className="h-px bg-white/5"></div>
+
+              {!isFullBattery && (
+                <div className="relative z-10 space-y-4">
+                  <div className="flex items-center gap-4 bg-[#162840] p-2 rounded-2xl border border-white/5 w-fit">
+                    <button 
+                        onClick={() => setTestMode('AUTHENTIC')}
+                        className={`px-6 py-3 text-[10px] font-black tracking-widest uppercase rounded-xl flex items-center gap-2 transition-all ${testMode === 'AUTHENTIC' ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-500/20' : 'text-slate-400 hover:text-white'}`}
+                    >
+                        <PenTool className="w-4 h-4" /> Paper Mode
+                    </button>
+                    <button 
+                        onClick={() => setTestMode('TYPING')}
+                        className={`px-6 py-3 text-[10px] font-black tracking-widest uppercase rounded-xl flex items-center gap-2 transition-all ${testMode === 'TYPING' ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-500/20' : 'text-slate-400 hover:text-white'}`}
+                    >
+                        <Keyboard className="w-4 h-4" /> Typing Mode
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10 pt-4">
+                <button
+                  onClick={startTest}
+                  disabled={isLoadingScenarios}
+                  className="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-400 text-black px-10 py-5 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl shadow-yellow-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isLoadingScenarios ? <Loader2 className="w-4 h-4 animate-spin text-black" /> : <Zap className="w-4 h-4 text-black fill-black" />}
+                  {isLoadingScenarios ? 'Initializing...' : `Start Set ${setIndex + 1}`}
+                </button>
+              </div>
+            </div>
+
+            {/* Sidebar Guidelines Panel */}
+            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <ShieldAlert className="w-6 h-6 text-yellow-500" />
+                  <h2 className="text-xl font-black text-white uppercase tracking-tight">Assessor Guidelines</h2>
+                </div>
+                
+                <ul className="space-y-4 text-xs font-bold text-slate-400">
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 shrink-0 mt-1.5"></span>
+                    <span>1. Subconscious Reaction: Do not overthink. Write the very first sentence that forms.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 shrink-0 mt-1.5"></span>
+                    <span>2. Avoid Advice/Phrases: "Always be happy" or "Honesty is the best policy" are weak. Be original.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 shrink-0 mt-1.5"></span>
+                    <span>3. Avoid Negativity: Frame even negative words constructively (e.g. Defeat -> "Defeat teaches lessons for success").</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#0f172a] rounded-[32px] p-6 border border-white/5 space-y-3">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-yellow-500 animate-pulse" />
+                  <span className="text-[10px] font-black text-yellow-500 uppercase tracking-widest">Timing</span>
+                </div>
+                <p className="text-slate-400 text-xs font-semibold leading-relaxed">
+                  Exactly 15 seconds per word. The test automatically advances. Missing a word breaks the psychological chain.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* ACTIVE TEST PHASE */}
+        {phase === 'TEST' && (
+          <motion.div
+            key="testing"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-4xl mx-auto space-y-6"
+          >
+            {/* Top Status Header */}
+            <div className="bg-[#0f172a] border border-white/5 rounded-[24px] p-6 flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest bg-yellow-500/10 border border-yellow-500/20 text-yellow-500">
+                  {testMode === 'TYPING' ? 'Digital Input Mode' : 'Authentic Paper Mode'}
+                </div>
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                  Word {currentIdx + 1} of {TOTAL_WORDS}
+                </span>
+              </div>
+            </div>
+
+            {/* Main Interactive Screen */}
+            <div className="bg-[#0f172a] rounded-[48px] p-8 md:p-16 border border-white/5 relative overflow-hidden shadow-2xl space-y-12 flex flex-col items-center justify-center min-h-[500px]">
+              
+              {/* Timing Countdown Slider */}
+              <div className="absolute top-0 left-0 w-full h-1.5 bg-white/5">
+                  <motion.div 
+                      key={currentIdx}
+                      initial={{ width: '100%' }}
+                      animate={{ width: '0%' }}
+                      transition={{ duration: WORD_TIME, ease: 'linear' }}
+                      className="h-full bg-yellow-500 shadow-[0_0_15px_rgba(234,179,8,0.5)]"
+                  />
+              </div>
+
+              <div className="absolute top-8 right-8 flex items-center gap-3">
+                  <Clock className={`w-5 h-5 ${timer.timeLeft <= 5 ? 'text-red-500 animate-pulse' : 'text-slate-500'}`} />
+                  <span className={`font-mono font-black text-2xl tabular-nums ${timer.timeLeft <= 5 ? 'text-red-500' : 'text-white'}`}>
+                      {timer.formattedTime}
+                  </span>
+              </div>
+
+              <AnimatePresence mode="wait">
+                  <motion.div
+                      key={currentIdx}
+                      initial={{ opacity: 0, y: 20, scale: 0.8 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, scale: 1.2, filter: 'blur(10px)' }}
+                      className="text-7xl md:text-9xl font-black text-white tracking-tighter drop-shadow-2xl uppercase italic text-center w-full"
+                  >
+                      {currentWord?.word}
+                  </motion.div>
+              </AnimatePresence>
+
+              {testMode === 'TYPING' ? (
+                  <div className="w-full max-w-2xl relative z-10">
+                      <input
+                          ref={inputRef}
+                          type="text"
+                          value={response}
+                          onChange={(e) => setResponse(e.target.value)}
+                          onKeyDown={(e) => e.key === 'Enter' && saveAndNext()}
+                          placeholder="Write your constructive sentence here..."
+                          className="w-full bg-[#162840] border-2 border-white/5 rounded-[24px] p-6 text-xl text-white placeholder-slate-600 focus:outline-none focus:border-yellow-500/50 focus:ring-1 focus:ring-yellow-500/50 transition-all shadow-2xl text-center font-bold"
+                      />
+                  </div>
+              ) : (
+                  <div className="w-full max-w-2xl relative text-center z-10 bg-[#162840] rounded-[24px] p-6 border border-white/5">
+                      <div className="flex flex-col items-center gap-4 text-slate-500 animate-pulse">
+                          <PenTool className="w-8 h-8" />
+                          <p className="font-bold text-sm tracking-widest uppercase">Write sentence {currentIdx + 1} on your physical sheet of paper</p>
+                      </div>
+                  </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+
+        {/* UPLOAD SHEET PHASE (FOR PAPER MODE) */}
+        {phase === 'UPLOAD_SHEET' && (
+          <motion.div
+            key="upload"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-3xl mx-auto space-y-6"
+          >
+            <div className="bg-[#0f172a] rounded-[48px] p-16 border border-white/5 relative overflow-hidden shadow-2xl text-center flex flex-col items-center justify-center gap-8 min-h-[400px]">
+               <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-yellow-500/5 rounded-full blur-[80px]"></div>
+               
                {!isUploading ? (
                    <>
-                       <UploadCloud className="w-16 h-16 text-yellow-500/50" />
-                       <h3 className="text-3xl font-black tracking-[0.2em] text-white uppercase">Upload Answer Sheet</h3>
-                       <p className="text-slate-400 font-bold max-w-md">
-                           Take a clear, well-lit photo of your handwritten responses. Make sure all sentences are readable.
-                       </p>
-                       <label className="mt-4 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-black tracking-widest text-sm uppercase rounded-2xl cursor-pointer transition-all shadow-xl shadow-yellow-500/20 flex items-center gap-2">
+                       <UploadCloud className="w-16 h-16 text-yellow-500" />
+                       <div className="space-y-4 relative z-10">
+                         <h3 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">Upload Answer Sheet</h3>
+                         <p className="text-slate-400 font-bold max-w-lg mx-auto">
+                             The test is over. Take a clear, well-lit photo of your handwritten responses and upload it for AI OCR Evaluation.
+                         </p>
+                       </div>
+                       
+                       <label className="relative z-10 mt-4 px-10 py-5 bg-yellow-500 hover:bg-yellow-400 text-black font-black tracking-widest text-sm uppercase rounded-full cursor-pointer transition-all shadow-xl shadow-yellow-500/20 flex items-center gap-3">
                            <UploadCloud className="w-5 h-5" /> Select Image
                            <input type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
                        </label>
                    </>
                ) : (
-                   <>
-                       <div className="w-16 h-16 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(234,179,8,0.3)]"></div>
-                       <h3 className="text-xl font-black uppercase tracking-[0.2em] text-white animate-pulse">{ocrStatus}</h3>
-                   </>
-               )}
-           </div>
-        ) : phase === 'EVALUATING' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-12 gap-6 text-center">
-                <div className="w-16 h-16 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(234,179,8,0.3)]"></div>
-                <h3 className="text-2xl font-black uppercase tracking-[0.2em] text-white">Analyzing Semantic Patterns</h3>
-                <p className="text-slate-500 font-black text-[10px] uppercase tracking-widest max-w-md">
-                   AI Psychologist is scanning responses for psychological indicators, positive outlook, and emotional stability...
-                </p>
-           </div>
-        ) : phase === 'DISQUALIFIED' ? (
-           <div className="flex-1 flex flex-col items-center justify-center p-12 gap-6 text-center">
-                <ShieldAlert className="w-24 h-24 text-red-500 animate-pulse" />
-                <h3 className="text-4xl font-black uppercase tracking-[0.2em] text-red-500">WAT (Disqualified)</h3>
-                <p className="text-slate-400 font-bold max-w-md">
-                   You have committed a security infraction by switching tabs or losing focus during an active test. 
-                   SSB testing requires strict discipline. This infraction has been logged.
-                </p>
-                <button 
-                    onClick={() => setPhase('IDLE')}
-                    className="mt-6 px-8 py-3 bg-red-500 hover:bg-red-400 text-white font-black uppercase tracking-[0.1em] text-sm rounded-xl transition-all shadow-xl shadow-red-500/20"
-                >
-                    Acknowledge & Restart
-                </button>
-           </div>
-        ) : phase === 'DONE' && evaluation ? (
-           <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               animate={{ opacity: 1, y: 0 }}
-               className="flex-1 p-8 overflow-y-auto custom-scrollbar h-[500px]"
-           >
-               <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/5">
-                   <div className="flex items-center gap-3">
-                       <CheckCircle className="w-8 h-8 text-green-500" />
-                       <h3 className="text-2xl font-black text-white uppercase tracking-[0.1em]">Psychological Dossier</h3>
+                   <div className="space-y-6 relative z-10 flex flex-col items-center">
+                       <div className="relative w-24 h-24 mx-auto">
+                         <div className="absolute inset-0 rounded-full border-4 border-yellow-500/10" />
+                         <div className="absolute inset-0 rounded-full border-4 border-t-yellow-500 animate-spin" />
+                         <div className="absolute inset-0 flex items-center justify-center">
+                           <UploadCloud className="w-8 h-8 text-yellow-500 animate-pulse" />
+                         </div>
+                       </div>
+                       <h3 className="text-2xl font-black uppercase tracking-tight text-white">{ocrStatus}</h3>
                    </div>
-                   <button 
-                       onClick={nextSet}
-                       className="px-6 py-2 bg-yellow-500 hover:bg-yellow-400 text-black font-black uppercase tracking-[0.1em] text-xs rounded-xl transition-all shadow-xl shadow-yellow-500/20"
-                   >
-                       Start Next Set
-                   </button>
+               )}
+            </div>
+          </motion.div>
+        )}
+
+        {/* EVALUATING PHASE */}
+        {phase === 'EVALUATING' && (
+          <motion.div
+            key="evaluating"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-md mx-auto py-24 text-center space-y-6"
+          >
+            <div className="relative w-24 h-24 mx-auto">
+              <div className="absolute inset-0 rounded-full border-4 border-yellow-500/10" />
+              <div className="absolute inset-0 rounded-full border-4 border-t-yellow-500 animate-spin" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Loader2 className="w-8 h-8 text-yellow-500 animate-spin" />
+              </div>
+            </div>
+            
+            <div className="space-y-2">
+              <h2 className="text-xl font-black text-white uppercase tracking-tight">Resolving Semantic Patterns</h2>
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                AI Board President scanning responses for OLQ projection...
+              </p>
+            </div>
+          </motion.div>
+        )}
+
+        {/* DISQUALIFIED PHASE */}
+        {phase === 'DISQUALIFIED' && (
+          <motion.div
+            key="disqualified"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="max-w-3xl mx-auto space-y-6"
+          >
+            <div className="bg-[#0f172a] rounded-[48px] p-16 border border-red-500/20 relative overflow-hidden shadow-2xl text-center flex flex-col items-center justify-center gap-8">
+               <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-red-500/10 rounded-full blur-[80px]"></div>
+               <ShieldAlert className="w-24 h-24 text-red-500 animate-pulse relative z-10" />
+               <div className="space-y-4 relative z-10">
+                 <h3 className="text-4xl md:text-5xl font-black text-red-500 uppercase tracking-tighter">Test Disqualified</h3>
+                 <p className="text-red-300/80 font-bold max-w-lg mx-auto">
+                    You have committed a security infraction by switching tabs or losing focus during an active psych test. SSB testing requires strict discipline. This infraction has been logged.
+                 </p>
                </div>
                
-               <div className="space-y-8">
-                   <div className="bg-[#162840] p-8 rounded-3xl border border-white/5 shadow-xl">
-                        <h4 className="text-[10px] uppercase font-black tracking-widest text-yellow-500 mb-4">Mindset Analysis</h4>
-                        <p className="text-slate-300 text-sm leading-relaxed font-bold">{evaluation.mindset_summary}</p>
-                   </div>
-
-                   <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-green-500/5 p-6 rounded-3xl border border-green-500/20">
-                            <h5 className="text-[10px] font-black uppercase tracking-widest text-green-400 mb-4">Positive Projections</h5>
-                            <ul className="text-xs space-y-3 text-slate-400 font-bold">
-                                {evaluation.strengths?.map((s: string, i: number) => (
-                                  <li key={i} className="flex items-start gap-2">
-                                    <div className="w-1 h-1 rounded-full bg-green-500 mt-1.5" />
-                                    {s}
-                                  </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="bg-red-500/5 p-6 rounded-3xl border border-red-500/20">
-                            <h5 className="text-[10px] font-black uppercase tracking-widest text-red-400 mb-4">Negative Indicators</h5>
-                            <ul className="text-xs space-y-3 text-slate-400 font-bold">
-                                {evaluation.weaknesses?.map((w: string, i: number) => (
-                                  <li key={i} className="flex items-start gap-2">
-                                    <div className="w-1 h-1 rounded-full bg-red-500 mt-1.5" />
-                                    {w}
-                                  </li>
-                                ))}
-                            </ul>
-                        </div>
-                   </div>
-
-                   {/* Optionally render extracted OCR text if in authentic mode */}
-                   {testMode === 'AUTHENTIC' && evaluation.responses && (
-                     <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
-                        <h4 className="text-[10px] uppercase font-black tracking-widest text-slate-400 mb-4">AI Transcribed Responses</h4>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
-                           {evaluation.responses.map((r: WatResponse, idx: number) => (
-                              <div key={idx} className="bg-black/20 p-3 rounded-lg border border-white/5">
-                                 <span className="text-yellow-500 text-[10px] font-black uppercase tracking-widest">{idx + 1}. {r.word}</span>
-                                 <p className="text-slate-300 text-xs mt-1 font-medium">{r.response}</p>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
-                   )}
-
-                   <div className="bg-yellow-500/5 p-8 rounded-3xl border border-yellow-500/20">
-                        <h4 className="text-[10px] uppercase font-black tracking-widest text-yellow-500 mb-4">Psychologist Recommendations</h4>
-                        <p className="text-slate-300 text-sm leading-relaxed font-bold">{evaluation.recommendations}</p>
-                   </div>
-               </div>
-           </motion.div>
-        ) : (
-           // Active Test
-           <div className="flex-1 flex flex-col relative">
-                {/* Timer Bar */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-white/5 z-20">
-                    <motion.div 
-                         key={currentIdx}
-                         initial={{ width: '100%' }}
-                         animate={{ width: '0%' }}
-                         transition={{ duration: WORD_TIME, ease: 'linear' }}
-                         className="h-full bg-yellow-500 shadow-[0_0_15px_rgba(234,179,8,0.5)]"
-                    />
-                </div>
-
-                <div className="absolute top-6 right-8 flex items-center gap-2 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
-                    <Clock className="w-4 h-4 text-slate-500" />
-                    <span className="font-mono font-black text-xl text-white tabular-nums">
-                        {timer.formattedTime}
-                    </span>
-                </div>
-
-                <div className="absolute top-6 left-8 z-20 bg-black/40 px-4 py-2 rounded-full border border-white/5 backdrop-blur-md">
-                     <span className="text-slate-500 text-[10px] uppercase font-black tracking-widest mr-2">Word</span>
-                     <span className="text-white font-mono font-black text-lg">{currentIdx + 1}/{TOTAL_WORDS}</span>
-                </div>
-
-                <div className="flex-1 flex flex-col items-center justify-center p-12 pt-24">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={currentIdx}
-                            initial={{ opacity: 0, y: 20, scale: 0.8 }}
-                            animate={{ opacity: 1, y: 0, scale: 1 }}
-                            exit={{ opacity: 0, scale: 1.2, filter: 'blur(10px)' }}
-                            className="text-7xl md:text-9xl font-black text-white tracking-tighter drop-shadow-2xl mb-16 uppercase italic"
-                        >
-                            {currentWord?.word}
-                        </motion.div>
-                    </AnimatePresence>
-
-                    {testMode === 'TYPING' ? (
-                        <div className="w-full max-w-2xl relative">
-                            <input
-                                ref={inputRef}
-                                type="text"
-                                value={response}
-                                onChange={(e) => setResponse(e.target.value)}
-                                onKeyDown={(e) => e.key === 'Enter' && saveAndNext()}
-                                placeholder="Write your response sentence..."
-                                className="w-full bg-black/40 border-2 border-white/5 rounded-3xl p-8 text-xl text-white placeholder-slate-700 focus:outline-none focus:border-yellow-500/50 focus:ring-4 focus:ring-yellow-500/10 transition-all shadow-2xl text-center font-bold"
-                            />
-                            <button 
-                                onClick={saveAndNext}
-                                className="absolute right-6 top-1/2 -translate-y-1/2 p-3 bg-yellow-500 rounded-2xl hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 active:scale-95"
-                            >
-                                <Send className="w-5 h-5 text-black" />
-                            </button>
-                        </div>
-                    ) : (
-                        <div className="w-full max-w-2xl relative text-center">
-                            <div className="flex flex-col items-center gap-4 text-slate-500 animate-pulse mt-8">
-                                <PenTool className="w-8 h-8" />
-                                <p className="font-bold text-sm tracking-widest uppercase">Write sentence on physical paper</p>
-                            </div>
-                        </div>
-                    )}
-                </div>
-           </div>
+               <button 
+                   onClick={() => { setPhase('IDLE'); setTestMode('AUTHENTIC'); }}
+                   className="relative z-10 mt-4 px-10 py-5 bg-red-500 hover:bg-red-400 text-white font-black tracking-widest text-sm uppercase rounded-full cursor-pointer transition-all shadow-xl shadow-red-500/20"
+               >
+                   Acknowledge & Restart
+               </button>
+            </div>
+          </motion.div>
         )}
-      </div>
+
+        {/* RESULTS PHASE */}
+        {phase === 'DONE' && evaluation && (
+          <motion.div
+            key="results"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="space-y-8"
+          >
+            
+            {/* Top Score summary widget */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              
+              <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+                <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-yellow-500/5 rounded-full blur-[80px]"></div>
+                
+                <div className="space-y-4 relative z-10 text-center md:text-left">
+                  <div className="bg-yellow-500/10 border border-yellow-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit mx-auto md:mx-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-yellow-500" />
+                    <span className="text-[10px] font-black text-yellow-500 uppercase tracking-widest">WAT Evaluation Complete</span>
+                  </div>
+                  
+                  <h1 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter">
+                    Mindset Status: <br/>
+                    <span className={evaluation.overall_score >= 60 ? 'text-emerald-400' : 'text-yellow-400'}>
+                      {evaluation.overall_score >= 60 ? 'OPTIMISTIC / CONSTRUCTIVE' : 'NEUTRAL / MIXED'}
+                    </span>
+                  </h1>
+                  
+                  <p className="text-slate-400 text-sm font-semibold leading-relaxed max-w-xl">
+                    {evaluation.mindset_summary}
+                  </p>
+                </div>
+
+                {/* Score Dial */}
+                <div className="bg-[#162840] border border-white/5 rounded-[40px] p-10 text-center min-w-[220px] shadow-2xl relative shrink-0">
+                  <p className={`text-6xl font-black ${evaluation.overall_score >= 70 ? 'text-emerald-500' : evaluation.overall_score >= 50 ? 'text-yellow-500' : 'text-red-500'}`}>
+                    {evaluation.overall_score}
+                  </p>
+                  <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-2">Overall Score / 100</p>
+                  <div className="w-full bg-white/5 h-2 rounded-full mt-4 overflow-hidden">
+                    <div 
+                      className={`h-full ${evaluation.overall_score >= 70 ? 'bg-emerald-500' : evaluation.overall_score >= 50 ? 'bg-yellow-500' : 'bg-red-500'}`}
+                      style={{ width: `${evaluation.overall_score}%` }}
+                    />
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Sidebar Quick Re-run */}
+              <div className="bg-[#162840] border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-6 shadow-xl">
+                <div>
+                  <h3 className="text-lg font-black text-white uppercase tracking-tight">Next Steps</h3>
+                  <p className="mt-4 text-xs font-semibold text-slate-400 leading-relaxed">
+                    {evaluation.recommendations}
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <button
+                    onClick={nextSet}
+                    className="w-full bg-yellow-500 hover:bg-yellow-400 text-black py-4 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-2 transition-all"
+                  >
+                    Next Set
+                  </button>
+                  <button
+                    onClick={() => {
+                        setPhase('IDLE');
+                        setAllResponses([]);
+                    }}
+                    className="w-full bg-[#0f172a] hover:bg-[#1e3658] border border-white/5 text-white py-4 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-2 transition-all"
+                  >
+                     Retake
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Strengths & Weaknesses */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-[#0f172a] rounded-[48px] p-12 border border-emerald-500/10 shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl"></div>
+                    <h3 className="text-xl font-black text-white uppercase tracking-tight mb-6 flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400">+</div>
+                        Positive Projections
+                    </h3>
+                    <ul className="space-y-4">
+                        {evaluation.strengths.map((s: string, i: number) => (
+                            <li key={i} className="flex items-start gap-4 text-sm font-semibold text-emerald-200/80">
+                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 mt-2"></span>
+                                {s}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                
+                <div className="bg-[#0f172a] rounded-[48px] p-12 border border-red-500/10 shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl"></div>
+                    <h3 className="text-xl font-black text-white uppercase tracking-tight mb-6 flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center text-red-400">-</div>
+                        Negative Indicators
+                    </h3>
+                    <ul className="space-y-4">
+                        {evaluation.weaknesses.map((w: string, i: number) => (
+                            <li key={i} className="flex items-start gap-4 text-sm font-semibold text-red-200/80">
+                                <span className="w-1.5 h-1.5 rounded-full bg-red-400 shrink-0 mt-2"></span>
+                                {w}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+
+            {/* Submissions Log (If generated) */}
+            {evaluation.responses && evaluation.responses.length > 0 && (
+                <div className="bg-[#0f172a] rounded-[48px] p-12 border border-white/5 shadow-2xl space-y-6">
+                    <h3 className="text-xl font-black text-white uppercase tracking-tight">Submission Log</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[400px] overflow-y-auto custom-scrollbar pr-4">
+                       {evaluation.responses.map((r: WatResponse, idx: number) => (
+                          <div key={idx} className="bg-[#162840] p-4 rounded-[24px] border border-white/5 space-y-2">
+                             <div className="text-yellow-500 text-[10px] font-black uppercase tracking-widest">Word {idx + 1}: {r.word}</div>
+                             <p className="text-slate-300 text-sm font-semibold">{r.response}</p>
+                          </div>
+                       ))}
+                    </div>
+                </div>
+            )}
+
+          </motion.div>
+        )}
+
+      </AnimatePresence>
     </div>
   );
 }

@@ -45,7 +45,7 @@ export interface SdSimulatorProps {
 export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorProps) {
   const [currentSection, setCurrentSection] = useState(0)
   const [responses, setResponses] = useState<Record<string, string>>({})
-  const [phase, setPhase] = useState<'WRITING' | 'EVALUATING' | 'RESULTS'>('WRITING')
+  const [phase, setPhase] = useState<'IDLE' | 'WRITING' | 'EVALUATING' | 'RESULTS'>('IDLE')
   const [evaluation, setEvaluation] = useState<SdEvaluation | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [timeLeft, setTimeLeft] = useState(TIMER_SECONDS)
@@ -265,31 +265,113 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
     )
   }
 
-  // WRITING PHASE
   return (
-    <div className="w-full mx-auto space-y-12">
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-[#0f172a] rounded-[48px] p-16 overflow-hidden border border-white/5 relative shadow-2xl">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px]"></div>
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="space-y-6 text-center md:text-left">
-            <div className="bg-purple-500/10 border border-purple-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit mx-auto md:mx-0">
-              <Brain className="w-3 h-3 text-purple-500" />
-              <span className="text-[10px] font-black text-purple-500 uppercase tracking-[0.2em]">Know Thyself · Board President AI</span>
+    <div className="w-full space-y-8">
+      
+      <AnimatePresence mode="wait">
+
+        {/* PHASE 0: IDLE / BRIEFING */}
+        {phase === 'IDLE' && (
+          <motion.div
+            key="briefing"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          >
+            {/* Main Information Panel */}
+            <div className="lg:col-span-2 bg-[#0f172a] rounded-[48px] p-12 border border-white/5 relative overflow-hidden shadow-2xl space-y-8">
+              <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]"></div>
+              
+              <div className="space-y-4 relative z-10">
+                <div className="bg-purple-500/10 border border-purple-500/20 px-4 py-1.5 rounded-full flex items-center gap-2 max-w-fit">
+                  <Brain className="w-3.5 h-3.5 text-purple-500" />
+                  <span className="text-[10px] font-black text-purple-500 uppercase tracking-widest">Self Description Assessment</span>
+                </div>
+                <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                  SD <span className="text-purple-600">Simulator</span>
+                </h1>
+                <p className="text-slate-400 font-bold leading-relaxed max-w-2xl">
+                  Write authentically across all 5 sections. The Board President AI will analyze your psychological profile, detect coached responses, and give you IDEAL model answers.
+                </p>
+              </div>
+
+              <div className="h-px bg-white/5"></div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10 pt-4">
+                <button
+                  onClick={() => setPhase('WRITING')}
+                  className="w-full sm:w-auto bg-purple-600 hover:bg-purple-500 text-white px-10 py-5 rounded-full font-black tracking-widest uppercase flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl shadow-purple-600/20"
+                >
+                  <PenTool className="w-4 h-4 text-white" />
+                  Begin Self Description
+                </button>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-8xl font-black text-white uppercase tracking-tighter leading-none">
-              Self <span className="text-purple-600">Description</span>
-            </h1>
-            <p className="text-slate-400 max-w-xl text-lg font-bold">
-              Write authentically across all 5 sections. The Board President AI will analyze your psychological profile, detect coached responses, and give you IDEAL model answers.
-            </p>
-          </div>
-          <div className="bg-[#162840] border border-white/5 rounded-[40px] p-10 text-center min-w-[240px] shadow-2xl">
-            <UserCircle className="w-16 h-16 text-purple-500 mx-auto mb-4" />
-            <p className="text-3xl font-black text-white">{Object.keys(responses).filter(k => (responses[k] || '').trim().length > 50).length}/5</p>
-            <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest mt-1">Sections Complete</p>
-          </div>
-        </div>
-      </motion.div>
+
+            {/* Sidebar Guidelines Panel */}
+            <div className="bg-[#162840]/60 border border-white/5 rounded-[48px] p-10 flex flex-col justify-between space-y-8 shadow-xl">
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <ShieldAlert className="w-6 h-6 text-purple-500" />
+                  <h2 className="text-xl font-black text-white uppercase tracking-tight">Assessor Guidelines</h2>
+                </div>
+                
+                <ul className="space-y-4 text-xs font-bold text-slate-400">
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>1. Authenticity: Do not write coached or fake weaknesses (like "I work too hard").</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>2. Consistency: Your self assessment should align with what parents/teachers think of you.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0 mt-1.5"></span>
+                    <span>3. Improvement: For any weakness, mention what active steps you are taking to fix it.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#0f172a] rounded-[32px] p-6 border border-white/5 space-y-3">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-purple-500 animate-pulse" />
+                  <span className="text-[10px] font-black text-purple-500 uppercase tracking-widest">Timing</span>
+                </div>
+                <p className="text-slate-400 text-xs font-semibold leading-relaxed">
+                  15 minutes total to write all 5 sections. Plan your time effectively.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {phase === 'WRITING' && (
+          <motion.div
+            key="writing"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            className="space-y-6"
+          >
+            {/* Top Status Header */}
+            <div className="bg-[#0f172a] border border-white/5 rounded-[24px] p-6 flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest bg-purple-500/10 border border-purple-500/20 text-purple-500">
+                  Active Simulation
+                </div>
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                  Sections Complete: {Object.keys(responses).filter(k => (responses[k] || '').trim().length > 50).length}/5
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                  <Clock className={`w-4 h-4 ${timeLeft <= 120 ? 'text-red-500 animate-pulse' : 'text-slate-500'}`} />
+                  <span className={`font-mono font-black text-xl tabular-nums ${timeLeft <= 120 ? 'text-red-500 animate-pulse' : 'text-white'}`}>
+                      {formatTimer(timeLeft)}
+                  </span>
+              </div>
+            </div>
+
 
       {/* Section Navigator */}
       <div className="flex flex-wrap gap-3">
@@ -358,8 +440,8 @@ export default function SdSimulator({ isFullBattery, onComplete }: SdSimulatorPr
             {error && <p className="text-red-400 text-[10px] font-black uppercase tracking-widest">{error}</p>}
           </div>
         </motion.div>
+        )}
       </AnimatePresence>
-
     </div>
   )
 }
