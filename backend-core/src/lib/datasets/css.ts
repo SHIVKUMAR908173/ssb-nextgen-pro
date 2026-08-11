@@ -173,7 +173,7 @@ function makeQuestion(params: { domain: CSSQuestion["domain"]; index: number }):
       if (tpl === 0) {
         prompt = `[Selective Attention #${index}] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'`;
         options = ["5", "4", "6", "3"];
-        correctOptionIndex = 1; // D[E]f[E]nsiv[E] position s[E]cur[E]d => 5 E's
+        correctOptionIndex = 0; // D[E]f[E]nsiv[E] Position S[E]cur[E]d => 5 E's
       } else if (tpl === 1) {
         prompt = `[Selective Attention #${index}] How many times does the target symbol '*' appear in the following sequence: '***#**##*#*#***'?`;
         options = ["9", "8", "10", "7"];

@@ -4,44 +4,3239 @@
     "css_questions": 70,
     "opam_questions": 120,
     "version": "1.0",
-    "description": "Synthetic CSSS Stage-1 (CSS + OPAM) dataset generated for practice"
+    "description": "Full CSSS Stage-1 (CSS + OPAM) dataset generated from backend stubs",
+    "generated_at": "2026-08-10T11:35:37.102Z"
   },
   "questions": [
     {
-      "id": "CSS-001",
+      "id": "css-q-01",
+      "index": 1,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #1] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
       "type": "css",
-      "domain": "Spatial Reasoning",
-      "prompt": "If a cube is rotated 90° clockwise about its vertical axis, which face will be opposite the original front?",
-      "options": ["Left", "Right", "Top", "Bottom"],
-      "correctOptionIndex": 1,
-      "timeLimitSeconds": 20
+      "questionText": "[Map Memory #1] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
     },
     {
-      "id": "CSS-002",
+      "id": "css-q-02",
+      "index": 2,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #2] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
       "type": "css",
-      "domain": "Pattern Recognition",
-      "prompt": "What comes next in the series: 2, 6, 12, 20, ?",
-      "options": ["30", "28", "32", "34"],
-      "correctOptionIndex": 1,
-      "timeLimitSeconds": 15
+      "questionText": "[Working Memory #2] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
     },
     {
-      "id": "OPAM-001",
-      "type": "opam",
-      "domain": "Initiative",
-      "prompt": "A teammate is struggling with a task. What would you do?",
-      "options": ["Take over the task yourself", "Offer help while encouraging them", "Ignore and focus on your own work", "Criticize their performance"],
-      "correctOptionIndex": 1,
-      "timeLimitSeconds": 30
+      "id": "css-q-03",
+      "index": 3,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #3] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Selective Attention #3] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
     },
     {
-      "id": "OPAM-002",
+      "id": "css-q-04",
+      "index": 4,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #4] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #4] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-05",
+      "index": 5,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #5] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Spatial Orientation #5] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-06",
+      "index": 6,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #6] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Problem Solving #6] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-07",
+      "index": 7,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #7] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #7] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-08",
+      "index": 8,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #8] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #8] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-09",
+      "index": 9,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #9] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Reasoning #9] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-10",
+      "index": 10,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #10] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Map Memory #10] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-11",
+      "index": 11,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #11] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Working Memory #11] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-12",
+      "index": 12,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #12] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Selective Attention #12] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-13",
+      "index": 13,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #13] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #13] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-14",
+      "index": 14,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #14] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Spatial Orientation #14] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-15",
+      "index": 15,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #15] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Problem Solving #15] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-16",
+      "index": 16,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #16] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #16] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-17",
+      "index": 17,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #17] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #17] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-18",
+      "index": 18,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #18] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Reasoning #18] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-19",
+      "index": 19,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #19] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Map Memory #19] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-20",
+      "index": 20,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #20] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Working Memory #20] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-21",
+      "index": 21,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #21] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Selective Attention #21] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-22",
+      "index": 22,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #22] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #22] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-23",
+      "index": 23,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #23] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Spatial Orientation #23] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-24",
+      "index": 24,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #24] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Problem Solving #24] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-25",
+      "index": 25,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #25] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #25] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-26",
+      "index": 26,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #26] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #26] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-27",
+      "index": 27,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #27] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Reasoning #27] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-28",
+      "index": 28,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #28] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Map Memory #28] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-29",
+      "index": 29,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #29] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Working Memory #29] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-30",
+      "index": 30,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #30] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Selective Attention #30] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-31",
+      "index": 31,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #31] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #31] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-32",
+      "index": 32,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #32] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Spatial Orientation #32] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-33",
+      "index": 33,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #33] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Problem Solving #33] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-34",
+      "index": 34,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #34] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #34] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-35",
+      "index": 35,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #35] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #35] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-36",
+      "index": 36,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #36] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Reasoning #36] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-37",
+      "index": 37,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #37] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Map Memory #37] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-38",
+      "index": 38,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #38] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Working Memory #38] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-39",
+      "index": 39,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #39] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Selective Attention #39] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-40",
+      "index": 40,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #40] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #40] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-41",
+      "index": 41,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #41] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Spatial Orientation #41] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-42",
+      "index": 42,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #42] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Problem Solving #42] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-43",
+      "index": 43,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #43] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #43] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-44",
+      "index": 44,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #44] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #44] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-45",
+      "index": 45,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #45] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Reasoning #45] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-46",
+      "index": 46,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #46] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Map Memory #46] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-47",
+      "index": 47,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #47] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Working Memory #47] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-48",
+      "index": 48,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #48] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Selective Attention #48] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-49",
+      "index": 49,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #49] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #49] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-50",
+      "index": 50,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #50] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Spatial Orientation #50] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-51",
+      "index": 51,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #51] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Problem Solving #51] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-52",
+      "index": 52,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #52] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #52] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-53",
+      "index": 53,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #53] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #53] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-54",
+      "index": 54,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #54] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Reasoning #54] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-55",
+      "index": 55,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #55] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Map Memory #55] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-56",
+      "index": 56,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #56] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Working Memory #56] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-57",
+      "index": 57,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #57] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Selective Attention #57] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-58",
+      "index": 58,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #58] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #58] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-59",
+      "index": 59,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #59] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Spatial Orientation #59] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-60",
+      "index": 60,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #60] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Problem Solving #60] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-61",
+      "index": 61,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #61] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #61] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "css-q-62",
+      "index": 62,
+      "domain": "perceptual_speed",
+      "prompt": "[Perceptual Speed #62] Identify the odd word out that does not belong to the same rank structure:",
+      "options": [
+        "Lieutenant",
+        "Captain",
+        "Major",
+        "Admiral"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Perceptual Speed #62] Identify the odd word out that does not belong to the same rank structure:",
+      "category": "perceptual_speed"
+    },
+    {
+      "id": "css-q-63",
+      "index": 63,
+      "domain": "reasoning",
+      "prompt": "[Reasoning #63] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "options": [
+        "159",
+        "149",
+        "169",
+        "158"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Reasoning #63] Identify the logical continuation of this numerical sequence: 4, 9, 19, 39, 79, ...",
+      "category": "reasoning"
+    },
+    {
+      "id": "css-q-64",
+      "index": 64,
+      "domain": "map_memory",
+      "prompt": "[Map Memory #64] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "options": [
+        "North-East",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Map Memory #64] In your tactical briefing, the base camp was located at North-East. Where is it relative to your current location?",
+      "category": "map_memory"
+    },
+    {
+      "id": "css-q-65",
+      "index": 65,
+      "domain": "working_memory",
+      "prompt": "[Working Memory #65] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "options": [
+        "ROCKET",
+        "RADAR",
+        "BUNKER",
+        "TANK"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Working Memory #65] Remember the following tactical asset order: [BUNKER, RADAR, ROCKET, TANK]. Which asset occupied the third position?",
+      "category": "working_memory"
+    },
+    {
+      "id": "css-q-66",
+      "index": 66,
+      "domain": "selective_attention",
+      "prompt": "[Selective Attention #66] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "css",
+      "questionText": "[Selective Attention #66] Quickly count the number of times the letter 'E' appears in the phrase: 'DEFENSIVE POSITION SECURED'",
+      "category": "selective_attention"
+    },
+    {
+      "id": "css-q-67",
+      "index": 67,
+      "domain": "auditory_discrimination",
+      "prompt": "[Auditory Discrimination #67] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "options": [
+        "... --- ...",
+        "--- ... ---",
+        "... ... ...",
+        "--- --- ---"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "css",
+      "questionText": "[Auditory Discrimination #67] Identify the correct sequence of sound bursts (dots and dashes) representing SOS in Morse code:",
+      "category": "auditory_discrimination"
+    },
+    {
+      "id": "css-q-68",
+      "index": 68,
+      "domain": "spatial_orientation",
+      "prompt": "[Spatial Orientation #68] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "options": [
+        "South-East",
+        "North-West",
+        "North-East",
+        "South-West"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "css",
+      "questionText": "[Spatial Orientation #68] Stand facing South-West, turn 180 degrees, then make a 90-degree turn to your left. Which direction are you facing?",
+      "category": "spatial_orientation"
+    },
+    {
+      "id": "css-q-69",
+      "index": 69,
+      "domain": "problem_solving",
+      "prompt": "[Problem Solving #69] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "options": [
+        "270 km",
+        "250 km",
+        "260 km",
+        "280 km"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "css",
+      "questionText": "[Problem Solving #69] A military convoy travels at 60 km/h for 2.5 hours, then increases its speed to 80 km/h for 1.5 hours. What is the total distance covered?",
+      "category": "problem_solving"
+    },
+    {
+      "id": "css-q-70",
+      "index": 70,
+      "domain": "form_perception",
+      "prompt": "[Form Perception #70] Identify the odd map symbol out based on shape symmetry:",
+      "options": [
+        "A curved river contour",
+        "A straight metalled road",
+        "A perfectly circular radar dome",
+        "A square ammo bunker icon"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 7,
+      "type": "css",
+      "questionText": "[Form Perception #70] Identify the odd map symbol out based on shape symmetry:",
+      "category": "form_perception"
+    },
+    {
+      "id": "opam-q-001",
+      "index": 1,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #1] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
       "type": "opam",
-      "domain": "Leadership",
-      "prompt": "During a group activity, a conflict arises. How should you respond?",
-      "options": ["Arbitrarily decide the outcome", "Listen to both sides and mediate a solution", "Let the conflict resolve itself", "Side with the majority"],
-      "correctOptionIndex": 1,
-      "timeLimitSeconds": 30
+      "questionText": "[Conduct #1] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-002",
+      "index": 2,
+      "domain": "discipline",
+      "prompt": "[Discipline #2] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Discipline #2] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-003",
+      "index": 3,
+      "domain": "motivation",
+      "prompt": "[Motivation #3] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Motivation #3] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-004",
+      "index": 4,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #4] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Team Spirit #4] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-005",
+      "index": 5,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #5] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Conduct #5] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-006",
+      "index": 6,
+      "domain": "discipline",
+      "prompt": "[Discipline #6] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Discipline #6] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-007",
+      "index": 7,
+      "domain": "motivation",
+      "prompt": "[Motivation #7] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Motivation #7] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-008",
+      "index": 8,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #8] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Team Spirit #8] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-009",
+      "index": 9,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #9] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Conduct #9] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-010",
+      "index": 10,
+      "domain": "discipline",
+      "prompt": "[Discipline #10] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Discipline #10] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-011",
+      "index": 11,
+      "domain": "motivation",
+      "prompt": "[Motivation #11] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Motivation #11] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-012",
+      "index": 12,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #12] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Team Spirit #12] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-013",
+      "index": 13,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #13] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Conduct #13] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-014",
+      "index": 14,
+      "domain": "discipline",
+      "prompt": "[Discipline #14] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Discipline #14] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-015",
+      "index": 15,
+      "domain": "motivation",
+      "prompt": "[Motivation #15] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Motivation #15] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-016",
+      "index": 16,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #16] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Team Spirit #16] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-017",
+      "index": 17,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #17] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Conduct #17] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-018",
+      "index": 18,
+      "domain": "discipline",
+      "prompt": "[Discipline #18] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Discipline #18] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-019",
+      "index": 19,
+      "domain": "motivation",
+      "prompt": "[Motivation #19] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Motivation #19] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-020",
+      "index": 20,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #20] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Team Spirit #20] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-021",
+      "index": 21,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #21] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Conduct #21] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-022",
+      "index": 22,
+      "domain": "discipline",
+      "prompt": "[Discipline #22] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Discipline #22] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-023",
+      "index": 23,
+      "domain": "motivation",
+      "prompt": "[Motivation #23] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Motivation #23] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-024",
+      "index": 24,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #24] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Team Spirit #24] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-025",
+      "index": 25,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #25] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Conduct #25] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-026",
+      "index": 26,
+      "domain": "discipline",
+      "prompt": "[Discipline #26] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Discipline #26] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-027",
+      "index": 27,
+      "domain": "motivation",
+      "prompt": "[Motivation #27] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Motivation #27] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-028",
+      "index": 28,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #28] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Team Spirit #28] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-029",
+      "index": 29,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #29] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Conduct #29] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-030",
+      "index": 30,
+      "domain": "discipline",
+      "prompt": "[Discipline #30] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Discipline #30] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-031",
+      "index": 31,
+      "domain": "motivation",
+      "prompt": "[Motivation #31] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Motivation #31] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-032",
+      "index": 32,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #32] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Team Spirit #32] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-033",
+      "index": 33,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #33] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Conduct #33] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-034",
+      "index": 34,
+      "domain": "discipline",
+      "prompt": "[Discipline #34] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Discipline #34] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-035",
+      "index": 35,
+      "domain": "motivation",
+      "prompt": "[Motivation #35] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Motivation #35] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-036",
+      "index": 36,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #36] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Team Spirit #36] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-037",
+      "index": 37,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #37] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Conduct #37] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-038",
+      "index": 38,
+      "domain": "discipline",
+      "prompt": "[Discipline #38] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Discipline #38] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-039",
+      "index": 39,
+      "domain": "motivation",
+      "prompt": "[Motivation #39] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Motivation #39] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-040",
+      "index": 40,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #40] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Team Spirit #40] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-041",
+      "index": 41,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #41] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Conduct #41] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-042",
+      "index": 42,
+      "domain": "discipline",
+      "prompt": "[Discipline #42] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Discipline #42] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-043",
+      "index": 43,
+      "domain": "motivation",
+      "prompt": "[Motivation #43] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Motivation #43] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-044",
+      "index": 44,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #44] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Team Spirit #44] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-045",
+      "index": 45,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #45] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Conduct #45] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-046",
+      "index": 46,
+      "domain": "discipline",
+      "prompt": "[Discipline #46] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Discipline #46] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-047",
+      "index": 47,
+      "domain": "motivation",
+      "prompt": "[Motivation #47] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Motivation #47] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-048",
+      "index": 48,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #48] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Team Spirit #48] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-049",
+      "index": 49,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #49] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Conduct #49] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-050",
+      "index": 50,
+      "domain": "discipline",
+      "prompt": "[Discipline #50] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Discipline #50] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-051",
+      "index": 51,
+      "domain": "motivation",
+      "prompt": "[Motivation #51] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Motivation #51] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-052",
+      "index": 52,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #52] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Team Spirit #52] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-053",
+      "index": 53,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #53] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Conduct #53] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-054",
+      "index": 54,
+      "domain": "discipline",
+      "prompt": "[Discipline #54] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Discipline #54] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-055",
+      "index": 55,
+      "domain": "motivation",
+      "prompt": "[Motivation #55] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Motivation #55] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-056",
+      "index": 56,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #56] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Team Spirit #56] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-057",
+      "index": 57,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #57] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Conduct #57] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-058",
+      "index": 58,
+      "domain": "discipline",
+      "prompt": "[Discipline #58] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Discipline #58] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-059",
+      "index": 59,
+      "domain": "motivation",
+      "prompt": "[Motivation #59] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Motivation #59] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-060",
+      "index": 60,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #60] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Team Spirit #60] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-061",
+      "index": 61,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #61] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Conduct #61] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-062",
+      "index": 62,
+      "domain": "discipline",
+      "prompt": "[Discipline #62] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Discipline #62] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-063",
+      "index": 63,
+      "domain": "motivation",
+      "prompt": "[Motivation #63] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Motivation #63] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-064",
+      "index": 64,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #64] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Team Spirit #64] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-065",
+      "index": 65,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #65] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Conduct #65] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-066",
+      "index": 66,
+      "domain": "discipline",
+      "prompt": "[Discipline #66] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Discipline #66] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-067",
+      "index": 67,
+      "domain": "motivation",
+      "prompt": "[Motivation #67] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Motivation #67] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-068",
+      "index": 68,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #68] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Team Spirit #68] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-069",
+      "index": 69,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #69] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Conduct #69] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-070",
+      "index": 70,
+      "domain": "discipline",
+      "prompt": "[Discipline #70] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Discipline #70] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-071",
+      "index": 71,
+      "domain": "motivation",
+      "prompt": "[Motivation #71] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Motivation #71] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-072",
+      "index": 72,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #72] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Team Spirit #72] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-073",
+      "index": 73,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #73] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Conduct #73] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-074",
+      "index": 74,
+      "domain": "discipline",
+      "prompt": "[Discipline #74] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Discipline #74] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-075",
+      "index": 75,
+      "domain": "motivation",
+      "prompt": "[Motivation #75] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Motivation #75] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-076",
+      "index": 76,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #76] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Team Spirit #76] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-077",
+      "index": 77,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #77] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Conduct #77] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-078",
+      "index": 78,
+      "domain": "discipline",
+      "prompt": "[Discipline #78] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Discipline #78] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-079",
+      "index": 79,
+      "domain": "motivation",
+      "prompt": "[Motivation #79] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Motivation #79] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-080",
+      "index": 80,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #80] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Team Spirit #80] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-081",
+      "index": 81,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #81] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Conduct #81] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-082",
+      "index": 82,
+      "domain": "discipline",
+      "prompt": "[Discipline #82] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Discipline #82] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-083",
+      "index": 83,
+      "domain": "motivation",
+      "prompt": "[Motivation #83] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Motivation #83] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-084",
+      "index": 84,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #84] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Team Spirit #84] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-085",
+      "index": 85,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #85] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Conduct #85] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-086",
+      "index": 86,
+      "domain": "discipline",
+      "prompt": "[Discipline #86] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Discipline #86] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-087",
+      "index": 87,
+      "domain": "motivation",
+      "prompt": "[Motivation #87] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Motivation #87] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-088",
+      "index": 88,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #88] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Team Spirit #88] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-089",
+      "index": 89,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #89] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Conduct #89] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-090",
+      "index": 90,
+      "domain": "discipline",
+      "prompt": "[Discipline #90] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Discipline #90] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-091",
+      "index": 91,
+      "domain": "motivation",
+      "prompt": "[Motivation #91] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Motivation #91] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-092",
+      "index": 92,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #92] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Team Spirit #92] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-093",
+      "index": 93,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #93] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Conduct #93] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-094",
+      "index": 94,
+      "domain": "discipline",
+      "prompt": "[Discipline #94] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Discipline #94] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-095",
+      "index": 95,
+      "domain": "motivation",
+      "prompt": "[Motivation #95] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Motivation #95] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-096",
+      "index": 96,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #96] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Team Spirit #96] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-097",
+      "index": 97,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #97] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Conduct #97] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-098",
+      "index": 98,
+      "domain": "discipline",
+      "prompt": "[Discipline #98] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Discipline #98] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-099",
+      "index": 99,
+      "domain": "motivation",
+      "prompt": "[Motivation #99] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Motivation #99] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-100",
+      "index": 100,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #100] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Team Spirit #100] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-101",
+      "index": 101,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #101] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Conduct #101] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-102",
+      "index": 102,
+      "domain": "discipline",
+      "prompt": "[Discipline #102] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Discipline #102] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-103",
+      "index": 103,
+      "domain": "motivation",
+      "prompt": "[Motivation #103] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Motivation #103] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-104",
+      "index": 104,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #104] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Team Spirit #104] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-105",
+      "index": 105,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #105] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Conduct #105] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-106",
+      "index": 106,
+      "domain": "discipline",
+      "prompt": "[Discipline #106] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Discipline #106] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-107",
+      "index": 107,
+      "domain": "motivation",
+      "prompt": "[Motivation #107] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Motivation #107] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-108",
+      "index": 108,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #108] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Team Spirit #108] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-109",
+      "index": 109,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #109] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Conduct #109] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-110",
+      "index": 110,
+      "domain": "discipline",
+      "prompt": "[Discipline #110] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Discipline #110] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-111",
+      "index": 111,
+      "domain": "motivation",
+      "prompt": "[Motivation #111] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Motivation #111] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-112",
+      "index": 112,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #112] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Team Spirit #112] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-113",
+      "index": 113,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #113] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Conduct #113] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-114",
+      "index": 114,
+      "domain": "discipline",
+      "prompt": "[Discipline #114] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Discipline #114] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-115",
+      "index": 115,
+      "domain": "motivation",
+      "prompt": "[Motivation #115] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Motivation #115] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-116",
+      "index": 116,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #116] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 9,
+      "type": "opam",
+      "questionText": "[Team Spirit #116] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
+    },
+    {
+      "id": "opam-q-117",
+      "index": 117,
+      "domain": "self_report_conduct",
+      "prompt": "[Conduct #117] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "options": [
+        "Immediately report the damage to the quartermaster and take full responsibility.",
+        "Attempt to repair it quickly and quietly to avoid team embarrassment.",
+        "Leave it as is and let the next cadet who uses it report the malfunction.",
+        "Deny any involvement if questioned by instructors during the subsequent debrief."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 10,
+      "type": "opam",
+      "questionText": "[Conduct #117] You accidentally damage a sensitive training communication module. No one else is present to witness it. What do you do?",
+      "category": "self_report_conduct"
+    },
+    {
+      "id": "opam-q-118",
+      "index": 118,
+      "domain": "discipline",
+      "prompt": "[Discipline #118] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "options": [
+        "Perform light physical exercises and splash cold water on your face to remain alert.",
+        "Rest your eyes for brief 2-minute intervals while leaning against the post.",
+        "Request the guard commander for an immediate, early relief from your shift.",
+        "Take a quick nap in the corner of the bunker since security risks are minimal."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 11,
+      "type": "opam",
+      "questionText": "[Discipline #118] While standing guard duty during a quiet, uneventful night shift, you experience extreme drowsiness. How do you handle it?",
+      "category": "discipline"
+    },
+    {
+      "id": "opam-q-119",
+      "index": 119,
+      "domain": "motivation",
+      "prompt": "[Motivation #119] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "options": [
+        "Carefully dissect the criticism and formulate a structured improvement plan.",
+        "Feel defensive and assume the officer is personally biased against you.",
+        "Acknowledge it politely but continue using your own trusted methods.",
+        "Worry excessively that this feedback has permanently ruined your selection odds."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 12,
+      "type": "opam",
+      "questionText": "[Motivation #119] You receive constructive, yet highly critical feedback from a senior officer regarding your decision-making. You:",
+      "category": "motivation"
+    },
+    {
+      "id": "opam-q-120",
+      "index": 120,
+      "domain": "team_spirit",
+      "prompt": "[Team Spirit #120] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "options": [
+        "Intervene calmly, mediate their differences, and refocus the group on the objective.",
+        "Let them resolve their conflict independently as it does not affect your task.",
+        "Support the team member whose opinion appears more popular in the group.",
+        "Report their hostile behavior to the assessors to showcase your clean conduct."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 8,
+      "type": "opam",
+      "questionText": "[Team Spirit #120] A heated personal conflict arises between two team members during a critical group planning exercise. You:",
+      "category": "team_spirit"
     }
   ]
 }

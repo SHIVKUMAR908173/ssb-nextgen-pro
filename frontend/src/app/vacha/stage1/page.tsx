@@ -48,6 +48,95 @@ interface EvaluationResult {
   }
 }
 
+// ═══ Client-side evaluation logic (mirrors backend scoring) ═══
+
+const CSS_DOMAINS = [
+  'map_memory', 'working_memory', 'selective_attention',
+  'auditory_discrimination', 'spatial_orientation', 'problem_solving',
+  'form_perception', 'perceptual_speed', 'reasoning'
+] as const;
+
+const OPAM_DOMAINS = ['self_report_conduct', 'discipline', 'motivation', 'team_spirit'] as const;
+
+function clamp1to10(n: number): number {
+  return Math.max(1, Math.min(10, Math.round(n)));
+}
+
+function computeEvaluationFromAnswers(
+  logs: Array<{ questionId: string; domain: string; kind: 'css' | 'opam'; selectedOption: number | null }>,
+  allQs: any[],
+  config: { maxCssQuestions: number; maxOpamQuestions: number }
+): EvaluationResult {
+  // Build lookup of correct answers
+  const correctByQid: Record<string, number> = {};
+  for (const q of allQs) {
+    correctByQid[q.id] = q.correctOptionIndex;
+  }
+
+  // CSS domain scoring
+  const cssBuckets: Record<string, { correct: number; total: number }> = {};
+  for (const d of CSS_DOMAINS) cssBuckets[d] = { correct: 0, total: 0 };
+
+  const opamBuckets: Record<string, { correct: number; total: number }> = {};
+  for (const d of OPAM_DOMAINS) opamBuckets[d] = { correct: 0, total: 0 };
+
+  let cssAttempted = 0, cssCorrect = 0, opamAttempted = 0, opamCorrect = 0;
+
+  for (const log of logs) {
+    const correctIdx = correctByQid[log.questionId];
+    if (log.kind === 'css') {
+      const bucket = cssBuckets[log.domain] || { correct: 0, total: 0 };
+      cssBuckets[log.domain] = bucket;
+      bucket.total++;
+      if (log.selectedOption !== null) {
+        cssAttempted++;
+        if (log.selectedOption === correctIdx) { bucket.correct++; cssCorrect++; }
+      }
+    } else {
+      const bucket = opamBuckets[log.domain] || { correct: 0, total: 0 };
+      opamBuckets[log.domain] = bucket;
+      bucket.total++;
+      if (log.selectedOption !== null) {
+        opamAttempted++;
+        if (log.selectedOption === correctIdx) { bucket.correct++; opamCorrect++; }
+      }
+    }
+  }
+
+  const cssDomainScores = CSS_DOMAINS.map(domain => {
+    const { correct, total } = cssBuckets[domain];
+    const denom = total === 0 ? 1 : total;
+    return { domain, score: clamp1to10(1 + (correct / denom) * 9) };
+  });
+
+  const opamDomainScores = OPAM_DOMAINS.map(domain => {
+    const { correct, total } = opamBuckets[domain];
+    const denom = total === 0 ? 1 : total;
+    return { domain, score: clamp1to10(1 + (correct / denom) * 9) };
+  });
+
+  const cssOverall = cssDomainScores.length > 0
+    ? 0.35 * (cssCorrect / Math.max(1, config.maxCssQuestions)) * 10 +
+      0.65 * (cssDomainScores.reduce((a, d) => a + d.score, 0) / (cssDomainScores.length * 10)) * 10
+    : 1;
+
+  const opamOverall = opamDomainScores.length > 0
+    ? 0.35 * (opamCorrect / Math.max(1, config.maxOpamQuestions)) * 10 +
+      0.65 * (opamDomainScores.reduce((a, d) => a + d.score, 0) / (opamDomainScores.length * 10)) * 10
+    : 1;
+
+  const overallScore = clamp1to10(0.5 * cssOverall + 0.5 * opamOverall);
+  const totalQuestionCount = config.maxCssQuestions + config.maxOpamQuestions;
+  const attemptedCount = cssAttempted + opamAttempted;
+
+  return {
+    css: { domainScores: cssDomainScores },
+    opam: { domainScores: opamDomainScores },
+    overallScore,
+    correctnessSummary: { attemptedCount, totalQuestionCount }
+  };
+}
+
 export default function CSSSStage1Page() {
   // Navigation & Session Phase
   const [phase, setPhase] = useState<'briefing' | 'testing' | 'evaluating' | 'results'>('briefing')
@@ -119,21 +208,22 @@ export default function CSSSStage1Page() {
 
       const firstQuestion = questionsArray[0]
       if (firstQuestion) {
+        const tl = firstQuestion.timeLimitSeconds || 15
         setCurrentQuestion({
           id: firstQuestion.id,
           index: 0,
-          domain: firstQuestion.category || 'reasoning',
-          prompt: firstQuestion.questionText,
+          domain: firstQuestion.domain || firstQuestion.category || 'reasoning',
+          prompt: firstQuestion.questionText || firstQuestion.prompt,
           options: firstQuestion.options,
-          timeLimitSeconds: 15
+          timeLimitSeconds: tl
         });
+        setTimeLeft(tl);
       } else {
         throw new Error("No questions returned")
       }
       
       setCurrentKind('css');
       setSelectedOption(null);
-      setTimeLeft(15);
       questionStartTimeRef.current = Date.now();
 
     } catch (err) {
@@ -184,46 +274,57 @@ export default function CSSSStage1Page() {
 
     setSelectedOption(null)
 
-    const isFinished = sessionState.currentIndex >= 9; // Finish after 10 questions for demo
+    const totalQuestions = sessionState.config.maxCssQuestions + sessionState.config.maxOpamQuestions;
+    const isFinished = sessionState.currentIndex >= totalQuestions - 1;
 
     if (isFinished) {
         setPhase('results');
         setIsAutoPlaying(false);
-        setEvaluation({
-            overallScore: 7.5,
-            correctnessSummary: { attemptedCount: sessionState.currentIndex + 1, totalQuestionCount: sessionState.currentIndex + 1 },
-            css: { domainScores: [{ domain: 'reasoning', score: 8.0 }, { domain: 'spatial', score: 7.0 }] },
-            opam: { domainScores: [{ domain: 'discipline', score: 9.0 }, { domain: 'team_spirit', score: 8.5 }] }
-        });
+        // Compute real evaluation from accumulated answer logs
+        const updatedLog = [...answersLog, {
+          questionId: currentQuestion.id,
+          domain: currentQuestion.domain,
+          kind: currentKind,
+          selectedOption: optionIndex,
+          timeSpent: (Date.now() - questionStartTimeRef.current) / 1000
+        }];
+        const computedEval = computeEvaluationFromAnswers(updatedLog, allQuestions, sessionState.config);
+        setEvaluation(computedEval);
     } else {
         const nextIndex = sessionState.currentIndex + 1;
+        // Determine CSS vs OPAM based on sequential threshold (0..69=CSS, 70+=OPAM)
+        const nextKind: 'css' | 'opam' = nextIndex < sessionState.config.maxCssQuestions ? 'css' : 'opam';
         setSessionState(prev => ({
             ...prev!,
+            stage: nextKind,
             currentIndex: nextIndex,
-            answeredCount: prev!.answeredCount + 1
+            answeredCount: prev!.answeredCount + (optionIndex !== null ? 1 : 0)
         }));
         const nextQ = allQuestions[nextIndex];
         if (nextQ) {
+            const tl = nextQ.timeLimitSeconds || 15;
             setCurrentQuestion({
                 id: nextQ.id || `q-${nextIndex}`,
                 index: nextIndex,
-                domain: nextQ.category || (nextIndex % 2 === 0 ? 'spatial' : 'team_spirit'),
-                prompt: nextQ.questionText || 'Which pattern completes the series?',
+                domain: nextQ.domain || nextQ.category || 'reasoning',
+                prompt: nextQ.questionText || nextQ.prompt || 'Which pattern completes the series?',
                 options: nextQ.options || ['Option A', 'Option B', 'Option C', 'Option D'],
-                timeLimitSeconds: 15
+                timeLimitSeconds: tl
             });
+            setTimeLeft(tl);
         } else {
+            const tl = 10;
             setCurrentQuestion({
                 id: `mock-${nextIndex + 1}`,
                 index: nextIndex,
-                domain: nextIndex % 2 === 0 ? 'spatial' : 'team_spirit',
-                prompt: nextIndex % 2 === 0 ? 'Which pattern completes the series?' : 'Your teammate refuses to work. What do you do?',
+                domain: nextKind === 'css' ? 'reasoning' : 'team_spirit',
+                prompt: nextKind === 'css' ? 'Which pattern completes the series?' : 'Your teammate refuses to work. What do you do?',
                 options: ['Option A', 'Option B', 'Option C', 'Option D'],
-                timeLimitSeconds: 10
+                timeLimitSeconds: tl
             });
+            setTimeLeft(tl);
         }
-        setCurrentKind(nextIndex % 2 === 0 ? 'css' : 'opam');
-        setTimeLeft(10);
+        setCurrentKind(nextKind);
         questionStartTimeRef.current = Date.now();
     }
   }

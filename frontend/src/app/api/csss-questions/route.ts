@@ -23,7 +23,7 @@ export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const count = parseInt(searchParams.get('count') || '190');
   // Shuffle and select requested number of questions
-  const shuffled = dataset.questions.sort(() => Math.random() - 0.5);
+  const shuffled = [...dataset.questions].sort(() => Math.random() - 0.5);
   const selected = shuffled.slice(0, count);
   return NextResponse.json({
     status: 'success',
