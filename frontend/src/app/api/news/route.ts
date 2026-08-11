@@ -16,7 +16,7 @@ interface NewsItem {
   category?: string;
 }
 
-export const revalidate = 3600
+export const dynamic = 'force-dynamic';
 
 function categorizeArticle(text: string): string {
   const lower = text.toLowerCase()
