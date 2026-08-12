@@ -89,10 +89,8 @@ class InterviewState(BaseModel):
     mode: str
 
 
-# In-memory session storage with TTL to prevent memory leaks
-from app.middleware.session_manager import SessionManager
-interview_sessions = SessionManager(ttl_seconds=3600, max_items=1000)
-
+# Use Redis for distributed session storage (no more memory leaks)
+import json
 
 from app.middleware.auth import get_current_user_id
 
@@ -118,65 +116,51 @@ async def analyze_response(request: OLQAnalysisRequest, req: Request, current_us
     """
     Analyze a candidate's response using Brigadier-level assessment criteria
     
-    This endpoint evaluates a single response against all 15 OLQs and provides
-    detailed feedback including scores, flags, and recommendations.
+    This evaluates the response against all 15 Officer Like Qualities (OLQs)
+    and identifies red/green flags.
     """
     try:
-        check_rate_limit(req.client.host)
         assessor = create_brigadier_assessor()
         analysis = assessor.analyze_response(request.response, request.context)
-        
-        # Format OLQ scores for response
-        olq_scores = []
-        for olq_name, olq_data in analysis["olq_analysis"].items():
-            olq_info = OLQ_FRAMEWORK[olq_name]
-            olq_scores.append(OLQScoreResponse(
-                olq_name=olq_name,
-                score=olq_data["score"],
-                assessment=olq_data["assessment"],
-                concerns=olq_data["concerns"],
-                positive_indicators=olq_data["positive_indicators"],
-                critical=olq_info["critical"]
-            ))
-        
-        return AnalysisResponse(
-            response_text=analysis["response_text"],
-            overall_assessment=analysis["overall_assessment"],
-            olq_scores=olq_scores,
-            red_flags=analysis["red_flags_detected"],
-            green_flags=analysis["green_flags_detected"],
-            confidence_score=analysis["confidence_score"],
-            recommendation=analysis["recommendation"],
-            follow_up_areas=analysis["follow_up_areas"]
-        )
+        return analysis
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Analysis failed: {str(e)}"
+            detail=f"Failed to analyze response: {str(e)}"
         )
 
 
-@router.post("/start-interview")
-async def start_interview(request: InterviewRequest, current_user_id: str = Depends(get_current_user_id)):
+@router.post("/generate-questions", response_model=Dict[str, Any])
+async def generate_questions(request: QuestionGenerationRequest, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """
-    Start a new SSB interview session
+    Generate dynamic, contextual follow-up questions
     
-    Creates a new interview session with the specified mode and candidate profile.
-    Returns the first question and session details.
+    Based on previous analysis, generates targeted questions to probe
+    specific OLQs or clarify doubts.
     """
     try:
-        # Determine interview mode
-        mode_map = {
-            "practice": InterviewMode.PRACTICE,
-            "assessment": InterviewMode.ASSESSMENT,
-            "training": InterviewMode.TRAINING,
-            "full_ssb": InterviewMode.FULL_SSB
-        }
-        mode = mode_map.get(request.mode.lower(), InterviewMode.ASSESSMENT)
-        
-        # Create simulator and start interview
+        assessor = create_brigadier_assessor()
+        questions = assessor.generate_targeted_questions(
+            request.analysis,
+            request.question_type
+        )
+        return {"questions": questions}
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to generate questions: {str(e)}"
+        )
+
+
+@router.post("/start-interview", response_model=Dict[str, Any])
+async def start_interview(request: InterviewRequest, req: Request, current_user_id: str = Depends(get_current_user_id)):
+    """
+    Start a new SSB interview simulation session
+    """
+    try:
+        mode = InterviewMode(request.mode)
         simulator = create_ssb_simulator(mode)
-        candidate_profile = request.candidate_profile.model_dump()
+        candidate_profile = request.candidate_profile.dict()
         
         # Generate unique session ID
         session_id = f"ssb_{uuid.uuid4().hex}"
@@ -184,14 +168,27 @@ async def start_interview(request: InterviewRequest, current_user_id: str = Depe
         # Start interview
         interview_data = simulator.start_interview(candidate_profile)
         
-        # Store session state
-        interview_sessions[session_id] = {
-            "simulator": simulator,
+        # Store session state in Redis
+        session_state = {
+            "simulator": simulator.to_dict(),
             "mode": request.mode,
             "candidate_profile": candidate_profile,
             "started_at": datetime.now().isoformat(),
             "current_stage": interview_data.get("stage", "personal_interview")
         }
+        
+        redis = getattr(req.app.state, "redis", None)
+        if redis:
+            await redis.set(
+                f"brigadier:session:{session_id}",
+                json.dumps(session_state),
+                ex=86400  # 24 hour TTL
+            )
+        else:
+            # Fallback for testing without Redis
+            if not hasattr(req.app.state, "_brigadier_fallback"):
+                req.app.state._brigadier_fallback = {}
+            req.app.state._brigadier_fallback[session_id] = session_state
         
         return {
             "session_id": session_id,
@@ -208,22 +205,48 @@ async def start_interview(request: InterviewRequest, current_user_id: str = Depe
         )
 
 
+async def _get_session(session_id: str, req: Request) -> Optional[Dict]:
+    """Helper to get session from Redis or fallback"""
+    redis = getattr(req.app.state, "redis", None)
+    if redis:
+        data = await redis.get(f"brigadier:session:{session_id}")
+        if data:
+            return json.loads(data)
+    else:
+        fallback = getattr(req.app.state, "_brigadier_fallback", {})
+        return fallback.get(session_id)
+    return None
+
+
+async def _save_session(session_id: str, session: Dict, req: Request):
+    """Helper to save session to Redis or fallback"""
+    redis = getattr(req.app.state, "redis", None)
+    if redis:
+        await redis.set(
+            f"brigadier:session:{session_id}",
+            json.dumps(session),
+            ex=86400
+        )
+    else:
+        req.app.state._brigadier_fallback[session_id] = session
+
+
 @router.post("/submit-response")
-async def submit_response(session_id: str, request: ResponseSubmission, current_user_id: str = Depends(get_current_user_id)):
+async def submit_response(session_id: str, request: ResponseSubmission, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """
     Submit a candidate's response for evaluation
     
     Processes the response, provides analysis, and returns the next question.
     """
-    if session_id not in interview_sessions:
+    session = await _get_session(session_id, req)
+    if not session:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Interview session not found"
         )
     
     try:
-        session = interview_sessions[session_id]
-        simulator = session["simulator"]
+        simulator = SSBInterviewSimulator.from_dict(session["simulator"])
         
         # Determine current stage
         stage = InterviewStage(request.stage) if request.stage else None
@@ -234,6 +257,9 @@ async def submit_response(session_id: str, request: ResponseSubmission, current_
         # Update session state
         next_action = result.get("next_action", {})
         session["current_stage"] = next_action.get("next_stage", session["current_stage"])
+        session["simulator"] = simulator.to_dict()
+        
+        await _save_session(session_id, session, req)
         
         return {
             "session_id": session_id,
@@ -250,22 +276,22 @@ async def submit_response(session_id: str, request: ResponseSubmission, current_
 
 
 @router.get("/interview-report/{session_id}")
-async def get_interview_report(session_id: str, current_user_id: str = Depends(get_current_user_id)):
+async def get_interview_report(session_id: str, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """
     Generate and retrieve the complete interview report
     
     Provides comprehensive evaluation including OLQ scores, recommendations,
     and development suggestions.
     """
-    if session_id not in interview_sessions:
+    session = await _get_session(session_id, req)
+    if not session:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Interview session not found"
         )
     
     try:
-        session = interview_sessions[session_id]
-        simulator = session["simulator"]
+        simulator = SSBInterviewSimulator.from_dict(session["simulator"])
         
         # Generate report
         report = simulator.generate_interview_report()
@@ -295,7 +321,7 @@ async def generate_question(request: QuestionGenerationRequest, req: Request, cu
     into candidate's thinking and OLQ demonstration.
     """
     try:
-        check_rate_limit(req.client.host)
+        await check_rate_limit(req)
         assessor = create_brigadier_assessor()
         question = assessor.generate_brigadier_question(request.analysis, request.question_type)
         
@@ -319,7 +345,7 @@ async def get_scenarios(difficulty: str, req: Request, current_user_id: str = De
     Returns a variety of scenarios for practice at different difficulty levels.
     """
     try:
-        check_rate_limit(req.client.host)
+        await check_rate_limit(req)
         assessor = create_brigadier_assessor()
         scenarios = []
         

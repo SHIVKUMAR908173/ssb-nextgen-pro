@@ -177,7 +177,7 @@ export const authService = {
       throw new Error("Account locked due to too many attempts. Please try again later.");
     }
 
-    const policyResult = passwordPolicy.validate(input.password);
+    const policyResult = await passwordPolicy.checkPwned(input.password);
     if (!policyResult.isValid) {
       throw new Error(`Password policy violation: ${policyResult.errors.join(" ")}`);
     }

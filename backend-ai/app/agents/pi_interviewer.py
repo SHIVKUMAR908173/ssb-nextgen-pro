@@ -646,6 +646,46 @@ class PIInterviewer:
             suggestions.append("Avoid responses that may indicate avoiding responsibility or blaming others.")
         
         return suggestions
+        
+    def to_dict(self) -> Dict[str, Any]:
+        """Serialize state for Redis storage"""
+        return {
+            "mode": self.mode.value if hasattr(self.mode, 'value') else self.mode,
+            "current_stage": self.current_stage.value if hasattr(self.current_stage, 'value') else self.current_stage,
+            "question_history": self.question_history,
+            "response_history": self.response_history,
+            "olq_scores": self.olq_scores,
+            "candidate_profile": self.candidate_profile,
+            "interview_start_time": self.interview_start_time.isoformat() if self.interview_start_time else None,
+            "stage_start_time": self.stage_start_time.isoformat() if self.stage_start_time else None,
+            "current_question": self.current_question,
+            "follow_up_count": self.follow_up_count
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'PIInterviewer':
+        """Deserialize state from Redis storage"""
+        mode = InterviewMode(data.get("mode", "assessment"))
+        interviewer = cls(mode=mode)
+        
+        stage_str = data.get("current_stage")
+        interviewer.current_stage = InterviewStage(stage_str) if stage_str else InterviewStage.INTRODUCTION
+        
+        interviewer.question_history = data.get("question_history", [])
+        interviewer.response_history = data.get("response_history", [])
+        interviewer.olq_scores = data.get("olq_scores", interviewer._initialize_olq_scores())
+        interviewer.candidate_profile = data.get("candidate_profile")
+        
+        start_time_str = data.get("interview_start_time")
+        interviewer.interview_start_time = datetime.fromisoformat(start_time_str) if start_time_str else None
+        
+        stage_time_str = data.get("stage_start_time")
+        interviewer.stage_start_time = datetime.fromisoformat(stage_time_str) if stage_time_str else None
+        
+        interviewer.current_question = data.get("current_question")
+        interviewer.follow_up_count = data.get("follow_up_count", 0)
+        
+        return interviewer
 
 
 def get_pi_interviewer(mode: str = "assessment", model=None) -> PIInterviewer:

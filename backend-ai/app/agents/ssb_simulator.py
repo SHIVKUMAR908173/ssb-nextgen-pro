@@ -636,6 +636,30 @@ class SSBInterviewSimulator:
             print(f"Simulation generation failed: {e}")
             return "Sir, I would assess the situation and act accordingly."
 
+    def to_dict(self) -> Dict[str, Any]:
+        """Serialize state for Redis storage"""
+        return {
+            "mode": self.mode.value if isinstance(self.mode, InterviewMode) else self.mode,
+            "conversation_history": self.conversation_history,
+            "current_stage": self.current_stage.value if isinstance(self.current_stage, InterviewStage) and self.current_stage else (self.current_stage or None),
+            "stage_responses": self.stage_responses,
+            "candidate_profile": self.candidate_profile
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'SSBInterviewSimulator':
+        """Deserialize state from Redis storage"""
+        mode = InterviewMode(data.get("mode", "assessment"))
+        simulator = cls(mode=mode)
+        simulator.conversation_history = data.get("conversation_history", [])
+        
+        stage_str = data.get("current_stage")
+        simulator.current_stage = InterviewStage(stage_str) if stage_str else None
+        
+        simulator.stage_responses = data.get("stage_responses", {})
+        simulator.candidate_profile = data.get("candidate_profile", {})
+        return simulator
+
 
 def create_ssb_simulator(mode: InterviewMode = InterviewMode.ASSESSMENT, model=None) -> SSBInterviewSimulator:
     """Create a new SSB Interview Simulator instance"""

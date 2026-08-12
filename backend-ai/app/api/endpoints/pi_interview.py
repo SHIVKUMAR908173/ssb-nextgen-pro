@@ -18,9 +18,34 @@ from fastapi import File, UploadFile, Form
 # Router setup
 router = APIRouter(prefix="/pi-interview", tags=["Personal Interview"])
 
-# In-memory session storage with TTL to prevent memory leaks
-from app.middleware.session_manager import SessionManager
-pi_sessions = SessionManager(ttl_seconds=3600, max_items=1000)
+import json
+
+async def _get_pi_session(session_id: str, req: Request) -> Optional[Dict]:
+    """Helper to get session from Redis or fallback"""
+    redis = getattr(req.app.state, "redis", None)
+    if redis:
+        data = await redis.get(f"pi:session:{session_id}")
+        if data:
+            return json.loads(data)
+    else:
+        fallback = getattr(req.app.state, "_pi_fallback", {})
+        return fallback.get(session_id)
+    return None
+
+
+async def _save_pi_session(session_id: str, session: Dict, req: Request):
+    """Helper to save session to Redis or fallback"""
+    redis = getattr(req.app.state, "redis", None)
+    if redis:
+        await redis.set(
+            f"pi:session:{session_id}",
+            json.dumps(session),
+            ex=86400
+        )
+    else:
+        if not hasattr(req.app.state, "_pi_fallback"):
+            req.app.state._pi_fallback = {}
+        req.app.state._pi_fallback[session_id] = session
 
 
 class CandidateProfile(BaseModel):
@@ -155,7 +180,7 @@ async def get_sample_questions(category: Optional[str] = None, current_user_id: 
 
 
 @router.post("/start")
-async def start_interview(request: StartInterviewRequest, current_user_id: str = Depends(get_current_user_id)):
+async def start_interview(request: StartInterviewRequest, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """
     Start a new personal interview session
     
@@ -170,18 +195,20 @@ async def start_interview(request: StartInterviewRequest, current_user_id: str =
         session_id = f"pi_{uuid.uuid4().hex}"
         
         # Start interview
-        candidate_profile = request.candidate_profile.model_dump()
+        candidate_profile = request.candidate_profile.dict()
         interview_data = interviewer.start_interview(candidate_profile)
         
         # Store session
-        pi_sessions[session_id] = {
-            "interviewer": interviewer,
+        session_state = {
+            "interviewer": interviewer.to_dict(),
             "mode": request.mode,
             "candidate_profile": candidate_profile,
             "started_at": datetime.now().isoformat(),
             "current_stage": interview_data.get("stage"),
             "response_count": 0
         }
+        
+        await _save_pi_session(session_id, session_state, req)
         
         return {
             "session_id": session_id,
@@ -204,6 +231,7 @@ async def start_interview(request: StartInterviewRequest, current_user_id: str =
 @router.post("/submit-response/{session_id}")
 async def submit_response(
     session_id: str, 
+    req: Request,
     response: str = Form(...),
     audio: UploadFile = File(None),
     current_user_id: str = Depends(get_current_user_id)
@@ -211,15 +239,15 @@ async def submit_response(
     """
     Submit a response to the current interview question with optional audio for acoustic analysis.
     """
-    if session_id not in pi_sessions:
+    session = await _get_pi_session(session_id, req)
+    if not session:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Interview session not found"
         )
     
     try:
-        session = pi_sessions[session_id]
-        interviewer = session["interviewer"]
+        interviewer = PIInterviewer.from_dict(session["interviewer"])
         
         # Process acoustic analysis if audio provided
         acoustic_metrics = None
@@ -244,6 +272,10 @@ async def submit_response(
         
         # Update session
         session["response_count"] = session.get("response_count", 0) + 1
+        session["interviewer"] = interviewer.to_dict()
+        
+        # Save session
+        await _save_pi_session(session_id, session, req)
         
         # Check if interview completed
         if result.get("interview_completed"):
@@ -276,16 +308,16 @@ async def submit_response(
 
 
 @router.get("/session/{session_id}")
-async def get_session_status(session_id: str, current_user_id: str = Depends(get_current_user_id)):
+async def get_session_status(session_id: str, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """Get the current status of an interview session"""
-    if session_id not in pi_sessions:
+    session = await _get_pi_session(session_id, req)
+    if not session:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Interview session not found"
         )
     
-    session = pi_sessions[session_id]
-    interviewer = session["interviewer"]
+    interviewer = PIInterviewer.from_dict(session["interviewer"])
     
     return {
         "session_id": session_id,
@@ -299,22 +331,22 @@ async def get_session_status(session_id: str, current_user_id: str = Depends(get
 
 
 @router.get("/report/{session_id}")
-async def get_interview_report(session_id: str, current_user_id: str = Depends(get_current_user_id)):
+async def get_interview_report(session_id: str, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """
     Get the complete interview report
     
     Returns a comprehensive report with OLQ scores, analysis,
     and recommendations.
     """
-    if session_id not in pi_sessions:
+    session = await _get_pi_session(session_id, req)
+    if not session:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Interview session not found"
         )
     
     try:
-        session = pi_sessions[session_id]
-        interviewer = session["interviewer"]
+        interviewer = PIInterviewer.from_dict(session["interviewer"])
         
         # Generate report
         report = interviewer.generate_report()
@@ -337,27 +369,33 @@ async def get_interview_report(session_id: str, current_user_id: str = Depends(g
 
 
 @router.delete("/session/{session_id}")
-async def end_interview_session(session_id: str, current_user_id: str = Depends(get_current_user_id)):
+async def end_interview_session(session_id: str, req: Request, current_user_id: str = Depends(get_current_user_id)):
     """
     End an interview session
     
     Generates a final report and cleans up the session.
     """
-    if session_id not in pi_sessions:
+    session = await _get_pi_session(session_id, req)
+    if not session:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Interview session not found"
         )
     
     try:
-        session = pi_sessions[session_id]
-        interviewer = session["interviewer"]
+        interviewer = PIInterviewer.from_dict(session["interviewer"])
         
         # Generate final report
         report = interviewer.generate_report()
         
-        # Clean up session
-        del pi_sessions[session_id]
+        # Clean up session in Redis
+        redis = getattr(req.app.state, "redis", None)
+        if redis:
+            await redis.delete(f"pi:session:{session_id}")
+        else:
+            fallback = getattr(req.app.state, "_pi_fallback", {})
+            if session_id in fallback:
+                del fallback[session_id]
         
         return {
             "message": "Interview session ended successfully",
@@ -368,7 +406,7 @@ async def end_interview_session(session_id: str, current_user_id: str = Depends(
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to end session: {str(e)}"
+            detail=f"Failed to end interview session: {str(e)}"
         )
 
 

@@ -205,14 +205,14 @@ if (enableRedisMatchmaking) {
 
 import rateLimit from "express-rate-limit";
 
-import { v4 as uuidv4 } from "uuid";
+import { randomUUID } from "node:crypto";
 
 const app = express();
 app.set("trust proxy", 1);
 
 // Request ID Correlation Middleware
 app.use((req: Request, res: Response, next: NextFunction) => {
-  const reqId = req.headers["x-request-id"] || uuidv4();
+  const reqId = req.headers["x-request-id"] || randomUUID();
   req.headers["x-request-id"] = reqId;
   res.setHeader("X-Request-ID", reqId);
   next();

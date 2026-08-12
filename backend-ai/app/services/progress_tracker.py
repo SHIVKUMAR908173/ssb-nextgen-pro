@@ -45,24 +45,44 @@ class UserProgress:
 class ProgressTracker:
     """
     Service for tracking user progress across all SSB tests.
-    In production, this would connect to PostgreSQL/Supabase.
-    For now, uses in-memory storage with export capabilities.
+    Uses Redis for distributed persistence across workers,
+    with an in-memory dictionary fallback for local testing.
     """
     
     def __init__(self):
-        # In-memory storage with TTL to prevent memory leaks (replace with database in production)
-        self._evaluations = SessionManager(ttl_seconds=86400, max_items=5000)
-        self._user_progress = SessionManager(ttl_seconds=86400, max_items=5000)
+        # Fallback in-memory storage if Redis is not available
+        self._evaluations_fallback: Dict[str, List[EvaluationRecord]] = {}
+        self._user_progress_fallback: Dict[str, UserProgress] = {}
     
-    def save_evaluation(self, record: EvaluationRecord) -> bool:
+    async def save_evaluation(self, record: EvaluationRecord, redis_client=None) -> bool:
         """Save an evaluation record"""
         user_id = record.user_id
-        if user_id not in self._evaluations:
-            self._evaluations[user_id] = []
-        self._evaluations[user_id].append(record)
+        
+        if redis_client:
+            # 1. Get existing evaluations
+            eval_key = f"progress:evaluations:{user_id}"
+            existing_data = await redis_client.get(eval_key)
+            evaluations = []
+            if existing_data:
+                evals_dicts = json.loads(existing_data)
+                evaluations = [EvaluationRecord(**e) for e in evals_dicts]
+            
+            # 2. Append new record
+            evaluations.append(record)
+            
+            # 3. Save back to Redis (TTL 30 days)
+            await redis_client.set(
+                eval_key,
+                json.dumps([asdict(e) for e in evaluations]),
+                ex=2592000
+            )
+        else:
+            if user_id not in self._evaluations_fallback:
+                self._evaluations_fallback[user_id] = []
+            self._evaluations_fallback[user_id].append(record)
         
         # Update user progress
-        self._update_user_progress(user_id)
+        await self._update_user_progress(user_id, redis_client)
         return True
     
     def get_user_evaluations(
