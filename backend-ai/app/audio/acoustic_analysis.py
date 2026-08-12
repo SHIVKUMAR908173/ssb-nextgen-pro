@@ -1,18 +1,12 @@
 import io
 import asyncio
-try:
-    import numpy as np
-    import librosa
-except ImportError:
-    np = None
-    librosa = None
+import numpy as np
+import librosa
 
 MAX_AUDIO_BYTES = 5 * 1024 * 1024  # 5MB max
 
 def _analyze_sync(audio_bytes: bytes) -> dict:
     """Synchronous analysis function"""
-    if librosa is None:
-        return {"error": "librosa not installed, mock data returned", "pitch_stability": 0.8, "confidence_score": 0.85}
 
     try:
         y, sr = librosa.load(io.BytesIO(audio_bytes), sr=16000, duration=30.0)  # Cap at 30s

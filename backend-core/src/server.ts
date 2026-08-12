@@ -38,7 +38,6 @@ import { scoreLecturetteMock } from "./ssb/lecturette/scoring.js";
 import type { SSBLecturetteAssessmentResult } from "./ssb/lecturette/types.js";
 import { SSBLecturetteAssessmentResultSchema } from "./ssb/lecturette/types.js";
 
-import { createGamificationService } from "./platform/gamification.js";
 import { computePercentilesForPopulation, RankingItem } from "./platform/percentiles.js";
 
 // CSS (Computerized Stage 1 Selection System)
@@ -113,7 +112,6 @@ const port = Number(process.env.PORT ?? "3001");
 
 import { createWaf } from "./security/waf.js";
 import { applySecurityHeaders } from "./security/securityHeaders.js";
-import { authService, SignUpInput, SignInInput } from "./auth/index.js";
 import { datasetGenerator } from "./lib/datasets/generator.js";
 import { createRedisMatchmaking } from "./matchmaking/redisMatchmaking.js";
 import { createMatchmakingPersistence } from "./matchmaking/persistence.js";
@@ -207,8 +205,18 @@ if (enableRedisMatchmaking) {
 
 import rateLimit from "express-rate-limit";
 
+import { v4 as uuidv4 } from "uuid";
+
 const app = express();
 app.set("trust proxy", 1);
+
+// Request ID Correlation Middleware
+app.use((req: Request, res: Response, next: NextFunction) => {
+  const reqId = req.headers["x-request-id"] || uuidv4();
+  req.headers["x-request-id"] = reqId;
+  res.setHeader("X-Request-ID", reqId);
+  next();
+});
 
 const apiLimiter = rateLimit({
   windowMs: 60 * 1000,
@@ -219,7 +227,9 @@ const apiLimiter = rateLimit({
 });
 app.use(apiLimiter);
 
-export const gamificationService = createGamificationService();
+import { gamificationRouter } from "./routes/gamification.js";
+import { authRouter } from "./routes/auth.js";
+import { systemRouter } from "./routes/system.js";
 
 const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:3000').split(',').map(s => s.trim());
 app.use(helmet());
@@ -248,77 +258,9 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
 });
 
   // GAMIFICATION
-  app.get("/api/gamification/profile", async (req: Request, res: Response) => {
-    try {
-      const u = new URL(req.url, "http://localhost");
-      const userId = u.searchParams.get("userId") || "test-user-1";
-      const profile = gamificationService.getUser({ userId });
-      res.status(200).json(profile);
-    } catch (e) {
-      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
-    }
-  });
+  app.use("/api/gamification", gamificationRouter);
 
-  app.post("/api/gamification/event", async (req: Request, res: Response) => {
-    try {
-      const { userId, type, taskKey } = req.body;
-      const uid = userId || "test-user-1";
-      if (!type) {
-        res.status(400).json({ error: "Missing 'type'" });
-        return;
-      }
-      let profile;
-      if (type === "daily_login") {
-        profile = gamificationService.applyDailyLogin({ userId: uid });
-      } else if (type === "task_complete") {
-        const xpDelta = 30; // Securely calculated on server
-        profile = gamificationService.applyTaskCompletion({ userId: uid, taskKey, xpDelta });
-      } else {
-         res.status(400).json({ error: "Invalid type" });
-         return;
-      }
-      res.status(200).json(profile);
-    } catch (e) {
-      res.status(500).json({ error: e instanceof Error ? e.message : "Unknown error" });
-    }
-  });
-
-
-  // HEALTH
-  app.get("/health", async (req: Request, res: Response) => {
-    res.status(200).json({ ok: true });
-    });
-
-  // ASSETS (MVP)
-  // Serve static image files from ./assets so dataset imagePath like:
-  // "assets/tat/tat-0001.jpg" can be fetched by a frontend.
-  app.get(/^\/assets\/(.*)/, async (req: Request, res: Response) => {
-    const rel = req.url.replace(/^\/assets\//, ""); // e.g. "tat/tat-0001.jpg"
-    const safeRel = normalize(rel).replace(/^(\.\.(\/|\\|$))+/, "");
-    const assetsRoot = join(process.cwd(), "assets");
-    const abs = join(assetsRoot, safeRel);
-
-    if (!abs.startsWith(assetsRoot) || !existsSync(abs)) {
-      res.status(404).json({ error: "Asset not found" });
-      return;
-    }
-
-    const bytes = await readFile(abs);
-    // Minimal content-type inference; add more types later as needed.
-    const lower = abs.toLowerCase();
-    const contentType =
-      lower.endsWith(".png")
-        ? "image/png"
-        : lower.endsWith(".webp")
-          ? "image/webp"
-          : lower.endsWith(".gif")
-            ? "image/gif"
-            : "image/jpeg";
-
-    res.statusCode = 200;
-    res.setHeader("Content-Type", contentType);
-    res.end(bytes);
-    });
+  app.use(systemRouter);
 
   // MEDICAL PRE-SCREEN (exact cutoffs)
   app.post("/api/medical/prescreen/evaluate", async (req: Request, res: Response) => {
@@ -353,36 +295,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
     });
 
   // AUTHENTICATION
-  app.post("/api/auth/signup", async (req: Request, res: Response) => {
-    try {
-      const body = req.body as SignUpInput;
-      if (!body.email || !body.password) {
-        res.status(400).json({ error: "Email and password are required" });
-        return;
-      }
-      const session = await authService.signUp(body);
-      res.status(200).json(session);
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : "Unknown error";
-      sendJson(res, msg.includes("already exists") ? 409 : 400, { error: msg });
-    }
-    });
-
-  app.post("/api/auth/signin", async (req: Request, res: Response) => {
-    try {
-      const body = req.body as SignInInput;
-      if (!body.email || !body.password) {
-        res.status(400).json({ error: "Email and password are required" });
-        return;
-      }
-      const session = await authService.signIn(body);
-      res.status(200).json(session);
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : "Unknown error";
-      // Don't leak whether user exists or password was wrong
-      res.status(401).json({ error: msg });
-    }
-    });
+  app.use("/api/auth", authRouter);
 
   // DATASET REPAIR
   app.post("/api/data/repair", async (req: Request, res: Response) => {

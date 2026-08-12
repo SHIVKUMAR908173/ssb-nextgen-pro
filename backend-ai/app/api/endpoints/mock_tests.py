@@ -11,6 +11,7 @@ from typing import List, Dict, Optional, Any
 from datetime import datetime
 import random
 import json
+from fastapi import Request
 
 router = APIRouter()
 
@@ -145,7 +146,7 @@ class MockTestManager:
     def __init__(self):
         self._sessions: Dict[str, Dict] = {}
     
-    def create_session(self, test_type: str, user_id: Optional[str] = None) -> MockTestSession:
+    async def create_session(self, test_type: str, user_id: Optional[str] = None, redis=None) -> MockTestSession:
         """Create a new mock test session"""
         session_id = f"mock_{test_type}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         
@@ -169,22 +170,35 @@ class MockTestManager:
             sections=sections
         )
         
-        self._sessions[session_id] = {
-            "session": session,
+        session_data = {
+            "session": session.dict(),
             "user_id": user_id,
             "started": True,
             "submitted": False
         }
         
+        if redis:
+            await redis.set(f"mock_session:{session_id}", json.dumps(session_data), ex=86400) # 24h TTL
+        else:
+            self._sessions[session_id] = session_data
+        
         return session
     
-    def submit_test(self, submission: MockTestSubmission) -> MockTestResult:
+    async def submit_test(self, submission: MockTestSubmission, redis=None) -> MockTestResult:
         """Submit and evaluate a mock test"""
-        if submission.session_id not in self._sessions:
+        session_data = None
+        if redis:
+            data = await redis.get(f"mock_session:{submission.session_id}")
+            if data:
+                session_data = json.loads(data)
+        elif submission.session_id in self._sessions:
+            session_data = self._sessions[submission.session_id]
+            
+        if not session_data:
             raise HTTPException(status_code=404, detail="Session not found")
         
-        session_data = self._sessions[submission.session_id]
-        session = session_data["session"]
+        # reconstruct session object
+        session = MockTestSession(**session_data["session"])
         
         # Evaluate each section
         section_scores = {}
@@ -238,7 +252,12 @@ class MockTestManager:
         
         # Mark session as submitted
         session_data["submitted"] = True
-        session_data["result"] = result
+        session_data["result"] = result.dict()
+        
+        if redis:
+            await redis.set(f"mock_session:{submission.session_id}", json.dumps(session_data), ex=86400)
+        else:
+            self._sessions[submission.session_id] = session_data
         
         return result
     
@@ -484,26 +503,35 @@ def get_mock_test_manager() -> MockTestManager:
 # ==================== API Endpoints ====================
 
 @router.post("/mock-test/start", response_model=MockTestSession)
-async def start_mock_test(config: MockTestConfig):
+async def start_mock_test(config: MockTestConfig, request: Request):
     """Start a new mock test session"""
     manager = get_mock_test_manager()
-    return manager.create_session(config.test_type, config.user_id)
+    redis = getattr(request.app.state, "redis", None)
+    return await manager.create_session(config.test_type, config.user_id, redis)
 
 
 @router.post("/mock-test/submit", response_model=MockTestResult)
-async def submit_mock_test(submission: MockTestSubmission):
+async def submit_mock_test(submission: MockTestSubmission, request: Request):
     """Submit a completed mock test"""
     manager = get_mock_test_manager()
-    return manager.submit_test(submission)
+    redis = getattr(request.app.state, "redis", None)
+    return await manager.submit_test(submission, redis)
 
 
 @router.get("/mock-test/sessions/{session_id}")
-async def get_session_details(session_id: str):
+async def get_session_details(session_id: str, request: Request):
     """Get details of a mock test session"""
     manager = get_mock_test_manager()
-    if session_id not in manager._sessions:
-        raise HTTPException(status_code=404, detail="Session not found")
-    return manager._sessions[session_id]
+    redis = getattr(request.app.state, "redis", None)
+    
+    if redis:
+        data = await redis.get(f"mock_session:{session_id}")
+        if data:
+            return json.loads(data)
+    elif session_id in manager._sessions:
+        return manager._sessions[session_id]
+        
+    raise HTTPException(status_code=404, detail="Session not found")
 
 
 @router.get("/mock-test/types")

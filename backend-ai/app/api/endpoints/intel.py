@@ -47,8 +47,8 @@ def get_image_for_news(title: str, summary: str) -> dict:
     keyword = random.choice(keywords)
     
     return {
-        "url": f"https://ssbprep.com/images/news/{keyword}_{random.randint(1, 100)}.jpg",
-        "thumbnail": f"https://ssbprep.com/images/news/thumbs/{keyword}_{random.randint(1, 100)}.jpg",
+        "url": None,
+        "thumbnail": None,
         "alt_text": f"Image related to {category} news",
         "category": category
     }
@@ -92,45 +92,9 @@ async def get_daily_news():
             print(f"Failed to fetch {feed_url}: {str(e)}")
             continue
             
-    # If network fetch fails entirely, provide fallback local mock data with images
+    # If network fetch fails entirely, return empty list instead of fake data in production
     if not articles:
-        mock_news = [
-            {
-                "title": "DRDO Successfully Tests Next-Gen Hypersonic Missile System",
-                "summary": "India successfully test-fired a long-range hypersonic missile off the Odisha coast, marking a significant leap in strategic deterrence capabilities...",
-                "date": "Today"
-            },
-            {
-                "title": "Indian Navy Enhances Maritime Deployment in Arabian Sea",
-                "summary": "To maintain maritime security and regional stability, the Indian Navy has enhanced its operational deployment with additional warships and surveillance assets...",
-                "date": "Yesterday"
-            },
-            {
-                "title": "IAF Receives First Batch of Indigenous LCA Tejas MK-1A",
-                "summary": "The Indian Air Force has inducted the first batch of the indigenous Light Combat Aircraft Tejas MK-1A, strengthening the nation's air defense capabilities...",
-                "date": "This Week"
-            },
-            {
-                "title": "Indian Army Conducts Joint Exercise with Foreign Forces",
-                "summary": "The Indian Army participated in a bilateral military exercise focusing on counter-terrorism operations and tactical coordination...",
-                "date": "2 days ago"
-            },
-            {
-                "title": "New Defense Technology: AI-Powered Surveillance Systems Deployed",
-                "summary": "Advanced AI-powered surveillance systems have been deployed along the border for enhanced monitoring and security...",
-                "date": "3 days ago"
-            }
-        ]
-        
-        for news in mock_news:
-            articles.append({
-                "title": news["title"],
-                "url": "#",
-                "summary": news["summary"],
-                "date": news["date"],
-                "source": "Defence Intelligence",
-                "image": get_image_for_news(news["title"], news["summary"])
-            })
+        pass
         
     return {"status": "success", "count": len(articles), "data": articles}
 
@@ -179,12 +143,7 @@ async def get_youtube_intel():
             print(f"Failed to fetch YouTube channel {channel_id}: {e}")
             continue
     
-    # Fallback if no videos fetched
+    # Fallback if no videos fetched (Removed mock links for production)
     if not videos:
-        videos = [
-            {"title": "SSB Interview: How to crack PPDT", "url": "https://youtube.com/results?search_query=ssb+interview+ppdt", "published": "Recent", "thumbnail": "", "source": "YouTube Search"},
-            {"title": "OIR Practice Set — Full Walkthrough", "url": "https://youtube.com/results?search_query=oir+test+ssb", "published": "Recent", "thumbnail": "", "source": "YouTube Search"},
-            {"title": "GTO Tasks Explained — Complete Guide", "url": "https://youtube.com/results?search_query=gto+tasks+ssb", "published": "Recent", "thumbnail": "", "source": "YouTube Search"},
-        ]
-        
+        pass
     return {"status": "success", "count": len(videos), "data": videos}
